@@ -116,7 +116,8 @@ export const shots = [
   // 16. Video lengkap diperlihatkan
   { t0: 41.8, t1: 43.8, build(S) { const { w, a, b, r, ph } = ruangGuru(S); hold(w, ph);
     return (lt, k, t) => { w.act(SIT(POSES.hp), lt < 1 ? 'fokus' : 'kaget', t); a.act(POSES.berdiri, 'serius', t); b.act(combine(POSES.berdiri, POSES.tunduk), 'bersalah', t, false, 2); r.act(POSES.berdiri, 'menghindar', t, false, 3);
-      S.camMove(k, { pos: [1.0, 2.7, -3.7], look: [0.0, 1.4, -2.2], fov: 42 }, { pos: [0.9, 2.6, -3.5], look: [0.0, 1.4, -2.2], fov: 36 }); return 'pagi'; }; } },
+      [a, b, r].forEach(c => c.root.visible = false);
+      S.camMove(k, { pos: [0.3, 2.15, 0.3], look: [0.0, 1.4, -2.6], fov: 50 }, { pos: [0.3, 2.1, 0.0], look: [0.0, 1.45, -2.6], fov: 46 }); return 'pagi'; }; } },
   // 17. Bagas mengaku
   { t0: 43.8, t1: 46.0, build(S) { const { w, a, b, r } = ruangGuru(S);
     return (lt, k, t) => { w.act(SIT(POSES.tanganMeja), 'serius', t); a.act(POSES.berdiri, 'kecewa', t); b.act(combine(POSES.berdiri, { headX: 0.25 }), 'bersalah', t, talk('bagas', S.t), 2); r.act(POSES.berdiri, 'menghindar', t, false, 3);

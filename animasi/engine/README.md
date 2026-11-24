@@ -33,3 +33,18 @@ lalu digabung dengan VO + subtitle oleh ffmpeg. Kecepatan ±0,3 detik/frame (720
 - Kamera di luar ruangan `room()` boleh (dinding depan satu sisi), lantai sudah diperpanjang 3×.
 - Adegan ponsel paling aman lewat `phoneInsert` (bukan ponsel di tangan dari jauh).
 - Debug posisi: render kamera dari atas (`cam.up=(0,0,-1)`, lihat ke bawah) untuk melihat tata letak.
+
+## Jalur hemat (dipakai untuk "buatkan video cerita dari voice over ini")
+Tidak perlu menulis shot satu per satu atau mengecek kamera berulang:
+1. Tulis naskah bertanda (format lengkap di kepala `tools/naskah_ke_episode.py`; contoh:
+   `produksi/contoh_naskah/teman_sebangku.txt`). Jika pengguna hanya memberi VO, transkrip dulu lalu beri tanda sendiri.
+2. `python3 tools/naskah_ke_episode.py naskah.txt vo.mp3 --ep ep4` → transkrip Whisper (otomatis bila belum ada),
+   penjajaran kata naskah↔rekaman, `engine/episodes/ep4.js`, subtitle `produksi/ep4.ass`.
+3. Cek SATU lembar cuplikan kecil (titik tengah tiap shot, lebar 130 px), perbaiki hanya shot yang rusak
+   dengan menambah `{cu:x}`/`{dua}`/`{lebar}` di naskah lalu jalankan ulang langkah 2.
+4. `produksi/buat_video.sh ep4 vo.mp3 "Judul"`.
+
+`lib/auto.js` berisi `LOKASI` (slot tokoh tiap lokasi, batas & penghalang kamera) dan penentu kamera otomatis:
+`cu`/`mcu` (sudut 3/4 yang tidak terhalang kepala lain), `dua` (two-shot dari balik bahu), `lebar`, `hp*` (layar ponsel).
+Tokoh: kunci di `lib/cast.js` (`dimas#perban` = varian). Lokasi baru = tambah set di `sets.js` + entri `LOKASI`.
+Shot khusus (rekaman CCTV, kejadian fisik) tetap bisa ditambahkan manual ke file episode hasil generator.

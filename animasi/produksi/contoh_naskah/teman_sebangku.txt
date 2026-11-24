@@ -1,0 +1,36 @@
+# judul: TEMAN | SEBANGKU
+# akhir: SELESAI | Teman Sebangku
+[kantin] kiri=aldo kanan=reno
+NARATOR {hp} [Bagas | Potong bagian papannya. | Kirim pakai akun cadangan.]: Foto profil pengirim itu langsung dikenali Aldo.
+[kelas grade=kenangan] dudukKiri=aldo dudukKanan=bagas
+NARATOR (aldo=senang, bagas=senang, flash): Bagas, teman sebangkunya sejak kelas 10.
+[kelas] dudukKiri=aldo depanMeja=bagas
+NARATOR {mcu:bagas} (bagas=senyum, bagas:bawa, aldo=serius): Ketika Bagas datang membawa dua bungkus roti,
+NARATOR {cu:bagas} (aldo:hpAngkat, bagas=kaget): Aldo menunjukkan percakapan di ponsel Reno.
+ALDO (marah, aldo:hpAngkat): Kenapa kamu bayar dia?
+NARATOR (bagas=bersalah): Bagas meletakkan roti di meja.
+NARATOR {cu:bagas} (bagas:tunduk): Lama ia diam.
+BAGAS (bersalah): Aku pengen jadi ketua panitia.
+BAGAS (menghindar): Selama kamu masih calon, aku merasa nggak bakal dipilih.
+ALDO (marah): Sampai harus bikin aku dituduh begitu?
+BAGAS (bersalah): Awalnya, kupikir cuma bakal ramai sebentar.
+ALDO (kecewa): Kamu bisa berhenti mikirin itu.
+ALDO (sedih): Aku yang harus pulang dan jelasin ke ibuku.
+NARATOR {cu:bagas} (bagas:tunduk): Bagas menunduk.
+[ruangGuru] guru=wali siswa1=aldo siswa2=bagas siswa3=reno
+NARATOR {lebar} (wali=serius, bagas:tunduk, reno=menghindar): Atas permintaan Aldo, mereka menemui wali kelas bersama Reno.
+NARATOR {cu:wali} (wali=kaget, wali:hp): Video lengkap diperlihatkan.
+NARATOR {hp-grup} [XII IPA 2 | Bagas: Video Aldo itu dipotong. Aku yang nyuruh. Maaf. | Sinta: Ya ampun... | Maya: Aldo maaf ya udah nuduh]: Bagas mengaku, lalu mengirim penjelasan dan permintaan maaf ke grup kelas.
+[koridor] kiri=aldo kanan=dimas#perban
+NARATOR {mcu:dimas} (dimas=senyum, aldo=senyum): Siangnya, Dimas kembali ke sekolah dengan lutut diperban.
+DIMAS (senang): Makasih sudah nolongin kemarin, Do.
+NARATOR {cu:aldo} (aldo:angguk): Aldo mengangguk.
+NARATOR {dua} (aldo=lega): Akhirnya, seseorang mengatakan apa yang sebenarnya terjadi.
+[gerbangSore] kiri=aldo kanan=bagas
+NARATOR {lebar} (bagas=cemas, aldo=netral): Saat pulang, Bagas menunggunya di gerbang.
+BAGAS (cemas): Besok masih boleh duduk sebelahan?
+ALDO (kecewa): "Boleh," jawab Aldo.
+ALDO (kecewa): Tapi aku masih kecewa.
+ALDO (kecewa): Kasih aku waktu.
+NARATOR {dua} (bagas:angguk, bagas=kecewa): Bagas mengangguk, lalu berjalan di sampingnya tanpa memaksa bicara.
+NARATOR {akhir}: Selesai.

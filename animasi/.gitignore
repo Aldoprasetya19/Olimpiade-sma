@@ -1,0 +1,4 @@
+engine/node_modules/
+produksi/tmp/
+produksi/tmp_*.log
+output/

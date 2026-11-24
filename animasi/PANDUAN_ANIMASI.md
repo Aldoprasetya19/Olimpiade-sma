@@ -197,6 +197,17 @@ Langkah (ikuti urutan ini):
 
 ---
 
+## 6a. Dua jalur video
+- "buatkan video **cerita** dari voice over ini" → panduan ini + `engine/`.
+- "buatkan video **motion graphics** dari voice over ini" → skill flowmotion + `motion-graphics/README.md` (gaya edukasi).
+
+## 6b. Jalur yang sudah terbukti: mesin 3D berbasis kode
+Untuk mengubah voice-over menjadi animasi sepenuhnya oleh Claude, pakai `engine/` (lihat `engine/README.md`).
+Contoh produksi lengkap 3 episode (drama misteri "Grup Kelas": Jangan Buka Grup Kelas / Yang Ada di Luar Bingkai /
+Teman Sebangku) ada di `produksi/` dan `engine/episodes/ep1-3.js`. Pola visual yang dipakai:
+layar ponsel (chat, notifikasi, video) sebagai penggerak cerita, rekaman HP dengan grade `rekaman`,
+kenangan dengan vignette putih, dialog dengan chip nama berwarna, kartu BERSAMBUNG/SELESAI.
+
 ## 7. Checklist cepat saat membuat episode baru
 
 - [ ] Hook judul 2 baris (putih + kuning) di 0,5 detik pertama

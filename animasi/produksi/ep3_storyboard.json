@@ -1,0 +1,446 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 80.6,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "NAYA": {
+   "warna": "#FFB3C7"
+  },
+  "GRUP KELAS": {
+   "warna": "#9BE3B0"
+  },
+  "WALI KELAS": {
+   "warna": "#A8D8F8"
+  },
+  "IBU": {
+   "warna": "#FFC98A",
+   "label": "IBU"
+  },
+  "NOMOR ASING": {
+   "warna": "#FF8A8A"
+  },
+  "RENO": {
+   "warna": "#FFD84A"
+  },
+  "PESAN": {
+   "warna": "#FF8A8A",
+   "label": "PESAN MASUK"
+  },
+  "BAGAS": {
+   "warna": "#C7A4FF"
+  },
+  "DIMAS": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 80.6,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.14,
+     "teks": "Foto profil pengirim"
+    },
+    {
+     "start": 1.14,
+     "end": 2.22,
+     "teks": "itu langsung"
+    },
+    {
+     "start": 2.22,
+     "end": 3.63,
+     "teks": "dikenali Aldo."
+    },
+    {
+     "start": 3.9,
+     "end": 4.64,
+     "teks": "Bagas,"
+    },
+    {
+     "start": 4.64,
+     "end": 5.46,
+     "teks": "teman sebangkunya"
+    },
+    {
+     "start": 5.46,
+     "end": 6.55,
+     "teks": "sejak kelas 10."
+    },
+    {
+     "start": 6.82,
+     "end": 7.9,
+     "teks": "Ketika Bagas datang"
+    },
+    {
+     "start": 7.9,
+     "end": 8.88,
+     "teks": "membawa dua bungkus"
+    },
+    {
+     "start": 8.88,
+     "end": 9.63,
+     "teks": "roti,"
+    },
+    {
+     "start": 9.64,
+     "end": 10.48,
+     "teks": "Aldo menunjukkan"
+    },
+    {
+     "start": 10.48,
+     "end": 11.5,
+     "teks": "percakapan di ponsel"
+    },
+    {
+     "start": 11.5,
+     "end": 11.99,
+     "teks": "Reno."
+    },
+    {
+     "start": 12.26,
+     "end": 13.32,
+     "teks": "Kenapa kamu bayar",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 13.32,
+     "end": 13.81,
+     "teks": "dia?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 14.16,
+     "end": 15.16,
+     "teks": "Bagas meletakkan"
+    },
+    {
+     "start": 15.16,
+     "end": 16.17,
+     "teks": "roti di meja."
+    },
+    {
+     "start": 16.62,
+     "end": 17.69,
+     "teks": "Lama ia diam."
+    },
+    {
+     "start": 17.9,
+     "end": 18.6,
+     "teks": "Aku pengen jadi",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 18.6,
+     "end": 20.15,
+     "teks": "ketua panitia.",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 20.24,
+     "end": 20.98,
+     "teks": "Selama kamu masih",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 20.98,
+     "end": 21.82,
+     "teks": "calon,",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 21.82,
+     "end": 22.52,
+     "teks": "aku merasa nggak",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 22.52,
+     "end": 23.67,
+     "teks": "bakal dipilih.",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 23.84,
+     "end": 24.78,
+     "teks": "Sampai harus bikin",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 24.78,
+     "end": 26.15,
+     "teks": "aku dituduh begitu?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 26.68,
+     "end": 27.1,
+     "teks": "Awalnya,",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 27.1,
+     "end": 28.37,
+     "teks": "kupikir cuma bakal",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 28.37,
+     "end": 29.37,
+     "teks": "ramai sebentar.",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 30.44,
+     "end": 31.92,
+     "teks": "Kamu bisa berhenti",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 31.92,
+     "end": 32.99,
+     "teks": "mikirin itu.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 33.18,
+     "end": 33.94,
+     "teks": "Aku yang harus",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 33.94,
+     "end": 34.84,
+     "teks": "pulang dan jelasin",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 34.84,
+     "end": 35.95,
+     "teks": "ke ibuku.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 36.16,
+     "end": 37.75,
+     "teks": "Bagas menunduk."
+    },
+    {
+     "start": 37.86,
+     "end": 38.62,
+     "teks": "Atas permintaan"
+    },
+    {
+     "start": 38.62,
+     "end": 39.32,
+     "teks": "Aldo,"
+    },
+    {
+     "start": 39.32,
+     "end": 40.26,
+     "teks": "mereka menemui wali"
+    },
+    {
+     "start": 40.26,
+     "end": 41.47,
+     "teks": "kelas bersama Reno."
+    },
+    {
+     "start": 41.94,
+     "end": 42.58,
+     "teks": "Video lengkap"
+    },
+    {
+     "start": 42.58,
+     "end": 43.57,
+     "teks": "diperlihatkan."
+    },
+    {
+     "start": 43.9,
+     "end": 45.16,
+     "teks": "Bagas mengaku,"
+    },
+    {
+     "start": 45.16,
+     "end": 45.6,
+     "teks": "lalu mengirim"
+    },
+    {
+     "start": 45.6,
+     "end": 46.4,
+     "teks": "penjelasan dan"
+    },
+    {
+     "start": 46.4,
+     "end": 47.36,
+     "teks": "permintaan maaf ke"
+    },
+    {
+     "start": 47.36,
+     "end": 48.13,
+     "teks": "grup kelas."
+    },
+    {
+     "start": 48.62,
+     "end": 49.02,
+     "teks": "Siangnya,"
+    },
+    {
+     "start": 49.02,
+     "end": 50.24,
+     "teks": "Dimas kembali ke"
+    },
+    {
+     "start": 50.24,
+     "end": 51.45,
+     "teks": "sekolah dengan lutut"
+    },
+    {
+     "start": 51.45,
+     "end": 52.01,
+     "teks": "diperban."
+    },
+    {
+     "start": 52.22,
+     "end": 53.0,
+     "teks": "Makasih sudah",
+     "siapa": "DIMAS"
+    },
+    {
+     "start": 53.0,
+     "end": 53.98,
+     "teks": "nolongin kemarin,",
+     "siapa": "DIMAS"
+    },
+    {
+     "start": 53.98,
+     "end": 54.23,
+     "teks": "Do.",
+     "siapa": "DIMAS"
+    },
+    {
+     "start": 54.54,
+     "end": 55.92,
+     "teks": "Aldo mengangguk."
+    },
+    {
+     "start": 55.92,
+     "end": 57.22,
+     "teks": "Akhirnya,"
+    },
+    {
+     "start": 57.22,
+     "end": 58.18,
+     "teks": "seseorang mengatakan"
+    },
+    {
+     "start": 58.18,
+     "end": 59.16,
+     "teks": "apa yang sebenarnya"
+    },
+    {
+     "start": 59.16,
+     "end": 60.41,
+     "teks": "terjadi."
+    },
+    {
+     "start": 60.68,
+     "end": 61.78,
+     "teks": "Saat pulang,"
+    },
+    {
+     "start": 61.78,
+     "end": 62.56,
+     "teks": "Bagas menunggunya di"
+    },
+    {
+     "start": 62.56,
+     "end": 63.15,
+     "teks": "gerbang."
+    },
+    {
+     "start": 63.3,
+     "end": 64.8,
+     "teks": "Besok masih boleh",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 64.8,
+     "end": 65.83,
+     "teks": "duduk sebelahan?",
+     "siapa": "BAGAS"
+    },
+    {
+     "start": 66.08,
+     "end": 68.23,
+     "teks": "\"Boleh,\" jawab Aldo."
+    },
+    {
+     "start": 68.42,
+     "end": 69.64,
+     "teks": "Tapi aku masih",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 69.64,
+     "end": 70.91,
+     "teks": "kecewa.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 71.1,
+     "end": 72.15,
+     "teks": "Kasih aku waktu.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 72.52,
+     "end": 74.0,
+     "teks": "Bagas mengangguk,"
+    },
+    {
+     "start": 74.0,
+     "end": 74.8,
+     "teks": "lalu berjalan di"
+    },
+    {
+     "start": 74.8,
+     "end": 75.86,
+     "teks": "sampingnya tanpa"
+    },
+    {
+     "start": 75.86,
+     "end": 77.11,
+     "teks": "memaksa bicara."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "TEMAN",
+  "baris2": "SEBANGKU",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 77.3,
+  "judul": "SELESAI",
+  "sub": "Teman Sebangku",
+  "end": 80.6
+ }
+}

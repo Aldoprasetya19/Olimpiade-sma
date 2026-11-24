@@ -1,0 +1,406 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 67.6,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "NAYA": {
+   "warna": "#FFB3C7"
+  },
+  "GRUP KELAS": {
+   "warna": "#9BE3B0"
+  },
+  "WALI KELAS": {
+   "warna": "#A8D8F8"
+  },
+  "IBU": {
+   "warna": "#FFC98A",
+   "label": "IBU"
+  },
+  "NOMOR ASING": {
+   "warna": "#FF8A8A"
+  },
+  "RENO": {
+   "warna": "#FFD84A"
+  },
+  "PESAN": {
+   "warna": "#FF8A8A",
+   "label": "PESAN MASUK"
+  },
+  "BAGAS": {
+   "warna": "#C7A4FF"
+  },
+  "DIMAS": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 67.6,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.52,
+     "teks": "Ponsel Aldo bergetar"
+    },
+    {
+     "start": 1.52,
+     "end": 2.46,
+     "teks": "ketika ia baru"
+    },
+    {
+     "start": 2.46,
+     "end": 3.49,
+     "teks": "selesai makan."
+    },
+    {
+     "start": 3.72,
+     "end": 4.91,
+     "teks": "Pesan dari Naya."
+    },
+    {
+     "start": 5.22,
+     "end": 6.27,
+     "teks": "Apa pun yang",
+     "siapa": "NAYA"
+    },
+    {
+     "start": 6.27,
+     "end": 6.62,
+     "teks": "terjadi,",
+     "siapa": "NAYA"
+    },
+    {
+     "start": 6.62,
+     "end": 7.66,
+     "teks": "jangan buka grup",
+     "siapa": "NAYA"
+    },
+    {
+     "start": 7.66,
+     "end": 8.51,
+     "teks": "kelas dulu.",
+     "siapa": "NAYA"
+    },
+    {
+     "start": 8.78,
+     "end": 9.84,
+     "teks": "Tentu saja Aldo"
+    },
+    {
+     "start": 9.84,
+     "end": 11.05,
+     "teks": "langsung membukanya."
+    },
+    {
+     "start": 11.52,
+     "end": 13.21,
+     "teks": "Ada puluhan pesan."
+    },
+    {
+     "start": 13.28,
+     "end": 14.43,
+     "teks": "Namanya disebut"
+    },
+    {
+     "start": 14.43,
+     "end": 15.15,
+     "teks": "berkali-kali."
+    },
+    {
+     "start": 15.42,
+     "end": 16.24,
+     "teks": "Di tengah percakapan"
+    },
+    {
+     "start": 16.24,
+     "end": 16.87,
+     "teks": "itu,"
+    },
+    {
+     "start": 16.94,
+     "end": 17.6,
+     "teks": "sebuah video"
+    },
+    {
+     "start": 17.6,
+     "end": 18.78,
+     "teks": "memperlihatkan Aldo"
+    },
+    {
+     "start": 18.78,
+     "end": 19.58,
+     "teks": "mendorong Dimas"
+    },
+    {
+     "start": 19.58,
+     "end": 20.68,
+     "teks": "sampai jatuh di"
+    },
+    {
+     "start": 20.68,
+     "end": 21.22,
+     "teks": "dekat tangga"
+    },
+    {
+     "start": 21.22,
+     "end": 22.16,
+     "teks": "sekolah."
+    },
+    {
+     "start": 22.16,
+     "end": 23.5,
+     "teks": "17 detik,"
+    },
+    {
+     "start": 23.5,
+     "end": 24.41,
+     "teks": "tanpa suara."
+    },
+    {
+     "start": 24.6,
+     "end": 25.64,
+     "teks": "Pantes Dimas nggak",
+     "siapa": "GRUP KELAS"
+    },
+    {
+     "start": 25.64,
+     "end": 26.68,
+     "teks": "masuk hari ini.",
+     "siapa": "GRUP KELAS"
+    },
+    {
+     "start": 26.68,
+     "end": 28.82,
+     "teks": "Keliatannya kalem.",
+     "siapa": "GRUP KELAS"
+    },
+    {
+     "start": 28.82,
+     "end": 30.27,
+     "teks": "Ternyata begitu.",
+     "siapa": "GRUP KELAS"
+    },
+    {
+     "start": 30.72,
+     "end": 31.66,
+     "teks": "Aldo memutar video"
+    },
+    {
+     "start": 31.66,
+     "end": 32.47,
+     "teks": "itu lagi."
+    },
+    {
+     "start": 32.92,
+     "end": 33.66,
+     "teks": "Tangannya mulai"
+    },
+    {
+     "start": 33.66,
+     "end": 34.55,
+     "teks": "dingin."
+    },
+    {
+     "start": 34.74,
+     "end": 35.54,
+     "teks": "Ia memang ada"
+    },
+    {
+     "start": 35.54,
+     "end": 36.19,
+     "teks": "di sana."
+    },
+    {
+     "start": 36.52,
+     "end": 37.5,
+     "teks": "Ia memang mendorong"
+    },
+    {
+     "start": 37.5,
+     "end": 38.07,
+     "teks": "Dimas."
+    },
+    {
+     "start": 38.62,
+     "end": 40.0,
+     "teks": "Tapi ada sesuatu"
+    },
+    {
+     "start": 40.0,
+     "end": 40.98,
+     "teks": "yang terjadi sebelum"
+    },
+    {
+     "start": 40.98,
+     "end": 41.43,
+     "teks": "itu."
+    },
+    {
+     "start": 41.84,
+     "end": 42.6,
+     "teks": "Aldo mengetik"
+    },
+    {
+     "start": 42.6,
+     "end": 43.87,
+     "teks": "penjelasan panjang."
+    },
+    {
+     "start": 44.12,
+     "end": 44.66,
+     "teks": "Belum sempat"
+    },
+    {
+     "start": 44.66,
+     "end": 45.5,
+     "teks": "dikirim,"
+    },
+    {
+     "start": 45.5,
+     "end": 46.28,
+     "teks": "pesan wali kelas"
+    },
+    {
+     "start": 46.28,
+     "end": 47.05,
+     "teks": "muncul."
+    },
+    {
+     "start": 47.16,
+     "end": 48.06,
+     "teks": "Aldo,",
+     "siapa": "WALI KELAS"
+    },
+    {
+     "start": 48.06,
+     "end": 49.22,
+     "teks": "besok datang bersama",
+     "siapa": "WALI KELAS"
+    },
+    {
+     "start": 49.22,
+     "end": 50.03,
+     "teks": "orang tua.",
+     "siapa": "WALI KELAS"
+    },
+    {
+     "start": 50.26,
+     "end": 51.7,
+     "teks": "Dari dapur,"
+    },
+    {
+     "start": 51.7,
+     "end": 52.73,
+     "teks": "ibunya bertanya."
+    },
+    {
+     "start": 53.06,
+     "end": 53.82,
+     "teks": "Kenapa,",
+     "siapa": "IBU"
+    },
+    {
+     "start": 53.82,
+     "end": 54.09,
+     "teks": "Do?",
+     "siapa": "IBU"
+    },
+    {
+     "start": 54.36,
+     "end": 54.99,
+     "teks": "Nggak apa-apa,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 54.99,
+     "end": 55.45,
+     "teks": "Bu.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 55.92,
+     "end": 56.66,
+     "teks": "Lalu,"
+    },
+    {
+     "start": 56.66,
+     "end": 57.6,
+     "teks": "sebuah pesan masuk"
+    },
+    {
+     "start": 57.6,
+     "end": 58.32,
+     "teks": "dari nomor tak"
+    },
+    {
+     "start": 58.32,
+     "end": 59.18,
+     "teks": "dikenal."
+    },
+    {
+     "start": 59.18,
+     "end": 60.16,
+     "teks": "Aku punya video",
+     "siapa": "NOMOR ASING"
+    },
+    {
+     "start": 60.16,
+     "end": 61.13,
+     "teks": "lengkapnya.",
+     "siapa": "NOMOR ASING"
+    },
+    {
+     "start": 61.24,
+     "end": 61.76,
+     "teks": "Kalau kamu mau",
+     "siapa": "NOMOR ASING"
+    },
+    {
+     "start": 61.76,
+     "end": 62.5,
+     "teks": "lihat,",
+     "siapa": "NOMOR ASING"
+    },
+    {
+     "start": 62.5,
+     "end": 62.96,
+     "teks": "datang sendiri",
+     "siapa": "NOMOR ASING"
+    },
+    {
+     "start": 62.96,
+     "end": 64.11,
+     "teks": "besok.",
+     "siapa": "NOMOR ASING"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "JANGAN BUKA",
+  "baris2": "GRUP KELAS",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 64.3,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Yang Ada di Luar Bingkai",
+  "end": 67.6
+ }
+}

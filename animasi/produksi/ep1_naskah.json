@@ -1,0 +1,139 @@
+{
+ "judul": [
+  "JANGAN BUKA",
+  "GRUP KELAS"
+ ],
+ "durasi": 67.6,
+ "bersambung": {
+  "start": 64.3,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Yang Ada di Luar Bingkai"
+ },
+ "segmen": [
+  {
+   "teks": "Ponsel Aldo bergetar ketika ia baru selesai makan."
+  },
+  {
+   "teks": "Pesan dari Naya."
+  },
+  {
+   "teks": "Apa pun yang terjadi, jangan buka grup kelas dulu.",
+   "siapa": "NAYA"
+  },
+  {
+   "teks": "Tentu saja Aldo langsung membukanya."
+  },
+  {
+   "teks": "Ada puluhan pesan."
+  },
+  {
+   "teks": "Namanya disebut berkali-kali."
+  },
+  {
+   "teks": "Di tengah percakapan itu,"
+  },
+  {
+   "teks": "sebuah video memperlihatkan Aldo mendorong Dimas sampai jatuh di dekat tangga sekolah."
+  },
+  {
+   "teks": "17 detik, tanpa suara."
+  },
+  {
+   "teks": "Pantes Dimas nggak masuk hari ini.",
+   "siapa": "GRUP KELAS"
+  },
+  {
+   "teks": "Keliatannya kalem.",
+   "siapa": "GRUP KELAS"
+  },
+  {
+   "teks": "Ternyata begitu.",
+   "siapa": "GRUP KELAS"
+  },
+  {
+   "teks": "Aldo memutar video itu lagi."
+  },
+  {
+   "teks": "Tangannya mulai dingin."
+  },
+  {
+   "teks": "Ia memang ada di sana."
+  },
+  {
+   "teks": "Ia memang mendorong Dimas."
+  },
+  {
+   "teks": "Tapi ada sesuatu yang terjadi sebelum itu."
+  },
+  {
+   "teks": "Aldo mengetik penjelasan panjang."
+  },
+  {
+   "teks": "Belum sempat dikirim, pesan wali kelas muncul."
+  },
+  {
+   "teks": "Aldo, besok datang bersama orang tua.",
+   "siapa": "WALI KELAS"
+  },
+  {
+   "teks": "Dari dapur, ibunya bertanya."
+  },
+  {
+   "teks": "Kenapa, Do?",
+   "siapa": "IBU"
+  },
+  {
+   "teks": "Nggak apa-apa, Bu.",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Lalu, sebuah pesan masuk dari nomor tak dikenal."
+  },
+  {
+   "teks": "Aku punya video lengkapnya.",
+   "siapa": "NOMOR ASING"
+  },
+  {
+   "teks": "Kalau kamu mau lihat, datang sendiri besok.",
+   "siapa": "NOMOR ASING"
+  },
+  {
+   "skip": true
+  }
+ ],
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "NAYA": {
+   "warna": "#FFB3C7"
+  },
+  "GRUP KELAS": {
+   "warna": "#9BE3B0"
+  },
+  "WALI KELAS": {
+   "warna": "#A8D8F8"
+  },
+  "IBU": {
+   "warna": "#FFC98A",
+   "label": "IBU"
+  },
+  "NOMOR ASING": {
+   "warna": "#FF8A8A"
+  },
+  "RENO": {
+   "warna": "#FFD84A"
+  },
+  "PESAN": {
+   "warna": "#FF8A8A",
+   "label": "PESAN MASUK"
+  },
+  "BAGAS": {
+   "warna": "#C7A4FF"
+  },
+  "DIMAS": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "judul_durasi": 0.7
+}

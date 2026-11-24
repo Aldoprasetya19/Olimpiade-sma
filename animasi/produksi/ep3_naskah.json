@@ -1,0 +1,144 @@
+{
+ "judul": [
+  "TEMAN",
+  "SEBANGKU"
+ ],
+ "durasi": 80.6,
+ "bersambung": {
+  "start": 77.3,
+  "judul": "SELESAI",
+  "sub": "Teman Sebangku"
+ },
+ "segmen": [
+  {
+   "teks": "Foto profil pengirim itu langsung dikenali Aldo."
+  },
+  {
+   "teks": "Bagas, teman sebangkunya sejak kelas 10."
+  },
+  {
+   "teks": "Ketika Bagas datang membawa dua bungkus roti,"
+  },
+  {
+   "teks": "Aldo menunjukkan percakapan di ponsel Reno."
+  },
+  {
+   "teks": "Kenapa kamu bayar dia?",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Bagas meletakkan roti di meja."
+  },
+  {
+   "teks": "Lama ia diam."
+  },
+  {
+   "teks": "Aku pengen jadi ketua panitia.",
+   "siapa": "BAGAS"
+  },
+  {
+   "teks": "Selama kamu masih calon, aku merasa nggak bakal dipilih.",
+   "siapa": "BAGAS"
+  },
+  {
+   "teks": "Sampai harus bikin aku dituduh begitu?",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Awalnya, kupikir cuma bakal ramai sebentar.",
+   "siapa": "BAGAS"
+  },
+  {
+   "teks": "Kamu bisa berhenti mikirin itu.",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Aku yang harus pulang dan jelasin ke ibuku.",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Bagas menunduk."
+  },
+  {
+   "teks": "Atas permintaan Aldo, mereka menemui wali kelas bersama Reno."
+  },
+  {
+   "teks": "Video lengkap diperlihatkan."
+  },
+  {
+   "teks": "Bagas mengaku, lalu mengirim penjelasan dan permintaan maaf ke grup kelas."
+  },
+  {
+   "teks": "Siangnya, Dimas kembali ke sekolah dengan lutut diperban."
+  },
+  {
+   "teks": "Makasih sudah nolongin kemarin, Do.",
+   "siapa": "DIMAS"
+  },
+  {
+   "teks": "Aldo mengangguk."
+  },
+  {
+   "teks": "Akhirnya, seseorang mengatakan apa yang sebenarnya terjadi."
+  },
+  {
+   "teks": "Saat pulang, Bagas menunggunya di gerbang."
+  },
+  {
+   "teks": "Besok masih boleh duduk sebelahan?",
+   "siapa": "BAGAS"
+  },
+  {
+   "teks": "\"Boleh,\" jawab Aldo."
+  },
+  {
+   "teks": "Tapi aku masih kecewa.",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Kasih aku waktu.",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Bagas mengangguk, lalu berjalan di sampingnya tanpa memaksa bicara."
+  },
+  {
+   "skip": true
+  }
+ ],
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "NAYA": {
+   "warna": "#FFB3C7"
+  },
+  "GRUP KELAS": {
+   "warna": "#9BE3B0"
+  },
+  "WALI KELAS": {
+   "warna": "#A8D8F8"
+  },
+  "IBU": {
+   "warna": "#FFC98A",
+   "label": "IBU"
+  },
+  "NOMOR ASING": {
+   "warna": "#FF8A8A"
+  },
+  "RENO": {
+   "warna": "#FFD84A"
+  },
+  "PESAN": {
+   "warna": "#FF8A8A",
+   "label": "PESAN MASUK"
+  },
+  "BAGAS": {
+   "warna": "#C7A4FF"
+  },
+  "DIMAS": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "judul_durasi": 0.7
+}

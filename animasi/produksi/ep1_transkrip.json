@@ -1,0 +1,851 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.34,
+  "text": " Ponsel Aldo bergetar ketika ia baru selesai makan.",
+  "words": [
+   {
+    "w": " Ponsel",
+    "s": 0.0,
+    "e": 0.48
+   },
+   {
+    "w": " Aldo",
+    "s": 0.48,
+    "e": 0.8
+   },
+   {
+    "w": " bergetar",
+    "s": 0.8,
+    "e": 1.52
+   },
+   {
+    "w": " ketika",
+    "s": 1.52,
+    "e": 1.88
+   },
+   {
+    "w": " ia",
+    "s": 1.88,
+    "e": 2.16
+   },
+   {
+    "w": " baru",
+    "s": 2.16,
+    "e": 2.46
+   },
+   {
+    "w": " selesai",
+    "s": 2.46,
+    "e": 2.8
+   },
+   {
+    "w": " makan.",
+    "s": 2.8,
+    "e": 3.34
+   }
+  ]
+ },
+ {
+  "start": 3.72,
+  "end": 4.76,
+  "text": " Pesan dari Naya.",
+  "words": [
+   {
+    "w": " Pesan",
+    "s": 3.72,
+    "e": 4.04
+   },
+   {
+    "w": " dari",
+    "s": 4.04,
+    "e": 4.3
+   },
+   {
+    "w": " Naya.",
+    "s": 4.3,
+    "e": 4.76
+   }
+  ]
+ },
+ {
+  "start": 5.22,
+  "end": 8.36,
+  "text": " Apapun yang terjadi, jangan buka grup kelas dulu.",
+  "words": [
+   {
+    "w": " Apapun",
+    "s": 5.22,
+    "e": 5.58
+   },
+   {
+    "w": " yang",
+    "s": 5.58,
+    "e": 5.72
+   },
+   {
+    "w": " terjadi,",
+    "s": 5.72,
+    "e": 6.38
+   },
+   {
+    "w": " jangan",
+    "s": 6.78,
+    "e": 7.02
+   },
+   {
+    "w": " buka",
+    "s": 7.02,
+    "e": 7.26
+   },
+   {
+    "w": " grup",
+    "s": 7.26,
+    "e": 7.48
+   },
+   {
+    "w": " kelas",
+    "s": 7.48,
+    "e": 7.7
+   },
+   {
+    "w": " dulu.",
+    "s": 7.7,
+    "e": 8.36
+   }
+  ]
+ },
+ {
+  "start": 8.78,
+  "end": 10.9,
+  "text": " Tentu saja Aldo langsung membukanya.",
+  "words": [
+   {
+    "w": " Tentu",
+    "s": 8.78,
+    "e": 9.1
+   },
+   {
+    "w": " saja",
+    "s": 9.1,
+    "e": 9.48
+   },
+   {
+    "w": " Aldo",
+    "s": 9.48,
+    "e": 9.84
+   },
+   {
+    "w": " langsung",
+    "s": 9.84,
+    "e": 10.3
+   },
+   {
+    "w": " membukanya.",
+    "s": 10.3,
+    "e": 10.9
+   }
+  ]
+ },
+ {
+  "start": 11.52,
+  "end": 13.06,
+  "text": " Ada puluhan pesan.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 11.52,
+    "e": 11.8
+   },
+   {
+    "w": " puluhan",
+    "s": 11.8,
+    "e": 12.3
+   },
+   {
+    "w": " pesan.",
+    "s": 12.3,
+    "e": 13.06
+   }
+  ]
+ },
+ {
+  "start": 13.28,
+  "end": 15.0,
+  "text": " Namanya disebut berkali-kali.",
+  "words": [
+   {
+    "w": " Namanya",
+    "s": 13.28,
+    "e": 13.62
+   },
+   {
+    "w": " disebut",
+    "s": 13.62,
+    "e": 14.04
+   },
+   {
+    "w": " berkali",
+    "s": 14.04,
+    "e": 14.68
+   },
+   {
+    "w": "-kali.",
+    "s": 14.68,
+    "e": 15.0
+   }
+  ]
+ },
+ {
+  "start": 15.42,
+  "end": 16.72,
+  "text": " Di tengah percakapan itu,",
+  "words": [
+   {
+    "w": " Di",
+    "s": 15.42,
+    "e": 15.54
+   },
+   {
+    "w": " tengah",
+    "s": 15.54,
+    "e": 15.76
+   },
+   {
+    "w": " percakapan",
+    "s": 15.76,
+    "e": 16.24
+   },
+   {
+    "w": " itu,",
+    "s": 16.24,
+    "e": 16.72
+   }
+  ]
+ },
+ {
+  "start": 16.94,
+  "end": 22.02,
+  "text": " sebuah video memperlihatkan Aldo mendorong Dimas sampai jatuh di dekat tangga sekolah.",
+  "words": [
+   {
+    "w": " sebuah",
+    "s": 16.94,
+    "e": 17.24
+   },
+   {
+    "w": " video",
+    "s": 17.24,
+    "e": 17.6
+   },
+   {
+    "w": " memperlihatkan",
+    "s": 17.6,
+    "e": 18.36
+   },
+   {
+    "w": " Aldo",
+    "s": 18.36,
+    "e": 18.78
+   },
+   {
+    "w": " mendorong",
+    "s": 18.78,
+    "e": 19.28
+   },
+   {
+    "w": " Dimas",
+    "s": 19.28,
+    "e": 19.58
+   },
+   {
+    "w": " sampai",
+    "s": 19.58,
+    "e": 20.02
+   },
+   {
+    "w": " jatuh",
+    "s": 20.02,
+    "e": 20.5
+   },
+   {
+    "w": " di",
+    "s": 20.5,
+    "e": 20.68
+   },
+   {
+    "w": " dekat",
+    "s": 20.68,
+    "e": 20.9
+   },
+   {
+    "w": " tangga",
+    "s": 20.9,
+    "e": 21.22
+   },
+   {
+    "w": " sekolah.",
+    "s": 21.22,
+    "e": 22.02
+   }
+  ]
+ },
+ {
+  "start": 22.16,
+  "end": 24.26,
+  "text": " 17 detik, tanpa suara.",
+  "words": [
+   {
+    "w": " 17",
+    "s": 22.16,
+    "e": 22.62
+   },
+   {
+    "w": " detik,",
+    "s": 22.62,
+    "e": 23.34
+   },
+   {
+    "w": " tanpa",
+    "s": 23.5,
+    "e": 23.86
+   },
+   {
+    "w": " suara.",
+    "s": 23.86,
+    "e": 24.26
+   }
+  ]
+ },
+ {
+  "start": 24.6,
+  "end": 26.68,
+  "text": " Pantes Dimas nggak masuk hari ini.",
+  "words": [
+   {
+    "w": " Pantes",
+    "s": 24.6,
+    "e": 25.04
+   },
+   {
+    "w": " Dimas",
+    "s": 25.04,
+    "e": 25.42
+   },
+   {
+    "w": " nggak",
+    "s": 25.42,
+    "e": 25.64
+   },
+   {
+    "w": " masuk",
+    "s": 25.64,
+    "e": 26.0
+   },
+   {
+    "w": " hari",
+    "s": 26.0,
+    "e": 26.24
+   },
+   {
+    "w": " ini.",
+    "s": 26.24,
+    "e": 26.68
+   }
+  ]
+ },
+ {
+  "start": 26.68,
+  "end": 28.68,
+  "text": " Keliatannya kalem.",
+  "words": [
+   {
+    "w": " Keliatannya",
+    "s": 26.68,
+    "e": 27.66
+   },
+   {
+    "w": " kalem.",
+    "s": 27.66,
+    "e": 28.68
+   }
+  ]
+ },
+ {
+  "start": 28.82,
+  "end": 30.12,
+  "text": " Ternyata begitu.",
+  "words": [
+   {
+    "w": " Ternyata",
+    "s": 28.82,
+    "e": 29.24
+   },
+   {
+    "w": " begitu.",
+    "s": 29.24,
+    "e": 30.12
+   }
+  ]
+ },
+ {
+  "start": 30.72,
+  "end": 32.32,
+  "text": " Aldo memutar video itu lagi.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 30.72,
+    "e": 30.9
+   },
+   {
+    "w": " memutar",
+    "s": 30.9,
+    "e": 31.32
+   },
+   {
+    "w": " video",
+    "s": 31.32,
+    "e": 31.66
+   },
+   {
+    "w": " itu",
+    "s": 31.66,
+    "e": 31.9
+   },
+   {
+    "w": " lagi.",
+    "s": 31.9,
+    "e": 32.32
+   }
+  ]
+ },
+ {
+  "start": 32.92,
+  "end": 34.4,
+  "text": " Tangannya mulai dingin.",
+  "words": [
+   {
+    "w": " Tangannya",
+    "s": 32.92,
+    "e": 33.3
+   },
+   {
+    "w": " mulai",
+    "s": 33.3,
+    "e": 33.66
+   },
+   {
+    "w": " dingin.",
+    "s": 33.66,
+    "e": 34.4
+   }
+  ]
+ },
+ {
+  "start": 34.74,
+  "end": 36.04,
+  "text": " Ia memang ada di sana.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 34.74,
+    "e": 34.94
+   },
+   {
+    "w": " memang",
+    "s": 34.94,
+    "e": 35.24
+   },
+   {
+    "w": " ada",
+    "s": 35.24,
+    "e": 35.54
+   },
+   {
+    "w": " di",
+    "s": 35.54,
+    "e": 35.7
+   },
+   {
+    "w": " sana.",
+    "s": 35.7,
+    "e": 36.04
+   }
+  ]
+ },
+ {
+  "start": 36.52,
+  "end": 37.92,
+  "text": " Ia memang mendorong Dimas.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 36.52,
+    "e": 36.78
+   },
+   {
+    "w": " memang",
+    "s": 36.78,
+    "e": 37.12
+   },
+   {
+    "w": " mendorong",
+    "s": 37.12,
+    "e": 37.5
+   },
+   {
+    "w": " Dimas.",
+    "s": 37.5,
+    "e": 37.92
+   }
+  ]
+ },
+ {
+  "start": 38.62,
+  "end": 41.28,
+  "text": " Tapi ada sesuatu yang terjadi sebelum itu.",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 38.62,
+    "e": 39.0
+   },
+   {
+    "w": " ada",
+    "s": 39.0,
+    "e": 39.48
+   },
+   {
+    "w": " sesuatu",
+    "s": 39.48,
+    "e": 40.0
+   },
+   {
+    "w": " yang",
+    "s": 40.0,
+    "e": 40.18
+   },
+   {
+    "w": " terjadi",
+    "s": 40.18,
+    "e": 40.6
+   },
+   {
+    "w": " sebelum",
+    "s": 40.6,
+    "e": 40.98
+   },
+   {
+    "w": " itu.",
+    "s": 40.98,
+    "e": 41.28
+   }
+  ]
+ },
+ {
+  "start": 41.84,
+  "end": 43.72,
+  "text": " Aldo mengetik penjelasan panjang.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 41.84,
+    "e": 42.22
+   },
+   {
+    "w": " mengetik",
+    "s": 42.22,
+    "e": 42.6
+   },
+   {
+    "w": " penjelasan",
+    "s": 42.6,
+    "e": 43.2
+   },
+   {
+    "w": " panjang.",
+    "s": 43.2,
+    "e": 43.72
+   }
+  ]
+ },
+ {
+  "start": 44.12,
+  "end": 46.9,
+  "text": " Belum sempat dikirim, pesan Walik Velas muncul.",
+  "words": [
+   {
+    "w": " Belum",
+    "s": 44.12,
+    "e": 44.36
+   },
+   {
+    "w": " sempat",
+    "s": 44.36,
+    "e": 44.66
+   },
+   {
+    "w": " dikirim,",
+    "s": 44.66,
+    "e": 45.16
+   },
+   {
+    "w": " pesan",
+    "s": 45.5,
+    "e": 45.74
+   },
+   {
+    "w": " Walik",
+    "s": 45.74,
+    "e": 46.04
+   },
+   {
+    "w": " Velas",
+    "s": 46.04,
+    "e": 46.28
+   },
+   {
+    "w": " muncul.",
+    "s": 46.28,
+    "e": 46.9
+   }
+  ]
+ },
+ {
+  "start": 47.16,
+  "end": 49.88,
+  "text": " Aldo, besok datang bersama orang tua.",
+  "words": [
+   {
+    "w": " Aldo,",
+    "s": 47.16,
+    "e": 47.88
+   },
+   {
+    "w": " besok",
+    "s": 48.06,
+    "e": 48.46
+   },
+   {
+    "w": " datang",
+    "s": 48.46,
+    "e": 48.86
+   },
+   {
+    "w": " bersama",
+    "s": 48.86,
+    "e": 49.22
+   },
+   {
+    "w": " orang",
+    "s": 49.22,
+    "e": 49.52
+   },
+   {
+    "w": " tua.",
+    "s": 49.52,
+    "e": 49.88
+   }
+  ]
+ },
+ {
+  "start": 50.26,
+  "end": 52.58,
+  "text": " Dari dapur, ibunya bertanya.",
+  "words": [
+   {
+    "w": " Dari",
+    "s": 50.26,
+    "e": 50.6
+   },
+   {
+    "w": " dapur,",
+    "s": 50.6,
+    "e": 51.44
+   },
+   {
+    "w": " ibunya",
+    "s": 51.7,
+    "e": 51.88
+   },
+   {
+    "w": " bertanya.",
+    "s": 51.88,
+    "e": 52.58
+   }
+  ]
+ },
+ {
+  "start": 53.06,
+  "end": 53.94,
+  "text": " Kenapa, Do?",
+  "words": [
+   {
+    "w": " Kenapa,",
+    "s": 53.06,
+    "e": 53.66
+   },
+   {
+    "w": " Do?",
+    "s": 53.82,
+    "e": 53.94
+   }
+  ]
+ },
+ {
+  "start": 54.36,
+  "end": 55.3,
+  "text": " Nggak apa-apa, Bu.",
+  "words": [
+   {
+    "w": " Nggak",
+    "s": 54.36,
+    "e": 54.64
+   },
+   {
+    "w": " apa",
+    "s": 54.64,
+    "e": 54.86
+   },
+   {
+    "w": "-apa,",
+    "s": 54.86,
+    "e": 55.02
+   },
+   {
+    "w": " Bu.",
+    "s": 55.12,
+    "e": 55.3
+   }
+  ]
+ },
+ {
+  "start": 55.92,
+  "end": 59.14,
+  "text": " Lalu, sebuah pesan masuk dari nomor tak dikenal.",
+  "words": [
+   {
+    "w": " Lalu,",
+    "s": 55.92,
+    "e": 56.46
+   },
+   {
+    "w": " sebuah",
+    "s": 56.66,
+    "e": 56.92
+   },
+   {
+    "w": " pesan",
+    "s": 56.92,
+    "e": 57.16
+   },
+   {
+    "w": " masuk",
+    "s": 57.16,
+    "e": 57.6
+   },
+   {
+    "w": " dari",
+    "s": 57.6,
+    "e": 57.84
+   },
+   {
+    "w": " nomor",
+    "s": 57.84,
+    "e": 58.16
+   },
+   {
+    "w": " tak",
+    "s": 58.16,
+    "e": 58.32
+   },
+   {
+    "w": " dikenal.",
+    "s": 58.32,
+    "e": 59.14
+   }
+  ]
+ },
+ {
+  "start": 59.18,
+  "end": 60.98,
+  "text": " Aku punya video lengkapnya.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 59.18,
+    "e": 59.48
+   },
+   {
+    "w": " punya",
+    "s": 59.48,
+    "e": 59.84
+   },
+   {
+    "w": " video",
+    "s": 59.84,
+    "e": 60.16
+   },
+   {
+    "w": " lengkapnya.",
+    "s": 60.16,
+    "e": 60.98
+   }
+  ]
+ },
+ {
+  "start": 61.24,
+  "end": 63.96,
+  "text": " Kalau kamu mau lihat, datang sendiri besok.",
+  "words": [
+   {
+    "w": " Kalau",
+    "s": 61.24,
+    "e": 61.36
+   },
+   {
+    "w": " kamu",
+    "s": 61.36,
+    "e": 61.58
+   },
+   {
+    "w": " mau",
+    "s": 61.58,
+    "e": 61.76
+   },
+   {
+    "w": " lihat,",
+    "s": 61.76,
+    "e": 62.16
+   },
+   {
+    "w": " datang",
+    "s": 62.5,
+    "e": 62.7
+   },
+   {
+    "w": " sendiri",
+    "s": 62.7,
+    "e": 62.96
+   },
+   {
+    "w": " besok.",
+    "s": 62.96,
+    "e": 63.96
+   }
+  ]
+ },
+ {
+  "start": 64.36,
+  "end": 64.9,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 64.36,
+    "e": 64.9
+   }
+  ]
+ }
+]

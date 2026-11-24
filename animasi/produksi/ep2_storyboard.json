@@ -1,0 +1,410 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 72.8,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "NAYA": {
+   "warna": "#FFB3C7"
+  },
+  "GRUP KELAS": {
+   "warna": "#9BE3B0"
+  },
+  "WALI KELAS": {
+   "warna": "#A8D8F8"
+  },
+  "IBU": {
+   "warna": "#FFC98A",
+   "label": "IBU"
+  },
+  "NOMOR ASING": {
+   "warna": "#FF8A8A"
+  },
+  "RENO": {
+   "warna": "#FFD84A"
+  },
+  "PESAN": {
+   "warna": "#FF8A8A",
+   "label": "PESAN MASUK"
+  },
+  "BAGAS": {
+   "warna": "#C7A4FF"
+  },
+  "DIMAS": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 72.8,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.6,
+     "teks": "Besok paginya,"
+    },
+    {
+     "start": 1.6,
+     "end": 2.46,
+     "teks": "Aldo datang sebelum"
+    },
+    {
+     "start": 2.46,
+     "end": 3.2,
+     "teks": "gerbang sekolah"
+    },
+    {
+     "start": 3.2,
+     "end": 4.15,
+     "teks": "ramai."
+    },
+    {
+     "start": 4.24,
+     "end": 4.94,
+     "teks": "Seseorang sudah"
+    },
+    {
+     "start": 4.94,
+     "end": 5.8,
+     "teks": "menunggu di belakang"
+    },
+    {
+     "start": 5.8,
+     "end": 6.69,
+     "teks": "kantin."
+    },
+    {
+     "start": 6.82,
+     "end": 7.6,
+     "teks": "Reno,"
+    },
+    {
+     "start": 7.6,
+     "end": 8.62,
+     "teks": "teman yang hampir"
+    },
+    {
+     "start": 8.62,
+     "end": 9.62,
+     "teks": "setiap hari meminjam"
+    },
+    {
+     "start": 9.62,
+     "end": 10.26,
+     "teks": "pengisi daya"
+    },
+    {
+     "start": 10.26,
+     "end": 11.01,
+     "teks": "ponselnya."
+    },
+    {
+     "start": 11.2,
+     "end": 12.87,
+     "teks": "Nomor itu punyamu?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 13.12,
+     "end": 14.46,
+     "teks": "Reno mengangguk,"
+    },
+    {
+     "start": 14.46,
+     "end": 15.2,
+     "teks": "lalu menyerahkan"
+    },
+    {
+     "start": 15.2,
+     "end": 15.83,
+     "teks": "ponsel."
+    },
+    {
+     "start": 16.32,
+     "end": 17.14,
+     "teks": "Video lengkapnya"
+    },
+    {
+     "start": 17.14,
+     "end": 19.25,
+     "teks": "berdurasi 42 detik."
+    },
+    {
+     "start": 19.32,
+     "end": 20.34,
+     "teks": "Di layar,"
+    },
+    {
+     "start": 20.34,
+     "end": 21.02,
+     "teks": "Dimas berjalan"
+    },
+    {
+     "start": 21.02,
+     "end": 21.82,
+     "teks": "sambil menunduk"
+    },
+    {
+     "start": 21.82,
+     "end": 22.81,
+     "teks": "menatap ponsel."
+    },
+    {
+     "start": 23.16,
+     "end": 24.22,
+     "teks": "Di atasnya,"
+    },
+    {
+     "start": 24.22,
+     "end": 24.9,
+     "teks": "seorang pekerja"
+    },
+    {
+     "start": 24.9,
+     "end": 25.8,
+     "teks": "sedang memperbaiki"
+    },
+    {
+     "start": 25.8,
+     "end": 26.52,
+     "teks": "papan penunjuk"
+    },
+    {
+     "start": 26.52,
+     "end": 27.31,
+     "teks": "kelas."
+    },
+    {
+     "start": 27.42,
+     "end": 28.12,
+     "teks": "Salah satu ujung"
+    },
+    {
+     "start": 28.12,
+     "end": 29.18,
+     "teks": "papan itu terlepas."
+    },
+    {
+     "start": 29.18,
+     "end": 30.74,
+     "teks": "Aldo berlari,"
+    },
+    {
+     "start": 30.74,
+     "end": 31.34,
+     "teks": "mendorong Dimas"
+    },
+    {
+     "start": 31.34,
+     "end": 32.16,
+     "teks": "menjauh."
+    },
+    {
+     "start": 32.16,
+     "end": 33.32,
+     "teks": "Mereka jatuh."
+    },
+    {
+     "start": 33.32,
+     "end": 34.64,
+     "teks": "Sesaat kemudian,"
+    },
+    {
+     "start": 34.64,
+     "end": 35.16,
+     "teks": "papan tersebut"
+    },
+    {
+     "start": 35.16,
+     "end": 36.28,
+     "teks": "menghantam lantai di"
+    },
+    {
+     "start": 36.28,
+     "end": 37.12,
+     "teks": "tempat Dimas tadi"
+    },
+    {
+     "start": 37.12,
+     "end": 37.81,
+     "teks": "berdiri."
+    },
+    {
+     "start": 38.12,
+     "end": 39.31,
+     "teks": "Aldo menatap Reno."
+    },
+    {
+     "start": 39.62,
+     "end": 40.5,
+     "teks": "Kamu punya ini",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 40.5,
+     "end": 41.63,
+     "teks": "dari kemarin?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 41.7,
+     "end": 42.39,
+     "teks": "Iya.",
+     "siapa": "RENO"
+    },
+    {
+     "start": 42.96,
+     "end": 44.73,
+     "teks": "Terus kenapa diam?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 44.9,
+     "end": 45.66,
+     "teks": "Reno mengambil"
+    },
+    {
+     "start": 45.66,
+     "end": 47.03,
+     "teks": "kembali ponselnya."
+    },
+    {
+     "start": 47.28,
+     "end": 48.04,
+     "teks": "Matanya terus"
+    },
+    {
+     "start": 48.04,
+     "end": 49.01,
+     "teks": "menghindar."
+    },
+    {
+     "start": 49.08,
+     "end": 50.71,
+     "teks": "Aku takut.",
+     "siapa": "RENO"
+    },
+    {
+     "start": 50.94,
+     "end": 51.97,
+     "teks": "Sama siapa?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 52.4,
+     "end": 53.16,
+     "teks": "Reno membuka"
+    },
+    {
+     "start": 53.16,
+     "end": 54.17,
+     "teks": "percakapan lain."
+    },
+    {
+     "start": 54.64,
+     "end": 55.56,
+     "teks": "Ada kiriman uang"
+    },
+    {
+     "start": 55.56,
+     "end": 56.8,
+     "teks": "dan satu instruksi."
+    },
+    {
+     "start": 56.8,
+     "end": 57.9,
+     "teks": "Potong bagian",
+     "siapa": "PESAN"
+    },
+    {
+     "start": 57.9,
+     "end": 58.91,
+     "teks": "papannya.",
+     "siapa": "PESAN"
+    },
+    {
+     "start": 59.14,
+     "end": 59.82,
+     "teks": "Kirim pakai akun",
+     "siapa": "PESAN"
+    },
+    {
+     "start": 59.82,
+     "end": 60.47,
+     "teks": "cadangan.",
+     "siapa": "PESAN"
+    },
+    {
+     "start": 60.8,
+     "end": 61.64,
+     "teks": "Aldo hendak membaca"
+    },
+    {
+     "start": 61.64,
+     "end": 62.7,
+     "teks": "nama pengirimnya"
+    },
+    {
+     "start": 62.7,
+     "end": 63.86,
+     "teks": "ketika Reno menarik"
+    },
+    {
+     "start": 63.86,
+     "end": 64.69,
+     "teks": "layar itu."
+    },
+    {
+     "start": 64.98,
+     "end": 65.82,
+     "teks": "Do,",
+     "siapa": "RENO"
+    },
+    {
+     "start": 65.82,
+     "end": 67.12,
+     "teks": "yang nyuruh itu",
+     "siapa": "RENO"
+    },
+    {
+     "start": 67.12,
+     "end": 67.82,
+     "teks": "orang yang kamu",
+     "siapa": "RENO"
+    },
+    {
+     "start": 67.82,
+     "end": 68.85,
+     "teks": "percaya.",
+     "siapa": "RENO"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "YANG ADA DI",
+  "baris2": "LUAR BINGKAI",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 69.3,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Teman Sebangku",
+  "end": 72.8
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "judul": [
+  "YANG ADA DI",
+  "LUAR BINGKAI"
+ ],
+ "durasi": 72.8,
+ "bersambung": {
+  "start": 69.3,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Teman Sebangku"
+ },
+ "segmen": [
+  {
+   "teks": "Besok paginya, Aldo datang sebelum gerbang sekolah ramai."
+  },
+  {
+   "teks": "Seseorang sudah menunggu di belakang kantin."
+  },
+  {
+   "teks": "Reno, teman yang hampir setiap hari meminjam pengisi daya ponselnya."
+  },
+  {
+   "teks": "Nomor itu punyamu?",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Reno mengangguk, lalu menyerahkan ponsel."
+  },
+  {
+   "teks": "Video lengkapnya berdurasi 42 detik."
+  },
+  {
+   "teks": "Di layar, Dimas berjalan sambil menunduk menatap ponsel."
+  },
+  {
+   "teks": "Di atasnya, seorang pekerja sedang memperbaiki papan penunjuk kelas."
+  },
+  {
+   "teks": "Salah satu ujung papan itu terlepas."
+  },
+  {
+   "teks": "Aldo berlari, mendorong Dimas menjauh."
+  },
+  {
+   "teks": "Mereka jatuh."
+  },
+  {
+   "teks": "Sesaat kemudian, papan tersebut menghantam lantai di tempat Dimas tadi berdiri."
+  },
+  {
+   "teks": "Aldo menatap Reno."
+  },
+  {
+   "teks": "Kamu punya ini dari kemarin?",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Iya.",
+   "siapa": "RENO"
+  },
+  {
+   "teks": "Terus kenapa diam?",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Reno mengambil kembali ponselnya."
+  },
+  {
+   "teks": "Matanya terus menghindar."
+  },
+  {
+   "teks": "Aku takut.",
+   "siapa": "RENO"
+  },
+  {
+   "teks": "Sama siapa?",
+   "siapa": "ALDO"
+  },
+  {
+   "teks": "Reno membuka percakapan lain."
+  },
+  {
+   "teks": "Ada kiriman uang dan satu instruksi."
+  },
+  {
+   "teks": "Potong bagian papannya.",
+   "siapa": "PESAN"
+  },
+  {
+   "teks": "Kirim pakai akun cadangan.",
+   "siapa": "PESAN"
+  },
+  {
+   "teks": "Aldo hendak membaca nama pengirimnya ketika Reno menarik layar itu."
+  },
+  {
+   "teks": "Do, yang nyuruh itu orang yang kamu percaya.",
+   "siapa": "RENO"
+  },
+  {
+   "skip": true
+  }
+ ],
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "NAYA": {
+   "warna": "#FFB3C7"
+  },
+  "GRUP KELAS": {
+   "warna": "#9BE3B0"
+  },
+  "WALI KELAS": {
+   "warna": "#A8D8F8"
+  },
+  "IBU": {
+   "warna": "#FFC98A",
+   "label": "IBU"
+  },
+  "NOMOR ASING": {
+   "warna": "#FF8A8A"
+  },
+  "RENO": {
+   "warna": "#FFD84A"
+  },
+  "PESAN": {
+   "warna": "#FF8A8A",
+   "label": "PESAN MASUK"
+  },
+  "BAGAS": {
+   "warna": "#C7A4FF"
+  },
+  "DIMAS": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "judul_durasi": 0.7
+}

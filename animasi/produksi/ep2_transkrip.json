@@ -1,0 +1,881 @@
+[
+ {
+  "start": 0.0,
+  "end": 4.0,
+  "text": " Besok paginya, Aldo datang sebelum gerbang sekolah ramai.",
+  "words": [
+   {
+    "w": " Besok",
+    "s": 0.0,
+    "e": 0.42
+   },
+   {
+    "w": " paginya,",
+    "s": 0.42,
+    "e": 1.02
+   },
+   {
+    "w": " Aldo",
+    "s": 1.6,
+    "e": 1.7
+   },
+   {
+    "w": " datang",
+    "s": 1.7,
+    "e": 2.16
+   },
+   {
+    "w": " sebelum",
+    "s": 2.16,
+    "e": 2.46
+   },
+   {
+    "w": " gerbang",
+    "s": 2.46,
+    "e": 2.76
+   },
+   {
+    "w": " sekolah",
+    "s": 2.76,
+    "e": 3.2
+   },
+   {
+    "w": " ramai.",
+    "s": 3.2,
+    "e": 4.0
+   }
+  ]
+ },
+ {
+  "start": 4.24,
+  "end": 6.54,
+  "text": " Seseorang sudah menunggu di belakang kantin.",
+  "words": [
+   {
+    "w": " Seseorang",
+    "s": 4.24,
+    "e": 4.66
+   },
+   {
+    "w": " sudah",
+    "s": 4.66,
+    "e": 4.94
+   },
+   {
+    "w": " menunggu",
+    "s": 4.94,
+    "e": 5.38
+   },
+   {
+    "w": " di",
+    "s": 5.38,
+    "e": 5.52
+   },
+   {
+    "w": " belakang",
+    "s": 5.52,
+    "e": 5.8
+   },
+   {
+    "w": " kantin.",
+    "s": 5.8,
+    "e": 6.54
+   }
+  ]
+ },
+ {
+  "start": 6.82,
+  "end": 10.86,
+  "text": " Reno, teman yang hampir setiap hari meminjam pengisi daya ponselnya.",
+  "words": [
+   {
+    "w": " Reno,",
+    "s": 6.82,
+    "e": 7.12
+   },
+   {
+    "w": " teman",
+    "s": 7.6,
+    "e": 7.92
+   },
+   {
+    "w": " yang",
+    "s": 7.92,
+    "e": 8.14
+   },
+   {
+    "w": " hampir",
+    "s": 8.14,
+    "e": 8.62
+   },
+   {
+    "w": " setiap",
+    "s": 8.62,
+    "e": 8.94
+   },
+   {
+    "w": " hari",
+    "s": 8.94,
+    "e": 9.16
+   },
+   {
+    "w": " meminjam",
+    "s": 9.16,
+    "e": 9.62
+   },
+   {
+    "w": " pengisi",
+    "s": 9.62,
+    "e": 9.98
+   },
+   {
+    "w": " daya",
+    "s": 9.98,
+    "e": 10.26
+   },
+   {
+    "w": " ponselnya.",
+    "s": 10.26,
+    "e": 10.86
+   }
+  ]
+ },
+ {
+  "start": 11.2,
+  "end": 12.72,
+  "text": " Nomor itu punya mu?",
+  "words": [
+   {
+    "w": " Nomor",
+    "s": 11.2,
+    "e": 11.6
+   },
+   {
+    "w": " itu",
+    "s": 11.6,
+    "e": 12.12
+   },
+   {
+    "w": " punya",
+    "s": 12.12,
+    "e": 12.52
+   },
+   {
+    "w": " mu?",
+    "s": 12.52,
+    "e": 12.72
+   }
+  ]
+ },
+ {
+  "start": 13.12,
+  "end": 15.68,
+  "text": " Reno mengangguk, lalu menyerahkan ponsel.",
+  "words": [
+   {
+    "w": " Reno",
+    "s": 13.12,
+    "e": 13.46
+   },
+   {
+    "w": " mengangguk,",
+    "s": 13.46,
+    "e": 14.26
+   },
+   {
+    "w": " lalu",
+    "s": 14.46,
+    "e": 14.72
+   },
+   {
+    "w": " menyerahkan",
+    "s": 14.72,
+    "e": 15.2
+   },
+   {
+    "w": " ponsel.",
+    "s": 15.2,
+    "e": 15.68
+   }
+  ]
+ },
+ {
+  "start": 16.32,
+  "end": 19.1,
+  "text": " Video lengkapnya berdurasi 42 detik.",
+  "words": [
+   {
+    "w": " Video",
+    "s": 16.32,
+    "e": 16.56
+   },
+   {
+    "w": " lengkapnya",
+    "s": 16.56,
+    "e": 17.14
+   },
+   {
+    "w": " berdurasi",
+    "s": 17.14,
+    "e": 17.74
+   },
+   {
+    "w": " 42",
+    "s": 17.74,
+    "e": 18.38
+   },
+   {
+    "w": " detik.",
+    "s": 18.38,
+    "e": 19.1
+   }
+  ]
+ },
+ {
+  "start": 19.32,
+  "end": 22.66,
+  "text": " Di layar, Dimas berjalan sambil menundup menata ponsel.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 19.32,
+    "e": 19.46
+   },
+   {
+    "w": " layar,",
+    "s": 19.46,
+    "e": 20.08
+   },
+   {
+    "w": " Dimas",
+    "s": 20.34,
+    "e": 20.46
+   },
+   {
+    "w": " berjalan",
+    "s": 20.46,
+    "e": 21.02
+   },
+   {
+    "w": " sambil",
+    "s": 21.02,
+    "e": 21.34
+   },
+   {
+    "w": " menundup",
+    "s": 21.34,
+    "e": 21.82
+   },
+   {
+    "w": " menata",
+    "s": 21.82,
+    "e": 22.14
+   },
+   {
+    "w": " ponsel.",
+    "s": 22.14,
+    "e": 22.66
+   }
+  ]
+ },
+ {
+  "start": 23.16,
+  "end": 27.16,
+  "text": " Di atasnya, seorang pekerja sedang memperbaiki papan penunjuk kelas.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 23.16,
+    "e": 23.36
+   },
+   {
+    "w": " atasnya,",
+    "s": 23.36,
+    "e": 23.94
+   },
+   {
+    "w": " seorang",
+    "s": 24.22,
+    "e": 24.44
+   },
+   {
+    "w": " pekerja",
+    "s": 24.44,
+    "e": 24.9
+   },
+   {
+    "w": " sedang",
+    "s": 24.9,
+    "e": 25.14
+   },
+   {
+    "w": " memperbaiki",
+    "s": 25.14,
+    "e": 25.8
+   },
+   {
+    "w": " papan",
+    "s": 25.8,
+    "e": 26.12
+   },
+   {
+    "w": " penunjuk",
+    "s": 26.12,
+    "e": 26.52
+   },
+   {
+    "w": " kelas.",
+    "s": 26.52,
+    "e": 27.16
+   }
+  ]
+ },
+ {
+  "start": 27.42,
+  "end": 29.18,
+  "text": " Salah satu ujung papan itu terlepas.",
+  "words": [
+   {
+    "w": " Salah",
+    "s": 27.42,
+    "e": 27.64
+   },
+   {
+    "w": " satu",
+    "s": 27.64,
+    "e": 27.86
+   },
+   {
+    "w": " ujung",
+    "s": 27.86,
+    "e": 28.12
+   },
+   {
+    "w": " papan",
+    "s": 28.12,
+    "e": 28.38
+   },
+   {
+    "w": " itu",
+    "s": 28.38,
+    "e": 28.66
+   },
+   {
+    "w": " terlepas.",
+    "s": 28.66,
+    "e": 29.18
+   }
+  ]
+ },
+ {
+  "start": 29.18,
+  "end": 32.04,
+  "text": " Aldo berlari, mendorong Dimas menjauh.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 29.18,
+    "e": 29.92
+   },
+   {
+    "w": " berlari,",
+    "s": 29.92,
+    "e": 30.58
+   },
+   {
+    "w": " mendorong",
+    "s": 30.74,
+    "e": 31.12
+   },
+   {
+    "w": " Dimas",
+    "s": 31.12,
+    "e": 31.34
+   },
+   {
+    "w": " menjauh.",
+    "s": 31.34,
+    "e": 32.04
+   }
+  ]
+ },
+ {
+  "start": 32.16,
+  "end": 33.18,
+  "text": " Mereka jatuh.",
+  "words": [
+   {
+    "w": " Mereka",
+    "s": 32.16,
+    "e": 32.42
+   },
+   {
+    "w": " jatuh.",
+    "s": 32.42,
+    "e": 33.18
+   }
+  ]
+ },
+ {
+  "start": 33.32,
+  "end": 37.66,
+  "text": " Sesaat kemudian, papan tersebut menghantam lantai di tempat Dimas tadi berdiri.",
+  "words": [
+   {
+    "w": " Sesaat",
+    "s": 33.32,
+    "e": 33.64
+   },
+   {
+    "w": " kemudian,",
+    "s": 33.64,
+    "e": 34.38
+   },
+   {
+    "w": " papan",
+    "s": 34.64,
+    "e": 34.74
+   },
+   {
+    "w": " tersebut",
+    "s": 34.74,
+    "e": 35.16
+   },
+   {
+    "w": " menghantam",
+    "s": 35.16,
+    "e": 35.76
+   },
+   {
+    "w": " lantai",
+    "s": 35.76,
+    "e": 36.12
+   },
+   {
+    "w": " di",
+    "s": 36.12,
+    "e": 36.28
+   },
+   {
+    "w": " tempat",
+    "s": 36.28,
+    "e": 36.54
+   },
+   {
+    "w": " Dimas",
+    "s": 36.54,
+    "e": 36.92
+   },
+   {
+    "w": " tadi",
+    "s": 36.92,
+    "e": 37.12
+   },
+   {
+    "w": " berdiri.",
+    "s": 37.12,
+    "e": 37.66
+   }
+  ]
+ },
+ {
+  "start": 38.12,
+  "end": 39.16,
+  "text": " Aldo menatap Reno.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 38.12,
+    "e": 38.48
+   },
+   {
+    "w": " menatap",
+    "s": 38.48,
+    "e": 38.9
+   },
+   {
+    "w": " Reno.",
+    "s": 38.9,
+    "e": 39.16
+   }
+  ]
+ },
+ {
+  "start": 39.62,
+  "end": 41.48,
+  "text": " Kamu punya ini dari kemarin?",
+  "words": [
+   {
+    "w": " Kamu",
+    "s": 39.62,
+    "e": 39.98
+   },
+   {
+    "w": " punya",
+    "s": 39.98,
+    "e": 40.2
+   },
+   {
+    "w": " ini",
+    "s": 40.2,
+    "e": 40.5
+   },
+   {
+    "w": " dari",
+    "s": 40.5,
+    "e": 40.76
+   },
+   {
+    "w": " kemarin?",
+    "s": 40.76,
+    "e": 41.48
+   }
+  ]
+ },
+ {
+  "start": 41.7,
+  "end": 42.24,
+  "text": " Iya.",
+  "words": [
+   {
+    "w": " Iya.",
+    "s": 41.7,
+    "e": 42.24
+   }
+  ]
+ },
+ {
+  "start": 42.96,
+  "end": 44.58,
+  "text": " Terus kenapa diem?",
+  "words": [
+   {
+    "w": " Terus",
+    "s": 42.96,
+    "e": 43.46
+   },
+   {
+    "w": " kenapa",
+    "s": 43.46,
+    "e": 44.02
+   },
+   {
+    "w": " diem?",
+    "s": 44.02,
+    "e": 44.58
+   }
+  ]
+ },
+ {
+  "start": 44.9,
+  "end": 46.88,
+  "text": " Reno mengambil kembali ponselnya.",
+  "words": [
+   {
+    "w": " Reno",
+    "s": 44.9,
+    "e": 45.28
+   },
+   {
+    "w": " mengambil",
+    "s": 45.28,
+    "e": 45.66
+   },
+   {
+    "w": " kembali",
+    "s": 45.66,
+    "e": 46.08
+   },
+   {
+    "w": " ponselnya.",
+    "s": 46.08,
+    "e": 46.88
+   }
+  ]
+ },
+ {
+  "start": 47.28,
+  "end": 48.86,
+  "text": " Matanya terus menghindar.",
+  "words": [
+   {
+    "w": " Matanya",
+    "s": 47.28,
+    "e": 47.62
+   },
+   {
+    "w": " terus",
+    "s": 47.62,
+    "e": 48.04
+   },
+   {
+    "w": " menghindar.",
+    "s": 48.04,
+    "e": 48.86
+   }
+  ]
+ },
+ {
+  "start": 49.08,
+  "end": 50.56,
+  "text": " Aku takut.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 49.08,
+    "e": 49.56
+   },
+   {
+    "w": " takut.",
+    "s": 49.56,
+    "e": 50.56
+   }
+  ]
+ },
+ {
+  "start": 50.94,
+  "end": 51.82,
+  "text": " Sama siapa?",
+  "words": [
+   {
+    "w": " Sama",
+    "s": 50.94,
+    "e": 51.28
+   },
+   {
+    "w": " siapa?",
+    "s": 51.28,
+    "e": 51.82
+   }
+  ]
+ },
+ {
+  "start": 52.4,
+  "end": 54.02,
+  "text": " Reno membuka percakapan lain.",
+  "words": [
+   {
+    "w": " Reno",
+    "s": 52.4,
+    "e": 52.8
+   },
+   {
+    "w": " membuka",
+    "s": 52.8,
+    "e": 53.16
+   },
+   {
+    "w": " percakapan",
+    "s": 53.16,
+    "e": 53.68
+   },
+   {
+    "w": " lain.",
+    "s": 53.68,
+    "e": 54.02
+   }
+  ]
+ },
+ {
+  "start": 54.64,
+  "end": 56.8,
+  "text": " Ada kiriman uang dan satu instruksi.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 54.64,
+    "e": 54.8
+   },
+   {
+    "w": " kiriman",
+    "s": 54.8,
+    "e": 55.18
+   },
+   {
+    "w": " uang",
+    "s": 55.18,
+    "e": 55.56
+   },
+   {
+    "w": " dan",
+    "s": 55.56,
+    "e": 55.92
+   },
+   {
+    "w": " satu",
+    "s": 55.92,
+    "e": 56.18
+   },
+   {
+    "w": " instruksi.",
+    "s": 56.18,
+    "e": 56.8
+   }
+  ]
+ },
+ {
+  "start": 56.8,
+  "end": 58.76,
+  "text": " Potong bagian papannya.",
+  "words": [
+   {
+    "w": " Potong",
+    "s": 56.8,
+    "e": 57.56
+   },
+   {
+    "w": " bagian",
+    "s": 57.56,
+    "e": 57.9
+   },
+   {
+    "w": " papannya.",
+    "s": 57.9,
+    "e": 58.76
+   }
+  ]
+ },
+ {
+  "start": 59.14,
+  "end": 60.32,
+  "text": " Kirim pakai akun cadaman.",
+  "words": [
+   {
+    "w": " Kirim",
+    "s": 59.14,
+    "e": 59.38
+   },
+   {
+    "w": " pakai",
+    "s": 59.38,
+    "e": 59.6
+   },
+   {
+    "w": " akun",
+    "s": 59.6,
+    "e": 59.82
+   },
+   {
+    "w": " cadaman.",
+    "s": 59.82,
+    "e": 60.32
+   }
+  ]
+ },
+ {
+  "start": 60.8,
+  "end": 64.54,
+  "text": " Aldo hendak membaca nama pengirimnya ketika Reno menarik layar itu.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 60.8,
+    "e": 61.0
+   },
+   {
+    "w": " hendak",
+    "s": 61.0,
+    "e": 61.3
+   },
+   {
+    "w": " membaca",
+    "s": 61.3,
+    "e": 61.64
+   },
+   {
+    "w": " nama",
+    "s": 61.64,
+    "e": 61.88
+   },
+   {
+    "w": " pengirimnya",
+    "s": 61.88,
+    "e": 62.7
+   },
+   {
+    "w": " ketika",
+    "s": 62.7,
+    "e": 63.12
+   },
+   {
+    "w": " Reno",
+    "s": 63.12,
+    "e": 63.34
+   },
+   {
+    "w": " menarik",
+    "s": 63.34,
+    "e": 63.86
+   },
+   {
+    "w": " layar",
+    "s": 63.86,
+    "e": 64.16
+   },
+   {
+    "w": " itu.",
+    "s": 64.16,
+    "e": 64.54
+   }
+  ]
+ },
+ {
+  "start": 64.98,
+  "end": 68.7,
+  "text": " Do, yang nyuruh itu orang yang kamu percaya.",
+  "words": [
+   {
+    "w": " Do,",
+    "s": 64.98,
+    "e": 65.2
+   },
+   {
+    "w": " yang",
+    "s": 65.82,
+    "e": 66.08
+   },
+   {
+    "w": " nyuruh",
+    "s": 66.08,
+    "e": 66.48
+   },
+   {
+    "w": " itu",
+    "s": 66.48,
+    "e": 67.12
+   },
+   {
+    "w": " orang",
+    "s": 67.12,
+    "e": 67.42
+   },
+   {
+    "w": " yang",
+    "s": 67.42,
+    "e": 67.6
+   },
+   {
+    "w": " kamu",
+    "s": 67.6,
+    "e": 67.82
+   },
+   {
+    "w": " percaya.",
+    "s": 67.82,
+    "e": 68.7
+   }
+  ]
+ },
+ {
+  "start": 69.36,
+  "end": 70.08,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 69.36,
+    "e": 70.08
+   }
+  ]
+ }
+]

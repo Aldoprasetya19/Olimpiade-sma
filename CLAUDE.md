@@ -9,4 +9,7 @@ video referensi**. Baca dulu:
 - `animasi/contoh_storyboard.json` – format storyboard (input generator subtitle)
 - `animasi/tools/buat_subtitle.py` + `animasi/tools/README.md` – subtitle .ass & resep ffmpeg yang sudah diuji
 
+Untuk mengubah voice-over jadi video animasi 3D, pakai mesin di `animasi/engine/` (baca `animasi/engine/README.md`;
+contoh lengkap: `animasi/produksi/` + `animasi/engine/episodes/`).
+
 Pakai brand, karakter, dan naskah milik pengguna, bukan milik channel referensi.

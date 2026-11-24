@@ -1,0 +1,26 @@
+# judul: KABAR YANG | DITUNGGU
+# akhir: THE END | Katanya Batal
+[kantin] dudukKiri=gelly kiri=aldo
+NARATOR {lebar} (gelly=netral, aldo=cemas): Saat istirahat, Aldo menghampiri Gelly.
+ALDO {cu:aldo} (ragu): Gel, boleh duduk?
+[kantin] dudukKiri=gelly dudukKanan=aldo
+NARATOR {cu:gelly} (gelly=netral): Gelly menggeser tasnya.
+ALDO (menyesal): Aku mau minta maaf. Bulan lalu aku yang bilang kamu nggak usah diajak.
+NARATOR {cu:gelly} (gelly=serius): Gelly menatapnya sebentar.
+GELLY (kecewa): Pantes waktu aku tanya, kalian bilang belum ada rencana.
+ALDO (pelan): Iya. Maaf.
+GELLY (pelan): Padahal aku cuma pengin ketemu. Kalau kemahalan, aku bisa pesan minum aja.
+NARATOR {cu:aldo} (aldo:tunduk, aldo=bersalah): Aldo menunduk. Ia sempat menyiapkan penjelasan, tetapi sekarang rasanya lebih baik mendengarkan.
+GELLY (jujur): Aku masih agak kesal.
+ALDO (lembut): Nggak apa-apa. Aku ngerti.
+[rumah] dudukKiri=aldo#rumah
+NARATOR {mcu:aldo} (aldo:hp, aldo=fokus): Sepulang sekolah, Aldo menulis di grup. Ia mengakui pesannya tentang Gelly, lalu meminta agar semua orang ikut diajak membicarakan rencana berikutnya.
+NARATOR {hp-grup} [Grup kelas | Aldo: Aku minta maaf soal pesanku tentang Gelly. Rencana berikutnya kita bahas bareng-bareng, semua diajak. | Dika: Maaf, Do. Maaf juga, Gel. | Gelly: Makasih udah jujur.]: Dika membalas dengan permintaan maaf. Kali ini, Gelly bisa membacanya sendiri.
+[kafe] dudukKiri=aldo dudukKanan=gelly depanMeja=dika
+NARATOR {lebar} (aldo=senyum, gelly=senyum, dika=senyum): Minggu berikutnya, mereka memilih tempat setelah semua menyampaikan anggaran masing-masing.
+NARATOR {dua} (aldo=senang, gelly=senang): Aldo datang bersama Gelly.
+NARATOR {cu:gelly} (gelly:hpAngkat, gelly=senyum): Saat hendak berfoto, Gelly berdiri untuk memegang ponsel.
+ALDO (ramah, aldo:tunjuk): Sini, minta tolong orang aja. Kamu ikut foto.
+NARATOR {hp-post} [Aldo | Semua lengkap.]: Setelah fotonya diambil, mereka memeriksa layar bersama.
+NARATOR {lebar} (aldo=senang, gelly=senang, dika=senang): Kali ini, semua yang diajak benar-benar ada di sana.
+NARATOR {akhir}: Selesai.

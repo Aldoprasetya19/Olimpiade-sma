@@ -1,0 +1,430 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 84.44,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "GELLY": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 84.44,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.96,
+     "teks": "Saat istirahat,"
+    },
+    {
+     "start": 1.96,
+     "end": 3.16,
+     "teks": "Aldo menghampiri"
+    },
+    {
+     "start": 3.16,
+     "end": 3.56,
+     "teks": "Gelly."
+    },
+    {
+     "start": 3.66,
+     "end": 4.16,
+     "teks": "Gel,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 4.16,
+     "end": 5.09,
+     "teks": "boleh duduk?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 5.24,
+     "end": 6.1,
+     "teks": "Gelly menggeser"
+    },
+    {
+     "start": 6.1,
+     "end": 6.93,
+     "teks": "tasnya."
+    },
+    {
+     "start": 7.3,
+     "end": 7.98,
+     "teks": "Aku mau minta",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 7.98,
+     "end": 9.32,
+     "teks": "maaf.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 9.32,
+     "end": 10.56,
+     "teks": "Bulan lalu aku",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 10.56,
+     "end": 11.2,
+     "teks": "yang bilang kamu",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 11.2,
+     "end": 12.37,
+     "teks": "nggak usah diajak.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 12.64,
+     "end": 13.66,
+     "teks": "Gelly menatapnya"
+    },
+    {
+     "start": 13.66,
+     "end": 14.45,
+     "teks": "sebentar."
+    },
+    {
+     "start": 14.7,
+     "end": 15.74,
+     "teks": "Pantes waktu aku",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 15.74,
+     "end": 16.7,
+     "teks": "tanya,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 16.7,
+     "end": 17.36,
+     "teks": "kalian bilang belum",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 17.36,
+     "end": 18.35,
+     "teks": "ada rencana.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 18.66,
+     "end": 19.68,
+     "teks": "Iya.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 19.68,
+     "end": 20.47,
+     "teks": "Maaf.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 20.7,
+     "end": 22.08,
+     "teks": "Padahal aku cuma",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 22.08,
+     "end": 23.28,
+     "teks": "pengin ketemu.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 23.28,
+     "end": 24.52,
+     "teks": "Kalau kemahalan,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 24.52,
+     "end": 25.08,
+     "teks": "aku bisa pesan",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 25.08,
+     "end": 25.89,
+     "teks": "minum aja.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 26.16,
+     "end": 27.38,
+     "teks": "Aldo menunduk."
+    },
+    {
+     "start": 27.38,
+     "end": 28.86,
+     "teks": "Ia sempat menyiapkan"
+    },
+    {
+     "start": 28.86,
+     "end": 30.18,
+     "teks": "penjelasan,"
+    },
+    {
+     "start": 30.18,
+     "end": 31.42,
+     "teks": "tetapi sekarang"
+    },
+    {
+     "start": 31.42,
+     "end": 32.18,
+     "teks": "rasanya lebih baik"
+    },
+    {
+     "start": 32.18,
+     "end": 33.34,
+     "teks": "mendengarkan."
+    },
+    {
+     "start": 33.34,
+     "end": 35.48,
+     "teks": "Aku masih agak",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 35.48,
+     "end": 35.88,
+     "teks": "kesal.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 36.72,
+     "end": 38.14,
+     "teks": "Nggak apa-apa.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 38.14,
+     "end": 39.37,
+     "teks": "Aku ngerti.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 39.38,
+     "end": 41.06,
+     "teks": "Sepulang sekolah,"
+    },
+    {
+     "start": 41.06,
+     "end": 41.86,
+     "teks": "Aldo menulis di"
+    },
+    {
+     "start": 41.86,
+     "end": 42.58,
+     "teks": "grup."
+    },
+    {
+     "start": 42.58,
+     "end": 43.72,
+     "teks": "Ia mengakui pesannya"
+    },
+    {
+     "start": 43.72,
+     "end": 44.94,
+     "teks": "tentang Gelly,"
+    },
+    {
+     "start": 44.94,
+     "end": 46.04,
+     "teks": "lalu meminta agar"
+    },
+    {
+     "start": 46.04,
+     "end": 47.2,
+     "teks": "semua orang ikut"
+    },
+    {
+     "start": 47.2,
+     "end": 48.2,
+     "teks": "diajak membicarakan"
+    },
+    {
+     "start": 48.2,
+     "end": 49.49,
+     "teks": "rencana berikutnya."
+    },
+    {
+     "start": 49.9,
+     "end": 50.9,
+     "teks": "Dika membalas dengan"
+    },
+    {
+     "start": 50.9,
+     "end": 52.36,
+     "teks": "permintaan maaf."
+    },
+    {
+     "start": 52.36,
+     "end": 53.35,
+     "teks": "Kali ini,"
+    },
+    {
+     "start": 53.35,
+     "end": 54.0,
+     "teks": "Gelly bisa"
+    },
+    {
+     "start": 54.0,
+     "end": 55.09,
+     "teks": "membacanya sendiri."
+    },
+    {
+     "start": 55.62,
+     "end": 57.16,
+     "teks": "Minggu berikutnya,"
+    },
+    {
+     "start": 57.16,
+     "end": 57.62,
+     "teks": "mereka memilih"
+    },
+    {
+     "start": 57.62,
+     "end": 58.76,
+     "teks": "tempat setelah semua"
+    },
+    {
+     "start": 58.76,
+     "end": 59.44,
+     "teks": "menyampaikan"
+    },
+    {
+     "start": 59.44,
+     "end": 60.6,
+     "teks": "anggaran"
+    },
+    {
+     "start": 60.6,
+     "end": 61.0,
+     "teks": "masing-masing."
+    },
+    {
+     "start": 61.28,
+     "end": 62.69,
+     "teks": "Aldo datang bersama"
+    },
+    {
+     "start": 62.69,
+     "end": 63.09,
+     "teks": "Gelly."
+    },
+    {
+     "start": 63.1,
+     "end": 64.48,
+     "teks": "Saat hendak berfoto,"
+    },
+    {
+     "start": 64.48,
+     "end": 65.52,
+     "teks": "Gelly berdiri untuk"
+    },
+    {
+     "start": 65.52,
+     "end": 66.55,
+     "teks": "memegang ponsel."
+    },
+    {
+     "start": 66.9,
+     "end": 67.78,
+     "teks": "Sini,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 67.78,
+     "end": 68.58,
+     "teks": "minta tolong orang",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 68.58,
+     "end": 70.74,
+     "teks": "aja.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 70.74,
+     "end": 72.09,
+     "teks": "Kamu ikut foto.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 72.52,
+     "end": 73.26,
+     "teks": "Setelah fotonya"
+    },
+    {
+     "start": 73.26,
+     "end": 74.4,
+     "teks": "diambil,"
+    },
+    {
+     "start": 74.4,
+     "end": 75.18,
+     "teks": "mereka memeriksa"
+    },
+    {
+     "start": 75.18,
+     "end": 76.21,
+     "teks": "layar bersama."
+    },
+    {
+     "start": 76.62,
+     "end": 77.82,
+     "teks": "Kali ini,"
+    },
+    {
+     "start": 77.82,
+     "end": 79.24,
+     "teks": "semua yang diajak"
+    },
+    {
+     "start": 79.24,
+     "end": 80.16,
+     "teks": "benar-benar ada di"
+    },
+    {
+     "start": 80.16,
+     "end": 80.65,
+     "teks": "sana."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "KABAR YANG",
+  "baris2": "DITUNGGU",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 81.14,
+  "end": 84.44,
+  "judul": "THE END",
+  "sub": "Katanya Batal"
+ }
+}

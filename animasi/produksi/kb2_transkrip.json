@@ -1,0 +1,867 @@
+[
+ {
+  "start": 0.0,
+  "end": 4.0,
+  "text": " Besok paginya, Dika meletakkan ponsel di meja Aldo.",
+  "words": [
+   {
+    "w": " Besok",
+    "s": 0.0,
+    "e": 0.44
+   },
+   {
+    "w": " paginya,",
+    "s": 0.44,
+    "e": 1.18
+   },
+   {
+    "w": " Dika",
+    "s": 1.64,
+    "e": 1.72
+   },
+   {
+    "w": " meletakkan",
+    "s": 1.72,
+    "e": 2.34
+   },
+   {
+    "w": " ponsel",
+    "s": 2.34,
+    "e": 2.72
+   },
+   {
+    "w": " di",
+    "s": 2.72,
+    "e": 2.9
+   },
+   {
+    "w": " meja",
+    "s": 2.9,
+    "e": 3.14
+   },
+   {
+    "w": " Aldo.",
+    "s": 3.14,
+    "e": 4.0
+   }
+  ]
+ },
+ {
+  "start": 4.22,
+  "end": 5.98,
+  "text": " Di layar ada sebuah pesan.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 4.22,
+    "e": 4.34
+   },
+   {
+    "w": " layar",
+    "s": 4.34,
+    "e": 4.7
+   },
+   {
+    "w": " ada",
+    "s": 4.7,
+    "e": 4.9
+   },
+   {
+    "w": " sebuah",
+    "s": 4.9,
+    "e": 5.22
+   },
+   {
+    "w": " pesan.",
+    "s": 5.22,
+    "e": 5.98
+   }
+  ]
+ },
+ {
+  "start": 6.16,
+  "end": 7.42,
+  "text": " Jangan ajak Aldo dulu.",
+  "words": [
+   {
+    "w": " Jangan",
+    "s": 6.16,
+    "e": 6.42
+   },
+   {
+    "w": " ajak",
+    "s": 6.42,
+    "e": 6.68
+   },
+   {
+    "w": " Aldo",
+    "s": 6.68,
+    "e": 6.98
+   },
+   {
+    "w": " dulu.",
+    "s": 6.98,
+    "e": 7.42
+   }
+  ]
+ },
+ {
+  "start": 7.84,
+  "end": 9.92,
+  "text": " Nanti kita harus cari tempat murah lagi.",
+  "words": [
+   {
+    "w": " Nanti",
+    "s": 7.84,
+    "e": 8.26
+   },
+   {
+    "w": " kita",
+    "s": 8.26,
+    "e": 8.52
+   },
+   {
+    "w": " harus",
+    "s": 8.52,
+    "e": 8.72
+   },
+   {
+    "w": " cari",
+    "s": 8.72,
+    "e": 8.92
+   },
+   {
+    "w": " tempat",
+    "s": 8.92,
+    "e": 9.18
+   },
+   {
+    "w": " murah",
+    "s": 9.18,
+    "e": 9.46
+   },
+   {
+    "w": " lagi.",
+    "s": 9.46,
+    "e": 9.92
+   }
+  ]
+ },
+ {
+  "start": 10.34,
+  "end": 12.82,
+  "text": " Beberapa orang membalas dengan emoji tertawa.",
+  "words": [
+   {
+    "w": " Beberapa",
+    "s": 10.34,
+    "e": 10.76
+   },
+   {
+    "w": " orang",
+    "s": 10.76,
+    "e": 10.96
+   },
+   {
+    "w": " membalas",
+    "s": 10.96,
+    "e": 11.52
+   },
+   {
+    "w": " dengan",
+    "s": 11.52,
+    "e": 11.82
+   },
+   {
+    "w": " emoji",
+    "s": 11.82,
+    "e": 12.22
+   },
+   {
+    "w": " tertawa.",
+    "s": 12.22,
+    "e": 12.82
+   }
+  ]
+ },
+ {
+  "start": 13.2,
+  "end": 14.42,
+  "text": " Dika salah satunya.",
+  "words": [
+   {
+    "w": " Dika",
+    "s": 13.2,
+    "e": 13.62
+   },
+   {
+    "w": " salah",
+    "s": 13.62,
+    "e": 13.9
+   },
+   {
+    "w": " satunya.",
+    "s": 13.9,
+    "e": 14.42
+   }
+  ]
+ },
+ {
+  "start": 14.78,
+  "end": 18.58,
+  "text": " Aku pernah bilang kafe itu kemahalan, kata Aldo.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 14.78,
+    "e": 15.04
+   },
+   {
+    "w": " pernah",
+    "s": 15.04,
+    "e": 15.42
+   },
+   {
+    "w": " bilang",
+    "s": 15.42,
+    "e": 15.86
+   },
+   {
+    "w": " kafe",
+    "s": 15.86,
+    "e": 16.22
+   },
+   {
+    "w": " itu",
+    "s": 16.22,
+    "e": 16.44
+   },
+   {
+    "w": " kemahalan,",
+    "s": 16.44,
+    "e": 17.28
+   },
+   {
+    "w": " kata",
+    "s": 17.58,
+    "e": 17.82
+   },
+   {
+    "w": " Aldo.",
+    "s": 17.82,
+    "e": 18.58
+   }
+  ]
+ },
+ {
+  "start": 18.82,
+  "end": 21.52,
+  "text": " Tapi aku nggak pernah ngelarang kalian pergi.",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 18.82,
+    "e": 19.16
+   },
+   {
+    "w": " aku",
+    "s": 19.16,
+    "e": 19.7
+   },
+   {
+    "w": " nggak",
+    "s": 19.7,
+    "e": 19.96
+   },
+   {
+    "w": " pernah",
+    "s": 19.96,
+    "e": 20.26
+   },
+   {
+    "w": " ngelarang",
+    "s": 20.26,
+    "e": 20.62
+   },
+   {
+    "w": " kalian",
+    "s": 20.62,
+    "e": 20.92
+   },
+   {
+    "w": " pergi.",
+    "s": 20.92,
+    "e": 21.52
+   }
+  ]
+ },
+ {
+  "start": 22.12,
+  "end": 22.88,
+  "text": " Aku tahu.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 22.12,
+    "e": 22.4
+   },
+   {
+    "w": " tahu.",
+    "s": 22.4,
+    "e": 22.88
+   }
+  ]
+ },
+ {
+  "start": 23.36,
+  "end": 24.94,
+  "text": " Aku salah ikut ketawa.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 23.36,
+    "e": 23.62
+   },
+   {
+    "w": " salah",
+    "s": 23.62,
+    "e": 24.04
+   },
+   {
+    "w": " ikut",
+    "s": 24.04,
+    "e": 24.3
+   },
+   {
+    "w": " ketawa.",
+    "s": 24.3,
+    "e": 24.94
+   }
+  ]
+ },
+ {
+  "start": 25.28,
+  "end": 27.2,
+  "text": " Terus kenapa bilang batal?",
+  "words": [
+   {
+    "w": " Terus",
+    "s": 25.28,
+    "e": 25.84
+   },
+   {
+    "w": " kenapa",
+    "s": 25.84,
+    "e": 26.26
+   },
+   {
+    "w": " bilang",
+    "s": 26.26,
+    "e": 26.52
+   },
+   {
+    "w": " batal?",
+    "s": 26.52,
+    "e": 27.2
+   }
+  ]
+ },
+ {
+  "start": 27.2,
+  "end": 30.34,
+  "text": " Aku nggak berani ngomong jujur.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 27.2,
+    "e": 27.98
+   },
+   {
+    "w": " nggak",
+    "s": 27.98,
+    "e": 28.58
+   },
+   {
+    "w": " berani",
+    "s": 28.58,
+    "e": 28.92
+   },
+   {
+    "w": " ngomong",
+    "s": 28.92,
+    "e": 29.24
+   },
+   {
+    "w": " jujur.",
+    "s": 29.24,
+    "e": 30.34
+   }
+  ]
+ },
+ {
+  "start": 30.34,
+  "end": 32.2,
+  "text": " Aldo mengembalikan ponsel itu.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 30.34,
+    "e": 30.74
+   },
+   {
+    "w": " mengembalikan",
+    "s": 30.74,
+    "e": 31.34
+   },
+   {
+    "w": " ponsel",
+    "s": 31.34,
+    "e": 31.72
+   },
+   {
+    "w": " itu.",
+    "s": 31.72,
+    "e": 32.2
+   }
+  ]
+ },
+ {
+  "start": 32.94,
+  "end": 34.92,
+  "text": " Dika tetap berdiri di samping mejanya.",
+  "words": [
+   {
+    "w": " Dika",
+    "s": 32.94,
+    "e": 33.1
+   },
+   {
+    "w": " tetap",
+    "s": 33.1,
+    "e": 33.44
+   },
+   {
+    "w": " berdiri",
+    "s": 33.44,
+    "e": 33.88
+   },
+   {
+    "w": " di",
+    "s": 33.88,
+    "e": 34.02
+   },
+   {
+    "w": " samping",
+    "s": 34.02,
+    "e": 34.3
+   },
+   {
+    "w": " mejanya.",
+    "s": 34.3,
+    "e": 34.92
+   }
+  ]
+ },
+ {
+  "start": 35.36,
+  "end": 38.8,
+  "text": " Setelah kamu telpon, aku baca percakapan lama kita.",
+  "words": [
+   {
+    "w": " Setelah",
+    "s": 35.36,
+    "e": 35.68
+   },
+   {
+    "w": " kamu",
+    "s": 35.68,
+    "e": 35.94
+   },
+   {
+    "w": " telpon,",
+    "s": 35.94,
+    "e": 36.82
+   },
+   {
+    "w": " aku",
+    "s": 37.0,
+    "e": 37.2
+   },
+   {
+    "w": " baca",
+    "s": 37.2,
+    "e": 37.5
+   },
+   {
+    "w": " percakapan",
+    "s": 37.5,
+    "e": 38.06
+   },
+   {
+    "w": " lama",
+    "s": 38.06,
+    "e": 38.26
+   },
+   {
+    "w": " kita.",
+    "s": 38.26,
+    "e": 38.8
+   }
+  ]
+ },
+ {
+  "start": 39.38,
+  "end": 40.64,
+  "text": " Aku jadi kepikiran Geli.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 39.38,
+    "e": 39.52
+   },
+   {
+    "w": " jadi",
+    "s": 39.52,
+    "e": 39.72
+   },
+   {
+    "w": " kepikiran",
+    "s": 39.72,
+    "e": 40.22
+   },
+   {
+    "w": " Geli.",
+    "s": 40.22,
+    "e": 40.64
+   }
+  ]
+ },
+ {
+  "start": 41.22,
+  "end": 44.0,
+  "text": " Geli sudah sebulan tidak ikut berkumpul.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 41.22,
+    "e": 41.66
+   },
+   {
+    "w": " sudah",
+    "s": 41.66,
+    "e": 41.96
+   },
+   {
+    "w": " sebulan",
+    "s": 41.96,
+    "e": 42.54
+   },
+   {
+    "w": " tidak",
+    "s": 42.54,
+    "e": 42.74
+   },
+   {
+    "w": " ikut",
+    "s": 42.74,
+    "e": 42.96
+   },
+   {
+    "w": " berkumpul.",
+    "s": 42.96,
+    "e": 44.0
+   }
+  ]
+ },
+ {
+  "start": 44.26,
+  "end": 45.4,
+  "text": " Ada apa sama dia?",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 44.26,
+    "e": 44.46
+   },
+   {
+    "w": " apa",
+    "s": 44.46,
+    "e": 44.78
+   },
+   {
+    "w": " sama",
+    "s": 44.78,
+    "e": 45.02
+   },
+   {
+    "w": " dia?",
+    "s": 45.02,
+    "e": 45.4
+   }
+  ]
+ },
+ {
+  "start": 45.94,
+  "end": 50.1,
+  "text": " Dika membuka grup lama, lalu menggeser layar ke arah Aldo.",
+  "words": [
+   {
+    "w": " Dika",
+    "s": 45.94,
+    "e": 46.38
+   },
+   {
+    "w": " membuka",
+    "s": 46.38,
+    "e": 46.76
+   },
+   {
+    "w": " grup",
+    "s": 46.76,
+    "e": 46.98
+   },
+   {
+    "w": " lama,",
+    "s": 46.98,
+    "e": 47.54
+   },
+   {
+    "w": " lalu",
+    "s": 47.9,
+    "e": 48.1
+   },
+   {
+    "w": " menggeser",
+    "s": 48.1,
+    "e": 48.58
+   },
+   {
+    "w": " layar",
+    "s": 48.58,
+    "e": 48.94
+   },
+   {
+    "w": " ke",
+    "s": 48.94,
+    "e": 49.1
+   },
+   {
+    "w": " arah",
+    "s": 49.1,
+    "e": 49.32
+   },
+   {
+    "w": " Aldo.",
+    "s": 49.32,
+    "e": 50.1
+   }
+  ]
+ },
+ {
+  "start": 50.28,
+  "end": 51.7,
+  "text": " Geli nggak usah diajak dulu.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 50.28,
+    "e": 50.58
+   },
+   {
+    "w": " nggak",
+    "s": 50.58,
+    "e": 50.74
+   },
+   {
+    "w": " usah",
+    "s": 50.74,
+    "e": 50.94
+   },
+   {
+    "w": " diajak",
+    "s": 50.94,
+    "e": 51.22
+   },
+   {
+    "w": " dulu.",
+    "s": 51.22,
+    "e": 51.7
+   }
+  ]
+ },
+ {
+  "start": 52.1,
+  "end": 54.08,
+  "text": " Nanti ribet kalau dia nggak bisa patungan.",
+  "words": [
+   {
+    "w": " Nanti",
+    "s": 52.1,
+    "e": 52.38
+   },
+   {
+    "w": " ribet",
+    "s": 52.38,
+    "e": 52.8
+   },
+   {
+    "w": " kalau",
+    "s": 52.8,
+    "e": 52.98
+   },
+   {
+    "w": " dia",
+    "s": 52.98,
+    "e": 53.14
+   },
+   {
+    "w": " nggak",
+    "s": 53.14,
+    "e": 53.3
+   },
+   {
+    "w": " bisa",
+    "s": 53.3,
+    "e": 53.46
+   },
+   {
+    "w": " patungan.",
+    "s": 53.46,
+    "e": 54.08
+   }
+  ]
+ },
+ {
+  "start": 54.6,
+  "end": 56.76,
+  "text": " Aldo ingat pernah membaca kalimat itu.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 54.6,
+    "e": 54.9
+   },
+   {
+    "w": " ingat",
+    "s": 54.9,
+    "e": 55.26
+   },
+   {
+    "w": " pernah",
+    "s": 55.26,
+    "e": 55.62
+   },
+   {
+    "w": " membaca",
+    "s": 55.62,
+    "e": 56.02
+   },
+   {
+    "w": " kalimat",
+    "s": 56.02,
+    "e": 56.38
+   },
+   {
+    "w": " itu.",
+    "s": 56.38,
+    "e": 56.76
+   }
+  ]
+ },
+ {
+  "start": 56.76,
+  "end": 60.54,
+  "text": " Bahkan, ia ingat persis kapan pesan itu dikirim.",
+  "words": [
+   {
+    "w": " Bahkan,",
+    "s": 56.76,
+    "e": 57.8
+   },
+   {
+    "w": " ia",
+    "s": 58.06,
+    "e": 58.08
+   },
+   {
+    "w": " ingat",
+    "s": 58.08,
+    "e": 58.4
+   },
+   {
+    "w": " persis",
+    "s": 58.4,
+    "e": 58.96
+   },
+   {
+    "w": " kapan",
+    "s": 58.96,
+    "e": 59.34
+   },
+   {
+    "w": " pesan",
+    "s": 59.34,
+    "e": 59.62
+   },
+   {
+    "w": " itu",
+    "s": 59.62,
+    "e": 59.8
+   },
+   {
+    "w": " dikirim.",
+    "s": 59.8,
+    "e": 60.54
+   }
+  ]
+ },
+ {
+  "start": 60.78,
+  "end": 63.64,
+  "text": " Sebab yang menulisnya adalah Aldo sendiri.",
+  "words": [
+   {
+    "w": " Sebab",
+    "s": 60.78,
+    "e": 61.22
+   },
+   {
+    "w": " yang",
+    "s": 61.22,
+    "e": 61.5
+   },
+   {
+    "w": " menulisnya",
+    "s": 61.5,
+    "e": 62.3
+   },
+   {
+    "w": " adalah",
+    "s": 62.3,
+    "e": 62.72
+   },
+   {
+    "w": " Aldo",
+    "s": 62.72,
+    "e": 63.14
+   },
+   {
+    "w": " sendiri.",
+    "s": 63.14,
+    "e": 63.64
+   }
+  ]
+ },
+ {
+  "start": 64.18,
+  "end": 64.8,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 64.18,
+    "e": 64.8
+   }
+  ]
+ }
+]

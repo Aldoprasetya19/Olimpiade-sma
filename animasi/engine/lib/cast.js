@@ -10,6 +10,8 @@ export const CAST = {
   ibu: (o = {}) => new Char({ skin: '#c48550', hair: '#4f8a7a', hairStyle: 'hijab', hijab: true, shirt: '#4f8a7a', skirt: '#3e5d6e', apron: '#f3e2c2', badge: false, collar: false, longSleeve: true, sleeve: '#4f8a7a', blinkSeed: 0.9, ...o }),
   wali: (o = {}) => new Char({ skin: '#b67b48', hair: '#555049', hairStyle: 'teacher', shirt: '#8a4b2a', pants: '#2f2f35', badge: false, mustache: true, glasses: true, blinkSeed: 2.4, ...o }),
   pekerja: (o = {}) => new Char({ skin: '#a96f3d', hairStyle: 'helmet', shirt: '#3d5a80', vest: '#ff8c1a', pants: '#34495e', badge: false, collar: false, blinkSeed: 0.5, ...o }),
+  dika: (o = {}) => new Char({ ...SERAGAM, skin: '#d29a62', hair: '#3b2a1f', hairStyle: 'curly', name: 'DIKA', blinkSeed: 1.3, ...o }),
+  gelly: (o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: '#d8a06c', hair: '#c9a7d8', hairStyle: 'hijab', hijab: true, longSleeve: true, name: 'GELLY', blinkSeed: 0.7, ...o }),
   siswa: (i = 0, o = {}) => new Char({ ...SERAGAM, skin: ['#c98a52', '#e0b07e', '#b07040', '#d49a64'][i % 4], hair: '#2a2018', hairStyle: ['sidepart', 'bowl', 'curly', 'spiky'][i % 4], blinkSeed: i * 0.77, ...o }),
   siswi: (i = 0, o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: ['#d49a64', '#c98a52', '#e0b07e'][i % 3], hair: '#f4f4f4', hairStyle: 'hijab', hijab: true, longSleeve: true, blinkSeed: i * 0.53, ...o }),
 };

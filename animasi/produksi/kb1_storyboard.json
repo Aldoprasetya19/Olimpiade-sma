@@ -1,0 +1,388 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 72.32,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "DIKA": {
+   "warna": "#FFD84A"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 72.32,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.14,
+     "teks": "Aldo sudah memakai"
+    },
+    {
+     "start": 1.14,
+     "end": 2.32,
+     "teks": "sepatu ketika pesan"
+    },
+    {
+     "start": 2.32,
+     "end": 3.33,
+     "teks": "Dika masuk."
+    },
+    {
+     "start": 3.35,
+     "end": 3.87,
+     "teks": "Ada pesan dari"
+    },
+    {
+     "start": 3.87,
+     "end": 4.05,
+     "teks": "Dika."
+    },
+    {
+     "start": 4.05,
+     "end": 4.22,
+     "teks": "Do,",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 4.22,
+     "end": 5.08,
+     "teks": "nongkrongnya batal,",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 5.08,
+     "end": 5.7,
+     "teks": "ya.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 5.7,
+     "end": 6.44,
+     "teks": "Anak-anak pada nggak",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 6.44,
+     "end": 7.01,
+     "teks": "bisa.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 7.56,
+     "end": 8.5,
+     "teks": "Oke.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 8.5,
+     "end": 9.55,
+     "teks": "Lain kali aja.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 9.7,
+     "end": 11.4,
+     "teks": "Ia melepas sepatu,"
+    },
+    {
+     "start": 11.4,
+     "end": 12.16,
+     "teks": "lalu mengembalikan"
+    },
+    {
+     "start": 12.16,
+     "end": 12.76,
+     "teks": "uang lima puluh"
+    },
+    {
+     "start": 12.76,
+     "end": 14.32,
+     "teks": "ribu ke laci."
+    },
+    {
+     "start": 14.32,
+     "end": 15.12,
+     "teks": "Uang itu sudah"
+    },
+    {
+     "start": 15.12,
+     "end": 16.08,
+     "teks": "disisihkannya sejak"
+    },
+    {
+     "start": 16.08,
+     "end": 16.59,
+     "teks": "Senin."
+    },
+    {
+     "start": 17.46,
+     "end": 18.56,
+     "teks": "Sore harinya,"
+    },
+    {
+     "start": 18.56,
+     "end": 19.94,
+     "teks": "sambil menjaga toko,"
+    },
+    {
+     "start": 19.94,
+     "end": 20.74,
+     "teks": "Aldo membuka"
+    },
+    {
+     "start": 20.74,
+     "end": 21.51,
+     "teks": "Instagram."
+    },
+    {
+     "start": 21.96,
+     "end": 22.82,
+     "teks": "Ada unggahan baru"
+    },
+    {
+     "start": 22.82,
+     "end": 23.89,
+     "teks": "dari Dika."
+    },
+    {
+     "start": 23.98,
+     "end": 25.42,
+     "teks": "Lima temannya duduk"
+    },
+    {
+     "start": 25.42,
+     "end": 26.02,
+     "teks": "mengelilingi meja"
+    },
+    {
+     "start": 26.02,
+     "end": 26.72,
+     "teks": "kafe."
+    },
+    {
+     "start": 26.72,
+     "end": 27.86,
+     "teks": "Di belakang mereka"
+    },
+    {
+     "start": 27.86,
+     "end": 29.0,
+     "teks": "terlihat hiasan yang"
+    },
+    {
+     "start": 29.0,
+     "end": 30.0,
+     "teks": "kemarin dikirim ke"
+    },
+    {
+     "start": 30.0,
+     "end": 30.92,
+     "teks": "grup saat memilih"
+    },
+    {
+     "start": 30.92,
+     "end": 31.77,
+     "teks": "tempat."
+    },
+    {
+     "start": 31.84,
+     "end": 32.48,
+     "teks": "Di sudut foto"
+    },
+    {
+     "start": 32.48,
+     "end": 33.64,
+     "teks": "tertulis,"
+    },
+    {
+     "start": 33.64,
+     "end": 35.27,
+     "teks": "“Akhirnya lengkap.”"
+    },
+    {
+     "start": 35.54,
+     "end": 36.32,
+     "teks": "Aldo melihat jam"
+    },
+    {
+     "start": 36.32,
+     "end": 37.27,
+     "teks": "unggahannya."
+    },
+    {
+     "start": 37.27,
+     "end": 38.1,
+     "teks": "Dua puluh menit"
+    },
+    {
+     "start": 38.1,
+     "end": 38.88,
+     "teks": "lalu."
+    },
+    {
+     "start": 38.88,
+     "end": 40.2,
+     "teks": "Ia mengetik pesan."
+    },
+    {
+     "start": 40.2,
+     "end": 41.69,
+     "teks": "Katanya batal?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 41.9,
+     "end": 42.94,
+     "teks": "Beberapa kali"
+    },
+    {
+     "start": 42.94,
+     "end": 43.62,
+     "teks": "tulisan “mengetik”"
+    },
+    {
+     "start": 43.62,
+     "end": 44.54,
+     "teks": "muncul,"
+    },
+    {
+     "start": 44.54,
+     "end": 45.77,
+     "teks": "lalu hilang."
+    },
+    {
+     "start": 45.86,
+     "end": 47.33,
+     "teks": "Akhirnya Dika"
+    },
+    {
+     "start": 47.33,
+     "end": 47.73,
+     "teks": "menelepon."
+    },
+    {
+     "start": 47.84,
+     "end": 48.73,
+     "teks": "Maaf,",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 48.73,
+     "end": 49.12,
+     "teks": "Do.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 49.12,
+     "end": 50.49,
+     "teks": "Kami jadi pergi.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 50.84,
+     "end": 52.05,
+     "teks": "Kok nggak bilang?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 52.44,
+     "end": 54.0,
+     "teks": "Dika terdiam."
+    },
+    {
+     "start": 54.0,
+     "end": 54.84,
+     "teks": "Dari seberang"
+    },
+    {
+     "start": 54.84,
+     "end": 55.56,
+     "teks": "telepon masih"
+    },
+    {
+     "start": 55.56,
+     "end": 56.64,
+     "teks": "terdengar suara"
+    },
+    {
+     "start": 56.64,
+     "end": 57.26,
+     "teks": "teman-teman mereka"
+    },
+    {
+     "start": 57.26,
+     "end": 58.13,
+     "teks": "tertawa."
+    },
+    {
+     "start": 58.44,
+     "end": 59.08,
+     "teks": "Ada grup lain",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 59.08,
+     "end": 60.63,
+     "teks": "buat nentuin tempat.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 62.7,
+     "end": 63.4,
+     "teks": "Kenapa aku nggak",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 63.4,
+     "end": 64.37,
+     "teks": "dimasukin?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 64.7,
+     "end": 65.64,
+     "teks": "Ada pesan soal",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 65.64,
+     "end": 66.88,
+     "teks": "kamu di sana.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 66.88,
+     "end": 68.35,
+     "teks": "Besok aku tunjukin.",
+     "siapa": "DIKA"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "KATANYA",
+  "baris2": "BATAL",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 69.02,
+  "end": 72.32,
+  "judul": "BERSAMBUNG",
+  "sub": "Foto Hari Minggu"
+ }
+}

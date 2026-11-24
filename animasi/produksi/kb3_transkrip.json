@@ -1,0 +1,999 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.04,
+  "text": " Saat istirahat, Aldo menghampiri Geli.",
+  "words": [
+   {
+    "w": " Saat",
+    "s": 0.0,
+    "e": 0.52
+   },
+   {
+    "w": " istirahat,",
+    "s": 0.52,
+    "e": 1.64
+   },
+   {
+    "w": " Aldo",
+    "s": 1.96,
+    "e": 2.1
+   },
+   {
+    "w": " menghampiri",
+    "s": 2.1,
+    "e": 2.66
+   },
+   {
+    "w": " Geli.",
+    "s": 2.66,
+    "e": 3.04
+   }
+  ]
+ },
+ {
+  "start": 3.52,
+  "end": 4.94,
+  "text": " Girl, boleh duduk?",
+  "words": [
+   {
+    "w": " Girl,",
+    "s": 3.52,
+    "e": 3.88
+   },
+   {
+    "w": " boleh",
+    "s": 4.16,
+    "e": 4.34
+   },
+   {
+    "w": " duduk?",
+    "s": 4.34,
+    "e": 4.94
+   }
+  ]
+ },
+ {
+  "start": 5.06,
+  "end": 6.78,
+  "text": " Geli menggeser tasnya.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 5.06,
+    "e": 5.54
+   },
+   {
+    "w": " menggeser",
+    "s": 5.54,
+    "e": 6.1
+   },
+   {
+    "w": " tasnya.",
+    "s": 6.1,
+    "e": 6.78
+   }
+  ]
+ },
+ {
+  "start": 7.3,
+  "end": 9.0,
+  "text": " Aku mau minta maaf.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 7.3,
+    "e": 7.5
+   },
+   {
+    "w": " mau",
+    "s": 7.5,
+    "e": 7.7
+   },
+   {
+    "w": " minta",
+    "s": 7.7,
+    "e": 7.98
+   },
+   {
+    "w": " maaf.",
+    "s": 7.98,
+    "e": 9.0
+   }
+  ]
+ },
+ {
+  "start": 9.32,
+  "end": 12.22,
+  "text": " Bulan lalu, aku yang bilang kamu nggak usah diajak.",
+  "words": [
+   {
+    "w": " Bulan",
+    "s": 9.32,
+    "e": 9.58
+   },
+   {
+    "w": " lalu,",
+    "s": 9.58,
+    "e": 10.16
+   },
+   {
+    "w": " aku",
+    "s": 10.24,
+    "e": 10.56
+   },
+   {
+    "w": " yang",
+    "s": 10.56,
+    "e": 10.78
+   },
+   {
+    "w": " bilang",
+    "s": 10.78,
+    "e": 10.96
+   },
+   {
+    "w": " kamu",
+    "s": 10.96,
+    "e": 11.2
+   },
+   {
+    "w": " nggak",
+    "s": 11.2,
+    "e": 11.38
+   },
+   {
+    "w": " usah",
+    "s": 11.38,
+    "e": 11.62
+   },
+   {
+    "w": " diajak.",
+    "s": 11.62,
+    "e": 12.22
+   }
+  ]
+ },
+ {
+  "start": 12.54,
+  "end": 14.3,
+  "text": " Geli menatapnya sebentar.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 12.54,
+    "e": 13.06
+   },
+   {
+    "w": " menatapnya",
+    "s": 13.06,
+    "e": 13.66
+   },
+   {
+    "w": " sebentar.",
+    "s": 13.66,
+    "e": 14.3
+   }
+  ]
+ },
+ {
+  "start": 14.7,
+  "end": 18.2,
+  "text": " Pantes waktu aku tanya, kalian bilang belum ada rencana.",
+  "words": [
+   {
+    "w": " Pantes",
+    "s": 14.7,
+    "e": 15.16
+   },
+   {
+    "w": " waktu",
+    "s": 15.16,
+    "e": 15.46
+   },
+   {
+    "w": " aku",
+    "s": 15.46,
+    "e": 15.74
+   },
+   {
+    "w": " tanya,",
+    "s": 15.74,
+    "e": 16.44
+   },
+   {
+    "w": " kalian",
+    "s": 16.7,
+    "e": 16.84
+   },
+   {
+    "w": " bilang",
+    "s": 16.84,
+    "e": 17.12
+   },
+   {
+    "w": " belum",
+    "s": 17.12,
+    "e": 17.36
+   },
+   {
+    "w": " ada",
+    "s": 17.36,
+    "e": 17.6
+   },
+   {
+    "w": " rencana.",
+    "s": 17.6,
+    "e": 18.2
+   }
+  ]
+ },
+ {
+  "start": 18.66,
+  "end": 20.32,
+  "text": " Iya, maaf.",
+  "words": [
+   {
+    "w": " Iya,",
+    "s": 18.66,
+    "e": 19.22
+   },
+   {
+    "w": " maaf.",
+    "s": 19.68,
+    "e": 20.32
+   }
+  ]
+ },
+ {
+  "start": 20.7,
+  "end": 22.94,
+  "text": " Padahal aku cuma pengen ketemu.",
+  "words": [
+   {
+    "w": " Padahal",
+    "s": 20.7,
+    "e": 21.38
+   },
+   {
+    "w": " aku",
+    "s": 21.38,
+    "e": 21.74
+   },
+   {
+    "w": " cuma",
+    "s": 21.74,
+    "e": 21.96
+   },
+   {
+    "w": " pengen",
+    "s": 21.96,
+    "e": 22.2
+   },
+   {
+    "w": " ketemu.",
+    "s": 22.2,
+    "e": 22.94
+   }
+  ]
+ },
+ {
+  "start": 23.28,
+  "end": 25.74,
+  "text": " Kalau kemahalan, aku bisa pesan minum aja.",
+  "words": [
+   {
+    "w": " Kalau",
+    "s": 23.28,
+    "e": 23.5
+   },
+   {
+    "w": " kemahalan,",
+    "s": 23.5,
+    "e": 24.22
+   },
+   {
+    "w": " aku",
+    "s": 24.52,
+    "e": 24.66
+   },
+   {
+    "w": " bisa",
+    "s": 24.66,
+    "e": 24.88
+   },
+   {
+    "w": " pesan",
+    "s": 24.88,
+    "e": 25.08
+   },
+   {
+    "w": " minum",
+    "s": 25.08,
+    "e": 25.34
+   },
+   {
+    "w": " aja.",
+    "s": 25.34,
+    "e": 25.74
+   }
+  ]
+ },
+ {
+  "start": 26.16,
+  "end": 27.38,
+  "text": " Aldo menunduk.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 26.16,
+    "e": 26.52
+   },
+   {
+    "w": " menunduk.",
+    "s": 26.52,
+    "e": 27.38
+   }
+  ]
+ },
+ {
+  "start": 27.38,
+  "end": 29.94,
+  "text": " Ia sempat menyiapkan penjelasan.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 27.38,
+    "e": 27.92
+   },
+   {
+    "w": " sempat",
+    "s": 27.92,
+    "e": 28.36
+   },
+   {
+    "w": " menyiapkan",
+    "s": 28.36,
+    "e": 28.86
+   },
+   {
+    "w": " penjelasan.",
+    "s": 28.86,
+    "e": 29.94
+   }
+  ]
+ },
+ {
+  "start": 30.18,
+  "end": 33.24,
+  "text": " Tetapi sekarang, rasanya lebih baik mendengarkan.",
+  "words": [
+   {
+    "w": " Tetapi",
+    "s": 30.18,
+    "e": 30.38
+   },
+   {
+    "w": " sekarang,",
+    "s": 30.38,
+    "e": 31.12
+   },
+   {
+    "w": " rasanya",
+    "s": 31.42,
+    "e": 31.6
+   },
+   {
+    "w": " lebih",
+    "s": 31.6,
+    "e": 31.86
+   },
+   {
+    "w": " baik",
+    "s": 31.86,
+    "e": 32.18
+   },
+   {
+    "w": " mendengarkan.",
+    "s": 32.18,
+    "e": 33.24
+   }
+  ]
+ },
+ {
+  "start": 33.34,
+  "end": 35.08,
+  "text": " Aku masih agak kesel.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 33.34,
+    "e": 33.66
+   },
+   {
+    "w": " masih",
+    "s": 33.66,
+    "e": 34.0
+   },
+   {
+    "w": " agak",
+    "s": 34.0,
+    "e": 34.24
+   },
+   {
+    "w": " kesel.",
+    "s": 34.24,
+    "e": 35.08
+   }
+  ]
+ },
+ {
+  "start": 35.24,
+  "end": 36.06,
+  "text": " Lanjut Geli.",
+  "words": [
+   {
+    "w": " Lanjut",
+    "s": 35.24,
+    "e": 35.64
+   },
+   {
+    "w": " Geli.",
+    "s": 35.64,
+    "e": 36.06
+   }
+  ]
+ },
+ {
+  "start": 36.72,
+  "end": 37.76,
+  "text": " Nggak apa-apa.",
+  "words": [
+   {
+    "w": " Nggak",
+    "s": 36.72,
+    "e": 36.94
+   },
+   {
+    "w": " apa",
+    "s": 36.94,
+    "e": 37.34
+   },
+   {
+    "w": "-apa.",
+    "s": 37.34,
+    "e": 37.76
+   }
+  ]
+ },
+ {
+  "start": 38.14,
+  "end": 39.22,
+  "text": " Aku ngerti.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 38.14,
+    "e": 38.3
+   },
+   {
+    "w": " ngerti.",
+    "s": 38.3,
+    "e": 39.22
+   }
+  ]
+ },
+ {
+  "start": 39.38,
+  "end": 42.12,
+  "text": " Sepulang sekolah, Aldo menulis di grup.",
+  "words": [
+   {
+    "w": " Sepulang",
+    "s": 39.38,
+    "e": 39.82
+   },
+   {
+    "w": " sekolah,",
+    "s": 39.82,
+    "e": 40.74
+   },
+   {
+    "w": " Aldo",
+    "s": 41.06,
+    "e": 41.24
+   },
+   {
+    "w": " menulis",
+    "s": 41.24,
+    "e": 41.64
+   },
+   {
+    "w": " di",
+    "s": 41.64,
+    "e": 41.86
+   },
+   {
+    "w": " grup.",
+    "s": 41.86,
+    "e": 42.12
+   }
+  ]
+ },
+ {
+  "start": 42.58,
+  "end": 44.46,
+  "text": " Ia mengakui pesannya tentang Geli.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 42.58,
+    "e": 42.76
+   },
+   {
+    "w": " mengakui",
+    "s": 42.76,
+    "e": 43.28
+   },
+   {
+    "w": " pesannya",
+    "s": 43.28,
+    "e": 43.72
+   },
+   {
+    "w": " tentang",
+    "s": 43.72,
+    "e": 44.04
+   },
+   {
+    "w": " Geli.",
+    "s": 44.04,
+    "e": 44.46
+   }
+  ]
+ },
+ {
+  "start": 44.94,
+  "end": 49.34,
+  "text": " Lalu meminta agar semua orang ikut diajak membicarakan rencana berikutnya.",
+  "words": [
+   {
+    "w": " Lalu",
+    "s": 44.94,
+    "e": 45.2
+   },
+   {
+    "w": " meminta",
+    "s": 45.2,
+    "e": 45.68
+   },
+   {
+    "w": " agar",
+    "s": 45.68,
+    "e": 46.04
+   },
+   {
+    "w": " semua",
+    "s": 46.04,
+    "e": 46.38
+   },
+   {
+    "w": " orang",
+    "s": 46.38,
+    "e": 46.8
+   },
+   {
+    "w": " ikut",
+    "s": 46.8,
+    "e": 47.2
+   },
+   {
+    "w": " diajak",
+    "s": 47.2,
+    "e": 47.54
+   },
+   {
+    "w": " membicarakan",
+    "s": 47.54,
+    "e": 48.2
+   },
+   {
+    "w": " rencana",
+    "s": 48.2,
+    "e": 48.72
+   },
+   {
+    "w": " berikutnya.",
+    "s": 48.72,
+    "e": 49.34
+   }
+  ]
+ },
+ {
+  "start": 49.9,
+  "end": 52.2,
+  "text": " Dika membalas dengan permintaan maaf.",
+  "words": [
+   {
+    "w": " Dika",
+    "s": 49.9,
+    "e": 50.14
+   },
+   {
+    "w": " membalas",
+    "s": 50.14,
+    "e": 50.66
+   },
+   {
+    "w": " dengan",
+    "s": 50.66,
+    "e": 50.9
+   },
+   {
+    "w": " permintaan",
+    "s": 50.9,
+    "e": 51.48
+   },
+   {
+    "w": " maaf.",
+    "s": 51.48,
+    "e": 52.2
+   }
+  ]
+ },
+ {
+  "start": 52.36,
+  "end": 54.94,
+  "text": " Kali ini, Geli bisa membacanya sendiri.",
+  "words": [
+   {
+    "w": " Kali",
+    "s": 52.36,
+    "e": 52.62
+   },
+   {
+    "w": " ini,",
+    "s": 52.62,
+    "e": 53.1
+   },
+   {
+    "w": " Geli",
+    "s": 53.4,
+    "e": 53.6
+   },
+   {
+    "w": " bisa",
+    "s": 53.6,
+    "e": 54.0
+   },
+   {
+    "w": " membacanya",
+    "s": 54.0,
+    "e": 54.46
+   },
+   {
+    "w": " sendiri.",
+    "s": 54.46,
+    "e": 54.94
+   }
+  ]
+ },
+ {
+  "start": 55.62,
+  "end": 60.92,
+  "text": " Minggu berikutnya, mereka memilih tempat setelah semua menyampaikan anggaran masing-masing.",
+  "words": [
+   {
+    "w": " Minggu",
+    "s": 55.62,
+    "e": 56.14
+   },
+   {
+    "w": " berikutnya,",
+    "s": 56.14,
+    "e": 56.9
+   },
+   {
+    "w": " mereka",
+    "s": 57.16,
+    "e": 57.26
+   },
+   {
+    "w": " memilih",
+    "s": 57.26,
+    "e": 57.62
+   },
+   {
+    "w": " tempat",
+    "s": 57.62,
+    "e": 58.02
+   },
+   {
+    "w": " setelah",
+    "s": 58.02,
+    "e": 58.44
+   },
+   {
+    "w": " semua",
+    "s": 58.44,
+    "e": 58.76
+   },
+   {
+    "w": " menyampaikan",
+    "s": 58.76,
+    "e": 59.44
+   },
+   {
+    "w": " anggaran",
+    "s": 59.44,
+    "e": 59.92
+   },
+   {
+    "w": " masing",
+    "s": 59.92,
+    "e": 60.22
+   },
+   {
+    "w": "-masing.",
+    "s": 60.22,
+    "e": 60.92
+   }
+  ]
+ },
+ {
+  "start": 61.28,
+  "end": 62.56,
+  "text": " Aldo datang bersama Geli.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 61.28,
+    "e": 61.44
+   },
+   {
+    "w": " datang",
+    "s": 61.44,
+    "e": 61.88
+   },
+   {
+    "w": " bersama",
+    "s": 61.88,
+    "e": 62.28
+   },
+   {
+    "w": " Geli.",
+    "s": 62.28,
+    "e": 62.56
+   }
+  ]
+ },
+ {
+  "start": 63.1,
+  "end": 66.4,
+  "text": " Saat hendak berfoto, Geli berdiri untuk memegang ponsel.",
+  "words": [
+   {
+    "w": " Saat",
+    "s": 63.1,
+    "e": 63.28
+   },
+   {
+    "w": " hendak",
+    "s": 63.28,
+    "e": 63.54
+   },
+   {
+    "w": " berfoto,",
+    "s": 63.54,
+    "e": 64.18
+   },
+   {
+    "w": " Geli",
+    "s": 64.54,
+    "e": 64.78
+   },
+   {
+    "w": " berdiri",
+    "s": 64.78,
+    "e": 65.28
+   },
+   {
+    "w": " untuk",
+    "s": 65.28,
+    "e": 65.52
+   },
+   {
+    "w": " memegang",
+    "s": 65.52,
+    "e": 65.9
+   },
+   {
+    "w": " ponsel.",
+    "s": 65.9,
+    "e": 66.4
+   }
+  ]
+ },
+ {
+  "start": 66.9,
+  "end": 69.2,
+  "text": " Sini, minta tolong orang aja.",
+  "words": [
+   {
+    "w": " Sini,",
+    "s": 66.9,
+    "e": 67.46
+   },
+   {
+    "w": " minta",
+    "s": 67.78,
+    "e": 68.02
+   },
+   {
+    "w": " tolong",
+    "s": 68.02,
+    "e": 68.3
+   },
+   {
+    "w": " orang",
+    "s": 68.3,
+    "e": 68.58
+   },
+   {
+    "w": " aja.",
+    "s": 68.58,
+    "e": 69.2
+   }
+  ]
+ },
+ {
+  "start": 69.46,
+  "end": 70.5,
+  "text": " Kata Aldo.",
+  "words": [
+   {
+    "w": " Kata",
+    "s": 69.46,
+    "e": 69.7
+   },
+   {
+    "w": " Aldo.",
+    "s": 69.7,
+    "e": 70.5
+   }
+  ]
+ },
+ {
+  "start": 70.74,
+  "end": 71.94,
+  "text": " Kamu ikut foto.",
+  "words": [
+   {
+    "w": " Kamu",
+    "s": 70.74,
+    "e": 71.1
+   },
+   {
+    "w": " ikut",
+    "s": 71.1,
+    "e": 71.34
+   },
+   {
+    "w": " foto.",
+    "s": 71.34,
+    "e": 71.94
+   }
+  ]
+ },
+ {
+  "start": 72.52,
+  "end": 76.06,
+  "text": " Setelah fotonya diambil, mereka memeriksa layar bersama.",
+  "words": [
+   {
+    "w": " Setelah",
+    "s": 72.52,
+    "e": 72.94
+   },
+   {
+    "w": " fotonya",
+    "s": 72.94,
+    "e": 73.26
+   },
+   {
+    "w": " diambil,",
+    "s": 73.26,
+    "e": 74.06
+   },
+   {
+    "w": " mereka",
+    "s": 74.4,
+    "e": 74.68
+   },
+   {
+    "w": " memeriksa",
+    "s": 74.68,
+    "e": 75.18
+   },
+   {
+    "w": " layar",
+    "s": 75.18,
+    "e": 75.44
+   },
+   {
+    "w": " bersama.",
+    "s": 75.44,
+    "e": 76.06
+   }
+  ]
+ },
+ {
+  "start": 76.62,
+  "end": 80.5,
+  "text": " Kali ini, semua yang diajak benar-benar ada di sana.",
+  "words": [
+   {
+    "w": " Kali",
+    "s": 76.62,
+    "e": 76.84
+   },
+   {
+    "w": " ini,",
+    "s": 76.84,
+    "e": 77.36
+   },
+   {
+    "w": " semua",
+    "s": 77.82,
+    "e": 77.98
+   },
+   {
+    "w": " yang",
+    "s": 77.98,
+    "e": 78.22
+   },
+   {
+    "w": " diajak",
+    "s": 78.22,
+    "e": 78.7
+   },
+   {
+    "w": " benar",
+    "s": 78.7,
+    "e": 79.22
+   },
+   {
+    "w": "-benar",
+    "s": 79.22,
+    "e": 79.78
+   },
+   {
+    "w": " ada",
+    "s": 79.78,
+    "e": 79.98
+   },
+   {
+    "w": " di",
+    "s": 79.98,
+    "e": 80.16
+   },
+   {
+    "w": " sana.",
+    "s": 80.16,
+    "e": 80.5
+   }
+  ]
+ },
+ {
+  "start": 81.14,
+  "end": 81.68,
+  "text": " Selesai.",
+  "words": [
+   {
+    "w": " Selesai.",
+    "s": 81.14,
+    "e": 81.68
+   }
+  ]
+ }
+]

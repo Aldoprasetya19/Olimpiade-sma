@@ -31,6 +31,9 @@ WARNA = {'ALDO': '#FFFFFF', 'NAYA': '#FFB3C7', 'GRUP KELAS': '#9BE3B0', 'WALI KE
          'NOMOR ASING': '#FF8A8A', 'RENO': '#FFD84A', 'BAGAS': '#C7A4FF', 'DIMAS': '#8FE3D8', 'PESAN': '#FF8A8A'}
 CADANGAN = ['#FFD84A', '#8FE3D8', '#C7A4FF', '#FFB3C7', '#A8D8F8', '#FFC98A']
 LINE = re.compile(r'^(?P<who>[A-Za-z][A-Za-z ]*?)\s*(\{(?P<cam>[^}]*)\})?\s*(\((?P<ex>[^)]*)\))?\s*(\[(?P<hp>[^\]]*)\])?\s*:\s*(?P<txt>.+)$')
+ALIAS = {'santai': 'senyum', 'pelan': 'netral', 'bingung': 'curiga', 'ragu': 'menghindar', 'menahan sedih': 'sedih', 'menyesal': 'bersalah',
+         'jujur': 'serius', 'lembut': 'senyum', 'ramah': 'senang', 'hangat': 'senyum', 'kesal': 'marah', 'takut': 'cemas', 'tenang': 'netral'}
+ex = lambda e: ALIAS.get(e.strip().lower(), e.strip())
 norm = lambda w: re.sub(r'[^0-9a-z]', '', w.lower())
 
 def transcribe(vo):
@@ -104,9 +107,9 @@ def main():
         for o in [x.strip() for x in (L['ex'] or '').split(',') if x.strip()]:
             if o == 'flash': flash = True
             elif o.startswith('grade='): grade = o[6:]
-            elif '=' in o: k, v = o.split('='); expr[k.strip().lower()] = v.strip()
+            elif '=' in o: k, v = o.split('='); expr[k.strip().lower()] = ex(v)
             elif ':' in o: k, v = o.split(':'); pose[k.strip().lower()] = v.strip()
-            elif who != 'NARATOR': expr[who.lower()] = o
+            elif who != 'NARATOR': expr[who.lower()] = ex(o)
         cam = (L['cam'] or '').strip()
         if not cam:
             if who != 'NARATOR' and who.lower() in castnames: cam = f'cu:{who.lower()}'
@@ -120,7 +123,7 @@ def main():
         if grade: d['grade'] = grade
         if cam.startswith('hp'):
             parts = [x.strip() for x in (L['hp'] or '').split('|')]
-            d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'chat',
+            d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'post' if 'post' in cam else 'chat',
                           'grup': 'grup' in cam, 'gelap': 'gelap' in cam}
         shots.append(d)
         # subtitle

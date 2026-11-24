@@ -46,5 +46,5 @@ Tidak perlu menulis shot satu per satu atau mengecek kamera berulang:
 
 `lib/auto.js` berisi `LOKASI` (slot tokoh tiap lokasi, batas & penghalang kamera) dan penentu kamera otomatis:
 `cu`/`mcu` (sudut 3/4 yang tidak terhalang kepala lain), `dua` (two-shot dari balik bahu), `lebar`, `hp*` (layar ponsel).
-Tokoh: kunci di `lib/cast.js` (`dimas#perban` = varian). Lokasi baru = tambah set di `sets.js` + entri `LOKASI`.
+Tokoh: kunci di `lib/cast.js` (aturan pengguna: tanpa kerudung; perempuan pakai rambut `panjang`) (`dimas#perban` = varian). Lokasi baru = tambah set di `sets.js` + entri `LOKASI`.
 Shot khusus (rekaman CCTV, kejadian fisik) tetap bisa ditambahkan manual ke file episode hasil generator.

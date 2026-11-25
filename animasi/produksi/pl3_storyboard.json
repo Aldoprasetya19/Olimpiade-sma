@@ -1,0 +1,392 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 78.52,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "SERA": {
+   "warna": "#FFD84A"
+  },
+  "MILA": {
+   "warna": "#8FE3D8"
+  },
+  "EKO": {
+   "warna": "#C7A4FF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 78.52,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 2.2,
+     "teks": "Bagian 3: Kejutan"
+    },
+    {
+     "start": 2.2,
+     "end": 3.53,
+     "teks": "untuk Pak Eko"
+    },
+    {
+     "start": 4.34,
+     "end": 5.3,
+     "teks": "Gelap."
+    },
+    {
+     "start": 5.3,
+     "end": 6.34,
+     "teks": "Aldo meraba dinding"
+    },
+    {
+     "start": 6.34,
+     "end": 7.12,
+     "teks": "dengan jantung"
+    },
+    {
+     "start": 7.12,
+     "end": 8.27,
+     "teks": "berdebar."
+    },
+    {
+     "start": 8.96,
+     "end": 10.44,
+     "teks": "Lalu lampu menyala"
+    },
+    {
+     "start": 10.44,
+     "end": 11.07,
+     "teks": "lagi."
+    },
+    {
+     "start": 11.44,
+     "end": 12.34,
+     "teks": "Di depan mereka"
+    },
+    {
+     "start": 12.34,
+     "end": 13.9,
+     "teks": "berdiri Elisabeth,"
+    },
+    {
+     "start": 13.9,
+     "end": 14.64,
+     "teks": "Manohara,"
+    },
+    {
+     "start": 14.64,
+     "end": 15.5,
+     "teks": "dan Septi dari"
+    },
+    {
+     "start": 15.5,
+     "end": 17.1,
+     "teks": "kelas 11 bersama"
+    },
+    {
+     "start": 17.1,
+     "end": 17.74,
+     "teks": "Naura dari kelas"
+    },
+    {
+     "start": 17.74,
+     "end": 18.35,
+     "teks": "10."
+    },
+    {
+     "start": 18.74,
+     "end": 19.52,
+     "teks": "Mereka memegang"
+    },
+    {
+     "start": 19.52,
+     "end": 20.46,
+     "teks": "piala yang sudah"
+    },
+    {
+     "start": 20.46,
+     "end": 21.42,
+     "teks": "dicat ulang dengan"
+    },
+    {
+     "start": 21.42,
+     "end": 23.19,
+     "teks": "warna emas berkilau."
+    },
+    {
+     "start": 23.28,
+     "end": 24.22,
+     "teks": "Di belakang mereka"
+    },
+    {
+     "start": 24.22,
+     "end": 25.82,
+     "teks": "terbentang spanduk:"
+    },
+    {
+     "start": 25.82,
+     "end": 26.48,
+     "teks": "\"Terima Kasih,"
+    },
+    {
+     "start": 26.48,
+     "end": 27.21,
+     "teks": "Pak Eko!\""
+    },
+    {
+     "start": 27.47,
+     "end": 28.72,
+     "teks": "Sera menghela napas"
+    },
+    {
+     "start": 28.72,
+     "end": 29.91,
+     "teks": "sambil tersenyum."
+    },
+    {
+     "start": 30.6,
+     "end": 31.78,
+     "teks": "\"Surat di tasmu",
+     "siapa": "SERA"
+    },
+    {
+     "start": 31.78,
+     "end": 32.86,
+     "teks": "itu dari aku,",
+     "siapa": "SERA"
+    },
+    {
+     "start": 32.86,
+     "end": 33.46,
+     "teks": "Aldo.",
+     "siapa": "SERA"
+    },
+    {
+     "start": 33.46,
+     "end": 34.1,
+     "teks": "Habisnya kamu",
+     "siapa": "SERA"
+    },
+    {
+     "start": 34.1,
+     "end": 35.49,
+     "teks": "terlalu pintar.\"",
+     "siapa": "SERA"
+    },
+    {
+     "start": 35.52,
+     "end": 36.28,
+     "teks": "Mila lalu"
+    },
+    {
+     "start": 36.28,
+     "end": 37.63,
+     "teks": "menjelaskan."
+    },
+    {
+     "start": 37.73,
+     "end": 38.92,
+     "teks": "Jumat nanti adalah",
+     "siapa": "MILA"
+    },
+    {
+     "start": 38.92,
+     "end": 39.86,
+     "teks": "hari terakhir Pak",
+     "siapa": "MILA"
+    },
+    {
+     "start": 39.86,
+     "end": 41.12,
+     "teks": "Eko mengajar sebelum",
+     "siapa": "MILA"
+    },
+    {
+     "start": 41.12,
+     "end": 42.09,
+     "teks": "pensiun.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 42.18,
+     "end": 43.26,
+     "teks": "Piala itu diraih",
+     "siapa": "MILA"
+    },
+    {
+     "start": 43.26,
+     "end": 44.1,
+     "teks": "sekolah berkat",
+     "siapa": "MILA"
+    },
+    {
+     "start": 44.1,
+     "end": 45.41,
+     "teks": "bimbingan beliau.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 45.56,
+     "end": 46.42,
+     "teks": "Anak kelas 12"
+    },
+    {
+     "start": 46.42,
+     "end": 47.46,
+     "teks": "menyiapkan kejutan"
+    },
+    {
+     "start": 47.46,
+     "end": 48.99,
+     "teks": "ini dan mengajak"
+    },
+    {
+     "start": 48.99,
+     "end": 49.8,
+     "teks": "adik-adik kelas 10"
+    },
+    {
+     "start": 49.8,
+     "end": 50.61,
+     "teks": "dan 11."
+    },
+    {
+     "start": 50.88,
+     "end": 51.66,
+     "teks": "Pak Agus juga"
+    },
+    {
+     "start": 51.66,
+     "end": 52.86,
+     "teks": "ikut membantu,"
+    },
+    {
+     "start": 52.86,
+     "end": 54.02,
+     "teks": "jadi wajah marahnya"
+    },
+    {
+     "start": 54.02,
+     "end": 54.98,
+     "teks": "hari Senin itu"
+    },
+    {
+     "start": 54.98,
+     "end": 56.09,
+     "teks": "hanya sandiwara."
+    },
+    {
+     "start": 56.46,
+     "end": 57.84,
+     "teks": "Hari Jumat tiba."
+    },
+    {
+     "start": 57.84,
+     "end": 58.94,
+     "teks": "Siswa dari ketiga"
+    },
+    {
+     "start": 58.94,
+     "end": 60.1,
+     "teks": "angkatan berkumpul"
+    },
+    {
+     "start": 60.1,
+     "end": 61.11,
+     "teks": "di lapangan."
+    },
+    {
+     "start": 61.2,
+     "end": 61.74,
+     "teks": "Saat Pak Eko"
+    },
+    {
+     "start": 61.74,
+     "end": 62.72,
+     "teks": "datang,"
+    },
+    {
+     "start": 62.72,
+     "end": 63.58,
+     "teks": "Aldo maju dan"
+    },
+    {
+     "start": 63.58,
+     "end": 64.54,
+     "teks": "menyerahkan piala"
+    },
+    {
+     "start": 64.54,
+     "end": 65.43,
+     "teks": "itu kepadanya."
+    },
+    {
+     "start": 65.78,
+     "end": 66.9,
+     "teks": "Pak Eko terdiam"
+    },
+    {
+     "start": 66.9,
+     "end": 67.72,
+     "teks": "lama,"
+    },
+    {
+     "start": 67.72,
+     "end": 68.62,
+     "teks": "lalu tersenyum"
+    },
+    {
+     "start": 68.62,
+     "end": 70.34,
+     "teks": "dengan mata"
+    },
+    {
+     "start": 70.34,
+     "end": 70.74,
+     "teks": "berkaca-kaca."
+    },
+    {
+     "start": 71.38,
+     "end": 72.82,
+     "teks": "\"Ini hadiah terbaik",
+     "siapa": "EKO"
+    },
+    {
+     "start": 72.82,
+     "end": 73.36,
+     "teks": "selama saya",
+     "siapa": "EKO"
+    },
+    {
+     "start": 73.36,
+     "end": 74.25,
+     "teks": "mengajar.\"",
+     "siapa": "EKO"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "KEJUTAN UNTUK",
+  "baris2": "PAK EKO",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 75.22,
+  "end": 78.52,
+  "judul": "TAMAT",
+  "sub": "Piala yang Hilang"
+ }
+}

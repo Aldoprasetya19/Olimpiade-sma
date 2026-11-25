@@ -112,6 +112,15 @@ export function ladder(h = 3) {
   return g;
 }
 export function crate(color = '#2f7fc1') { const g = new THREE.Group(); g.add(box(0.8, 0.5, 0.6, color, [0, 0.25, 0], { round: 0.03 })); return g; }
+export function piala() {
+  const g = new THREE.Group(); const gold = toon('#f2c230'), gd = toon('#c99a1a');
+  g.add(box(0.36, 0.12, 0.36, '#5d4033', [0, 0.06, 0], { round: 0.02 }));
+  const st = mesh(new THREE.CylinderGeometry(0.05, 0.08, 0.22, 12), gd); st.position.y = 0.23; g.add(st);
+  const cup = mesh(new THREE.CylinderGeometry(0.2, 0.09, 0.32, 20), gold); cup.position.y = 0.5; g.add(cup);
+  for (const s of [-1, 1]) { const h = mesh(new THREE.TorusGeometry(0.08, 0.025, 8, 16), gold); h.position.set(s * 0.22, 0.52, 0); h.rotation.y = Math.PI / 2; g.add(h); }
+  return g;
+}
+export function kalengCat() { const g = new THREE.Group(); const c = mesh(new THREE.CylinderGeometry(0.13, 0.13, 0.26, 16), toon('#d8d8d8')); c.position.y = 0.13; g.add(c); const l = mesh(new THREE.CylinderGeometry(0.135, 0.135, 0.03, 16), toon('#e0b020')); l.position.y = 0.27; g.add(l); return g; }
 export function bag(color = '#2d3a4a') { const g = new THREE.Group(); g.add(box(0.6, 0.7, 0.3, color, [0, 0.35, 0], { round: 0.1 })); return g; }
 
 function windowPane(w, h, glassColor, frame = '#f1f1f1') {
@@ -298,6 +307,47 @@ export const SETS = {
     art.position.set(2.8, 2.6, -5.45); scene.add(art);
     const pt = plant(); pt.position.set(-4.8, 0, -4.4); scene.add(pt);
     const win = windowPane(2.4, 1.6, '#ffcf95'); win.position.set(-5.95, 2.3, 0); win.rotation.y = Math.PI / 2; scene.add(win);
+    return {};
+  },
+  lobi(scene, o = {}) {
+    scene.userData.clear = 0x222222;
+    room(scene, { w: 14, d: 12, h: 5, wall: '#efe7d6', floorMat: toon('#fff', { map: tiles('#e3ddd0', '#c9c2b2', 6) }), trim: '#1f4e79' });
+    lights(scene, { sky: '#fffaf0', ground: '#9a8f7a', hemi: 1.7, sunI: 1.4, sunPos: [5, 10, 7] });
+    const cab = new THREE.Group(); cab.add(box(2.2, 0.5, 0.8, '#6b4430', [0, 0.25, 0]));
+    cab.add(box(2.2, 2.0, 0.8, noOutline(toon('#cfe8f4', { transparent: true, opacity: 0.35 })), [0, 1.5, 0], { cast: false }));
+    for (const x of [-1.08, 1.08]) cab.add(box(0.06, 2.0, 0.82, '#888', [x, 1.5, 0])); cab.add(box(2.2, 0.06, 0.82, '#888', [0, 2.5, 0])); cab.add(box(2.1, 0.04, 0.7, '#ddd', [0, 1.3, 0]));
+    if (o.adaPiala) { const pp = piala(); pp.position.set(0, 1.32, 0); cab.add(pp); }
+    cab.position.set(0, 0, -5.4); scene.add(cab);
+    const ban = textPlane(4.0, 0.7, (x, w, h) => { x.fillStyle = '#1f4e79'; x.fillRect(0, 0, w, h); x.fillStyle = '#fff'; x.font = `bold ${h * 0.5}px Oswald`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText('SMAN 1 NYUATAN', w / 2, h / 2 + 3); });
+    ban.position.set(0, 3.9, -5.95); scene.add(ban);
+    const spk = mesh(new THREE.ConeGeometry(0.25, 0.4, 16, 1, true), toon('#ddd', { side: THREE.DoubleSide })); spk.position.set(4.5, 3.9, -5.7); spk.rotation.x = Math.PI / 2; scene.add(spk);
+    for (const x of [-4.5, 4.5]) { const pt = plant(); pt.position.set(x, 0, -5.3); scene.add(pt); }
+    const dr = door('#7b5236'); dr.position.set(-6.95, 0, -1); dr.rotation.y = Math.PI / 2; scene.add(dr);
+    return {};
+  },
+  gudang(scene, o = {}) {
+    scene.userData.clear = 0x111111;
+    room(scene, { w: 10, d: 9, h: 4.2, wall: '#9c8f7c', floorMat: toon('#fff', { map: tiles('#7d7468', '#6a6156', 5) }), ceil: '#5a5248' });
+    lights(scene, { sky: '#fff1d0', ground: '#4a4038', hemi: 1.4, sunI: 1.1, sunPos: [2, 8, 4] });
+    const bulb = new THREE.PointLight('#ffd890', 5, 9, 1.5); bulb.position.set(0, 3.6, 0); scene.add(bulb);
+    for (let i = 0; i < 5; i++) { const c = crate(['#8b5a3c', '#6b4430', '#9c6b45'][i % 3]); c.position.set(-4 + (i % 3) * 0.9, Math.floor(i / 3) * 0.5, -4); scene.add(c); }
+    for (let i = 0; i < 6; i++) { const k = kalengCat(); k.position.set(2.5 + (i % 3) * 0.35, 0, -3.8 + Math.floor(i / 3) * 0.35); scene.add(k); }
+    const ember = mesh(new THREE.CylinderGeometry(0.25, 0.2, 0.35, 16), toon('#3b7dd8')); ember.position.set(-1.5, 0.18, 2.5); scene.add(ember);
+    if (o.spanduk) { const sp = textPlane(5.0, 1.0, (x, w, h) => { x.fillStyle = '#c0392b'; x.fillRect(0, 0, w, h); x.fillStyle = '#ffe9a8'; x.font = `bold ${h * 0.45}px Oswald`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText('TERIMA KASIH, PAK EKO!', w / 2, h / 2 + 3); }); sp.position.set(0, 2.9, -4.45); scene.add(sp); }
+    const dr = door('#5a4a3a'); dr.position.set(4.95, 0, 1.5); dr.rotation.y = -Math.PI / 2; scene.add(dr);
+    return {};
+  },
+  lapangan(scene, o = {}) {
+    scene.userData.clear = 0x222222;
+    sky(scene, '#86bde6', '#e8f3f8');
+    const g = mesh(new THREE.PlaneGeometry(60, 60), noOutline(toon('#7fb069')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
+    const court = mesh(new THREE.PlaneGeometry(14, 10), noOutline(toon('#c9b48f')), { cast: false }); court.rotation.x = -Math.PI / 2; court.position.y = 0.01; scene.add(court);
+    lights(scene, { sky: '#eaf5ff', ground: '#6f8a5a', hemi: 1.6, sunPos: [6, 10, 6], shadowSize: 12 });
+    const bld = box(20, 5, 4, '#efe3c6', [0, 2.5, -10]); scene.add(bld);
+    for (let i = -4; i <= 4; i++) { const w = windowPane(1.4, 1.2, '#9fc7dd'); w.position.set(i * 2.1, 3, -7.95); scene.add(w); }
+    const pole = box(0.08, 6, 0.08, '#ccc', [6, 3, -6]); scene.add(pole);
+    const fl = textPlane(1.2, 0.8, (x, w, h) => { x.fillStyle = '#d62828'; x.fillRect(0, 0, w, h / 2); x.fillStyle = '#fff'; x.fillRect(0, h / 2, w, h / 2); }); fl.position.set(6.62, 5.5, -6); scene.add(fl);
+    if (o.spanduk) { const sp = textPlane(5.0, 1.0, (x, w, h) => { x.fillStyle = '#c0392b'; x.fillRect(0, 0, w, h); x.fillStyle = '#ffe9a8'; x.font = `bold ${h * 0.45}px Oswald`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText('TERIMA KASIH, PAK EKO!', w / 2, h / 2 + 3); }); sp.position.set(0, 3.2, -7.9); scene.add(sp); }
     return {};
   },
   kosong(scene, o = {}) { // studio polos untuk kenangan / insert

@@ -1,0 +1,26 @@
+# judul: KEJUTAN UNTUK | PAK EKO
+# akhir: TAMAT | Piala yang Hilang
+[gudang] p1=aldo p2=aldos p3=gabriel
+NARATOR {lebar} (grade=gelap): Bagian 3: Kejutan untuk Pak Eko
+NARATOR {cu:aldo} (aldo=cemas, grade=gelap): Gelap. Aldo meraba dinding dengan jantung berdebar.
+NARATOR {lebar} (aldo=kaget, flash): Lalu lampu menyala lagi.
+[gudangKejutan] p1=elisabeth p2=manohara p3=septi p4=naura
+NARATOR {lebar} (elisabeth=senang, manohara=senang, septi=senang, naura=senang, manohara:piala): Di depan mereka berdiri Elisabeth, Manohara, dan Septi dari kelas 11 bersama Naura dari kelas 10.
+NARATOR {cu:manohara} (manohara:piala, manohara=senang): Mereka memegang piala yang sudah dicat ulang dengan warna emas berkilau.
+NARATOR {lebar} (manohara:piala): Di belakang mereka terbentang spanduk: "Terima Kasih, Pak Eko!"
+[gudangKejutan] p1=aldo p2=sera p3=mila
+NARATOR {cu:sera} (sera=senyum): Sera menghela napas sambil tersenyum.
+SERA (senyum): "Surat di tasmu itu dari aku, Aldo. Habisnya kamu terlalu pintar."
+NARATOR {cu:mila} (mila=senyum, aldo=kaget): Mila lalu menjelaskan.
+MILA (senyum): Jumat nanti adalah hari terakhir Pak Eko mengajar sebelum pensiun.
+MILA (senyum): Piala itu diraih sekolah berkat bimbingan beliau.
+NARATOR {lebar} (aldo=senyum, sera=senang, mila=senang): Anak kelas 12 menyiapkan kejutan ini dan mengajak adik-adik kelas 10 dan 11.
+[lobi] p1=agus
+NARATOR {cu:agus} (agus=senang): Pak Agus juga ikut membantu, jadi wajah marahnya hari Senin itu hanya sandiwara.
+[lapangan] p1=gelly p2=aldos p3=aldo p4=hissari p5=mila
+NARATOR {lebar} (aldo=senyum, aldos=senyum, gelly=senang, hissari=senang, mila=senang): Hari Jumat tiba. Siswa dari ketiga angkatan berkumpul di lapangan.
+[lapangan] kiri=aldo kanan=eko
+NARATOR {lebar} (aldo:piala, aldo=senang, eko=kaget): Saat Pak Eko datang, Aldo maju dan menyerahkan piala itu kepadanya.
+NARATOR {cu:eko} (eko=sedih, eko:piala): Pak Eko terdiam lama, lalu tersenyum dengan mata berkaca-kaca.
+EKO (senyum, eko:piala): "Ini hadiah terbaik selama saya mengajar."
+NARATOR {akhir}: Tamat.

@@ -2,7 +2,8 @@
 // Dipakai oleh episode hasil tools/naskah_ke_episode.py. Lihat engine/README.md bagian "Jalur hemat".
 import * as THREE from 'three';
 import { CAST } from './cast.js';
-import { SETS, phone } from './sets.js';
+import { SETS, phone, piala, kalengCat } from './sets.js';
+import { hud as HUD } from './core.js';
 import { POSES, combine, addPose, idle } from './char.js';
 import { ease, lerp } from './core.js';
 import { drawChat, drawLock, drawBanner, avatar } from './phoneui.js';
@@ -24,17 +25,24 @@ export const LOKASI = {
     slot: { kiri: [-0.75, 1.0, Math.PI / 2, false], kanan: [0.75, 1.0, -Math.PI / 2, false], belakang1: [2.3, 2.0, -Math.PI * 0.3, false], belakang2: [1.5, 2.9, -Math.PI * 0.2, false], intip: [-3.2, 1.0, Math.PI * 0.7, false] } },
   ruangGuru: { set: 'ruangGuru', grade: 'pagi', bounds: [-5.6, 5.6, -5.1, 5.1],
     slot: { guru: [0, -2.6, 0, true], siswa1: [-1.3, -0.1, Math.PI, false], siswa2: [0, -0.05, Math.PI, false], siswa3: [1.3, -0.15, Math.PI, false] } },
+  lobi: { set: 'lobi', grade: 'pagi', bounds: [-6.6, 6.6, -5.6, 5.6], center: [0, -2.6], slot: { kiri: [-0.9, -1.0, Math.PI / 2, false], kanan: [0.9, -1.0, -Math.PI / 2, false] } },
+  lobiPiala: { set: 'lobi', setOpts: { adaPiala: true }, grade: 'kenangan', bounds: [-6.6, 6.6, -5.6, 5.6], center: [0, -2.6], slot: {} },
+  gudang: { set: 'gudang', grade: 'hangat', bounds: [-4.6, 4.6, -4.1, 4.1], center: [0, -1.6], slot: { kiri: [-0.9, 0.6, Math.PI / 2, false], kanan: [0.9, 0.6, -Math.PI / 2, false] } },
+  gudangKejutan: { set: 'gudang', setOpts: { spanduk: true }, grade: 'hangat', bounds: [-4.6, 4.6, -4.1, 4.1], center: [0, -2.0], slot: {} },
+  lapangan: { set: 'lapangan', setOpts: { spanduk: true }, grade: 'pagi', bounds: [-12, 12, -6, 12], center: [0, -1.5], kerumunan: true, slot: { kiri: [-0.9, 1.2, Math.PI / 2, false], kanan: [0.9, 1.2, -Math.PI / 2, false] } },
   koridor: { set: 'sekolahTangga', grade: 'pagi', bounds: [-7.6, 7.6, -5.6, 5.6],
     slot: { kiri: [-0.2, 1.6, Math.PI / 2, false], kanan: [1.6, 1.6, -Math.PI / 2, false], belakang1: [0.2, 0.1, 0.15, false], belakang2: [1.3, 0.0, -0.15, false] } },
 };
 
 const blocked = (L, x, z) => (L.blocks || []).some(([a, b, c, d]) => x > a && x < b && z > c && z < d);
 const headY = (sit) => (sit ? 1.73 : 1.98);
+const PEREMPUAN = ['mila', 'hissari', 'aulia', 'nikita', 'sisil', 'nava', 'dayinta', 'sera', 'elisabeth', 'manohara', 'septi', 'naura', 'misel', 'palsya'];
 const castMake = (key) => {
   const [k, opt] = key.split('#'); // mis. "dimas#perban"
   const o = opt === 'perban' ? { shortLeg: 1 } : opt === 'rumah' ? { shirt: '#2f4b7c', pants: '#3b3b44', badge: false, name: null, collar: false, sleeve: '#2f4b7c' } : {};
   if (CAST[k]) return CAST[k](o);
-  return CAST.siswa(k.length, o);
+  const nm = k.toUpperCase(), seed = [...k].reduce((a, ch) => a + ch.charCodeAt(0), 0);
+  return PEREMPUAN.includes(k) ? CAST.siswi(seed, { name: nm, ...o }) : CAST.siswa(seed, { name: nm, ...o });
 };
 
 // jarak titik ke ruas garis (3D)
@@ -116,11 +124,16 @@ export function autoShot(d) {
       const L = LOKASI[d.loc] || LOKASI.kelas;
       SETS[L.set](S.scene, L.setOpts || {});
       const chars = {}, heads = {};
+      const pn = Object.keys(d.cast || {}).filter(k => /^p\d+$/.test(k)).length;
+      if (L.kerumunan) for (let i = 0; i < 14; i++) { const c = (i % 2 ? CAST.siswi : CAST.siswa)(i * 7 + 3); S.add(c, [-6 + (i % 7) * 2 + (i > 6 ? 1 : 0), 0, -4.2 - (i > 6 ? 1.3 : 0)], 0); c.act(POSES.berdiri, 'senyum', 0, false, i); }
       for (const [slot, key] of Object.entries(d.cast || {})) {
-        const s = L.slot[slot]; if (!s) continue;
+        let s = L.slot[slot];
+        if (!s && /^p\d+$/.test(slot)) { const i = +slot.slice(1) - 1, off = i - (pn - 1) / 2, c0 = L.center || [0, 0]; s = [c0[0] + off * 1.05, c0[1] + Math.abs(off) * 0.25, -off * 0.12, false]; }
+        if (!s) continue;
         const c = castMake(key); const name = key.split('#')[0];
         S.add(c, [s[0], 0, s[1]], s[2]); chars[name] = { c, sit: s[3] };
         heads[name] = { x: s[0], y: headY(s[3]), z: s[1], rot: s[2] };
+        if (/^(piala|cat)/.test(d.pose?.[name] || '')) { const pr = d.pose[name] === 'piala' ? piala() : kalengCat(); c.handOf(-1).add(pr); pr.position.set(0.18, -0.05, 0.12); pr.rotation.set(Math.PI / 2 - 0.4, 0, 0); }
         if (/^(hp|telepon)/.test(d.pose?.[name] || '')) { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI);
           ph.draw(x => drawChat(x, { title: 'Chat', messages: [{ text: '...' }] })); }
       }
@@ -134,12 +147,20 @@ export function autoShot(d) {
       return (lt, k, t) => {
         for (const [name, { c, sit }] of Object.entries(chars)) {
           let p = sit ? POSES.duduk : POSES.berdiri;
-          const extra = d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
+          const extra = /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
           if (d.pose?.[name] === 'angguk') p = combine(p, { headX: lt < 1 ? Math.max(0, Math.sin(lt * 9)) * 0.3 : 0 });
           const talking = (d.talk || []).some(([a, b, w]) => w === name && t >= a && t <= b);
           c.act(p, d.expr?.[name] || 'netral', t, talking, seed.indexOf(name));
         }
         S.camMove(k, cam, end);
+        if (d.kertas) {
+          const a = Math.min(1, lt / 0.4), x = HUD; x.save(); x.globalAlpha = a; x.fillStyle = 'rgba(0,0,0,0.35)'; x.fillRect(0, 0, 720, 1280);
+          x.translate(360, 560); x.rotate(-0.04); x.fillStyle = '#f7f1e1'; x.shadowColor = 'rgba(0,0,0,0.4)'; x.shadowBlur = 30; x.fillRect(-270, -230, 540, 460); x.shadowBlur = 0;
+          x.fillStyle = '#2b2b5a'; x.font = 'italic 600 38px Nunito'; x.textAlign = 'center'; x.textBaseline = 'middle';
+          const words = d.kertas.split(' '); let line = '', y = -150; const lines = [];
+          for (const w of words) { const t2 = line ? line + ' ' + w : w; if (x.measureText(t2).width > 460) { lines.push(line); line = w; } else line = t2; } lines.push(line);
+          y = -((lines.length - 1) * 54) / 2 - 30; lines.forEach((l, i) => x.fillText(l, 0, y + i * 54)); x.restore();
+        }
         return d.grade || L.grade;
       };
     },

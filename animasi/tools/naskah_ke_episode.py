@@ -125,6 +125,7 @@ def main():
         d = {'t0': t0, 't1': t1, 'loc': sc['loc'], 'cast': sc['cast'], 'cam': cam.split('-')[0] if cam.startswith('hp') else cam,
              'expr': dict(expr), 'pose': pose, 'talk': talk_all, 'flash': flash}
         if grade: d['grade'] = grade
+        if cam == 'kertas': d['kertas'] = (L['hp'] or '').strip(); d['cam'] = 'lebar'
         if cam.startswith('hp'):
             parts = [x.strip() for x in (L['hp'] or '').split('|')]
             d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'post' if 'post' in cam else 'chat',

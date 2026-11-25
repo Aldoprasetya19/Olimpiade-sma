@@ -17,6 +17,8 @@ export const CAST = {
   mila: (o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: '#e0b07e', hair: '#2a1d16', hairStyle: 'panjang', name: 'MILA', glasses: true, blinkSeed: 1.9, ...o }),
   hissari: (o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: '#c98a52', hair: '#4a2c1c', hairStyle: 'panjang', name: 'HISSARI', blinkSeed: 2.7, ...o }),
   eko: (o = {}) => new Char({ skin: '#b67b48', hair: '#3a3530', hairStyle: 'teacher', shirt: '#2f5d8a', pants: '#2f2f35', badge: false, mustache: true, blinkSeed: 1.5, ...o }),
+  aldos: (o = {}) => new Char({ ...SERAGAM, skin: '#b98050', hair: '#2a1c12', hairStyle: 'bowl', name: 'ALDO S.', blinkSeed: 2.9, ...o }),
+  agus: (o = {}) => new Char({ skin: '#a96f3d', hair: '#4a4540', hairStyle: 'teacher', shirt: '#6b4a8a', pants: '#2f2f35', badge: false, glasses: true, blinkSeed: 0.8, ...o }),
   siswa: (i = 0, o = {}) => new Char({ ...SERAGAM, skin: ['#c98a52', '#e0b07e', '#b07040', '#d49a64'][i % 4], hair: '#2a2018', hairStyle: ['sidepart', 'bowl', 'curly', 'spiky'][i % 4], blinkSeed: i * 0.77, ...o }),
   siswi: (i = 0, o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: ['#d49a64', '#c98a52', '#e0b07e'][i % 3], hair: '#2a1d16', hairStyle: 'panjang', longSleeve: true, blinkSeed: i * 0.53, ...o }),
 };

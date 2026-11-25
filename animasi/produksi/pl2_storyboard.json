@@ -1,0 +1,373 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 68.94,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "MILA": {
+   "warna": "#8FE3D8"
+  },
+  "SERA": {
+   "warna": "#C7A4FF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 68.94,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 2.58,
+     "teks": "Bagian 2: Rahasia"
+    },
+    {
+     "start": 2.58,
+     "end": 3.39,
+     "teks": "di Gudang"
+    },
+    {
+     "start": 4.0,
+     "end": 5.68,
+     "teks": "Esok harinya,"
+    },
+    {
+     "start": 5.68,
+     "end": 6.48,
+     "teks": "Aldo memperhatikan"
+    },
+    {
+     "start": 6.48,
+     "end": 7.42,
+     "teks": "sesuatu yang"
+    },
+    {
+     "start": 7.42,
+     "end": 8.35,
+     "teks": "janggal."
+    },
+    {
+     "start": 8.46,
+     "end": 9.16,
+     "teks": "Tiga kakak kelas"
+    },
+    {
+     "start": 9.16,
+     "end": 10.04,
+     "teks": "12,"
+    },
+    {
+     "start": 10.04,
+     "end": 11.28,
+     "teks": "yaitu Rialdi,"
+    },
+    {
+     "start": 11.28,
+     "end": 11.82,
+     "teks": "Dika,"
+    },
+    {
+     "start": 11.82,
+     "end": 13.02,
+     "teks": "dan Palsya,"
+    },
+    {
+     "start": 13.02,
+     "end": 14.04,
+     "teks": "terus bolak-balik ke"
+    },
+    {
+     "start": 14.04,
+     "end": 15.35,
+     "teks": "gudang belakang."
+    },
+    {
+     "start": 15.48,
+     "end": 16.58,
+     "teks": "Adik kelas 10,"
+    },
+    {
+     "start": 16.58,
+     "end": 18.0,
+     "teks": "Nikita dan Sisil,"
+    },
+    {
+     "start": 18.0,
+     "end": 18.6,
+     "teks": "juga terlihat"
+    },
+    {
+     "start": 18.6,
+     "end": 19.56,
+     "teks": "membawa kaleng cat"
+    },
+    {
+     "start": 19.56,
+     "end": 20.46,
+     "teks": "ke arah yang"
+    },
+    {
+     "start": 20.46,
+     "end": 20.91,
+     "teks": "sama."
+    },
+    {
+     "start": 21.24,
+     "end": 22.47,
+     "teks": "\"Kita ikuti mereka,\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 22.48,
+     "end": 22.8,
+     "teks": "bisik Aldo."
+    },
+    {
+     "start": 22.8,
+     "end": 24.12,
+     "teks": "Sepulang sekolah,"
+    },
+    {
+     "start": 24.12,
+     "end": 24.88,
+     "teks": "Aldo,"
+    },
+    {
+     "start": 24.88,
+     "end": 25.86,
+     "teks": "Aldo S.,"
+    },
+    {
+     "start": 25.86,
+     "end": 26.7,
+     "teks": "Stefan,"
+    },
+    {
+     "start": 26.7,
+     "end": 27.22,
+     "teks": "Febri,"
+    },
+    {
+     "start": 27.22,
+     "end": 28.47,
+     "teks": "dan Gabriel"
+    },
+    {
+     "start": 28.47,
+     "end": 29.18,
+     "teks": "mengendap-endap ke"
+    },
+    {
+     "start": 29.18,
+     "end": 29.58,
+     "teks": "gudang."
+    },
+    {
+     "start": 29.58,
+     "end": 31.16,
+     "teks": "Nava dan Dayinta"
+    },
+    {
+     "start": 31.16,
+     "end": 32.22,
+     "teks": "berjaga di ujung"
+    },
+    {
+     "start": 32.22,
+     "end": 33.03,
+     "teks": "lorong."
+    },
+    {
+     "start": 33.08,
+     "end": 34.22,
+     "teks": "Pintu gudang sedikit"
+    },
+    {
+     "start": 34.22,
+     "end": 35.08,
+     "teks": "terbuka,"
+    },
+    {
+     "start": 35.08,
+     "end": 35.94,
+     "teks": "dan dari dalam"
+    },
+    {
+     "start": 35.94,
+     "end": 37.1,
+     "teks": "terdengar suara Kak"
+    },
+    {
+     "start": 37.1,
+     "end": 38.05,
+     "teks": "Mila dan Kak"
+    },
+    {
+     "start": 38.05,
+     "end": 38.9,
+     "teks": "Sera dari kelas"
+    },
+    {
+     "start": 38.9,
+     "end": 39.55,
+     "teks": "12."
+    },
+    {
+     "start": 39.9,
+     "end": 40.64,
+     "teks": "\"Catnya hampir",
+     "siapa": "MILA"
+    },
+    {
+     "start": 40.64,
+     "end": 41.39,
+     "teks": "kering,\"",
+     "siapa": "MILA"
+    },
+    {
+     "start": 41.54,
+     "end": 42.41,
+     "teks": "kata Mila."
+    },
+    {
+     "start": 42.54,
+     "end": 43.54,
+     "teks": "\"Pokoknya jangan",
+     "siapa": "SERA"
+    },
+    {
+     "start": 43.54,
+     "end": 44.26,
+     "teks": "sampai Pak Eko",
+     "siapa": "SERA"
+    },
+    {
+     "start": 44.26,
+     "end": 45.67,
+     "teks": "tahu sebelum Jumat,\"",
+     "siapa": "SERA"
+    },
+    {
+     "start": 45.7,
+     "end": 46.91,
+     "teks": "jawab Sera."
+    },
+    {
+     "start": 47.0,
+     "end": 48.32,
+     "teks": "Aldo terpaku."
+    },
+    {
+     "start": 48.32,
+     "end": 49.66,
+     "teks": "Pak Eko?"
+    },
+    {
+     "start": 49.66,
+     "end": 50.44,
+     "teks": "Apa hubungannya"
+    },
+    {
+     "start": 50.44,
+     "end": 51.22,
+     "teks": "dengan piala yang"
+    },
+    {
+     "start": 51.22,
+     "end": 51.67,
+     "teks": "hilang?"
+    },
+    {
+     "start": 51.94,
+     "end": 52.9,
+     "teks": "Gabriel melangkah"
+    },
+    {
+     "start": 52.9,
+     "end": 53.5,
+     "teks": "maju untuk"
+    },
+    {
+     "start": 53.5,
+     "end": 54.36,
+     "teks": "mengintip,"
+    },
+    {
+     "start": 54.36,
+     "end": 55.59,
+     "teks": "dan kakinya"
+    },
+    {
+     "start": 55.59,
+     "end": 56.24,
+     "teks": "menyenggol ember"
+    },
+    {
+     "start": 56.24,
+     "end": 57.16,
+     "teks": "kosong."
+    },
+    {
+     "start": 57.16,
+     "end": 58.42,
+     "teks": "Bunyinya menggema."
+    },
+    {
+     "start": 58.42,
+     "end": 60.26,
+     "teks": "Brak!"
+    },
+    {
+     "start": 60.26,
+     "end": 60.94,
+     "teks": "Pintu gudang"
+    },
+    {
+     "start": 60.94,
+     "end": 61.98,
+     "teks": "tertutup,"
+    },
+    {
+     "start": 61.98,
+     "end": 62.62,
+     "teks": "dan lampu di"
+    },
+    {
+     "start": 62.62,
+     "end": 63.68,
+     "teks": "dalam langsung"
+    },
+    {
+     "start": 63.68,
+     "end": 64.25,
+     "teks": "padam."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "RAHASIA",
+  "baris2": "DI GUDANG",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 65.64,
+  "end": 68.94,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Kejutan untuk Pak Eko"
+ }
+}

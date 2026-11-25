@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { CAST } from './cast.js';
 import { SETS, phone, piala, kalengCat } from './sets.js';
 import { hud as HUD } from './core.js';
-import { POSES, combine, addPose, idle } from './char.js';
+import { POSES, combine, addPose, idle, mixPose, walkPose } from './char.js';
 import { ease, lerp } from './core.js';
 import { drawChat, drawLock, drawBanner, avatar } from './phoneui.js';
 import { phoneInsert } from './shots.js';
@@ -114,6 +114,25 @@ export function solveOts(L, heads, first) {
   return null;
 }
 
+// ---------- properti yang bisa dipegang / berpindah tangan
+function kertasProp() {
+  const c = document.createElement('canvas'); c.width = 128; c.height = 170; const x = c.getContext('2d');
+  x.fillStyle = '#f7f1e1'; x.fillRect(0, 0, 128, 170); x.fillStyle = '#7a7aa0'; for (let i = 0; i < 7; i++) x.fillRect(14, 22 + i * 20, 100 - (i % 3) * 18, 5);
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(0.36, 0.48), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(c), side: THREE.DoubleSide }));
+  m.userData.outlineParameters = { visible: false }; const g = new THREE.Group(); g.add(m); return g;
+}
+function makeProp(kind) {
+  if (kind === 'piala') { const g = piala(); g.userData.off = [[0.15, -0.05, 0.12], [Math.PI / 2 - 0.4, 0, 0]]; return g; }
+  if (kind === 'cat') { const g = kalengCat(); g.userData.off = [[0.05, -0.12, 0.1], [Math.PI / 2 - 0.4, 0, 0]]; return g; }
+  if (kind === 'hp') { const g = phone(); g.userData.off = [[0, -0.12, 0.1], [0, 0, Math.PI]]; return g; }
+  const g = kertasProp(); g.userData.off = [[0, -0.2, 0.1], [0, 0, Math.PI]]; return g;
+}
+function holdProp(c, pr) { const h = c.handOf(-1); if (pr.parent !== h) { h.add(pr); const [p, r] = pr.userData.off; pr.position.set(...p); pr.rotation.set(...r); } }
+const AKSI_POSE = {
+  tunjuk: POSES.tunjuk, tunduk: POSES.tunduk, raba: { shR: [-1.3, 0, 0.1], elR: -0.3, shL: [-1.3, 0, -0.1], elL: -0.3, torsoX: 0.1 },
+  intip: { torsoZ: 0.3, headZ: 0.2, torsoX: 0.15 }, baca: { ...POSES.hpDua, headX: 0.42 }, bawa: POSES.bawa, serahkan: POSES.serahkan,
+};
+
 // ---------- shot dari data
 // d: { loc, cast:{slot:key}, cam:'cu:aldo'|'mcu:aldo'|'dua'|'lebar'|'hp', who (bicara), expr:{key:expr}, pose:{key:pose}, talk:[[a,b,key]], phone:{...} }
 export function autoShot(d) {
@@ -137,6 +156,14 @@ export function autoShot(d) {
         if (/^(hp|telepon)/.test(d.pose?.[name] || '')) { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI);
           ph.draw(x => drawChat(x, { title: 'Chat', messages: [{ text: '...' }] })); }
       }
+      const props = {}, bags = {};
+      for (const [name, kindP] of Object.entries(d.hold || {})) if (chars[name]) { props[name] = makeProp(kindP); props[name].userData.kind = kindP; holdProp(chars[name].c, props[name]); }
+      for (const a of d.acts || []) {
+        if (!chars[a.who]) continue;
+        if (a.a === 'bukaTas') { const b = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.45, 0.22), new THREE.MeshToonMaterial({ color: '#34495e' })); b.position.set(0, 0.2, 0.42); chars[a.who].c.torso.add(b); bags[a.who] = b; b.visible = false; }
+        if ((a.a === 'bukaTas' || a.a === 'beri' || a.a === 'baca') && !props[a.who]) { props[a.who] = makeProp(a.prop || 'kertas'); props[a.who].userData.kind = a.prop || 'kertas'; props[a.who].visible = false; }
+      }
+      const base = {}; for (const [n, { c }] of Object.entries(chars)) base[n] = { x: c.root.position.x, z: c.root.position.z, r: c.root.rotation.y };
       const [kind, who] = (d.cam || 'dua').split(':');
       let cam;
       if ((kind === 'cu' || kind === 'mcu') && heads[who]) cam = solveCam(L, heads, who, kind === 'cu' ? { dist: 3.3, fov: 40 } : { dist: 4.3, fov: 46, high: 0.05 });
@@ -149,6 +176,29 @@ export function autoShot(d) {
           let p = sit ? POSES.duduk : POSES.berdiri;
           const extra = /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
           if (d.pose?.[name] === 'angguk') p = combine(p, { headX: lt < 1 ? Math.max(0, Math.sin(lt * 9)) * 0.3 : 0 });
+          if (props[name]?.parent === c.handOf(-1) && props[name].visible !== false) p = combine(p, props[name].userData.kind === 'kertas' ? AKSI_POSE.baca : props[name].userData.kind === 'hp' ? POSES.hp : AKSI_POSE.bawa);
+          const B = base[name]; let px = B.x, pz = B.z, rot = B.r;
+          const fx = Math.sin(B.r), fz = Math.cos(B.r);
+          for (const a of d.acts || []) {
+            const q = (t - a.t) / a.dur, qc = Math.max(0, Math.min(1, q));
+            if (a.who === name) {
+              if (a.a === 'jalan' || a.a === 'endap') { const dd = (1 - ease(qc)) * 2.6; px = B.x - fx * dd; pz = B.z - fz * dd; if (q < 1) p = combine(walkPose(t, a.a === 'endap' ? 0.6 : 1), a.a === 'endap' ? { torsoX: 0.35, hipsY: 0.65 } : {}); }
+              else if (a.a === 'pergi') { if (q > 0) { const dd = ease(qc) * 3; px = B.x + fx * dd; pz = B.z + fz * dd; if (q < 1) p = walkPose(t, 1); } }
+              else if (a.a === 'menoleh') { p = combine(p, { headY: (p.headY || 0) + 0.8 * ease(qc) * (a.arah || 1) }); }
+              else if (a.a === 'angguk') { if (q > 0 && q < 1) p = combine(p, { headX: Math.max(0, Math.sin(q * 18)) * 0.3 }); }
+              else if (a.a === 'bukaTas') {
+                if (bags[name]) bags[name].visible = q > -0.3 && q < 0.6;
+                if (q > 0 && q < 0.6) p = combine(p, { shR: [-0.45, 0, 0.35], elR: -0.7, shL: [-0.45, 0, -0.35], elL: -0.7, headX: 0.45 });
+                if (props[name]) { props[name].visible = q >= 0.55; if (q >= 0.55) { holdProp(c, props[name]); p = combine(p, AKSI_POSE.baca); } }
+              } else if (a.a === 'baca') { if (q > 0) { if (props[name]) { props[name].visible = true; holdProp(c, props[name]); } p = combine(p, AKSI_POSE.baca); } }
+              else if (a.a === 'beri' && chars[a.to]) {
+                const pr = props[name] || props[a.to]; if (pr) { pr.visible = true; if (q < 0.55) holdProp(c, pr); else { holdProp(chars[a.to].c, pr); props[a.to] = pr; if (props[name] === pr) delete props[name]; } }
+                if (q > 0 && q < 0.75) p = combine(p, mixPose({}, AKSI_POSE.serahkan, Math.sin(Math.PI * Math.min(1, q / 0.75))));
+              } else if (AKSI_POSE[a.a] && q > 0 && q < 1.3) p = combine(p, AKSI_POSE[a.a]);
+            }
+            if (a.a === 'beri' && a.to === name && q > 0.25 && q < 0.8) p = combine(p, AKSI_POSE.serahkan);
+          }
+          c.root.position.x = px; c.root.position.z = pz; c.root.rotation.y = rot;
           const talking = (d.talk || []).some(([a, b, w]) => w === name && t >= a && t <= b);
           c.act(p, d.expr?.[name] || 'netral', t, talking, seed.indexOf(name));
         }

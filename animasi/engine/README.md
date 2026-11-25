@@ -49,3 +49,12 @@ Tidak perlu menulis shot satu per satu atau mengecek kamera berulang:
 `cu`/`mcu` (sudut 3/4 yang tidak terhalang kepala lain), `dua` (two-shot dari balik bahu), `lebar`, `hp*` (layar ponsel).
 Tokoh: kunci di `lib/cast.js` (aturan pengguna: tanpa kerudung; perempuan pakai rambut `panjang`) (`dimas#perban` = varian). Lokasi baru = tambah set di `sets.js` + entri `LOKASI`.
 Shot khusus (rekaman CCTV, kejadian fisik) tetap bisa ditambahkan manual ke file episode hasil generator.
+
+### Aksi otomatis dari narasi
+`naskah_ke_episode.py` membaca kata kerja di baris NARATOR dan menjalankannya tepat saat kata itu terdengar
+(waktu dari transkrip): *berjalan/datang/tiba/maju/menghampiri* → jalan masuk, *mengendap-endap* → jalan jongkok,
+*pergi/pulang/menjauh* → jalan keluar, *membuka tas* → tas muncul lalu kertas di tangan, *melihat/membuka kertas/surat/catatan*
+dan *membaca* → membaca kertas, *menyerahkan/memberikan/menyodorkan* → barang (kertas/piala/cat/ponsel) pindah ke tokoh
+penerima (nama sesudah kata kerja, atau tokoh lain di adegan), *menoleh, menunduk, mengangguk, menunjuk/menemukan,
+mengintip, meraba*. Pelaku = nama tokoh terakhir yang disebut (daftar "A, B, dan C" ikut semua). Barang yang dipegang
+terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di naskah = mulai memegang barang itu.

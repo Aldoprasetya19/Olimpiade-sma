@@ -48,6 +48,41 @@ def transcribe(vo):
     segs, _ = m.transcribe(a, language='id', word_timestamps=True, beam_size=5)
     return [{'start': s.start, 'end': s.end, 'text': s.text, 'words': [{'w': w.word, 's': w.start, 'e': w.end} for w in s.words]} for s in segs]
 
+# ---- aksi dari kata kerja narasi
+VERB = [(r'^(berjalan|jalan|melangkah|mendekat|menghampiri|menghampirinya|datang|tiba|maju)$', 'jalan', 2.0),
+        (r'^(mengendap|mengendapendap)$', 'endap', 2.5), (r'^(pergi|pulang|menjauh|meninggalkan)$', 'pergi', 2.2),
+        (r'^(membaca|membacanya)$', 'baca', 2.0), (r'^(menyerahkan|memberikan|menyodorkan|memberi)$', 'beri', 1.6),
+        (r'^(menoleh)$', 'menoleh', 0.5), (r'^(menunduk)$', 'tunduk', 1.0), (r'^(mengangguk)$', 'angguk', 1.0),
+        (r'^(menunjuk|menemukan)$', 'tunjuk', 1.4), (r'^(mengintip)$', 'intip', 1.6), (r'^(meraba)$', 'raba', 2.0)]
+PROPW = {'kertas': 'kertas', 'surat': 'kertas', 'catatan': 'kertas', 'lembar': 'kertas', 'piala': 'piala', 'cat': 'cat', 'kaleng': 'cat', 'ponsel': 'hp', 'hp': 'hp'}
+
+def detect_actions(L, castnames, hold, last_subj):
+    toks = [w[0][1] for w in L['words']]; times = [w[1][0] for w in L['words']]
+    acts, subj = [], last_subj
+    for i, w in enumerate(toks):
+        if w in castnames:
+            if i > 0 and subj and toks[i - 1] in castnames + ['dan', 's'] and w not in subj: subj = subj + [w]
+            elif not (subj and w in subj and i > 0 and toks[i - 1] in castnames + ['dan', 's']): subj = [w]
+        if w == 'aldo' and i + 1 < len(toks) and toks[i + 1] == 's' and 'aldos' in castnames: subj = ['aldos']
+        if w == 'membuka' and i + 1 < len(toks) and toks[i + 1].startswith('tas'):
+            for s_ in subj or []: acts.append({'who': s_, 'a': 'bukaTas', 't': round(times[i], 2), 'dur': 1.6, 'prop': 'kertas'}); hold[s_] = 'kertas'
+            continue
+        if w in ('melihat', 'menatap', 'membuka') and any(x in PROPW and PROPW[x] == 'kertas' for x in toks[i + 1:i + 4]):
+            for s_ in subj or []: acts.append({'who': s_, 'a': 'baca', 't': round(times[i], 2), 'dur': 2.0, 'prop': 'kertas'}); hold[s_] = 'kertas'
+            continue
+        for rx, a, dur in VERB:
+            if not re.match(rx, w) or not subj: continue
+            prop = next((PROPW[x] for x in toks[i + 1:i + 5] if x in PROPW), None)
+            for s_ in subj:
+                e = {'who': s_, 'a': a, 't': round(times[i], 2), 'dur': dur}
+                if a == 'beri':
+                    to = next((x for x in toks[i + 1:] if x in castnames and x != s_), None) or next((x for x in castnames if x != s_), None)
+                    if not to: continue
+                    e['to'] = to; e['prop'] = prop or hold.get(s_) or 'kertas'; hold.pop(s_, None); hold[to] = e['prop']
+                if a == 'baca': e['prop'] = 'kertas'; hold[s_] = 'kertas'
+                acts.append(e)
+    return acts, subj
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('naskah'); ap.add_argument('vo'); ap.add_argument('--ep', required=True); ap.add_argument('--transkrip')
@@ -68,7 +103,7 @@ def main():
         if s.startswith('['):
             m = re.match(r'\[(\w+)([^\]]*)\]\s*(.*)', s)
             opts = dict(x.split('=') for x in m.group(2).split() if '=' in x)
-            scene = {'loc': m.group(1), 'grade': opts.get('grade'), 'cast': dict(x.split('=') for x in m.group(3).split() if '=' in x), 'expr': {}}
+            scene = {'loc': m.group(1), 'grade': opts.get('grade'), 'cast': dict(x.split('=') for x in m.group(3).split() if '=' in x), 'expr': {}, 'hold': {}}
             continue
         m = LINE.match(s)
         if not m: sys.exit(f'Baris tidak dikenali: {s}')
@@ -104,6 +139,7 @@ def main():
     shots, caps, karakter, ci = [], [], {}, 0
     talk_all = [[round(L['start'], 2), round(L['end'], 2), key(L['who'])] for L in lines if L['who'].strip().upper() != 'NARATOR']
     spoken = [L for L in lines if (L['cam'] or '') != 'akhir']
+    last_subj, last_scene, prev_acts = None, None, []
     for n, L in enumerate(spoken):
         who = L['who'].strip().upper(); sc = L['scene'] or {'loc': 'kelas', 'cast': {}, 'expr': {}}
         castnames = [v.split('#')[0] for v in sc['cast'].values()]
@@ -130,6 +166,14 @@ def main():
             parts = [x.strip() for x in (L['hp'] or '').split('|')]
             d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'post' if 'post' in cam else 'chat',
                           'grup': 'grup' in cam, 'gelap': 'gelap' in cam}
+        hold0 = dict(sc.setdefault('hold', {}))
+        for nm, ps in list(pose.items()):
+            if ps in ('piala', 'cat'): hold0[nm] = ps; sc['hold'][nm] = ps; del pose[nm]
+        if who == 'NARATOR':
+            acts, last_subj = detect_actions(L, castnames, sc['hold'], last_subj if last_scene is sc else None)
+        else: acts = []
+        last_scene = sc
+        d['acts'] = prev_acts + acts; d['hold'] = hold0; prev_acts = acts
         shots.append(d)
         # subtitle
         words = L['txt'].split()

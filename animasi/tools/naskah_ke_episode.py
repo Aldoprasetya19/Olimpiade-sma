@@ -32,7 +32,11 @@ WARNA = {'ALDO': '#FFFFFF', 'NAYA': '#FFB3C7', 'GRUP KELAS': '#9BE3B0', 'WALI KE
 CADANGAN = ['#FFD84A', '#8FE3D8', '#C7A4FF', '#FFB3C7', '#A8D8F8', '#FFC98A']
 LINE = re.compile(r'^(?P<who>[A-Za-z][A-Za-z ]*?)\s*(\{(?P<cam>[^}]*)\})?\s*(\((?P<ex>[^)]*)\))?\s*(\[(?P<hp>[^\]]*)\])?\s*:\s*(?P<txt>.+)$')
 ALIAS = {'santai': 'senyum', 'pelan': 'netral', 'bingung': 'curiga', 'ragu': 'menghindar', 'menahan sedih': 'sedih', 'menyesal': 'bersalah',
-         'jujur': 'serius', 'lembut': 'senyum', 'ramah': 'senang', 'hangat': 'senyum', 'kesal': 'marah', 'takut': 'cemas', 'tenang': 'netral'}
+         'jujur': 'serius', 'lembut': 'senyum', 'ramah': 'senang', 'hangat': 'senyum', 'kesal': 'marah', 'takut': 'cemas', 'tenang': 'netral',
+         'yakin': 'serius', 'penasaran': 'curiga', 'menyelidik': 'curiga', 'gugup': 'cemas', 'tegas': 'serius', 'kritis': 'serius', 'terbata': 'cemas',
+         'mengangguk': 'senyum', 'panik': 'kaget', 'heran': 'curiga', 'sinis': 'curiga', 'datar': 'netral', 'tegang': 'cemas', 'menunduk': 'bersalah',
+         'tersenyum': 'senyum', 'tertawa': 'senang'}
+key = lambda w: re.sub(r'^(pak|bu|kak) ', '', w.strip().lower())
 ex = lambda e: ALIAS.get(e.strip().lower(), e.strip())
 norm = lambda w: re.sub(r'[^0-9a-z]', '', w.lower())
 
@@ -98,7 +102,7 @@ def main():
     duration = round(max(audio + 0.3, (akhir or audio) + 3.3), 2)
     jd = 0.7 if meta.get('judul') else 0
     shots, caps, karakter, ci = [], [], {}, 0
-    talk_all = [[round(L['start'], 2), round(L['end'], 2), L['who'].strip().lower()] for L in lines if L['who'].strip().upper() != 'NARATOR']
+    talk_all = [[round(L['start'], 2), round(L['end'], 2), key(L['who'])] for L in lines if L['who'].strip().upper() != 'NARATOR']
     spoken = [L for L in lines if (L['cam'] or '') != 'akhir']
     for n, L in enumerate(spoken):
         who = L['who'].strip().upper(); sc = L['scene'] or {'loc': 'kelas', 'cast': {}, 'expr': {}}
@@ -109,10 +113,10 @@ def main():
             elif o.startswith('grade='): grade = o[6:]
             elif '=' in o: k, v = o.split('='); expr[k.strip().lower()] = ex(v)
             elif ':' in o: k, v = o.split(':'); pose[k.strip().lower()] = v.strip()
-            elif who != 'NARATOR': expr[who.lower()] = ex(o)
+            elif who != 'NARATOR': expr[key(who)] = ex(o)
         cam = (L['cam'] or '').strip()
         if not cam:
-            if who != 'NARATOR' and who.lower() in castnames: cam = f'cu:{who.lower()}'
+            if who != 'NARATOR' and key(who) in castnames: cam = f'cu:{key(who)}'
             else:
                 first = norm(L['txt'].split()[0])
                 cam = f'mcu:{first}' if first in castnames else ('dua' if n % 2 == 0 else 'lebar')
@@ -140,6 +144,22 @@ def main():
             caps.append(c)
     for i in range(len(caps) - 1): caps[i]['end'] = min(caps[i]['end'], caps[i + 1]['start'])
 
+    # pecah shot panjang (>4,5 dtk) dengan sudut bergantian agar tidak statis
+    import math, copy
+    out = []
+    for d in shots:
+        dur = d['t1'] - d['t0']; cam = d['cam']
+        if cam == 'hp' or dur <= 4.5: out.append(d); continue
+        names = [v.split('#')[0] for v in d['cast'].values()]
+        if cam.startswith(('cu:', 'mcu:')):
+            who = cam.split(':')[1]; others = [x for x in names if x != who]
+            cyc = [cam, 'dua' if len(names) >= 2 else ('mcu:' + who if cam.startswith('cu') else 'cu:' + who)] + ([f'cu:{others[0]}'] if others else []) + [cam]
+        else: cyc = [cam, 'lebar' if cam == 'dua' else 'dua']
+        n = math.ceil(dur / 4.0)
+        for k in range(n):
+            e = copy.deepcopy(d); e['t0'] = round(d['t0'] + dur * k / n, 2); e['t1'] = round(d['t0'] + dur * (k + 1) / n, 2)
+            e['cam'] = cyc[k % len(cyc)]; e['flash'] = d['flash'] and k == 0; out.append(e)
+    shots = out
     data = {'duration': duration, 'endcard': akhir and round(akhir - 0.05, 2), 'shots': shots}
     js = os.path.join(root, 'engine', 'episodes', f'{a.ep}.js')
     open(js, 'w').write("// Dibuat otomatis oleh tools/naskah_ke_episode.py — boleh diedit/ditambah shot khusus.\n"

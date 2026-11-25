@@ -1,0 +1,29 @@
+# judul: KLARIFIKASI | GERBANG
+# akhir: TAMAT | Satu Meja Lagi
+[koridor] kiri=aldo kanan=gelly belakang1=mila belakang2=hissari
+NARATOR: Sebelum melangkah ke gerbang, Aldo membuka lembar catatan yang disodorkan Mila.
+NARATOR {cu:aldo}: Di halaman paling belakang, tertulis daftar susunan panitia acara kelas dengan nama Aldo yang sudah dicoret dan diganti Rialdi.
+MILA (pelan): Kemarin kertas ini ketinggalan di meja piket. Aku simpan biar nggak bikin heboh satu kelas.
+HISSARI (kesal): Sudah jelas banget kan, Do? Rialdi memang sengaja nyingkirin kamu pelan-pelan.
+GELLY (pelan): Hipotesisku makin nggak terbantahkan, Do. Kamu mau aku temenin ke gerbang?
+ALDO (tenang): Nggak usah, Gel. Biar aku selesaikan sendiri. Makasih ya, Mil, Sar.
+[gerbang] kiri=aldo kanan=justin belakang1=rialdi belakang2=dika
+NARATOR: Suasana di depan gerbang sekolah mulai sepi. Justin berdiri bersandar di dekat pos satpam, sementara Rialdi dan Dika menunggu beberapa meter di belakangnya.
+NARATOR {cu:justin}: Begitu melihat Aldo berjalan mendekat, Justin langsung menghampiri dengan wajah gelisah.
+JUSTIN (ragu): Do, syukurlah kamu belum pulang. Aku mau jelasin semuanya.
+ALDO (datar): Jelasin soal grup baru kalian, atau soal nama aku yang dicoret dari kepanitiaan?
+NARATOR: Justin terdiam kaku. Rialdi dan Dika yang mendengar kalimat itu ikut melangkah maju.
+RIALDI (tegang): Kamu tahu dari siapa, Do?
+ALDO (tenang): Nggak penting tahu dari siapa. Yang aku bingung, kenapa kalian harus pura-pura batalin kerja kelompok dan bikin grup rahasia?
+DIKA (menunduk): Maaf, Do. Awalnya kami cuma ngerasa kebebanan sama standar tugas kamu yang selalu tinggi. Kami takut ngecewain kamu.
+RIALDI (pelan): Dan soal kepanitiaan... aku pikir kamu bakal sibuk ngurusin materi lomba bulan depan, jadi aku inisiatif ambil alih tanpa nanya kamu dulu. Aku salah, Do.
+JUSTIN (menyesal): Aku yang paling salah, Do. Harusnya dari awal aku jujur ke kamu, bukannya malah ikut-ikutan nutupin dan bilang acaranya batal.
+NARATOR {cu:aldo}: Aldo menghela napas panjang, menatap ketiga temannya bergantian. Rasa kecewanya perlahan mereda melihat mereka berani mengakui kesalahan secara langsung.
+ALDO (santai): Lain kali kalau ada yang nggak sreg sama caraku kerja, ngomong langsung. Nggak perlu pakai drama grup rahasia segala.
+RIALDI (lega): Jadi... kamu nggak marah, Do?
+ALDO (tersenyum): Marah sih dikit. Tapi buat nebusnya, kalian bertiga yang traktir di kantin besok istirahat pertama.
+DIKA (tertawa): Siap, Bos! Aman kalau soal itu!
+JUSTIN (senang): Deal! Dan grup kecilnya udah aku hapus barusan.
+NARATOR {hp} [Gelly | Status observasi: Justin kembali setia. Hipotesis ditolak.]: Ponsel Aldo bergetar di saku. Sebuah pesan masuk dari Gelly yang ternyata sedari tadi mengintip dari balik tembok gerbang.
+NARATOR: Aldo tersenyum kecil membaca pesan itu, lalu merangkul pundak Justin dan berjalan pulang bersama Rialdi serta Dika.
+NARATOR {akhir}: Tamat.

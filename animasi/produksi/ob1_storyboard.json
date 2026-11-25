@@ -1,0 +1,726 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 135.1,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "GELLY": {
+   "warna": "#FFD84A"
+  },
+  "PAK EKO": {
+   "warna": "#8FE3D8"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 135.1,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.0,
+     "teks": "Jam pelajaran"
+    },
+    {
+     "start": 1.0,
+     "end": 2.64,
+     "teks": "sosiologi hampir"
+    },
+    {
+     "start": 2.64,
+     "end": 4.65,
+     "teks": "habis ketika Gelly"
+    },
+    {
+     "start": 4.65,
+     "end": 4.96,
+     "teks": "tiba-tiba"
+    },
+    {
+     "start": 4.96,
+     "end": 5.62,
+     "teks": "melontarkan"
+    },
+    {
+     "start": 5.62,
+     "end": 7.1,
+     "teks": "pernyataan serius di"
+    },
+    {
+     "start": 7.1,
+     "end": 8.17,
+     "teks": "depan meja guru."
+    },
+    {
+     "start": 8.5,
+     "end": 9.34,
+     "teks": "Pak Eko,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 9.34,
+     "end": 10.14,
+     "teks": "Do,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 10.14,
+     "end": 11.26,
+     "teks": "dari hasil observasi",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 11.26,
+     "end": 12.18,
+     "teks": "aku selama seminggu",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 12.18,
+     "end": 13.0,
+     "teks": "ini,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 13.0,
+     "end": 13.64,
+     "teks": "Justin itu nggak",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 13.64,
+     "end": 14.37,
+     "teks": "setia.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 14.52,
+     "end": 16.22,
+     "teks": "Aldo menoleh cepat,"
+    },
+    {
+     "start": 16.22,
+     "end": 17.66,
+     "teks": "sementara Pak Eko"
+    },
+    {
+     "start": 17.66,
+     "end": 18.86,
+     "teks": "langsung meletakkan"
+    },
+    {
+     "start": 18.86,
+     "end": 19.84,
+     "teks": "spidol papan"
+    },
+    {
+     "start": 19.84,
+     "end": 20.61,
+     "teks": "tulisnya."
+    },
+    {
+     "start": 20.98,
+     "end": 21.86,
+     "teks": "Wah,",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 21.86,
+     "end": 22.4,
+     "teks": "berat sekali",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 22.4,
+     "end": 22.98,
+     "teks": "tuduhannya,",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 22.98,
+     "end": 23.92,
+     "teks": "Gel.",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 23.92,
+     "end": 24.68,
+     "teks": "Kalau kamu bilang",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 24.68,
+     "end": 26.72,
+     "teks": "hasil observasi,",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 26.72,
+     "end": 27.36,
+     "teks": "coba jelaskan",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 27.36,
+     "end": 28.5,
+     "teks": "seperti penelitian.",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 28.5,
+     "end": 30.2,
+     "teks": "Bagaimana cara kamu",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 30.2,
+     "end": 31.47,
+     "teks": "mengobservasinya?",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 31.53,
+     "end": 31.74,
+     "teks": "Iya,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 31.74,
+     "end": 32.82,
+     "teks": "Gel.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 32.82,
+     "end": 34.05,
+     "teks": "Kamu ngamatin dia",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 34.05,
+     "end": 35.34,
+     "teks": "diam-diam atau",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 35.34,
+     "end": 36.12,
+     "teks": "gimana?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 36.12,
+     "end": 36.96,
+     "teks": "Ya...",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 36.96,
+     "end": 37.8,
+     "teks": "aku perhatiin aja",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 37.8,
+     "end": 38.66,
+     "teks": "tiap jam istirahat",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 38.66,
+     "end": 39.7,
+     "teks": "sama pulang sekolah,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 39.7,
+     "end": 40.26,
+     "teks": "Pak.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 40.26,
+     "end": 40.94,
+     "teks": "Dia sering jalan",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 40.94,
+     "end": 42.32,
+     "teks": "bareng Rialdi sama",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 42.32,
+     "end": 43.67,
+     "teks": "anak kelas sebelah.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 43.72,
+     "end": 44.6,
+     "teks": "Mengamati saja belum",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 44.6,
+     "end": 45.98,
+     "teks": "cukup.",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 45.98,
+     "end": 46.62,
+     "teks": "Dalam metode",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 46.62,
+     "end": 47.58,
+     "teks": "penelitian,",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 47.58,
+     "end": 48.44,
+     "teks": "kamu harus tentukan",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 48.44,
+     "end": 49.34,
+     "teks": "dulu hipotesis",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 49.34,
+     "end": 50.92,
+     "teks": "awalnya.",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 50.92,
+     "end": 51.9,
+     "teks": "Apa hipotesis kamu",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 51.9,
+     "end": 52.52,
+     "teks": "sebelum mulai",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 52.52,
+     "end": 53.47,
+     "teks": "mengamati Justin?",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 54.2,
+     "end": 55.1,
+     "teks": "Hipotesisnya...",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 55.1,
+     "end": 56.14,
+     "teks": "kalau Justin beneran",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 56.14,
+     "end": 56.86,
+     "teks": "setia kawan,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 56.86,
+     "end": 57.94,
+     "teks": "dia bakal selalu",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 57.94,
+     "end": 58.88,
+     "teks": "kumpul sama kita",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 58.88,
+     "end": 59.98,
+     "teks": "di kantin.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 59.98,
+     "end": 60.9,
+     "teks": "Terus variabelnya",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 60.9,
+     "end": 61.42,
+     "teks": "apa,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 61.42,
+     "end": 62.72,
+     "teks": "Gel?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 62.72,
+     "end": 64.34,
+     "teks": "Variabel bebas sama",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 64.34,
+     "end": 65.42,
+     "teks": "variabel terikatnya",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 65.42,
+     "end": 66.92,
+     "teks": "harus jelas biar",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 66.92,
+     "end": 68.17,
+     "teks": "nggak asal nuduh.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 77.94,
+     "end": 79.34,
+     "teks": "Variabel bebasnya...",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 79.34,
+     "end": 80.28,
+     "teks": "ajakan main dari",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 80.28,
+     "end": 81.26,
+     "teks": "Rialdi.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 81.26,
+     "end": 81.7,
+     "teks": "Variabel",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 81.7,
+     "end": 82.84,
+     "teks": "terikatnya...",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 82.84,
+     "end": 83.66,
+     "teks": "kesetiaan Justin",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 83.66,
+     "end": 84.91,
+     "teks": "milih tongkrongan.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 84.98,
+     "end": 85.42,
+     "teks": "Oke,",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 85.42,
+     "end": 86.34,
+     "teks": "masuk akal.",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 86.34,
+     "end": 86.98,
+     "teks": "Sekarang,",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 86.98,
+     "end": 87.64,
+     "teks": "dari data yang",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 87.64,
+     "end": 89.68,
+     "teks": "kamu kumpulkan,",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 89.68,
+     "end": 90.16,
+     "teks": "apa kesimpulan",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 90.16,
+     "end": 91.07,
+     "teks": "akhirnya?",
+     "siapa": "PAK EKO"
+    },
+    {
+     "start": 91.14,
+     "end": 92.16,
+     "teks": "Kesimpulannya,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 92.16,
+     "end": 92.9,
+     "teks": "hipotesis aku",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 92.9,
+     "end": 93.38,
+     "teks": "terbukti,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 93.38,
+     "end": 93.96,
+     "teks": "Pak.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 93.96,
+     "end": 94.72,
+     "teks": "Kemarin dia bilang",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 94.72,
+     "end": 95.48,
+     "teks": "ke Aldo kerja",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 95.48,
+     "end": 97.02,
+     "teks": "kelompoknya batal,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 97.02,
+     "end": 97.88,
+     "teks": "tapi ternyata dia",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 97.88,
+     "end": 98.64,
+     "teks": "malah ke perpus",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 98.64,
+     "end": 99.54,
+     "teks": "bareng Rialdi dan",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 99.54,
+     "end": 100.13,
+     "teks": "Dika.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 100.56,
+     "end": 101.98,
+     "teks": "Suasana di depan"
+    },
+    {
+     "start": 101.98,
+     "end": 103.04,
+     "teks": "kelas mendadak"
+    },
+    {
+     "start": 103.04,
+     "end": 103.88,
+     "teks": "hening."
+    },
+    {
+     "start": 103.88,
+     "end": 105.62,
+     "teks": "Aldo terdiam"
+    },
+    {
+     "start": 105.62,
+     "end": 107.46,
+     "teks": "mendengar nama Dika"
+    },
+    {
+     "start": 107.46,
+     "end": 108.65,
+     "teks": "ikut disebut."
+    },
+    {
+     "start": 108.7,
+     "end": 109.7,
+     "teks": "Ponsel Gelly"
+    },
+    {
+     "start": 109.7,
+     "end": 110.94,
+     "teks": "bergetar pelan di"
+    },
+    {
+     "start": 110.94,
+     "end": 112.18,
+     "teks": "atas meja,"
+    },
+    {
+     "start": 112.18,
+     "end": 112.82,
+     "teks": "menampilkan"
+    },
+    {
+     "start": 112.82,
+     "end": 114.41,
+     "teks": "notifikasi singkat."
+    },
+    {
+     "start": 118.6,
+     "end": 118.94,
+     "teks": "Tunggu dulu,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 118.94,
+     "end": 120.26,
+     "teks": "Gel.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 120.26,
+     "end": 120.9,
+     "teks": "Kamu tahu dia",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 120.9,
+     "end": 121.58,
+     "teks": "sama Dika dari",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 121.58,
+     "end": 122.71,
+     "teks": "mana?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 122.71,
+     "end": 123.56,
+     "teks": "Jangan-jangan kamu",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 123.56,
+     "end": 124.12,
+     "teks": "bukan cuma",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 124.12,
+     "end": 125.72,
+     "teks": "observasi,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 125.72,
+     "end": 126.3,
+     "teks": "tapi ikut di",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 126.3,
+     "end": 127.41,
+     "teks": "grup baru mereka?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 127.54,
+     "end": 127.89,
+     "teks": "Eh,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 127.89,
+     "end": 128.06,
+     "teks": "nggak,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 128.06,
+     "end": 128.56,
+     "teks": "Do!",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 128.56,
+     "end": 129.34,
+     "teks": "Itu cuma...",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 129.34,
+     "end": 130.54,
+     "teks": "variabel tambahan di",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 130.54,
+     "end": 131.17,
+     "teks": "lapangan!",
+     "siapa": "GELLY"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "OBSERVASI",
+  "baris2": "TIDAK SETIA",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 131.8,
+  "end": 135.1,
+  "judul": "BERSAMBUNG",
+  "sub": "Variabel Tambahan"
+ }
+}

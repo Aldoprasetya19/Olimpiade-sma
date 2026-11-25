@@ -1,0 +1,1644 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.4,
+  "text": " Jam pelajaran Sosiologi hampir habis.",
+  "words": [
+   {
+    "w": " Jam",
+    "s": 0.0,
+    "e": 0.38
+   },
+   {
+    "w": " pelajaran",
+    "s": 0.38,
+    "e": 1.0
+   },
+   {
+    "w": " Sosiologi",
+    "s": 1.0,
+    "e": 2.1
+   },
+   {
+    "w": " hampir",
+    "s": 2.1,
+    "e": 2.64
+   },
+   {
+    "w": " habis.",
+    "s": 2.64,
+    "e": 3.4
+   }
+  ]
+ },
+ {
+  "start": 3.5,
+  "end": 8.02,
+  "text": " Ketika Geli tiba-tiba melontarkan pernyataan serius di depan meja guru.",
+  "words": [
+   {
+    "w": " Ketika",
+    "s": 3.5,
+    "e": 4.04
+   },
+   {
+    "w": " Geli",
+    "s": 4.04,
+    "e": 4.3
+   },
+   {
+    "w": " tiba",
+    "s": 4.3,
+    "e": 4.68
+   },
+   {
+    "w": "-tiba",
+    "s": 4.68,
+    "e": 4.96
+   },
+   {
+    "w": " melontarkan",
+    "s": 4.96,
+    "e": 5.62
+   },
+   {
+    "w": " pernyataan",
+    "s": 5.62,
+    "e": 6.34
+   },
+   {
+    "w": " serius",
+    "s": 6.34,
+    "e": 6.86
+   },
+   {
+    "w": " di",
+    "s": 6.86,
+    "e": 7.1
+   },
+   {
+    "w": " depan",
+    "s": 7.1,
+    "e": 7.36
+   },
+   {
+    "w": " meja",
+    "s": 7.36,
+    "e": 7.68
+   },
+   {
+    "w": " guru.",
+    "s": 7.68,
+    "e": 8.02
+   }
+  ]
+ },
+ {
+  "start": 8.5,
+  "end": 12.74,
+  "text": " Pak Eko, Do, dari hasil observasi aku selama seminggu ini,",
+  "words": [
+   {
+    "w": " Pak",
+    "s": 8.5,
+    "e": 8.5
+   },
+   {
+    "w": " Eko,",
+    "s": 8.5,
+    "e": 8.98
+   },
+   {
+    "w": " Do,",
+    "s": 9.34,
+    "e": 9.72
+   },
+   {
+    "w": " dari",
+    "s": 10.14,
+    "e": 10.4
+   },
+   {
+    "w": " hasil",
+    "s": 10.4,
+    "e": 10.74
+   },
+   {
+    "w": " observasi",
+    "s": 10.74,
+    "e": 11.26
+   },
+   {
+    "w": " aku",
+    "s": 11.26,
+    "e": 11.46
+   },
+   {
+    "w": " selama",
+    "s": 11.46,
+    "e": 11.8
+   },
+   {
+    "w": " seminggu",
+    "s": 11.8,
+    "e": 12.18
+   },
+   {
+    "w": " ini,",
+    "s": 12.18,
+    "e": 12.74
+   }
+  ]
+ },
+ {
+  "start": 13.0,
+  "end": 14.22,
+  "text": " Justin itu nggak setia.",
+  "words": [
+   {
+    "w": " Justin",
+    "s": 13.0,
+    "e": 13.12
+   },
+   {
+    "w": " itu",
+    "s": 13.12,
+    "e": 13.48
+   },
+   {
+    "w": " nggak",
+    "s": 13.48,
+    "e": 13.64
+   },
+   {
+    "w": " setia.",
+    "s": 13.64,
+    "e": 14.22
+   }
+  ]
+ },
+ {
+  "start": 14.52,
+  "end": 16.08,
+  "text": " Aldo menoleh cepat,",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 14.52,
+    "e": 14.84
+   },
+   {
+    "w": " menoleh",
+    "s": 14.84,
+    "e": 15.36
+   },
+   {
+    "w": " cepat,",
+    "s": 15.36,
+    "e": 16.08
+   }
+  ]
+ },
+ {
+  "start": 16.22,
+  "end": 20.46,
+  "text": " sementara Pak Eko langsung meletakkan spidol papan tulisnya.",
+  "words": [
+   {
+    "w": " sementara",
+    "s": 16.22,
+    "e": 16.74
+   },
+   {
+    "w": " Pak",
+    "s": 16.74,
+    "e": 16.94
+   },
+   {
+    "w": " Eko",
+    "s": 16.94,
+    "e": 17.66
+   },
+   {
+    "w": " langsung",
+    "s": 17.66,
+    "e": 18.2
+   },
+   {
+    "w": " meletakkan",
+    "s": 18.2,
+    "e": 18.86
+   },
+   {
+    "w": " spidol",
+    "s": 18.86,
+    "e": 19.44
+   },
+   {
+    "w": " papan",
+    "s": 19.44,
+    "e": 19.84
+   },
+   {
+    "w": " tulisnya.",
+    "s": 19.84,
+    "e": 20.46
+   }
+  ]
+ },
+ {
+  "start": 20.98,
+  "end": 23.12,
+  "text": " Wah, berat sekali tuduhannya, Gel.",
+  "words": [
+   {
+    "w": " Wah,",
+    "s": 20.98,
+    "e": 21.14
+   },
+   {
+    "w": " berat",
+    "s": 21.86,
+    "e": 22.1
+   },
+   {
+    "w": " sekali",
+    "s": 22.1,
+    "e": 22.4
+   },
+   {
+    "w": " tuduhannya,",
+    "s": 22.4,
+    "e": 22.82
+   },
+   {
+    "w": " Gel.",
+    "s": 22.98,
+    "e": 23.12
+   }
+  ]
+ },
+ {
+  "start": 23.92,
+  "end": 26.18,
+  "text": " Kalau kamu bilang hasil observasi,",
+  "words": [
+   {
+    "w": " Kalau",
+    "s": 23.92,
+    "e": 24.16
+   },
+   {
+    "w": " kamu",
+    "s": 24.16,
+    "e": 24.44
+   },
+   {
+    "w": " bilang",
+    "s": 24.44,
+    "e": 24.68
+   },
+   {
+    "w": " hasil",
+    "s": 24.68,
+    "e": 25.04
+   },
+   {
+    "w": " observasi,",
+    "s": 25.04,
+    "e": 26.18
+   }
+  ]
+ },
+ {
+  "start": 26.72,
+  "end": 28.5,
+  "text": " coba jelaskan seperti penelitian.",
+  "words": [
+   {
+    "w": " coba",
+    "s": 26.72,
+    "e": 26.92
+   },
+   {
+    "w": " jelaskan",
+    "s": 26.92,
+    "e": 27.36
+   },
+   {
+    "w": " seperti",
+    "s": 27.36,
+    "e": 27.68
+   },
+   {
+    "w": " penelitian.",
+    "s": 27.68,
+    "e": 28.5
+   }
+  ]
+ },
+ {
+  "start": 28.5,
+  "end": 31.32,
+  "text": " Bagaimana cara kamu mengobservasinya?",
+  "words": [
+   {
+    "w": " Bagaimana",
+    "s": 28.5,
+    "e": 29.68
+   },
+   {
+    "w": " cara",
+    "s": 29.68,
+    "e": 29.9
+   },
+   {
+    "w": " kamu",
+    "s": 29.9,
+    "e": 30.2
+   },
+   {
+    "w": " mengobservasinya?",
+    "s": 30.2,
+    "e": 31.32
+   }
+  ]
+ },
+ {
+  "start": 31.74,
+  "end": 31.96,
+  "text": " Ya, Gel.",
+  "words": [
+   {
+    "w": " Ya,",
+    "s": 31.74,
+    "e": 31.74
+   },
+   {
+    "w": " Gel.",
+    "s": 31.74,
+    "e": 31.96
+   }
+  ]
+ },
+ {
+  "start": 32.82,
+  "end": 35.98,
+  "text": " Kamu ngamatin dia diam-diam atau gimana?",
+  "words": [
+   {
+    "w": " Kamu",
+    "s": 32.82,
+    "e": 33.06
+   },
+   {
+    "w": " ngamatin",
+    "s": 33.06,
+    "e": 33.46
+   },
+   {
+    "w": " dia",
+    "s": 33.46,
+    "e": 33.66
+   },
+   {
+    "w": " diam",
+    "s": 33.66,
+    "e": 33.94
+   },
+   {
+    "w": "-diam",
+    "s": 33.94,
+    "e": 34.44
+   },
+   {
+    "w": " atau",
+    "s": 34.44,
+    "e": 35.34
+   },
+   {
+    "w": " gimana?",
+    "s": 35.34,
+    "e": 35.98
+   }
+  ]
+ },
+ {
+  "start": 36.12,
+  "end": 39.86,
+  "text": " Ya, aku perhatiin aja tiap jam istirahat sama pulang sekolah, Pak.",
+  "words": [
+   {
+    "w": " Ya,",
+    "s": 36.12,
+    "e": 36.46
+   },
+   {
+    "w": " aku",
+    "s": 36.96,
+    "e": 37.12
+   },
+   {
+    "w": " perhatiin",
+    "s": 37.12,
+    "e": 37.64
+   },
+   {
+    "w": " aja",
+    "s": 37.64,
+    "e": 37.8
+   },
+   {
+    "w": " tiap",
+    "s": 37.8,
+    "e": 38.04
+   },
+   {
+    "w": " jam",
+    "s": 38.04,
+    "e": 38.22
+   },
+   {
+    "w": " istirahat",
+    "s": 38.22,
+    "e": 38.66
+   },
+   {
+    "w": " sama",
+    "s": 38.66,
+    "e": 38.88
+   },
+   {
+    "w": " pulang",
+    "s": 38.88,
+    "e": 39.16
+   },
+   {
+    "w": " sekolah,",
+    "s": 39.16,
+    "e": 39.62
+   },
+   {
+    "w": " Pak.",
+    "s": 39.7,
+    "e": 39.86
+   }
+  ]
+ },
+ {
+  "start": 40.26,
+  "end": 43.52,
+  "text": " Dia sering jalan bareng real di sama anak kelas sebelah.",
+  "words": [
+   {
+    "w": " Dia",
+    "s": 40.26,
+    "e": 40.42
+   },
+   {
+    "w": " sering",
+    "s": 40.42,
+    "e": 40.68
+   },
+   {
+    "w": " jalan",
+    "s": 40.68,
+    "e": 40.94
+   },
+   {
+    "w": " bareng",
+    "s": 40.94,
+    "e": 41.28
+   },
+   {
+    "w": " real",
+    "s": 41.28,
+    "e": 41.54
+   },
+   {
+    "w": " di",
+    "s": 41.54,
+    "e": 41.84
+   },
+   {
+    "w": " sama",
+    "s": 41.84,
+    "e": 42.32
+   },
+   {
+    "w": " anak",
+    "s": 42.32,
+    "e": 42.6
+   },
+   {
+    "w": " kelas",
+    "s": 42.6,
+    "e": 42.8
+   },
+   {
+    "w": " sebelah.",
+    "s": 42.8,
+    "e": 43.52
+   }
+  ]
+ },
+ {
+  "start": 43.72,
+  "end": 45.8,
+  "text": " Mengamati saja belum cukup.",
+  "words": [
+   {
+    "w": " Mengamati",
+    "s": 43.72,
+    "e": 44.14
+   },
+   {
+    "w": " saja",
+    "s": 44.14,
+    "e": 44.4
+   },
+   {
+    "w": " belum",
+    "s": 44.4,
+    "e": 44.6
+   },
+   {
+    "w": " cukup.",
+    "s": 44.6,
+    "e": 45.8
+   }
+  ]
+ },
+ {
+  "start": 45.98,
+  "end": 49.8,
+  "text": " Dalam metode penelitian, kamu harus tentukan dulu hipotesis awalnya.",
+  "words": [
+   {
+    "w": " Dalam",
+    "s": 45.98,
+    "e": 46.24
+   },
+   {
+    "w": " metode",
+    "s": 46.24,
+    "e": 46.62
+   },
+   {
+    "w": " penelitian,",
+    "s": 46.62,
+    "e": 47.36
+   },
+   {
+    "w": " kamu",
+    "s": 47.58,
+    "e": 47.72
+   },
+   {
+    "w": " harus",
+    "s": 47.72,
+    "e": 48.0
+   },
+   {
+    "w": " tentukan",
+    "s": 48.0,
+    "e": 48.44
+   },
+   {
+    "w": " dulu",
+    "s": 48.44,
+    "e": 48.72
+   },
+   {
+    "w": " hipotesis",
+    "s": 48.72,
+    "e": 49.34
+   },
+   {
+    "w": " awalnya.",
+    "s": 49.34,
+    "e": 49.8
+   }
+  ]
+ },
+ {
+  "start": 50.92,
+  "end": 53.32,
+  "text": " Apa hipotesis kamu sebelum mulai mengamati Justin?",
+  "words": [
+   {
+    "w": " Apa",
+    "s": 50.92,
+    "e": 51.04
+   },
+   {
+    "w": " hipotesis",
+    "s": 51.04,
+    "e": 51.6
+   },
+   {
+    "w": " kamu",
+    "s": 51.6,
+    "e": 51.9
+   },
+   {
+    "w": " sebelum",
+    "s": 51.9,
+    "e": 52.28
+   },
+   {
+    "w": " mulai",
+    "s": 52.28,
+    "e": 52.52
+   },
+   {
+    "w": " mengamati",
+    "s": 52.52,
+    "e": 52.98
+   },
+   {
+    "w": " Justin?",
+    "s": 52.98,
+    "e": 53.32
+   }
+  ]
+ },
+ {
+  "start": 54.2,
+  "end": 56.86,
+  "text": " Hipotesisnya, kalau Justin beneran setia kawan,",
+  "words": [
+   {
+    "w": " Hipotesisnya,",
+    "s": 54.2,
+    "e": 54.8
+   },
+   {
+    "w": " kalau",
+    "s": 55.1,
+    "e": 55.34
+   },
+   {
+    "w": " Justin",
+    "s": 55.34,
+    "e": 55.68
+   },
+   {
+    "w": " beneran",
+    "s": 55.68,
+    "e": 56.14
+   },
+   {
+    "w": " setia",
+    "s": 56.14,
+    "e": 56.46
+   },
+   {
+    "w": " kawan,",
+    "s": 56.46,
+    "e": 56.86
+   }
+  ]
+ },
+ {
+  "start": 56.86,
+  "end": 59.9,
+  "text": " dia bakal selalu kumpul sama kita di kantin.",
+  "words": [
+   {
+    "w": " dia",
+    "s": 56.86,
+    "e": 57.28
+   },
+   {
+    "w": " bakal",
+    "s": 57.28,
+    "e": 57.64
+   },
+   {
+    "w": " selalu",
+    "s": 57.64,
+    "e": 57.94
+   },
+   {
+    "w": " kumpul",
+    "s": 57.94,
+    "e": 58.32
+   },
+   {
+    "w": " sama",
+    "s": 58.32,
+    "e": 58.58
+   },
+   {
+    "w": " kita",
+    "s": 58.58,
+    "e": 58.88
+   },
+   {
+    "w": " di",
+    "s": 58.88,
+    "e": 59.1
+   },
+   {
+    "w": " kantin.",
+    "s": 59.1,
+    "e": 59.9
+   }
+  ]
+ },
+ {
+  "start": 59.98,
+  "end": 61.42,
+  "text": " Terus variabelnya apa, Gel?",
+  "words": [
+   {
+    "w": " Terus",
+    "s": 59.98,
+    "e": 60.22
+   },
+   {
+    "w": " variabelnya",
+    "s": 60.22,
+    "e": 60.9
+   },
+   {
+    "w": " apa,",
+    "s": 60.9,
+    "e": 61.2
+   },
+   {
+    "w": " Gel?",
+    "s": 61.42,
+    "e": 61.42
+   }
+  ]
+ },
+ {
+  "start": 62.72,
+  "end": 66.54,
+  "text": " Variabel bebas sama variabel terikatnya harus jelas,",
+  "words": [
+   {
+    "w": " Variabel",
+    "s": 62.72,
+    "e": 63.46
+   },
+   {
+    "w": " bebas",
+    "s": 63.46,
+    "e": 64.0
+   },
+   {
+    "w": " sama",
+    "s": 64.0,
+    "e": 64.34
+   },
+   {
+    "w": " variabel",
+    "s": 64.34,
+    "e": 64.84
+   },
+   {
+    "w": " terikatnya",
+    "s": 64.84,
+    "e": 65.42
+   },
+   {
+    "w": " harus",
+    "s": 65.42,
+    "e": 65.6
+   },
+   {
+    "w": " jelas,",
+    "s": 65.6,
+    "e": 66.54
+   }
+  ]
+ },
+ {
+  "start": 66.72,
+  "end": 68.02,
+  "text": " biar nggak asal nuduh.",
+  "words": [
+   {
+    "w": " biar",
+    "s": 66.72,
+    "e": 66.92
+   },
+   {
+    "w": " nggak",
+    "s": 66.92,
+    "e": 67.1
+   },
+   {
+    "w": " asal",
+    "s": 67.1,
+    "e": 67.38
+   },
+   {
+    "w": " nuduh.",
+    "s": 67.38,
+    "e": 68.02
+   }
+  ]
+ },
+ {
+  "start": 68.26,
+  "end": 71.26,
+  "text": " Geli menggaruh kepalanya yang tidak gatal,",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 68.26,
+    "e": 68.5
+   },
+   {
+    "w": " menggaruh",
+    "s": 68.5,
+    "e": 69.08
+   },
+   {
+    "w": " kepalanya",
+    "s": 69.08,
+    "e": 69.8
+   },
+   {
+    "w": " yang",
+    "s": 69.8,
+    "e": 70.28
+   },
+   {
+    "w": " tidak",
+    "s": 70.28,
+    "e": 70.64
+   },
+   {
+    "w": " gatal,",
+    "s": 70.64,
+    "e": 71.26
+   }
+  ]
+ },
+ {
+  "start": 71.58,
+  "end": 73.38,
+  "text": " mulai merasa terpocok",
+  "words": [
+   {
+    "w": " mulai",
+    "s": 71.58,
+    "e": 71.86
+   },
+   {
+    "w": " merasa",
+    "s": 71.86,
+    "e": 72.3
+   },
+   {
+    "w": " terpocok",
+    "s": 72.3,
+    "e": 73.38
+   }
+  ]
+ },
+ {
+  "start": 73.38,
+  "end": 77.66,
+  "text": " oleh pertanyaan beruntun dari Aldo dan Pak Eko.",
+  "words": [
+   {
+    "w": " oleh",
+    "s": 73.38,
+    "e": 73.78
+   },
+   {
+    "w": " pertanyaan",
+    "s": 73.78,
+    "e": 74.58
+   },
+   {
+    "w": " beruntun",
+    "s": 74.58,
+    "e": 75.38
+   },
+   {
+    "w": " dari",
+    "s": 75.38,
+    "e": 75.86
+   },
+   {
+    "w": " Aldo",
+    "s": 75.86,
+    "e": 76.44
+   },
+   {
+    "w": " dan",
+    "s": 76.44,
+    "e": 76.84
+   },
+   {
+    "w": " Pak",
+    "s": 76.84,
+    "e": 77.1
+   },
+   {
+    "w": " Eko.",
+    "s": 77.1,
+    "e": 77.66
+   }
+  ]
+ },
+ {
+  "start": 77.94,
+  "end": 81.06,
+  "text": " Variabel bebasnya ajakan main dari Rialdi.",
+  "words": [
+   {
+    "w": " Variabel",
+    "s": 77.94,
+    "e": 78.36
+   },
+   {
+    "w": " bebasnya",
+    "s": 78.36,
+    "e": 79.34
+   },
+   {
+    "w": " ajakan",
+    "s": 79.34,
+    "e": 79.8
+   },
+   {
+    "w": " main",
+    "s": 79.8,
+    "e": 80.0
+   },
+   {
+    "w": " dari",
+    "s": 80.0,
+    "e": 80.28
+   },
+   {
+    "w": " Rialdi.",
+    "s": 80.28,
+    "e": 81.06
+   }
+  ]
+ },
+ {
+  "start": 81.26,
+  "end": 82.68,
+  "text": " Variabel terikatnya,",
+  "words": [
+   {
+    "w": " Variabel",
+    "s": 81.26,
+    "e": 81.7
+   },
+   {
+    "w": " terikatnya,",
+    "s": 81.7,
+    "e": 82.68
+   }
+  ]
+ },
+ {
+  "start": 82.84,
+  "end": 84.76,
+  "text": " kesetiaan Justin milih tongkrongan.",
+  "words": [
+   {
+    "w": " kesetiaan",
+    "s": 82.84,
+    "e": 83.34
+   },
+   {
+    "w": " Justin",
+    "s": 83.34,
+    "e": 83.66
+   },
+   {
+    "w": " milih",
+    "s": 83.66,
+    "e": 83.96
+   },
+   {
+    "w": " tongkrongan.",
+    "s": 83.96,
+    "e": 84.76
+   }
+  ]
+ },
+ {
+  "start": 84.98,
+  "end": 86.34,
+  "text": " Oke, masuk akal.",
+  "words": [
+   {
+    "w": " Oke,",
+    "s": 84.98,
+    "e": 85.26
+   },
+   {
+    "w": " masuk",
+    "s": 85.42,
+    "e": 85.58
+   },
+   {
+    "w": " akal.",
+    "s": 85.58,
+    "e": 86.34
+   }
+  ]
+ },
+ {
+  "start": 86.34,
+  "end": 89.18,
+  "text": " Sekarang dari data yang kamu kumpulkan,",
+  "words": [
+   {
+    "w": " Sekarang",
+    "s": 86.34,
+    "e": 86.98
+   },
+   {
+    "w": " dari",
+    "s": 86.98,
+    "e": 87.24
+   },
+   {
+    "w": " data",
+    "s": 87.24,
+    "e": 87.5
+   },
+   {
+    "w": " yang",
+    "s": 87.5,
+    "e": 87.64
+   },
+   {
+    "w": " kamu",
+    "s": 87.64,
+    "e": 87.88
+   },
+   {
+    "w": " kumpulkan,",
+    "s": 87.88,
+    "e": 89.18
+   }
+  ]
+ },
+ {
+  "start": 89.68,
+  "end": 90.92,
+  "text": " apa kesimpulan akhirnya?",
+  "words": [
+   {
+    "w": " apa",
+    "s": 89.68,
+    "e": 89.72
+   },
+   {
+    "w": " kesimpulan",
+    "s": 89.72,
+    "e": 90.16
+   },
+   {
+    "w": " akhirnya?",
+    "s": 90.16,
+    "e": 90.92
+   }
+  ]
+ },
+ {
+  "start": 91.14,
+  "end": 93.76,
+  "text": " Kesimpulannya, hipotesis aku terbukti Pak.",
+  "words": [
+   {
+    "w": " Kesimpulannya,",
+    "s": 91.14,
+    "e": 91.84
+   },
+   {
+    "w": " hipotesis",
+    "s": 92.16,
+    "e": 92.6
+   },
+   {
+    "w": " aku",
+    "s": 92.6,
+    "e": 92.9
+   },
+   {
+    "w": " terbukti",
+    "s": 92.9,
+    "e": 93.38
+   },
+   {
+    "w": " Pak.",
+    "s": 93.38,
+    "e": 93.76
+   }
+  ]
+ },
+ {
+  "start": 93.96,
+  "end": 96.86,
+  "text": " Kemarin dia bilang ke Aldo kerja kelompoknya batal,",
+  "words": [
+   {
+    "w": " Kemarin",
+    "s": 93.96,
+    "e": 94.26
+   },
+   {
+    "w": " dia",
+    "s": 94.26,
+    "e": 94.5
+   },
+   {
+    "w": " bilang",
+    "s": 94.5,
+    "e": 94.72
+   },
+   {
+    "w": " ke",
+    "s": 94.72,
+    "e": 94.94
+   },
+   {
+    "w": " Aldo",
+    "s": 94.94,
+    "e": 95.16
+   },
+   {
+    "w": " kerja",
+    "s": 95.16,
+    "e": 95.48
+   },
+   {
+    "w": " kelompoknya",
+    "s": 95.48,
+    "e": 96.08
+   },
+   {
+    "w": " batal,",
+    "s": 96.08,
+    "e": 96.86
+   }
+  ]
+ },
+ {
+  "start": 97.02,
+  "end": 99.98,
+  "text": " tapi ternyata dia malah keperpus bareng Rialdi dan Dika.",
+  "words": [
+   {
+    "w": " tapi",
+    "s": 97.02,
+    "e": 97.26
+   },
+   {
+    "w": " ternyata",
+    "s": 97.26,
+    "e": 97.68
+   },
+   {
+    "w": " dia",
+    "s": 97.68,
+    "e": 97.88
+   },
+   {
+    "w": " malah",
+    "s": 97.88,
+    "e": 98.2
+   },
+   {
+    "w": " keperpus",
+    "s": 98.2,
+    "e": 98.64
+   },
+   {
+    "w": " bareng",
+    "s": 98.64,
+    "e": 99.02
+   },
+   {
+    "w": " Rialdi",
+    "s": 99.02,
+    "e": 99.34
+   },
+   {
+    "w": " dan",
+    "s": 99.34,
+    "e": 99.54
+   },
+   {
+    "w": " Dika.",
+    "s": 99.54,
+    "e": 99.98
+   }
+  ]
+ },
+ {
+  "start": 100.56,
+  "end": 103.64,
+  "text": " Suasana di depan kelas mendadak hening,",
+  "words": [
+   {
+    "w": " Suasana",
+    "s": 100.56,
+    "e": 101.28
+   },
+   {
+    "w": " di",
+    "s": 101.28,
+    "e": 101.5
+   },
+   {
+    "w": " depan",
+    "s": 101.5,
+    "e": 101.98
+   },
+   {
+    "w": " kelas",
+    "s": 101.98,
+    "e": 102.36
+   },
+   {
+    "w": " mendadak",
+    "s": 102.36,
+    "e": 103.04
+   },
+   {
+    "w": " hening,",
+    "s": 103.04,
+    "e": 103.64
+   }
+  ]
+ },
+ {
+  "start": 103.88,
+  "end": 105.38,
+  "text": " Aldo terdiam.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 103.88,
+    "e": 104.72
+   },
+   {
+    "w": " terdiam.",
+    "s": 104.72,
+    "e": 105.38
+   }
+  ]
+ },
+ {
+  "start": 105.62,
+  "end": 108.5,
+  "text": " Mendengar nama Dika, ikut disebut.",
+  "words": [
+   {
+    "w": " Mendengar",
+    "s": 105.62,
+    "e": 106.3
+   },
+   {
+    "w": " nama",
+    "s": 106.3,
+    "e": 106.6
+   },
+   {
+    "w": " Dika,",
+    "s": 106.6,
+    "e": 107.12
+   },
+   {
+    "w": " ikut",
+    "s": 107.46,
+    "e": 107.74
+   },
+   {
+    "w": " disebut.",
+    "s": 107.74,
+    "e": 108.5
+   }
+  ]
+ },
+ {
+  "start": 108.7,
+  "end": 111.88,
+  "text": " Ponsel Geli bergetar pelan di atas meja,",
+  "words": [
+   {
+    "w": " Ponsel",
+    "s": 108.7,
+    "e": 109.3
+   },
+   {
+    "w": " Geli",
+    "s": 109.3,
+    "e": 109.7
+   },
+   {
+    "w": " bergetar",
+    "s": 109.7,
+    "e": 110.44
+   },
+   {
+    "w": " pelan",
+    "s": 110.44,
+    "e": 110.72
+   },
+   {
+    "w": " di",
+    "s": 110.72,
+    "e": 110.94
+   },
+   {
+    "w": " atas",
+    "s": 110.94,
+    "e": 111.2
+   },
+   {
+    "w": " meja,",
+    "s": 111.2,
+    "e": 111.88
+   }
+  ]
+ },
+ {
+  "start": 112.18,
+  "end": 115.04,
+  "text": " menampilkan notifikasi singkat dari Dika.",
+  "words": [
+   {
+    "w": " menampilkan",
+    "s": 112.18,
+    "e": 112.82
+   },
+   {
+    "w": " notifikasi",
+    "s": 112.82,
+    "e": 113.72
+   },
+   {
+    "w": " singkat",
+    "s": 113.72,
+    "e": 114.26
+   },
+   {
+    "w": " dari",
+    "s": 114.26,
+    "e": 114.58
+   },
+   {
+    "w": " Dika.",
+    "s": 114.58,
+    "e": 115.04
+   }
+  ]
+ },
+ {
+  "start": 115.04,
+  "end": 118.24,
+  "text": " Gel, jangan ember ke Aldo dulu.",
+  "words": [
+   {
+    "w": " Gel,",
+    "s": 115.04,
+    "e": 115.8
+   },
+   {
+    "w": " jangan",
+    "s": 116.36,
+    "e": 116.68
+   },
+   {
+    "w": " ember",
+    "s": 116.68,
+    "e": 117.06
+   },
+   {
+    "w": " ke",
+    "s": 117.06,
+    "e": 117.26
+   },
+   {
+    "w": " Aldo",
+    "s": 117.26,
+    "e": 117.58
+   },
+   {
+    "w": " dulu.",
+    "s": 117.58,
+    "e": 118.24
+   }
+  ]
+ },
+ {
+  "start": 118.6,
+  "end": 122.1,
+  "text": " Tunggu dulu Gel, kamu tahu dia sama Dika dari mana.",
+  "words": [
+   {
+    "w": " Tunggu",
+    "s": 118.6,
+    "e": 118.78
+   },
+   {
+    "w": " dulu",
+    "s": 118.78,
+    "e": 118.94
+   },
+   {
+    "w": " Gel,",
+    "s": 118.94,
+    "e": 119.52
+   },
+   {
+    "w": " kamu",
+    "s": 120.26,
+    "e": 120.4
+   },
+   {
+    "w": " tahu",
+    "s": 120.4,
+    "e": 120.68
+   },
+   {
+    "w": " dia",
+    "s": 120.68,
+    "e": 120.9
+   },
+   {
+    "w": " sama",
+    "s": 120.9,
+    "e": 121.12
+   },
+   {
+    "w": " Dika",
+    "s": 121.12,
+    "e": 121.34
+   },
+   {
+    "w": " dari",
+    "s": 121.34,
+    "e": 121.58
+   },
+   {
+    "w": " mana.",
+    "s": 121.58,
+    "e": 122.1
+   }
+  ]
+ },
+ {
+  "start": 122.8,
+  "end": 125.22,
+  "text": " Jangan-jangan kamu bukan cuma observasi,",
+  "words": [
+   {
+    "w": " Jangan",
+    "s": 122.8,
+    "e": 123.02
+   },
+   {
+    "w": "-jangan",
+    "s": 123.02,
+    "e": 123.32
+   },
+   {
+    "w": " kamu",
+    "s": 123.32,
+    "e": 123.56
+   },
+   {
+    "w": " bukan",
+    "s": 123.56,
+    "e": 123.86
+   },
+   {
+    "w": " cuma",
+    "s": 123.86,
+    "e": 124.12
+   },
+   {
+    "w": " observasi,",
+    "s": 124.12,
+    "e": 125.22
+   }
+  ]
+ },
+ {
+  "start": 125.72,
+  "end": 127.26,
+  "text": " tapi ikut di grup baru mereka.",
+  "words": [
+   {
+    "w": " tapi",
+    "s": 125.72,
+    "e": 125.88
+   },
+   {
+    "w": " ikut",
+    "s": 125.88,
+    "e": 126.14
+   },
+   {
+    "w": " di",
+    "s": 126.14,
+    "e": 126.3
+   },
+   {
+    "w": " grup",
+    "s": 126.3,
+    "e": 126.42
+   },
+   {
+    "w": " baru",
+    "s": 126.42,
+    "e": 126.66
+   },
+   {
+    "w": " mereka.",
+    "s": 126.66,
+    "e": 127.26
+   }
+  ]
+ },
+ {
+  "start": 127.54,
+  "end": 128.24,
+  "text": " Eh, enggak Do.",
+  "words": [
+   {
+    "w": " Eh,",
+    "s": 127.54,
+    "e": 127.72
+   },
+   {
+    "w": " enggak",
+    "s": 127.72,
+    "e": 128.06
+   },
+   {
+    "w": " Do.",
+    "s": 128.06,
+    "e": 128.24
+   }
+  ]
+ },
+ {
+  "start": 128.56,
+  "end": 131.02,
+  "text": " Itu cuma variabel tambahan di lapangan.",
+  "words": [
+   {
+    "w": " Itu",
+    "s": 128.56,
+    "e": 128.76
+   },
+   {
+    "w": " cuma",
+    "s": 128.76,
+    "e": 129.34
+   },
+   {
+    "w": " variabel",
+    "s": 129.34,
+    "e": 129.88
+   },
+   {
+    "w": " tambahan",
+    "s": 129.88,
+    "e": 130.36
+   },
+   {
+    "w": " di",
+    "s": 130.36,
+    "e": 130.54
+   },
+   {
+    "w": " lapangan.",
+    "s": 130.54,
+    "e": 131.02
+   }
+  ]
+ },
+ {
+  "start": 131.8,
+  "end": 132.4,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 131.8,
+    "e": 132.4
+   }
+  ]
+ }
+]

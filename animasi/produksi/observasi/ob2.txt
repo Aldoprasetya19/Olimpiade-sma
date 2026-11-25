@@ -1,0 +1,22 @@
+# judul: VARIABEL | BARU
+# akhir: BERSAMBUNG | Catatan Mila
+[koridor] kiri=aldo kanan=gelly
+NARATOR: Bel pulang sekolah baru saja berbunyi, tetapi Aldo masih berdiri di depan pintu kelas menunggu penjelasan Gelly.
+ALDO (tegas): Gel, jujur aja. Pesan dari Dika tadi maksudnya apa?
+GELLY (panik): Sumpah, Do, aku cuma dimasukin ke grup itu kemarin sore! Belum sempat ngomong apa-apa.
+NARATOR: Dari arah tangga, Mila dan Hissari berjalan mendekat sambil membawa tumpukan buku catatan kelas.
+[koridor] kiri=aldo kanan=gelly belakang1=mila belakang2=hissari
+HISSARI (heran): Kalian berdua ribut soal apaan sih? Mukanya tegang banget.
+MILA (santai): Kalau soal grup baru yang dibikin Rialdi sama Dika, satu kelas kayaknya udah mulai dengar deh.
+NARATOR {cu:aldo}: Aldo menoleh cepat ke arah Mila, sementara Gelly langsung mundur selangkah.
+ALDO (bingung): Kamu juga tahu soal grup itu, Mil?
+MILA (tenang): Tahu. Kemarin sore aku lihat Dika, Rialdi, sama Justin ngumpul di pojok perpustakaan. Mereka sibuk nyusun pembagian tugas tanpa kamu.
+HISSARI (kesal): Iya, Do. Pas aku tanya kenapa kamu nggak diajak, Rialdi bilangnya takut kamu terlalu perfeksionis dan ngatur-ngatur materi.
+GELLY (pelan): Nah, itu maksudku tadi, Do! Data observasiku valid, kan?
+HISSARI (sinis): Observasi apaan, Gel? Orang kamu sendiri tadi pagi kelihatan ikut nimbrung ketawa-ketawa bareng Dika di kantin.
+GELLY (gugup): Itu kan bagian dari pendekatan ke subjek penelitian, Sar! Biar datanya akurat!
+NARATOR {hp} [Justin | Do, tunggu di gerbang. Ada yang mau aku jelasin.]: Ponsel Aldo bergetar di saku celana.
+MILA (serius): Sebelum kamu nemuin Justin di gerbang, Do, kamu harus lihat sesuatu dulu di buku catatanku.
+ALDO (penasaran): Apa itu, Mil?
+MILA (pelan): Ini bukan cuma soal tugas kelompok. Rialdi sengaja bikin grup itu buat gantiin posisi kamu di kepanitiaan acara kelas bulan depan.
+NARATOR {akhir}: Bersambung…

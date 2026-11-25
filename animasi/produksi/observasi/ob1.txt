@@ -1,0 +1,20 @@
+# judul: OBSERVASI | TIDAK SETIA
+# akhir: BERSAMBUNG | Variabel Tambahan
+[kelas] dudukKiri=aldo depanMeja=gelly guruDepan=eko
+NARATOR: Jam pelajaran sosiologi hampir habis ketika Gelly tiba-tiba melontarkan pernyataan serius di depan meja guru.
+GELLY (yakin): Pak Eko, Do, dari hasil observasi aku selama seminggu ini, Justin itu nggak setia.
+NARATOR {cu:aldo}: Aldo menoleh cepat, sementara Pak Eko langsung meletakkan spidol papan tulisnya.
+PAK EKO (penasaran): Wah, berat sekali tuduhannya, Gel. Kalau kamu bilang hasil observasi, coba jelaskan seperti penelitian. Bagaimana cara kamu mengobservasinya?
+ALDO (menyelidik): Iya, Gel. Kamu ngamatin dia diam-diam atau gimana?
+GELLY (gugup): Ya... aku perhatiin aja tiap jam istirahat sama pulang sekolah, Pak. Dia sering jalan bareng Rialdi sama anak kelas sebelah.
+PAK EKO (tegas): Mengamati saja belum cukup. Dalam metode penelitian, kamu harus tentukan dulu hipotesis awalnya. Apa hipotesis kamu sebelum mulai mengamati Justin?
+GELLY (ragu): Hipotesisnya... kalau Justin beneran setia kawan, dia bakal selalu kumpul sama kita di kantin.
+ALDO (kritis): Terus variabelnya apa, Gel? Variabel bebas sama variabel terikatnya harus jelas biar nggak asal nuduh.
+GELLY (terbata): Variabel bebasnya... ajakan main dari Rialdi. Variabel terikatnya... kesetiaan Justin milih tongkrongan.
+PAK EKO (mengangguk): Oke, masuk akal. Sekarang, dari data yang kamu kumpulkan, apa kesimpulan akhirnya?
+GELLY (pelan): Kesimpulannya, hipotesis aku terbukti, Pak. Kemarin dia bilang ke Aldo kerja kelompoknya batal, tapi ternyata dia malah ke perpus bareng Rialdi dan Dika.
+NARATOR: Suasana di depan kelas mendadak hening. Aldo terdiam mendengar nama Dika ikut disebut.
+NARATOR {hp} [Dika | Gel, jangan ember ke Aldo dulu.]: Ponsel Gelly bergetar pelan di atas meja, menampilkan notifikasi singkat.
+ALDO (curiga): Tunggu dulu, Gel. Kamu tahu dia sama Dika dari mana? Jangan-jangan kamu bukan cuma observasi, tapi ikut di grup baru mereka?
+GELLY (panik): Eh, nggak, Do! Itu cuma... variabel tambahan di lapangan!
+NARATOR {akhir}: Bersambung…

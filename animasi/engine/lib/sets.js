@@ -222,7 +222,7 @@ export const SETS = {
       gate.add(box(2.2, 0.08, 0.08, '#2c3e50', [1.0, 2.15, 0])); gate.add(box(2.2, 0.08, 0.08, '#2c3e50', [1.0, 0.25, 0]));
       gate.position.set(s * 2.1, 0, 0.2); gate.rotation.y = s > 0 ? Math.PI * 0.55 : -Math.PI * 0.55 + Math.PI; scene.add(gate);
     }
-    const nm = textPlane(4.4, 0.7, (x, w, h) => { x.fillStyle = '#1f4e79'; x.fillRect(0, 0, w, h); x.fillStyle = '#fff'; x.font = `bold ${h * 0.55}px Oswald`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(o.name || 'SMA NUSANTARA 3', w / 2, h / 2 + 4); });
+    const nm = textPlane(4.4, 0.7, (x, w, h) => { x.fillStyle = '#1f4e79'; x.fillRect(0, 0, w, h); x.fillStyle = '#fff'; x.font = `bold ${h * 0.55}px Oswald`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(o.name || 'SMAN 1 NYUATAN', w / 2, h / 2 + 4); });
     nm.position.set(0, 4.15, 0.46); scene.add(nm);
     scene.add(box(4.6, 0.12, 0.5, '#1f4e79', [0, 3.75, 0.25]));
     for (const [x, z] of [[-5, -4], [5.5, -3.5], [-8, 3], [8, 2], [-4, -9], [4, -10]]) { const t = tree(3 + (x % 3) * 0.3); t.position.set(x, 0, z); scene.add(t); }

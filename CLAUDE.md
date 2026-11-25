@@ -10,6 +10,7 @@
 - Kalau perintahnya tidak jelas termasuk yang mana, tanyakan dulu sebelum mulai.
 - Hemat token: jangan cek frame berulang-ulang; satu lembar cuplikan kecil per episode, perbaiki hanya shot yang rusak.
 - **Tidak ada tokoh berkerudung/hijab di video animasi mana pun** (permintaan pengguna). Tokoh perempuan pakai rambut `panjang` (lihat `animasi/engine/lib/cast.js`); jangan pakai gaya rambut `hijab`, juga di avatar UI ponsel.
+- Nama sekolah di semua video: **SMAN 1 NYUATAN** (papan gerbang, dsb.).
 - Jangan analisis ulang video referensi; semua yang perlu sudah tercatat di file-file di atas.
 
 ## Animasi cerita pendek vertikal (jalur "video cerita")

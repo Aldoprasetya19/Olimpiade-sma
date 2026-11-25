@@ -13,19 +13,19 @@ export const LOKASI = {
   rumah: { set: 'rumah', grade: 'malam', bounds: [-5.6, 5.6, -5.1, 5.1],
     slot: { meja: [0, 1.0, Math.PI, true], dudukKiri: [0, 1.0, Math.PI, true], seberang: [0, -1.0, 0, true], dapur: [2.0, -4.1, Math.PI * 0.1, false], dekatMeja: [1.6, 0.2, -Math.PI / 2, false] } },
   kelas: { set: 'kelas', grade: 'pagi', bounds: [-6.1, 6.1, -5.6, 5.6],
-    slot: { dudukKiri: [-0.47, -1.45, Math.PI, true], dudukKanan: [0.47, -1.45, Math.PI, true], depanMeja: [-0.2, -3.4, 0, false], lorong: [1.6, -1.45, -Math.PI / 2, false] } },
+    slot: { dudukKiri: [-0.47, -1.45, Math.PI, true], dudukKanan: [0.47, -1.45, Math.PI, true], depanMeja: [-0.2, -3.4, 0, false], guruDepan: [1.7, -4.3, -0.35, false], lorong: [1.6, -1.45, -Math.PI / 2, false] } },
   kantin: { set: 'belakangKantin', grade: 'pagi', bounds: [-9, 9, -2.4, 12],
     slot: { kiri: [-0.9, -0.6, Math.PI / 2, false], kanan: [0.9, -0.6, -Math.PI / 2, false], dudukKiri: [-0.55, -2.05, 0, true], dudukKanan: [0.55, -2.05, 0, true] } },
   toko: { set: 'toko', grade: 'sore', bounds: [-5.1, 5.1, -4.6, 4.6], slot: { dudukKiri: [0, -1.3, 0, true], dudukKanan: [1.0, -1.3, 0, true] } },
   kafe: { set: 'kafe', grade: 'hangat', bounds: [-5.6, 5.6, -5.1, 5.1], slot: { dudukKiri: [-1.15, 0, Math.PI / 2, true], dudukKanan: [1.15, 0, -Math.PI / 2, true], depanMeja: [0, -1.15, 0, true], belakang: [0, 1.15, Math.PI, true] } },
-  gerbang: { set: 'gerbang', grade: 'pagi', bounds: [-12, 12, -9, 14], blocks: [[-3.3, -1.9, -0.7, 0.7], [1.9, 3.3, -0.7, 0.7], [-9.5, -3.0, -0.4, 0.4], [3.0, 9.5, -0.4, 0.4]],
-    slot: { kiri: [-0.75, 1.0, Math.PI / 2, false], kanan: [0.75, 1.0, -Math.PI / 2, false] } },
-  gerbangSore: { set: 'gerbang', setOpts: { sore: true }, grade: 'sore', bounds: [-12, 12, -9, 14], blocks: [[-3.3, -1.9, -0.7, 0.7], [1.9, 3.3, -0.7, 0.7], [-9.5, -3.0, -0.4, 0.4], [3.0, 9.5, -0.4, 0.4]],
-    slot: { kiri: [-0.75, 1.0, Math.PI / 2, false], kanan: [0.75, 1.0, -Math.PI / 2, false] } },
+  gerbang: { set: 'gerbang', grade: 'pagi', bounds: [-6.5, 6.5, 1.6, 12], blocks: [[7.0, 9.0, 1.0, 3.0], [-9.0, -7.0, 2.0, 4.0], [-3.3, -1.9, -0.7, 0.7], [1.9, 3.3, -0.7, 0.7], [-9.5, -3.0, -0.4, 0.4], [3.0, 9.5, -0.4, 0.4]],
+    slot: { kiri: [-0.75, 1.0, Math.PI / 2, false], kanan: [0.75, 1.0, -Math.PI / 2, false], belakang1: [2.3, 2.0, -Math.PI * 0.3, false], belakang2: [1.5, 2.9, -Math.PI * 0.2, false], intip: [-3.2, 1.0, Math.PI * 0.7, false] } },
+  gerbangSore: { set: 'gerbang', setOpts: { sore: true }, grade: 'sore', bounds: [-6.5, 6.5, 1.6, 12], blocks: [[7.0, 9.0, 1.0, 3.0], [-9.0, -7.0, 2.0, 4.0], [-3.3, -1.9, -0.7, 0.7], [1.9, 3.3, -0.7, 0.7], [-9.5, -3.0, -0.4, 0.4], [3.0, 9.5, -0.4, 0.4]],
+    slot: { kiri: [-0.75, 1.0, Math.PI / 2, false], kanan: [0.75, 1.0, -Math.PI / 2, false], belakang1: [2.3, 2.0, -Math.PI * 0.3, false], belakang2: [1.5, 2.9, -Math.PI * 0.2, false], intip: [-3.2, 1.0, Math.PI * 0.7, false] } },
   ruangGuru: { set: 'ruangGuru', grade: 'pagi', bounds: [-5.6, 5.6, -5.1, 5.1],
     slot: { guru: [0, -2.6, 0, true], siswa1: [-1.3, -0.1, Math.PI, false], siswa2: [0, -0.05, Math.PI, false], siswa3: [1.3, -0.15, Math.PI, false] } },
   koridor: { set: 'sekolahTangga', grade: 'pagi', bounds: [-7.6, 7.6, -5.6, 5.6],
-    slot: { kiri: [-0.2, 1.6, Math.PI / 2, false], kanan: [1.6, 1.6, -Math.PI / 2, false] } },
+    slot: { kiri: [-0.2, 1.6, Math.PI / 2, false], kanan: [1.6, 1.6, -Math.PI / 2, false], belakang1: [0.2, 0.1, 0.15, false], belakang2: [1.3, 0.0, -0.15, false] } },
 };
 
 const blocked = (L, x, z) => (L.blocks || []).some(([a, b, c, d]) => x > a && x < b && z > c && z < d);
@@ -74,19 +74,19 @@ export function solveGroup(L, heads, wide = false) {
   let span = 0; hs.forEach(a => hs.forEach(b => { span = Math.max(span, Math.hypot(a.x - b.x, a.z - b.z)); }));
   const dist = Math.max(3.6, span * 2.6) * (wide ? 1.5 : 1);
   const [x0, x1, z0, z1] = L.bounds; let best = null;
-  for (let a = 0; a < 360; a += 15) {
+  for (const f of [1, 0.85, 0.7]) for (let a = 0; a < 360; a += 15) {
     const ang = (a * Math.PI) / 180;
-    const cam = new THREE.Vector3(c.x + Math.sin(ang) * dist, c.y + (wide ? 0.9 : 0.25), c.z + Math.cos(ang) * dist);
+    const cam = new THREE.Vector3(c.x + Math.sin(ang) * dist * f, c.y + (wide ? 0.9 : 0.25), c.z + Math.cos(ang) * dist * f);
     if (cam.x < x0 || cam.x > x1 || cam.z < z0 || cam.z > z1 || blocked(L, cam.x, cam.z)) continue;
     const dir = cam.clone().sub(c).normalize();
     const faces = hs.reduce((s, h) => s + Math.max(0, Math.sin(h.rot) * dir.x + Math.cos(h.rot) * dir.z), 0);
     // utamakan semua tokoh terlihat (tegak lurus garis tokoh)
     let side = 0; if (hs.length > 1) { const d = new THREE.Vector3(hs[1].x - hs[0].x, 0, hs[1].z - hs[0].z).normalize(); side = 1 - Math.abs(d.dot(dir)); }
-    const score = faces + side * 3;
-    if (!best || score > best.score) best = { cam, score };
+    const score = faces + side * 3 - (1 - f) * 2;
+    if (!best || score > best.score) best = { cam, score, f };
   }
   const cam = best ? best.cam : new THREE.Vector3(c.x, c.y + 1, c.z + dist);
-  return { pos: cam.toArray(), look: [c.x, c.y - (wide ? 0.4 : 0.2), c.z], fov: wide ? 52 : 46 };
+  return { pos: cam.toArray(), look: [c.x, c.y - (wide ? 0.4 : 0.2), c.z], fov: (wide ? 52 : 46) / Math.sqrt(best?.f || 1) };
 }
 
 // two-shot dari balik bahu: bahu tokoh A di tepi frame, wajah B terlihat

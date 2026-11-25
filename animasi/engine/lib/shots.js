@@ -14,9 +14,11 @@ export function phoneInsert(S, o) {
   S.scene.add(ph);
   const hand = new THREE.Group();
   const sk = toon(o.skin || '#c98a52');
-  const palm = new THREE.Mesh(new THREE.SphereGeometry(0.075, 16, 12), sk); palm.scale.set(1.3, 1.2, 0.8); palm.position.set(-0.11, -0.13, -0.01); hand.add(palm);
-  const thumb = new THREE.Mesh(new THREE.CapsuleGeometry(0.03, 0.08, 6, 10), sk); thumb.position.set(-0.115, -0.05, 0.03); thumb.rotation.z = -0.5; hand.add(thumb);
-  const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.08, 0.5, 12), toon(o.sleeve || o.skin || '#c98a52')); arm.position.set(-0.2, -0.38, -0.05); arm.rotation.z = -0.5; hand.add(arm);
+  // tangan menggenggam dari belakang & samping: tidak ada bagian yang menutupi layar
+  const palm = new THREE.Mesh(new THREE.SphereGeometry(0.075, 16, 12), sk); palm.scale.set(1.5, 1.4, 0.7); palm.position.set(-0.02, -0.17, -0.07); hand.add(palm);
+  const thumb = new THREE.Mesh(new THREE.CapsuleGeometry(0.024, 0.07, 6, 10), sk); thumb.position.set(-0.145, -0.1, 0.0); hand.add(thumb);
+  for (let f = 0; f < 3; f++) { const fg = new THREE.Mesh(new THREE.CapsuleGeometry(0.02, 0.03, 6, 8), sk); fg.position.set(0.137, -0.04 - f * 0.055, -0.005); fg.rotation.z = Math.PI / 2; hand.add(fg); }
+  const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.08, 0.5, 12), toon(o.sleeve || o.skin || '#c98a52')); arm.position.set(-0.04, -0.47, -0.1); arm.rotation.z = -0.15; hand.add(arm);
   ph.add(hand);
   const camPos = new THREE.Vector3(...(o.camPos || [0, 2.0, 2.4]));
   const look = new THREE.Vector3(...(o.look || [0, 1.6, 0]));

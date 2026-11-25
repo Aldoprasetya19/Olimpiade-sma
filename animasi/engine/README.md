@@ -31,6 +31,7 @@ lalu digabung dengan VO + subtitle oleh ffmpeg. Kecepatan ±0,3 detik/frame (720
   kalau ragu, pakai *clean single* dari sudut 3/4 (±45° dari arah hadap subjek). Cek arah hadap: karakter menghadap +z lokal.
 - Tinggi kepala (pusat) berdiri ≈ 1,98; duduk ≈ 1,73. Meja 0,92, kursi 0,42.
 - Kamera di luar ruangan `room()` boleh (dinding depan satu sisi), lantai sudah diperpanjang 3×.
+- Tangan di `phoneInsert` menggenggam dari belakang/tepi; jangan taruh jari atau jempol di depan layar (permintaan pengguna: tulisan notifikasi harus terbaca).
 - Adegan ponsel paling aman lewat `phoneInsert` (bukan ponsel di tangan dari jauh).
 - Debug posisi: render kamera dari atas (`cam.up=(0,0,-1)`, lihat ke bawah) untuk melihat tata letak.
 

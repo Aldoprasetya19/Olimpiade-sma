@@ -36,7 +36,7 @@ export const LOKASI = {
 
 const blocked = (L, x, z) => (L.blocks || []).some(([a, b, c, d]) => x > a && x < b && z > c && z < d);
 const headY = (sit) => (sit ? 1.73 : 1.98);
-const PEREMPUAN = ['mila', 'hissari', 'aulia', 'nikita', 'sisil', 'nava', 'dayinta', 'sera', 'elisabeth', 'manohara', 'septi', 'naura', 'misel', 'palsya'];
+const PEREMPUAN = []; // tokoh tetap ada di TOKOH (cast.js); nama asing dianggap figuran laki-laki
 const castMake = (key) => {
   const [k, opt] = key.split('#'); // mis. "dimas#perban"
   const o = opt === 'perban' ? { shortLeg: 1 } : opt === 'rumah' ? { shirt: '#2f4b7c', pants: '#3b3b44', badge: false, name: null, collar: false, sleeve: '#2f4b7c' } : {};

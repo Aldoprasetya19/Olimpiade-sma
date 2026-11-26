@@ -145,6 +145,18 @@ function buildHair(style, color, head) {
     const hm = toon('#f2c230');
     const c = mesh(new THREE.SphereGeometry(0.49, 24, 12, 0, Math.PI * 2, 0, Math.PI / 2), hm); c.scale.set(1, 0.85, 1); c.position.y = top - 0.06; g.add(c);
     const brim = mesh(new THREE.CylinderGeometry(0.56, 0.56, 0.05, 24), hm); brim.position.y = top - 0.05; brim.scale.z = 1.1; g.add(brim);
+  } else if (style === 'kuncir') { // rambut dikuncir ke belakang
+    const cap = mesh(rbox(0.93, 0.18, 0.91, 0.08), m); cap.position.set(0, top + 0.02, -0.02); g.add(cap);
+    const fr = mesh(rbox(0.84, 0.12, 0.14, 0.05), m); fr.position.set(0.05, top - 0.07, 0.37); fr.rotation.set(0.3, 0, -0.08); g.add(fr);
+    const back = mesh(rbox(0.88, 0.42, 0.26, 0.08), m); back.position.set(0, top - 0.2, -0.3); g.add(back);
+    for (const s of [-1, 1]) { const sd = mesh(rbox(0.1, 0.3, 0.48, 0.04), m); sd.position.set(s * 0.43, top - 0.12, -0.06); g.add(sd); }
+    const tie = mesh(new THREE.TorusGeometry(0.06, 0.025, 6, 12), toon('#e74c3c')); tie.position.set(0, top - 0.05, -0.47); g.add(tie);
+    const tail = mesh(rbox(0.2, 0.55, 0.18, 0.08), m); tail.position.set(0, top - 0.35, -0.52); tail.rotation.x = 0.25; g.add(tail);
+  } else if (style === 'bob') { // rambut bob sebatas dagu
+    const cap = mesh(rbox(0.96, 0.22, 0.94, 0.1), m); cap.position.set(0, top + 0.04, -0.02); g.add(cap);
+    const fr = mesh(rbox(0.88, 0.16, 0.16, 0.06), m); fr.position.set(0, top - 0.08, 0.38); g.add(fr);
+    const back = mesh(rbox(0.94, 0.62, 0.3, 0.1), m); back.position.set(0, top - 0.3, -0.3); g.add(back);
+    for (const s of [-1, 1]) { const sd = mesh(rbox(0.15, 0.6, 0.62, 0.07), m); sd.position.set(s * 0.45, top - 0.3, -0.02); g.add(sd); }
   } else if (style === 'panjang') { // rambut panjang sebahu (pengganti kerudung)
     const cap = mesh(rbox(0.94, 0.2, 0.92, 0.09), m); cap.position.set(0, top + 0.03, -0.02); g.add(cap);
     const fr = mesh(rbox(0.86, 0.14, 0.16, 0.06), m); fr.position.set(-0.05, top - 0.07, 0.37); fr.rotation.set(0.3, 0, 0.1); g.add(fr);
@@ -204,7 +216,7 @@ export class Char {
       const tag = new THREE.Mesh(new THREE.PlaneGeometry(0.26, 0.065), flat('#fff', { map: t })); tag.position.set(0.2, 0.6, 0.232); torso.add(tag);
     }
     if (o.badge) {
-      const b = new THREE.Mesh(new THREE.CircleGeometry(0.055, 5), flat('#2f5fb3')); b.position.set(-0.2, 0.6, 0.232); b.rotation.z = Math.PI / 2 / 5 * 0; torso.add(b);
+      const b = new THREE.Mesh(new THREE.CircleGeometry(0.055, 5), flat(o.badgeColor || '#2f5fb3')); b.position.set(-0.2, 0.6, 0.232); b.rotation.z = Math.PI / 2 / 5 * 0; torso.add(b);
       const b2 = new THREE.Mesh(new THREE.CircleGeometry(0.025, 5), flat('#f0c419')); b2.position.set(-0.2, 0.6, 0.234); torso.add(b2);
     }
     // lengan

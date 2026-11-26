@@ -1,8 +1,43 @@
 // Daftar pemeran (desain karakter tetap konsisten antar episode).
 import { Char } from './char.js';
 const SERAGAM = { shirt: '#f4f2ec', pants: '#6b6e75' };
+
+// ---------- DAFTAR TOKOH TETAP (jangan diubah tanpa permintaan pengguna) ----------
+// jk: L/P, kelas: 10/11/12 (warna lencana dada: 10 hijau, 11 biru, 12 merah), lihat juga engine/TOKOH.md
+const LENCANA = { 10: '#2e9e4f', 11: '#2f5fb3', 12: '#c0392b' };
+export const TOKOH = {
+  aldo: { jk: 'L', kelas: 11, skin: '#c98a52', hair: '#241a14', hairStyle: 'spiky', utama: true },
+  aldos: { jk: 'L', kelas: 11, label: 'ALDO S.', skin: '#b98050', hair: '#2a1c12', hairStyle: 'bowl' },
+  gelly: { jk: 'L', kelas: 11, skin: '#d8a06c', hair: '#3a281d', hairStyle: 'teacher', glasses: true },
+  stefan: { jk: 'L', kelas: 11, skin: '#e0b07e', hair: '#5a3a22', hairStyle: 'curly' },
+  febri: { jk: 'L', kelas: 11, skin: '#b07040', hair: '#1f1712', hairStyle: 'bowl', wristband: '#27ae60' },
+  gabriel: { jk: 'L', kelas: 11, skin: '#d29a62', hair: '#4a3020', hairStyle: 'spiky', jacket: '#2c3e66' },
+  nava: { jk: 'L', kelas: 11, skin: '#a8703f', hair: '#1c1410', hairStyle: 'teacher' },
+  kharan: { jk: 'L', kelas: 10, skin: '#d8a874', hair: '#2a1c12', hairStyle: 'bowl', wristband: '#f39c12' },
+  justin: { jk: 'L', kelas: 10, skin: '#c4895a', hair: '#1f1712', hairStyle: 'spiky', wristband: '#2d7dd2' },
+  rialdi: { jk: 'L', kelas: 12, skin: '#b0733f', hair: '#2b1d14', hairStyle: 'sidepart', jacket: '#7a2e2e' },
+  dika: { jk: 'L', kelas: 12, skin: '#d29a62', hair: '#3b2a1f', hairStyle: 'curly' },
+  palsya: { jk: 'L', kelas: 12, skin: '#a46a3a', hair: '#1f1712', hairStyle: 'sidepart', glasses: true },
+  hissari: { jk: 'P', kelas: 11, skin: '#c98a52', hair: '#4a2c1c', hairStyle: 'panjang' },
+  misel: { jk: 'P', kelas: 11, skin: '#e0b07e', hair: '#2a1d16', hairStyle: 'kuncir' },
+  aulia: { jk: 'P', kelas: 11, skin: '#d49a64', hair: '#3a2418', hairStyle: 'bob' },
+  dayinta: { jk: 'P', kelas: 11, skin: '#c48550', hair: '#2a1d16', hairStyle: 'panjang', glasses: true },
+  elisabeth: { jk: 'P', kelas: 11, skin: '#e8bc8c', hair: '#6b4a2a', hairStyle: 'bob' },
+  manohara: { jk: 'P', kelas: 11, skin: '#c98a52', hair: '#1f1712', hairStyle: 'panjang' },
+  septi: { jk: 'P', kelas: 11, skin: '#d29a62', hair: '#3a2418', hairStyle: 'kuncir', glasses: true },
+  nikita: { jk: 'P', kelas: 10, skin: '#d8a06c', hair: '#5a3a22', hairStyle: 'kuncir' },
+  naura: { jk: 'P', kelas: 10, skin: '#b98050', hair: '#2a1d16', hairStyle: 'bob' },
+  sisil: { jk: 'P', kelas: 10, skin: '#e0b07e', hair: '#6b4a2a', hairStyle: 'panjang' },
+  mila: { jk: 'P', kelas: 12, skin: '#e0b07e', hair: '#2a1d16', hairStyle: 'panjang', glasses: true },
+  sera: { jk: 'P', kelas: 12, skin: '#c4895a', hair: '#1f1712', hairStyle: 'bob' },
+};
+export function murid(key, o = {}) {
+  const t = TOKOH[key]; const { jk, kelas, label, utama, ...look } = t;
+  return new Char({ ...SERAGAM, ...(jk === 'P' ? { skirt: '#6b6e75', longSleeve: true } : {}), ...look, name: label || key.toUpperCase(),
+    badgeColor: LENCANA[kelas], blinkSeed: [...key].reduce((a, c) => a + c.charCodeAt(0), 0) % 30 / 10, ...o });
+}
 export const CAST = {
-  aldo: (o = {}) => new Char({ ...SERAGAM, skin: '#c98a52', hair: '#241a14', hairStyle: 'spiky', name: 'ALDO', blinkSeed: 0.3, ...o }),
+  aldo: (o = {}) => murid('aldo', o),
   aldoRumah: (o = {}) => new Char({ skin: '#c98a52', hair: '#241a14', hairStyle: 'spiky', shirt: '#2f4b7c', pants: '#3b3b44', badge: false, collar: false, blinkSeed: 0.3, ...o }),
   dimas: (o = {}) => new Char({ ...SERAGAM, skin: '#e0b07e', hair: '#3a2a1e', hairStyle: 'bowl', name: 'DIMAS', glasses: true, blinkSeed: 1.1, ...o }),
   reno: (o = {}) => new Char({ ...SERAGAM, skin: '#a8703f', hair: '#1c1410', hairStyle: 'curly', name: 'RENO', jacket: '#2b2f36', blinkSeed: 2.0, ...o }),
@@ -10,15 +45,9 @@ export const CAST = {
   ibu: (o = {}) => new Char({ skin: '#c48550', hair: '#2e211a', hairStyle: 'panjang', shirt: '#4f8a7a', skirt: '#3e5d6e', apron: '#f3e2c2', badge: false, collar: false, longSleeve: true, sleeve: '#4f8a7a', blinkSeed: 0.9, ...o }),
   wali: (o = {}) => new Char({ skin: '#b67b48', hair: '#555049', hairStyle: 'teacher', shirt: '#8a4b2a', pants: '#2f2f35', badge: false, mustache: true, glasses: true, blinkSeed: 2.4, ...o }),
   pekerja: (o = {}) => new Char({ skin: '#a96f3d', hairStyle: 'helmet', shirt: '#3d5a80', vest: '#ff8c1a', pants: '#34495e', badge: false, collar: false, blinkSeed: 0.5, ...o }),
-  dika: (o = {}) => new Char({ ...SERAGAM, skin: '#d29a62', hair: '#3b2a1f', hairStyle: 'curly', name: 'DIKA', blinkSeed: 1.3, ...o }),
-  gelly: (o = {}) => new Char({ ...SERAGAM, skin: '#d8a06c', hair: '#3a281d', hairStyle: 'teacher', name: 'GELLY', glasses: true, blinkSeed: 0.7, ...o }),
-  justin: (o = {}) => new Char({ ...SERAGAM, skin: '#c4895a', hair: '#1f1712', hairStyle: 'spiky', name: 'JUSTIN', wristband: '#2d7dd2', blinkSeed: 2.2, ...o }),
-  rialdi: (o = {}) => new Char({ ...SERAGAM, skin: '#b0733f', hair: '#2b1d14', hairStyle: 'sidepart', name: 'RIALDI', jacket: '#7a2e2e', blinkSeed: 0.4, ...o }),
-  mila: (o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: '#e0b07e', hair: '#2a1d16', hairStyle: 'panjang', name: 'MILA', glasses: true, blinkSeed: 1.9, ...o }),
-  hissari: (o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: '#c98a52', hair: '#4a2c1c', hairStyle: 'panjang', name: 'HISSARI', blinkSeed: 2.7, ...o }),
   eko: (o = {}) => new Char({ skin: '#b67b48', hair: '#3a3530', hairStyle: 'teacher', shirt: '#2f5d8a', pants: '#2f2f35', badge: false, mustache: true, blinkSeed: 1.5, ...o }),
-  aldos: (o = {}) => new Char({ ...SERAGAM, skin: '#b98050', hair: '#2a1c12', hairStyle: 'bowl', name: 'ALDO S.', blinkSeed: 2.9, ...o }),
   agus: (o = {}) => new Char({ skin: '#a96f3d', hair: '#4a4540', hairStyle: 'teacher', shirt: '#6b4a8a', pants: '#2f2f35', badge: false, glasses: true, blinkSeed: 0.8, ...o }),
   siswa: (i = 0, o = {}) => new Char({ ...SERAGAM, skin: ['#c98a52', '#e0b07e', '#b07040', '#d49a64'][i % 4], hair: '#2a2018', hairStyle: ['sidepart', 'bowl', 'curly', 'spiky'][i % 4], blinkSeed: i * 0.77, ...o }),
   siswi: (i = 0, o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: ['#d49a64', '#c98a52', '#e0b07e'][i % 3], hair: '#2a1d16', hairStyle: 'panjang', longSleeve: true, blinkSeed: i * 0.53, ...o }),
 };
+for (const k of Object.keys(TOKOH)) if (!CAST[k]) CAST[k] = (o = {}) => murid(k, o);

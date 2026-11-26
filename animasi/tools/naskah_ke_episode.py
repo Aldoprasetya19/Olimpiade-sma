@@ -76,7 +76,7 @@ def detect_actions(L, castnames, hold, last_subj):
             if w == 'masuk' and i > 0 and toks[i - 1] in ('pesan', 'notifikasi', 'chat', 'telepon'): continue
             prop = next((PROPW[x] for x in toks[i + 1:i + 5] if x in PROPW), None)
             for s_ in subj:
-                e = {'who': s_, 'a': a, 't': round(times[i], 2), 'dur': dur}
+                e = {'who': s_, 'a': a, 't': round(max(L['start'], times[i] - (0.8 if a in ('jalan', 'endap') else 0)), 2), 'dur': dur}
                 if a == 'beri':
                     to = next((x for x in toks[i + 1:] if x in castnames and x != s_), None) or next((x for x in castnames if x != s_), None)
                     if not to: continue
@@ -105,7 +105,7 @@ def main():
         if s.startswith('['):
             m = re.match(r'\[(\w+)([^\]]*)\]\s*(.*)', s)
             opts = dict(x.split('=') for x in m.group(2).split() if '=' in x)
-            scene = {'loc': m.group(1), 'grade': opts.get('grade'), 'cast': dict(x.split('=') for x in m.group(3).split() if '=' in x), 'expr': {}, 'hold': {}}
+            scene = {'loc': m.group(1), 'berdiri': 'berdiri' in m.group(2).split(), 'grade': opts.get('grade'), 'cast': dict(x.split('=') for x in m.group(3).split() if '=' in x), 'expr': {}, 'hold': {}}
             continue
         m = LINE.match(s)
         if not m: sys.exit(f'Baris tidak dikenali: {s}')
@@ -163,6 +163,11 @@ def main():
         d = {'t0': t0, 't1': t1, 'loc': sc['loc'], 'cast': sc['cast'], 'cam': cam.split('-')[0] if cam.startswith('hp') else cam,
              'expr': dict(expr), 'pose': pose, 'talk': talk_all, 'flash': flash}
         if grade: d['grade'] = grade
+        if sc.get('berdiri'): d['berdiri'] = True
+        toks0 = [w[0][1] for w in L['words']]
+        if cam == 'foto' or (any(x.startswith('foto') for x in toks0) and any(v in toks0 for v in ('memperlihatkan', 'menunjukkan', 'mengedarkan', 'membagikan', 'memamerkan'))):
+            d['foto'] = [x.strip() for x in (L['hp'] or '').split('|') if x.strip()] if cam == 'foto' else []
+            if cam == 'foto': d['cam'] = 'lebar'
         if cam == 'kertas': d['kertas'] = (L['hp'] or '').strip(); d['cam'] = 'lebar'
         if cam.startswith('hp'):
             parts = [x.strip() for x in (L['hp'] or '').split('|')]
@@ -175,6 +180,9 @@ def main():
             acts, last_subj = detect_actions(L, castnames, sc['hold'], last_subj if last_scene is sc else None)
         else: acts = []
         last_scene = sc
+        jl = [e for e in acts if e['a'] in ('jalan', 'endap')]
+        if jl and (L['cam'] or '').strip() == 'masuk': d['cam'] = 'masuk:' + jl[0]['who']
+        if jl and not (L['cam'] or '').strip() and not d.get('foto') and not d.get('kertas'): d['cam'] = 'masuk:' + jl[0]['who']
         d['acts'] = prev_acts + acts; d['hold'] = hold0; prev_acts = acts
         shots.append(d)
         # subtitle

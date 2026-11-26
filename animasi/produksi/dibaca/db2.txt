@@ -1,6 +1,6 @@
 # judul: LIMA MENIT SEBELUM | PRESENTASI
 # akhir: BERSAMBUNG... | Bagian 3: Yang Tidak Terlihat di Chat
-[kelas] p1=hissari p2=aldo p3=gelly
+[kelas berdiri] p1=hissari p2=aldo p3=gelly
 NARATOR {lebar}: Bagian 2: Lima Menit Sebelum Presentasi
 NARATOR {lebar} (aldo=cemas, gelly=serius, hissari=cemas): Senin pagi, kelompok 3 berkumpul di depan kelas.
 NARATOR {dua} (aldo=cemas, gelly=marah): Slide sudah jadi dan naskah sudah siap, tetapi tidak ada satu pun foto. Stefan juga belum datang.
@@ -8,12 +8,12 @@ GELLY (curiga, gelly:hp): "Tuh kan,"
 NARATOR {cu:gelly} (gelly:hp, gelly=marah): kata Gelly sambil membuka galeri HP-nya. Jarinya sudah siap di tombol kirim.
 NARATOR {dua} (hissari:tahan, hissari=cemas, gelly:hp): Hissari menahan tangannya.
 HISSARI (cemas): "Tunggu dulu, Gel."
-[kelas] p1=hissari p2=aldo p3=gelly p4=agus
-NARATOR {lebar} (agus=serius): Pak Agus masuk.
+[kelas berdiri] p1=hissari p2=aldo p3=gelly p4=agus
+NARATOR {masuk} (agus=serius): Pak Agus masuk.
 AGUS (serius): "Kelompok 3, lima menit lagi giliran kalian."
 NARATOR {cu:aldo} (aldo=cemas): Aldo melirik jam. Empat menit. Tiga menit.
-[kelas] p1=aldo p2=hissari p3=gelly p4=stefan
-NARATOR {lebar} (stefan=cemas, stefan:kertas, flash): Lalu pintu kelas terbuka. Stefan masuk dengan napas terengah-engah, seragamnya basah oleh keringat.
+[kelas berdiri] p1=aldo p2=hissari p3=gelly p4=stefan
+NARATOR {masuk} (stefan=cemas, stefan:kertas): Lalu pintu kelas terbuka. Stefan masuk dengan napas terengah-engah, seragamnya basah oleh keringat.
 NARATOR {cu:stefan} (stefan=cemas, stefan:kertas): Tangannya memegang map plastik yang sudah lecek.
 STEFAN (bersalah): "Ini,"
 NARATOR {dua} (stefan=bersalah): katanya pelan sambil menyodorkan map itu.

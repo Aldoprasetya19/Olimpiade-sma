@@ -129,7 +129,13 @@ function windowPane(w, h, glassColor, frame = '#f1f1f1') {
   for (const [ww, hh, x, y] of [[w + 0.1, 0.1, 0, h / 2], [w + 0.1, 0.1, 0, -h / 2], [0.1, h, -w / 2, 0], [0.1, h, w / 2, 0], [0.06, h, 0, 0]]) g.add(box(ww, hh, 0.1, frame, [x, y, 0.03]));
   return g;
 }
-function door(color = '#8b5a3c') { const g = new THREE.Group(); g.add(box(1.3, 2.9, 0.1, color, [0, 1.45, 0])); g.add(box(0.08, 0.08, 0.1, '#d4af37', [0.5, 1.4, 0.08])); return g; }
+function door(color = '#8b5a3c') { // engsel di kiri; userData.leaf diputar untuk membuka
+  const g = new THREE.Group(); g.name = 'pintu';
+  g.add(box(1.4, 3.0, 0.04, noOutline(flat('#1a1612')), [0, 1.5, -0.04], { cast: false }));
+  const leaf = new THREE.Group(); leaf.position.set(-0.65, 0, 0); g.add(leaf);
+  leaf.add(box(1.3, 2.9, 0.1, color, [0.65, 1.45, 0])); leaf.add(box(0.08, 0.08, 0.1, '#d4af37', [1.15, 1.4, 0.08]));
+  g.userData.leaf = leaf; return g;
+}
 
 // ---------------- lokasi
 function room(scene, o) {
@@ -171,6 +177,7 @@ export const SETS = {
     const pt = plant(); pt.position.set(-5.2, 0, -4.6); scene.add(pt);
     // pigura
     scene.add(box(0.9, 0.7, 0.05, '#6b4a2f', [3.5, 2.6, -5.47])); scene.add(box(0.75, 0.55, 0.02, noOutline(flat('#e8c9a0')), [3.5, 2.6, -5.43]));
+    const pr = door('#6b4430'); pr.position.set(5.94, 0, 2.5); pr.rotation.y = -Math.PI / 2; scene.add(pr);
     return { meja: [0, 0.96, 0], kursiAldo: [0, 0, 1.0], dapur: [1.8, 0, -4.1] };
   },
   sekolahTangga(scene, o = {}) { // koridor + tangga, papan penunjuk kelas tergantung
@@ -243,6 +250,7 @@ export const SETS = {
     scene.userData.clear = 0x222222;
     room(scene, { w: 13, d: 12, h: 4.8, wall: '#efe4c8', floorMat: toon('#fff', { map: terrazzo() }), trim: '#3f8a5c' });
     lights(scene, { sky: '#fffaf0', ground: '#9a8f7a', hemi: 1.7, sunI: 1.5, sunPos: [-7, 9, 5] });
+    const pk = door('#7b5236'); pk.position.set(6.44, 0, -4.4); pk.rotation.y = -Math.PI / 2; scene.add(pk);
     const wb = box(4.4, 1.6, 0.06, '#fdfdfd', [0, 2.6, -5.95]); scene.add(wb); scene.add(box(4.6, 1.8, 0.04, '#9aa3a8', [0, 2.6, -5.97]));
     for (let i = 0; i < 3; i++) { const w = windowPane(1.8, 1.6, '#cbe7f4'); w.position.set(-6.45, 2.5, -3 + i * 2.6); w.rotation.y = Math.PI / 2; scene.add(w); }
     const clock = mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.06, 24), toon('#fff')); clock.rotation.x = Math.PI / 2; clock.position.set(3.4, 3.7, -5.95); scene.add(clock);
@@ -274,6 +282,7 @@ export const SETS = {
     const w = windowPane(2.6, 1.5, '#cfe8f6'); w.position.set(-2.2, 2.6, -5.45); scene.add(w);
     scene.add(box(1.6, 1.0, 0.05, '#fdfdfd', [-5.95, 2.6, -2], { rot: [0, Math.PI / 2, 0] }));
     const pt = plant(); pt.position.set(-5, 0, -4.5); scene.add(pt);
+    const pg = door('#7a5236'); pg.position.set(5.94, 0, 1.5); pg.rotation.y = -Math.PI / 2; scene.add(pg);
     return { mejaY: 1.0 };
   },
   toko(scene) { // toko kelontong sore

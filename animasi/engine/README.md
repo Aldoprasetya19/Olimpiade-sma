@@ -58,3 +58,11 @@ dan *membaca* → membaca kertas, *menyerahkan/memberikan/menyodorkan* → baran
 penerima (nama sesudah kata kerja, atau tokoh lain di adegan), *menoleh, menunduk, mengangguk, menunjuk/menemukan,
 mengintip, meraba*. Pelaku = nama tokoh terakhir yang disebut (daftar "A, B, dan C" ikut semua). Barang yang dipegang
 terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di naskah = mulai memegang barang itu.
+
+### Duduk di kelas, masuk lewat pintu, foto
+- `[kelas]` dengan slot `p1..pN`: murid otomatis **duduk** di bangku; guru (eko, agus, wali) berdiri di depan.
+  Pakai `[kelas berdiri]` untuk adegan berdiri (presentasi, berkumpul di depan kelas).
+- Aksi *masuk/datang/berjalan*: tokoh berjalan dari **pintu** lokasi (pintu terbuka), kamera otomatis `masuk:<tokoh>`
+  bila baris tidak diberi kamera, atau tulis `{masuk}`. Lokasi berpintu: kelas, rumah, ruang guru, lobi, gudang, koridor, kantin.
+- Foto: `{foto} [Keterangan 1 | Keterangan 2]` menampilkan foto cetak bergambar (gambar menyesuaikan kata seperti
+  kantin, lapangan, sampah, penuh, tidak ada); juga otomatis bila narasi berisi *memperlihatkan/menunjukkan/mengedarkan foto*.

@@ -1,0 +1,391 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 80.9,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "GABRIEL": {
+   "warna": "#FFD84A"
+  },
+  "CRISPIN": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 80.9,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.5,
+     "teks": "Bagian satu,"
+    },
+    {
+     "start": 1.5,
+     "end": 2.73,
+     "teks": "Nilai Sempurna."
+    },
+    {
+     "start": 3.3,
+     "end": 4.32,
+     "teks": "Selasa malam,"
+    },
+    {
+     "start": 4.32,
+     "end": 5.76,
+     "teks": "pukul 11,"
+    },
+    {
+     "start": 5.76,
+     "end": 7.04,
+     "teks": "Aldo menatap layar"
+    },
+    {
+     "start": 7.04,
+     "end": 7.92,
+     "teks": "laptopnya yang masih"
+    },
+    {
+     "start": 7.92,
+     "end": 8.93,
+     "teks": "kosong."
+    },
+    {
+     "start": 8.96,
+     "end": 9.86,
+     "teks": "Besok pagi,"
+    },
+    {
+     "start": 9.86,
+     "end": 10.22,
+     "teks": "ia harus"
+    },
+    {
+     "start": 10.22,
+     "end": 11.24,
+     "teks": "mengumpulkan esai"
+    },
+    {
+     "start": 11.24,
+     "end": 12.12,
+     "teks": "Bahasa Indonesia"
+    },
+    {
+     "start": 12.12,
+     "end": 13.1,
+     "teks": "tentang arti"
+    },
+    {
+     "start": 13.1,
+     "end": 14.05,
+     "teks": "persahabatan."
+    },
+    {
+     "start": 14.34,
+     "end": 15.44,
+     "teks": "Dan belum ada"
+    },
+    {
+     "start": 15.44,
+     "end": 16.49,
+     "teks": "satu kalimat pun."
+    },
+    {
+     "start": 16.95,
+     "end": 18.68,
+     "teks": "HP-nya berbunyi,"
+    },
+    {
+     "start": 18.68,
+     "end": 19.6,
+     "teks": "pesan dari Febri"
+    },
+    {
+     "start": 19.6,
+     "end": 20.81,
+     "teks": "di grup kelas."
+    },
+    {
+     "start": 20.91,
+     "end": 21.88,
+     "teks": "\"Pakai AI aja"
+    },
+    {
+     "start": 21.88,
+     "end": 22.54,
+     "teks": "dong,"
+    },
+    {
+     "start": 22.54,
+     "end": 23.94,
+     "teks": "5 detik kelar."
+    },
+    {
+     "start": 23.94,
+     "end": 24.97,
+     "teks": "Semua juga gitu.\""
+    },
+    {
+     "start": 25.28,
+     "end": 27.06,
+     "teks": "Aldo ragu sebentar,"
+    },
+    {
+     "start": 27.06,
+     "end": 28.3,
+     "teks": "lalu ia membuka"
+    },
+    {
+     "start": 28.3,
+     "end": 29.48,
+     "teks": "aplikasi AI,"
+    },
+    {
+     "start": 29.48,
+     "end": 30.86,
+     "teks": "mengetik judulnya,"
+    },
+    {
+     "start": 30.86,
+     "end": 32.37,
+     "teks": "dan menekan enter."
+    },
+    {
+     "start": 32.46,
+     "end": 34.02,
+     "teks": "5 detik kemudian,"
+    },
+    {
+     "start": 34.02,
+     "end": 35.06,
+     "teks": "esai sepanjang 2"
+    },
+    {
+     "start": 35.06,
+     "end": 36.62,
+     "teks": "halaman muncul."
+    },
+    {
+     "start": 36.62,
+     "end": 37.88,
+     "teks": "Kalimatnya rapi,"
+    },
+    {
+     "start": 37.88,
+     "end": 38.76,
+     "teks": "dan kata-katanya"
+    },
+    {
+     "start": 38.76,
+     "end": 39.95,
+     "teks": "indah."
+    },
+    {
+     "start": 40.1,
+     "end": 41.34,
+     "teks": "Aldo menyalinnya,"
+    },
+    {
+     "start": 41.34,
+     "end": 42.6,
+     "teks": "mengganti sedikit,"
+    },
+    {
+     "start": 42.6,
+     "end": 44.75,
+     "teks": "lalu tidur nyenyak."
+    },
+    {
+     "start": 45.42,
+     "end": 46.76,
+     "teks": "Seminggu kemudian,"
+    },
+    {
+     "start": 46.76,
+     "end": 47.26,
+     "teks": "Pak Crispin"
+    },
+    {
+     "start": 47.26,
+     "end": 48.34,
+     "teks": "membagikan hasil"
+    },
+    {
+     "start": 48.34,
+     "end": 49.13,
+     "teks": "esai."
+    },
+    {
+     "start": 49.3,
+     "end": 50.08,
+     "teks": "Kertas Aldo"
+    },
+    {
+     "start": 50.08,
+     "end": 51.24,
+     "teks": "bertuliskan angka"
+    },
+    {
+     "start": 51.24,
+     "end": 52.34,
+     "teks": "besar berwarna"
+    },
+    {
+     "start": 52.34,
+     "end": 53.32,
+     "teks": "merah."
+    },
+    {
+     "start": 53.32,
+     "end": 54.29,
+     "teks": "Seratus!"
+    },
+    {
+     "start": 54.66,
+     "end": 55.18,
+     "teks": "Teman-teman"
+    },
+    {
+     "start": 55.18,
+     "end": 56.44,
+     "teks": "bersorak,"
+    },
+    {
+     "start": 56.44,
+     "end": 57.4,
+     "teks": "Gabriel menepuk"
+    },
+    {
+     "start": 57.4,
+     "end": 57.96,
+     "teks": "punggungnya."
+    },
+    {
+     "start": 57.96,
+     "end": 59.39,
+     "teks": "\"Gila,",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 59.39,
+     "end": 59.77,
+     "teks": "Do!",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 59.77,
+     "end": 60.5,
+     "teks": "Diam-diam jago",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 60.5,
+     "end": 61.49,
+     "teks": "nulis!\"",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 61.68,
+     "end": 63.28,
+     "teks": "Aldo tersenyum,"
+    },
+    {
+     "start": 63.28,
+     "end": 64.54,
+     "teks": "tetapi perutnya"
+    },
+    {
+     "start": 64.54,
+     "end": 66.11,
+     "teks": "terasa tidak enak."
+    },
+    {
+     "start": 66.28,
+     "end": 67.08,
+     "teks": "Lalu Pak Crispin"
+    },
+    {
+     "start": 67.08,
+     "end": 68.02,
+     "teks": "berdiri di depan"
+    },
+    {
+     "start": 68.02,
+     "end": 68.59,
+     "teks": "kelas."
+    },
+    {
+     "start": 68.86,
+     "end": 69.88,
+     "teks": "\"Esai terbaik minggu",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 69.88,
+     "end": 71.26,
+     "teks": "ini akan dibacakan",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 71.26,
+     "end": 71.94,
+     "teks": "dan dijelaskan",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 71.94,
+     "end": 72.66,
+     "teks": "langsung oleh",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 72.66,
+     "end": 74.0,
+     "teks": "penulisnya.",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 74.0,
+     "end": 75.49,
+     "teks": "Tanpa kertas.",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 75.49,
+     "end": 76.76,
+     "teks": "Silakan maju,",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 76.76,
+     "end": 77.27,
+     "teks": "Aldo.\"",
+     "siapa": "CRISPIN"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "NILAI",
+  "baris2": "SEMPURNA",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 77.6,
+  "end": 80.9,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Kata yang Tidak Dikenal"
+ }
+}

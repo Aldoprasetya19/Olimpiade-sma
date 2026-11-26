@@ -1,0 +1,29 @@
+# judul: KATA YANG | TIDAK DIKENAL
+# akhir: BERSAMBUNG... | Bagian 3: Esai yang Kedua
+[kelas berdiri] p1=aldo p2=crispin
+NARATOR {lebar}: Bagian 2, Kata yang Tidak Dikenal.
+NARATOR {mcu:aldo} (aldo=cemas): Aldo berjalan ke depan kelas, kakinya terasa berat.
+CRISPIN (serius): "Coba jelaskan isi esaimu dengan kata-katamu sendiri,"
+NARATOR {cu:aldo} (aldo=cemas): kata Pak Crispin. Aldo menarik napas.
+ALDO (cemas): "Persahabatan itu penting, karena sahabat itu selalu ada."
+[kelas] p1=nava p2=dayinta p3=febri p4=aldos p5=crispin
+NARATOR {lebar} (nava=senyum, dayinta=senyum, febri=senyum): Beberapa teman terkikik.
+[kelas berdiri] p1=aldo p2=crispin
+NARATOR {cu:crispin} (crispin:kertas, crispin=serius): Pak Crispin membuka kertas esai Aldo dan membaca satu kalimat dengan suara pelan.
+CRISPIN (serius, crispin:kertas): "Persahabatan adalah simbiosis afektif yang melampaui batas-batas pragmatisme."
+CRISPIN (curiga, crispin:kertas): "Apa arti simbiosis afektif?"
+[kelas] p1=nava p2=dayinta p3=febri p4=aldos p5=crispin
+NARATOR {lebar} (nava=kaget, dayinta=kaget, febri=menghindar, aldos=cemas): Kelas mendadak hening.
+NARATOR {dua} (nava=kaget, dayinta=kaget): Nava dan Dayinta saling pandang.
+NARATOR {cu:febri} (febri=menghindar, febri:tunduk): Febri pura-pura sibuk menatap mejanya.
+[kelas berdiri] p1=aldo p2=crispin
+NARATOR {cu:aldo} (aldo=kaget): Aldo membuka mulut, tetapi tidak ada kata yang keluar. Wajahnya terasa panas.
+NARATOR {cu:crispin} (crispin=serius, crispin:kertas): Pak Crispin menutup kertas itu perlahan.
+CRISPIN (serius): "Aldo, temui Bapak di ruang guru saat istirahat."
+[kelas] p1=nava p2=dayinta p3=febri p4=aldos
+NARATOR {lebar} (nava=curiga, dayinta=curiga, aldos=cemas): Bel berbunyi. Teman-teman mulai berbisik.
+NARATOR {cu:aldos} (aldos=cemas): Di bangku belakang, Aldo S. menatap sahabatnya dengan wajah khawatir.
+[kelas] p1=aldo p2=aldos p3=nava p4=dayinta
+NARATOR {cu:aldo} (aldo=sedih, aldo:tunduk): Aldo kembali ke tempat duduknya sambil menunduk.
+NARATOR {hp-grup} [Grup Kelas XI@10.01 | Nava: Aldo ketahuan pakai AI, ya? | Febri: 👀 | Dayinta: waduh]: Di layar HP-nya, grup kelas sudah ramai. "Aldo ketahuan pakai AI, ya?"
+NARATOR {akhir}: Bersambung.

@@ -77,6 +77,7 @@ def detect_actions(L, castnames, hold, last_subj):
             prop = next((PROPW[x] for x in toks[i + 1:i + 5] if x in PROPW), None)
             for s_ in subj:
                 e = {'who': s_, 'a': a, 't': round(max(L['start'], times[i] - (0.8 if a in ('jalan', 'endap') else 0)), 2), 'dur': dur}
+                if a in ('jalan', 'endap') and w in ('masuk', 'datang', 'tiba'): e['dari'] = 'pintu'
                 if a == 'beri':
                     to = next((x for x in toks[i + 1:] if x in castnames and x != s_), None) or next((x for x in castnames if x != s_), None)
                     if not to: continue

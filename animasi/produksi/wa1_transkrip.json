@@ -1,0 +1,883 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.58,
+  "text": " Bagian satu, nilai sempurna.",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 0.0,
+    "e": 0.52
+   },
+   {
+    "w": " satu,",
+    "s": 0.52,
+    "e": 1.16
+   },
+   {
+    "w": " nilai",
+    "s": 1.5,
+    "e": 1.94
+   },
+   {
+    "w": " sempurna.",
+    "s": 1.94,
+    "e": 2.58
+   }
+  ]
+ },
+ {
+  "start": 3.3,
+  "end": 8.78,
+  "text": " Selasa malam, pukul 11, Aldo menatap layar laptop-nya yang masih kosong.",
+  "words": [
+   {
+    "w": " Selasa",
+    "s": 3.3,
+    "e": 3.64
+   },
+   {
+    "w": " malam,",
+    "s": 3.64,
+    "e": 4.18
+   },
+   {
+    "w": " pukul",
+    "s": 4.32,
+    "e": 4.58
+   },
+   {
+    "w": " 11,",
+    "s": 4.58,
+    "e": 5.02
+   },
+   {
+    "w": " Aldo",
+    "s": 5.76,
+    "e": 6.0
+   },
+   {
+    "w": " menatap",
+    "s": 6.0,
+    "e": 6.44
+   },
+   {
+    "w": " layar",
+    "s": 6.44,
+    "e": 6.74
+   },
+   {
+    "w": " laptop",
+    "s": 6.74,
+    "e": 7.08
+   },
+   {
+    "w": "-nya",
+    "s": 7.08,
+    "e": 7.34
+   },
+   {
+    "w": " yang",
+    "s": 7.34,
+    "e": 7.56
+   },
+   {
+    "w": " masih",
+    "s": 7.56,
+    "e": 7.92
+   },
+   {
+    "w": " kosong.",
+    "s": 7.92,
+    "e": 8.78
+   }
+  ]
+ },
+ {
+  "start": 8.96,
+  "end": 13.9,
+  "text": " Besok pagi, ia harus mengumpulkan esai Bahasa Indonesia tentang arti persahabatan.",
+  "words": [
+   {
+    "w": " Besok",
+    "s": 8.96,
+    "e": 9.26
+   },
+   {
+    "w": " pagi,",
+    "s": 9.26,
+    "e": 9.76
+   },
+   {
+    "w": " ia",
+    "s": 9.86,
+    "e": 9.96
+   },
+   {
+    "w": " harus",
+    "s": 9.96,
+    "e": 10.22
+   },
+   {
+    "w": " mengumpulkan",
+    "s": 10.22,
+    "e": 10.94
+   },
+   {
+    "w": " esai",
+    "s": 10.94,
+    "e": 11.24
+   },
+   {
+    "w": " Bahasa",
+    "s": 11.24,
+    "e": 11.54
+   },
+   {
+    "w": " Indonesia",
+    "s": 11.54,
+    "e": 12.12
+   },
+   {
+    "w": " tentang",
+    "s": 12.12,
+    "e": 12.6
+   },
+   {
+    "w": " arti",
+    "s": 12.6,
+    "e": 13.1
+   },
+   {
+    "w": " persahabatan.",
+    "s": 13.1,
+    "e": 13.9
+   }
+  ]
+ },
+ {
+  "start": 14.34,
+  "end": 16.34,
+  "text": " Dan belum ada satu kalimat pun.",
+  "words": [
+   {
+    "w": " Dan",
+    "s": 14.34,
+    "e": 14.64
+   },
+   {
+    "w": " belum",
+    "s": 14.64,
+    "e": 15.04
+   },
+   {
+    "w": " ada",
+    "s": 15.04,
+    "e": 15.44
+   },
+   {
+    "w": " satu",
+    "s": 15.44,
+    "e": 15.68
+   },
+   {
+    "w": " kalimat",
+    "s": 15.68,
+    "e": 16.02
+   },
+   {
+    "w": " pun.",
+    "s": 16.02,
+    "e": 16.34
+   }
+  ]
+ },
+ {
+  "start": 17.04,
+  "end": 20.66,
+  "text": " Hp-nya berbunyi, pesan dari Febri di grup kelas.",
+  "words": [
+   {
+    "w": " Hp",
+    "s": 17.04,
+    "e": 17.38
+   },
+   {
+    "w": "-nya",
+    "s": 17.38,
+    "e": 17.56
+   },
+   {
+    "w": " berbunyi,",
+    "s": 17.56,
+    "e": 18.3
+   },
+   {
+    "w": " pesan",
+    "s": 18.68,
+    "e": 18.9
+   },
+   {
+    "w": " dari",
+    "s": 18.9,
+    "e": 19.2
+   },
+   {
+    "w": " Febri",
+    "s": 19.2,
+    "e": 19.6
+   },
+   {
+    "w": " di",
+    "s": 19.6,
+    "e": 19.78
+   },
+   {
+    "w": " grup",
+    "s": 19.78,
+    "e": 19.96
+   },
+   {
+    "w": " kelas.",
+    "s": 19.96,
+    "e": 20.66
+   }
+  ]
+ },
+ {
+  "start": 20.8,
+  "end": 24.82,
+  "text": " Akhirnya AI aja dong, 5 detik kelar, semua juga gitu.",
+  "words": [
+   {
+    "w": " Akhirnya",
+    "s": 20.8,
+    "e": 21.16
+   },
+   {
+    "w": " AI",
+    "s": 21.16,
+    "e": 21.48
+   },
+   {
+    "w": " aja",
+    "s": 21.48,
+    "e": 21.88
+   },
+   {
+    "w": " dong,",
+    "s": 21.88,
+    "e": 22.32
+   },
+   {
+    "w": " 5",
+    "s": 22.54,
+    "e": 22.74
+   },
+   {
+    "w": " detik",
+    "s": 22.74,
+    "e": 23.0
+   },
+   {
+    "w": " kelar,",
+    "s": 23.0,
+    "e": 23.68
+   },
+   {
+    "w": " semua",
+    "s": 23.94,
+    "e": 24.1
+   },
+   {
+    "w": " juga",
+    "s": 24.1,
+    "e": 24.38
+   },
+   {
+    "w": " gitu.",
+    "s": 24.38,
+    "e": 24.82
+   }
+  ]
+ },
+ {
+  "start": 25.28,
+  "end": 29.48,
+  "text": " Aldo ragu sebentar, lalu ia membuka aplikasi AI,",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 25.28,
+    "e": 25.64
+   },
+   {
+    "w": " ragu",
+    "s": 25.64,
+    "e": 26.0
+   },
+   {
+    "w": " sebentar,",
+    "s": 26.0,
+    "e": 26.84
+   },
+   {
+    "w": " lalu",
+    "s": 27.06,
+    "e": 27.54
+   },
+   {
+    "w": " ia",
+    "s": 27.54,
+    "e": 27.82
+   },
+   {
+    "w": " membuka",
+    "s": 27.82,
+    "e": 28.3
+   },
+   {
+    "w": " aplikasi",
+    "s": 28.3,
+    "e": 28.78
+   },
+   {
+    "w": " AI,",
+    "s": 28.78,
+    "e": 29.48
+   }
+  ]
+ },
+ {
+  "start": 29.48,
+  "end": 32.22,
+  "text": " mengetik judulnya, dan menekan enter.",
+  "words": [
+   {
+    "w": " mengetik",
+    "s": 29.48,
+    "e": 30.0
+   },
+   {
+    "w": " judulnya,",
+    "s": 30.0,
+    "e": 30.68
+   },
+   {
+    "w": " dan",
+    "s": 30.86,
+    "e": 31.08
+   },
+   {
+    "w": " menekan",
+    "s": 31.08,
+    "e": 31.48
+   },
+   {
+    "w": " enter.",
+    "s": 31.48,
+    "e": 32.22
+   }
+  ]
+ },
+ {
+  "start": 32.46,
+  "end": 36.4,
+  "text": " 5 detik kemudian, esai sepanjang 2 halaman muncul.",
+  "words": [
+   {
+    "w": " 5",
+    "s": 32.46,
+    "e": 32.68
+   },
+   {
+    "w": " detik",
+    "s": 32.68,
+    "e": 32.94
+   },
+   {
+    "w": " kemudian,",
+    "s": 32.94,
+    "e": 33.66
+   },
+   {
+    "w": " esai",
+    "s": 34.02,
+    "e": 34.14
+   },
+   {
+    "w": " sepanjang",
+    "s": 34.14,
+    "e": 34.7
+   },
+   {
+    "w": " 2",
+    "s": 34.7,
+    "e": 35.06
+   },
+   {
+    "w": " halaman",
+    "s": 35.06,
+    "e": 35.5
+   },
+   {
+    "w": " muncul.",
+    "s": 35.5,
+    "e": 36.4
+   }
+  ]
+ },
+ {
+  "start": 36.62,
+  "end": 39.8,
+  "text": " Kalimatnya rapi, dan kata-katanya indah.",
+  "words": [
+   {
+    "w": " Kalimatnya",
+    "s": 36.62,
+    "e": 37.16
+   },
+   {
+    "w": " rapi,",
+    "s": 37.16,
+    "e": 37.68
+   },
+   {
+    "w": " dan",
+    "s": 37.88,
+    "e": 38.04
+   },
+   {
+    "w": " kata",
+    "s": 38.04,
+    "e": 38.3
+   },
+   {
+    "w": "-katanya",
+    "s": 38.3,
+    "e": 38.76
+   },
+   {
+    "w": " indah.",
+    "s": 38.76,
+    "e": 39.8
+   }
+  ]
+ },
+ {
+  "start": 40.1,
+  "end": 43.8,
+  "text": " Aldo menyalinnya, mengganti sedikit, lalu tidur nyanyak.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 40.1,
+    "e": 40.26
+   },
+   {
+    "w": " menyalinnya,",
+    "s": 40.26,
+    "e": 41.08
+   },
+   {
+    "w": " mengganti",
+    "s": 41.34,
+    "e": 41.7
+   },
+   {
+    "w": " sedikit,",
+    "s": 41.7,
+    "e": 42.32
+   },
+   {
+    "w": " lalu",
+    "s": 42.6,
+    "e": 42.9
+   },
+   {
+    "w": " tidur",
+    "s": 42.9,
+    "e": 43.28
+   },
+   {
+    "w": " nyanyak.",
+    "s": 43.28,
+    "e": 43.8
+   }
+  ]
+ },
+ {
+  "start": 45.42,
+  "end": 48.98,
+  "text": " Seminggu kemudian, Pak Crispin membagikan hasil esai.",
+  "words": [
+   {
+    "w": " Seminggu",
+    "s": 45.42,
+    "e": 45.82
+   },
+   {
+    "w": " kemudian,",
+    "s": 45.82,
+    "e": 46.56
+   },
+   {
+    "w": " Pak",
+    "s": 46.76,
+    "e": 46.82
+   },
+   {
+    "w": " Crispin",
+    "s": 46.82,
+    "e": 47.26
+   },
+   {
+    "w": " membagikan",
+    "s": 47.26,
+    "e": 47.88
+   },
+   {
+    "w": " hasil",
+    "s": 47.88,
+    "e": 48.34
+   },
+   {
+    "w": " esai.",
+    "s": 48.34,
+    "e": 48.98
+   }
+  ]
+ },
+ {
+  "start": 49.3,
+  "end": 52.98,
+  "text": " Kertas Aldo bertuliskan angka besar berwarna merah.",
+  "words": [
+   {
+    "w": " Kertas",
+    "s": 49.3,
+    "e": 49.56
+   },
+   {
+    "w": " Aldo",
+    "s": 49.56,
+    "e": 50.08
+   },
+   {
+    "w": " bertuliskan",
+    "s": 50.08,
+    "e": 50.82
+   },
+   {
+    "w": " angka",
+    "s": 50.82,
+    "e": 51.24
+   },
+   {
+    "w": " besar",
+    "s": 51.24,
+    "e": 51.68
+   },
+   {
+    "w": " berwarna",
+    "s": 51.68,
+    "e": 52.34
+   },
+   {
+    "w": " merah.",
+    "s": 52.34,
+    "e": 52.98
+   }
+  ]
+ },
+ {
+  "start": 53.32,
+  "end": 54.14,
+  "text": " Seratus!",
+  "words": [
+   {
+    "w": " Seratus!",
+    "s": 53.32,
+    "e": 54.14
+   }
+  ]
+ },
+ {
+  "start": 54.64,
+  "end": 57.96,
+  "text": " Teman-teman bersorak, Gabriel menepuk punggungnya.",
+  "words": [
+   {
+    "w": " Teman",
+    "s": 54.64,
+    "e": 54.92
+   },
+   {
+    "w": "-teman",
+    "s": 54.92,
+    "e": 55.18
+   },
+   {
+    "w": " bersorak,",
+    "s": 55.18,
+    "e": 56.18
+   },
+   {
+    "w": " Gabriel",
+    "s": 56.44,
+    "e": 56.8
+   },
+   {
+    "w": " menepuk",
+    "s": 56.8,
+    "e": 57.4
+   },
+   {
+    "w": " punggungnya.",
+    "s": 57.4,
+    "e": 57.96
+   }
+  ]
+ },
+ {
+  "start": 57.96,
+  "end": 59.32,
+  "text": " Gila, dok!",
+  "words": [
+   {
+    "w": " Gila,",
+    "s": 57.96,
+    "e": 59.02
+   },
+   {
+    "w": " dok!",
+    "s": 59.14,
+    "e": 59.32
+   }
+  ]
+ },
+ {
+  "start": 59.68,
+  "end": 61.34,
+  "text": " Diam-diam jago nulis!",
+  "words": [
+   {
+    "w": " Diam",
+    "s": 59.68,
+    "e": 59.86
+   },
+   {
+    "w": "-diam",
+    "s": 59.86,
+    "e": 60.14
+   },
+   {
+    "w": " jago",
+    "s": 60.14,
+    "e": 60.5
+   },
+   {
+    "w": " nulis!",
+    "s": 60.5,
+    "e": 61.34
+   }
+  ]
+ },
+ {
+  "start": 61.68,
+  "end": 65.96,
+  "text": " Aldo tersenyum, tetapi perutnya terasa tidak enak.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 61.68,
+    "e": 61.88
+   },
+   {
+    "w": " tersenyum,",
+    "s": 61.88,
+    "e": 63.06
+   },
+   {
+    "w": " tetapi",
+    "s": 63.28,
+    "e": 63.98
+   },
+   {
+    "w": " perutnya",
+    "s": 63.98,
+    "e": 64.54
+   },
+   {
+    "w": " terasa",
+    "s": 64.54,
+    "e": 64.82
+   },
+   {
+    "w": " tidak",
+    "s": 64.82,
+    "e": 65.18
+   },
+   {
+    "w": " enak.",
+    "s": 65.18,
+    "e": 65.96
+   }
+  ]
+ },
+ {
+  "start": 66.28,
+  "end": 68.44,
+  "text": " Lalu Pak Crispin berdiri di depan kelas.",
+  "words": [
+   {
+    "w": " Lalu",
+    "s": 66.28,
+    "e": 66.46
+   },
+   {
+    "w": " Pak",
+    "s": 66.46,
+    "e": 66.66
+   },
+   {
+    "w": " Crispin",
+    "s": 66.66,
+    "e": 67.08
+   },
+   {
+    "w": " berdiri",
+    "s": 67.08,
+    "e": 67.62
+   },
+   {
+    "w": " di",
+    "s": 67.62,
+    "e": 67.78
+   },
+   {
+    "w": " depan",
+    "s": 67.78,
+    "e": 68.02
+   },
+   {
+    "w": " kelas.",
+    "s": 68.02,
+    "e": 68.44
+   }
+  ]
+ },
+ {
+  "start": 68.86,
+  "end": 73.4,
+  "text": " Esai terbaik minggu ini akan dibacakan dan dijelaskan langsung oleh penulisnya.",
+  "words": [
+   {
+    "w": " Esai",
+    "s": 68.86,
+    "e": 69.16
+   },
+   {
+    "w": " terbaik",
+    "s": 69.16,
+    "e": 69.6
+   },
+   {
+    "w": " minggu",
+    "s": 69.6,
+    "e": 69.88
+   },
+   {
+    "w": " ini",
+    "s": 69.88,
+    "e": 70.26
+   },
+   {
+    "w": " akan",
+    "s": 70.26,
+    "e": 70.52
+   },
+   {
+    "w": " dibacakan",
+    "s": 70.52,
+    "e": 71.26
+   },
+   {
+    "w": " dan",
+    "s": 71.26,
+    "e": 71.4
+   },
+   {
+    "w": " dijelaskan",
+    "s": 71.4,
+    "e": 71.94
+   },
+   {
+    "w": " langsung",
+    "s": 71.94,
+    "e": 72.42
+   },
+   {
+    "w": " oleh",
+    "s": 72.42,
+    "e": 72.66
+   },
+   {
+    "w": " penulisnya.",
+    "s": 72.66,
+    "e": 73.4
+   }
+  ]
+ },
+ {
+  "start": 74.0,
+  "end": 74.82,
+  "text": " Tanpa kertas.",
+  "words": [
+   {
+    "w": " Tanpa",
+    "s": 74.0,
+    "e": 74.28
+   },
+   {
+    "w": " kertas.",
+    "s": 74.28,
+    "e": 74.82
+   }
+  ]
+ },
+ {
+  "start": 75.82,
+  "end": 77.12,
+  "text": " Silahkan maju, Aldo.",
+  "words": [
+   {
+    "w": " Silahkan",
+    "s": 75.82,
+    "e": 76.16
+   },
+   {
+    "w": " maju,",
+    "s": 76.16,
+    "e": 76.58
+   },
+   {
+    "w": " Aldo.",
+    "s": 76.76,
+    "e": 77.12
+   }
+  ]
+ },
+ {
+  "start": 77.6,
+  "end": 78.32,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 77.6,
+    "e": 78.32
+   }
+  ]
+ }
+]

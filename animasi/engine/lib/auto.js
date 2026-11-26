@@ -172,7 +172,7 @@ export function autoShot(d) {
       SETS[L.set](S.scene, L.setOpts || {});
       const pintu = S.scene.getObjectByName('pintu'); let P = null, N = null;
       if (pintu) { P = pintu.position.clone(); N = new THREE.Vector3(Math.sin(pintu.rotation.y), 0, Math.cos(pintu.rotation.y)); }
-      const GURU = ['eko', 'agus', 'wali'];
+      const GURU = ['eko', 'agus', 'wali', 'crispin'];
       const duduk = L.seats && !d.berdiri; let seatI = 0;
       const chars = {}, heads = {};
       const pn = Object.keys(d.cast || {}).filter(k => /^p\d+$/.test(k)).length;
@@ -202,6 +202,8 @@ export function autoShot(d) {
       if ((kind === 'cu' || kind === 'mcu') && heads[who]) cam = solveCam(L, heads, who, kind === 'cu' ? { dist: 3.3, fov: 40 } : { dist: 4.3, fov: 46, high: 0.05 });
       else if (kind === 'masuk' && P && heads[who]) { const h = heads[who]; cam = solveGroup(L, { a: { x: P.x + N.x * 0.6, y: 1.9, z: P.z + N.z * 0.6, rot: Math.atan2(h.x - P.x, h.z - P.z) }, b: { ...h, rot: Math.atan2(P.x - h.x, P.z - h.z) } }, true); }
       else if (kind === 'dua' && Object.keys(heads).length === 2) cam = solveOts(L, heads, who) || solveGroup(L, heads);
+      else if (duduk && Object.values(heads).filter(h => h.y < 1.8).length >= 2) { const hs = Object.values(heads).filter(h => h.y < 1.8); const cx = hs.reduce((a2, h) => a2 + h.x, 0) / hs.length, cz = hs.reduce((a2, h) => a2 + h.z, 0) / hs.length;
+        cam = { pos: [cx * 0.6, kind === 'lebar' ? 2.6 : 2.2, Math.max(-5.4, cz - (kind === 'lebar' ? 4.6 : 3.4))], look: [cx, 1.45, cz], fov: kind === 'lebar' ? 52 : 44 }; }
       else cam = solveGroup(L, heads, kind === 'lebar');
       const end = { ...cam, pos: cam.pos.map((v, i) => lerp(cam.look[i], v, 0.9)) };
       const seed = Object.keys(chars);
@@ -216,7 +218,7 @@ export function autoShot(d) {
           for (const a of d.acts || []) {
             const q = (t - a.t) / a.dur, qc = Math.max(0, Math.min(1, q));
             if (a.who === name) {
-              if ((a.a === 'jalan' || a.a === 'endap') && P) {
+              if ((a.a === 'jalan' || a.a === 'endap') && P && a.dari === 'pintu') {
                 const o = { x: P.x - N.x * 0.7, z: P.z - N.z * 0.7 }, m = { x: P.x + N.x * 0.9, z: P.z + N.z * 0.9 };
                 const leaf = pintu.userData.leaf; if (leaf) leaf.rotation.y = -1.5 * ease(Math.max(0, Math.min(1, (t - a.t + 0.5) / 0.5))) * (q < 1.6 ? 1 : Math.max(0, 1 - (q - 1.6)));
                 if (q < 1) { let fx2, fz2, tx, tz; if (qc < 0.3) { const u = qc / 0.3; px = o.x + (m.x - o.x) * u; pz = o.z + (m.z - o.z) * u; tx = m.x - o.x; tz = m.z - o.z; } else { const u = ease((qc - 0.3) / 0.7); px = m.x + (B.x - m.x) * u; pz = m.z + (B.z - m.z) * u; tx = B.x - m.x; tz = B.z - m.z; }
@@ -249,6 +251,9 @@ export function autoShot(d) {
           const a = Math.min(1, lt / 0.4), x = HUD; x.save(); x.globalAlpha = a; x.fillStyle = 'rgba(0,0,0,0.35)'; x.fillRect(0, 0, 720, 1280);
           x.translate(360, 560); x.rotate(-0.04); x.fillStyle = '#f7f1e1'; x.shadowColor = 'rgba(0,0,0,0.4)'; x.shadowBlur = 30; x.fillRect(-270, -230, 540, 460); x.shadowBlur = 0;
           x.fillStyle = '#2b2b5a'; x.font = 'italic 600 38px Nunito'; x.textAlign = 'center'; x.textBaseline = 'middle';
+          const [k1, ...kr] = d.kertas.split('|').map(z => z.trim());
+          if (/^\d+!?$/.test(k1)) { x.fillStyle = '#d62828'; x.font = '900 170px Nunito'; x.fillText(k1.replace('!', ''), 0, -70); x.strokeStyle = '#d62828'; x.lineWidth = 8; x.beginPath(); x.ellipse(0, -70, 150, 105, -0.1, 0, Math.PI * 2); x.stroke();
+            x.fillStyle = '#2b2b5a'; x.font = 'italic 600 34px Nunito'; kr.forEach((l, i) => x.fillText(l, 0, 95 + i * 46)); x.restore(); return d.grade || L.grade; }
           const words = d.kertas.split(' '); let line = '', y = -150; const lines = [];
           for (const w of words) { const t2 = line ? line + ' ' + w : w; if (x.measureText(t2).width > 460) { lines.push(line); line = w; } else line = t2; } lines.push(line);
           y = -((lines.length - 1) * 54) / 2 - 30; lines.forEach((l, i) => x.fillText(l, 0, y + i * 54)); x.restore();

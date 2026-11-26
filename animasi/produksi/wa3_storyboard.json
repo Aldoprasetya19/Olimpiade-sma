@@ -1,0 +1,393 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 84.98,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "CRISPIN": {
+   "warna": "#FFD84A"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 84.98,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.8,
+     "teks": "Bagian tiga,"
+    },
+    {
+     "start": 1.8,
+     "end": 2.95,
+     "teks": "Esai yang Kedua."
+    },
+    {
+     "start": 3.72,
+     "end": 4.86,
+     "teks": "Di ruang guru,"
+    },
+    {
+     "start": 4.86,
+     "end": 5.76,
+     "teks": "Pak Crispin tidak"
+    },
+    {
+     "start": 5.76,
+     "end": 6.78,
+     "teks": "marah."
+    },
+    {
+     "start": 6.78,
+     "end": 7.4,
+     "teks": "Beliau hanya"
+    },
+    {
+     "start": 7.4,
+     "end": 8.21,
+     "teks": "bertanya,"
+    },
+    {
+     "start": 8.4,
+     "end": 9.25,
+     "teks": "\"Kenapa?\"",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 9.78,
+     "end": 11.55,
+     "teks": "Aldo menunduk."
+    },
+    {
+     "start": 12.24,
+     "end": 13.22,
+     "teks": "\"Saya bingung mau",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 13.22,
+     "end": 14.08,
+     "teks": "nulis apa,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 14.08,
+     "end": 15.04,
+     "teks": "Pak.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 15.04,
+     "end": 17.17,
+     "teks": "Terus semua juga",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 17.17,
+     "end": 17.57,
+     "teks": "pakai.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 17.6,
+     "end": 18.26,
+     "teks": "\"Bapak tidak",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 18.26,
+     "end": 20.68,
+     "teks": "melarang AI.",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 20.68,
+     "end": 21.66,
+     "teks": "Tapi kalau",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 21.66,
+     "end": 22.58,
+     "teks": "tulisannya bukan",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 22.58,
+     "end": 23.94,
+     "teks": "pikiranmu,",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 23.94,
+     "end": 24.82,
+     "teks": "nilai 100 itu",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 24.82,
+     "end": 25.63,
+     "teks": "milik siapa?\"",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 25.86,
+     "end": 28.26,
+     "teks": "Aldo terdiam lama."
+    },
+    {
+     "start": 28.26,
+     "end": 29.99,
+     "teks": "Lalu ia mengangguk."
+    },
+    {
+     "start": 30.0,
+     "end": 31.94,
+     "teks": "\"Bukan punya saya,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 31.94,
+     "end": 32.2,
+     "teks": "Pak.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 32.2,
+     "end": 32.94,
+     "teks": "Pak Crispin"
+    },
+    {
+     "start": 32.94,
+     "end": 34.0,
+     "teks": "menyerahkan selembar"
+    },
+    {
+     "start": 34.0,
+     "end": 35.21,
+     "teks": "kertas kosong kepada"
+    },
+    {
+     "start": 35.21,
+     "end": 35.26,
+     "teks": "Aldo."
+    },
+    {
+     "start": 35.26,
+     "end": 36.46,
+     "teks": "\"Tulis ulang.",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 36.46,
+     "end": 37.36,
+     "teks": "Pakai kata-katamu",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 37.36,
+     "end": 38.28,
+     "teks": "sendiri.",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 38.28,
+     "end": 39.47,
+     "teks": "Kumpulkan Jumat.\"",
+     "siapa": "CRISPIN"
+    },
+    {
+     "start": 39.48,
+     "end": 40.9,
+     "teks": "Malam itu,"
+    },
+    {
+     "start": 40.9,
+     "end": 41.84,
+     "teks": "Aldo tidak membuka"
+    },
+    {
+     "start": 41.84,
+     "end": 42.95,
+     "teks": "aplikasi AI."
+    },
+    {
+     "start": 43.38,
+     "end": 44.26,
+     "teks": "Ia malah menulis"
+    },
+    {
+     "start": 44.26,
+     "end": 45.92,
+     "teks": "tentang Aldo S.,"
+    },
+    {
+     "start": 45.92,
+     "end": 46.96,
+     "teks": "sahabat yang namanya"
+    },
+    {
+     "start": 46.96,
+     "end": 48.11,
+     "teks": "sama dengannya."
+    },
+    {
+     "start": 48.36,
+     "end": 49.32,
+     "teks": "Tentang mereka yang"
+    },
+    {
+     "start": 49.32,
+     "end": 50.16,
+     "teks": "sering tertukar"
+    },
+    {
+     "start": 50.16,
+     "end": 51.03,
+     "teks": "dipanggil guru."
+    },
+    {
+     "start": 51.38,
+     "end": 52.42,
+     "teks": "Tentang Aldo S."
+    },
+    {
+     "start": 52.42,
+     "end": 53.02,
+     "teks": "yang pernah"
+    },
+    {
+     "start": 53.02,
+     "end": 54.22,
+     "teks": "meminjamkan sepatu"
+    },
+    {
+     "start": 54.22,
+     "end": 55.36,
+     "teks": "saat sepatunya jebol"
+    },
+    {
+     "start": 55.36,
+     "end": 56.85,
+     "teks": "sebelum upacara."
+    },
+    {
+     "start": 56.94,
+     "end": 57.62,
+     "teks": "Tulisannya tidak"
+    },
+    {
+     "start": 57.62,
+     "end": 58.38,
+     "teks": "indah."
+    },
+    {
+     "start": 58.38,
+     "end": 59.54,
+     "teks": "Tetapi,"
+    },
+    {
+     "start": 59.54,
+     "end": 60.74,
+     "teks": "semuanya benar-benar"
+    },
+    {
+     "start": 60.74,
+     "end": 61.93,
+     "teks": "terjadi."
+    },
+    {
+     "start": 62.7,
+     "end": 63.41,
+     "teks": "Jumat."
+    },
+    {
+     "start": 63.44,
+     "end": 64.44,
+     "teks": "Kertasnya kembali"
+    },
+    {
+     "start": 64.44,
+     "end": 66.74,
+     "teks": "dengan angka 82."
+    },
+    {
+     "start": 66.74,
+     "end": 67.7,
+     "teks": "Di bawahnya,"
+    },
+    {
+     "start": 67.7,
+     "end": 68.52,
+     "teks": "ada tulisan tangan"
+    },
+    {
+     "start": 68.52,
+     "end": 71.06,
+     "teks": "Pak Crispin: \"Ini"
+    },
+    {
+     "start": 71.06,
+     "end": 73.28,
+     "teks": "baru tulisan Aldo."
+    },
+    {
+     "start": 73.28,
+     "end": 74.0,
+     "teks": "Bapak lebih suka"
+    },
+    {
+     "start": 74.0,
+     "end": 74.79,
+     "teks": "yang ini.\""
+    },
+    {
+     "start": 75.58,
+     "end": 77.23,
+     "teks": "Aldo tersenyum."
+    },
+    {
+     "start": 77.32,
+     "end": 78.4,
+     "teks": "Kali ini,"
+    },
+    {
+     "start": 78.4,
+     "end": 79.0,
+     "teks": "perutnya tidak"
+    },
+    {
+     "start": 79.0,
+     "end": 80.21,
+     "teks": "terasa aneh lagi."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "ESAI YANG",
+  "baris2": "KEDUA",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 81.68,
+  "end": 84.98,
+  "judul": "TAMAT",
+  "sub": "Nilai Sempurna"
+ }
+}

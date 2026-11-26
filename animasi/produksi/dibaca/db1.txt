@@ -1,0 +1,21 @@
+# judul: DIBACA | DOANG
+# akhir: BERSAMBUNG... | Bagian 2: Lima Menit Sebelum Presentasi
+[kelas] p1=aldo p2=gelly p3=hissari p4=stefan p5=agus
+NARATOR {lebar}: Bagian 1: Dibaca Doang
+NARATOR {cu:agus} (agus=serius, agus:tunjuk): Kamis sore, Pak Agus memberi tugas kelompok: presentasi tentang sampah plastik di sekolah, dikumpulkan Senin pagi.
+[kelas] p1=stefan p2=hissari p3=aldo p4=gelly
+NARATOR {lebar} (aldo=senyum, gelly=senang, hissari=senyum, stefan=netral): Aldo satu kelompok dengan Gelly, Hissari, dan Stefan.
+[rumah grade=malam] dudukKiri=gelly#rumah
+NARATOR {mcu:gelly} (gelly:hp, gelly=senang): Malam itu juga, Gelly membuat grup WhatsApp bernama "Kelompok 3 Pasti Bisa".
+NARATOR {hp-grup} [Kelompok 3 Pasti Bisa 🔥@19.05 | #Gelly membuat grup | Gelly: Aldo bikin slide, Hissari cari data, aku susun naskah, Stefan foto tempat sampah sekolah ya!]: Gelly langsung membagi tugas. Aldo membuat slide, Hissari mencari data, Gelly menyusun naskah, dan Stefan memotret tempat sampah di sekolah.
+NARATOR {hp-grup} [Kelompok 3 Pasti Bisa 🔥@19.08 | Gelly: Aldo bikin slide, Hissari cari data, aku susun naskah, Stefan foto tempat sampah sekolah ya! | Aldo: Siap! | Hissari: Oke! | Gelly: Gas!]: Semua membalas. "Siap!" "Oke!" "Gas!"
+NARATOR {hp-grup} [Kelompok 3 Pasti Bisa 🔥@19.10 | Aldo: Siap! | Hissari: Oke! | Gelly: Gas! | #Dibaca oleh Stefan]: Kecuali Stefan. Di bawah pesan Gelly hanya muncul tulisan kecil: Dibaca oleh Stefan.
+NARATOR {hp-grup} [Kelompok 3 Pasti Bisa 🔥@20.15 | #Jumat | Gelly: Stef?? | #Dibaca oleh Stefan | #Sabtu | Hissari: 😾😾😾 | #Dibaca oleh Stefan]: Jumat, masih dibaca doang. Sabtu, Hissari mengirim stiker kucing marah. Tetap tidak ada balasan.
+[rumah grade=malam] dudukKiri=gelly#rumah
+NARATOR {mcu:gelly} (gelly:telepon, gelly=marah): Minggu malam, Gelly menelepon Aldo dengan suara kesal.
+GELLY (marah, gelly:telepon): "Do, aku udah screenshot semua chatnya. Kalau besok Stefan nggak bawa apa-apa, aku kirim ke grup kelas. Biar semua tahu."
+[rumah grade=malam] dudukKiri=aldo#rumah
+NARATOR {cu:aldo} (aldo:hp, aldo=cemas): Aldo terdiam menatap layar HP-nya.
+NARATOR {hp-notif} [Stefan@23.47 | Maaf. Besok aku jelasin semuanya.]: Tepat pukul 23.47, sebuah pesan masuk dari Stefan:
+NARATOR {hp} [Stefan@23.47 | Maaf. Besok aku jelasin semuanya.]: "Maaf. Besok aku jelasin semuanya."
+NARATOR {akhir}: Bersambung...

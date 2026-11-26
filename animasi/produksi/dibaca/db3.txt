@@ -1,0 +1,23 @@
+# judul: YANG TIDAK TERLIHAT | DI CHAT
+# akhir: TAMAT | Dibaca Doang
+[kelas] p1=hissari p2=aldo p3=gelly p4=stefan
+NARATOR {cu:stefan} (stefan=bersalah): Bagian 3: Yang Tidak Terlihat di Chat
+STEFAN (bersalah): "HP-ku jatuh hari Kamis,"
+NARATOR {dua} (gelly:silang, gelly=kaget): kata Stefan.
+STEFAN (bersalah): "Layarnya cuma bisa nyala sebentar. Aku bisa baca chat, tapi nggak bisa ngetik. Pesan semalam itu aku kirim pakai HP kakakku."
+NARATOR {cu:gelly} (gelly=bersalah): Gelly perlahan menurunkan tangannya.
+NARATOR {cu:aldo} (aldo=fokus): Aldo membuka map itu.
+NARATOR {kertas} (aldo=kaget) [Kantin: penuh jam 10. Lapangan: tidak ada tempat sampah sama sekali.]: Di dalamnya ada belasan foto tempat sampah di seluruh sekolah, dicetak satu per satu. Di bawah setiap foto ada catatan tulisan tangan: "Kantin: penuh jam 10." "Lapangan: tidak ada tempat sampah sama sekali."
+STEFAN (pelan): "Aku nggak bisa kirim fotonya,"
+NARATOR {dua} (stefan=bersalah): lanjut Stefan,
+STEFAN (pelan): "jadi aku cetak di fotokopian depan. Tadi antreannya panjang."
+NARATOR {cu:hissari} (hissari=senyum): Hissari tersenyum kecil.
+HISSARI (senyum): "Ini malah lebih bagus daripada foto di slide."
+[kelas] p1=stefan p2=hissari p3=aldo p4=gelly p5=agus
+NARATOR {lebar} (aldo=senang, hissari=senang, gelly=senyum, stefan=senyum, aldo:baca): Kelompok 3 maju. Mereka presentasi sambil mengedarkan foto-foto Stefan ke seluruh kelas.
+NARATOR {cu:agus} (agus=senyum): Pak Agus mengangguk-angguk, lalu menulis nilai di bukunya.
+[rumah] dudukKiri=gelly#rumah
+NARATOR {mcu:gelly} (gelly:hp, gelly=lega): Sepulang sekolah, Gelly membuka galeri HP-nya.
+NARATOR {hp} [Galeri | #12 screenshot dipilih | #Hapus? | >Hapus]: Ia memilih semua screenshot itu, lalu menekan Hapus.
+NARATOR {hp-grup} [Kelompok 3 (Tanya Dulu, Baru Marah)@21.30 | #Gelly mengubah nama grup menjadi "Kelompok 3 (Tanya Dulu, Baru Marah)" | Stefan: 😂 | Hissari: setuju!]: Malam itu, nama grup mereka berganti menjadi "Kelompok 3 (Tanya Dulu, Baru Marah)".
+NARATOR {akhir}: Tamat.

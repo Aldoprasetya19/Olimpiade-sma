@@ -13,7 +13,7 @@ import { phoneInsert } from './shots.js';
 export const LOKASI = {
   rumah: { set: 'rumah', grade: 'malam', bounds: [-5.6, 5.6, -5.1, 5.1],
     slot: { meja: [0, 1.0, Math.PI, true], dudukKiri: [0, 1.0, Math.PI, true], seberang: [0, -1.0, 0, true], dapur: [2.0, -4.1, Math.PI * 0.1, false], dekatMeja: [1.6, 0.2, -Math.PI / 2, false] } },
-  kelas: { set: 'kelas', grade: 'pagi', bounds: [-6.1, 6.1, -5.6, 5.6],
+  kelas: { set: 'kelas', grade: 'pagi', bounds: [-6.1, 6.1, -5.6, 5.6], center: [0, -4.4],
     slot: { dudukKiri: [-0.47, -1.45, Math.PI, true], dudukKanan: [0.47, -1.45, Math.PI, true], depanMeja: [-0.2, -3.4, 0, false], guruDepan: [1.7, -4.3, -0.35, false], lorong: [1.6, -1.45, -Math.PI / 2, false] } },
   kantin: { set: 'belakangKantin', grade: 'pagi', bounds: [-9, 9, -2.4, 12],
     slot: { kiri: [-0.9, -0.6, Math.PI / 2, false], kanan: [0.9, -0.6, -Math.PI / 2, false], dudukKiri: [-0.55, -2.05, 0, true], dudukKanan: [0.55, -2.05, 0, true] } },
@@ -130,7 +130,7 @@ function makeProp(kind) {
 function holdProp(c, pr) { const h = c.handOf(-1); if (pr.parent !== h) { h.add(pr); const [p, r] = pr.userData.off; pr.position.set(...p); pr.rotation.set(...r); } }
 const AKSI_POSE = {
   tunjuk: POSES.tunjuk, tunduk: POSES.tunduk, raba: { shR: [-1.3, 0, 0.1], elR: -0.3, shL: [-1.3, 0, -0.1], elL: -0.3, torsoX: 0.1 },
-  intip: { torsoZ: 0.3, headZ: 0.2, torsoX: 0.15 }, baca: { ...POSES.hpDua, headX: 0.42 }, bawa: POSES.bawa, serahkan: POSES.serahkan,
+  intip: { torsoZ: 0.3, headZ: 0.2, torsoX: 0.15 }, silang: POSES.silang, tahan: POSES.serahkan, taruh: { shR: [-0.9, 0, 0.15], elR: -0.5, torsoX: 0.25, headX: 0.3 }, baca: { ...POSES.hpDua, headX: 0.42 }, bawa: POSES.bawa, serahkan: POSES.serahkan,
 };
 
 // ---------- shot dari data
@@ -194,7 +194,8 @@ export function autoShot(d) {
               else if (a.a === 'beri' && chars[a.to]) {
                 const pr = props[name] || props[a.to]; if (pr) { pr.visible = true; if (q < 0.55) holdProp(c, pr); else { holdProp(chars[a.to].c, pr); props[a.to] = pr; if (props[name] === pr) delete props[name]; } }
                 if (q > 0 && q < 0.75) p = combine(p, mixPose({}, AKSI_POSE.serahkan, Math.sin(Math.PI * Math.min(1, q / 0.75))));
-              } else if (AKSI_POSE[a.a] && q > 0 && q < 1.3) p = combine(p, AKSI_POSE[a.a]);
+              } else if (a.a === 'silang' && q > 0) p = combine(p, AKSI_POSE.silang);
+              else if (AKSI_POSE[a.a] && q > 0 && q < 1.3) p = combine(p, AKSI_POSE[a.a]);
             }
             if (a.a === 'beri' && a.to === name && q > 0.25 && q < 0.8) p = combine(p, AKSI_POSE.serahkan);
           }
@@ -221,6 +222,7 @@ function phoneShot(S, d) {
   const L = LOKASI[d.loc] || LOKASI.kelas; const ph = d.phone || {};
   const pop = (lt, at) => Math.max(0, Math.min(1, (lt - at) / 0.25));
   const dur = d.t1 - d.t0, n = (ph.pesan || []).length;
+  const [jdl, jam] = (ph.judul || '').split('@'); ph.judul = jdl; if (jam) ph.jam = jam;
   const av = ph.av || (ph.anon ? { unknown: true, bg: '#8b949e' } : { group: (ph.judul || '?').slice(0, 2).toUpperCase(), bg: '#3f8a5c' });
   return phoneInsert(S, { set: L.set, setOpts: L.setOpts, camPos: [0.4, 1.9, 2.0], look: [0, 1.2, -2.5], fog: d.grade === 'malam' || L.grade === 'malam' ? '#3b2e26' : '#b9c4c9', fogFar: 12, push: 0.15,
     draw: (c, lt) => {
@@ -234,9 +236,17 @@ function phoneShot(S, d) {
         c.font = '500 26px Nunito'; c.fillText((ph.judul || '').toLowerCase() + '  ' + (ph.pesan?.[0] || ''), 24, 895); c.fillStyle = '#999'; c.font = '500 22px Nunito'; c.fillText('20 menit yang lalu', 24, 940);
         return;
       }
+      if (ph.jenis === 'retak') {
+        c.fillStyle = '#0d0d0d'; c.fillRect(0, 0, 540, 1080); c.globalAlpha = 0.35 + 0.25 * Math.sin(lt * 9); c.fillStyle = '#3a5a8a'; c.fillRect(0, 0, 540, 1080); c.globalAlpha = 1;
+        c.strokeStyle = 'rgba(235,240,255,0.85)'; c.lineWidth = 3; const cx = 330, cy = 420;
+        for (let i = 0; i < 14; i++) { const a = i * 0.45 + 0.2; c.beginPath(); c.moveTo(cx, cy); let x = cx, y = cy; for (let j = 0; j < 4; j++) { x += Math.cos(a + j * 0.3) * 90; y += Math.sin(a - j * 0.2) * 90; c.lineTo(x, y); } c.stroke(); }
+        for (let r = 40; r < 160; r += 55) { c.beginPath(); c.arc(cx, cy, r, 0, Math.PI * 2); c.stroke(); }
+        return;
+      }
       if (ph.jenis === 'notif') { drawLock(c, { time: ph.jam || '19.42', notifs: [{ title: ph.judul || '', body: ph.pesan?.[0] || '', av }] }); return; }
       drawChat(c, { title: ph.judul || '', subtitle: ph.sub || '', dark: !!ph.gelap, group: !!ph.grup, av, time: ph.jam,
         messages: (ph.pesan || []).map((m, i) => { const [from, text] = m.includes(':') && ph.grup ? m.split(/:(.*)/s) : ['', m];
+          if (m.trim().startsWith('#')) return { kind: 'sys', text: m.trim().slice(1).trim(), alpha: pop(lt, (i / Math.max(1, n)) * dur * 0.7) };
           return { from: from.trim(), text: text.trim().replace(/^>/, ''), me: m.trim().startsWith('>'), color: ['#d35400', '#8e44ad', '#2980b9', '#16a085'][i % 4], alpha: pop(lt, (i / Math.max(1, n)) * dur * 0.7) }; }) });
       if (ph.banner) drawBanner(c, ease(Math.min(1, lt / 0.5)), { title: ph.banner[0], body: ph.banner[1], av: { unknown: true } });
     }, grade: d.grade || (ph.gelap ? 'ancaman' : L.grade) });

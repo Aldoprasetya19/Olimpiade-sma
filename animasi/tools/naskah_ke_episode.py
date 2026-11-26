@@ -49,12 +49,13 @@ def transcribe(vo):
     return [{'start': s.start, 'end': s.end, 'text': s.text, 'words': [{'w': w.word, 's': w.start, 'e': w.end} for w in s.words]} for s in segs]
 
 # ---- aksi dari kata kerja narasi
-VERB = [(r'^(berjalan|jalan|melangkah|mendekat|menghampiri|menghampirinya|datang|tiba|maju)$', 'jalan', 2.0),
+VERB = [(r'^(berjalan|jalan|melangkah|mendekat|menghampiri|menghampirinya|datang|tiba|maju|masuk)$', 'jalan', 2.0),
         (r'^(mengendap|mengendapendap)$', 'endap', 2.5), (r'^(pergi|pulang|menjauh|meninggalkan)$', 'pergi', 2.2),
         (r'^(membaca|membacanya)$', 'baca', 2.0), (r'^(menyerahkan|memberikan|menyodorkan|memberi)$', 'beri', 1.6),
-        (r'^(menoleh)$', 'menoleh', 0.5), (r'^(menunduk)$', 'tunduk', 1.0), (r'^(mengangguk)$', 'angguk', 1.0),
+        (r'^(menoleh)$', 'menoleh', 0.5), (r'^(menunduk)$', 'tunduk', 1.0), (r'^(mengangguk|menganggukangguk)$', 'angguk', 1.6), (r'^(menyilangkan)$', 'silang', 1.0), (r'^(menahan)$', 'tahan', 1.4),
+        (r'^(menaruh|menaruhnya|meletakkan)$', 'taruh', 1.2), (r'^(melirik)$', 'menoleh', 0.5),
         (r'^(menunjuk|menemukan)$', 'tunjuk', 1.4), (r'^(mengintip)$', 'intip', 1.6), (r'^(meraba)$', 'raba', 2.0)]
-PROPW = {'kertas': 'kertas', 'surat': 'kertas', 'catatan': 'kertas', 'lembar': 'kertas', 'piala': 'piala', 'cat': 'cat', 'kaleng': 'cat', 'ponsel': 'hp', 'hp': 'hp'}
+PROPW = {'map': 'kertas', 'foto': 'kertas', 'kertas': 'kertas', 'surat': 'kertas', 'catatan': 'kertas', 'lembar': 'kertas', 'piala': 'piala', 'cat': 'cat', 'kaleng': 'cat', 'ponsel': 'hp', 'hp': 'hp'}
 
 def detect_actions(L, castnames, hold, last_subj):
     toks = [w[0][1] for w in L['words']]; times = [w[1][0] for w in L['words']]
@@ -72,6 +73,7 @@ def detect_actions(L, castnames, hold, last_subj):
             continue
         for rx, a, dur in VERB:
             if not re.match(rx, w) or not subj: continue
+            if w == 'masuk' and i > 0 and toks[i - 1] in ('pesan', 'notifikasi', 'chat', 'telepon'): continue
             prop = next((PROPW[x] for x in toks[i + 1:i + 5] if x in PROPW), None)
             for s_ in subj:
                 e = {'who': s_, 'a': a, 't': round(times[i], 2), 'dur': dur}
@@ -164,11 +166,11 @@ def main():
         if cam == 'kertas': d['kertas'] = (L['hp'] or '').strip(); d['cam'] = 'lebar'
         if cam.startswith('hp'):
             parts = [x.strip() for x in (L['hp'] or '').split('|')]
-            d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'post' if 'post' in cam else 'chat',
+            d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'post' if 'post' in cam else 'retak' if 'retak' in cam else 'chat',
                           'grup': 'grup' in cam, 'gelap': 'gelap' in cam}
         hold0 = dict(sc.setdefault('hold', {}))
         for nm, ps in list(pose.items()):
-            if ps in ('piala', 'cat'): hold0[nm] = ps; sc['hold'][nm] = ps; del pose[nm]
+            if ps in ('piala', 'cat', 'kertas'): hold0[nm] = ps; sc['hold'][nm] = ps; del pose[nm]
         if who == 'NARATOR':
             acts, last_subj = detect_actions(L, castnames, sc['hold'], last_subj if last_scene is sc else None)
         else: acts = []

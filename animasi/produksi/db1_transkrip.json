@@ -1,0 +1,883 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.7,
+  "text": " Bagian satu, dibaca doang.",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 0.0,
+    "e": 0.56
+   },
+   {
+    "w": " satu,",
+    "s": 0.56,
+    "e": 1.16
+   },
+   {
+    "w": " dibaca",
+    "s": 1.52,
+    "e": 1.94
+   },
+   {
+    "w": " doang.",
+    "s": 1.94,
+    "e": 2.7
+   }
+  ]
+ },
+ {
+  "start": 3.4,
+  "end": 6.18,
+  "text": " Kami sore, Pak Agus memberi tugas kelompok.",
+  "words": [
+   {
+    "w": " Kami",
+    "s": 3.4,
+    "e": 3.68
+   },
+   {
+    "w": " sore,",
+    "s": 3.68,
+    "e": 4.06
+   },
+   {
+    "w": " Pak",
+    "s": 4.42,
+    "e": 4.54
+   },
+   {
+    "w": " Agus",
+    "s": 4.54,
+    "e": 4.84
+   },
+   {
+    "w": " memberi",
+    "s": 4.84,
+    "e": 5.24
+   },
+   {
+    "w": " tugas",
+    "s": 5.24,
+    "e": 5.52
+   },
+   {
+    "w": " kelompok.",
+    "s": 5.52,
+    "e": 6.18
+   }
+  ]
+ },
+ {
+  "start": 6.34,
+  "end": 10.32,
+  "text": " Presentasi tentang sampah plastik di sekolah, dikumpulkan senin pagi.",
+  "words": [
+   {
+    "w": " Presentasi",
+    "s": 6.34,
+    "e": 6.96
+   },
+   {
+    "w": " tentang",
+    "s": 6.96,
+    "e": 7.26
+   },
+   {
+    "w": " sampah",
+    "s": 7.26,
+    "e": 7.62
+   },
+   {
+    "w": " plastik",
+    "s": 7.62,
+    "e": 8.02
+   },
+   {
+    "w": " di",
+    "s": 8.02,
+    "e": 8.22
+   },
+   {
+    "w": " sekolah,",
+    "s": 8.22,
+    "e": 8.74
+   },
+   {
+    "w": " dikumpulkan",
+    "s": 8.88,
+    "e": 9.38
+   },
+   {
+    "w": " senin",
+    "s": 9.38,
+    "e": 9.56
+   },
+   {
+    "w": " pagi.",
+    "s": 9.56,
+    "e": 10.32
+   }
+  ]
+ },
+ {
+  "start": 10.6,
+  "end": 13.88,
+  "text": " Aldo satu kelompok dengan Geli, Hisari, dan Stefan.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 10.6,
+    "e": 10.86
+   },
+   {
+    "w": " satu",
+    "s": 10.86,
+    "e": 11.12
+   },
+   {
+    "w": " kelompok",
+    "s": 11.12,
+    "e": 11.54
+   },
+   {
+    "w": " dengan",
+    "s": 11.54,
+    "e": 11.86
+   },
+   {
+    "w": " Geli,",
+    "s": 11.86,
+    "e": 12.32
+   },
+   {
+    "w": " Hisari,",
+    "s": 12.64,
+    "e": 13.12
+   },
+   {
+    "w": " dan",
+    "s": 13.3,
+    "e": 13.52
+   },
+   {
+    "w": " Stefan.",
+    "s": 13.52,
+    "e": 13.88
+   }
+  ]
+ },
+ {
+  "start": 14.4,
+  "end": 19.46,
+  "text": " Malam itu juga, Geli membuat grup WhatsApp bernama Kelompok Tiga Pasti Bisa.",
+  "words": [
+   {
+    "w": " Malam",
+    "s": 14.4,
+    "e": 14.72
+   },
+   {
+    "w": " itu",
+    "s": 14.72,
+    "e": 14.92
+   },
+   {
+    "w": " juga,",
+    "s": 14.92,
+    "e": 15.38
+   },
+   {
+    "w": " Geli",
+    "s": 15.68,
+    "e": 15.84
+   },
+   {
+    "w": " membuat",
+    "s": 15.84,
+    "e": 16.22
+   },
+   {
+    "w": " grup",
+    "s": 16.22,
+    "e": 16.46
+   },
+   {
+    "w": " WhatsApp",
+    "s": 16.46,
+    "e": 16.92
+   },
+   {
+    "w": " bernama",
+    "s": 16.92,
+    "e": 17.52
+   },
+   {
+    "w": " Kelompok",
+    "s": 17.52,
+    "e": 18.16
+   },
+   {
+    "w": " Tiga",
+    "s": 18.16,
+    "e": 18.56
+   },
+   {
+    "w": " Pasti",
+    "s": 18.56,
+    "e": 19.12
+   },
+   {
+    "w": " Bisa.",
+    "s": 19.12,
+    "e": 19.46
+   }
+  ]
+ },
+ {
+  "start": 19.88,
+  "end": 21.78,
+  "text": " Geli langsung membagi tugas.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 19.88,
+    "e": 20.26
+   },
+   {
+    "w": " langsung",
+    "s": 20.26,
+    "e": 20.72
+   },
+   {
+    "w": " membagi",
+    "s": 20.72,
+    "e": 21.12
+   },
+   {
+    "w": " tugas.",
+    "s": 21.12,
+    "e": 21.78
+   }
+  ]
+ },
+ {
+  "start": 21.94,
+  "end": 26.3,
+  "text": " Aldo membuat slide, Hisari mencari data, Geli menyusun naskah,",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 21.94,
+    "e": 22.3
+   },
+   {
+    "w": " membuat",
+    "s": 22.3,
+    "e": 22.66
+   },
+   {
+    "w": " slide,",
+    "s": 22.66,
+    "e": 23.1
+   },
+   {
+    "w": " Hisari",
+    "s": 23.4,
+    "e": 23.8
+   },
+   {
+    "w": " mencari",
+    "s": 23.8,
+    "e": 24.18
+   },
+   {
+    "w": " data,",
+    "s": 24.18,
+    "e": 24.62
+   },
+   {
+    "w": " Geli",
+    "s": 25.0,
+    "e": 25.3
+   },
+   {
+    "w": " menyusun",
+    "s": 25.3,
+    "e": 25.78
+   },
+   {
+    "w": " naskah,",
+    "s": 25.78,
+    "e": 26.3
+   }
+  ]
+ },
+ {
+  "start": 26.48,
+  "end": 29.08,
+  "text": " dan Stefan memotret tempat sampah di sekolah.",
+  "words": [
+   {
+    "w": " dan",
+    "s": 26.48,
+    "e": 26.68
+   },
+   {
+    "w": " Stefan",
+    "s": 26.68,
+    "e": 27.1
+   },
+   {
+    "w": " memotret",
+    "s": 27.1,
+    "e": 27.6
+   },
+   {
+    "w": " tempat",
+    "s": 27.6,
+    "e": 27.94
+   },
+   {
+    "w": " sampah",
+    "s": 27.94,
+    "e": 28.32
+   },
+   {
+    "w": " di",
+    "s": 28.32,
+    "e": 28.5
+   },
+   {
+    "w": " sekolah.",
+    "s": 28.5,
+    "e": 29.08
+   }
+  ]
+ },
+ {
+  "start": 29.08,
+  "end": 32.92,
+  "text": " Semua membalas, siap, oke, gas!",
+  "words": [
+   {
+    "w": " Semua",
+    "s": 29.08,
+    "e": 29.74
+   },
+   {
+    "w": " membalas,",
+    "s": 29.74,
+    "e": 30.58
+   },
+   {
+    "w": " siap,",
+    "s": 30.78,
+    "e": 31.3
+   },
+   {
+    "w": " oke,",
+    "s": 31.52,
+    "e": 32.02
+   },
+   {
+    "w": " gas!",
+    "s": 32.3,
+    "e": 32.92
+   }
+  ]
+ },
+ {
+  "start": 33.9,
+  "end": 38.32,
+  "text": " Kecuali Stefan, di bawah pesan Geli hanya muncul tulisan kecil.",
+  "words": [
+   {
+    "w": " Kecuali",
+    "s": 33.9,
+    "e": 34.32
+   },
+   {
+    "w": " Stefan,",
+    "s": 34.32,
+    "e": 34.78
+   },
+   {
+    "w": " di",
+    "s": 35.48,
+    "e": 35.58
+   },
+   {
+    "w": " bawah",
+    "s": 35.58,
+    "e": 35.76
+   },
+   {
+    "w": " pesan",
+    "s": 35.76,
+    "e": 36.1
+   },
+   {
+    "w": " Geli",
+    "s": 36.1,
+    "e": 36.48
+   },
+   {
+    "w": " hanya",
+    "s": 36.48,
+    "e": 36.86
+   },
+   {
+    "w": " muncul",
+    "s": 36.86,
+    "e": 37.3
+   },
+   {
+    "w": " tulisan",
+    "s": 37.3,
+    "e": 37.66
+   },
+   {
+    "w": " kecil.",
+    "s": 37.66,
+    "e": 38.32
+   }
+  ]
+ },
+ {
+  "start": 38.74,
+  "end": 40.24,
+  "text": " Dibaca oleh Stefan.",
+  "words": [
+   {
+    "w": " Dibaca",
+    "s": 38.74,
+    "e": 39.24
+   },
+   {
+    "w": " oleh",
+    "s": 39.24,
+    "e": 39.54
+   },
+   {
+    "w": " Stefan.",
+    "s": 39.54,
+    "e": 40.24
+   }
+  ]
+ },
+ {
+  "start": 41.06,
+  "end": 43.24,
+  "text": " Jumat, masih dibaca doang.",
+  "words": [
+   {
+    "w": " Jumat,",
+    "s": 41.06,
+    "e": 41.62
+   },
+   {
+    "w": " masih",
+    "s": 41.94,
+    "e": 42.16
+   },
+   {
+    "w": " dibaca",
+    "s": 42.16,
+    "e": 42.56
+   },
+   {
+    "w": " doang.",
+    "s": 42.56,
+    "e": 43.24
+   }
+  ]
+ },
+ {
+  "start": 43.52,
+  "end": 46.54,
+  "text": " Sabtu, Hisari mengirim stiker kucing marah.",
+  "words": [
+   {
+    "w": " Sabtu,",
+    "s": 43.52,
+    "e": 44.1
+   },
+   {
+    "w": " Hisari",
+    "s": 44.36,
+    "e": 44.7
+   },
+   {
+    "w": " mengirim",
+    "s": 44.7,
+    "e": 45.04
+   },
+   {
+    "w": " stiker",
+    "s": 45.04,
+    "e": 45.54
+   },
+   {
+    "w": " kucing",
+    "s": 45.54,
+    "e": 45.96
+   },
+   {
+    "w": " marah.",
+    "s": 45.96,
+    "e": 46.54
+   }
+  ]
+ },
+ {
+  "start": 46.74,
+  "end": 47.98,
+  "text": " Tetap tidak ada balasan.",
+  "words": [
+   {
+    "w": " Tetap",
+    "s": 46.74,
+    "e": 47.14
+   },
+   {
+    "w": " tidak",
+    "s": 47.14,
+    "e": 47.38
+   },
+   {
+    "w": " ada",
+    "s": 47.38,
+    "e": 47.56
+   },
+   {
+    "w": " balasan.",
+    "s": 47.56,
+    "e": 47.98
+   }
+  ]
+ },
+ {
+  "start": 48.64,
+  "end": 51.88,
+  "text": " Minggu malam, Geli menelfon Aldo dengan suara kesal.",
+  "words": [
+   {
+    "w": " Minggu",
+    "s": 48.64,
+    "e": 48.94
+   },
+   {
+    "w": " malam,",
+    "s": 48.94,
+    "e": 49.46
+   },
+   {
+    "w": " Geli",
+    "s": 49.58,
+    "e": 49.88
+   },
+   {
+    "w": " menelfon",
+    "s": 49.88,
+    "e": 50.34
+   },
+   {
+    "w": " Aldo",
+    "s": 50.34,
+    "e": 50.72
+   },
+   {
+    "w": " dengan",
+    "s": 50.72,
+    "e": 51.08
+   },
+   {
+    "w": " suara",
+    "s": 51.08,
+    "e": 51.42
+   },
+   {
+    "w": " kesal.",
+    "s": 51.42,
+    "e": 51.88
+   }
+  ]
+ },
+ {
+  "start": 52.22,
+  "end": 54.44,
+  "text": " Do, aku udah screenshot semua chatnya.",
+  "words": [
+   {
+    "w": " Do,",
+    "s": 52.22,
+    "e": 52.44
+   },
+   {
+    "w": " aku",
+    "s": 52.74,
+    "e": 53.02
+   },
+   {
+    "w": " udah",
+    "s": 53.02,
+    "e": 53.26
+   },
+   {
+    "w": " screenshot",
+    "s": 53.26,
+    "e": 53.68
+   },
+   {
+    "w": " semua",
+    "s": 53.68,
+    "e": 53.98
+   },
+   {
+    "w": " chatnya.",
+    "s": 53.98,
+    "e": 54.44
+   }
+  ]
+ },
+ {
+  "start": 54.66,
+  "end": 57.9,
+  "text": " Kalau besok Stefan gak bawa apa-apa, aku kirim ke grup kelas.",
+  "words": [
+   {
+    "w": " Kalau",
+    "s": 54.66,
+    "e": 54.88
+   },
+   {
+    "w": " besok",
+    "s": 54.88,
+    "e": 55.24
+   },
+   {
+    "w": " Stefan",
+    "s": 55.24,
+    "e": 55.54
+   },
+   {
+    "w": " gak",
+    "s": 55.54,
+    "e": 55.7
+   },
+   {
+    "w": " bawa",
+    "s": 55.7,
+    "e": 55.92
+   },
+   {
+    "w": " apa",
+    "s": 55.92,
+    "e": 56.12
+   },
+   {
+    "w": "-apa,",
+    "s": 56.12,
+    "e": 56.4
+   },
+   {
+    "w": " aku",
+    "s": 56.66,
+    "e": 56.86
+   },
+   {
+    "w": " kirim",
+    "s": 56.86,
+    "e": 57.18
+   },
+   {
+    "w": " ke",
+    "s": 57.18,
+    "e": 57.34
+   },
+   {
+    "w": " grup",
+    "s": 57.34,
+    "e": 57.5
+   },
+   {
+    "w": " kelas.",
+    "s": 57.5,
+    "e": 57.9
+   }
+  ]
+ },
+ {
+  "start": 57.9,
+  "end": 59.08,
+  "text": " Biar semua tahu!",
+  "words": [
+   {
+    "w": " Biar",
+    "s": 57.9,
+    "e": 58.3
+   },
+   {
+    "w": " semua",
+    "s": 58.3,
+    "e": 58.58
+   },
+   {
+    "w": " tahu!",
+    "s": 58.58,
+    "e": 59.08
+   }
+  ]
+ },
+ {
+  "start": 59.86,
+  "end": 62.36,
+  "text": " Aldo terdiam menatap layar HP-nya.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 59.86,
+    "e": 60.08
+   },
+   {
+    "w": " terdiam",
+    "s": 60.08,
+    "e": 60.66
+   },
+   {
+    "w": " menatap",
+    "s": 60.66,
+    "e": 61.14
+   },
+   {
+    "w": " layar",
+    "s": 61.14,
+    "e": 61.48
+   },
+   {
+    "w": " HP",
+    "s": 61.48,
+    "e": 61.78
+   },
+   {
+    "w": "-nya.",
+    "s": 61.78,
+    "e": 62.36
+   }
+  ]
+ },
+ {
+  "start": 62.58,
+  "end": 65.48,
+  "text": " Tepat pukul 11 lewat 47 malam,",
+  "words": [
+   {
+    "w": " Tepat",
+    "s": 62.58,
+    "e": 62.92
+   },
+   {
+    "w": " pukul",
+    "s": 62.92,
+    "e": 63.3
+   },
+   {
+    "w": " 11",
+    "s": 63.3,
+    "e": 63.76
+   },
+   {
+    "w": " lewat",
+    "s": 63.76,
+    "e": 64.16
+   },
+   {
+    "w": " 47",
+    "s": 64.16,
+    "e": 64.76
+   },
+   {
+    "w": " malam,",
+    "s": 64.76,
+    "e": 65.48
+   }
+  ]
+ },
+ {
+  "start": 65.82,
+  "end": 67.5,
+  "text": " sebuah pesan masuk dari Stefan.",
+  "words": [
+   {
+    "w": " sebuah",
+    "s": 65.82,
+    "e": 66.06
+   },
+   {
+    "w": " pesan",
+    "s": 66.06,
+    "e": 66.36
+   },
+   {
+    "w": " masuk",
+    "s": 66.36,
+    "e": 66.76
+   },
+   {
+    "w": " dari",
+    "s": 66.76,
+    "e": 67.02
+   },
+   {
+    "w": " Stefan.",
+    "s": 67.02,
+    "e": 67.5
+   }
+  ]
+ },
+ {
+  "start": 68.36,
+  "end": 71.04,
+  "text": " Maaf, besok aku jelasin semuanya.",
+  "words": [
+   {
+    "w": " Maaf,",
+    "s": 68.36,
+    "e": 69.04
+   },
+   {
+    "w": " besok",
+    "s": 69.24,
+    "e": 69.68
+   },
+   {
+    "w": " aku",
+    "s": 69.68,
+    "e": 69.9
+   },
+   {
+    "w": " jelasin",
+    "s": 69.9,
+    "e": 70.42
+   },
+   {
+    "w": " semuanya.",
+    "s": 70.42,
+    "e": 71.04
+   }
+  ]
+ },
+ {
+  "start": 72.0,
+  "end": 72.7,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 72.0,
+    "e": 72.7
+   }
+  ]
+ }
+]

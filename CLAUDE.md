@@ -11,6 +11,7 @@
 - Hemat token: jangan cek frame berulang-ulang; satu lembar cuplikan kecil per episode, perbaiki hanya shot yang rusak.
 - **Tidak ada tokoh berkerudung/hijab di video animasi mana pun** (permintaan pengguna). Tokoh perempuan pakai rambut `panjang` (lihat `animasi/engine/lib/cast.js`); jangan pakai gaya rambut `hijab`, juga di avatar UI ponsel.
 - **Tokoh tetap**: nama, jenis kelamin, kelas, dan bentuk tiap tokoh dikunci di `animasi/engine/TOKOH.md` + `lib/cast.js` (`TOKOH`). Selalu pakai kunci itu; jangan ubah desainnya tanpa permintaan pengguna. Tokoh baru → tambahkan ke daftar dulu.
+- Aturan adegan otomatis (kamar & meja belajar, tidur di kasur, jam HP sesuai cerita, maju ke depan kelas, saling menatap, murid duduk di kelas, masuk lewat pintu, foto) ada di `animasi/engine/README.md`; pastikan naskah memicu aturan itu, jangan dimatikan.
 - Nama sekolah di semua video: **SMAN 1 NYUATAN** (papan gerbang, dsb.).
 - Jangan analisis ulang video referensi; semua yang perlu sudah tercatat di file-file di atas.
 

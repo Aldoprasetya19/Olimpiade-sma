@@ -129,7 +129,13 @@ function windowPane(w, h, glassColor, frame = '#f1f1f1') {
   for (const [ww, hh, x, y] of [[w + 0.1, 0.1, 0, h / 2], [w + 0.1, 0.1, 0, -h / 2], [0.1, h, -w / 2, 0], [0.1, h, w / 2, 0], [0.06, h, 0, 0]]) g.add(box(ww, hh, 0.1, frame, [x, y, 0.03]));
   return g;
 }
-function door(color = '#8b5a3c') { const g = new THREE.Group(); g.add(box(1.3, 2.9, 0.1, color, [0, 1.45, 0])); g.add(box(0.08, 0.08, 0.1, '#d4af37', [0.5, 1.4, 0.08])); return g; }
+function door(color = '#8b5a3c') { // engsel di kiri; userData.leaf diputar untuk membuka
+  const g = new THREE.Group(); g.name = 'pintu';
+  g.add(box(1.4, 3.0, 0.04, noOutline(flat('#1a1612')), [0, 1.5, -0.04], { cast: false }));
+  const leaf = new THREE.Group(); leaf.position.set(-0.65, 0, 0); g.add(leaf);
+  leaf.add(box(1.3, 2.9, 0.1, color, [0.65, 1.45, 0])); leaf.add(box(0.08, 0.08, 0.1, '#d4af37', [1.15, 1.4, 0.08]));
+  g.userData.leaf = leaf; return g;
+}
 
 // ---------------- lokasi
 function room(scene, o) {
@@ -171,6 +177,7 @@ export const SETS = {
     const pt = plant(); pt.position.set(-5.2, 0, -4.6); scene.add(pt);
     // pigura
     scene.add(box(0.9, 0.7, 0.05, '#6b4a2f', [3.5, 2.6, -5.47])); scene.add(box(0.75, 0.55, 0.02, noOutline(flat('#e8c9a0')), [3.5, 2.6, -5.43]));
+    const pr = door('#6b4430'); pr.position.set(5.94, 0, 2.5); pr.rotation.y = -Math.PI / 2; scene.add(pr);
     return { meja: [0, 0.96, 0], kursiAldo: [0, 0, 1.0], dapur: [1.8, 0, -4.1] };
   },
   sekolahTangga(scene, o = {}) { // koridor + tangga, papan penunjuk kelas tergantung
@@ -243,6 +250,7 @@ export const SETS = {
     scene.userData.clear = 0x222222;
     room(scene, { w: 13, d: 12, h: 4.8, wall: '#efe4c8', floorMat: toon('#fff', { map: terrazzo() }), trim: '#3f8a5c' });
     lights(scene, { sky: '#fffaf0', ground: '#9a8f7a', hemi: 1.7, sunI: 1.5, sunPos: [-7, 9, 5] });
+    const pk = door('#7b5236'); pk.position.set(6.44, 0, -4.4); pk.rotation.y = -Math.PI / 2; scene.add(pk);
     const wb = box(4.4, 1.6, 0.06, '#fdfdfd', [0, 2.6, -5.95]); scene.add(wb); scene.add(box(4.6, 1.8, 0.04, '#9aa3a8', [0, 2.6, -5.97]));
     for (let i = 0; i < 3; i++) { const w = windowPane(1.8, 1.6, '#cbe7f4'); w.position.set(-6.45, 2.5, -3 + i * 2.6); w.rotation.y = Math.PI / 2; scene.add(w); }
     const clock = mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.06, 24), toon('#fff')); clock.rotation.x = Math.PI / 2; clock.position.set(3.4, 3.7, -5.95); scene.add(clock);
@@ -274,6 +282,7 @@ export const SETS = {
     const w = windowPane(2.6, 1.5, '#cfe8f6'); w.position.set(-2.2, 2.6, -5.45); scene.add(w);
     scene.add(box(1.6, 1.0, 0.05, '#fdfdfd', [-5.95, 2.6, -2], { rot: [0, Math.PI / 2, 0] }));
     const pt = plant(); pt.position.set(-5, 0, -4.5); scene.add(pt);
+    const pg = door('#7a5236'); pg.position.set(5.94, 0, 1.5); pg.rotation.y = -Math.PI / 2; scene.add(pg);
     return { mejaY: 1.0 };
   },
   toko(scene) { // toko kelontong sore
@@ -348,6 +357,32 @@ export const SETS = {
     const pole = box(0.08, 6, 0.08, '#ccc', [6, 3, -6]); scene.add(pole);
     const fl = textPlane(1.2, 0.8, (x, w, h) => { x.fillStyle = '#d62828'; x.fillRect(0, 0, w, h / 2); x.fillStyle = '#fff'; x.fillRect(0, h / 2, w, h / 2); }); fl.position.set(6.62, 5.5, -6); scene.add(fl);
     if (o.spanduk) { const sp = textPlane(5.0, 1.0, (x, w, h) => { x.fillStyle = '#c0392b'; x.fillRect(0, 0, w, h); x.fillStyle = '#ffe9a8'; x.font = `bold ${h * 0.45}px Oswald`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText('TERIMA KASIH, PAK EKO!', w / 2, h / 2 + 3); }); sp.position.set(0, 3.2, -7.9); scene.add(sp); }
+    return {};
+  },
+  kamar(scene, o = {}) { // kamar tidur: meja belajar + laptop, kasur, jendela malam
+    scene.userData.clear = 0x111111;
+    room(scene, { w: 9, d: 8, h: 4.2, wall: '#d9e4ee', floorMat: toon('#fff', { map: wood('#9c7250') }), ceil: '#e8edf2' });
+    lights(scene, { sky: '#cfe0ff', ground: '#4a4050', hemi: 1.2, sun: '#9fb7ff', sunI: 0.7, sunPos: [-3, 6, 4] });
+    const lamp = new THREE.PointLight('#ffd9a0', 6, 6, 1.6); lamp.position.set(-1.0, 1.9, -3.2); scene.add(lamp);
+    const dk = desk(1.8, 0.9, 0.92, '#a0704c'); dk.position.set(-1.5, 0, -3.3); scene.add(dk);
+    const ch = chair('#3b5b8a'); ch.position.set(-1.5, 0, -2.45); scene.add(ch);
+    // laptop (layar = canvas)
+    const lp = new THREE.Group(); lp.add(box(0.7, 0.03, 0.48, '#9aa0a6', [0, 0.015, 0]));
+    const c = document.createElement('canvas'); c.width = 512; c.height = 320; const tex = new THREE.CanvasTexture(c);
+    const scr = new THREE.Group(); scr.position.set(0, 0.03, -0.23); scr.rotation.x = -0.25; lp.add(scr);
+    scr.add(box(0.7, 0.45, 0.025, '#5f656b', [0, 0.225, 0])); const sm = new THREE.Mesh(new THREE.PlaneGeometry(0.64, 0.4), flat('#fff', { map: tex })); sm.position.set(0, 0.225, 0.014); scr.add(sm);
+    lp.position.set(-1.5, 0.96, -3.35); scene.add(lp);
+    scene.userData.layar = { ctx: c.getContext('2d'), tex };
+    const dl = mesh(new THREE.CylinderGeometry(0.12, 0.16, 0.06, 12), toon('#333')); dl.position.set(-0.85, 0.99, -3.5); scene.add(dl);
+    scene.add(box(0.05, 0.5, 0.05, '#333', [-0.85, 1.25, -3.5]));
+    for (let i = 0; i < 6; i++) scene.add(box(0.12, 0.32, 0.25, ['#c0392b', '#2980b9', '#27ae60', '#f39c12', '#8e44ad', '#16a085'][i], [-2.75 + i * 0.13, 1.12, -3.6]));
+    // kasur
+    scene.add(box(1.6, 0.4, 3.0, '#6b4430', [2.4, 0.2, -1.6], { round: 0.03 })); scene.add(box(1.5, 0.18, 2.9, '#f4f1ea', [2.4, 0.49, -1.6], { round: 0.06 }));
+    scene.add(box(0.9, 0.16, 0.45, '#ffffff', [2.4, 0.66, -2.75], { round: 0.07 })); scene.add(box(1.6, 1.0, 0.12, '#6b4430', [2.4, 0.9, -3.15]));
+    const sel = box(1.55, 0.1, 1.9, '#4a76b8', [2.4, 0.62, -0.95], { round: 0.04 }); sel.name = 'selimut'; scene.add(sel);
+    const win = windowPane(1.8, 1.4, '#1d2b4f'); win.position.set(-4.45, 2.3, -1); win.rotation.y = Math.PI / 2; scene.add(win);
+    const moon = mesh(new THREE.SphereGeometry(0.15, 12, 8), flat('#f4f1c8')); moon.position.set(-4.43, 2.6, -1.3); scene.add(moon);
+    const pr = door('#6b4430'); pr.position.set(4.44, 0, 1.8); pr.rotation.y = -Math.PI / 2; scene.add(pr);
     return {};
   },
   kosong(scene, o = {}) { // studio polos untuk kenangan / insert

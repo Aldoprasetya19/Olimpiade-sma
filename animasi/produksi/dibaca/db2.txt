@@ -1,0 +1,26 @@
+# judul: LIMA MENIT SEBELUM | PRESENTASI
+# akhir: BERSAMBUNG... | Bagian 3: Yang Tidak Terlihat di Chat
+[kelas berdiri] p1=hissari p2=aldo p3=gelly
+NARATOR {lebar}: Bagian 2: Lima Menit Sebelum Presentasi
+NARATOR {lebar} (aldo=cemas, gelly=serius, hissari=cemas): Senin pagi, kelompok 3 berkumpul di depan kelas.
+NARATOR {dua} (aldo=cemas, gelly=marah): Slide sudah jadi dan naskah sudah siap, tetapi tidak ada satu pun foto. Stefan juga belum datang.
+GELLY (curiga, gelly:hp): "Tuh kan,"
+NARATOR {cu:gelly} (gelly:hp, gelly=marah): kata Gelly sambil membuka galeri HP-nya. Jarinya sudah siap di tombol kirim.
+NARATOR {dua} (hissari:tahan, hissari=cemas, gelly:hp): Hissari menahan tangannya.
+HISSARI (cemas): "Tunggu dulu, Gel."
+[kelas berdiri] p1=hissari p2=aldo p3=gelly p4=agus
+NARATOR {masuk} (agus=serius): Pak Agus masuk.
+AGUS (serius): "Kelompok 3, lima menit lagi giliran kalian."
+NARATOR {cu:aldo} (aldo=cemas): Aldo melirik jam. Empat menit. Tiga menit.
+[kelas berdiri] p1=aldo p2=hissari p3=gelly p4=stefan
+NARATOR {masuk} (stefan=cemas, stefan:kertas): Lalu pintu kelas terbuka. Stefan masuk dengan napas terengah-engah, seragamnya basah oleh keringat.
+NARATOR {cu:stefan} (stefan=cemas, stefan:kertas): Tangannya memegang map plastik yang sudah lecek.
+STEFAN (bersalah): "Ini,"
+NARATOR {dua} (stefan=bersalah): katanya pelan sambil menyodorkan map itu.
+STEFAN (bersalah): "Maaf telat."
+NARATOR {cu:gelly} (gelly=marah): Gelly menyilangkan tangan.
+GELLY (marah, gelly:silang): "Tiga hari kamu cuma baca chat, Stef. Tiga hari!"
+NARATOR {lebar} (aldo=kaget, hissari=kaget, stefan=sedih, gelly:silang): Seisi kelas mendadak hening. Semua mata tertuju ke kelompok 3.
+NARATOR {cu:stefan} (stefan=sedih): Stefan menunduk. Ia mengeluarkan sesuatu dari sakunya dan menaruhnya di meja.
+NARATOR {hp-retak} [HP Stefan]: Sebuah HP dengan layar retak parah, hampir tidak bisa dibaca.
+NARATOR {akhir}: Bersambung...

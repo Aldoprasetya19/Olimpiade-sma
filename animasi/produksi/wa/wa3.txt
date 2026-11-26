@@ -1,0 +1,28 @@
+# judul: ESAI YANG | KEDUA
+# akhir: TAMAT | Nilai Sempurna
+[ruangGuru] guru=crispin siswa2=aldo
+NARATOR {lebar} (crispin=netral, aldo=cemas): Bagian tiga, Esai yang Kedua.
+NARATOR {cu:crispin} (crispin=senyum): Di ruang guru, Pak Crispin tidak marah. Beliau hanya bertanya,
+CRISPIN (netral): "Kenapa?"
+NARATOR {cu:aldo} (aldo=bersalah, aldo:tunduk): Aldo menunduk.
+ALDO (bersalah): "Saya bingung mau nulis apa, Pak. Terus semua juga pakai."
+CRISPIN (serius): "Bapak tidak melarang AI. Tapi kalau tulisannya bukan pikiranmu, nilai 100 itu milik siapa?"
+NARATOR {cu:aldo} (aldo=sedih): Aldo terdiam lama. Lalu ia mengangguk.
+ALDO (bersalah): "Bukan punya saya, Pak."
+NARATOR {dua} (crispin=senyum): Pak Crispin menyerahkan selembar kertas kosong kepada Aldo.
+CRISPIN (senyum): "Tulis ulang. Pakai kata-katamu sendiri. Kumpulkan Jumat."
+[rumah grade=malam] dudukKiri=aldo#rumah
+NARATOR {mcu:aldo} (aldo:mengetik, aldo=fokus): Malam itu, Aldo tidak membuka aplikasi AI.
+NARATOR {cu:aldo} (aldo:mengetik, aldo=senyum): Ia malah menulis tentang Aldo S., sahabat yang namanya sama dengannya.
+[kelas grade=kenangan] p1=aldo p2=aldos p3=crispin
+NARATOR {lebar} (aldo=senang, aldos=senang, crispin=curiga, flash): Tentang mereka yang sering tertukar dipanggil guru.
+[koridor grade=kenangan] kiri=aldo kanan=aldos
+NARATOR {dua} (aldo=senang, aldos=senyum): Tentang Aldo S. yang pernah meminjamkan sepatu saat sepatunya jebol sebelum upacara.
+[rumah grade=malam] dudukKiri=aldo#rumah
+NARATOR {cu:aldo} (aldo:mengetik, aldo=fokus): Tulisannya tidak indah. Tetapi, semuanya benar-benar terjadi.
+[kelas] p1=aldo p2=aldos p3=crispin
+NARATOR {lebar} (aldo=cemas): Jumat.
+NARATOR {kertas} (aldo=kaget) [82 | Ini baru tulisan Aldo. | Bapak lebih suka yang ini.]: Kertasnya kembali dengan angka 82. Di bawahnya, ada tulisan tangan Pak Crispin: "Ini baru tulisan Aldo. Bapak lebih suka yang ini."
+NARATOR {cu:aldo} (aldo=senyum): Aldo tersenyum.
+NARATOR {cu:aldo} (aldo=lega): Kali ini, perutnya tidak terasa aneh lagi.
+NARATOR {akhir}: Tamat.

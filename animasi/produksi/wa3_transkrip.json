@@ -1,0 +1,948 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.8000000000000003,
+  "text": " Bagian tiga, esai yang kedua.",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 0.0,
+    "e": 0.54
+   },
+   {
+    "w": " tiga,",
+    "s": 0.54,
+    "e": 1.38
+   },
+   {
+    "w": " esai",
+    "s": 1.8,
+    "e": 2.06
+   },
+   {
+    "w": " yang",
+    "s": 2.06,
+    "e": 2.28
+   },
+   {
+    "w": " kedua.",
+    "s": 2.28,
+    "e": 2.8000000000000003
+   }
+  ]
+ },
+ {
+  "start": 3.72,
+  "end": 6.58,
+  "text": " Di ruang guru, Pak Crispin tidak marah.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 3.72,
+    "e": 3.88
+   },
+   {
+    "w": " ruang",
+    "s": 3.88,
+    "e": 4.12
+   },
+   {
+    "w": " guru,",
+    "s": 4.12,
+    "e": 4.66
+   },
+   {
+    "w": " Pak",
+    "s": 4.86,
+    "e": 5.06
+   },
+   {
+    "w": " Crispin",
+    "s": 5.06,
+    "e": 5.48
+   },
+   {
+    "w": " tidak",
+    "s": 5.48,
+    "e": 5.76
+   },
+   {
+    "w": " marah.",
+    "s": 5.76,
+    "e": 6.58
+   }
+  ]
+ },
+ {
+  "start": 6.78,
+  "end": 8.06,
+  "text": " Beliau hanya bertanya,",
+  "words": [
+   {
+    "w": " Beliau",
+    "s": 6.78,
+    "e": 7.16
+   },
+   {
+    "w": " hanya",
+    "s": 7.16,
+    "e": 7.4
+   },
+   {
+    "w": " bertanya,",
+    "s": 7.4,
+    "e": 8.06
+   }
+  ]
+ },
+ {
+  "start": 8.4,
+  "end": 9.1,
+  "text": " Kenapa?",
+  "words": [
+   {
+    "w": " Kenapa?",
+    "s": 8.4,
+    "e": 9.1
+   }
+  ]
+ },
+ {
+  "start": 9.78,
+  "end": 11.4,
+  "text": " Aldo menunduk.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 9.78,
+    "e": 10.34
+   },
+   {
+    "w": " menunduk.",
+    "s": 10.34,
+    "e": 11.4
+   }
+  ]
+ },
+ {
+  "start": 12.24,
+  "end": 14.34,
+  "text": " Saya bingung mau nulis apa, Pak.",
+  "words": [
+   {
+    "w": " Saya",
+    "s": 12.24,
+    "e": 12.48
+   },
+   {
+    "w": " bingung",
+    "s": 12.48,
+    "e": 13.02
+   },
+   {
+    "w": " mau",
+    "s": 13.02,
+    "e": 13.22
+   },
+   {
+    "w": " nulis",
+    "s": 13.22,
+    "e": 13.5
+   },
+   {
+    "w": " apa,",
+    "s": 13.5,
+    "e": 13.88
+   },
+   {
+    "w": " Pak.",
+    "s": 14.08,
+    "e": 14.34
+   }
+  ]
+ },
+ {
+  "start": 15.04,
+  "end": 17.24,
+  "text": " Terus semua juga pake.",
+  "words": [
+   {
+    "w": " Terus",
+    "s": 15.04,
+    "e": 15.88
+   },
+   {
+    "w": " semua",
+    "s": 15.88,
+    "e": 16.36
+   },
+   {
+    "w": " juga",
+    "s": 16.36,
+    "e": 16.74
+   },
+   {
+    "w": " pake.",
+    "s": 16.74,
+    "e": 17.24
+   }
+  ]
+ },
+ {
+  "start": 17.6,
+  "end": 19.3,
+  "text": " Bapak tidak melarang AI.",
+  "words": [
+   {
+    "w": " Bapak",
+    "s": 17.6,
+    "e": 18.04
+   },
+   {
+    "w": " tidak",
+    "s": 18.04,
+    "e": 18.26
+   },
+   {
+    "w": " melarang",
+    "s": 18.26,
+    "e": 18.78
+   },
+   {
+    "w": " AI.",
+    "s": 18.78,
+    "e": 19.3
+   }
+  ]
+ },
+ {
+  "start": 20.68,
+  "end": 23.56,
+  "text": " Tapi kalau tulisannya bukan pikiranmu,",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 20.68,
+    "e": 21.14
+   },
+   {
+    "w": " kalau",
+    "s": 21.14,
+    "e": 21.66
+   },
+   {
+    "w": " tulisannya",
+    "s": 21.66,
+    "e": 22.24
+   },
+   {
+    "w": " bukan",
+    "s": 22.24,
+    "e": 22.58
+   },
+   {
+    "w": " pikiranmu,",
+    "s": 22.58,
+    "e": 23.56
+   }
+  ]
+ },
+ {
+  "start": 23.94,
+  "end": 25.48,
+  "text": " nilai 100 itu milik siapa?",
+  "words": [
+   {
+    "w": " nilai",
+    "s": 23.94,
+    "e": 24.14
+   },
+   {
+    "w": " 100",
+    "s": 24.14,
+    "e": 24.5
+   },
+   {
+    "w": " itu",
+    "s": 24.5,
+    "e": 24.82
+   },
+   {
+    "w": " milik",
+    "s": 24.82,
+    "e": 25.08
+   },
+   {
+    "w": " siapa?",
+    "s": 25.08,
+    "e": 25.48
+   }
+  ]
+ },
+ {
+  "start": 25.86,
+  "end": 27.58,
+  "text": " Aldo terdiam lama.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 25.86,
+    "e": 26.48
+   },
+   {
+    "w": " terdiam",
+    "s": 26.48,
+    "e": 27.0
+   },
+   {
+    "w": " lama.",
+    "s": 27.0,
+    "e": 27.58
+   }
+  ]
+ },
+ {
+  "start": 28.26,
+  "end": 29.84,
+  "text": " Lalu ia mengangguk.",
+  "words": [
+   {
+    "w": " Lalu",
+    "s": 28.26,
+    "e": 28.82
+   },
+   {
+    "w": " ia",
+    "s": 28.82,
+    "e": 29.18
+   },
+   {
+    "w": " mengangguk.",
+    "s": 29.18,
+    "e": 29.84
+   }
+  ]
+ },
+ {
+  "start": 30.0,
+  "end": 31.94,
+  "text": " Bukan punya saya, Pak.",
+  "words": [
+   {
+    "w": " Bukan",
+    "s": 30.0,
+    "e": 30.54
+   },
+   {
+    "w": " punya",
+    "s": 30.54,
+    "e": 30.78
+   },
+   {
+    "w": " saya,",
+    "s": 30.78,
+    "e": 31.22
+   },
+   {
+    "w": " Pak.",
+    "s": 31.94,
+    "e": 31.94
+   }
+  ]
+ },
+ {
+  "start": 32.2,
+  "end": 35.1,
+  "text": " Pak Crispin menyerahkan selembar kertas kosong.",
+  "words": [
+   {
+    "w": " Pak",
+    "s": 32.2,
+    "e": 32.38
+   },
+   {
+    "w": " Crispin",
+    "s": 32.38,
+    "e": 32.94
+   },
+   {
+    "w": " menyerahkan",
+    "s": 32.94,
+    "e": 33.58
+   },
+   {
+    "w": " selembar",
+    "s": 33.58,
+    "e": 34.0
+   },
+   {
+    "w": " kertas",
+    "s": 34.0,
+    "e": 34.34
+   },
+   {
+    "w": " kosong.",
+    "s": 34.34,
+    "e": 35.1
+   }
+  ]
+ },
+ {
+  "start": 35.26,
+  "end": 36.24,
+  "text": " Tulis ulang.",
+  "words": [
+   {
+    "w": " Tulis",
+    "s": 35.26,
+    "e": 35.52
+   },
+   {
+    "w": " ulang.",
+    "s": 35.52,
+    "e": 36.24
+   }
+  ]
+ },
+ {
+  "start": 36.46,
+  "end": 37.9,
+  "text": " Pakai kata-katamu sendiri.",
+  "words": [
+   {
+    "w": " Pakai",
+    "s": 36.46,
+    "e": 36.76
+   },
+   {
+    "w": " kata",
+    "s": 36.76,
+    "e": 37.04
+   },
+   {
+    "w": "-katamu",
+    "s": 37.04,
+    "e": 37.36
+   },
+   {
+    "w": " sendiri.",
+    "s": 37.36,
+    "e": 37.9
+   }
+  ]
+ },
+ {
+  "start": 38.28,
+  "end": 39.32,
+  "text": " Kumpulkan jumat.",
+  "words": [
+   {
+    "w": " Kumpulkan",
+    "s": 38.28,
+    "e": 38.8
+   },
+   {
+    "w": " jumat.",
+    "s": 38.8,
+    "e": 39.32
+   }
+  ]
+ },
+ {
+  "start": 39.48,
+  "end": 42.8,
+  "text": " Malam itu, Aldo tidak membuka aplikasi AI.",
+  "words": [
+   {
+    "w": " Malam",
+    "s": 39.48,
+    "e": 39.84
+   },
+   {
+    "w": " itu,",
+    "s": 39.84,
+    "e": 40.48
+   },
+   {
+    "w": " Aldo",
+    "s": 40.9,
+    "e": 41.04
+   },
+   {
+    "w": " tidak",
+    "s": 41.04,
+    "e": 41.46
+   },
+   {
+    "w": " membuka",
+    "s": 41.46,
+    "e": 41.84
+   },
+   {
+    "w": " aplikasi",
+    "s": 41.84,
+    "e": 42.36
+   },
+   {
+    "w": " AI.",
+    "s": 42.36,
+    "e": 42.8
+   }
+  ]
+ },
+ {
+  "start": 43.38,
+  "end": 45.48,
+  "text": " Ia malah menulis tentang Aldo S,",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 43.38,
+    "e": 43.6
+   },
+   {
+    "w": " malah",
+    "s": 43.6,
+    "e": 43.9
+   },
+   {
+    "w": " menulis",
+    "s": 43.9,
+    "e": 44.26
+   },
+   {
+    "w": " tentang",
+    "s": 44.26,
+    "e": 44.56
+   },
+   {
+    "w": " Aldo",
+    "s": 44.56,
+    "e": 45.18
+   },
+   {
+    "w": " S,",
+    "s": 45.18,
+    "e": 45.48
+   }
+  ]
+ },
+ {
+  "start": 45.92,
+  "end": 47.96,
+  "text": " sahabat yang namanya sama dengannya.",
+  "words": [
+   {
+    "w": " sahabat",
+    "s": 45.92,
+    "e": 46.42
+   },
+   {
+    "w": " yang",
+    "s": 46.42,
+    "e": 46.6
+   },
+   {
+    "w": " namanya",
+    "s": 46.6,
+    "e": 46.96
+   },
+   {
+    "w": " sama",
+    "s": 46.96,
+    "e": 47.32
+   },
+   {
+    "w": " dengannya.",
+    "s": 47.32,
+    "e": 47.96
+   }
+  ]
+ },
+ {
+  "start": 48.36,
+  "end": 50.88,
+  "text": " Tentang mereka yang sering tertukar dipanggil guru.",
+  "words": [
+   {
+    "w": " Tentang",
+    "s": 48.36,
+    "e": 48.64
+   },
+   {
+    "w": " mereka",
+    "s": 48.64,
+    "e": 49.02
+   },
+   {
+    "w": " yang",
+    "s": 49.02,
+    "e": 49.32
+   },
+   {
+    "w": " sering",
+    "s": 49.32,
+    "e": 49.7
+   },
+   {
+    "w": " tertukar",
+    "s": 49.7,
+    "e": 50.16
+   },
+   {
+    "w": " dipanggil",
+    "s": 50.16,
+    "e": 50.52
+   },
+   {
+    "w": " guru.",
+    "s": 50.52,
+    "e": 50.88
+   }
+  ]
+ },
+ {
+  "start": 51.38,
+  "end": 54.22,
+  "text": " Tentang Aldo S yang pernah meminjamkan sepatu",
+  "words": [
+   {
+    "w": " Tentang",
+    "s": 51.38,
+    "e": 51.7
+   },
+   {
+    "w": " Aldo",
+    "s": 51.7,
+    "e": 52.2
+   },
+   {
+    "w": " S",
+    "s": 52.2,
+    "e": 52.42
+   },
+   {
+    "w": " yang",
+    "s": 52.42,
+    "e": 52.64
+   },
+   {
+    "w": " pernah",
+    "s": 52.64,
+    "e": 53.02
+   },
+   {
+    "w": " meminjamkan",
+    "s": 53.02,
+    "e": 53.7
+   },
+   {
+    "w": " sepatu",
+    "s": 53.7,
+    "e": 54.22
+   }
+  ]
+ },
+ {
+  "start": 54.22,
+  "end": 56.7,
+  "text": " saat sepatunya jebol sebelum upacara.",
+  "words": [
+   {
+    "w": " saat",
+    "s": 54.22,
+    "e": 54.46
+   },
+   {
+    "w": " sepatunya",
+    "s": 54.46,
+    "e": 54.9
+   },
+   {
+    "w": " jebol",
+    "s": 54.9,
+    "e": 55.36
+   },
+   {
+    "w": " sebelum",
+    "s": 55.36,
+    "e": 55.72
+   },
+   {
+    "w": " upacara.",
+    "s": 55.72,
+    "e": 56.7
+   }
+  ]
+ },
+ {
+  "start": 56.94,
+  "end": 58.38,
+  "text": " Tulisannya tidak indah.",
+  "words": [
+   {
+    "w": " Tulisannya",
+    "s": 56.94,
+    "e": 57.36
+   },
+   {
+    "w": " tidak",
+    "s": 57.36,
+    "e": 57.62
+   },
+   {
+    "w": " indah.",
+    "s": 57.62,
+    "e": 58.38
+   }
+  ]
+ },
+ {
+  "start": 58.38,
+  "end": 61.78,
+  "text": " Tetapi, semuanya benar-benar terjadi.",
+  "words": [
+   {
+    "w": " Tetapi,",
+    "s": 58.38,
+    "e": 59.3
+   },
+   {
+    "w": " semuanya",
+    "s": 59.54,
+    "e": 59.88
+   },
+   {
+    "w": " benar",
+    "s": 59.88,
+    "e": 60.42
+   },
+   {
+    "w": "-benar",
+    "s": 60.42,
+    "e": 60.74
+   },
+   {
+    "w": " terjadi.",
+    "s": 60.74,
+    "e": 61.78
+   }
+  ]
+ },
+ {
+  "start": 62.7,
+  "end": 63.26,
+  "text": " Jumat.",
+  "words": [
+   {
+    "w": " Jumat.",
+    "s": 62.7,
+    "e": 63.26
+   }
+  ]
+ },
+ {
+  "start": 63.44,
+  "end": 66.02,
+  "text": " Kertasnya kembali dengan angka 82.",
+  "words": [
+   {
+    "w": " Kertasnya",
+    "s": 63.44,
+    "e": 63.96
+   },
+   {
+    "w": " kembali",
+    "s": 63.96,
+    "e": 64.44
+   },
+   {
+    "w": " dengan",
+    "s": 64.44,
+    "e": 64.74
+   },
+   {
+    "w": " angka",
+    "s": 64.74,
+    "e": 65.14
+   },
+   {
+    "w": " 82.",
+    "s": 65.14,
+    "e": 66.02
+   }
+  ]
+ },
+ {
+  "start": 66.74,
+  "end": 69.3,
+  "text": " Di bawahnya, ada tulisan tangan Pak Crispin.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 66.74,
+    "e": 66.9
+   },
+   {
+    "w": " bawahnya,",
+    "s": 66.9,
+    "e": 67.52
+   },
+   {
+    "w": " ada",
+    "s": 67.7,
+    "e": 67.8
+   },
+   {
+    "w": " tulisan",
+    "s": 67.8,
+    "e": 68.18
+   },
+   {
+    "w": " tangan",
+    "s": 68.18,
+    "e": 68.52
+   },
+   {
+    "w": " Pak",
+    "s": 68.52,
+    "e": 68.72
+   },
+   {
+    "w": " Crispin.",
+    "s": 68.72,
+    "e": 69.3
+   }
+  ]
+ },
+ {
+  "start": 70.4,
+  "end": 72.68,
+  "text": " Ini baru tulisan Aldo.",
+  "words": [
+   {
+    "w": " Ini",
+    "s": 70.4,
+    "e": 71.06
+   },
+   {
+    "w": " baru",
+    "s": 71.06,
+    "e": 71.68
+   },
+   {
+    "w": " tulisan",
+    "s": 71.68,
+    "e": 72.14
+   },
+   {
+    "w": " Aldo.",
+    "s": 72.14,
+    "e": 72.68
+   }
+  ]
+ },
+ {
+  "start": 73.28,
+  "end": 74.64,
+  "text": " Bapak lebih suka yang ini.",
+  "words": [
+   {
+    "w": " Bapak",
+    "s": 73.28,
+    "e": 73.56
+   },
+   {
+    "w": " lebih",
+    "s": 73.56,
+    "e": 73.8
+   },
+   {
+    "w": " suka",
+    "s": 73.8,
+    "e": 74.0
+   },
+   {
+    "w": " yang",
+    "s": 74.0,
+    "e": 74.18
+   },
+   {
+    "w": " ini.",
+    "s": 74.18,
+    "e": 74.64
+   }
+  ]
+ },
+ {
+  "start": 75.58,
+  "end": 77.08,
+  "text": " Aldo tersenyum.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 75.58,
+    "e": 76.08
+   },
+   {
+    "w": " tersenyum.",
+    "s": 76.08,
+    "e": 77.08
+   }
+  ]
+ },
+ {
+  "start": 77.32,
+  "end": 80.06,
+  "text": " Kali ini, perutnya tidak terasa aneh lagi.",
+  "words": [
+   {
+    "w": " Kali",
+    "s": 77.32,
+    "e": 77.62
+   },
+   {
+    "w": " ini,",
+    "s": 77.62,
+    "e": 78.16
+   },
+   {
+    "w": " perutnya",
+    "s": 78.4,
+    "e": 78.72
+   },
+   {
+    "w": " tidak",
+    "s": 78.72,
+    "e": 79.0
+   },
+   {
+    "w": " terasa",
+    "s": 79.0,
+    "e": 79.36
+   },
+   {
+    "w": " aneh",
+    "s": 79.36,
+    "e": 79.62
+   },
+   {
+    "w": " lagi.",
+    "s": 79.62,
+    "e": 80.06
+   }
+  ]
+ },
+ {
+  "start": 81.68,
+  "end": 82.1,
+  "text": " Tamat.",
+  "words": [
+   {
+    "w": " Tamat.",
+    "s": 81.68,
+    "e": 82.1
+   }
+  ]
+ }
+]

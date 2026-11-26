@@ -1,0 +1,364 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 75.3,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "GELLY": {
+   "warna": "#FFD84A"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 75.3,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.94,
+     "teks": "Bagian 1: Dibaca"
+    },
+    {
+     "start": 1.94,
+     "end": 2.85,
+     "teks": "Doang"
+    },
+    {
+     "start": 3.19,
+     "end": 4.42,
+     "teks": "Kamis sore,"
+    },
+    {
+     "start": 4.42,
+     "end": 5.24,
+     "teks": "Pak Agus memberi"
+    },
+    {
+     "start": 5.24,
+     "end": 6.34,
+     "teks": "tugas kelompok:"
+    },
+    {
+     "start": 6.34,
+     "end": 7.26,
+     "teks": "presentasi tentang"
+    },
+    {
+     "start": 7.26,
+     "end": 8.22,
+     "teks": "sampah plastik di"
+    },
+    {
+     "start": 8.22,
+     "end": 8.88,
+     "teks": "sekolah,"
+    },
+    {
+     "start": 8.88,
+     "end": 9.56,
+     "teks": "dikumpulkan Senin"
+    },
+    {
+     "start": 9.56,
+     "end": 10.47,
+     "teks": "pagi."
+    },
+    {
+     "start": 10.6,
+     "end": 11.54,
+     "teks": "Aldo satu kelompok"
+    },
+    {
+     "start": 11.54,
+     "end": 12.82,
+     "teks": "dengan Gelly,"
+    },
+    {
+     "start": 12.82,
+     "end": 13.3,
+     "teks": "Hissari,"
+    },
+    {
+     "start": 13.3,
+     "end": 14.03,
+     "teks": "dan Stefan."
+    },
+    {
+     "start": 14.4,
+     "end": 15.61,
+     "teks": "Malam itu juga,"
+    },
+    {
+     "start": 15.61,
+     "end": 16.46,
+     "teks": "Gelly membuat grup"
+    },
+    {
+     "start": 16.46,
+     "end": 17.52,
+     "teks": "WhatsApp bernama"
+    },
+    {
+     "start": 17.52,
+     "end": 19.12,
+     "teks": "\"Kelompok 3 Pasti"
+    },
+    {
+     "start": 19.12,
+     "end": 19.61,
+     "teks": "Bisa\"."
+    },
+    {
+     "start": 19.86,
+     "end": 20.72,
+     "teks": "Gelly langsung"
+    },
+    {
+     "start": 20.72,
+     "end": 21.94,
+     "teks": "membagi tugas."
+    },
+    {
+     "start": 21.94,
+     "end": 23.45,
+     "teks": "Aldo membuat slide,"
+    },
+    {
+     "start": 23.45,
+     "end": 24.18,
+     "teks": "Hissari mencari"
+    },
+    {
+     "start": 24.18,
+     "end": 24.96,
+     "teks": "data,"
+    },
+    {
+     "start": 24.96,
+     "end": 25.78,
+     "teks": "Gelly menyusun"
+    },
+    {
+     "start": 25.78,
+     "end": 26.48,
+     "teks": "naskah,"
+    },
+    {
+     "start": 26.48,
+     "end": 27.6,
+     "teks": "dan Stefan memotret"
+    },
+    {
+     "start": 27.6,
+     "end": 28.5,
+     "teks": "tempat sampah di"
+    },
+    {
+     "start": 28.5,
+     "end": 29.08,
+     "teks": "sekolah."
+    },
+    {
+     "start": 29.08,
+     "end": 30.78,
+     "teks": "Semua membalas."
+    },
+    {
+     "start": 30.78,
+     "end": 32.3,
+     "teks": "\"Siap!\" \"Oke!\""
+    },
+    {
+     "start": 32.3,
+     "end": 33.07,
+     "teks": "\"Gas!\""
+    },
+    {
+     "start": 33.9,
+     "end": 35.48,
+     "teks": "Kecuali Stefan."
+    },
+    {
+     "start": 35.48,
+     "end": 36.29,
+     "teks": "Di bawah pesan"
+    },
+    {
+     "start": 36.29,
+     "end": 37.3,
+     "teks": "Gelly hanya muncul"
+    },
+    {
+     "start": 37.3,
+     "end": 38.74,
+     "teks": "tulisan kecil:"
+    },
+    {
+     "start": 38.74,
+     "end": 40.39,
+     "teks": "Dibaca oleh Stefan."
+    },
+    {
+     "start": 41.06,
+     "end": 41.94,
+     "teks": "Jumat,"
+    },
+    {
+     "start": 41.94,
+     "end": 43.52,
+     "teks": "masih dibaca doang."
+    },
+    {
+     "start": 43.52,
+     "end": 44.4,
+     "teks": "Sabtu,"
+    },
+    {
+     "start": 44.4,
+     "end": 45.04,
+     "teks": "Hissari mengirim"
+    },
+    {
+     "start": 45.04,
+     "end": 46.74,
+     "teks": "stiker kucing marah."
+    },
+    {
+     "start": 46.74,
+     "end": 47.56,
+     "teks": "Tetap tidak ada"
+    },
+    {
+     "start": 47.56,
+     "end": 48.13,
+     "teks": "balasan."
+    },
+    {
+     "start": 48.64,
+     "end": 49.75,
+     "teks": "Minggu malam,"
+    },
+    {
+     "start": 49.75,
+     "end": 50.72,
+     "teks": "Gelly menelepon Aldo"
+    },
+    {
+     "start": 50.72,
+     "end": 52.03,
+     "teks": "dengan suara kesal."
+    },
+    {
+     "start": 52.22,
+     "end": 52.74,
+     "teks": "\"Do,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 52.74,
+     "end": 53.68,
+     "teks": "aku udah screenshot",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 53.68,
+     "end": 54.66,
+     "teks": "semua chatnya.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 54.66,
+     "end": 55.62,
+     "teks": "Kalau besok Stefan",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 55.62,
+     "end": 56.66,
+     "teks": "nggak bawa apa-apa,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 56.66,
+     "end": 57.34,
+     "teks": "aku kirim ke",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 57.34,
+     "end": 57.9,
+     "teks": "grup kelas.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 57.9,
+     "end": 59.23,
+     "teks": "Biar semua tahu.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 59.86,
+     "end": 61.14,
+     "teks": "Aldo terdiam menatap"
+    },
+    {
+     "start": 61.14,
+     "end": 62.43,
+     "teks": "layar HP-nya."
+    },
+    {
+     "start": 62.58,
+     "end": 65.82,
+     "teks": "Tepat pukul 23.47,"
+    },
+    {
+     "start": 65.82,
+     "end": 66.76,
+     "teks": "sebuah pesan masuk"
+    },
+    {
+     "start": 66.76,
+     "end": 67.65,
+     "teks": "dari Stefan:"
+    },
+    {
+     "start": 68.36,
+     "end": 69.24,
+     "teks": "\"Maaf."
+    },
+    {
+     "start": 69.24,
+     "end": 70.42,
+     "teks": "Besok aku jelasin"
+    },
+    {
+     "start": 70.42,
+     "end": 71.19,
+     "teks": "semuanya.\""
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "DIBACA",
+  "baris2": "DOANG",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 72.0,
+  "end": 75.3,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Lima Menit Sebelum Presentasi"
+ }
+}

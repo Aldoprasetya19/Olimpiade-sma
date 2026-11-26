@@ -1,0 +1,873 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.4,
+  "text": " Bagian 2, Kata Yang Tidak Dikenal",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 0.0,
+    "e": 0.56
+   },
+   {
+    "w": " 2,",
+    "s": 0.56,
+    "e": 1.36
+   },
+   {
+    "w": " Kata",
+    "s": 1.76,
+    "e": 1.96
+   },
+   {
+    "w": " Yang",
+    "s": 1.96,
+    "e": 2.34
+   },
+   {
+    "w": " Tidak",
+    "s": 2.34,
+    "e": 2.74
+   },
+   {
+    "w": " Dikenal",
+    "s": 2.74,
+    "e": 3.4
+   }
+  ]
+ },
+ {
+  "start": 4.06,
+  "end": 8.04,
+  "text": " Aldo berjalan ke depan kelas, kakinya terasa berat.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 4.06,
+    "e": 4.5
+   },
+   {
+    "w": " berjalan",
+    "s": 4.5,
+    "e": 5.14
+   },
+   {
+    "w": " ke",
+    "s": 5.14,
+    "e": 5.3
+   },
+   {
+    "w": " depan",
+    "s": 5.3,
+    "e": 5.54
+   },
+   {
+    "w": " kelas,",
+    "s": 5.54,
+    "e": 6.08
+   },
+   {
+    "w": " kakinya",
+    "s": 6.46,
+    "e": 6.84
+   },
+   {
+    "w": " terasa",
+    "s": 6.84,
+    "e": 7.2
+   },
+   {
+    "w": " berat.",
+    "s": 7.2,
+    "e": 8.04
+   }
+  ]
+ },
+ {
+  "start": 8.22,
+  "end": 11.36,
+  "text": " Coba jelaskan isi esaimu dengan kata-katamu sendiri.",
+  "words": [
+   {
+    "w": " Coba",
+    "s": 8.22,
+    "e": 8.42
+   },
+   {
+    "w": " jelaskan",
+    "s": 8.42,
+    "e": 8.9
+   },
+   {
+    "w": " isi",
+    "s": 8.9,
+    "e": 9.24
+   },
+   {
+    "w": " esaimu",
+    "s": 9.24,
+    "e": 9.96
+   },
+   {
+    "w": " dengan",
+    "s": 9.96,
+    "e": 10.3
+   },
+   {
+    "w": " kata",
+    "s": 10.3,
+    "e": 10.54
+   },
+   {
+    "w": "-katamu",
+    "s": 10.54,
+    "e": 10.92
+   },
+   {
+    "w": " sendiri.",
+    "s": 10.92,
+    "e": 11.36
+   }
+  ]
+ },
+ {
+  "start": 11.62,
+  "end": 15.14,
+  "text": " Kata Pak Crispin, Aldo menarik nafas.",
+  "words": [
+   {
+    "w": " Kata",
+    "s": 11.62,
+    "e": 11.86
+   },
+   {
+    "w": " Pak",
+    "s": 11.86,
+    "e": 12.08
+   },
+   {
+    "w": " Crispin,",
+    "s": 12.08,
+    "e": 13.22
+   },
+   {
+    "w": " Aldo",
+    "s": 13.38,
+    "e": 13.78
+   },
+   {
+    "w": " menarik",
+    "s": 13.78,
+    "e": 14.2
+   },
+   {
+    "w": " nafas.",
+    "s": 14.2,
+    "e": 15.14
+   }
+  ]
+ },
+ {
+  "start": 16.02,
+  "end": 21.38,
+  "text": " Persahabatan itu penting, karena sahabat itu selalu ada.",
+  "words": [
+   {
+    "w": " Persahabatan",
+    "s": 16.02,
+    "e": 16.64
+   },
+   {
+    "w": " itu",
+    "s": 16.64,
+    "e": 17.34
+   },
+   {
+    "w": " penting,",
+    "s": 17.34,
+    "e": 18.3
+   },
+   {
+    "w": " karena",
+    "s": 18.52,
+    "e": 19.22
+   },
+   {
+    "w": " sahabat",
+    "s": 19.22,
+    "e": 19.9
+   },
+   {
+    "w": " itu",
+    "s": 19.9,
+    "e": 20.54
+   },
+   {
+    "w": " selalu",
+    "s": 20.54,
+    "e": 20.98
+   },
+   {
+    "w": " ada.",
+    "s": 20.98,
+    "e": 21.38
+   }
+  ]
+ },
+ {
+  "start": 21.78,
+  "end": 23.58,
+  "text": " Beberapa teman terkikik.",
+  "words": [
+   {
+    "w": " Beberapa",
+    "s": 21.78,
+    "e": 22.2
+   },
+   {
+    "w": " teman",
+    "s": 22.2,
+    "e": 22.58
+   },
+   {
+    "w": " terkikik.",
+    "s": 22.58,
+    "e": 23.58
+   }
+  ]
+ },
+ {
+  "start": 23.92,
+  "end": 29.34,
+  "text": " Pak Crispin membuka kertas esai Aldo dan membaca satu kalimat dengan suara pelan.",
+  "words": [
+   {
+    "w": " Pak",
+    "s": 23.92,
+    "e": 24.16
+   },
+   {
+    "w": " Crispin",
+    "s": 24.16,
+    "e": 24.64
+   },
+   {
+    "w": " membuka",
+    "s": 24.64,
+    "e": 25.06
+   },
+   {
+    "w": " kertas",
+    "s": 25.06,
+    "e": 25.46
+   },
+   {
+    "w": " esai",
+    "s": 25.46,
+    "e": 25.88
+   },
+   {
+    "w": " Aldo",
+    "s": 25.88,
+    "e": 26.42
+   },
+   {
+    "w": " dan",
+    "s": 26.42,
+    "e": 26.7
+   },
+   {
+    "w": " membaca",
+    "s": 26.7,
+    "e": 27.26
+   },
+   {
+    "w": " satu",
+    "s": 27.26,
+    "e": 27.56
+   },
+   {
+    "w": " kalimat",
+    "s": 27.56,
+    "e": 28.02
+   },
+   {
+    "w": " dengan",
+    "s": 28.02,
+    "e": 28.46
+   },
+   {
+    "w": " suara",
+    "s": 28.46,
+    "e": 28.94
+   },
+   {
+    "w": " pelan.",
+    "s": 28.94,
+    "e": 29.34
+   }
+  ]
+ },
+ {
+  "start": 29.34,
+  "end": 35.14,
+  "text": " Persahabatan adalah simbiosis afektif yang melampaui batas-batas pragmatisme.",
+  "words": [
+   {
+    "w": " Persahabatan",
+    "s": 29.34,
+    "e": 30.72
+   },
+   {
+    "w": " adalah",
+    "s": 30.72,
+    "e": 31.12
+   },
+   {
+    "w": " simbiosis",
+    "s": 31.12,
+    "e": 31.8
+   },
+   {
+    "w": " afektif",
+    "s": 31.8,
+    "e": 32.52
+   },
+   {
+    "w": " yang",
+    "s": 32.52,
+    "e": 32.76
+   },
+   {
+    "w": " melampaui",
+    "s": 32.76,
+    "e": 33.46
+   },
+   {
+    "w": " batas",
+    "s": 33.46,
+    "e": 33.82
+   },
+   {
+    "w": "-batas",
+    "s": 33.82,
+    "e": 34.22
+   },
+   {
+    "w": " pragmatisme.",
+    "s": 34.22,
+    "e": 35.14
+   }
+  ]
+ },
+ {
+  "start": 36.22,
+  "end": 38.06,
+  "text": " Apa arti simbiosis afektif?",
+  "words": [
+   {
+    "w": " Apa",
+    "s": 36.22,
+    "e": 36.38
+   },
+   {
+    "w": " arti",
+    "s": 36.38,
+    "e": 36.92
+   },
+   {
+    "w": " simbiosis",
+    "s": 36.92,
+    "e": 37.5
+   },
+   {
+    "w": " afektif?",
+    "s": 37.5,
+    "e": 38.06
+   }
+  ]
+ },
+ {
+  "start": 39.56,
+  "end": 41.66,
+  "text": " Kelas mendadak hening.",
+  "words": [
+   {
+    "w": " Kelas",
+    "s": 39.56,
+    "e": 40.22
+   },
+   {
+    "w": " mendadak",
+    "s": 40.22,
+    "e": 41.06
+   },
+   {
+    "w": " hening.",
+    "s": 41.06,
+    "e": 41.66
+   }
+  ]
+ },
+ {
+  "start": 42.4,
+  "end": 45.22,
+  "text": " Nafa dan Dayenta saling pandang.",
+  "words": [
+   {
+    "w": " Nafa",
+    "s": 42.4,
+    "e": 42.7
+   },
+   {
+    "w": " dan",
+    "s": 42.7,
+    "e": 42.98
+   },
+   {
+    "w": " Dayenta",
+    "s": 42.98,
+    "e": 43.54
+   },
+   {
+    "w": " saling",
+    "s": 43.54,
+    "e": 44.12
+   },
+   {
+    "w": " pandang.",
+    "s": 44.12,
+    "e": 45.22
+   }
+  ]
+ },
+ {
+  "start": 45.5,
+  "end": 48.18,
+  "text": " Febri pura-pura sibuk menatap mejanya.",
+  "words": [
+   {
+    "w": " Febri",
+    "s": 45.5,
+    "e": 45.98
+   },
+   {
+    "w": " pura",
+    "s": 45.98,
+    "e": 46.28
+   },
+   {
+    "w": "-pura",
+    "s": 46.28,
+    "e": 46.48
+   },
+   {
+    "w": " sibuk",
+    "s": 46.48,
+    "e": 46.98
+   },
+   {
+    "w": " menatap",
+    "s": 46.98,
+    "e": 47.54
+   },
+   {
+    "w": " mejanya.",
+    "s": 47.54,
+    "e": 48.18
+   }
+  ]
+ },
+ {
+  "start": 48.92,
+  "end": 52.94,
+  "text": " Aldo membuka mulut, tetapi tidak ada kata yang keluar.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 48.92,
+    "e": 49.3
+   },
+   {
+    "w": " membuka",
+    "s": 49.3,
+    "e": 49.72
+   },
+   {
+    "w": " mulut,",
+    "s": 49.72,
+    "e": 50.46
+   },
+   {
+    "w": " tetapi",
+    "s": 50.66,
+    "e": 51.32
+   },
+   {
+    "w": " tidak",
+    "s": 51.32,
+    "e": 51.68
+   },
+   {
+    "w": " ada",
+    "s": 51.68,
+    "e": 51.92
+   },
+   {
+    "w": " kata",
+    "s": 51.92,
+    "e": 52.26
+   },
+   {
+    "w": " yang",
+    "s": 52.26,
+    "e": 52.6
+   },
+   {
+    "w": " keluar.",
+    "s": 52.6,
+    "e": 52.94
+   }
+  ]
+ },
+ {
+  "start": 53.72,
+  "end": 56.36,
+  "text": " Wajahnya terasa panas.",
+  "words": [
+   {
+    "w": " Wajahnya",
+    "s": 53.72,
+    "e": 54.52
+   },
+   {
+    "w": " terasa",
+    "s": 54.52,
+    "e": 55.12
+   },
+   {
+    "w": " panas.",
+    "s": 55.12,
+    "e": 56.36
+   }
+  ]
+ },
+ {
+  "start": 56.36,
+  "end": 59.7,
+  "text": " Pak Crispin menutup kertas itu perlahan.",
+  "words": [
+   {
+    "w": " Pak",
+    "s": 56.36,
+    "e": 56.74
+   },
+   {
+    "w": " Crispin",
+    "s": 56.74,
+    "e": 57.42
+   },
+   {
+    "w": " menutup",
+    "s": 57.42,
+    "e": 57.98
+   },
+   {
+    "w": " kertas",
+    "s": 57.98,
+    "e": 58.32
+   },
+   {
+    "w": " itu",
+    "s": 58.32,
+    "e": 58.88
+   },
+   {
+    "w": " perlahan.",
+    "s": 58.88,
+    "e": 59.7
+   }
+  ]
+ },
+ {
+  "start": 59.9,
+  "end": 62.98,
+  "text": " Aldo, temui Bapak di ruang guru saat istirahat.",
+  "words": [
+   {
+    "w": " Aldo,",
+    "s": 59.9,
+    "e": 60.4
+   },
+   {
+    "w": " temui",
+    "s": 60.7,
+    "e": 60.94
+   },
+   {
+    "w": " Bapak",
+    "s": 60.94,
+    "e": 61.34
+   },
+   {
+    "w": " di",
+    "s": 61.34,
+    "e": 61.48
+   },
+   {
+    "w": " ruang",
+    "s": 61.48,
+    "e": 61.68
+   },
+   {
+    "w": " guru",
+    "s": 61.68,
+    "e": 62.0
+   },
+   {
+    "w": " saat",
+    "s": 62.0,
+    "e": 62.28
+   },
+   {
+    "w": " istirahat.",
+    "s": 62.28,
+    "e": 62.98
+   }
+  ]
+ },
+ {
+  "start": 63.24,
+  "end": 64.52,
+  "text": " Bel berbunyi.",
+  "words": [
+   {
+    "w": " Bel",
+    "s": 63.24,
+    "e": 63.44
+   },
+   {
+    "w": " berbunyi.",
+    "s": 63.44,
+    "e": 64.52
+   }
+  ]
+ },
+ {
+  "start": 64.74,
+  "end": 66.4,
+  "text": " Teman-teman mulai berbisik.",
+  "words": [
+   {
+    "w": " Teman",
+    "s": 64.74,
+    "e": 64.92
+   },
+   {
+    "w": "-teman",
+    "s": 64.92,
+    "e": 65.24
+   },
+   {
+    "w": " mulai",
+    "s": 65.24,
+    "e": 65.58
+   },
+   {
+    "w": " berbisik.",
+    "s": 65.58,
+    "e": 66.4
+   }
+  ]
+ },
+ {
+  "start": 66.76,
+  "end": 71.28,
+  "text": " Di bangku belakang, Aldo S menatap sahabatnya dengan wajah khawatir.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 66.76,
+    "e": 66.9
+   },
+   {
+    "w": " bangku",
+    "s": 66.9,
+    "e": 67.16
+   },
+   {
+    "w": " belakang,",
+    "s": 67.16,
+    "e": 67.86
+   },
+   {
+    "w": " Aldo",
+    "s": 68.06,
+    "e": 68.42
+   },
+   {
+    "w": " S",
+    "s": 68.42,
+    "e": 68.56
+   },
+   {
+    "w": " menatap",
+    "s": 68.56,
+    "e": 68.96
+   },
+   {
+    "w": " sahabatnya",
+    "s": 68.96,
+    "e": 69.58
+   },
+   {
+    "w": " dengan",
+    "s": 69.58,
+    "e": 69.9
+   },
+   {
+    "w": " wajah",
+    "s": 69.9,
+    "e": 70.32
+   },
+   {
+    "w": " khawatir.",
+    "s": 70.32,
+    "e": 71.28
+   }
+  ]
+ },
+ {
+  "start": 71.54,
+  "end": 74.4,
+  "text": " Aldo kembali ke tempat duduknya sambil menunduk.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 71.54,
+    "e": 71.8
+   },
+   {
+    "w": " kembali",
+    "s": 71.8,
+    "e": 72.22
+   },
+   {
+    "w": " ke",
+    "s": 72.22,
+    "e": 72.36
+   },
+   {
+    "w": " tempat",
+    "s": 72.36,
+    "e": 72.6
+   },
+   {
+    "w": " duduknya",
+    "s": 72.6,
+    "e": 73.12
+   },
+   {
+    "w": " sambil",
+    "s": 73.12,
+    "e": 73.54
+   },
+   {
+    "w": " menunduk.",
+    "s": 73.54,
+    "e": 74.4
+   }
+  ]
+ },
+ {
+  "start": 74.64,
+  "end": 77.4,
+  "text": " Di layar HP-nya, grup kelas sudah ramai.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 74.64,
+    "e": 74.78
+   },
+   {
+    "w": " layar",
+    "s": 74.78,
+    "e": 75.0
+   },
+   {
+    "w": " HP",
+    "s": 75.0,
+    "e": 75.28
+   },
+   {
+    "w": "-nya,",
+    "s": 75.28,
+    "e": 75.78
+   },
+   {
+    "w": " grup",
+    "s": 75.96,
+    "e": 76.14
+   },
+   {
+    "w": " kelas",
+    "s": 76.14,
+    "e": 76.44
+   },
+   {
+    "w": " sudah",
+    "s": 76.44,
+    "e": 76.74
+   },
+   {
+    "w": " ramai.",
+    "s": 76.74,
+    "e": 77.4
+   }
+  ]
+ },
+ {
+  "start": 77.74,
+  "end": 79.62,
+  "text": " Aldo ketauan pakai AI, ya?",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 77.74,
+    "e": 78.12
+   },
+   {
+    "w": " ketauan",
+    "s": 78.12,
+    "e": 78.58
+   },
+   {
+    "w": " pakai",
+    "s": 78.58,
+    "e": 78.82
+   },
+   {
+    "w": " AI,",
+    "s": 78.82,
+    "e": 79.32
+   },
+   {
+    "w": " ya?",
+    "s": 79.44,
+    "e": 79.62
+   }
+  ]
+ },
+ {
+  "start": 80.68,
+  "end": 81.34,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 80.68,
+    "e": 81.34
+   }
+  ]
+ }
+]

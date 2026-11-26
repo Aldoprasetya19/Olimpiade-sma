@@ -1,0 +1,22 @@
+# judul: NILAI | SEMPURNA
+# akhir: BERSAMBUNG... | Bagian 2: Kata yang Tidak Dikenal
+[rumah grade=malam] dudukKiri=aldo#rumah
+NARATOR {lebar}: Bagian satu, Nilai Sempurna.
+NARATOR {mcu:aldo} (aldo:mengetik, aldo=cemas): Selasa malam, pukul 11, Aldo menatap layar laptopnya yang masih kosong.
+NARATOR {cu:aldo} (aldo:mengetik, aldo=cemas): Besok pagi, ia harus mengumpulkan esai Bahasa Indonesia tentang arti persahabatan.
+NARATOR {cu:aldo} (aldo=sedih): Dan belum ada satu kalimat pun.
+NARATOR {hp-notif} [Grup Kelas XI@23.02 | Febri: Pakai AI aja dong, 5 detik kelar. Semua juga gitu.]: HP-nya berbunyi, pesan dari Febri di grup kelas.
+NARATOR {hp-grup} [Grup Kelas XI@23.02 | Febri: Pakai AI aja dong, 5 detik kelar. Semua juga gitu.]: "Pakai AI aja dong, 5 detik kelar. Semua juga gitu."
+NARATOR {cu:aldo} (aldo=curiga, aldo:hp): Aldo ragu sebentar, lalu ia membuka aplikasi AI,
+NARATOR {hp} [Asisten AI@23.05 | >Buatkan esai: Arti Persahabatan]: mengetik judulnya, dan menekan enter.
+NARATOR {hp} [Asisten AI@23.05 | >Buatkan esai: Arti Persahabatan | Persahabatan adalah simbiosis afektif yang melampaui batas-batas pragmatisme. Dalam setiap fase kehidupan, sahabat hadir sebagai cermin...]: 5 detik kemudian, esai sepanjang 2 halaman muncul. Kalimatnya rapi, dan kata-katanya indah.
+NARATOR {mcu:aldo} (aldo:mengetik, aldo=lega): Aldo menyalinnya, mengganti sedikit, lalu tidur nyenyak.
+[kelas] p1=aldo p2=gabriel p3=febri p4=nava p5=crispin
+NARATOR {cu:crispin} (crispin=senyum, crispin:kertas): Seminggu kemudian, Pak Crispin membagikan hasil esai.
+NARATOR {kertas} (aldo=kaget) [100 | Arti Persahabatan - Aldo]: Kertas Aldo bertuliskan angka besar berwarna merah. Seratus!
+NARATOR {lebar} (gabriel=senang, febri=senang, nava=senang, aldo=kaget, gabriel:tunjuk): Teman-teman bersorak, Gabriel menepuk punggungnya.
+GABRIEL (senang): "Gila, Do! Diam-diam jago nulis!"
+NARATOR {cu:aldo} (aldo=paksa): Aldo tersenyum, tetapi perutnya terasa tidak enak.
+NARATOR {cu:crispin} (crispin=serius): Lalu Pak Crispin berdiri di depan kelas.
+CRISPIN (serius): "Esai terbaik minggu ini akan dibacakan dan dijelaskan langsung oleh penulisnya. Tanpa kertas. Silakan maju, Aldo."
+NARATOR {akhir}: Bersambung.

@@ -32,6 +32,7 @@ Lencana dada menunjukkan kelas: **10 hijau, 11 biru, 12 merah**. Semua tokoh per
 | sera | Sera | P | 12 | rambut bob hitam |
 | eko | Pak Eko (guru) | L | – | kemeja biru, kumis |
 | agus | Pak Agus (guru) | L | – | kemeja ungu, kacamata |
+| crispin | Pak Crispin (guru Bahasa Indonesia) | L | – | kemeja hijau, rambut belah samping abu-abu |
 
 Tokoh lama di luar daftar (dimas, reno, bagas, ibu, wali, pekerja) tetap ada untuk seri sebelumnya.
 Nama yang tidak ada di daftar akan jadi figuran laki-laki generik; tambahkan dulu ke `TOKOH` bila tokoh itu penting.

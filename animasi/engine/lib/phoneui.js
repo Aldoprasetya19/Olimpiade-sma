@@ -63,6 +63,7 @@ export function drawBanner(ctx, k, n) {
 
 // layar chat. msgs: {from, text, me, color, kind:'text'|'video'|'transfer'|'sys', alpha, time}
 export function drawChat(ctx, o) {
+  drawChat.jam = o.time;
   const dark = !!o.dark;
   ctx.fillStyle = dark ? '#0f1416' : '#ece5dd'; ctx.fillRect(0, 0, PW, PH);
   // pola latar halus
@@ -140,7 +141,7 @@ function drawMsg(ctx, m, yBottom, group, dark, dy) {
     ctx.fillStyle = '#0d8a5f'; ctx.font = `800 22px ${F}`; ctx.fillText('TRANSFER BERHASIL ✓', x + 28, cy + 40);
     ctx.fillStyle = '#111'; ctx.font = `800 34px ${F}`; ctx.fillText(m.amount || 'Rp300.000', x + 28, cy + 90);
   } else lines.forEach((l, i) => ctx.fillText(l, x + 18, cy + 30 + i * 32));
-  ctx.font = `500 17px ${F}`; ctx.fillStyle = dark ? '#8696a0' : '#777'; ctx.textAlign = 'right'; ctx.fillText((m.time || '19.40') + (m.me ? ' ✓✓' : ''), x + w - 14, y + h - 10);
+  ctx.font = `500 17px ${F}`; ctx.fillStyle = dark ? '#8696a0' : '#777'; ctx.textAlign = 'right'; ctx.fillText((m.time || drawChat.jam || '19.40') + (m.me ? ' ✓✓' : ''), x + w - 14, y + h - 10);
   return h;
 }
 

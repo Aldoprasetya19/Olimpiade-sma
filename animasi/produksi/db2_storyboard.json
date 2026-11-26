@@ -1,0 +1,377 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 74.44,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "GELLY": {
+   "warna": "#FFD84A"
+  },
+  "HISSARI": {
+   "warna": "#8FE3D8"
+  },
+  "AGUS": {
+   "warna": "#C7A4FF"
+  },
+  "STEFAN": {
+   "warna": "#FFB3C7"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 74.44,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.9,
+     "teks": "Bagian 2: Lima"
+    },
+    {
+     "start": 1.9,
+     "end": 2.82,
+     "teks": "Menit Sebelum"
+    },
+    {
+     "start": 2.82,
+     "end": 3.83,
+     "teks": "Presentasi"
+    },
+    {
+     "start": 4.62,
+     "end": 5.68,
+     "teks": "Senin pagi,"
+    },
+    {
+     "start": 5.68,
+     "end": 7.0,
+     "teks": "kelompok 3 berkumpul"
+    },
+    {
+     "start": 7.0,
+     "end": 7.97,
+     "teks": "di depan kelas."
+    },
+    {
+     "start": 8.3,
+     "end": 9.28,
+     "teks": "Slide sudah jadi"
+    },
+    {
+     "start": 9.28,
+     "end": 10.36,
+     "teks": "dan naskah sudah"
+    },
+    {
+     "start": 10.36,
+     "end": 11.02,
+     "teks": "siap,"
+    },
+    {
+     "start": 11.02,
+     "end": 12.55,
+     "teks": "tetapi tidak ada"
+    },
+    {
+     "start": 12.55,
+     "end": 13.84,
+     "teks": "satu pun foto."
+    },
+    {
+     "start": 13.84,
+     "end": 14.68,
+     "teks": "Stefan juga belum"
+    },
+    {
+     "start": 14.68,
+     "end": 15.56,
+     "teks": "datang."
+    },
+    {
+     "start": 15.56,
+     "end": 16.59,
+     "teks": "\"Tuh kan,\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 16.78,
+     "end": 17.9,
+     "teks": "kata Gelly sambil"
+    },
+    {
+     "start": 17.9,
+     "end": 19.37,
+     "teks": "membuka galeri"
+    },
+    {
+     "start": 19.37,
+     "end": 19.98,
+     "teks": "HP-nya."
+    },
+    {
+     "start": 19.98,
+     "end": 21.21,
+     "teks": "Jarinya sudah siap"
+    },
+    {
+     "start": 21.21,
+     "end": 22.29,
+     "teks": "di tombol kirim."
+    },
+    {
+     "start": 22.5,
+     "end": 23.4,
+     "teks": "Hissari menahan"
+    },
+    {
+     "start": 23.4,
+     "end": 24.03,
+     "teks": "tangannya."
+    },
+    {
+     "start": 24.36,
+     "end": 25.02,
+     "teks": "\"Tunggu dulu,",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 25.02,
+     "end": 25.37,
+     "teks": "Gel.\"",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 25.66,
+     "end": 26.81,
+     "teks": "Pak Agus masuk."
+    },
+    {
+     "start": 27.04,
+     "end": 28.06,
+     "teks": "\"Kelompok 3,",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 28.06,
+     "end": 28.94,
+     "teks": "lima menit lagi",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 28.94,
+     "end": 29.72,
+     "teks": "giliran kalian.\"",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 29.72,
+     "end": 31.87,
+     "teks": "Aldo melirik jam."
+    },
+    {
+     "start": 31.87,
+     "end": 33.47,
+     "teks": "Empat menit."
+    },
+    {
+     "start": 33.47,
+     "end": 35.06,
+     "teks": "Tiga menit."
+    },
+    {
+     "start": 35.06,
+     "end": 36.1,
+     "teks": "Lalu pintu kelas"
+    },
+    {
+     "start": 36.1,
+     "end": 37.36,
+     "teks": "terbuka."
+    },
+    {
+     "start": 37.36,
+     "end": 38.9,
+     "teks": "Stefan masuk dengan"
+    },
+    {
+     "start": 38.9,
+     "end": 39.42,
+     "teks": "napas"
+    },
+    {
+     "start": 39.42,
+     "end": 39.94,
+     "teks": "terengah-engah,"
+    },
+    {
+     "start": 39.94,
+     "end": 41.04,
+     "teks": "seragamnya basah"
+    },
+    {
+     "start": 41.04,
+     "end": 42.11,
+     "teks": "oleh keringat."
+    },
+    {
+     "start": 42.24,
+     "end": 43.16,
+     "teks": "Tangannya memegang"
+    },
+    {
+     "start": 43.16,
+     "end": 44.08,
+     "teks": "map plastik yang"
+    },
+    {
+     "start": 44.08,
+     "end": 44.89,
+     "teks": "sudah lecek."
+    },
+    {
+     "start": 45.94,
+     "end": 46.42,
+     "teks": "\"Ini,\"",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 46.42,
+     "end": 46.72,
+     "teks": "katanya pelan sambil"
+    },
+    {
+     "start": 46.72,
+     "end": 47.02,
+     "teks": "menyodorkan map itu."
+    },
+    {
+     "start": 47.02,
+     "end": 48.05,
+     "teks": "\"Maaf telat.\"",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 48.2,
+     "end": 49.2,
+     "teks": "Gelly menyilangkan"
+    },
+    {
+     "start": 49.2,
+     "end": 49.89,
+     "teks": "tangan."
+    },
+    {
+     "start": 49.99,
+     "end": 50.94,
+     "teks": "\"Tiga hari kamu",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 50.94,
+     "end": 52.09,
+     "teks": "cuma baca chat,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 52.09,
+     "end": 52.43,
+     "teks": "Stef.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 52.43,
+     "end": 53.43,
+     "teks": "Tiga hari!\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 53.86,
+     "end": 55.34,
+     "teks": "Seisi kelas mendadak"
+    },
+    {
+     "start": 55.34,
+     "end": 56.24,
+     "teks": "hening."
+    },
+    {
+     "start": 56.24,
+     "end": 57.66,
+     "teks": "Semua mata tertuju"
+    },
+    {
+     "start": 57.66,
+     "end": 58.44,
+     "teks": "ke kelompok 3."
+    },
+    {
+     "start": 58.44,
+     "end": 60.44,
+     "teks": "Stefan menunduk."
+    },
+    {
+     "start": 60.44,
+     "end": 61.24,
+     "teks": "Ia mengeluarkan"
+    },
+    {
+     "start": 61.24,
+     "end": 62.46,
+     "teks": "sesuatu dari sakunya"
+    },
+    {
+     "start": 62.46,
+     "end": 63.7,
+     "teks": "dan menaruhnya di"
+    },
+    {
+     "start": 63.7,
+     "end": 64.93,
+     "teks": "meja."
+    },
+    {
+     "start": 65.46,
+     "end": 66.56,
+     "teks": "Sebuah HP dengan"
+    },
+    {
+     "start": 66.56,
+     "end": 68.06,
+     "teks": "layar retak parah,"
+    },
+    {
+     "start": 68.06,
+     "end": 69.18,
+     "teks": "hampir tidak bisa"
+    },
+    {
+     "start": 69.18,
+     "end": 70.03,
+     "teks": "dibaca."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "LIMA MENIT SEBELUM",
+  "baris2": "PRESENTASI",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 71.14,
+  "end": 74.44,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Yang Tidak Terlihat di Chat"
+ }
+}

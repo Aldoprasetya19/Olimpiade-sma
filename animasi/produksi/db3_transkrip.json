@@ -1,0 +1,942 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.92,
+  "text": " Bagi yang tiga, yang tidak terlihat di chat.",
+  "words": [
+   {
+    "w": " Bagi",
+    "s": 0.0,
+    "e": 0.48
+   },
+   {
+    "w": " yang",
+    "s": 0.48,
+    "e": 0.66
+   },
+   {
+    "w": " tiga,",
+    "s": 0.66,
+    "e": 1.38
+   },
+   {
+    "w": " yang",
+    "s": 1.86,
+    "e": 2.02
+   },
+   {
+    "w": " tidak",
+    "s": 2.02,
+    "e": 2.44
+   },
+   {
+    "w": " terlihat",
+    "s": 2.44,
+    "e": 2.92
+   },
+   {
+    "w": " di",
+    "s": 2.92,
+    "e": 3.22
+   },
+   {
+    "w": " chat.",
+    "s": 3.22,
+    "e": 3.92
+   }
+  ]
+ },
+ {
+  "start": 4.34,
+  "end": 7.26,
+  "text": " Hapeku jatuh hari Kamis, kata Stefan.",
+  "words": [
+   {
+    "w": " Hapeku",
+    "s": 4.34,
+    "e": 4.78
+   },
+   {
+    "w": " jatuh",
+    "s": 4.78,
+    "e": 5.28
+   },
+   {
+    "w": " hari",
+    "s": 5.28,
+    "e": 5.56
+   },
+   {
+    "w": " Kamis,",
+    "s": 5.56,
+    "e": 6.36
+   },
+   {
+    "w": " kata",
+    "s": 6.54,
+    "e": 6.76
+   },
+   {
+    "w": " Stefan.",
+    "s": 6.76,
+    "e": 7.26
+   }
+  ]
+ },
+ {
+  "start": 7.72,
+  "end": 9.52,
+  "text": " Layarnya cuma bisa nyala sebentar.",
+  "words": [
+   {
+    "w": " Layarnya",
+    "s": 7.72,
+    "e": 8.08
+   },
+   {
+    "w": " cuma",
+    "s": 8.08,
+    "e": 8.32
+   },
+   {
+    "w": " bisa",
+    "s": 8.32,
+    "e": 8.62
+   },
+   {
+    "w": " nyala",
+    "s": 8.62,
+    "e": 8.88
+   },
+   {
+    "w": " sebentar.",
+    "s": 8.88,
+    "e": 9.52
+   }
+  ]
+ },
+ {
+  "start": 10.1,
+  "end": 12.76,
+  "text": " Aku bisa baca chat, tapi nggak bisa ngetik.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 10.1,
+    "e": 10.22
+   },
+   {
+    "w": " bisa",
+    "s": 10.22,
+    "e": 10.48
+   },
+   {
+    "w": " baca",
+    "s": 10.48,
+    "e": 10.8
+   },
+   {
+    "w": " chat,",
+    "s": 10.8,
+    "e": 11.06
+   },
+   {
+    "w": " tapi",
+    "s": 11.38,
+    "e": 11.52
+   },
+   {
+    "w": " nggak",
+    "s": 11.52,
+    "e": 11.7
+   },
+   {
+    "w": " bisa",
+    "s": 11.7,
+    "e": 11.9
+   },
+   {
+    "w": " ngetik.",
+    "s": 11.9,
+    "e": 12.76
+   }
+  ]
+ },
+ {
+  "start": 13.0,
+  "end": 15.6,
+  "text": " Pesan semalam itu aku kirim pakai HP kakakku.",
+  "words": [
+   {
+    "w": " Pesan",
+    "s": 13.0,
+    "e": 13.22
+   },
+   {
+    "w": " semalam",
+    "s": 13.22,
+    "e": 13.62
+   },
+   {
+    "w": " itu",
+    "s": 13.62,
+    "e": 13.94
+   },
+   {
+    "w": " aku",
+    "s": 13.94,
+    "e": 14.14
+   },
+   {
+    "w": " kirim",
+    "s": 14.14,
+    "e": 14.46
+   },
+   {
+    "w": " pakai",
+    "s": 14.46,
+    "e": 14.66
+   },
+   {
+    "w": " HP",
+    "s": 14.66,
+    "e": 14.94
+   },
+   {
+    "w": " kakakku.",
+    "s": 14.94,
+    "e": 15.6
+   }
+  ]
+ },
+ {
+  "start": 16.22,
+  "end": 18.18,
+  "text": " Geli perlahan menurunkan tangannya.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 16.22,
+    "e": 16.48
+   },
+   {
+    "w": " perlahan",
+    "s": 16.48,
+    "e": 17.0
+   },
+   {
+    "w": " menurunkan",
+    "s": 17.0,
+    "e": 17.68
+   },
+   {
+    "w": " tangannya.",
+    "s": 17.68,
+    "e": 18.18
+   }
+  ]
+ },
+ {
+  "start": 18.76,
+  "end": 20.0,
+  "text": " Aldo membuka map itu.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 18.76,
+    "e": 18.94
+   },
+   {
+    "w": " membuka",
+    "s": 18.94,
+    "e": 19.32
+   },
+   {
+    "w": " map",
+    "s": 19.32,
+    "e": 19.52
+   },
+   {
+    "w": " itu.",
+    "s": 19.52,
+    "e": 20.0
+   }
+  ]
+ },
+ {
+  "start": 20.42,
+  "end": 24.44,
+  "text": " Di dalamnya, ada belasan foto tempat sampah di seluruh sekolah,",
+  "words": [
+   {
+    "w": " Di",
+    "s": 20.42,
+    "e": 20.56
+   },
+   {
+    "w": " dalamnya,",
+    "s": 20.56,
+    "e": 21.16
+   },
+   {
+    "w": " ada",
+    "s": 21.3,
+    "e": 21.5
+   },
+   {
+    "w": " belasan",
+    "s": 21.5,
+    "e": 21.88
+   },
+   {
+    "w": " foto",
+    "s": 21.88,
+    "e": 22.22
+   },
+   {
+    "w": " tempat",
+    "s": 22.22,
+    "e": 22.66
+   },
+   {
+    "w": " sampah",
+    "s": 22.66,
+    "e": 23.06
+   },
+   {
+    "w": " di",
+    "s": 23.06,
+    "e": 23.28
+   },
+   {
+    "w": " seluruh",
+    "s": 23.28,
+    "e": 23.74
+   },
+   {
+    "w": " sekolah,",
+    "s": 23.74,
+    "e": 24.44
+   }
+  ]
+ },
+ {
+  "start": 24.6,
+  "end": 26.14,
+  "text": " dicetak satu persatu.",
+  "words": [
+   {
+    "w": " dicetak",
+    "s": 24.6,
+    "e": 25.2
+   },
+   {
+    "w": " satu",
+    "s": 25.2,
+    "e": 25.54
+   },
+   {
+    "w": " persatu.",
+    "s": 25.54,
+    "e": 26.14
+   }
+  ]
+ },
+ {
+  "start": 26.6,
+  "end": 29.52,
+  "text": " Di bawah setiap foto, ada catatan tulisan tangan.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 26.6,
+    "e": 26.72
+   },
+   {
+    "w": " bawah",
+    "s": 26.72,
+    "e": 26.94
+   },
+   {
+    "w": " setiap",
+    "s": 26.94,
+    "e": 27.24
+   },
+   {
+    "w": " foto,",
+    "s": 27.24,
+    "e": 27.74
+   },
+   {
+    "w": " ada",
+    "s": 28.04,
+    "e": 28.18
+   },
+   {
+    "w": " catatan",
+    "s": 28.18,
+    "e": 28.6
+   },
+   {
+    "w": " tulisan",
+    "s": 28.6,
+    "e": 28.98
+   },
+   {
+    "w": " tangan.",
+    "s": 28.98,
+    "e": 29.52
+   }
+  ]
+ },
+ {
+  "start": 29.52,
+  "end": 31.8,
+  "text": " Kantin, penuh jam 10.",
+  "words": [
+   {
+    "w": " Kantin,",
+    "s": 29.52,
+    "e": 30.66
+   },
+   {
+    "w": " penuh",
+    "s": 30.82,
+    "e": 31.12
+   },
+   {
+    "w": " jam",
+    "s": 31.12,
+    "e": 31.34
+   },
+   {
+    "w": " 10.",
+    "s": 31.34,
+    "e": 31.8
+   }
+  ]
+ },
+ {
+  "start": 32.24,
+  "end": 35.28,
+  "text": " Lapangan, tidak ada tempat sampah sama sekali.",
+  "words": [
+   {
+    "w": " Lapangan,",
+    "s": 32.24,
+    "e": 32.8
+   },
+   {
+    "w": " tidak",
+    "s": 33.24,
+    "e": 33.42
+   },
+   {
+    "w": " ada",
+    "s": 33.42,
+    "e": 33.6
+   },
+   {
+    "w": " tempat",
+    "s": 33.6,
+    "e": 33.92
+   },
+   {
+    "w": " sampah",
+    "s": 33.92,
+    "e": 34.42
+   },
+   {
+    "w": " sama",
+    "s": 34.42,
+    "e": 34.76
+   },
+   {
+    "w": " sekali.",
+    "s": 34.76,
+    "e": 35.28
+   }
+  ]
+ },
+ {
+  "start": 35.88,
+  "end": 38.18,
+  "text": " Aku nggak bisa kirim fotonya, lanjut Stefan.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 35.88,
+    "e": 35.88
+   },
+   {
+    "w": " nggak",
+    "s": 35.88,
+    "e": 36.12
+   },
+   {
+    "w": " bisa",
+    "s": 36.12,
+    "e": 36.3
+   },
+   {
+    "w": " kirim",
+    "s": 36.3,
+    "e": 36.52
+   },
+   {
+    "w": " fotonya,",
+    "s": 36.52,
+    "e": 37.12
+   },
+   {
+    "w": " lanjut",
+    "s": 37.48,
+    "e": 37.78
+   },
+   {
+    "w": " Stefan.",
+    "s": 37.78,
+    "e": 38.18
+   }
+  ]
+ },
+ {
+  "start": 38.68,
+  "end": 41.0,
+  "text": " Jadi, aku cetak di fotokopian depan.",
+  "words": [
+   {
+    "w": " Jadi,",
+    "s": 38.68,
+    "e": 38.92
+   },
+   {
+    "w": " aku",
+    "s": 39.14,
+    "e": 39.3
+   },
+   {
+    "w": " cetak",
+    "s": 39.3,
+    "e": 39.64
+   },
+   {
+    "w": " di",
+    "s": 39.64,
+    "e": 39.82
+   },
+   {
+    "w": " fotokopian",
+    "s": 39.82,
+    "e": 40.3
+   },
+   {
+    "w": " depan.",
+    "s": 40.3,
+    "e": 41.0
+   }
+  ]
+ },
+ {
+  "start": 41.1,
+  "end": 42.76,
+  "text": " Tadi antriannya panjang.",
+  "words": [
+   {
+    "w": " Tadi",
+    "s": 41.1,
+    "e": 41.4
+   },
+   {
+    "w": " antriannya",
+    "s": 41.4,
+    "e": 41.86
+   },
+   {
+    "w": " panjang.",
+    "s": 41.86,
+    "e": 42.76
+   }
+  ]
+ },
+ {
+  "start": 42.96,
+  "end": 44.48,
+  "text": " Hisari tersenyum kecil.",
+  "words": [
+   {
+    "w": " Hisari",
+    "s": 42.96,
+    "e": 43.42
+   },
+   {
+    "w": " tersenyum",
+    "s": 43.42,
+    "e": 43.94
+   },
+   {
+    "w": " kecil.",
+    "s": 43.94,
+    "e": 44.48
+   }
+  ]
+ },
+ {
+  "start": 44.92,
+  "end": 47.2,
+  "text": " Ini malah lebih bagus daripada foto di slide.",
+  "words": [
+   {
+    "w": " Ini",
+    "s": 44.92,
+    "e": 45.06
+   },
+   {
+    "w": " malah",
+    "s": 45.06,
+    "e": 45.34
+   },
+   {
+    "w": " lebih",
+    "s": 45.34,
+    "e": 45.66
+   },
+   {
+    "w": " bagus",
+    "s": 45.66,
+    "e": 46.0
+   },
+   {
+    "w": " daripada",
+    "s": 46.0,
+    "e": 46.42
+   },
+   {
+    "w": " foto",
+    "s": 46.42,
+    "e": 46.68
+   },
+   {
+    "w": " di",
+    "s": 46.68,
+    "e": 46.92
+   },
+   {
+    "w": " slide.",
+    "s": 46.92,
+    "e": 47.2
+   }
+  ]
+ },
+ {
+  "start": 47.54,
+  "end": 49.02,
+  "text": " Kelompok tiga, maju.",
+  "words": [
+   {
+    "w": " Kelompok",
+    "s": 47.54,
+    "e": 47.94
+   },
+   {
+    "w": " tiga,",
+    "s": 47.94,
+    "e": 48.44
+   },
+   {
+    "w": " maju.",
+    "s": 48.7,
+    "e": 49.02
+   }
+  ]
+ },
+ {
+  "start": 49.34,
+  "end": 53.66,
+  "text": " Mereka presentasi sambil mengedarkan foto-foto Stefan ke seluruh kelas.",
+  "words": [
+   {
+    "w": " Mereka",
+    "s": 49.34,
+    "e": 49.66
+   },
+   {
+    "w": " presentasi",
+    "s": 49.66,
+    "e": 50.44
+   },
+   {
+    "w": " sambil",
+    "s": 50.44,
+    "e": 50.84
+   },
+   {
+    "w": " mengedarkan",
+    "s": 50.84,
+    "e": 51.44
+   },
+   {
+    "w": " foto",
+    "s": 51.44,
+    "e": 51.82
+   },
+   {
+    "w": "-foto",
+    "s": 51.82,
+    "e": 52.1
+   },
+   {
+    "w": " Stefan",
+    "s": 52.1,
+    "e": 52.52
+   },
+   {
+    "w": " ke",
+    "s": 52.52,
+    "e": 52.8
+   },
+   {
+    "w": " seluruh",
+    "s": 52.8,
+    "e": 53.24
+   },
+   {
+    "w": " kelas.",
+    "s": 53.24,
+    "e": 53.66
+   }
+  ]
+ },
+ {
+  "start": 53.96,
+  "end": 57.6,
+  "text": " Pak Agus mengangguk-angguk, lalu menulis nilai di bukunya.",
+  "words": [
+   {
+    "w": " Pak",
+    "s": 53.96,
+    "e": 54.18
+   },
+   {
+    "w": " Agus",
+    "s": 54.18,
+    "e": 54.5
+   },
+   {
+    "w": " mengangguk",
+    "s": 54.5,
+    "e": 54.98
+   },
+   {
+    "w": "-angguk,",
+    "s": 54.98,
+    "e": 55.54
+   },
+   {
+    "w": " lalu",
+    "s": 55.66,
+    "e": 55.96
+   },
+   {
+    "w": " menulis",
+    "s": 55.96,
+    "e": 56.4
+   },
+   {
+    "w": " nilai",
+    "s": 56.4,
+    "e": 56.8
+   },
+   {
+    "w": " di",
+    "s": 56.8,
+    "e": 57.02
+   },
+   {
+    "w": " bukunya.",
+    "s": 57.02,
+    "e": 57.6
+   }
+  ]
+ },
+ {
+  "start": 57.6,
+  "end": 60.76,
+  "text": " Sepulang sekolah, Geli membuka galeri HP-nya.",
+  "words": [
+   {
+    "w": " Sepulang",
+    "s": 57.6,
+    "e": 58.28
+   },
+   {
+    "w": " sekolah,",
+    "s": 58.28,
+    "e": 58.92
+   },
+   {
+    "w": " Geli",
+    "s": 59.16,
+    "e": 59.3
+   },
+   {
+    "w": " membuka",
+    "s": 59.3,
+    "e": 59.78
+   },
+   {
+    "w": " galeri",
+    "s": 59.78,
+    "e": 60.16
+   },
+   {
+    "w": " HP",
+    "s": 60.16,
+    "e": 60.46
+   },
+   {
+    "w": "-nya.",
+    "s": 60.46,
+    "e": 60.76
+   }
+  ]
+ },
+ {
+  "start": 61.16,
+  "end": 65.1,
+  "text": " Ia memilih semua screenshot itu, lalu menekan, hapus.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 61.16,
+    "e": 61.36
+   },
+   {
+    "w": " memilih",
+    "s": 61.36,
+    "e": 61.8
+   },
+   {
+    "w": " semua",
+    "s": 61.8,
+    "e": 62.22
+   },
+   {
+    "w": " screenshot",
+    "s": 62.22,
+    "e": 62.7
+   },
+   {
+    "w": " itu,",
+    "s": 62.7,
+    "e": 63.2
+   },
+   {
+    "w": " lalu",
+    "s": 63.42,
+    "e": 63.84
+   },
+   {
+    "w": " menekan,",
+    "s": 63.84,
+    "e": 64.5
+   },
+   {
+    "w": " hapus.",
+    "s": 64.76,
+    "e": 65.1
+   }
+  ]
+ },
+ {
+  "start": 66.12,
+  "end": 70.24,
+  "text": " Malam itu, nama grup mereka berganti menjadi Kelompok Tiga.",
+  "words": [
+   {
+    "w": " Malam",
+    "s": 66.12,
+    "e": 66.52
+   },
+   {
+    "w": " itu,",
+    "s": 66.52,
+    "e": 66.92
+   },
+   {
+    "w": " nama",
+    "s": 67.24,
+    "e": 67.38
+   },
+   {
+    "w": " grup",
+    "s": 67.38,
+    "e": 67.52
+   },
+   {
+    "w": " mereka",
+    "s": 67.52,
+    "e": 67.96
+   },
+   {
+    "w": " berganti",
+    "s": 67.96,
+    "e": 68.6
+   },
+   {
+    "w": " menjadi",
+    "s": 68.6,
+    "e": 69.2
+   },
+   {
+    "w": " Kelompok",
+    "s": 69.2,
+    "e": 69.86
+   },
+   {
+    "w": " Tiga.",
+    "s": 69.86,
+    "e": 70.24
+   }
+  ]
+ },
+ {
+  "start": 70.62,
+  "end": 72.1,
+  "text": " Tanya dulu, baru marah.",
+  "words": [
+   {
+    "w": " Tanya",
+    "s": 70.62,
+    "e": 70.86
+   },
+   {
+    "w": " dulu,",
+    "s": 70.86,
+    "e": 71.24
+   },
+   {
+    "w": " baru",
+    "s": 71.68,
+    "e": 71.8
+   },
+   {
+    "w": " marah.",
+    "s": 71.8,
+    "e": 72.2
+   }
+  ]
+ },
+ {
+  "start": 73.7,
+  "end": 74.1,
+  "text": " Tamat.",
+  "words": [
+   {
+    "w": " Tamat.",
+    "s": 73.7,
+    "e": 74.1
+   }
+  ]
+ }
+]

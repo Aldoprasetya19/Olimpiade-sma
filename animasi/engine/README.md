@@ -66,3 +66,15 @@ terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di
   bila baris tidak diberi kamera, atau tulis `{masuk}`. Lokasi berpintu: kelas, rumah, ruang guru, lobi, gudang, koridor, kantin.
 - Foto: `{foto} [Keterangan 1 | Keterangan 2]` menampilkan foto cetak bergambar (gambar menyesuaikan kata seperti
   kantin, lapangan, sampah, penuh, tidak ada); juga otomatis bila narasi berisi *memperlihatkan/menunjukkan/mengedarkan foto*.
+
+### Aturan otomatis tambahan (revisi pengguna, berlaku untuk semua cerita)
+- **Kamar & meja belajar**: adegan `[rumah]` yang barisnya menyebut laptop/menulis/mengetik/belajar/mengerjakan/esai/tugas
+  otomatis pindah ke lokasi `kamar` (meja belajar + laptop). Kata *laptop/layar* → kamera `laptop` dari belakang-samping
+  tokoh sehingga layar terlihat; isi layar mengikuti cerita (kosong / jawaban AI / tulisan sendiri).
+- **Tidur**: kata *tidur/tertidur* → shot dipotong tepat di kata itu dan tokoh terlihat berbaring di kasur berselimut.
+- **Jam & hari di HP**: diambil dari narasi (*pukul 11* + *malam* → 23.00; pagi/istirahat/siang/sore/malam; nama hari),
+  bertambah 1 menit tiap layar HP. `Nama@23.47` di naskah tetap bisa memaksa jam tertentu.
+- **Maju ke depan kelas**: murid yang duduk + *berjalan/maju ke depan* → berdiri dari kursi, bergeser ke lorong,
+  berjalan ke depan, lalu berbalik menghadap kelas (kamera `kedepan` dari sisi kelas).
+- **Menatap teman / saling pandang**: tokoh menoleh ke teman yang disebut, atau ke teman terdekat.
+- **Masuk lewat pintu** hanya untuk *masuk/datang/tiba*; *berjalan/maju* biasa tidak memakai pintu.

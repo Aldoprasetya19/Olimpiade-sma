@@ -1,8 +1,9 @@
 # judul: KATA YANG | TIDAK DIKENAL
 # akhir: BERSAMBUNG... | Bagian 3: Esai yang Kedua
-[kelas berdiri] p1=aldo p2=crispin
+[kelas] p1=aldo p2=aldos p3=nava p4=dayinta p5=crispin
 NARATOR {lebar}: Bagian 2, Kata yang Tidak Dikenal.
-NARATOR {mcu:aldo} (aldo=cemas): Aldo berjalan ke depan kelas, kakinya terasa berat.
+NARATOR {lebar} (aldo=cemas): Aldo berjalan ke depan kelas, kakinya terasa berat.
+[kelas berdiri] p1=aldo p2=crispin
 CRISPIN (serius): "Coba jelaskan isi esaimu dengan kata-katamu sendiri,"
 NARATOR {cu:aldo} (aldo=cemas): kata Pak Crispin. Aldo menarik napas.
 ALDO (cemas): "Persahabatan itu penting, karena sahabat itu selalu ada."

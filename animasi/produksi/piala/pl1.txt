@@ -1,0 +1,25 @@
+# judul: PIALA YANG | HILANG
+# akhir: BERSAMBUNG... | Bagian 2: Rahasia di Gudang
+[lobiPiala] p1=aldo
+NARATOR {lebar} (flash): Bagian 1: Piala yang Hilang
+[lobi] p1=aldo p2=gelly p3=hissari
+NARATOR {mcu:aldo} (aldo=kaget, gelly=cemas, hissari=cemas): Senin pagi, Aldo baru tiba di sekolah ketika lobi sudah ramai. Lemari kaca di dekat pintu masuk kosong.
+NARATOR {lebar} (aldo=kaget): Piala juara umum sekolah hilang.
+[lobi] p1=aldo p2=agus p3=gelly
+NARATOR {cu:agus} (agus=marah): Pak Agus mengumumkan lewat pengeras suara:
+AGUS (marah): "Saya beri waktu sampai Jumat. Piala itu harus kembali."
+[lobi] p1=aldos p2=aldo p3=gelly p4=hissari
+NARATOR {cu:aldo} (aldo=serius): Aldo tidak bisa diam saja.
+NARATOR {dua} (aldo=senyum, aldos=senyum): Ia mengajak sahabatnya yang namanya sama, Aldo S. Teman-teman memanggilnya begitu supaya tidak tertukar.
+NARATOR {lebar} (aldo=fokus, gelly=fokus, hissari=fokus, aldos=fokus): Bersama Gelly dan Hissari, teman sekelas mereka di kelas 11, mereka memeriksa lemari itu.
+[lobi] p1=misel p2=aulia p3=aldo p4=aldos
+NARATOR {dua} (misel=kaget, aulia=kaget, misel:tunjuk): Misel dan Aulia menemukan bercak cat emas di lantai.
+[lobi] p1=aldo p2=aldos p3=kharan p4=justin
+NARATOR {lebar} (kharan=cemas, justin=cemas): Tak lama, dua adik kelas 10, Kharan dan Justin, datang sambil terengah-engah.
+KHARAN (panik): "Kak Aldo, CCTV lobi mati sejak Sabtu!"
+NARATOR {cu:aldo} (aldo=curiga): Aldo mengernyit.
+ALDO (serius): "Berarti ini sudah direncanakan."
+[koridor] kiri=aldo
+NARATOR {mcu:aldo} (aldo=netral): Saat pulang sekolah, Aldo membuka tasnya. Di dalamnya terselip secarik kertas:
+NARATOR {kertas} (aldo=kaget) [Berhenti mencari, Aldo. Kalau tidak, kamu akan merusak segalanya.]: "Berhenti mencari, Aldo. Kalau tidak, kamu akan merusak segalanya."
+NARATOR {akhir}: Bersambung...

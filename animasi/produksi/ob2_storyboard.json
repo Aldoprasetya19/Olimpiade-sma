@@ -1,0 +1,607 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 119.98,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "GELLY": {
+   "warna": "#8FE3D8"
+  },
+  "HISSARI": {
+   "warna": "#C7A4FF"
+  },
+  "MILA": {
+   "warna": "#FFB3C7"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 119.98,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.36,
+     "teks": "Bel pulang sekolah"
+    },
+    {
+     "start": 1.36,
+     "end": 3.02,
+     "teks": "baru saja berbunyi,"
+    },
+    {
+     "start": 3.02,
+     "end": 4.66,
+     "teks": "tetapi Aldo masih"
+    },
+    {
+     "start": 4.66,
+     "end": 5.68,
+     "teks": "berdiri di depan"
+    },
+    {
+     "start": 5.68,
+     "end": 7.4,
+     "teks": "pintu kelas menunggu"
+    },
+    {
+     "start": 7.4,
+     "end": 9.0,
+     "teks": "penjelasan Gelly."
+    },
+    {
+     "start": 9.0,
+     "end": 9.28,
+     "teks": "Gel,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 9.28,
+     "end": 10.32,
+     "teks": "jujur aja.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 10.32,
+     "end": 10.96,
+     "teks": "Pesan dari Dika",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 10.96,
+     "end": 12.77,
+     "teks": "tadi maksudnya apa?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 12.94,
+     "end": 13.58,
+     "teks": "Sumpah,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 13.58,
+     "end": 14.1,
+     "teks": "Do,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 14.1,
+     "end": 15.12,
+     "teks": "aku cuma dimasukin",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 15.12,
+     "end": 15.74,
+     "teks": "ke grup itu",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 15.74,
+     "end": 16.72,
+     "teks": "kemarin sore!",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 16.72,
+     "end": 18.0,
+     "teks": "Belum sempat ngomong",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 18.0,
+     "end": 18.4,
+     "teks": "apa-apa.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 18.44,
+     "end": 20.58,
+     "teks": "Dari arah tangga,"
+    },
+    {
+     "start": 20.58,
+     "end": 21.38,
+     "teks": "Mila dan Hissari"
+    },
+    {
+     "start": 21.38,
+     "end": 22.52,
+     "teks": "berjalan mendekat"
+    },
+    {
+     "start": 22.52,
+     "end": 23.4,
+     "teks": "sambil membawa"
+    },
+    {
+     "start": 23.4,
+     "end": 24.46,
+     "teks": "tumpukan buku"
+    },
+    {
+     "start": 24.46,
+     "end": 26.0,
+     "teks": "catatan kelas."
+    },
+    {
+     "start": 26.0,
+     "end": 26.98,
+     "teks": "Kalian berdua ribut",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 26.98,
+     "end": 28.54,
+     "teks": "soal apaan sih?",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 28.54,
+     "end": 29.26,
+     "teks": "Mukanya tegang",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 29.26,
+     "end": 29.64,
+     "teks": "banget.",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 29.64,
+     "end": 30.74,
+     "teks": "Kalau soal grup",
+     "siapa": "MILA"
+    },
+    {
+     "start": 30.74,
+     "end": 31.58,
+     "teks": "baru yang dibikin",
+     "siapa": "MILA"
+    },
+    {
+     "start": 31.58,
+     "end": 33.44,
+     "teks": "Rialdi sama Dika,",
+     "siapa": "MILA"
+    },
+    {
+     "start": 33.44,
+     "end": 34.24,
+     "teks": "satu kelas kayaknya",
+     "siapa": "MILA"
+    },
+    {
+     "start": 34.24,
+     "end": 34.96,
+     "teks": "udah mulai dengar",
+     "siapa": "MILA"
+    },
+    {
+     "start": 34.96,
+     "end": 35.58,
+     "teks": "deh.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 35.58,
+     "end": 37.34,
+     "teks": "Aldo menoleh cepat"
+    },
+    {
+     "start": 37.34,
+     "end": 38.58,
+     "teks": "ke arah Mila,"
+    },
+    {
+     "start": 38.58,
+     "end": 39.94,
+     "teks": "sementara Gelly"
+    },
+    {
+     "start": 39.94,
+     "end": 41.04,
+     "teks": "langsung mundur"
+    },
+    {
+     "start": 41.04,
+     "end": 42.17,
+     "teks": "selangkah."
+    },
+    {
+     "start": 42.3,
+     "end": 42.88,
+     "teks": "Kamu juga tahu",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 42.88,
+     "end": 43.78,
+     "teks": "soal grup itu,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 43.78,
+     "end": 44.08,
+     "teks": "Mil?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 44.16,
+     "end": 45.18,
+     "teks": "Tahu.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 45.18,
+     "end": 46.06,
+     "teks": "Kemarin sore aku",
+     "siapa": "MILA"
+    },
+    {
+     "start": 46.06,
+     "end": 46.76,
+     "teks": "lihat Dika,",
+     "siapa": "MILA"
+    },
+    {
+     "start": 46.76,
+     "end": 47.6,
+     "teks": "Rialdi,",
+     "siapa": "MILA"
+    },
+    {
+     "start": 47.6,
+     "end": 48.46,
+     "teks": "sama Justin ngumpul",
+     "siapa": "MILA"
+    },
+    {
+     "start": 48.46,
+     "end": 48.86,
+     "teks": "di pojok",
+     "siapa": "MILA"
+    },
+    {
+     "start": 48.86,
+     "end": 50.18,
+     "teks": "perpustakaan.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 50.18,
+     "end": 51.04,
+     "teks": "Mereka sibuk nyusun",
+     "siapa": "MILA"
+    },
+    {
+     "start": 51.04,
+     "end": 52.36,
+     "teks": "pembagian tugas",
+     "siapa": "MILA"
+    },
+    {
+     "start": 52.36,
+     "end": 53.0,
+     "teks": "tanpa kamu.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 53.0,
+     "end": 54.02,
+     "teks": "Iya,",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 54.02,
+     "end": 54.56,
+     "teks": "Do.",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 54.56,
+     "end": 55.48,
+     "teks": "Pas aku tanya",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 55.48,
+     "end": 56.56,
+     "teks": "kenapa kamu nggak",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 56.56,
+     "end": 57.94,
+     "teks": "diajak,",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 57.94,
+     "end": 58.88,
+     "teks": "Rialdi bilangnya",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 58.88,
+     "end": 60.53,
+     "teks": "takut kamu terlalu",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 60.53,
+     "end": 61.92,
+     "teks": "perfeksionis dan",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 61.92,
+     "end": 62.26,
+     "teks": "ngatur-ngatur",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 62.26,
+     "end": 63.33,
+     "teks": "materi.",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 74.54,
+     "end": 75.04,
+     "teks": "Nah,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 75.04,
+     "end": 75.86,
+     "teks": "itu maksudku tadi,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 75.86,
+     "end": 76.4,
+     "teks": "Do!",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 76.4,
+     "end": 77.2,
+     "teks": "Data observasiku",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 77.2,
+     "end": 77.68,
+     "teks": "valid,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 77.68,
+     "end": 77.84,
+     "teks": "kan?",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 77.84,
+     "end": 79.56,
+     "teks": "Observasi apaan,",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 79.56,
+     "end": 80.38,
+     "teks": "Gel?",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 80.38,
+     "end": 81.36,
+     "teks": "Orang kamu sendiri",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 81.36,
+     "end": 83.72,
+     "teks": "tadi pagi kelihatan",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 83.72,
+     "end": 84.88,
+     "teks": "ikut nimbrung",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 84.88,
+     "end": 85.8,
+     "teks": "ketawa-ketawa bareng",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 85.8,
+     "end": 87.5,
+     "teks": "Dika di kantin.",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 87.5,
+     "end": 88.12,
+     "teks": "Itu kan bagian",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 88.12,
+     "end": 89.1,
+     "teks": "dari pendekatan ke",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 89.1,
+     "end": 90.16,
+     "teks": "subjek penelitian,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 90.16,
+     "end": 90.58,
+     "teks": "Sar!",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 90.58,
+     "end": 92.03,
+     "teks": "Biar datanya akurat!",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 92.06,
+     "end": 93.74,
+     "teks": "Ponsel Aldo bergetar"
+    },
+    {
+     "start": 93.74,
+     "end": 95.09,
+     "teks": "di saku celana."
+    },
+    {
+     "start": 101.62,
+     "end": 102.54,
+     "teks": "Sebelum kamu nemuin",
+     "siapa": "MILA"
+    },
+    {
+     "start": 102.54,
+     "end": 103.82,
+     "teks": "Justin di gerbang,",
+     "siapa": "MILA"
+    },
+    {
+     "start": 103.82,
+     "end": 104.52,
+     "teks": "Do,",
+     "siapa": "MILA"
+    },
+    {
+     "start": 104.52,
+     "end": 105.34,
+     "teks": "kamu harus lihat",
+     "siapa": "MILA"
+    },
+    {
+     "start": 105.34,
+     "end": 106.28,
+     "teks": "sesuatu dulu di",
+     "siapa": "MILA"
+    },
+    {
+     "start": 106.28,
+     "end": 107.16,
+     "teks": "buku catatanku.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 107.16,
+     "end": 108.1,
+     "teks": "Apa itu,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 108.1,
+     "end": 108.4,
+     "teks": "Mil?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 108.56,
+     "end": 109.24,
+     "teks": "Ini bukan cuma",
+     "siapa": "MILA"
+    },
+    {
+     "start": 109.24,
+     "end": 110.58,
+     "teks": "soal tugas kelompok.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 110.58,
+     "end": 111.56,
+     "teks": "Rialdi sengaja bikin",
+     "siapa": "MILA"
+    },
+    {
+     "start": 111.56,
+     "end": 112.72,
+     "teks": "grup itu buat",
+     "siapa": "MILA"
+    },
+    {
+     "start": 112.72,
+     "end": 113.84,
+     "teks": "gantiin posisi kamu",
+     "siapa": "MILA"
+    },
+    {
+     "start": 113.84,
+     "end": 115.06,
+     "teks": "di kepanitiaan acara",
+     "siapa": "MILA"
+    },
+    {
+     "start": 115.06,
+     "end": 116.41,
+     "teks": "kelas bulan depan.",
+     "siapa": "MILA"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "VARIABEL",
+  "baris2": "BARU",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 116.68,
+  "end": 119.98,
+  "judul": "BERSAMBUNG",
+  "sub": "Catatan Mila"
+ }
+}

@@ -1,0 +1,346 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 72.82,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "AGUS": {
+   "warna": "#FFD84A"
+  },
+  "KHARAN": {
+   "warna": "#8FE3D8"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 72.82,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 2.38,
+     "teks": "Bagian 1: Piala"
+    },
+    {
+     "start": 2.38,
+     "end": 3.43,
+     "teks": "yang Hilang"
+    },
+    {
+     "start": 4.14,
+     "end": 5.44,
+     "teks": "Senin pagi,"
+    },
+    {
+     "start": 5.44,
+     "end": 6.12,
+     "teks": "Aldo baru tiba"
+    },
+    {
+     "start": 6.12,
+     "end": 7.33,
+     "teks": "di sekolah ketika"
+    },
+    {
+     "start": 7.33,
+     "end": 8.86,
+     "teks": "lobi sudah ramai."
+    },
+    {
+     "start": 8.86,
+     "end": 9.7,
+     "teks": "Lemari kaca di"
+    },
+    {
+     "start": 9.7,
+     "end": 10.54,
+     "teks": "dekat pintu masuk"
+    },
+    {
+     "start": 10.54,
+     "end": 11.47,
+     "teks": "kosong."
+    },
+    {
+     "start": 12.2,
+     "end": 13.3,
+     "teks": "Piala juara umum"
+    },
+    {
+     "start": 13.3,
+     "end": 15.69,
+     "teks": "sekolah hilang."
+    },
+    {
+     "start": 16.18,
+     "end": 17.32,
+     "teks": "Pak Agus mengumumkan"
+    },
+    {
+     "start": 17.32,
+     "end": 18.12,
+     "teks": "lewat pengeras"
+    },
+    {
+     "start": 18.12,
+     "end": 18.75,
+     "teks": "suara:"
+    },
+    {
+     "start": 19.18,
+     "end": 19.8,
+     "teks": "\"Saya beri waktu",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 19.8,
+     "end": 21.06,
+     "teks": "sampai Jumat.",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 21.06,
+     "end": 22.06,
+     "teks": "Piala itu harus",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 22.06,
+     "end": 22.85,
+     "teks": "kembali.\"",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 23.22,
+     "end": 24.26,
+     "teks": "Aldo tidak bisa"
+    },
+    {
+     "start": 24.26,
+     "end": 25.07,
+     "teks": "diam saja."
+    },
+    {
+     "start": 25.34,
+     "end": 25.94,
+     "teks": "Ia mengajak"
+    },
+    {
+     "start": 25.94,
+     "end": 26.84,
+     "teks": "sahabatnya yang"
+    },
+    {
+     "start": 26.84,
+     "end": 27.84,
+     "teks": "namanya sama,"
+    },
+    {
+     "start": 27.84,
+     "end": 29.1,
+     "teks": "Aldo S."
+    },
+    {
+     "start": 29.1,
+     "end": 29.62,
+     "teks": "Teman-teman"
+    },
+    {
+     "start": 29.62,
+     "end": 30.7,
+     "teks": "memanggilnya begitu"
+    },
+    {
+     "start": 30.7,
+     "end": 31.44,
+     "teks": "supaya tidak"
+    },
+    {
+     "start": 31.44,
+     "end": 32.13,
+     "teks": "tertukar."
+    },
+    {
+     "start": 32.64,
+     "end": 33.99,
+     "teks": "Bersama Gelly dan"
+    },
+    {
+     "start": 33.99,
+     "end": 34.42,
+     "teks": "Hissari,"
+    },
+    {
+     "start": 34.42,
+     "end": 35.34,
+     "teks": "teman sekelas mereka"
+    },
+    {
+     "start": 35.34,
+     "end": 36.44,
+     "teks": "di kelas 11,"
+    },
+    {
+     "start": 36.44,
+     "end": 37.44,
+     "teks": "mereka memeriksa"
+    },
+    {
+     "start": 37.44,
+     "end": 38.35,
+     "teks": "lemari itu."
+    },
+    {
+     "start": 38.76,
+     "end": 39.68,
+     "teks": "Misel dan Aulia"
+    },
+    {
+     "start": 39.68,
+     "end": 40.94,
+     "teks": "menemukan bercak cat"
+    },
+    {
+     "start": 40.94,
+     "end": 42.07,
+     "teks": "emas di lantai."
+    },
+    {
+     "start": 42.56,
+     "end": 43.4,
+     "teks": "Tak lama,"
+    },
+    {
+     "start": 43.4,
+     "end": 44.08,
+     "teks": "dua adik kelas"
+    },
+    {
+     "start": 44.08,
+     "end": 44.83,
+     "teks": "10,"
+    },
+    {
+     "start": 44.83,
+     "end": 46.32,
+     "teks": "Kharan dan Justin,"
+    },
+    {
+     "start": 46.32,
+     "end": 47.9,
+     "teks": "datang sambil"
+    },
+    {
+     "start": 47.9,
+     "end": 48.3,
+     "teks": "terengah-engah."
+    },
+    {
+     "start": 48.84,
+     "end": 50.1,
+     "teks": "\"Kak Aldo,",
+     "siapa": "KHARAN"
+    },
+    {
+     "start": 50.1,
+     "end": 51.28,
+     "teks": "CCTV lobi mati",
+     "siapa": "KHARAN"
+    },
+    {
+     "start": 51.28,
+     "end": 52.64,
+     "teks": "sejak Sabtu!\"",
+     "siapa": "KHARAN"
+    },
+    {
+     "start": 52.64,
+     "end": 54.08,
+     "teks": "Aldo mengernyit."
+    },
+    {
+     "start": 54.24,
+     "end": 55.78,
+     "teks": "\"Berarti ini sudah",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 55.78,
+     "end": 56.95,
+     "teks": "direncanakan.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 57.36,
+     "end": 59.18,
+     "teks": "Saat pulang sekolah,"
+    },
+    {
+     "start": 59.18,
+     "end": 60.8,
+     "teks": "Aldo membuka tasnya."
+    },
+    {
+     "start": 60.8,
+     "end": 62.28,
+     "teks": "Di dalamnya terselip"
+    },
+    {
+     "start": 62.28,
+     "end": 63.21,
+     "teks": "secarik kertas:"
+    },
+    {
+     "start": 63.66,
+     "end": 64.68,
+     "teks": "\"Berhenti mencari,"
+    },
+    {
+     "start": 64.68,
+     "end": 65.64,
+     "teks": "Aldo."
+    },
+    {
+     "start": 65.64,
+     "end": 66.84,
+     "teks": "Kalau tidak,"
+    },
+    {
+     "start": 66.84,
+     "end": 67.92,
+     "teks": "kamu akan merusak"
+    },
+    {
+     "start": 67.92,
+     "end": 68.79,
+     "teks": "segalanya.\""
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "PIALA YANG",
+  "baris2": "HILANG",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 69.52,
+  "end": 72.82,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Rahasia di Gudang"
+ }
+}

@@ -1,0 +1,364 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 67.48,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "DIKA": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 67.48,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.64,
+     "teks": "Besok paginya,"
+    },
+    {
+     "start": 1.64,
+     "end": 2.34,
+     "teks": "Dika meletakkan"
+    },
+    {
+     "start": 2.34,
+     "end": 3.14,
+     "teks": "ponsel di meja"
+    },
+    {
+     "start": 3.14,
+     "end": 4.15,
+     "teks": "Aldo."
+    },
+    {
+     "start": 4.22,
+     "end": 4.9,
+     "teks": "Di layar ada"
+    },
+    {
+     "start": 4.9,
+     "end": 6.13,
+     "teks": "sebuah pesan."
+    },
+    {
+     "start": 6.16,
+     "end": 6.98,
+     "teks": "“Jangan ajak Aldo"
+    },
+    {
+     "start": 6.98,
+     "end": 7.84,
+     "teks": "dulu."
+    },
+    {
+     "start": 7.84,
+     "end": 8.72,
+     "teks": "Nanti kita harus"
+    },
+    {
+     "start": 8.72,
+     "end": 9.46,
+     "teks": "cari tempat murah"
+    },
+    {
+     "start": 9.46,
+     "end": 10.07,
+     "teks": "lagi.”"
+    },
+    {
+     "start": 10.34,
+     "end": 10.96,
+     "teks": "Beberapa orang"
+    },
+    {
+     "start": 10.96,
+     "end": 11.82,
+     "teks": "membalas dengan"
+    },
+    {
+     "start": 11.82,
+     "end": 13.2,
+     "teks": "emoji tertawa."
+    },
+    {
+     "start": 13.2,
+     "end": 14.57,
+     "teks": "Dika salah satunya."
+    },
+    {
+     "start": 14.78,
+     "end": 15.86,
+     "teks": "Aku pernah bilang",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 15.86,
+     "end": 18.82,
+     "teks": "kafe itu kemahalan.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 18.82,
+     "end": 19.96,
+     "teks": "Tapi aku nggak",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 19.96,
+     "end": 20.62,
+     "teks": "pernah ngelarang",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 20.62,
+     "end": 21.67,
+     "teks": "kalian pergi.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 22.12,
+     "end": 23.36,
+     "teks": "Aku tahu.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 23.36,
+     "end": 24.3,
+     "teks": "Aku salah ikut",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 24.3,
+     "end": 25.09,
+     "teks": "ketawa.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 25.28,
+     "end": 26.52,
+     "teks": "Terus kenapa bilang",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 26.52,
+     "end": 27.2,
+     "teks": "batal?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 27.2,
+     "end": 28.92,
+     "teks": "Aku nggak berani",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 28.92,
+     "end": 30.34,
+     "teks": "ngomong jujur.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 30.34,
+     "end": 31.34,
+     "teks": "Aldo mengembalikan"
+    },
+    {
+     "start": 31.34,
+     "end": 32.35,
+     "teks": "ponsel itu."
+    },
+    {
+     "start": 32.94,
+     "end": 33.88,
+     "teks": "Dika tetap berdiri"
+    },
+    {
+     "start": 33.88,
+     "end": 35.07,
+     "teks": "di samping mejanya."
+    },
+    {
+     "start": 35.36,
+     "end": 36.47,
+     "teks": "Setelah kamu",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 36.47,
+     "end": 37.0,
+     "teks": "telepon,",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 37.0,
+     "end": 38.06,
+     "teks": "aku baca percakapan",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 38.06,
+     "end": 39.38,
+     "teks": "lama kita.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 39.38,
+     "end": 40.7,
+     "teks": "Aku jadi kepikiran",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 40.7,
+     "end": 41.1,
+     "teks": "Gelly.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 41.18,
+     "end": 42.54,
+     "teks": "Gelly sudah sebulan"
+    },
+    {
+     "start": 42.54,
+     "end": 42.96,
+     "teks": "tidak ikut"
+    },
+    {
+     "start": 42.96,
+     "end": 44.15,
+     "teks": "berkumpul."
+    },
+    {
+     "start": 44.26,
+     "end": 45.02,
+     "teks": "Ada apa sama",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 45.02,
+     "end": 45.55,
+     "teks": "dia?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 45.94,
+     "end": 46.98,
+     "teks": "Dika membuka grup"
+    },
+    {
+     "start": 46.98,
+     "end": 47.9,
+     "teks": "lama,"
+    },
+    {
+     "start": 47.9,
+     "end": 48.94,
+     "teks": "lalu menggeser layar"
+    },
+    {
+     "start": 48.94,
+     "end": 50.25,
+     "teks": "ke arah Aldo."
+    },
+    {
+     "start": 50.34,
+     "end": 50.94,
+     "teks": "“Gelly nggak usah"
+    },
+    {
+     "start": 50.94,
+     "end": 52.1,
+     "teks": "diajak dulu."
+    },
+    {
+     "start": 52.1,
+     "end": 52.98,
+     "teks": "Nanti ribet kalau"
+    },
+    {
+     "start": 52.98,
+     "end": 53.46,
+     "teks": "dia nggak bisa"
+    },
+    {
+     "start": 53.46,
+     "end": 54.23,
+     "teks": "patungan.”"
+    },
+    {
+     "start": 54.6,
+     "end": 55.62,
+     "teks": "Aldo ingat pernah"
+    },
+    {
+     "start": 55.62,
+     "end": 56.76,
+     "teks": "membaca kalimat itu."
+    },
+    {
+     "start": 56.76,
+     "end": 58.06,
+     "teks": "Bahkan,"
+    },
+    {
+     "start": 58.06,
+     "end": 58.96,
+     "teks": "ia ingat persis"
+    },
+    {
+     "start": 58.96,
+     "end": 59.8,
+     "teks": "kapan pesan itu"
+    },
+    {
+     "start": 59.8,
+     "end": 60.69,
+     "teks": "dikirim."
+    },
+    {
+     "start": 60.78,
+     "end": 61.5,
+     "teks": "Sebab yang"
+    },
+    {
+     "start": 61.5,
+     "end": 62.72,
+     "teks": "menulisnya adalah"
+    },
+    {
+     "start": 62.72,
+     "end": 63.79,
+     "teks": "Aldo sendiri."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "PESAN",
+  "baris2": "LAMA",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 64.18,
+  "end": 67.48,
+  "judul": "BERSAMBUNG",
+  "sub": "Katanya Batal"
+ }
+}

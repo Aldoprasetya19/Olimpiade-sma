@@ -1,0 +1,826 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.2800000000000002,
+  "text": " Bagian satu, piala yang hilang.",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 0.0,
+    "e": 0.68
+   },
+   {
+    "w": " satu,",
+    "s": 0.68,
+    "e": 1.38
+   },
+   {
+    "w": " piala",
+    "s": 1.68,
+    "e": 2.38
+   },
+   {
+    "w": " yang",
+    "s": 2.38,
+    "e": 2.72
+   },
+   {
+    "w": " hilang.",
+    "s": 2.72,
+    "e": 3.2800000000000002
+   }
+  ]
+ },
+ {
+  "start": 4.14,
+  "end": 8.64,
+  "text": " Senin pagi, Aldo baru tiba di sekolah ketika lobby sudah ramai.",
+  "words": [
+   {
+    "w": " Senin",
+    "s": 4.14,
+    "e": 4.48
+   },
+   {
+    "w": " pagi,",
+    "s": 4.48,
+    "e": 5.18
+   },
+   {
+    "w": " Aldo",
+    "s": 5.44,
+    "e": 5.56
+   },
+   {
+    "w": " baru",
+    "s": 5.56,
+    "e": 5.86
+   },
+   {
+    "w": " tiba",
+    "s": 5.86,
+    "e": 6.12
+   },
+   {
+    "w": " di",
+    "s": 6.12,
+    "e": 6.3
+   },
+   {
+    "w": " sekolah",
+    "s": 6.3,
+    "e": 6.72
+   },
+   {
+    "w": " ketika",
+    "s": 6.72,
+    "e": 7.14
+   },
+   {
+    "w": " lobby",
+    "s": 7.14,
+    "e": 7.52
+   },
+   {
+    "w": " sudah",
+    "s": 7.52,
+    "e": 7.88
+   },
+   {
+    "w": " ramai.",
+    "s": 7.88,
+    "e": 8.64
+   }
+  ]
+ },
+ {
+  "start": 8.86,
+  "end": 11.32,
+  "text": " Lemari kaca di dekat pintu masuk kosong.",
+  "words": [
+   {
+    "w": " Lemari",
+    "s": 8.86,
+    "e": 9.16
+   },
+   {
+    "w": " kaca",
+    "s": 9.16,
+    "e": 9.5
+   },
+   {
+    "w": " di",
+    "s": 9.5,
+    "e": 9.7
+   },
+   {
+    "w": " dekat",
+    "s": 9.7,
+    "e": 9.88
+   },
+   {
+    "w": " pintu",
+    "s": 9.88,
+    "e": 10.2
+   },
+   {
+    "w": " masuk",
+    "s": 10.2,
+    "e": 10.54
+   },
+   {
+    "w": " kosong.",
+    "s": 10.54,
+    "e": 11.32
+   }
+  ]
+ },
+ {
+  "start": 12.2,
+  "end": 15.54,
+  "text": " Piala juara umum sekolah... hilang.",
+  "words": [
+   {
+    "w": " Piala",
+    "s": 12.2,
+    "e": 12.64
+   },
+   {
+    "w": " juara",
+    "s": 12.64,
+    "e": 12.94
+   },
+   {
+    "w": " umum",
+    "s": 12.94,
+    "e": 13.3
+   },
+   {
+    "w": " sekolah...",
+    "s": 13.3,
+    "e": 15.08
+   },
+   {
+    "w": " hilang.",
+    "s": 15.08,
+    "e": 15.54
+   }
+  ]
+ },
+ {
+  "start": 16.18,
+  "end": 18.6,
+  "text": " Pak Agus mengumumkan lewat penggeras suara.",
+  "words": [
+   {
+    "w": " Pak",
+    "s": 16.18,
+    "e": 16.38
+   },
+   {
+    "w": " Agus",
+    "s": 16.38,
+    "e": 16.64
+   },
+   {
+    "w": " mengumumkan",
+    "s": 16.64,
+    "e": 17.32
+   },
+   {
+    "w": " lewat",
+    "s": 17.32,
+    "e": 17.66
+   },
+   {
+    "w": " penggeras",
+    "s": 17.66,
+    "e": 18.12
+   },
+   {
+    "w": " suara.",
+    "s": 18.12,
+    "e": 18.6
+   }
+  ]
+ },
+ {
+  "start": 19.18,
+  "end": 22.7,
+  "text": " Saya beri waktu sampai Jum'at. Piala itu harus kembali.",
+  "words": [
+   {
+    "w": " Saya",
+    "s": 19.18,
+    "e": 19.24
+   },
+   {
+    "w": " beri",
+    "s": 19.24,
+    "e": 19.52
+   },
+   {
+    "w": " waktu",
+    "s": 19.52,
+    "e": 19.8
+   },
+   {
+    "w": " sampai",
+    "s": 19.8,
+    "e": 20.3
+   },
+   {
+    "w": " Jum",
+    "s": 20.3,
+    "e": 20.58
+   },
+   {
+    "w": "'at.",
+    "s": 20.58,
+    "e": 20.9
+   },
+   {
+    "w": " Piala",
+    "s": 21.06,
+    "e": 21.48
+   },
+   {
+    "w": " itu",
+    "s": 21.48,
+    "e": 21.78
+   },
+   {
+    "w": " harus",
+    "s": 21.78,
+    "e": 22.06
+   },
+   {
+    "w": " kembali.",
+    "s": 22.06,
+    "e": 22.7
+   }
+  ]
+ },
+ {
+  "start": 23.22,
+  "end": 24.92,
+  "text": " Aldo tidak bisa diam saja.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 23.22,
+    "e": 23.6
+   },
+   {
+    "w": " tidak",
+    "s": 23.6,
+    "e": 23.94
+   },
+   {
+    "w": " bisa",
+    "s": 23.94,
+    "e": 24.26
+   },
+   {
+    "w": " diam",
+    "s": 24.26,
+    "e": 24.48
+   },
+   {
+    "w": " saja.",
+    "s": 24.48,
+    "e": 24.92
+   }
+  ]
+ },
+ {
+  "start": 25.34,
+  "end": 28.58,
+  "text": " Ia mengajak sahabatnya yang namanya sama, Aldo S.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 25.34,
+    "e": 25.56
+   },
+   {
+    "w": " mengajak",
+    "s": 25.56,
+    "e": 25.94
+   },
+   {
+    "w": " sahabatnya",
+    "s": 25.94,
+    "e": 26.6
+   },
+   {
+    "w": " yang",
+    "s": 26.6,
+    "e": 26.84
+   },
+   {
+    "w": " namanya",
+    "s": 26.84,
+    "e": 27.22
+   },
+   {
+    "w": " sama,",
+    "s": 27.22,
+    "e": 27.56
+   },
+   {
+    "w": " Aldo",
+    "s": 27.84,
+    "e": 28.38
+   },
+   {
+    "w": " S.",
+    "s": 28.38,
+    "e": 28.58
+   }
+  ]
+ },
+ {
+  "start": 28.58,
+  "end": 31.98,
+  "text": " Teman-teman memanggilnya begitu supaya tidak tertukar.",
+  "words": [
+   {
+    "w": " Teman",
+    "s": 28.58,
+    "e": 29.4
+   },
+   {
+    "w": "-teman",
+    "s": 29.4,
+    "e": 29.62
+   },
+   {
+    "w": " memanggilnya",
+    "s": 29.62,
+    "e": 30.2
+   },
+   {
+    "w": " begitu",
+    "s": 30.2,
+    "e": 30.7
+   },
+   {
+    "w": " supaya",
+    "s": 30.7,
+    "e": 31.14
+   },
+   {
+    "w": " tidak",
+    "s": 31.14,
+    "e": 31.44
+   },
+   {
+    "w": " tertukar.",
+    "s": 31.44,
+    "e": 31.98
+   }
+  ]
+ },
+ {
+  "start": 32.64,
+  "end": 36.12,
+  "text": " Bersama Geli dan Hisari, teman sekelas mereka di kelas 11,",
+  "words": [
+   {
+    "w": " Bersama",
+    "s": 32.64,
+    "e": 33.08
+   },
+   {
+    "w": " Geli",
+    "s": 33.08,
+    "e": 33.4
+   },
+   {
+    "w": " dan",
+    "s": 33.4,
+    "e": 33.56
+   },
+   {
+    "w": " Hisari,",
+    "s": 33.56,
+    "e": 34.18
+   },
+   {
+    "w": " teman",
+    "s": 34.42,
+    "e": 34.62
+   },
+   {
+    "w": " sekelas",
+    "s": 34.62,
+    "e": 34.98
+   },
+   {
+    "w": " mereka",
+    "s": 34.98,
+    "e": 35.34
+   },
+   {
+    "w": " di",
+    "s": 35.34,
+    "e": 35.52
+   },
+   {
+    "w": " kelas",
+    "s": 35.52,
+    "e": 35.64
+   },
+   {
+    "w": " 11,",
+    "s": 35.64,
+    "e": 36.12
+   }
+  ]
+ },
+ {
+  "start": 36.44,
+  "end": 38.2,
+  "text": " mereka memeriksa lemari itu.",
+  "words": [
+   {
+    "w": " mereka",
+    "s": 36.44,
+    "e": 36.82
+   },
+   {
+    "w": " memeriksa",
+    "s": 36.82,
+    "e": 37.44
+   },
+   {
+    "w": " lemari",
+    "s": 37.44,
+    "e": 37.78
+   },
+   {
+    "w": " itu.",
+    "s": 37.78,
+    "e": 38.2
+   }
+  ]
+ },
+ {
+  "start": 38.76,
+  "end": 41.86,
+  "text": " Misel dan Aulia menemukan bercak cat emas di lantai.",
+  "words": [
+   {
+    "w": " Misel",
+    "s": 38.76,
+    "e": 39.04
+   },
+   {
+    "w": " dan",
+    "s": 39.04,
+    "e": 39.26
+   },
+   {
+    "w": " Aulia",
+    "s": 39.26,
+    "e": 39.68
+   },
+   {
+    "w": " menemukan",
+    "s": 39.68,
+    "e": 40.22
+   },
+   {
+    "w": " bercak",
+    "s": 40.22,
+    "e": 40.78
+   },
+   {
+    "w": " cat",
+    "s": 40.78,
+    "e": 40.94
+   },
+   {
+    "w": " emas",
+    "s": 40.94,
+    "e": 41.32
+   },
+   {
+    "w": " di",
+    "s": 41.32,
+    "e": 41.52
+   },
+   {
+    "w": " lantai.",
+    "s": 41.52,
+    "e": 41.92
+   }
+  ]
+ },
+ {
+  "start": 42.56,
+  "end": 45.8,
+  "text": " Tak lama, dua adik kelas 10, Karan dan Justin,",
+  "words": [
+   {
+    "w": " Tak",
+    "s": 42.56,
+    "e": 42.78
+   },
+   {
+    "w": " lama,",
+    "s": 42.78,
+    "e": 43.2
+   },
+   {
+    "w": " dua",
+    "s": 43.4,
+    "e": 43.64
+   },
+   {
+    "w": " adik",
+    "s": 43.64,
+    "e": 43.88
+   },
+   {
+    "w": " kelas",
+    "s": 43.88,
+    "e": 44.08
+   },
+   {
+    "w": " 10,",
+    "s": 44.08,
+    "e": 44.58
+   },
+   {
+    "w": " Karan",
+    "s": 44.86,
+    "e": 45.08
+   },
+   {
+    "w": " dan",
+    "s": 45.08,
+    "e": 45.32
+   },
+   {
+    "w": " Justin,",
+    "s": 45.32,
+    "e": 45.8
+   }
+  ]
+ },
+ {
+  "start": 46.32,
+  "end": 48.02,
+  "text": " datang sambil terengah-engah.",
+  "words": [
+   {
+    "w": " datang",
+    "s": 46.32,
+    "e": 46.56
+   },
+   {
+    "w": " sambil",
+    "s": 46.56,
+    "e": 46.96
+   },
+   {
+    "w": " terengah",
+    "s": 46.96,
+    "e": 47.5
+   },
+   {
+    "w": "-engah.",
+    "s": 47.5,
+    "e": 48.02
+   }
+  ]
+ },
+ {
+  "start": 49.02,
+  "end": 52.5,
+  "text": " Kak Aldo, CCTV lobby mati sejak sabtu!",
+  "words": [
+   {
+    "w": " Kak",
+    "s": 48.84,
+    "e": 49.24
+   },
+   {
+    "w": " Aldo,",
+    "s": 49.24,
+    "e": 49.66
+   },
+   {
+    "w": " CCTV",
+    "s": 50.1,
+    "e": 50.42
+   },
+   {
+    "w": " lobby",
+    "s": 50.42,
+    "e": 50.82
+   },
+   {
+    "w": " mati",
+    "s": 50.82,
+    "e": 51.28
+   },
+   {
+    "w": " sejak",
+    "s": 51.28,
+    "e": 51.56
+   },
+   {
+    "w": " sabtu!",
+    "s": 51.56,
+    "e": 52.5
+   }
+  ]
+ },
+ {
+  "start": 52.64,
+  "end": 54.02,
+  "text": " Aldo mengernyip.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 52.64,
+    "e": 53.12
+   },
+   {
+    "w": " mengernyip.",
+    "s": 53.12,
+    "e": 54.02
+   }
+  ]
+ },
+ {
+  "start": 54.24,
+  "end": 56.8,
+  "text": " Berarti ini sudah direncanakan.",
+  "words": [
+   {
+    "w": " Berarti",
+    "s": 54.24,
+    "e": 54.88
+   },
+   {
+    "w": " ini",
+    "s": 54.88,
+    "e": 55.5
+   },
+   {
+    "w": " sudah",
+    "s": 55.5,
+    "e": 55.78
+   },
+   {
+    "w": " direncanakan.",
+    "s": 55.78,
+    "e": 56.8
+   }
+  ]
+ },
+ {
+  "start": 57.480000000000004,
+  "end": 60.5,
+  "text": " Saat pulang sekolah, Aldo membuka tasnya.",
+  "words": [
+   {
+    "w": " Saat",
+    "s": 57.36,
+    "e": 57.86
+   },
+   {
+    "w": " pulang",
+    "s": 57.86,
+    "e": 58.2
+   },
+   {
+    "w": " sekolah,",
+    "s": 58.2,
+    "e": 58.9
+   },
+   {
+    "w": " Aldo",
+    "s": 59.18,
+    "e": 59.34
+   },
+   {
+    "w": " membuka",
+    "s": 59.34,
+    "e": 59.84
+   },
+   {
+    "w": " tasnya.",
+    "s": 59.84,
+    "e": 60.5
+   }
+  ]
+ },
+ {
+  "start": 60.8,
+  "end": 63.06,
+  "text": " Di dalamnya terselip secari kertas.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 60.8,
+    "e": 60.9
+   },
+   {
+    "w": " dalamnya",
+    "s": 60.9,
+    "e": 61.44
+   },
+   {
+    "w": " terselip",
+    "s": 61.44,
+    "e": 62.04
+   },
+   {
+    "w": " secari",
+    "s": 62.04,
+    "e": 62.52
+   },
+   {
+    "w": " kertas.",
+    "s": 62.52,
+    "e": 63.06
+   }
+  ]
+ },
+ {
+  "start": 63.66,
+  "end": 65.4,
+  "text": " Berhenti mencari, Aldo.",
+  "words": [
+   {
+    "w": " Berhenti",
+    "s": 63.66,
+    "e": 64.04
+   },
+   {
+    "w": " mencari,",
+    "s": 64.04,
+    "e": 64.62
+   },
+   {
+    "w": " Aldo.",
+    "s": 64.68,
+    "e": 65.4
+   }
+  ]
+ },
+ {
+  "start": 65.64,
+  "end": 68.64,
+  "text": " Kalau tidak, kamu akan merusak segalanya.",
+  "words": [
+   {
+    "w": " Kalau",
+    "s": 65.64,
+    "e": 65.84
+   },
+   {
+    "w": " tidak,",
+    "s": 65.84,
+    "e": 66.38
+   },
+   {
+    "w": " kamu",
+    "s": 66.84,
+    "e": 66.98
+   },
+   {
+    "w": " akan",
+    "s": 66.98,
+    "e": 67.3
+   },
+   {
+    "w": " merusak",
+    "s": 67.3,
+    "e": 67.92
+   },
+   {
+    "w": " segalanya.",
+    "s": 67.92,
+    "e": 68.64
+   }
+  ]
+ },
+ {
+  "start": 69.52,
+  "end": 70.22,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 69.52,
+    "e": 70.22
+   }
+  ]
+ }
+]

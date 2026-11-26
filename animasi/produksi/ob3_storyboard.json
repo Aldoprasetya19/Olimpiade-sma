@@ -1,0 +1,938 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 189.34,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "MILA": {
+   "warna": "#FFD84A"
+  },
+  "HISSARI": {
+   "warna": "#8FE3D8"
+  },
+  "GELLY": {
+   "warna": "#C7A4FF"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "JUSTIN": {
+   "warna": "#A8D8F8"
+  },
+  "RIALDI": {
+   "warna": "#FFC98A"
+  },
+  "DIKA": {
+   "warna": "#FFD84A"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 189.34,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.6,
+     "teks": "Sebelum melangkah ke"
+    },
+    {
+     "start": 1.6,
+     "end": 2.72,
+     "teks": "gerbang,"
+    },
+    {
+     "start": 2.72,
+     "end": 4.26,
+     "teks": "Aldo membuka lembar"
+    },
+    {
+     "start": 4.26,
+     "end": 5.16,
+     "teks": "catatan yang"
+    },
+    {
+     "start": 5.16,
+     "end": 6.65,
+     "teks": "disodorkan Mila."
+    },
+    {
+     "start": 6.74,
+     "end": 8.08,
+     "teks": "Di halaman paling"
+    },
+    {
+     "start": 8.08,
+     "end": 8.76,
+     "teks": "belakang,"
+    },
+    {
+     "start": 8.76,
+     "end": 10.44,
+     "teks": "tertulis daftar"
+    },
+    {
+     "start": 10.44,
+     "end": 11.96,
+     "teks": "susunan panitia"
+    },
+    {
+     "start": 11.96,
+     "end": 13.78,
+     "teks": "acara kelas dengan"
+    },
+    {
+     "start": 13.78,
+     "end": 15.2,
+     "teks": "nama Aldo yang"
+    },
+    {
+     "start": 15.2,
+     "end": 16.72,
+     "teks": "sudah dicoret dan"
+    },
+    {
+     "start": 16.72,
+     "end": 18.77,
+     "teks": "diganti Rialdi."
+    },
+    {
+     "start": 18.88,
+     "end": 19.78,
+     "teks": "Kemarin kertas ini",
+     "siapa": "MILA"
+    },
+    {
+     "start": 19.78,
+     "end": 20.68,
+     "teks": "ketinggalan di meja",
+     "siapa": "MILA"
+    },
+    {
+     "start": 20.68,
+     "end": 21.32,
+     "teks": "piket.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 21.32,
+     "end": 22.62,
+     "teks": "Aku simpan biar",
+     "siapa": "MILA"
+    },
+    {
+     "start": 22.62,
+     "end": 23.36,
+     "teks": "nggak bikin heboh",
+     "siapa": "MILA"
+    },
+    {
+     "start": 23.36,
+     "end": 24.35,
+     "teks": "satu kelas.",
+     "siapa": "MILA"
+    },
+    {
+     "start": 24.48,
+     "end": 25.34,
+     "teks": "Sudah jelas banget",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 25.34,
+     "end": 25.8,
+     "teks": "kan,",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 25.8,
+     "end": 26.34,
+     "teks": "Do?",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 26.34,
+     "end": 27.22,
+     "teks": "Rialdi memang",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 27.22,
+     "end": 28.18,
+     "teks": "sengaja nyingkirin",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 28.18,
+     "end": 29.28,
+     "teks": "kamu pelan-pelan.",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 29.3,
+     "end": 30.7,
+     "teks": "Hipotesisku makin",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 30.7,
+     "end": 31.62,
+     "teks": "nggak terbantahkan,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 31.62,
+     "end": 32.14,
+     "teks": "Do.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 32.14,
+     "end": 32.92,
+     "teks": "Kamu mau aku",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 32.92,
+     "end": 34.03,
+     "teks": "temenin ke gerbang?",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 34.3,
+     "end": 34.86,
+     "teks": "Nggak usah,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 34.86,
+     "end": 35.72,
+     "teks": "Gel.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 35.72,
+     "end": 36.52,
+     "teks": "Biar aku selesaikan",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 36.52,
+     "end": 37.7,
+     "teks": "sendiri.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 37.7,
+     "end": 38.52,
+     "teks": "Makasih ya,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 38.52,
+     "end": 38.8,
+     "teks": "Mil,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 38.8,
+     "end": 39.08,
+     "teks": "Sar.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 39.08,
+     "end": 40.44,
+     "teks": "Suasana di depan"
+    },
+    {
+     "start": 40.44,
+     "end": 41.76,
+     "teks": "gerbang sekolah"
+    },
+    {
+     "start": 41.76,
+     "end": 43.4,
+     "teks": "mulai sepi."
+    },
+    {
+     "start": 43.4,
+     "end": 44.12,
+     "teks": "Justin berdiri"
+    },
+    {
+     "start": 44.12,
+     "end": 46.11,
+     "teks": "bersandar di dekat"
+    },
+    {
+     "start": 46.11,
+     "end": 47.12,
+     "teks": "pos satpam,"
+    },
+    {
+     "start": 47.12,
+     "end": 48.62,
+     "teks": "sementara Rialdi dan"
+    },
+    {
+     "start": 48.62,
+     "end": 50.28,
+     "teks": "Dika menunggu"
+    },
+    {
+     "start": 50.28,
+     "end": 51.76,
+     "teks": "beberapa meter di"
+    },
+    {
+     "start": 51.76,
+     "end": 52.85,
+     "teks": "belakangnya."
+    },
+    {
+     "start": 53.0,
+     "end": 54.42,
+     "teks": "Begitu melihat Aldo"
+    },
+    {
+     "start": 54.42,
+     "end": 56.16,
+     "teks": "berjalan mendekat,"
+    },
+    {
+     "start": 56.16,
+     "end": 57.5,
+     "teks": "Justin langsung"
+    },
+    {
+     "start": 57.5,
+     "end": 59.36,
+     "teks": "menghampiri dengan"
+    },
+    {
+     "start": 59.36,
+     "end": 60.82,
+     "teks": "wajah gelisah."
+    },
+    {
+     "start": 61.0,
+     "end": 62.38,
+     "teks": "Do,",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 62.38,
+     "end": 63.36,
+     "teks": "syukurlah kamu belum",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 63.36,
+     "end": 64.38,
+     "teks": "pulang.",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 64.38,
+     "end": 65.34,
+     "teks": "Aku mau jelasin",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 65.34,
+     "end": 66.11,
+     "teks": "semuanya.",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 66.22,
+     "end": 67.24,
+     "teks": "Jelasin soal grup",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 67.24,
+     "end": 68.9,
+     "teks": "baru kalian,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 68.9,
+     "end": 69.64,
+     "teks": "atau soal nama",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 69.64,
+     "end": 70.48,
+     "teks": "aku yang dicoret",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 70.48,
+     "end": 71.71,
+     "teks": "dari kepanitiaan?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 71.86,
+     "end": 73.92,
+     "teks": "Justin terdiam kaku."
+    },
+    {
+     "start": 73.92,
+     "end": 74.92,
+     "teks": "Rialdi dan Dika"
+    },
+    {
+     "start": 74.92,
+     "end": 75.66,
+     "teks": "yang mendengar"
+    },
+    {
+     "start": 75.66,
+     "end": 77.28,
+     "teks": "kalimat itu ikut"
+    },
+    {
+     "start": 77.28,
+     "end": 78.71,
+     "teks": "melangkah maju."
+    },
+    {
+     "start": 78.82,
+     "end": 79.48,
+     "teks": "Kamu tahu dari",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 79.48,
+     "end": 79.82,
+     "teks": "siapa,",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 79.82,
+     "end": 80.12,
+     "teks": "Do?",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 80.22,
+     "end": 80.96,
+     "teks": "Nggak penting tahu",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 80.96,
+     "end": 82.7,
+     "teks": "dari siapa.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 82.7,
+     "end": 84.52,
+     "teks": "Yang aku bingung,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 84.52,
+     "end": 86.05,
+     "teks": "kenapa kalian harus",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 86.05,
+     "end": 86.74,
+     "teks": "pura-pura batalin",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 86.74,
+     "end": 88.72,
+     "teks": "kerja kelompok dan",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 88.72,
+     "end": 90.23,
+     "teks": "bikin grup rahasia?",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 90.48,
+     "end": 91.44,
+     "teks": "Maaf,",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 91.44,
+     "end": 92.28,
+     "teks": "Do.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 92.28,
+     "end": 93.46,
+     "teks": "Awalnya kami cuma",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 93.46,
+     "end": 94.62,
+     "teks": "ngerasa kebebanan",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 94.62,
+     "end": 95.76,
+     "teks": "sama standar tugas",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 95.76,
+     "end": 96.56,
+     "teks": "kamu yang selalu",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 96.56,
+     "end": 97.58,
+     "teks": "tinggi.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 97.58,
+     "end": 99.04,
+     "teks": "Kami takut ngecewain",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 99.04,
+     "end": 99.63,
+     "teks": "kamu.",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 99.92,
+     "end": 100.38,
+     "teks": "Dan soal",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 100.38,
+     "end": 102.2,
+     "teks": "kepanitiaan...",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 102.2,
+     "end": 102.82,
+     "teks": "aku pikir kamu",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 102.82,
+     "end": 103.92,
+     "teks": "bakal sibuk ngurusin",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 103.92,
+     "end": 104.88,
+     "teks": "materi lomba bulan",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 104.88,
+     "end": 106.34,
+     "teks": "depan,",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 106.34,
+     "end": 107.36,
+     "teks": "jadi aku inisiatif",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 107.36,
+     "end": 109.12,
+     "teks": "ambil alih tanpa",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 109.12,
+     "end": 110.54,
+     "teks": "nanya kamu dulu.",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 110.54,
+     "end": 111.1,
+     "teks": "Aku salah,",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 111.1,
+     "end": 111.61,
+     "teks": "Do.",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 111.74,
+     "end": 112.38,
+     "teks": "Aku yang paling",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 112.38,
+     "end": 112.78,
+     "teks": "salah,",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 112.78,
+     "end": 113.24,
+     "teks": "Do.",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 113.24,
+     "end": 114.48,
+     "teks": "Harusnya dari awal",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 114.48,
+     "end": 115.18,
+     "teks": "aku jujur ke",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 115.18,
+     "end": 116.24,
+     "teks": "kamu,",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 116.24,
+     "end": 117.21,
+     "teks": "bukannya malah",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 117.21,
+     "end": 118.28,
+     "teks": "ikut-ikutan nutupin",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 118.28,
+     "end": 120.11,
+     "teks": "dan bilang acaranya",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 120.11,
+     "end": 120.51,
+     "teks": "batal.",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 120.7,
+     "end": 122.82,
+     "teks": "Aldo menghela napas"
+    },
+    {
+     "start": 122.82,
+     "end": 123.88,
+     "teks": "panjang,"
+    },
+    {
+     "start": 123.88,
+     "end": 124.98,
+     "teks": "menatap ketiga"
+    },
+    {
+     "start": 124.98,
+     "end": 127.34,
+     "teks": "temannya bergantian."
+    },
+    {
+     "start": 127.34,
+     "end": 128.48,
+     "teks": "Rasa kecewanya"
+    },
+    {
+     "start": 128.48,
+     "end": 130.56,
+     "teks": "perlahan mereda"
+    },
+    {
+     "start": 130.56,
+     "end": 131.6,
+     "teks": "melihat mereka"
+    },
+    {
+     "start": 131.6,
+     "end": 132.86,
+     "teks": "berani mengakui"
+    },
+    {
+     "start": 132.86,
+     "end": 134.2,
+     "teks": "kesalahan secara"
+    },
+    {
+     "start": 134.2,
+     "end": 134.91,
+     "teks": "langsung."
+    },
+    {
+     "start": 135.2,
+     "end": 135.9,
+     "teks": "Lain kali kalau",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 135.9,
+     "end": 136.65,
+     "teks": "ada yang nggak",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 136.65,
+     "end": 137.38,
+     "teks": "sreg sama caraku",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 137.38,
+     "end": 138.92,
+     "teks": "kerja,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 138.92,
+     "end": 140.12,
+     "teks": "ngomong langsung.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 140.12,
+     "end": 141.24,
+     "teks": "Nggak perlu pakai",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 141.24,
+     "end": 142.58,
+     "teks": "drama grup rahasia",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 142.58,
+     "end": 143.52,
+     "teks": "segala.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 143.52,
+     "end": 143.68,
+     "teks": "Jadi...",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 143.68,
+     "end": 145.26,
+     "teks": "kamu nggak marah,",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 145.26,
+     "end": 145.56,
+     "teks": "Do?",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 145.58,
+     "end": 147.7,
+     "teks": "Marah sih dikit.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 147.7,
+     "end": 150.1,
+     "teks": "Tapi buat nebusnya,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 150.1,
+     "end": 151.2,
+     "teks": "kalian bertiga yang",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 151.2,
+     "end": 153.24,
+     "teks": "traktir di kantin",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 153.24,
+     "end": 153.9,
+     "teks": "besok istirahat",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 153.9,
+     "end": 154.63,
+     "teks": "pertama.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 154.9,
+     "end": 155.18,
+     "teks": "Siap,",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 155.18,
+     "end": 155.9,
+     "teks": "Bos!",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 155.9,
+     "end": 156.66,
+     "teks": "Aman kalau soal",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 156.66,
+     "end": 157.11,
+     "teks": "itu!",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 157.28,
+     "end": 158.22,
+     "teks": "Deal!",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 158.22,
+     "end": 159.14,
+     "teks": "Dan grup kecilnya",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 159.14,
+     "end": 159.92,
+     "teks": "udah aku hapus",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 159.92,
+     "end": 160.57,
+     "teks": "barusan.",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 160.94,
+     "end": 163.08,
+     "teks": "Ponsel Aldo bergetar"
+    },
+    {
+     "start": 163.08,
+     "end": 163.86,
+     "teks": "di saku."
+    },
+    {
+     "start": 163.86,
+     "end": 165.04,
+     "teks": "Sebuah pesan masuk"
+    },
+    {
+     "start": 165.04,
+     "end": 166.32,
+     "teks": "dari Gelly yang"
+    },
+    {
+     "start": 166.32,
+     "end": 168.24,
+     "teks": "ternyata sedari tadi"
+    },
+    {
+     "start": 168.24,
+     "end": 169.56,
+     "teks": "mengintip dari balik"
+    },
+    {
+     "start": 169.56,
+     "end": 170.63,
+     "teks": "tembok gerbang."
+    },
+    {
+     "start": 176.26,
+     "end": 177.72,
+     "teks": "Aldo tersenyum kecil"
+    },
+    {
+     "start": 177.72,
+     "end": 179.5,
+     "teks": "membaca pesan itu,"
+    },
+    {
+     "start": 179.5,
+     "end": 180.28,
+     "teks": "lalu merangkul"
+    },
+    {
+     "start": 180.28,
+     "end": 182.0,
+     "teks": "pundak Justin dan"
+    },
+    {
+     "start": 182.0,
+     "end": 183.1,
+     "teks": "berjalan pulang"
+    },
+    {
+     "start": 183.1,
+     "end": 185.06,
+     "teks": "bersama Rialdi serta"
+    },
+    {
+     "start": 185.06,
+     "end": 185.83,
+     "teks": "Dika."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "KLARIFIKASI",
+  "baris2": "GERBANG",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 186.04,
+  "end": 189.34,
+  "judul": "TAMAT",
+  "sub": "Satu Meja Lagi"
+ }
+}

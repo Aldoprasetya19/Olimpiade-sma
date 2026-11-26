@@ -12,7 +12,7 @@ export const duration = 67.6;
 const talk = talker([[53.06, 53.94, 'ibu'], [54.36, 55.3, 'aldo']]);
 
 const AV = {
-  naya: { skin: '#d9a06a', hair: '#e07a9a', hijab: true, bg: '#f6c1d0' },
+  naya: { skin: '#d9a06a', hair: '#3a281d', bg: '#f6c1d0' },
   grup: { group: 'XII', bg: '#3f8a5c' },
   wali: { skin: '#b67b48', hair: '#555049', bg: '#a9c6e8' },
   anon: { unknown: true, bg: '#8b949e' },

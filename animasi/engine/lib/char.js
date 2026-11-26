@@ -145,6 +145,11 @@ function buildHair(style, color, head) {
     const hm = toon('#f2c230');
     const c = mesh(new THREE.SphereGeometry(0.49, 24, 12, 0, Math.PI * 2, 0, Math.PI / 2), hm); c.scale.set(1, 0.85, 1); c.position.y = top - 0.06; g.add(c);
     const brim = mesh(new THREE.CylinderGeometry(0.56, 0.56, 0.05, 24), hm); brim.position.y = top - 0.05; brim.scale.z = 1.1; g.add(brim);
+  } else if (style === 'panjang') { // rambut panjang sebahu (pengganti kerudung)
+    const cap = mesh(rbox(0.94, 0.2, 0.92, 0.09), m); cap.position.set(0, top + 0.03, -0.02); g.add(cap);
+    const fr = mesh(rbox(0.86, 0.14, 0.16, 0.06), m); fr.position.set(-0.05, top - 0.07, 0.37); fr.rotation.set(0.3, 0, 0.1); g.add(fr);
+    const back = mesh(rbox(0.92, 0.95, 0.3, 0.1), m); back.position.set(0, top - 0.42, -0.3); g.add(back);
+    for (const s of [-1, 1]) { const sd = mesh(rbox(0.14, 0.85, 0.5, 0.06), m); sd.position.set(s * 0.45, top - 0.4, -0.06); g.add(sd); }
   } else if (style === 'hijab') {
     const hm = toon(color);
     const shell = mesh(new THREE.CylinderGeometry(0.49, 0.5, HEAD_H + 0.08, 28, 1, false, Math.PI * 0.32, Math.PI * 1.36), hm);

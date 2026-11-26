@@ -1,0 +1,25 @@
+# judul: KATANYA | BATAL
+# akhir: BERSAMBUNG | Foto Hari Minggu
+[rumah] dudukKiri=aldo#rumah
+NARATOR {mcu:aldo}: Aldo sudah memakai sepatu ketika pesan Dika masuk.
+NARATOR {hp-notif} [Dika | Do, nongkrongnya batal, ya. Anak-anak pada nggak bisa.]: Ada pesan dari Dika.
+DIKA {hp} [Dika | Do, nongkrongnya batal, ya. Anak-anak pada nggak bisa.]: Do, nongkrongnya batal, ya. Anak-anak pada nggak bisa.
+ALDO {cu:aldo} (kecewa, aldo:hp): Oke. Lain kali aja.
+NARATOR {cu:aldo} (aldo=sedih, aldo:tunduk): Ia melepas sepatu, lalu mengembalikan uang lima puluh ribu ke laci. Uang itu sudah disisihkannya sejak Senin.
+[toko] dudukKiri=aldo#rumah
+NARATOR {lebar} (aldo:hp, aldo=netral): Sore harinya, sambil menjaga toko, Aldo membuka Instagram.
+NARATOR {hp-post} [Dika | Akhirnya lengkap.]: Ada unggahan baru dari Dika.
+NARATOR {hp-post} [Dika | Akhirnya lengkap.]: Lima temannya duduk mengelilingi meja kafe. Di belakang mereka terlihat hiasan yang kemarin dikirim ke grup saat memilih tempat.
+NARATOR {hp-post} [Dika | Akhirnya lengkap.]: Di sudut foto tertulis, “Akhirnya lengkap.”
+NARATOR {cu:aldo} (aldo:hp, aldo=kaget): Aldo melihat jam unggahannya. Dua puluh menit lalu.
+NARATOR {mcu:aldo} (aldo:hp, aldo=curiga): Ia mengetik pesan.
+ALDO {hp} [Dika | >Katanya batal?]: Katanya batal?
+NARATOR {hp} [Dika | >Katanya batal? | ...mengetik]: Beberapa kali tulisan “mengetik” muncul, lalu hilang.
+NARATOR {mcu:aldo} (aldo:telepon, aldo=kaget): Akhirnya Dika menelepon.
+DIKA {cu:aldo} (aldo:telepon, aldo=cemas): Maaf, Do. Kami jadi pergi.
+ALDO {cu:aldo} (kecewa, aldo:telepon): Kok nggak bilang?
+NARATOR {mcu:aldo} (aldo:telepon, aldo=sedih): Dika terdiam. Dari seberang telepon masih terdengar suara teman-teman mereka tertawa.
+DIKA {cu:aldo} (aldo:telepon, aldo=curiga): Ada grup lain buat nentuin tempat.
+ALDO {cu:aldo} (menahan sedih, aldo:telepon): Kenapa aku nggak dimasukin?
+DIKA {cu:aldo} (aldo:telepon, aldo=kaget): Ada pesan soal kamu di sana. Besok aku tunjukin.
+NARATOR {akhir}: Bersambung…

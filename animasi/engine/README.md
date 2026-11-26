@@ -31,6 +31,7 @@ lalu digabung dengan VO + subtitle oleh ffmpeg. Kecepatan ±0,3 detik/frame (720
   kalau ragu, pakai *clean single* dari sudut 3/4 (±45° dari arah hadap subjek). Cek arah hadap: karakter menghadap +z lokal.
 - Tinggi kepala (pusat) berdiri ≈ 1,98; duduk ≈ 1,73. Meja 0,92, kursi 0,42.
 - Kamera di luar ruangan `room()` boleh (dinding depan satu sisi), lantai sudah diperpanjang 3×.
+- Tangan di `phoneInsert` menggenggam dari belakang/tepi; jangan taruh jari atau jempol di depan layar (permintaan pengguna: tulisan notifikasi harus terbaca).
 - Adegan ponsel paling aman lewat `phoneInsert` (bukan ponsel di tangan dari jauh).
 - Debug posisi: render kamera dari atas (`cam.up=(0,0,-1)`, lihat ke bawah) untuk melihat tata letak.
 
@@ -46,5 +47,14 @@ Tidak perlu menulis shot satu per satu atau mengecek kamera berulang:
 
 `lib/auto.js` berisi `LOKASI` (slot tokoh tiap lokasi, batas & penghalang kamera) dan penentu kamera otomatis:
 `cu`/`mcu` (sudut 3/4 yang tidak terhalang kepala lain), `dua` (two-shot dari balik bahu), `lebar`, `hp*` (layar ponsel).
-Tokoh: kunci di `lib/cast.js` (`dimas#perban` = varian). Lokasi baru = tambah set di `sets.js` + entri `LOKASI`.
+Tokoh: kunci di `lib/cast.js` (aturan pengguna: tanpa kerudung; perempuan pakai rambut `panjang`) (`dimas#perban` = varian). Lokasi baru = tambah set di `sets.js` + entri `LOKASI`.
 Shot khusus (rekaman CCTV, kejadian fisik) tetap bisa ditambahkan manual ke file episode hasil generator.
+
+### Aksi otomatis dari narasi
+`naskah_ke_episode.py` membaca kata kerja di baris NARATOR dan menjalankannya tepat saat kata itu terdengar
+(waktu dari transkrip): *berjalan/datang/tiba/maju/menghampiri* → jalan masuk, *mengendap-endap* → jalan jongkok,
+*pergi/pulang/menjauh* → jalan keluar, *membuka tas* → tas muncul lalu kertas di tangan, *melihat/membuka kertas/surat/catatan*
+dan *membaca* → membaca kertas, *menyerahkan/memberikan/menyodorkan* → barang (kertas/piala/cat/ponsel) pindah ke tokoh
+penerima (nama sesudah kata kerja, atau tokoh lain di adegan), *menoleh, menunduk, mengangguk, menunjuk/menemukan,
+mengintip, meraba*. Pelaku = nama tokoh terakhir yang disebut (daftar "A, B, dan C" ikut semua). Barang yang dipegang
+terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di naskah = mulai memegang barang itu.

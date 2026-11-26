@@ -31,6 +31,13 @@ WARNA = {'ALDO': '#FFFFFF', 'NAYA': '#FFB3C7', 'GRUP KELAS': '#9BE3B0', 'WALI KE
          'NOMOR ASING': '#FF8A8A', 'RENO': '#FFD84A', 'BAGAS': '#C7A4FF', 'DIMAS': '#8FE3D8', 'PESAN': '#FF8A8A'}
 CADANGAN = ['#FFD84A', '#8FE3D8', '#C7A4FF', '#FFB3C7', '#A8D8F8', '#FFC98A']
 LINE = re.compile(r'^(?P<who>[A-Za-z][A-Za-z ]*?)\s*(\{(?P<cam>[^}]*)\})?\s*(\((?P<ex>[^)]*)\))?\s*(\[(?P<hp>[^\]]*)\])?\s*:\s*(?P<txt>.+)$')
+ALIAS = {'santai': 'senyum', 'pelan': 'netral', 'bingung': 'curiga', 'ragu': 'menghindar', 'menahan sedih': 'sedih', 'menyesal': 'bersalah',
+         'jujur': 'serius', 'lembut': 'senyum', 'ramah': 'senang', 'hangat': 'senyum', 'kesal': 'marah', 'takut': 'cemas', 'tenang': 'netral',
+         'yakin': 'serius', 'penasaran': 'curiga', 'menyelidik': 'curiga', 'gugup': 'cemas', 'tegas': 'serius', 'kritis': 'serius', 'terbata': 'cemas',
+         'mengangguk': 'senyum', 'panik': 'kaget', 'heran': 'curiga', 'sinis': 'curiga', 'datar': 'netral', 'tegang': 'cemas', 'menunduk': 'bersalah',
+         'tersenyum': 'senyum', 'tertawa': 'senang'}
+key = lambda w: re.sub(r'^(pak|bu|kak) ', '', w.strip().lower())
+ex = lambda e: ALIAS.get(e.strip().lower(), e.strip())
 norm = lambda w: re.sub(r'[^0-9a-z]', '', w.lower())
 
 def transcribe(vo):
@@ -40,6 +47,41 @@ def transcribe(vo):
     m = WhisperModel('medium', device='cpu', compute_type='int8')
     segs, _ = m.transcribe(a, language='id', word_timestamps=True, beam_size=5)
     return [{'start': s.start, 'end': s.end, 'text': s.text, 'words': [{'w': w.word, 's': w.start, 'e': w.end} for w in s.words]} for s in segs]
+
+# ---- aksi dari kata kerja narasi
+VERB = [(r'^(berjalan|jalan|melangkah|mendekat|menghampiri|menghampirinya|datang|tiba|maju)$', 'jalan', 2.0),
+        (r'^(mengendap|mengendapendap)$', 'endap', 2.5), (r'^(pergi|pulang|menjauh|meninggalkan)$', 'pergi', 2.2),
+        (r'^(membaca|membacanya)$', 'baca', 2.0), (r'^(menyerahkan|memberikan|menyodorkan|memberi)$', 'beri', 1.6),
+        (r'^(menoleh)$', 'menoleh', 0.5), (r'^(menunduk)$', 'tunduk', 1.0), (r'^(mengangguk)$', 'angguk', 1.0),
+        (r'^(menunjuk|menemukan)$', 'tunjuk', 1.4), (r'^(mengintip)$', 'intip', 1.6), (r'^(meraba)$', 'raba', 2.0)]
+PROPW = {'kertas': 'kertas', 'surat': 'kertas', 'catatan': 'kertas', 'lembar': 'kertas', 'piala': 'piala', 'cat': 'cat', 'kaleng': 'cat', 'ponsel': 'hp', 'hp': 'hp'}
+
+def detect_actions(L, castnames, hold, last_subj):
+    toks = [w[0][1] for w in L['words']]; times = [w[1][0] for w in L['words']]
+    acts, subj = [], last_subj
+    for i, w in enumerate(toks):
+        if w in castnames:
+            if i > 0 and subj and toks[i - 1] in castnames + ['dan', 's'] and w not in subj: subj = subj + [w]
+            elif not (subj and w in subj and i > 0 and toks[i - 1] in castnames + ['dan', 's']): subj = [w]
+        if w == 'aldo' and i + 1 < len(toks) and toks[i + 1] == 's' and 'aldos' in castnames: subj = ['aldos']
+        if w == 'membuka' and i + 1 < len(toks) and toks[i + 1].startswith('tas'):
+            for s_ in subj or []: acts.append({'who': s_, 'a': 'bukaTas', 't': round(times[i], 2), 'dur': 1.6, 'prop': 'kertas'}); hold[s_] = 'kertas'
+            continue
+        if w in ('melihat', 'menatap', 'membuka') and any(x in PROPW and PROPW[x] == 'kertas' for x in toks[i + 1:i + 4]):
+            for s_ in subj or []: acts.append({'who': s_, 'a': 'baca', 't': round(times[i], 2), 'dur': 2.0, 'prop': 'kertas'}); hold[s_] = 'kertas'
+            continue
+        for rx, a, dur in VERB:
+            if not re.match(rx, w) or not subj: continue
+            prop = next((PROPW[x] for x in toks[i + 1:i + 5] if x in PROPW), None)
+            for s_ in subj:
+                e = {'who': s_, 'a': a, 't': round(times[i], 2), 'dur': dur}
+                if a == 'beri':
+                    to = next((x for x in toks[i + 1:] if x in castnames and x != s_), None) or next((x for x in castnames if x != s_), None)
+                    if not to: continue
+                    e['to'] = to; e['prop'] = prop or hold.get(s_) or 'kertas'; hold.pop(s_, None); hold[to] = e['prop']
+                if a == 'baca': e['prop'] = 'kertas'; hold[s_] = 'kertas'
+                acts.append(e)
+    return acts, subj
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -61,7 +103,7 @@ def main():
         if s.startswith('['):
             m = re.match(r'\[(\w+)([^\]]*)\]\s*(.*)', s)
             opts = dict(x.split('=') for x in m.group(2).split() if '=' in x)
-            scene = {'loc': m.group(1), 'grade': opts.get('grade'), 'cast': dict(x.split('=') for x in m.group(3).split() if '=' in x), 'expr': {}}
+            scene = {'loc': m.group(1), 'grade': opts.get('grade'), 'cast': dict(x.split('=') for x in m.group(3).split() if '=' in x), 'expr': {}, 'hold': {}}
             continue
         m = LINE.match(s)
         if not m: sys.exit(f'Baris tidak dikenali: {s}')
@@ -95,8 +137,9 @@ def main():
     duration = round(max(audio + 0.3, (akhir or audio) + 3.3), 2)
     jd = 0.7 if meta.get('judul') else 0
     shots, caps, karakter, ci = [], [], {}, 0
-    talk_all = [[round(L['start'], 2), round(L['end'], 2), L['who'].strip().lower()] for L in lines if L['who'].strip().upper() != 'NARATOR']
+    talk_all = [[round(L['start'], 2), round(L['end'], 2), key(L['who'])] for L in lines if L['who'].strip().upper() != 'NARATOR']
     spoken = [L for L in lines if (L['cam'] or '') != 'akhir']
+    last_subj, last_scene, prev_acts = None, None, []
     for n, L in enumerate(spoken):
         who = L['who'].strip().upper(); sc = L['scene'] or {'loc': 'kelas', 'cast': {}, 'expr': {}}
         castnames = [v.split('#')[0] for v in sc['cast'].values()]
@@ -104,12 +147,12 @@ def main():
         for o in [x.strip() for x in (L['ex'] or '').split(',') if x.strip()]:
             if o == 'flash': flash = True
             elif o.startswith('grade='): grade = o[6:]
-            elif '=' in o: k, v = o.split('='); expr[k.strip().lower()] = v.strip()
+            elif '=' in o: k, v = o.split('='); expr[k.strip().lower()] = ex(v)
             elif ':' in o: k, v = o.split(':'); pose[k.strip().lower()] = v.strip()
-            elif who != 'NARATOR': expr[who.lower()] = o
+            elif who != 'NARATOR': expr[key(who)] = ex(o)
         cam = (L['cam'] or '').strip()
         if not cam:
-            if who != 'NARATOR' and who.lower() in castnames: cam = f'cu:{who.lower()}'
+            if who != 'NARATOR' and key(who) in castnames: cam = f'cu:{key(who)}'
             else:
                 first = norm(L['txt'].split()[0])
                 cam = f'mcu:{first}' if first in castnames else ('dua' if n % 2 == 0 else 'lebar')
@@ -118,10 +161,19 @@ def main():
         d = {'t0': t0, 't1': t1, 'loc': sc['loc'], 'cast': sc['cast'], 'cam': cam.split('-')[0] if cam.startswith('hp') else cam,
              'expr': dict(expr), 'pose': pose, 'talk': talk_all, 'flash': flash}
         if grade: d['grade'] = grade
+        if cam == 'kertas': d['kertas'] = (L['hp'] or '').strip(); d['cam'] = 'lebar'
         if cam.startswith('hp'):
             parts = [x.strip() for x in (L['hp'] or '').split('|')]
-            d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'chat',
+            d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'post' if 'post' in cam else 'chat',
                           'grup': 'grup' in cam, 'gelap': 'gelap' in cam}
+        hold0 = dict(sc.setdefault('hold', {}))
+        for nm, ps in list(pose.items()):
+            if ps in ('piala', 'cat'): hold0[nm] = ps; sc['hold'][nm] = ps; del pose[nm]
+        if who == 'NARATOR':
+            acts, last_subj = detect_actions(L, castnames, sc['hold'], last_subj if last_scene is sc else None)
+        else: acts = []
+        last_scene = sc
+        d['acts'] = prev_acts + acts; d['hold'] = hold0; prev_acts = acts
         shots.append(d)
         # subtitle
         words = L['txt'].split()
@@ -137,6 +189,22 @@ def main():
             caps.append(c)
     for i in range(len(caps) - 1): caps[i]['end'] = min(caps[i]['end'], caps[i + 1]['start'])
 
+    # pecah shot panjang (>4,5 dtk) dengan sudut bergantian agar tidak statis
+    import math, copy
+    out = []
+    for d in shots:
+        dur = d['t1'] - d['t0']; cam = d['cam']
+        if cam == 'hp' or dur <= 4.5: out.append(d); continue
+        names = [v.split('#')[0] for v in d['cast'].values()]
+        if cam.startswith(('cu:', 'mcu:')):
+            who = cam.split(':')[1]; others = [x for x in names if x != who]
+            cyc = [cam, 'dua' if len(names) >= 2 else ('mcu:' + who if cam.startswith('cu') else 'cu:' + who)] + ([f'cu:{others[0]}'] if others else []) + [cam]
+        else: cyc = [cam, 'lebar' if cam == 'dua' else 'dua']
+        n = math.ceil(dur / 4.0)
+        for k in range(n):
+            e = copy.deepcopy(d); e['t0'] = round(d['t0'] + dur * k / n, 2); e['t1'] = round(d['t0'] + dur * (k + 1) / n, 2)
+            e['cam'] = cyc[k % len(cyc)]; e['flash'] = d['flash'] and k == 0; out.append(e)
+    shots = out
     data = {'duration': duration, 'endcard': akhir and round(akhir - 0.05, 2), 'shots': shots}
     js = os.path.join(root, 'engine', 'episodes', f'{a.ep}.js')
     open(js, 'w').write("// Dibuat otomatis oleh tools/naskah_ke_episode.py — boleh diedit/ditambah shot khusus.\n"

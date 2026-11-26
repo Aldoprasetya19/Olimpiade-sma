@@ -1,0 +1,21 @@
+# judul: PESAN | LAMA
+# akhir: BERSAMBUNG | Katanya Batal
+[kelas] dudukKiri=aldo depanMeja=dika
+NARATOR {lebar} (dika:hpAngkat, aldo=netral): Besok paginya, Dika meletakkan ponsel di meja Aldo.
+NARATOR {hp-grup} [Grup lain | Bima: Jangan ajak Aldo dulu. Nanti kita harus cari tempat murah lagi.]: Di layar ada sebuah pesan.
+NARATOR {cu:aldo} (aldo=kaget, aldo:hp): “Jangan ajak Aldo dulu. Nanti kita harus cari tempat murah lagi.”
+NARATOR {hp-grup} [Grup lain | Bima: Jangan ajak Aldo dulu. Nanti kita harus cari tempat murah lagi. | Rio: 😂😂 | Dika: 😂]: Beberapa orang membalas dengan emoji tertawa. Dika salah satunya.
+ALDO (kecewa): Aku pernah bilang kafe itu kemahalan. Tapi aku nggak pernah ngelarang kalian pergi.
+DIKA (menyesal, dika:tunduk): Aku tahu. Aku salah ikut ketawa.
+ALDO (pelan): Terus kenapa bilang batal?
+DIKA (ragu): Aku nggak berani ngomong jujur.
+NARATOR {cu:aldo} (aldo:serahkan, aldo=kecewa): Aldo mengembalikan ponsel itu.
+NARATOR {cu:dika} (dika=bersalah): Dika tetap berdiri di samping mejanya.
+DIKA (pelan): Setelah kamu telepon, aku baca percakapan lama kita. Aku jadi kepikiran Gelly.
+NARATOR {lebar}: Gelly sudah sebulan tidak ikut berkumpul.
+ALDO (bingung): Ada apa sama dia?
+NARATOR {lebar} (dika:hpAngkat): Dika membuka grup lama, lalu menggeser layar ke arah Aldo.
+NARATOR {hp-grup} [Grup lama | Aldo: Gelly nggak usah diajak dulu. Nanti ribet kalau dia nggak bisa patungan.]: “Gelly nggak usah diajak dulu. Nanti ribet kalau dia nggak bisa patungan.”
+NARATOR {cu:aldo} (aldo:tunduk, aldo=bersalah): Aldo ingat pernah membaca kalimat itu. Bahkan, ia ingat persis kapan pesan itu dikirim.
+NARATOR {cu:aldo} (aldo=kaget, grade=tegang): Sebab yang menulisnya adalah Aldo sendiri.
+NARATOR {akhir}: Bersambung…

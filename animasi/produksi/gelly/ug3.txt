@@ -1,0 +1,29 @@
+# judul: BENGKEL DI | UJUNG JALAN
+# akhir: TAMAT | Urusan Gelly
+[gubuk] p1=aldo p2=aldos p3=stefan p4=febri motorDatang=gelly#jas
+ALDO {cu:aldo} (kaget): "Gelly?"
+NARATOR {motorTua} (gelly=netral): Bagian tiga. Bengkel di Ujung Jalan.
+[gubuk] p1=aldo p2=aldos p3=stefan p4=febri dekatMotor=gelly#jas
+NARATOR {cu:gelly} (gelly=serius): Gelly turun dari motornya. Jas hujannya penuh lumpur.
+NARATOR {motorTua}: Di jok belakang, terikat sebuah kotak perkakas dan ban dalam baru.
+GELLY (serius): "Aku lihat live location kalian berhenti lama di sini. Pas aku perbesar fotonya Febri di grup, kelihatan bannya kempis,"
+[gubuk] p1=aldo p2=aldos p3=stefan p4=febri jongkokBan=gelly#jas
+NARATOR {ban} (gelly:jongkok, gelly=fokus): katanya, sambil berjongkok di depan motor Aldo.
+NARATOR {ban} (gelly:perbaiki, gelly=fokus): Tangannya bergerak cepat. Membuka baut, mencopot ban, memasang ban dalam baru. Seperti sudah ratusan kali melakukannya.
+FEBRI (malu): "Kok kamu jago, Gel?"
+NARATOR {cu:febri} (febri=malu): tanya Febri pelan.
+NARATOR {cu:gelly} (gelly:perbaiki, gelly=serius): Gelly diam sebentar.
+GELLY (serius, gelly:perbaiki): "Itu urusanku tiap Sabtu. Bapakku sakit pinggang sejak tiga bulan lalu. Jadi aku yang jaga bengkelnya. Kalau bengkel tutup, nggak ada pemasukan."
+NARATOR {lebar} (aldo=bersalah, aldos=bersalah, stefan=bersalah, febri=bersalah, gelly:perbaiki): Hujan masih turun. Tetapi tidak ada yang bicara.
+NARATOR {cu:febri} (febri=bersalah): Akhirnya, Febri yang pertama membuka suara.
+FEBRI (bersalah): "Gel, maaf. Pesanku kemarin nyebelin banget."
+NARATOR {cu:gelly} (gelly:perbaiki, gelly=senyum): Gelly tersenyum kecil, sambil mengencangkan baut terakhir.
+GELLY (senyum, gelly:perbaiki): "Santai. Aku juga salah. Nggak pernah cerita."
+[bengkel] p1=aldo p2=aldos p3=gelly p4=stefan p5=febri pemilik=pakgelly
+NARATOR {lebar} (aldo:teh, aldos:teh, stefan:teh, febri:teh, gelly=senang, aldo=senang, aldos=senang, stefan=senang, febri=senang, pakgelly:pinggang, pakgelly=senyum): Mereka tidak jadi ke air terjun hari itu. Mereka semua ikut ke bengkel Gelly, minum teh panas dari bapaknya, dan pulang sore dengan baju setengah basah.
+NARATOR {hp-grup} [Anak Motor Gabut, Sabtu Bantu Bengkel | #Febri mengubah nama grup | Gelly: wkwk makasih guys]: Seminggu kemudian, grup itu berganti nama. "Anak Motor Gabut, Sabtu Bantu Bengkel."
+[bengkel5] p1=aldo p2=aldos p3=gelly p4=stefan p5=febri
+NARATOR {lebar} (aldo=senang, aldos=senang, gelly=senang, stefan=senang, febri=senang): Sabtu pagi, lima motor berbaris di depan bengkel kecil di ujung jalan.
+[jalanBukit] motor1Depan=gelly motor2Depan=aldo motor3Depan=aldos motor4Depan=stefan motor5Depan=febri
+NARATOR {riding} (aldo=senang, aldos=senang, gelly=senang, stefan=senang, febri=senang): Setelah bengkel tutup jam 2, baru mereka berangkat bersama ke air terjun. Kali ini, lengkap berlima.
+NARATOR {akhir}: Tamat.

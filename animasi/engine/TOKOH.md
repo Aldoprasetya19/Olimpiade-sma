@@ -33,6 +33,7 @@ Lencana dada menunjukkan kelas: **10 hijau, 11 biru, 12 merah**. Semua tokoh per
 | eko | Pak Eko (guru) | L | – | kemeja biru, kumis |
 | agus | Pak Agus (guru) | L | – | kemeja ungu, kacamata |
 | almis | Pak Almis (guru Matematika) | L | – | kemeja merah marun, kacamata, kumis |
+| pakgelly | Bapak Gelly (pemilik bengkel) | L | – | kemeja hijau zaitun, celemek bengkel, rambut abu-abu, kumis |
 | crispin | Pak Crispin (guru Bahasa Indonesia) | L | – | kemeja hijau, rambut belah samping abu-abu |
 
 Tokoh lama di luar daftar (dimas, reno, bagas, ibu, wali, pekerja) tetap ada untuk seri sebelumnya.

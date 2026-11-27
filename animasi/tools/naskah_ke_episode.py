@@ -40,7 +40,7 @@ ALIAS = {'santai': 'senyum', 'pelan': 'netral', 'bingung': 'curiga', 'ragu': 'me
          'yakin': 'serius', 'penasaran': 'curiga', 'menyelidik': 'curiga', 'gugup': 'cemas', 'tegas': 'serius', 'kritis': 'serius', 'terbata': 'cemas',
          'mengangguk': 'senyum', 'panik': 'kaget', 'heran': 'curiga', 'sinis': 'curiga', 'datar': 'netral', 'tegang': 'cemas', 'menunduk': 'bersalah',
          'tersenyum': 'senyum', 'tertawa': 'senang'}
-key = lambda w: re.sub(r'^(pak|bu|kak) ', '', w.strip().lower())
+key = lambda w: re.sub(r'^(pak|bu|kak) ', '', w.strip().lower()).replace(' ', '')
 ex = lambda e: ALIAS.get(e.strip().lower(), e.strip())
 norm = lambda w: re.sub(r'[^0-9a-z]', '', w.lower())
 
@@ -204,6 +204,7 @@ def main():
         expr, pose, flash, grade = sc['expr'], {}, False, sc.get('grade')
         for o in [x.strip() for x in (L['ex'] or '').split(',') if x.strip()]:
             if o == 'flash': flash = True
+            elif o in ('oleng', 'tanpa'): pass
             elif o.startswith('grade='): grade = o[6:]
             elif '=' in o: k, v = o.split('='); expr[k.strip().lower()] = ex(v)
             elif ':' in o: k, v = o.split(':'); pose[k.strip().lower()] = v.strip()
@@ -216,7 +217,7 @@ def main():
                 cam = f'mcu:{first}' if first in castnames else ('dua' if n % 2 == 0 else 'lebar')
         t0 = 0 if n == 0 else round(L['start'] - 0.05, 2)
         t1 = round(spoken[n + 1]['start'] - 0.05, 2) if n + 1 < len(spoken) else (akhir or duration)
-        d = {'t0': t0, 't1': t1, 'loc': sc['loc'], 'cast': sc['cast'], 'cam': cam.split('-')[0] if cam.startswith('hp') else cam,
+        d = {'tl': [round(L['start'], 2), round(L['end'], 2)], 't0': t0, 't1': t1, 'loc': sc['loc'], 'cast': sc['cast'], 'cam': cam.split('-')[0] if cam.startswith('hp') else cam,
              'expr': dict(expr), 'pose': pose, 'talk': talk_all, 'flash': flash}
         if grade: d['grade'] = grade
         if sc.get('berdiri'): d['berdiri'] = True
@@ -224,7 +225,7 @@ def main():
         low = re.sub(r'["“][^"”]*["”]', ' ', L['txt'].lower()) if not L['txt'].lower().startswith('bagian') else ''
         tl = re.findall(r'[a-z0-9]+', low)
         mj = re.search(r'(?:pukul|jam) (\d{1,2})(?:[.:](\d{2})| lewat (\d{1,2}))?', low)
-        if mj and who == 'NARATOR':
+        if mj and who == 'NARATOR' and 'dilihat' not in low[:mj.start()][-25:]:
             hh = int(mj.group(1)); hh = hh + 12 if (('malam' in low or 'sore' in low) and hh < 12 and hh >= 3) else hh
             state['jam'] = f"{hh:02d}.{int(mj.group(2) or mj.group(3) or 0):02d}"; state['menit'] = 0
         else:
@@ -252,7 +253,7 @@ def main():
         if cam == 'kertas': d['kertas'] = (L['hp'] or '').strip(); d['cam'] = 'lebar'
         if cam.startswith('hp'):
             parts = [x.strip() for x in (L['hp'] or '').split('|')]
-            d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'post' if 'post' in cam else 'retak' if 'retak' in cam else 'chat',
+            d['phone'] = {'judul': parts[0] if parts else '', 'pesan': parts[1:], 'jenis': 'notif' if 'notif' in cam else 'lokasi' if 'lokasi' in cam else 'status' if 'status' in cam else 'post' if 'post' in cam else 'retak' if 'retak' in cam else 'chat',
                           'grup': 'grup' in cam, 'gelap': 'gelap' in cam}
         hold0 = dict(sc.setdefault('hold', {}))
         for nm, ps in list(pose.items()):
@@ -273,6 +274,11 @@ def main():
         d['acts'] = prev_acts + acts; d['hold'] = hold0; prev_acts = acts
         _tw = [w[0][1] for w in L['words']]
         tid = next((k for k, tk in enumerate(_tw) if tk in ('tidur', 'tertidur') and not any(x in ('tidak', 'nggak', 'gak', 'belum', 'bisa', 'jangan') for x in _tw[max(0, k - 2):k])), None) if who == 'NARATOR' else None
+        flags = {x.strip() for x in (L['ex'] or '').split(',')}
+        if 'oleng' in flags: d['oleng'] = True
+        if sc['loc'].startswith('jalan') and sc['loc'] not in ('jalanBerhenti', 'jalanMendung'): d['helm'] = [v.split('#')[0] for k_, v in sc['cast'].items() if 'motor' in k_]
+        if sc['loc'] == 'gubuk' and any(v == 'lepasHelm' or v == 'datangMotor' for v in pose.values()): d['helm'] = [k_ for k_, v in pose.items() if v in ('lepasHelm', 'datangMotor')]
+        if who == 'NARATOR' and re.search(r'menel[e]?pon|telepon', L['txt'].lower()): state['_telepon'] = sc
         # --- mimik dari kata sifat (tidak menimpa ekspresi yang ditulis eksplisit)
         eksplisit = {x.split('=')[0].strip().lower() for x in (L['ex'] or '').split(',') if '=' in x}
         if who == 'NARATOR':
@@ -306,15 +312,15 @@ def main():
             d['pose'] = {k: ('tunjuk' if guru and k == guru[0] else 'tanganMeja') for k in ikut}
             d['expr'] = {k: ('senyum' if guru and k == guru[0] else 'fokus') for k in ikut}
         # --- ucapan/teriakan lewat HP oleh tokoh yang tidak ada di adegan
-        if who != 'NARATOR' and key(who) not in castnames and castnames and (d['cam'] in ('hp',) or sc['loc'] in ('kamar', 'rumah')):
+        if who != 'NARATOR' and 'tanpa' not in flags and key(who) not in castnames and castnames and (d['cam'] in ('hp',) or sc['loc'] in ('kamar', 'rumah')):
             spk, lis = key(who), castnames[0]; dur = d['t1'] - d['t0']
             malam = d.get('jam') and (int(d['jam'][:2]) >= 18 or int(d['jam'][:2]) < 5)
             s1 = dict(d); s1.update({'t1': round(d['t0'] + dur * (0.45 if dur > 2.4 else 0.6), 2), 'loc': 'kamar', 'cast': {'mejaBelajar': spk + '#rumah'}, 'cam': f'cu:{spk}',
-                                     'pose': {spk: 'game' if sc.get('_game') else 'hp'}, 'expr': {spk: d['expr'].get(spk, 'senang')}, 'acts': [], 'grade': 'malam' if malam else d.get('grade')})
+                                     'pose': {spk: 'telepon' if state.get('_telepon') is sc else 'game' if sc.get('_game') else 'hp'}, 'expr': {spk: d['expr'].get(spk, 'senang')}, 'acts': [], 'grade': 'malam' if malam else d.get('grade')})
             s1.pop('phone', None); shots.append(s1)
             if dur > 2.4 and d['cam'] == 'hp':
                 s2 = dict(d); s2['t0'] = s1['t1']; s2['t1'] = round(d['t0'] + dur * 0.75, 2); shots.append(s2)
-            d = dict(d); d.update({'t0': shots[-1]['t1'], 'cam': f'cu:{lis}', 'expr': {**d['expr'], lis: 'kaget'}, 'pose': {**d['pose'], lis: 'game' if sc.get('_game') else 'hp'}})
+            d = dict(d); d.update({'t0': shots[-1]['t1'], 'cam': f'cu:{lis}', 'expr': {**d['expr'], lis: d['expr'].get(lis) or ('netral' if state.get('_telepon') is sc else 'kaget')}, 'pose': {**d['pose'], lis: 'telepon' if state.get('_telepon') is sc else 'game' if sc.get('_game') else 'hp'}})
             d.pop('phone', None)
         if tid is not None and castnames and sc['loc'] in ('kamar', 'rumah'):
             tt = round(L['words'][tid][1][0] - 0.2, 2); who0 = (last_subj or castnames)[0] if (last_subj or castnames) else castnames[0]

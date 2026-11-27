@@ -2,20 +2,34 @@
 // Dipakai oleh episode hasil tools/naskah_ke_episode.py. Lihat engine/README.md bagian "Jalur hemat".
 import * as THREE from 'three';
 import { CAST } from './cast.js';
-import { SETS, phone, piala, kalengCat } from './sets.js';
+import { SETS, phone, piala, kalengCat, helm, glass } from './sets.js';
 import { hud as HUD } from './core.js';
 import { POSES, combine, addPose, idle, mixPose, walkPose } from './char.js';
 import { ease, lerp } from './core.js';
-import { drawChat, drawLock, drawBanner, avatar } from './phoneui.js';
+import { drawChat, drawLock, drawBanner, avatar, statusBar } from './phoneui.js';
 import { phoneInsert } from './shots.js';
 
 // ---------- lokasi: slot tokoh [x, z, rotY, duduk?], batas kamera, grade bawaan
+const MOTOR_SLOT = { motor1Depan: { motor: 'motor1', lx: 0.05, ly: 0.5, pose: 'naik' }, motor1Belakang: { motor: 'motor1', lx: -0.5, ly: 0.55, pose: 'bonceng' },
+  motor2Depan: { motor: 'motor2', lx: 0.05, ly: 0.5, pose: 'naik' }, motor2Belakang: { motor: 'motor2', lx: -0.5, ly: 0.55, pose: 'bonceng' } };
 export const LOKASI = {
   rumah: { set: 'rumah', grade: 'malam', bounds: [-5.6, 5.6, -5.1, 5.1],
     slot: { meja: [0, 1.0, Math.PI, true], dudukKiri: [0, 1.0, Math.PI, true], kiriMeja: [-1.25, 0, Math.PI / 2, true], kananMeja: [1.25, 0, -Math.PI / 2, true], seberang: [0, -1.0, 0, true], dapur: [2.0, -4.1, Math.PI * 0.1, false], dekatMeja: [1.6, 0.2, -Math.PI / 2, false] } },
   kelas: { set: 'kelas', grade: 'pagi', bounds: [-6.1, 6.1, -5.6, 5.6], center: [0, -4.4], seats: [[-0.47, -1.45], [0.47, -1.45], [-0.47, 0.85], [0.47, 0.85], [2.73, -1.45], [3.67, -1.45], [-3.67, -1.45], [-2.73, -1.45], [2.73, 0.85], [3.67, 0.85], [-3.67, 0.85], [-2.73, 0.85], [-0.47, 3.15], [0.47, 3.15], [2.73, 3.15], [3.67, 3.15], [-3.67, 3.15], [-2.73, 3.15]],
     slot: { dudukKiri: [-0.47, -1.45, Math.PI, true], dudukKanan: [0.47, -1.45, Math.PI, true], depanMeja: [-0.2, -3.4, 0, false], guruDepan: [1.7, -4.3, -0.35, false], lorong: [1.6, -1.45, -Math.PI / 2, false] } },
-  kamar: { set: 'kamar', grade: 'malam', bounds: [-4.1, 4.1, -3.6, 3.6], slot: { mejaBelajar: [-1.5, -2.45, Math.PI, true], kasur: [2.4, -0.2, Math.PI, false] } },
+  kamar: { set: 'kamar', grade: 'malam', bounds: [-4.1, 4.1, -3.6, 3.6], slot: { mejaBelajar: [-1.5, -2.45, Math.PI, true], kasur: [2.4, -0.2, Math.PI, false], pinggirKasur: [1.5, -1.3, -Math.PI / 2, true, 0.12] } },
+  jalanAspal: { set: 'jalan', setOpts: { speed: 9, motors: [[0, 1.2, '#c0392b', 'motor1'], [0, -1.2, '#2980b9', 'motor2']] }, grade: 'pagi', bounds: [-30, 30, -20, 20], slot: MOTOR_SLOT },
+  jalanTanah: { set: 'jalan', setOpts: { speed: 5, tanah: true, kelapa: true, motors: [[0, 1.2, '#c0392b', 'motor1'], [0, -1.2, '#2980b9', 'motor2']] }, grade: 'pagi', bounds: [-30, 30, -20, 20], slot: MOTOR_SLOT },
+  jalanBerhenti: { set: 'jalan', setOpts: { speed: 0, tanah: true, kelapa: true, motors: [[0, 1.2, '#c0392b', 'motor1'], [0, -1.2, '#2980b9', 'motor2']] }, grade: 'pagi', bounds: [-30, 30, -20, 20], kempis: true,
+    slot: { ...MOTOR_SLOT, jongkokBan: [-0.75, 2.05, Math.PI, false], dekat1: [1.4, 2.4, -Math.PI * 0.8, false], dekat2: [-1.8, 2.6, Math.PI * 0.8, false], dekat3: [0.4, 3.2, Math.PI, false] } },
+  jalanMendung: { set: 'jalan', setOpts: { speed: 0, tanah: true, kelapa: true, hujan: true, motors: [[0, 1.2, '#c0392b', 'motor1'], [0, -1.2, '#2980b9', 'motor2']] }, grade: 'hujan', bounds: [-30, 30, -20, 20], kempis: true,
+    slot: { dekat1: [1.4, 2.4, -Math.PI * 0.8, false], dekat2: [-1.8, 2.6, Math.PI * 0.8, false], dekat3: [0.4, 3.2, Math.PI, false], dekat4: [-0.6, 3.0, Math.PI, false] } },
+  gubuk: { set: 'jalan', setOpts: { speed: 0, tanah: true, kelapa: true, hujan: true, gubuk: true, motorTua: true, motors: [[4.5, 2.6, '#c0392b', 'motor1'], [6.5, 2.6, '#2980b9', 'motor2']] }, grade: 'hujan', bounds: [-12, 14, -0.8, 12], center: [0, -3.0], kempis: true,
+    slot: { motorDatang: { motor: 'motorTua', lx: 0.05, ly: 0.5, pose: 'naik' }, dekatMotor: [1.6, 0.4, -Math.PI / 2, false], jongkokBan: [3.75, 3.35, Math.PI, false] } },
+  bengkel: { set: 'bengkel', grade: 'hangat', bounds: [-12, 12, -3.2, 14], center: [0, -1.25], slot: { pemilik: [2.6, -1.2, -Math.PI * 0.3, false] } },
+  bengkel5: { set: 'bengkel', setOpts: { motor5: true, pagi: true }, grade: 'pagi', bounds: [-14, 14, -3.2, 16], center: [0, 0.2], slot: {} },
+  jalanBukit: { set: 'jalan', setOpts: { speed: 9, bukit: true, motors: [[3, 1.4, '#c0392b', 'motor1'], [0.6, -0.2, '#2980b9', 'motor2'], [-1.8, 1.4, '#27ae60', 'motor3'], [-4.2, -0.2, '#f39c12', 'motor4'], [-6.6, 1.4, '#4a5a3a', 'motor5']] }, grade: 'pagi', bounds: [-40, 40, -20, 25],
+    slot: Object.fromEntries([1, 2, 3, 4, 5].map(i => ['motor' + i + 'Depan', { motor: 'motor' + i, lx: 0.05, ly: 0.5, pose: 'naik' }])) },
   kantin: { set: 'belakangKantin', grade: 'pagi', bounds: [-9, 9, -2.4, 12],
     slot: { kiri: [-0.9, -0.6, Math.PI / 2, false], kanan: [0.9, -0.6, -Math.PI / 2, false], dudukKiri: [-0.55, -2.05, 0, true], dudukKanan: [0.55, -2.05, 0, true] } },
   toko: { set: 'toko', grade: 'sore', bounds: [-5.1, 5.1, -4.6, 4.6], slot: { dudukKiri: [0, -1.3, 0, true], dudukKanan: [1.0, -1.3, 0, true] } },
@@ -40,7 +54,7 @@ const headY = (sit) => (sit ? 1.73 : 1.98);
 const PEREMPUAN = []; // tokoh tetap ada di TOKOH (cast.js); nama asing dianggap figuran laki-laki
 const castMake = (key) => {
   const [k, opt] = key.split('#'); // mis. "dimas#perban"
-  const o = opt === 'perban' ? { shortLeg: 1 } : opt === 'rumah' ? { shirt: '#2f4b7c', pants: '#3b3b44', badge: false, name: null, collar: false, sleeve: '#2f4b7c' } : {};
+  const o = opt === 'jas' ? { jacket: '#e0b020', sleeve: '#e0b020', longSleeve: true } : opt === 'perban' ? { shortLeg: 1 } : opt === 'rumah' ? { shirt: '#2f4b7c', pants: '#3b3b44', badge: false, name: null, collar: false, sleeve: '#2f4b7c' } : {};
   if (CAST[k]) return CAST[k](o);
   const nm = k.toUpperCase(), seed = [...k].reduce((a, ch) => a + ch.charCodeAt(0), 0);
   return PEREMPUAN.includes(k) ? CAST.siswi(seed, { name: nm, ...o }) : CAST.siswa(seed, { name: nm, ...o });
@@ -184,8 +198,20 @@ export function autoShot(d) {
         if (!s && /^p\d+$/.test(slot) && duduk) { const nm0 = key.split('#')[0]; if (GURU.includes(nm0)) s = [1.7, -4.3, -0.35, false]; else { const se = L.seats[seatI++ % L.seats.length]; s = [se[0], se[1], Math.PI, true]; } }
         if (!s && /^p\d+$/.test(slot)) { const i = +slot.slice(1) - 1, off = i - (pn - 1) / 2, c0 = L.center || [0, 0]; s = [c0[0] + off * 1.05, c0[1] + Math.abs(off) * 0.25, -off * 0.12, false]; }
         if (!s) continue;
+        if (!Array.isArray(s)) { // naik motor: tokoh jadi anak dari objek motor
+          const m = S.scene.getObjectByName(s.motor); if (!m) continue;
+          const c = castMake(key); const name = key.split('#')[0]; m.add(c.root); c.root.position.set(s.lx, s.ly, 0); c.root.rotation.y = Math.PI / 2;
+          chars[name] = { c, sit: false, ride: s.pose }; m.updateMatrixWorld(true); const wp = new THREE.Vector3(); c.root.getWorldPosition(wp);
+          heads[name] = { x: wp.x, y: wp.y + 1.85, z: wp.z, rot: m.rotation.y + Math.PI / 2 };
+          if ((d.helm || []).includes(name)) { const h = helm(['#2c3e50', '#c0392b', '#f1c40f', '#2980b9', '#7f8c8d'][Object.keys(chars).length % 5]); h.position.y = 0.42; c.head.add(h); c.userData = { helm: h }; }
+          if (/^(hp|game)/.test(d.pose?.[name] || '')) { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI); }
+          continue;
+        }
         const c = castMake(key); const name = key.split('#')[0];
-        S.add(c, [s[0], 0, s[1]], s[2]); chars[name] = { c, sit: s[3] };
+        S.add(c, [s[0], 0, s[1]], s[2]); chars[name] = { c, sit: s[3] }; if (s[4]) c.root.position.y = s[4];
+        if (d.pose?.[name] === 'teh') { const gl = glass('#b5651d'); c.handOf(-1).add(gl); gl.position.set(0, -0.2, 0.05); }
+        if (d.pose?.[name] === 'perbaiki') { const kp = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.32, 0.05), new THREE.MeshToonMaterial({ color: '#9aa0a6' })); kp.position.set(0, -0.2, 0.05); c.handOf(-1).add(kp); }
+        if ((d.helm || []).includes(name)) { const h = helm('#c0392b'); h.position.y = 0.42; c.head.add(h); c.userData = { helm: h }; }
         heads[name] = { x: s[0], y: headY(s[3]), z: s[1], rot: s[2] };
         if (/^(piala|cat)/.test(d.pose?.[name] || '')) { const pr = d.pose[name] === 'piala' ? piala() : kalengCat(); c.handOf(-1).add(pr); pr.position.set(0.18, -0.05, 0.12); pr.rotation.set(Math.PI / 2 - 0.4, 0, 0); }
         if (/^(hp|telepon|game)/.test(d.pose?.[name] || '')) { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI);
@@ -212,6 +238,10 @@ export function autoShot(d) {
       let cam;
       if ((kind === 'cu' || kind === 'mcu') && heads[who]) cam = solveCam(L, heads, who, kind === 'cu' ? { dist: 3.3, fov: 40, obst: extraHeads } : { dist: 4.3, fov: 46, high: 0.05, obst: extraHeads });
       else if (kind === 'masuk' && P && heads[who]) { const h = heads[who]; cam = solveGroup(L, { a: { x: P.x + N.x * 0.6, y: 1.9, z: P.z + N.z * 0.6, rot: Math.atan2(h.x - P.x, h.z - P.z) }, b: { ...h, rot: Math.atan2(P.x - h.x, P.z - h.z) } }, true); }
+      else if (kind === 'ban') { const m = S.scene.getObjectByName('motor1'); const w = new THREE.Vector3(); (m?.userData.roda[0] || m)?.getWorldPosition(w); cam = { pos: [w.x + 1.4, 1.25, w.z - 2.0], look: [w.x, 0.45, w.z + 0.2], fov: 40 }; }
+      else if (kind === 'pengendara') { const m = S.scene.getObjectByName('motorTua'); cam = { pos: [m.position.x - 2.4, 2.05, m.position.z + 1.0], look: [m.position.x, 1.85, m.position.z], fov: 38 }; }
+      else if (kind === 'motorTua') { const m = S.scene.getObjectByName('motorTua'); cam = { pos: [m.position.x + 1.2, 1.9, m.position.z + 2.4], look: [m.position.x + 0.7, 1.2, m.position.z], fov: 36 }; }
+      else if (kind === 'riding') { cam = { pos: [-1.5, 2.3, 7.5], look: [0.2, 1.3, 0], fov: 42 }; }
       else if (kind === 'laptop') cam = { pos: [0.55, 2.55, -1.25], look: [-1.45, 1.2, -3.4], fov: 30 };
       else if (kind === 'kedepan') cam = { pos: [4.6, 2.9, 1.8], look: [-0.6, 1.2, -2.4], fov: 56 };
       else if (kind === 'tidur') cam = { pos: [2.4, 3.6, 1.6], look: [2.4, 0.7, -1.6], fov: 46 };
@@ -223,7 +253,13 @@ export function autoShot(d) {
       const seed = Object.keys(chars);
       return (lt, k, t) => {
         for (const [name, { c, sit }] of Object.entries(chars)) {
-          let p = sit ? POSES.duduk : POSES.berdiri;
+          let p = chars[name].ride ? POSES[chars[name].ride] : sit ? POSES.duduk : POSES.berdiri;
+          const ps0 = d.pose?.[name];
+          if (ps0 === 'jongkok') p = POSES.jongkok;
+          if (ps0 === 'perbaiki') p = combine(POSES.jongkok, { shR: [-1.0 + Math.sin(t * 9) * 0.25, 0, 0.25], elR: -0.6, shL: [-1.0 + Math.cos(t * 8) * 0.2, 0, -0.25], elL: -0.7, headX: 0.45 });
+          if (ps0 === 'pinggang') p = combine(p, POSES.pinggang);
+          if (ps0 === 'teh') p = combine(p, POSES.minum, { elR: -1.6 - Math.max(0, Math.sin(t * 1.3)) * 0.5, headX: -Math.max(0, Math.sin(t * 1.3)) * 0.15 });
+          if (ps0 === 'lepasHelm' && c.userData?.helm) { const kl2 = d.tl ? Math.max(0, Math.min(1, (t - d.tl[0]) / Math.max(0.5, d.tl[1] - d.tl[0]))) : k; const q = Math.max(0, Math.min(1, (kl2 - 0.2) / 0.6)); c.userData.helm.position.y = 0.42 + q * 0.9; c.userData.helm.visible = q < 0.98; p = combine(p, { shR: [-2.6 * Math.min(1, q * 2), 0, 0.3], elR: -0.6, shL: [-2.6 * Math.min(1, q * 2), 0, -0.3], elL: -0.6 }); }
           const extra = d.pose?.[name] === 'game' ? AKSI_POSE.game : /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
           if (d.pose?.[name] === 'angguk') p = combine(p, { headX: lt < 1 ? Math.max(0, Math.sin(lt * 9)) * 0.3 : 0 });
           if (props[name]?.parent === c.handOf(-1) && props[name].visible !== false) p = combine(p, props[name].userData.kind === 'kertas' ? AKSI_POSE.baca : props[name].userData.kind === 'hp' ? POSES.hp : AKSI_POSE.bawa);
@@ -277,6 +313,13 @@ export function autoShot(d) {
           const talking = (d.talk || []).some(([a, b, w]) => w === name && t >= a && t <= b);
           c.act(p, d.expr?.[name] || 'netral', t, talking, seed.indexOf(name));
         }
+        // pemandangan bergerak, roda, hujan, motor tua datang, oleng
+        const sp = (S.scene.userData.gerakSpeed || 0) * (d.oleng ? Math.max(0, 1 - lt / 1.2) : 1);
+        const ger = S.scene.getObjectByName('gerak'); if (ger) ger.position.x = -((d.oleng ? sp * lt * 0.5 : t * sp) % 40);
+        S.scene.traverse(o => { if (o.userData?.roda) o.userData.roda.forEach((w, wi) => { w.rotation.z = -(d.oleng ? lt * sp * 0.5 : t * sp) / 0.37; if (L.kempis && wi === 0 && o.name === 'motor1') w.scale.set(1, 0.82, 1); }); });
+        const m1 = S.scene.getObjectByName('motor1'); if (m1 && d.oleng) { const e = Math.max(0, lt - 0.3); m1.rotation.x = Math.sin(e * 9) * 0.18 * Math.exp(-e * 1.6); }
+        const mt = S.scene.getObjectByName('motorTua'); if (mt) { const kl = d.tl ? Math.max(0, Math.min(1, (t - d.tl[0]) / Math.max(0.5, d.tl[1] - d.tl[0]))) : k; const dq = Object.values(d.pose || {}).includes('datangMotor') ? ease(Math.min(1, kl / 0.75)) : 1; mt.position.x = 2.6 + (1 - dq) * 14; mt.userData.roda.forEach(w => w.rotation.z = (1 - dq) * 30); }
+        if (S.scene.userData.hujan) for (const dr of S.scene.userData.hujan) { if (dr.userData.y0 === undefined) dr.userData.y0 = dr.position.y; dr.position.y = ((dr.userData.y0 - t * 11) % 9 + 9) % 9; }
         S.camMove(k, cam, end);
         const LY = S.scene.userData.layar;
         if (LY) { const x = LY.ctx; x.fillStyle = '#f5f7fa'; x.fillRect(0, 0, 512, 320); x.fillStyle = '#2b579a'; x.fillRect(0, 0, 512, 34);
@@ -319,6 +362,23 @@ function phoneShot(S, d) {
         for (let i = 0; i < 5; i++) avatar(c, 90 + i * 90, 520 - (i % 2) * 30, 42, { skin: ['#d29a62', '#c98a52', '#e0b07e', '#b97a45', '#a8703f'][i], hair: '#2a2018', bg: '#7a4f35' });
         c.fillStyle = '#e74c3c'; c.font = '700 40px Nunito'; c.fillText('♥', 24, 800); c.fillStyle = '#111'; c.font = '800 24px Nunito'; c.fillText('128 suka', 24, 850);
         c.font = '500 26px Nunito'; c.fillText((ph.judul || '').toLowerCase() + '  ' + (ph.pesan?.[0] || ''), 24, 895); c.fillStyle = '#999'; c.font = '500 22px Nunito'; c.fillText('20 menit yang lalu', 24, 940);
+        return;
+      }
+      if (ph.jenis === 'lokasi') {
+        c.fillStyle = '#e8eef2'; c.fillRect(0, 0, 540, 1080); c.strokeStyle = '#fff'; c.lineWidth = 26; c.beginPath(); c.moveTo(-20, 900); c.bezierCurveTo(200, 700, 300, 500, 560, 260); c.stroke();
+        c.strokeStyle = '#d9cbb0'; c.lineWidth = 18; c.beginPath(); c.moveTo(80, 1100); c.lineTo(420, 120); c.stroke(); c.fillStyle = '#b9dcb0'; c.fillRect(20, 120, 150, 200); c.fillRect(360, 640, 160, 240);
+        c.strokeStyle = '#2d7dd2'; c.lineWidth = 10; c.setLineDash([18, 14]); c.beginPath(); c.moveTo(60, 980); c.bezierCurveTo(200, 760, 260, 640, 270 + lt * 8, 540); c.stroke(); c.setLineDash([]);
+        c.fillStyle = 'rgba(45,125,210,0.25)'; c.beginPath(); c.arc(275, 540, 50 + Math.sin(lt * 4) * 8, 0, Math.PI * 2); c.fill(); c.fillStyle = '#2d7dd2'; c.beginPath(); c.arc(275, 540, 18, 0, Math.PI * 2); c.fill();
+        if (ph.judul === 'Peta') { c.fillStyle = '#c0392b'; c.beginPath(); c.arc(120, 980, 22, 0, Math.PI * 2); c.fill(); c.fillStyle = '#111'; c.font = '800 26px Nunito'; c.fillText('Bengkel', 70, 1030); }
+        c.fillStyle = '#fff'; c.fillRect(0, 0, 540, 150); statusBar(c, false, ph.jam); c.fillStyle = '#111'; c.font = '800 30px Nunito'; c.textAlign = 'left'; c.fillText(ph.judul === 'Peta' ? 'Peta' : 'Live Location', 30, 118);
+        c.fillStyle = 'rgba(255,255,255,0.96)'; c.fillRect(20, 880 - 0, 500, 0); (ph.pesan || []).forEach((m, i) => { c.fillStyle = 'rgba(255,255,255,0.95)'; c.beginPath(); c.roundRect(20, 830 + i * 110, 500, 96, 20); c.fill(); c.fillStyle = '#111'; c.font = '700 24px Nunito'; c.fillText(m.slice(0, 34), 40, 888 + i * 110); });
+        return;
+      }
+      if (ph.jenis === 'status') {
+        drawLock(c, { time: ph.jam || '10.10', notifs: [] }); const v = (ph.pesan || [''])[0];
+        c.fillStyle = 'rgba(0,0,0,0.55)'; c.beginPath(); c.roundRect(70, 420, 400, 260, 30); c.fill(); c.textAlign = 'center';
+        if (ph.judul === 'Baterai') { c.strokeStyle = '#fff'; c.lineWidth = 8; c.strokeRect(170, 470, 180, 90); c.fillStyle = '#fff'; c.fillRect(350, 495, 16, 40); c.fillStyle = (lt * 2 | 0) % 2 ? '#e74c3c' : '#ff8080'; c.fillRect(178, 478, 18, 74); c.fillStyle = '#fff'; c.font = '800 54px Nunito'; c.fillText(v, 270, 650); }
+        else { for (let i = 0; i < 4; i++) { c.fillStyle = i < (parseInt(v) || 1) ? '#fff' : 'rgba(255,255,255,0.2)'; c.fillRect(190 + i * 45, 590 - i * 35, 32, 30 + i * 35); } c.fillStyle = '#fff'; c.font = '800 40px Nunito'; c.fillText('Sinyal lemah', 270, 650); }
         return;
       }
       if (ph.jenis === 'game') {

@@ -1,0 +1,23 @@
+# judul: URUSAN | GELLY
+# akhir: BERSAMBUNG... | Bagian 2: Jalan Sepi
+[kamar] pinggirKasur=aldo#rumah
+NARATOR {lebar} (aldo:hp): Bagian satu, Urusan Gelly.
+NARATOR {hp-grup} [Anak Motor Gabut | Aldo S.: Sabtu pagi ke air terjun, gas? | Stefan: gas! | Febri: berangkat jam 7]: Sudah 3 minggu, grup Anak Motor Gabut merencanakan hal yang sama. Ke air terjun di ujung kampung, Sabtu pagi, naik motor bareng.
+NARATOR {cu:aldo} (aldo:hp, aldo=kecewa): Dan sudah 3 kali juga, rencana itu batal. Gara-gara satu orang.
+GELLY {hp-grup} (tanpa) [Anak Motor Gabut | Gelly: Maaf guys, aku gak bisa. Ada urusan.]: "Maaf guys, aku gak bisa. Ada urusan."
+NARATOR {cu:aldo} (aldo:hp, aldo=marah): Pesan itu lagi, dari Gelly. Lagi.
+NARATOR {hp-grup} [Anak Motor Gabut | Gelly: Maaf guys, aku gak bisa. Ada urusan.]: Febri langsung membalas.
+FEBRI {hp-grup} [Anak Motor Gabut | Gelly: Maaf guys, aku gak bisa. Ada urusan. | Febri: Urusan apa sih, Gel? Setiap Sabtu urusan terus.]: "Urusan apa sih, Gel? Setiap Sabtu urusan terus."
+NARATOR {hp} [Gelly | Gel? | #terakhir dilihat pukul 05.12]: Gelly tidak menjawab. Statusnya cuma "terakhir dilihat jam 5 lewat 12 pagi."
+NARATOR {cu:aldo} (aldo=sedih, aldo:hp): Aldo menghela napas.
+NARATOR {mcu:aldo} (aldo:telepon, aldo=netral): Lalu Aldo S. menelepon.
+ALDO S (serius): "Udah, kita berangkat aja berempat. Aku, kamu, Febri, Stefan. Nggak usah nunggu Gelly lagi."
+ALDO (ragu, aldo:telepon): "Tapi, dia kan..."
+NARATOR {cu:aldo} (aldo:telepon, aldo=sedih): Stefan langsung memotong dari seberang.
+STEFAN (curiga): "Udah lah, mungkin dia memang udah males main sama kita."
+NARATOR {foto} (aldo=senyum) [Kelas 10: kami berlima | Tertawa di pinggir jalan, basah kuyup]: Aldo menatap foto profil grup. Foto mereka berlima waktu kelas 10. Tertawa di pinggir jalan. Basah kuyup kehujanan.
+[jalanAspal] motor1Depan=aldo motor1Belakang=aldos motor2Depan=stefan motor2Belakang=febri
+NARATOR {riding} (aldo=senang, aldos=senang, stefan=senang, febri=senang): Sabtu pagi, dua motor berboncengan berangkat tanpa Gelly.
+NARATOR {cu:febri} (febri:hp, febri=curiga): Febri mengirim share live location ke grup.
+FEBRI {hp-lokasi} [Anak Motor Gabut | Febri: Biar yang ada urusan bisa lihat kita senang-senang 😎]: "Biar yang ada urusan, bisa lihat kita senang-senang."
+NARATOR {akhir}: Bersambung.

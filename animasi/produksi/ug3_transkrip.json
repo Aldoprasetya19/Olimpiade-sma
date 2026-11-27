@@ -1,0 +1,1287 @@
+[
+ {
+  "start": 0.0,
+  "end": 0.6,
+  "text": " Geli?",
+  "words": [
+   {
+    "w": " Geli?",
+    "s": 0.0,
+    "e": 0.6
+   }
+  ]
+ },
+ {
+  "start": 1.4,
+  "end": 2.7,
+  "text": " Bagian tiga.",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 1.4,
+    "e": 1.86
+   },
+   {
+    "w": " tiga.",
+    "s": 1.86,
+    "e": 2.7
+   }
+  ]
+ },
+ {
+  "start": 2.88,
+  "end": 4.26,
+  "text": " Bengkel di ujung jalan.",
+  "words": [
+   {
+    "w": " Bengkel",
+    "s": 2.88,
+    "e": 3.4
+   },
+   {
+    "w": " di",
+    "s": 3.4,
+    "e": 3.58
+   },
+   {
+    "w": " ujung",
+    "s": 3.58,
+    "e": 3.8
+   },
+   {
+    "w": " jalan.",
+    "s": 3.8,
+    "e": 4.26
+   }
+  ]
+ },
+ {
+  "start": 5.34,
+  "end": 6.92,
+  "text": " Geli turun dari motornya.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 5.34,
+    "e": 5.64
+   },
+   {
+    "w": " turun",
+    "s": 5.64,
+    "e": 6.02
+   },
+   {
+    "w": " dari",
+    "s": 6.02,
+    "e": 6.26
+   },
+   {
+    "w": " motornya.",
+    "s": 6.26,
+    "e": 6.92
+   }
+  ]
+ },
+ {
+  "start": 7.34,
+  "end": 9.4,
+  "text": " Jas hujannya penuh lumpur.",
+  "words": [
+   {
+    "w": " Jas",
+    "s": 7.34,
+    "e": 7.52
+   },
+   {
+    "w": " hujannya",
+    "s": 7.52,
+    "e": 8.06
+   },
+   {
+    "w": " penuh",
+    "s": 8.06,
+    "e": 8.58
+   },
+   {
+    "w": " lumpur.",
+    "s": 8.58,
+    "e": 9.4
+   }
+  ]
+ },
+ {
+  "start": 9.56,
+  "end": 13.3,
+  "text": " Di jog belakang, terikat sebuah kotak perkakas dan band dalam baru.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 9.56,
+    "e": 9.7
+   },
+   {
+    "w": " jog",
+    "s": 9.7,
+    "e": 9.84
+   },
+   {
+    "w": " belakang,",
+    "s": 9.84,
+    "e": 10.36
+   },
+   {
+    "w": " terikat",
+    "s": 10.44,
+    "e": 10.72
+   },
+   {
+    "w": " sebuah",
+    "s": 10.72,
+    "e": 11.1
+   },
+   {
+    "w": " kotak",
+    "s": 11.1,
+    "e": 11.38
+   },
+   {
+    "w": " perkakas",
+    "s": 11.38,
+    "e": 12.04
+   },
+   {
+    "w": " dan",
+    "s": 12.04,
+    "e": 12.42
+   },
+   {
+    "w": " band",
+    "s": 12.42,
+    "e": 12.7
+   },
+   {
+    "w": " dalam",
+    "s": 12.7,
+    "e": 12.96
+   },
+   {
+    "w": " baru.",
+    "s": 12.96,
+    "e": 13.3
+   }
+  ]
+ },
+ {
+  "start": 13.76,
+  "end": 16.4,
+  "text": " Aku lihat live location kalian berhenti lama di sini.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 13.76,
+    "e": 13.92
+   },
+   {
+    "w": " lihat",
+    "s": 13.92,
+    "e": 14.24
+   },
+   {
+    "w": " live",
+    "s": 14.24,
+    "e": 14.5
+   },
+   {
+    "w": " location",
+    "s": 14.5,
+    "e": 14.86
+   },
+   {
+    "w": " kalian",
+    "s": 14.86,
+    "e": 15.22
+   },
+   {
+    "w": " berhenti",
+    "s": 15.22,
+    "e": 15.58
+   },
+   {
+    "w": " lama",
+    "s": 15.58,
+    "e": 15.92
+   },
+   {
+    "w": " di",
+    "s": 15.92,
+    "e": 16.16
+   },
+   {
+    "w": " sini.",
+    "s": 16.16,
+    "e": 16.4
+   }
+  ]
+ },
+ {
+  "start": 16.94,
+  "end": 19.06,
+  "text": " Pas aku perbesar fotonya February D. Grooke,",
+  "words": [
+   {
+    "w": " Pas",
+    "s": 16.94,
+    "e": 17.08
+   },
+   {
+    "w": " aku",
+    "s": 17.08,
+    "e": 17.3
+   },
+   {
+    "w": " perbesar",
+    "s": 17.3,
+    "e": 17.68
+   },
+   {
+    "w": " fotonya",
+    "s": 17.68,
+    "e": 18.04
+   },
+   {
+    "w": " February",
+    "s": 18.04,
+    "e": 18.4
+   },
+   {
+    "w": " D.",
+    "s": 18.4,
+    "e": 18.68
+   },
+   {
+    "w": " Grooke,",
+    "s": 18.76,
+    "e": 19.06
+   }
+  ]
+ },
+ {
+  "start": 19.22,
+  "end": 20.84,
+  "text": " kelihatan bannya kempis.",
+  "words": [
+   {
+    "w": " kelihatan",
+    "s": 19.22,
+    "e": 19.64
+   },
+   {
+    "w": " bannya",
+    "s": 19.64,
+    "e": 19.8
+   },
+   {
+    "w": " kempis.",
+    "s": 19.8,
+    "e": 20.84
+   }
+  ]
+ },
+ {
+  "start": 21.08,
+  "end": 24.54,
+  "text": " Katanya, sambil berjongkok di depan motor Aldo.",
+  "words": [
+   {
+    "w": " Katanya,",
+    "s": 21.08,
+    "e": 21.72
+   },
+   {
+    "w": " sambil",
+    "s": 22.1,
+    "e": 22.38
+   },
+   {
+    "w": " berjongkok",
+    "s": 22.38,
+    "e": 23.06
+   },
+   {
+    "w": " di",
+    "s": 23.06,
+    "e": 23.24
+   },
+   {
+    "w": " depan",
+    "s": 23.24,
+    "e": 23.42
+   },
+   {
+    "w": " motor",
+    "s": 23.42,
+    "e": 23.7
+   },
+   {
+    "w": " Aldo.",
+    "s": 23.7,
+    "e": 24.54
+   }
+  ]
+ },
+ {
+  "start": 24.8,
+  "end": 26.28,
+  "text": " Tangannya bergerak cepat.",
+  "words": [
+   {
+    "w": " Tangannya",
+    "s": 24.8,
+    "e": 25.12
+   },
+   {
+    "w": " bergerak",
+    "s": 25.12,
+    "e": 25.62
+   },
+   {
+    "w": " cepat.",
+    "s": 25.62,
+    "e": 26.28
+   }
+  ]
+ },
+ {
+  "start": 26.52,
+  "end": 28.26,
+  "text": " Membuka baut, mencopot ban,",
+  "words": [
+   {
+    "w": " Membuka",
+    "s": 26.52,
+    "e": 26.86
+   },
+   {
+    "w": " baut,",
+    "s": 26.86,
+    "e": 27.3
+   },
+   {
+    "w": " mencopot",
+    "s": 27.54,
+    "e": 27.96
+   },
+   {
+    "w": " ban,",
+    "s": 27.96,
+    "e": 28.26
+   }
+  ]
+ },
+ {
+  "start": 28.64,
+  "end": 29.84,
+  "text": " memasang ban dalam baru.",
+  "words": [
+   {
+    "w": " memasang",
+    "s": 28.64,
+    "e": 29.02
+   },
+   {
+    "w": " ban",
+    "s": 29.02,
+    "e": 29.28
+   },
+   {
+    "w": " dalam",
+    "s": 29.28,
+    "e": 29.54
+   },
+   {
+    "w": " baru.",
+    "s": 29.54,
+    "e": 29.84
+   }
+  ]
+ },
+ {
+  "start": 30.0,
+  "end": 32.78,
+  "text": " Seperti sudah ratusan kali melakukannya.",
+  "words": [
+   {
+    "w": " Seperti",
+    "s": 30.0,
+    "e": 30.68
+   },
+   {
+    "w": " sudah",
+    "s": 30.68,
+    "e": 31.0
+   },
+   {
+    "w": " ratusan",
+    "s": 31.0,
+    "e": 31.48
+   },
+   {
+    "w": " kali",
+    "s": 31.48,
+    "e": 31.9
+   },
+   {
+    "w": " melakukannya.",
+    "s": 31.9,
+    "e": 32.78
+   }
+  ]
+ },
+ {
+  "start": 33.1,
+  "end": 34.34,
+  "text": " Kok kamu jago, Gel?",
+  "words": [
+   {
+    "w": " Kok",
+    "s": 33.1,
+    "e": 33.18
+   },
+   {
+    "w": " kamu",
+    "s": 33.18,
+    "e": 33.56
+   },
+   {
+    "w": " jago,",
+    "s": 33.56,
+    "e": 34.14
+   },
+   {
+    "w": " Gel?",
+    "s": 34.32,
+    "e": 34.34
+   }
+  ]
+ },
+ {
+  "start": 34.76,
+  "end": 35.84,
+  "text": " Tanya February pelan.",
+  "words": [
+   {
+    "w": " Tanya",
+    "s": 34.76,
+    "e": 35.1
+   },
+   {
+    "w": " February",
+    "s": 35.1,
+    "e": 35.42
+   },
+   {
+    "w": " pelan.",
+    "s": 35.42,
+    "e": 35.84
+   }
+  ]
+ },
+ {
+  "start": 36.98,
+  "end": 38.42,
+  "text": " Geli diam sebentar.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 36.98,
+    "e": 37.28
+   },
+   {
+    "w": " diam",
+    "s": 37.28,
+    "e": 37.7
+   },
+   {
+    "w": " sebentar.",
+    "s": 37.7,
+    "e": 38.42
+   }
+  ]
+ },
+ {
+  "start": 38.94,
+  "end": 40.44,
+  "text": " Itu urusanku tiap Sabtu.",
+  "words": [
+   {
+    "w": " Itu",
+    "s": 38.94,
+    "e": 39.12
+   },
+   {
+    "w": " urusanku",
+    "s": 39.12,
+    "e": 39.72
+   },
+   {
+    "w": " tiap",
+    "s": 39.72,
+    "e": 39.98
+   },
+   {
+    "w": " Sabtu.",
+    "s": 39.98,
+    "e": 40.44
+   }
+  ]
+ },
+ {
+  "start": 41.6,
+  "end": 44.24,
+  "text": " Bapakku sakit pinggang sejak tiga bulan lalu.",
+  "words": [
+   {
+    "w": " Bapakku",
+    "s": 41.6,
+    "e": 42.0
+   },
+   {
+    "w": " sakit",
+    "s": 42.0,
+    "e": 42.28
+   },
+   {
+    "w": " pinggang",
+    "s": 42.28,
+    "e": 42.7
+   },
+   {
+    "w": " sejak",
+    "s": 42.7,
+    "e": 43.0
+   },
+   {
+    "w": " tiga",
+    "s": 43.0,
+    "e": 43.24
+   },
+   {
+    "w": " bulan",
+    "s": 43.24,
+    "e": 43.48
+   },
+   {
+    "w": " lalu.",
+    "s": 43.48,
+    "e": 44.24
+   }
+  ]
+ },
+ {
+  "start": 44.48,
+  "end": 46.0,
+  "text": " Jadi aku yang jaga Bengkelnya.",
+  "words": [
+   {
+    "w": " Jadi",
+    "s": 44.48,
+    "e": 44.66
+   },
+   {
+    "w": " aku",
+    "s": 44.66,
+    "e": 44.98
+   },
+   {
+    "w": " yang",
+    "s": 44.98,
+    "e": 45.12
+   },
+   {
+    "w": " jaga",
+    "s": 45.12,
+    "e": 45.34
+   },
+   {
+    "w": " Bengkelnya.",
+    "s": 45.34,
+    "e": 46.0
+   }
+  ]
+ },
+ {
+  "start": 46.32,
+  "end": 48.48,
+  "text": " Kalau Bengkel tutup, nggak ada pemasukan.",
+  "words": [
+   {
+    "w": " Kalau",
+    "s": 46.32,
+    "e": 46.5
+   },
+   {
+    "w": " Bengkel",
+    "s": 46.5,
+    "e": 46.84
+   },
+   {
+    "w": " tutup,",
+    "s": 46.84,
+    "e": 47.44
+   },
+   {
+    "w": " nggak",
+    "s": 47.62,
+    "e": 47.72
+   },
+   {
+    "w": " ada",
+    "s": 47.72,
+    "e": 47.82
+   },
+   {
+    "w": " pemasukan.",
+    "s": 47.82,
+    "e": 48.48
+   }
+  ]
+ },
+ {
+  "start": 48.98,
+  "end": 50.4,
+  "text": " Hujan masih turun.",
+  "words": [
+   {
+    "w": " Hujan",
+    "s": 48.98,
+    "e": 49.32
+   },
+   {
+    "w": " masih",
+    "s": 49.32,
+    "e": 49.62
+   },
+   {
+    "w": " turun.",
+    "s": 49.62,
+    "e": 50.4
+   }
+  ]
+ },
+ {
+  "start": 50.56,
+  "end": 52.16,
+  "text": " Tetapi tidak ada yang bicara.",
+  "words": [
+   {
+    "w": " Tetapi",
+    "s": 50.56,
+    "e": 50.9
+   },
+   {
+    "w": " tidak",
+    "s": 50.9,
+    "e": 51.2
+   },
+   {
+    "w": " ada",
+    "s": 51.2,
+    "e": 51.36
+   },
+   {
+    "w": " yang",
+    "s": 51.36,
+    "e": 51.48
+   },
+   {
+    "w": " bicara.",
+    "s": 51.48,
+    "e": 52.16
+   }
+  ]
+ },
+ {
+  "start": 52.7,
+  "end": 55.4,
+  "text": " Akhirnya, February yang pertama membuka suara.",
+  "words": [
+   {
+    "w": " Akhirnya,",
+    "s": 52.7,
+    "e": 53.22
+   },
+   {
+    "w": " February",
+    "s": 53.4,
+    "e": 53.68
+   },
+   {
+    "w": " yang",
+    "s": 53.68,
+    "e": 53.9
+   },
+   {
+    "w": " pertama",
+    "s": 53.9,
+    "e": 54.32
+   },
+   {
+    "w": " membuka",
+    "s": 54.32,
+    "e": 54.88
+   },
+   {
+    "w": " suara.",
+    "s": 54.88,
+    "e": 55.4
+   }
+  ]
+ },
+ {
+  "start": 57.1,
+  "end": 57.879999999999995,
+  "text": " Gel, maaf.",
+  "words": [
+   {
+    "w": " Gel,",
+    "s": 57.1,
+    "e": 57.78
+   },
+   {
+    "w": " maaf.",
+    "s": 57.78,
+    "e": 58.120000000000005
+   }
+  ]
+ },
+ {
+  "start": 58.12,
+  "end": 60.64,
+  "text": " Pesanku kemarin nyembelin banget.",
+  "words": [
+   {
+    "w": " Pesanku",
+    "s": 58.12,
+    "e": 59.04
+   },
+   {
+    "w": " kemarin",
+    "s": 59.04,
+    "e": 59.36
+   },
+   {
+    "w": " nyembelin",
+    "s": 59.36,
+    "e": 59.86
+   },
+   {
+    "w": " banget.",
+    "s": 59.86,
+    "e": 60.64
+   }
+  ]
+ },
+ {
+  "start": 60.68,
+  "end": 64.58,
+  "text": " Geli tersenyum kecil, sambil mengencangkan bau terakhir.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 60.68,
+    "e": 61.04
+   },
+   {
+    "w": " tersenyum",
+    "s": 61.04,
+    "e": 61.52
+   },
+   {
+    "w": " kecil,",
+    "s": 61.52,
+    "e": 62.18
+   },
+   {
+    "w": " sambil",
+    "s": 62.26,
+    "e": 62.68
+   },
+   {
+    "w": " mengencangkan",
+    "s": 62.68,
+    "e": 63.42
+   },
+   {
+    "w": " bau",
+    "s": 63.42,
+    "e": 63.66
+   },
+   {
+    "w": " terakhir.",
+    "s": 63.66,
+    "e": 64.58
+   }
+  ]
+ },
+ {
+  "start": 66.08,
+  "end": 66.78,
+  "text": " Santai.",
+  "words": [
+   {
+    "w": " Santai.",
+    "s": 66.08,
+    "e": 66.78
+   }
+  ]
+ },
+ {
+  "start": 67.16,
+  "end": 68.2,
+  "text": " Aku juga salah.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 67.16,
+    "e": 67.42
+   },
+   {
+    "w": " juga",
+    "s": 67.42,
+    "e": 67.7
+   },
+   {
+    "w": " salah.",
+    "s": 67.7,
+    "e": 68.2
+   }
+  ]
+ },
+ {
+  "start": 68.58,
+  "end": 69.58,
+  "text": " Nggak pernah cerita.",
+  "words": [
+   {
+    "w": " Nggak",
+    "s": 68.58,
+    "e": 68.72
+   },
+   {
+    "w": " pernah",
+    "s": 68.72,
+    "e": 68.98
+   },
+   {
+    "w": " cerita.",
+    "s": 68.98,
+    "e": 69.58
+   }
+  ]
+ },
+ {
+  "start": 70.02,
+  "end": 72.3,
+  "text": " Mereka tidak jadi ke air terjun hari itu.",
+  "words": [
+   {
+    "w": " Mereka",
+    "s": 70.02,
+    "e": 70.32
+   },
+   {
+    "w": " tidak",
+    "s": 70.32,
+    "e": 70.62
+   },
+   {
+    "w": " jadi",
+    "s": 70.62,
+    "e": 70.92
+   },
+   {
+    "w": " ke",
+    "s": 70.92,
+    "e": 71.08
+   },
+   {
+    "w": " air",
+    "s": 71.08,
+    "e": 71.26
+   },
+   {
+    "w": " terjun",
+    "s": 71.26,
+    "e": 71.6
+   },
+   {
+    "w": " hari",
+    "s": 71.6,
+    "e": 71.9
+   },
+   {
+    "w": " itu.",
+    "s": 71.9,
+    "e": 72.3
+   }
+  ]
+ },
+ {
+  "start": 72.82,
+  "end": 74.72,
+  "text": " Mereka semua ikut ke Bengkel Geli,",
+  "words": [
+   {
+    "w": " Mereka",
+    "s": 72.82,
+    "e": 73.16
+   },
+   {
+    "w": " semua",
+    "s": 73.16,
+    "e": 73.46
+   },
+   {
+    "w": " ikut",
+    "s": 73.46,
+    "e": 73.84
+   },
+   {
+    "w": " ke",
+    "s": 73.84,
+    "e": 73.98
+   },
+   {
+    "w": " Bengkel",
+    "s": 73.98,
+    "e": 74.28
+   },
+   {
+    "w": " Geli,",
+    "s": 74.28,
+    "e": 74.72
+   }
+  ]
+ },
+ {
+  "start": 75.1,
+  "end": 76.78,
+  "text": " minum teh panas dari bapaknya,",
+  "words": [
+   {
+    "w": " minum",
+    "s": 75.1,
+    "e": 75.26
+   },
+   {
+    "w": " teh",
+    "s": 75.26,
+    "e": 75.44
+   },
+   {
+    "w": " panas",
+    "s": 75.44,
+    "e": 75.86
+   },
+   {
+    "w": " dari",
+    "s": 75.86,
+    "e": 76.08
+   },
+   {
+    "w": " bapaknya,",
+    "s": 76.08,
+    "e": 76.78
+   }
+  ]
+ },
+ {
+  "start": 77.1,
+  "end": 79.48,
+  "text": " dan pulang sore dengan baju setelah basah.",
+  "words": [
+   {
+    "w": " dan",
+    "s": 77.1,
+    "e": 77.26
+   },
+   {
+    "w": " pulang",
+    "s": 77.26,
+    "e": 77.58
+   },
+   {
+    "w": " sore",
+    "s": 77.58,
+    "e": 77.92
+   },
+   {
+    "w": " dengan",
+    "s": 77.92,
+    "e": 78.3
+   },
+   {
+    "w": " baju",
+    "s": 78.3,
+    "e": 78.76
+   },
+   {
+    "w": " setelah",
+    "s": 78.76,
+    "e": 79.12
+   },
+   {
+    "w": " basah.",
+    "s": 79.12,
+    "e": 79.48
+   }
+  ]
+ },
+ {
+  "start": 80.6,
+  "end": 83.46,
+  "text": " Seminggu kemudian, grup itu berganti nama.",
+  "words": [
+   {
+    "w": " Seminggu",
+    "s": 80.6,
+    "e": 80.94
+   },
+   {
+    "w": " kemudian,",
+    "s": 80.94,
+    "e": 81.68
+   },
+   {
+    "w": " grup",
+    "s": 81.88,
+    "e": 82.04
+   },
+   {
+    "w": " itu",
+    "s": 82.04,
+    "e": 82.38
+   },
+   {
+    "w": " berganti",
+    "s": 82.38,
+    "e": 82.84
+   },
+   {
+    "w": " nama.",
+    "s": 82.84,
+    "e": 83.46
+   }
+  ]
+ },
+ {
+  "start": 83.72,
+  "end": 86.68,
+  "text": " Anak Motor Gabut, Sabtu Bantu Bengkel.",
+  "words": [
+   {
+    "w": " Anak",
+    "s": 83.72,
+    "e": 84.06
+   },
+   {
+    "w": " Motor",
+    "s": 84.06,
+    "e": 84.38
+   },
+   {
+    "w": " Gabut,",
+    "s": 84.38,
+    "e": 84.98
+   },
+   {
+    "w": " Sabtu",
+    "s": 85.24,
+    "e": 85.74
+   },
+   {
+    "w": " Bantu",
+    "s": 85.74,
+    "e": 86.12
+   },
+   {
+    "w": " Bengkel.",
+    "s": 86.12,
+    "e": 86.68
+   }
+  ]
+ },
+ {
+  "start": 87.4,
+  "end": 92.36,
+  "text": " Sabtu pagi, lima motor berbaris di depan Bengkel kecil di ujung jalan.",
+  "words": [
+   {
+    "w": " Sabtu",
+    "s": 87.4,
+    "e": 88.04
+   },
+   {
+    "w": " pagi,",
+    "s": 88.04,
+    "e": 88.68
+   },
+   {
+    "w": " lima",
+    "s": 88.74,
+    "e": 89.02
+   },
+   {
+    "w": " motor",
+    "s": 89.02,
+    "e": 89.28
+   },
+   {
+    "w": " berbaris",
+    "s": 89.28,
+    "e": 89.94
+   },
+   {
+    "w": " di",
+    "s": 89.94,
+    "e": 90.1
+   },
+   {
+    "w": " depan",
+    "s": 90.1,
+    "e": 90.32
+   },
+   {
+    "w": " Bengkel",
+    "s": 90.32,
+    "e": 90.64
+   },
+   {
+    "w": " kecil",
+    "s": 90.64,
+    "e": 91.1
+   },
+   {
+    "w": " di",
+    "s": 91.1,
+    "e": 91.34
+   },
+   {
+    "w": " ujung",
+    "s": 91.34,
+    "e": 91.64
+   },
+   {
+    "w": " jalan.",
+    "s": 91.64,
+    "e": 92.36
+   }
+  ]
+ },
+ {
+  "start": 92.66,
+  "end": 96.98,
+  "text": " Setelah Bengkel tutup jam 2, baru mereka berangkat bersama ke air terjun.",
+  "words": [
+   {
+    "w": " Setelah",
+    "s": 92.66,
+    "e": 92.94
+   },
+   {
+    "w": " Bengkel",
+    "s": 92.94,
+    "e": 93.28
+   },
+   {
+    "w": " tutup",
+    "s": 93.28,
+    "e": 93.6
+   },
+   {
+    "w": " jam",
+    "s": 93.6,
+    "e": 93.78
+   },
+   {
+    "w": " 2,",
+    "s": 93.78,
+    "e": 94.18
+   },
+   {
+    "w": " baru",
+    "s": 94.68,
+    "e": 94.92
+   },
+   {
+    "w": " mereka",
+    "s": 94.92,
+    "e": 95.24
+   },
+   {
+    "w": " berangkat",
+    "s": 95.24,
+    "e": 95.68
+   },
+   {
+    "w": " bersama",
+    "s": 95.68,
+    "e": 96.2
+   },
+   {
+    "w": " ke",
+    "s": 96.2,
+    "e": 96.34
+   },
+   {
+    "w": " air",
+    "s": 96.34,
+    "e": 96.52
+   },
+   {
+    "w": " terjun.",
+    "s": 96.52,
+    "e": 96.98
+   }
+  ]
+ },
+ {
+  "start": 97.72,
+  "end": 100.1,
+  "text": " Kali ini, lemkap berlima.",
+  "words": [
+   {
+    "w": " Kali",
+    "s": 97.72,
+    "e": 97.96
+   },
+   {
+    "w": " ini,",
+    "s": 97.96,
+    "e": 98.5
+   },
+   {
+    "w": " lemkap",
+    "s": 98.74,
+    "e": 99.12
+   },
+   {
+    "w": " berlima.",
+    "s": 99.12,
+    "e": 100.1
+   }
+  ]
+ },
+ {
+  "start": 100.34,
+  "end": 100.7,
+  "text": " Tamat.",
+  "words": [
+   {
+    "w": " Tamat.",
+    "s": 100.34,
+    "e": 100.7
+   }
+  ]
+ }
+]

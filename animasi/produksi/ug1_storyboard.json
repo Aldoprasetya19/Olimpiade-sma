@@ -1,0 +1,449 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 80.44,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "GELLY": {
+   "warna": "#FFD84A"
+  },
+  "FEBRI": {
+   "warna": "#8FE3D8"
+  },
+  "ALDO S": {
+   "warna": "#C7A4FF"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "STEFAN": {
+   "warna": "#A8D8F8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 80.44,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.38,
+     "teks": "Bagian satu,"
+    },
+    {
+     "start": 1.38,
+     "end": 2.95,
+     "teks": "Urusan Gelly."
+    },
+    {
+     "start": 3.34,
+     "end": 4.3,
+     "teks": "Sudah 3 minggu,"
+    },
+    {
+     "start": 4.3,
+     "end": 4.94,
+     "teks": "grup Anak Motor"
+    },
+    {
+     "start": 4.94,
+     "end": 5.96,
+     "teks": "Gabut merencanakan"
+    },
+    {
+     "start": 5.96,
+     "end": 7.5,
+     "teks": "hal yang sama."
+    },
+    {
+     "start": 7.5,
+     "end": 8.16,
+     "teks": "Ke air terjun"
+    },
+    {
+     "start": 8.16,
+     "end": 9.4,
+     "teks": "di ujung kampung,"
+    },
+    {
+     "start": 9.4,
+     "end": 10.46,
+     "teks": "Sabtu pagi,"
+    },
+    {
+     "start": 10.46,
+     "end": 12.01,
+     "teks": "naik motor bareng."
+    },
+    {
+     "start": 12.04,
+     "end": 12.72,
+     "teks": "Dan sudah 3"
+    },
+    {
+     "start": 12.72,
+     "end": 13.58,
+     "teks": "kali juga,"
+    },
+    {
+     "start": 13.58,
+     "end": 15.19,
+     "teks": "rencana itu batal."
+    },
+    {
+     "start": 15.19,
+     "end": 15.88,
+     "teks": "Gara-gara satu"
+    },
+    {
+     "start": 15.88,
+     "end": 16.55,
+     "teks": "orang."
+    },
+    {
+     "start": 16.78,
+     "end": 17.84,
+     "teks": "\"Maaf guys,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 17.84,
+     "end": 19.08,
+     "teks": "aku gak bisa.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 19.08,
+     "end": 19.95,
+     "teks": "Ada urusan.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 20.3,
+     "end": 21.88,
+     "teks": "Pesan itu lagi,"
+    },
+    {
+     "start": 21.88,
+     "end": 23.28,
+     "teks": "dari Gelly."
+    },
+    {
+     "start": 23.28,
+     "end": 23.97,
+     "teks": "Lagi."
+    },
+    {
+     "start": 24.46,
+     "end": 25.38,
+     "teks": "Febri langsung"
+    },
+    {
+     "start": 25.38,
+     "end": 26.37,
+     "teks": "membalas."
+    },
+    {
+     "start": 26.48,
+     "end": 27.56,
+     "teks": "\"Urusan apa sih,",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 27.56,
+     "end": 28.1,
+     "teks": "Gel?",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 28.1,
+     "end": 29.12,
+     "teks": "Setiap Sabtu urusan",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 29.12,
+     "end": 29.81,
+     "teks": "terus.\"",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 30.08,
+     "end": 30.78,
+     "teks": "Gelly tidak"
+    },
+    {
+     "start": 30.78,
+     "end": 32.0,
+     "teks": "menjawab."
+    },
+    {
+     "start": 32.0,
+     "end": 33.42,
+     "teks": "Statusnya cuma"
+    },
+    {
+     "start": 33.42,
+     "end": 34.14,
+     "teks": "\"terakhir dilihat"
+    },
+    {
+     "start": 34.14,
+     "end": 35.0,
+     "teks": "jam 5 lewat"
+    },
+    {
+     "start": 35.0,
+     "end": 36.07,
+     "teks": "12 pagi.\""
+    },
+    {
+     "start": 37.36,
+     "end": 39.05,
+     "teks": "Aldo menghela napas."
+    },
+    {
+     "start": 39.18,
+     "end": 40.85,
+     "teks": "Lalu Aldo S."
+    },
+    {
+     "start": 40.85,
+     "end": 41.25,
+     "teks": "menelepon."
+    },
+    {
+     "start": 41.37,
+     "end": 41.9,
+     "teks": "\"Udah,",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 41.9,
+     "end": 42.64,
+     "teks": "kita berangkat aja",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 42.64,
+     "end": 43.76,
+     "teks": "berempat.",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 43.76,
+     "end": 44.26,
+     "teks": "Aku,",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 44.26,
+     "end": 44.98,
+     "teks": "kamu,",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 44.98,
+     "end": 45.6,
+     "teks": "Febri,",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 45.6,
+     "end": 46.52,
+     "teks": "Stefan.",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 46.52,
+     "end": 47.06,
+     "teks": "Nggak usah nunggu",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 47.06,
+     "end": 47.73,
+     "teks": "Gelly lagi.\"",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 47.98,
+     "end": 48.94,
+     "teks": "\"Tapi,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 48.94,
+     "end": 49.96,
+     "teks": "dia kan...\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 49.96,
+     "end": 50.86,
+     "teks": "Stefan langsung"
+    },
+    {
+     "start": 50.86,
+     "end": 51.66,
+     "teks": "memotong dari"
+    },
+    {
+     "start": 51.66,
+     "end": 52.43,
+     "teks": "seberang."
+    },
+    {
+     "start": 52.46,
+     "end": 53.52,
+     "teks": "\"Udah lah,",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 53.52,
+     "end": 54.22,
+     "teks": "mungkin dia memang",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 54.22,
+     "end": 55.04,
+     "teks": "udah males main",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 55.04,
+     "end": 55.87,
+     "teks": "sama kita.\"",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 56.12,
+     "end": 57.2,
+     "teks": "Aldo menatap foto"
+    },
+    {
+     "start": 57.2,
+     "end": 58.46,
+     "teks": "profil grup."
+    },
+    {
+     "start": 58.46,
+     "end": 59.64,
+     "teks": "Foto mereka berlima"
+    },
+    {
+     "start": 59.64,
+     "end": 61.2,
+     "teks": "waktu kelas 10."
+    },
+    {
+     "start": 61.2,
+     "end": 61.98,
+     "teks": "Tertawa di pinggir"
+    },
+    {
+     "start": 61.98,
+     "end": 62.98,
+     "teks": "jalan."
+    },
+    {
+     "start": 62.98,
+     "end": 64.6,
+     "teks": "Basah kuyup"
+    },
+    {
+     "start": 64.6,
+     "end": 65.0,
+     "teks": "kehujanan."
+    },
+    {
+     "start": 65.5,
+     "end": 66.72,
+     "teks": "Sabtu pagi,"
+    },
+    {
+     "start": 66.72,
+     "end": 67.12,
+     "teks": "dua motor"
+    },
+    {
+     "start": 67.12,
+     "end": 67.82,
+     "teks": "berboncengan"
+    },
+    {
+     "start": 67.82,
+     "end": 69.81,
+     "teks": "berangkat tanpa"
+    },
+    {
+     "start": 69.81,
+     "end": 70.21,
+     "teks": "Gelly."
+    },
+    {
+     "start": 70.48,
+     "end": 71.64,
+     "teks": "Febri mengirim share"
+    },
+    {
+     "start": 71.64,
+     "end": 72.5,
+     "teks": "live location ke"
+    },
+    {
+     "start": 72.5,
+     "end": 73.01,
+     "teks": "grup."
+    },
+    {
+     "start": 73.34,
+     "end": 73.92,
+     "teks": "\"Biar yang ada",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 73.92,
+     "end": 74.7,
+     "teks": "urusan,",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 74.7,
+     "end": 76.33,
+     "teks": "bisa lihat kita",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 76.33,
+     "end": 76.73,
+     "teks": "senang-senang.\"",
+     "siapa": "FEBRI"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "URUSAN",
+  "baris2": "GELLY",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 77.14,
+  "end": 80.44,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Jalan Sepi"
+ }
+}

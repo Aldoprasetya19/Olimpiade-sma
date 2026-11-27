@@ -95,3 +95,14 @@ terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di
   gugup/cemas/khawatir/takut, sedih/murung/kusut, menangis, kecewa, marah/kesal, senang/gembira/bersorak, lega,
   menyesal, menelan ludah → cemas (ekspresi yang ditulis eksplisit di naskah tetap dipakai).
 - Kursi meja belajar kamar menghadap meja (sandaran di belakang tokoh).
+
+### Motor, jalan, hujan, gubuk, bengkel (seri "Urusan Gelly")
+- Lokasi: `jalanAspal`, `jalanTanah` (kebun kelapa), `jalanBerhenti` (ban kempis), `jalanMendung` (hujan), `gubuk` (hujan,
+  motor tua datang), `bengkel`, `bengkel5` (lima motor), `jalanBukit` (lima motor menuju bukit), kamar `pinggirKasur`.
+- Slot motor: `motor1Depan/motor1Belakang/motor2Depan/motor2Belakang` (berboncengan, helm otomatis), `motor1Depan..motor5Depan`.
+- Kamera: `{riding}` iring-iringan motor, `{ban}` close-up roda belakang, `{motorTua}` jok belakang motor tua, `{pengendara}` wajah
+  pengendara motor tua. Flag `(oleng)` = motor oleng & berhenti. Pose: `datangMotor`, `lepasHelm`, `jongkok`, `perbaiki` (kunci pas),
+  `teh` (minum teh), `pinggang` (sakit pinggang). Varian `gelly#jas` = jas hujan kuning.
+- HP: `{hp-lokasi}` live location / peta (`[Peta | ...]` menampilkan titik bengkel), `{hp-status} [Baterai | 8%]` / `[Sinyal | 1]`.
+- Telepon: setelah narasi *menelepon*, ucapan tokoh di seberang tampil dengan pose menelepon; flag `(tanpa)` = jangan tampilkan pembicara.
+- Animasi yang memakai seluruh durasi kalimat (motor datang, lepas helm) tetap mulus meski shot dipecah.

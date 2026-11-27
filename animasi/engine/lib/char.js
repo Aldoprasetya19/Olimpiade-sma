@@ -36,6 +36,10 @@ const PRESETS = {
   paksa: { eyes: 'happy', brows: 'worried', mouth: 'smile' },
   kecewa: { eyes: 'down', brows: 'sad', mouth: 'line' },
   fokus: { eyes: 'down', brows: 'netral', mouth: 'line' },
+  ngantuk: { eyes: 'half', brows: 'sad', mouth: 'o' },
+  malu: { eyes: 'down', brows: 'worried', mouth: 'smile' },
+  bingung: { eyes: 'side', brows: 'raised', mouth: 'wavy' },
+  nangis: { eyes: 'closed', brows: 'sad', mouth: 'frown', tear: 1 },
 };
 
 function drawFace(ctx, f, opt) {

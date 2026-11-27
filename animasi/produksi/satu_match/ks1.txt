@@ -1,0 +1,19 @@
+# judul: SATU MATCH | LAGI
+# akhir: BERSAMBUNG... | Bagian 2: Mata yang Tidak Mau Terbuka
+[rumah] dudukKiri=aldo#rumah
+NARATOR {lebar}: Bagian 1. Satu Match Lagi.
+NARATOR {mcu:aldo} (aldo:hp, aldo=senang): Rabu malam, pukul 10. Aldo membuka grup Mabar Squad dan langsung mengetik.
+ALDO {hp-grup} [Mabar Squad | Aldo: Mabar bentar, yuk. Satu match aja.]: "Mabar bentar, yuk. Satu match aja."
+NARATOR {hp-grup} [Mabar Squad | Aldo: Mabar bentar, yuk. Satu match aja. | Aldo S.: gas | Gabriel: on!]: 5 detik kemudian, Aldo S. dan Gabriel sudah online.
+NARATOR {hp-grup} [Mabar Squad | Gabriel: on! | #Justin bergabung | Justin: Kak, aku carry ya.]: Tidak lama, Justin dari kelas 10 ikut bergabung. "Kak, aku carry ya."
+NARATOR {cu:aldo} (aldo:hp, aldo=senang): Match pertama menang. Gabriel berteriak.
+GABRIEL {hp-grup} [Mabar Squad | Gabriel: SATU LAGI! SATU LAGI! | Justin: dikit lagi naik rank!]: "Satu lagi! Satu lagi! Dikit lagi naik rank!"
+NARATOR {cu:aldo} (aldo:hp, aldo=marah): Match kedua kalah.
+GABRIEL {hp-grup} [Mabar Squad | Gabriel: Gak bisa tidur kalau kalah. Satu lagi! | Aldo S.: satu lagi! | Justin: satu lagi!]: "Gak bisa tidur kalau kalah. Satu lagi! Satu lagi! Satu lagi! Satu lagi!"
+NARATOR {cu:aldo} (aldo:hp): Saat Aldo melirik jam di pojok layar, angkanya membuatnya kaget.
+NARATOR {hp-notif} [Mabar Squad | Gabriel: satu lagi!!]: Jam 3 lewat 12 pagi.
+NARATOR {mcu:aldo} (aldo=cemas): Saat itulah ia teringat sesuatu. Buku matematika di mejanya masih tertutup rapat. Persis seperti tadi sore.
+NARATOR {hp-grup} [Grup Kelas XI | Hissari: Jangan lupa ya, besok ulangan matematika jam pertama. Kata Pak Almis, nilainya masuk rapor.]: Ia mengecek grup kelas. Ada pesan dari Hissari yang belum dibaca. "Jangan lupa ya, besok ulangan matematika jam pertama. Kata Pak Almis, nilainya masuk rapor."
+NARATOR {cu:aldo} (aldo=cemas, aldo:hp): Aldo menelan ludah.
+GABRIEL {hp-grup} [Mabar Squad | Gabriel: Satu match lagi! Terakhir beneran!]: Di layar, Gabriel masih mengetik. "Satu match lagi! Terakhir beneran!"
+NARATOR {akhir}: Bersambung.

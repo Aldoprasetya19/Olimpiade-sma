@@ -1,0 +1,514 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 109.28,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 109.28,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.78,
+     "teks": "Bagian 3,"
+    },
+    {
+     "start": 1.78,
+     "end": 3.31,
+     "teks": "Jam 10 Malam."
+    },
+    {
+     "start": 3.92,
+     "end": 5.34,
+     "teks": "Sepulang sekolah,"
+    },
+    {
+     "start": 5.34,
+     "end": 6.08,
+     "teks": "Aldo tidak langsung"
+    },
+    {
+     "start": 6.08,
+     "end": 7.16,
+     "teks": "pulang."
+    },
+    {
+     "start": 7.16,
+     "end": 8.18,
+     "teks": "Ia berdiri lama"
+    },
+    {
+     "start": 8.18,
+     "end": 9.1,
+     "teks": "di depan gerbang"
+    },
+    {
+     "start": 9.1,
+     "end": 10.26,
+     "teks": "sambil memikirkan"
+    },
+    {
+     "start": 10.26,
+     "end": 10.83,
+     "teks": "Justin."
+    },
+    {
+     "start": 11.52,
+     "end": 12.32,
+     "teks": "Justin masih kelas"
+    },
+    {
+     "start": 12.32,
+     "end": 13.18,
+     "teks": "10,"
+    },
+    {
+     "start": 13.18,
+     "end": 13.94,
+     "teks": "dan ia ikut"
+    },
+    {
+     "start": 13.94,
+     "end": 14.8,
+     "teks": "bergadang karena"
+    },
+    {
+     "start": 14.8,
+     "end": 15.77,
+     "teks": "diajak mereka."
+    },
+    {
+     "start": 16.32,
+     "end": 17.28,
+     "teks": "Akhirnya,"
+    },
+    {
+     "start": 17.28,
+     "end": 18.14,
+     "teks": "Aldo mengetik pesan"
+    },
+    {
+     "start": 18.14,
+     "end": 19.44,
+     "teks": "ke HP Kharan."
+    },
+    {
+     "start": 19.44,
+     "end": 20.28,
+     "teks": "\"Tolong sampaikan ke"
+    },
+    {
+     "start": 20.28,
+     "end": 21.24,
+     "teks": "Justin."
+    },
+    {
+     "start": 21.24,
+     "end": 22.4,
+     "teks": "Bilang ke mamanya,"
+    },
+    {
+     "start": 22.4,
+     "end": 22.98,
+     "teks": "yang ngajak itu"
+    },
+    {
+     "start": 22.98,
+     "end": 23.84,
+     "teks": "aku."
+    },
+    {
+     "start": 23.84,
+     "end": 24.83,
+     "teks": "Bukan salah dia.\""
+    },
+    {
+     "start": 25.16,
+     "end": 26.58,
+     "teks": "Seminggu kemudian,"
+    },
+    {
+     "start": 26.58,
+     "end": 27.6,
+     "teks": "Pak Almis membagikan"
+    },
+    {
+     "start": 27.6,
+     "end": 28.44,
+     "teks": "hasil ulangan."
+    },
+    {
+     "start": 28.44,
+     "end": 29.88,
+     "teks": "Kertas Aldo"
+    },
+    {
+     "start": 29.88,
+     "end": 31.55,
+     "teks": "bertuliskan 35."
+    },
+    {
+     "start": 32.16,
+     "end": 32.86,
+     "teks": "Aldo S."
+    },
+    {
+     "start": 32.86,
+     "end": 33.83,
+     "teks": "dapat 40."
+    },
+    {
+     "start": 34.4,
+     "end": 35.42,
+     "teks": "Gabriel menutup"
+    },
+    {
+     "start": 35.42,
+     "end": 37.08,
+     "teks": "kertasnya"
+    },
+    {
+     "start": 37.08,
+     "end": 37.48,
+     "teks": "rapat-rapat."
+    },
+    {
+     "start": 38.06,
+     "end": 39.14,
+     "teks": "Sore itu,"
+    },
+    {
+     "start": 39.14,
+     "end": 40.1,
+     "teks": "Aldo membuka grup"
+    },
+    {
+     "start": 40.1,
+     "end": 41.34,
+     "teks": "Mabar Squad."
+    },
+    {
+     "start": 41.34,
+     "end": 42.18,
+     "teks": "Ia tidak mengajak"
+    },
+    {
+     "start": 42.18,
+     "end": 42.96,
+     "teks": "main."
+    },
+    {
+     "start": 42.96,
+     "end": 44.18,
+     "teks": "Ia mengetik sesuatu"
+    },
+    {
+     "start": 44.18,
+     "end": 44.75,
+     "teks": "yang lain."
+    },
+    {
+     "start": 44.96,
+     "end": 46.12,
+     "teks": "\"Aturan baru!",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 46.12,
+     "end": 47.02,
+     "teks": "Mabar boleh,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 47.02,
+     "end": 48.24,
+     "teks": "tapi maksimal jam",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 48.24,
+     "end": 49.24,
+     "teks": "10 malam.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 49.24,
+     "end": 49.84,
+     "teks": "Kalau besok ada",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 49.84,
+     "end": 50.6,
+     "teks": "ulangan,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 50.6,
+     "end": 51.34,
+     "teks": "kita belajar dulu",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 51.34,
+     "end": 52.05,
+     "teks": "bareng.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 52.06,
+     "end": 53.2,
+     "teks": "Ia menunggu dengan"
+    },
+    {
+     "start": 53.2,
+     "end": 53.75,
+     "teks": "cemas."
+    },
+    {
+     "start": 54.16,
+     "end": 54.9,
+     "teks": "Balasan pertama"
+    },
+    {
+     "start": 54.9,
+     "end": 56.42,
+     "teks": "masuk dari Justin,"
+    },
+    {
+     "start": 56.42,
+     "end": 57.6,
+     "teks": "yang memakai HP"
+    },
+    {
+     "start": 57.6,
+     "end": 59.18,
+     "teks": "mamanya."
+    },
+    {
+     "start": 59.18,
+     "end": 60.3,
+     "teks": "\"Setuju,"
+    },
+    {
+     "start": 60.3,
+     "end": 60.56,
+     "teks": "Kak!"
+    },
+    {
+     "start": 60.56,
+     "end": 61.22,
+     "teks": "Ini pakai HP"
+    },
+    {
+     "start": 61.22,
+     "end": 62.12,
+     "teks": "mamah."
+    },
+    {
+     "start": 62.12,
+     "end": 63.97,
+     "teks": "Makasih udah jujur.\""
+    },
+    {
+     "start": 64.0,
+     "end": 64.74,
+     "teks": "Aldo S."
+    },
+    {
+     "start": 64.74,
+     "end": 65.94,
+     "teks": "menyusul."
+    },
+    {
+     "start": 65.94,
+     "end": 66.86,
+     "teks": "\"Oke."
+    },
+    {
+     "start": 66.86,
+     "end": 68.1,
+     "teks": "Tapi ajarin aku"
+    },
+    {
+     "start": 68.1,
+     "end": 68.97,
+     "teks": "matematika.\""
+    },
+    {
+     "start": 69.26,
+     "end": 70.44,
+     "teks": "Gabriel membalas"
+    },
+    {
+     "start": 70.44,
+     "end": 72.36,
+     "teks": "paling akhir."
+    },
+    {
+     "start": 72.36,
+     "end": 74.12,
+     "teks": "\"Ya udah."
+    },
+    {
+     "start": 74.12,
+     "end": 75.26,
+     "teks": "Tapi Sabtu boleh"
+    },
+    {
+     "start": 75.26,
+     "end": 75.98,
+     "teks": "sampai jam 11"
+    },
+    {
+     "start": 75.98,
+     "end": 76.43,
+     "teks": "ya.\""
+    },
+    {
+     "start": 76.72,
+     "end": 77.5,
+     "teks": "Remedial minggu"
+    },
+    {
+     "start": 77.5,
+     "end": 78.52,
+     "teks": "berikutnya,"
+    },
+    {
+     "start": 78.52,
+     "end": 79.3,
+     "teks": "mereka belajar"
+    },
+    {
+     "start": 79.3,
+     "end": 80.18,
+     "teks": "bersama Hissari"
+    },
+    {
+     "start": 80.18,
+     "end": 81.51,
+     "teks": "sepulang sekolah."
+    },
+    {
+     "start": 81.52,
+     "end": 82.68,
+     "teks": "Hasilnya,"
+    },
+    {
+     "start": 82.68,
+     "end": 84.37,
+     "teks": "Aldo dapat 78."
+    },
+    {
+     "start": 84.82,
+     "end": 85.7,
+     "teks": "Justin juga"
+    },
+    {
+     "start": 85.7,
+     "end": 86.72,
+     "teks": "mendapatkan HP-nya"
+    },
+    {
+     "start": 86.72,
+     "end": 87.32,
+     "teks": "kembali."
+    },
+    {
+     "start": 87.32,
+     "end": 88.6,
+     "teks": "Dengan satu syarat"
+    },
+    {
+     "start": 88.6,
+     "end": 90.32,
+     "teks": "dari mamanya: setiap"
+    },
+    {
+     "start": 90.32,
+     "end": 93.14,
+     "teks": "jam 10 malam,"
+    },
+    {
+     "start": 93.14,
+     "end": 94.5,
+     "teks": "HP ditaruh di"
+    },
+    {
+     "start": 94.5,
+     "end": 95.27,
+     "teks": "ruang tamu."
+    },
+    {
+     "start": 96.44,
+     "end": 97.5,
+     "teks": "Malam itu,"
+    },
+    {
+     "start": 97.5,
+     "end": 99.16,
+     "teks": "tepat pukul 10,"
+    },
+    {
+     "start": 99.16,
+     "end": 100.1,
+     "teks": "Aldo menekan tombol"
+    },
+    {
+     "start": 100.1,
+     "end": 101.3,
+     "teks": "keluar."
+    },
+    {
+     "start": 101.3,
+     "end": 101.9,
+     "teks": "Untuk pertama"
+    },
+    {
+     "start": 101.9,
+     "end": 102.84,
+     "teks": "kalinya setelah"
+    },
+    {
+     "start": 102.84,
+     "end": 103.78,
+     "teks": "lama,"
+    },
+    {
+     "start": 103.78,
+     "end": 104.97,
+     "teks": "ia tidur nyenyak."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "JAM 10",
+  "baris2": "MALAM",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 105.98,
+  "end": 109.28,
+  "judul": "TAMAT",
+  "sub": "Satu Match Lagi"
+ }
+}

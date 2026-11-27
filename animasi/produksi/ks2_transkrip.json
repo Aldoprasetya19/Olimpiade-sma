@@ -1,0 +1,1031 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.7,
+  "text": " Bagian 2, Mata Yang Tidak Mau Terbuka",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 0.0,
+    "e": 0.56
+   },
+   {
+    "w": " 2,",
+    "s": 0.56,
+    "e": 1.3
+   },
+   {
+    "w": " Mata",
+    "s": 1.7,
+    "e": 1.98
+   },
+   {
+    "w": " Yang",
+    "s": 1.98,
+    "e": 2.38
+   },
+   {
+    "w": " Tidak",
+    "s": 2.38,
+    "e": 2.82
+   },
+   {
+    "w": " Mau",
+    "s": 2.82,
+    "e": 3.0
+   },
+   {
+    "w": " Terbuka",
+    "s": 3.0,
+    "e": 3.7
+   }
+  ]
+ },
+ {
+  "start": 4.38,
+  "end": 9.84,
+  "text": " Kamis pagi, Aldo masuk kelas dengan mata merah dan rambut berantakan.",
+  "words": [
+   {
+    "w": " Kamis",
+    "s": 4.38,
+    "e": 4.9
+   },
+   {
+    "w": " pagi,",
+    "s": 4.9,
+    "e": 5.86
+   },
+   {
+    "w": " Aldo",
+    "s": 6.14,
+    "e": 6.24
+   },
+   {
+    "w": " masuk",
+    "s": 6.24,
+    "e": 6.54
+   },
+   {
+    "w": " kelas",
+    "s": 6.54,
+    "e": 6.9
+   },
+   {
+    "w": " dengan",
+    "s": 6.9,
+    "e": 7.3
+   },
+   {
+    "w": " mata",
+    "s": 7.3,
+    "e": 7.68
+   },
+   {
+    "w": " merah",
+    "s": 7.68,
+    "e": 8.08
+   },
+   {
+    "w": " dan",
+    "s": 8.08,
+    "e": 8.4
+   },
+   {
+    "w": " rambut",
+    "s": 8.4,
+    "e": 8.82
+   },
+   {
+    "w": " berantakan.",
+    "s": 8.82,
+    "e": 9.84
+   }
+  ]
+ },
+ {
+  "start": 10.12,
+  "end": 13.4,
+  "text": " Di sebelahnya, Aldo S menguap lebar sekali.",
+  "words": [
+   {
+    "w": " Di",
+    "s": 10.12,
+    "e": 10.24
+   },
+   {
+    "w": " sebelahnya,",
+    "s": 10.24,
+    "e": 10.94
+   },
+   {
+    "w": " Aldo",
+    "s": 11.18,
+    "e": 11.6
+   },
+   {
+    "w": " S",
+    "s": 11.6,
+    "e": 11.78
+   },
+   {
+    "w": " menguap",
+    "s": 11.78,
+    "e": 12.3
+   },
+   {
+    "w": " lebar",
+    "s": 12.3,
+    "e": 12.9
+   },
+   {
+    "w": " sekali.",
+    "s": 12.9,
+    "e": 13.4
+   }
+  ]
+ },
+ {
+  "start": 13.96,
+  "end": 17.98,
+  "text": " Gabriel datang terakhir, seragamnya dikancing tidak rapi.",
+  "words": [
+   {
+    "w": " Gabriel",
+    "s": 13.96,
+    "e": 14.38
+   },
+   {
+    "w": " datang",
+    "s": 14.38,
+    "e": 14.74
+   },
+   {
+    "w": " terakhir,",
+    "s": 14.74,
+    "e": 15.48
+   },
+   {
+    "w": " seragamnya",
+    "s": 15.7,
+    "e": 16.28
+   },
+   {
+    "w": " dikancing",
+    "s": 16.28,
+    "e": 16.9
+   },
+   {
+    "w": " tidak",
+    "s": 16.9,
+    "e": 17.26
+   },
+   {
+    "w": " rapi.",
+    "s": 17.26,
+    "e": 17.98
+   }
+  ]
+ },
+ {
+  "start": 18.16,
+  "end": 20.18,
+  "text": " Pak Almis membagikan lembar soal.",
+  "words": [
+   {
+    "w": " Pak",
+    "s": 18.16,
+    "e": 18.3
+   },
+   {
+    "w": " Almis",
+    "s": 18.3,
+    "e": 18.66
+   },
+   {
+    "w": " membagikan",
+    "s": 18.66,
+    "e": 19.26
+   },
+   {
+    "w": " lembar",
+    "s": 19.26,
+    "e": 19.56
+   },
+   {
+    "w": " soal.",
+    "s": 19.56,
+    "e": 20.18
+   }
+  ]
+ },
+ {
+  "start": 20.38,
+  "end": 22.88,
+  "text": " Waktunya 60 menit, mulai.",
+  "words": [
+   {
+    "w": " Waktunya",
+    "s": 20.38,
+    "e": 20.88
+   },
+   {
+    "w": " 60",
+    "s": 20.88,
+    "e": 21.36
+   },
+   {
+    "w": " menit,",
+    "s": 21.36,
+    "e": 22.04
+   },
+   {
+    "w": " mulai.",
+    "s": 22.3,
+    "e": 22.88
+   }
+  ]
+ },
+ {
+  "start": 24.02,
+  "end": 28.3,
+  "text": " Aldo membaca soal nomor 1, angka-angkanya seperti menari.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 24.02,
+    "e": 24.46
+   },
+   {
+    "w": " membaca",
+    "s": 24.46,
+    "e": 24.9
+   },
+   {
+    "w": " soal",
+    "s": 24.9,
+    "e": 25.22
+   },
+   {
+    "w": " nomor",
+    "s": 25.22,
+    "e": 25.56
+   },
+   {
+    "w": " 1,",
+    "s": 25.56,
+    "e": 26.2
+   },
+   {
+    "w": " angka",
+    "s": 26.62,
+    "e": 26.88
+   },
+   {
+    "w": "-angkanya",
+    "s": 26.88,
+    "e": 27.3
+   },
+   {
+    "w": " seperti",
+    "s": 27.3,
+    "e": 27.62
+   },
+   {
+    "w": " menari.",
+    "s": 27.62,
+    "e": 28.3
+   }
+  ]
+ },
+ {
+  "start": 28.3,
+  "end": 31.88,
+  "text": " Ia membacanya lagi, lalu lagi.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 28.3,
+    "e": 29.08
+   },
+   {
+    "w": " membacanya",
+    "s": 29.08,
+    "e": 29.62
+   },
+   {
+    "w": " lagi,",
+    "s": 29.62,
+    "e": 30.1
+   },
+   {
+    "w": " lalu",
+    "s": 30.56,
+    "e": 31.14
+   },
+   {
+    "w": " lagi.",
+    "s": 31.14,
+    "e": 31.88
+   }
+  ]
+ },
+ {
+  "start": 32.38,
+  "end": 39.6,
+  "text": " Kepalanya terasa berat, pelan-pelan, pelan-pelan, dahinya menyentuh meja.",
+  "words": [
+   {
+    "w": " Kepalanya",
+    "s": 32.38,
+    "e": 33.16
+   },
+   {
+    "w": " terasa",
+    "s": 33.16,
+    "e": 33.74
+   },
+   {
+    "w": " berat,",
+    "s": 33.74,
+    "e": 34.7
+   },
+   {
+    "w": " pelan",
+    "s": 35.08,
+    "e": 35.28
+   },
+   {
+    "w": "-pelan,",
+    "s": 35.28,
+    "e": 36.28
+   },
+   {
+    "w": " pelan",
+    "s": 36.36,
+    "e": 36.74
+   },
+   {
+    "w": "-pelan,",
+    "s": 36.74,
+    "e": 37.9
+   },
+   {
+    "w": " dahinya",
+    "s": 38.12,
+    "e": 38.56
+   },
+   {
+    "w": " menyentuh",
+    "s": 38.56,
+    "e": 39.04
+   },
+   {
+    "w": " meja.",
+    "s": 39.04,
+    "e": 39.6
+   }
+  ]
+ },
+ {
+  "start": 40.0,
+  "end": 40.72,
+  "text": " Aldo!",
+  "words": [
+   {
+    "w": " Aldo!",
+    "s": 40.0,
+    "e": 40.72
+   }
+  ]
+ },
+ {
+  "start": 40.86,
+  "end": 42.94,
+  "text": " Aldo tersentak bangun!",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 40.86,
+    "e": 41.64
+   },
+   {
+    "w": " tersentak",
+    "s": 41.64,
+    "e": 42.18
+   },
+   {
+    "w": " bangun!",
+    "s": 42.18,
+    "e": 42.94
+   }
+  ]
+ },
+ {
+  "start": 43.2,
+  "end": 45.06,
+  "text": " Seisi kelas menoleh ke arahnya.",
+  "words": [
+   {
+    "w": " Seisi",
+    "s": 43.2,
+    "e": 43.48
+   },
+   {
+    "w": " kelas",
+    "s": 43.48,
+    "e": 43.84
+   },
+   {
+    "w": " menoleh",
+    "s": 43.84,
+    "e": 44.44
+   },
+   {
+    "w": " ke",
+    "s": 44.44,
+    "e": 44.64
+   },
+   {
+    "w": " arahnya.",
+    "s": 44.64,
+    "e": 45.06
+   }
+  ]
+ },
+ {
+  "start": 45.52,
+  "end": 50.4,
+  "text": " Ada bekas tinta di pipinya, dan lembar jawabannya baru terisi 2 nomor.",
+  "words": [
+   {
+    "w": " Ada",
+    "s": 45.52,
+    "e": 45.68
+   },
+   {
+    "w": " bekas",
+    "s": 45.68,
+    "e": 46.06
+   },
+   {
+    "w": " tinta",
+    "s": 46.06,
+    "e": 46.4
+   },
+   {
+    "w": " di",
+    "s": 46.4,
+    "e": 46.58
+   },
+   {
+    "w": " pipinya,",
+    "s": 46.58,
+    "e": 46.96
+   },
+   {
+    "w": " dan",
+    "s": 47.38,
+    "e": 47.56
+   },
+   {
+    "w": " lembar",
+    "s": 47.56,
+    "e": 47.86
+   },
+   {
+    "w": " jawabannya",
+    "s": 47.86,
+    "e": 48.56
+   },
+   {
+    "w": " baru",
+    "s": 48.56,
+    "e": 49.02
+   },
+   {
+    "w": " terisi",
+    "s": 49.02,
+    "e": 49.46
+   },
+   {
+    "w": " 2",
+    "s": 49.46,
+    "e": 49.82
+   },
+   {
+    "w": " nomor.",
+    "s": 49.82,
+    "e": 50.4
+   }
+  ]
+ },
+ {
+  "start": 50.6,
+  "end": 52.66,
+  "text": " Waktu tinggal 10 menit.",
+  "words": [
+   {
+    "w": " Waktu",
+    "s": 50.6,
+    "e": 50.94
+   },
+   {
+    "w": " tinggal",
+    "s": 50.94,
+    "e": 51.76
+   },
+   {
+    "w": " 10",
+    "s": 51.76,
+    "e": 52.08
+   },
+   {
+    "w": " menit.",
+    "s": 52.08,
+    "e": 52.66
+   }
+  ]
+ },
+ {
+  "start": 52.86,
+  "end": 54.32,
+  "text": " Aldo menulis secepat mungkin.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 52.86,
+    "e": 53.18
+   },
+   {
+    "w": " menulis",
+    "s": 53.18,
+    "e": 53.54
+   },
+   {
+    "w": " secepat",
+    "s": 53.54,
+    "e": 53.94
+   },
+   {
+    "w": " mungkin.",
+    "s": 53.94,
+    "e": 54.32
+   }
+  ]
+ },
+ {
+  "start": 54.84,
+  "end": 57.88,
+  "text": " Bel berbunyi saat ia baru sampai nomor 6 dari 20.",
+  "words": [
+   {
+    "w": " Bel",
+    "s": 54.84,
+    "e": 55.0
+   },
+   {
+    "w": " berbunyi",
+    "s": 55.0,
+    "e": 55.56
+   },
+   {
+    "w": " saat",
+    "s": 55.56,
+    "e": 55.82
+   },
+   {
+    "w": " ia",
+    "s": 55.82,
+    "e": 56.04
+   },
+   {
+    "w": " baru",
+    "s": 56.04,
+    "e": 56.3
+   },
+   {
+    "w": " sampai",
+    "s": 56.3,
+    "e": 56.56
+   },
+   {
+    "w": " nomor",
+    "s": 56.56,
+    "e": 56.88
+   },
+   {
+    "w": " 6",
+    "s": 56.88,
+    "e": 57.22
+   },
+   {
+    "w": " dari",
+    "s": 57.22,
+    "e": 57.46
+   },
+   {
+    "w": " 20.",
+    "s": 57.46,
+    "e": 57.88
+   }
+  ]
+ },
+ {
+  "start": 58.3,
+  "end": 61.36,
+  "text": " Saat istirahat, Geli menghampiri mereka bertiga.",
+  "words": [
+   {
+    "w": " Saat",
+    "s": 58.3,
+    "e": 58.72
+   },
+   {
+    "w": " istirahat,",
+    "s": 58.72,
+    "e": 59.46
+   },
+   {
+    "w": " Geli",
+    "s": 59.72,
+    "e": 59.82
+   },
+   {
+    "w": " menghampiri",
+    "s": 59.82,
+    "e": 60.32
+   },
+   {
+    "w": " mereka",
+    "s": 60.32,
+    "e": 60.58
+   },
+   {
+    "w": " bertiga.",
+    "s": 60.58,
+    "e": 61.36
+   }
+  ]
+ },
+ {
+  "start": 61.48,
+  "end": 62.6,
+  "text": " Kalian kenapa sih?",
+  "words": [
+   {
+    "w": " Kalian",
+    "s": 61.48,
+    "e": 61.8
+   },
+   {
+    "w": " kenapa",
+    "s": 61.8,
+    "e": 62.36
+   },
+   {
+    "w": " sih?",
+    "s": 62.36,
+    "e": 62.6
+   }
+  ]
+ },
+ {
+  "start": 62.9,
+  "end": 63.86,
+  "text": " Kayak zombie.",
+  "words": [
+   {
+    "w": " Kayak",
+    "s": 62.9,
+    "e": 63.24
+   },
+   {
+    "w": " zombie.",
+    "s": 63.24,
+    "e": 63.86
+   }
+  ]
+ },
+ {
+  "start": 64.36,
+  "end": 67.94,
+  "text": " Belum sempat mereka menjawab, Justin muncul di pintu kelas.",
+  "words": [
+   {
+    "w": " Belum",
+    "s": 64.36,
+    "e": 64.62
+   },
+   {
+    "w": " sempat",
+    "s": 64.62,
+    "e": 64.94
+   },
+   {
+    "w": " mereka",
+    "s": 64.94,
+    "e": 65.22
+   },
+   {
+    "w": " menjawab,",
+    "s": 65.22,
+    "e": 66.1
+   },
+   {
+    "w": " Justin",
+    "s": 66.36,
+    "e": 66.68
+   },
+   {
+    "w": " muncul",
+    "s": 66.68,
+    "e": 67.2
+   },
+   {
+    "w": " di",
+    "s": 67.2,
+    "e": 67.36
+   },
+   {
+    "w": " pintu",
+    "s": 67.36,
+    "e": 67.6
+   },
+   {
+    "w": " kelas.",
+    "s": 67.6,
+    "e": 67.94
+   }
+  ]
+ },
+ {
+  "start": 68.48,
+  "end": 69.72,
+  "text": " Wajahnya kusut.",
+  "words": [
+   {
+    "w": " Wajahnya",
+    "s": 68.48,
+    "e": 69.04
+   },
+   {
+    "w": " kusut.",
+    "s": 69.04,
+    "e": 69.72
+   }
+  ]
+ },
+ {
+  "start": 69.78,
+  "end": 73.34,
+  "text": " Kak, aku juga ketiduran waktu ulangan IPA tadi.",
+  "words": [
+   {
+    "w": " Kak,",
+    "s": 69.78,
+    "e": 70.1
+   },
+   {
+    "w": " aku",
+    "s": 70.62,
+    "e": 70.9
+   },
+   {
+    "w": " juga",
+    "s": 70.9,
+    "e": 71.18
+   },
+   {
+    "w": " ketiduran",
+    "s": 71.18,
+    "e": 71.86
+   },
+   {
+    "w": " waktu",
+    "s": 71.86,
+    "e": 72.12
+   },
+   {
+    "w": " ulangan",
+    "s": 72.12,
+    "e": 72.46
+   },
+   {
+    "w": " IPA",
+    "s": 72.46,
+    "e": 72.88
+   },
+   {
+    "w": " tadi.",
+    "s": 72.88,
+    "e": 73.34
+   }
+  ]
+ },
+ {
+  "start": 73.92,
+  "end": 75.82,
+  "text": " Wali kelasku langsung telepon mamaku.",
+  "words": [
+   {
+    "w": " Wali",
+    "s": 73.92,
+    "e": 74.12
+   },
+   {
+    "w": " kelasku",
+    "s": 74.12,
+    "e": 74.52
+   },
+   {
+    "w": " langsung",
+    "s": 74.52,
+    "e": 74.82
+   },
+   {
+    "w": " telepon",
+    "s": 74.82,
+    "e": 75.24
+   },
+   {
+    "w": " mamaku.",
+    "s": 75.24,
+    "e": 75.82
+   }
+  ]
+ },
+ {
+  "start": 76.24,
+  "end": 81.9,
+  "text": " Ia menunjukkan pesan di hape haran, yang ia pinjam karena hapenya sendiri sudah disita.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 76.24,
+    "e": 76.48
+   },
+   {
+    "w": " menunjukkan",
+    "s": 76.48,
+    "e": 77.08
+   },
+   {
+    "w": " pesan",
+    "s": 77.08,
+    "e": 77.44
+   },
+   {
+    "w": " di",
+    "s": 77.44,
+    "e": 77.62
+   },
+   {
+    "w": " hape",
+    "s": 77.62,
+    "e": 77.9
+   },
+   {
+    "w": " haran,",
+    "s": 77.9,
+    "e": 78.54
+   },
+   {
+    "w": " yang",
+    "s": 78.7,
+    "e": 78.84
+   },
+   {
+    "w": " ia",
+    "s": 78.84,
+    "e": 79.1
+   },
+   {
+    "w": " pinjam",
+    "s": 79.1,
+    "e": 79.62
+   },
+   {
+    "w": " karena",
+    "s": 79.62,
+    "e": 79.96
+   },
+   {
+    "w": " hapenya",
+    "s": 79.96,
+    "e": 80.44
+   },
+   {
+    "w": " sendiri",
+    "s": 80.44,
+    "e": 80.96
+   },
+   {
+    "w": " sudah",
+    "s": 80.96,
+    "e": 81.26
+   },
+   {
+    "w": " disita.",
+    "s": 81.26,
+    "e": 81.9
+   }
+  ]
+ },
+ {
+  "start": 82.38,
+  "end": 83.6,
+  "text": " Mama tunggu di rumah!",
+  "words": [
+   {
+    "w": " Mama",
+    "s": 82.38,
+    "e": 82.66
+   },
+   {
+    "w": " tunggu",
+    "s": 82.66,
+    "e": 83.18
+   },
+   {
+    "w": " di",
+    "s": 83.18,
+    "e": 83.34
+   },
+   {
+    "w": " rumah!",
+    "s": 83.34,
+    "e": 83.6
+   }
+  ]
+ },
+ {
+  "start": 84.14,
+  "end": 87.02,
+  "text": " Mama mau tahu siapa yang ngajak abu main sampai subuh.",
+  "words": [
+   {
+    "w": " Mama",
+    "s": 84.14,
+    "e": 84.34
+   },
+   {
+    "w": " mau",
+    "s": 84.34,
+    "e": 84.62
+   },
+   {
+    "w": " tahu",
+    "s": 84.62,
+    "e": 85.02
+   },
+   {
+    "w": " siapa",
+    "s": 85.02,
+    "e": 85.52
+   },
+   {
+    "w": " yang",
+    "s": 85.52,
+    "e": 85.64
+   },
+   {
+    "w": " ngajak",
+    "s": 85.64,
+    "e": 85.86
+   },
+   {
+    "w": " abu",
+    "s": 85.86,
+    "e": 86.16
+   },
+   {
+    "w": " main",
+    "s": 86.16,
+    "e": 86.38
+   },
+   {
+    "w": " sampai",
+    "s": 86.38,
+    "e": 86.64
+   },
+   {
+    "w": " subuh.",
+    "s": 86.64,
+    "e": 87.02
+   }
+  ]
+ },
+ {
+  "start": 87.02,
+  "end": 88.4,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 87.02,
+    "e": 88.4
+   }
+  ]
+ }
+]

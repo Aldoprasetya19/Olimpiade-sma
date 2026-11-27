@@ -1,0 +1,454 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 90.32,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALMIS": {
+   "warna": "#FFD84A"
+  },
+  "GELLY": {
+   "warna": "#8FE3D8"
+  },
+  "JUSTIN": {
+   "warna": "#C7A4FF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 90.32,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.7,
+     "teks": "Bagian 2,"
+    },
+    {
+     "start": 1.7,
+     "end": 2.82,
+     "teks": "Mata yang Tidak"
+    },
+    {
+     "start": 2.82,
+     "end": 3.85,
+     "teks": "Mau Terbuka."
+    },
+    {
+     "start": 4.38,
+     "end": 6.14,
+     "teks": "Kamis pagi,"
+    },
+    {
+     "start": 6.14,
+     "end": 6.9,
+     "teks": "Aldo masuk kelas"
+    },
+    {
+     "start": 6.9,
+     "end": 8.08,
+     "teks": "dengan mata merah"
+    },
+    {
+     "start": 8.08,
+     "end": 8.82,
+     "teks": "dan rambut"
+    },
+    {
+     "start": 8.82,
+     "end": 9.99,
+     "teks": "berantakan."
+    },
+    {
+     "start": 10.12,
+     "end": 11.18,
+     "teks": "Di sebelahnya,"
+    },
+    {
+     "start": 11.18,
+     "end": 11.78,
+     "teks": "Aldo S."
+    },
+    {
+     "start": 11.78,
+     "end": 12.9,
+     "teks": "menguap lebar"
+    },
+    {
+     "start": 12.9,
+     "end": 13.55,
+     "teks": "sekali."
+    },
+    {
+     "start": 13.96,
+     "end": 14.74,
+     "teks": "Gabriel datang"
+    },
+    {
+     "start": 14.74,
+     "end": 15.7,
+     "teks": "terakhir,"
+    },
+    {
+     "start": 15.7,
+     "end": 16.9,
+     "teks": "seragamnya dikancing"
+    },
+    {
+     "start": 16.9,
+     "end": 18.13,
+     "teks": "tidak rapi."
+    },
+    {
+     "start": 18.16,
+     "end": 19.26,
+     "teks": "Pak Almis membagikan"
+    },
+    {
+     "start": 19.26,
+     "end": 20.33,
+     "teks": "lembar soal."
+    },
+    {
+     "start": 20.38,
+     "end": 22.3,
+     "teks": "\"Waktunya 60 menit.",
+     "siapa": "ALMIS"
+    },
+    {
+     "start": 22.3,
+     "end": 23.03,
+     "teks": "Mulai.\"",
+     "siapa": "ALMIS"
+    },
+    {
+     "start": 24.02,
+     "end": 25.22,
+     "teks": "Aldo membaca soal"
+    },
+    {
+     "start": 25.22,
+     "end": 26.75,
+     "teks": "nomor 1."
+    },
+    {
+     "start": 26.75,
+     "end": 27.3,
+     "teks": "Angka-angkanya"
+    },
+    {
+     "start": 27.3,
+     "end": 28.3,
+     "teks": "seperti menari."
+    },
+    {
+     "start": 28.3,
+     "end": 30.56,
+     "teks": "Ia membacanya lagi,"
+    },
+    {
+     "start": 30.56,
+     "end": 32.03,
+     "teks": "lalu lagi."
+    },
+    {
+     "start": 32.38,
+     "end": 33.74,
+     "teks": "Kepalanya terasa"
+    },
+    {
+     "start": 33.74,
+     "end": 35.84,
+     "teks": "berat."
+    },
+    {
+     "start": 35.84,
+     "end": 36.98,
+     "teks": "Pelan-pelan,"
+    },
+    {
+     "start": 36.98,
+     "end": 38.12,
+     "teks": "pelan-pelan,"
+    },
+    {
+     "start": 38.12,
+     "end": 39.04,
+     "teks": "dahinya menyentuh"
+    },
+    {
+     "start": 39.04,
+     "end": 39.75,
+     "teks": "meja."
+    },
+    {
+     "start": 40.0,
+     "end": 40.86,
+     "teks": "\"Aldo!\"",
+     "siapa": "ALMIS"
+    },
+    {
+     "start": 40.86,
+     "end": 42.18,
+     "teks": "Aldo tersentak"
+    },
+    {
+     "start": 42.18,
+     "end": 43.09,
+     "teks": "bangun!"
+    },
+    {
+     "start": 43.2,
+     "end": 44.44,
+     "teks": "Seisi kelas menoleh"
+    },
+    {
+     "start": 44.44,
+     "end": 45.21,
+     "teks": "ke arahnya."
+    },
+    {
+     "start": 45.52,
+     "end": 46.4,
+     "teks": "Ada bekas tinta"
+    },
+    {
+     "start": 46.4,
+     "end": 47.38,
+     "teks": "di pipinya,"
+    },
+    {
+     "start": 47.38,
+     "end": 47.86,
+     "teks": "dan lembar"
+    },
+    {
+     "start": 47.86,
+     "end": 49.02,
+     "teks": "jawabannya baru"
+    },
+    {
+     "start": 49.02,
+     "end": 50.6,
+     "teks": "terisi 2 nomor."
+    },
+    {
+     "start": 50.6,
+     "end": 52.08,
+     "teks": "Waktu tinggal 10"
+    },
+    {
+     "start": 52.08,
+     "end": 52.81,
+     "teks": "menit."
+    },
+    {
+     "start": 52.86,
+     "end": 53.94,
+     "teks": "Aldo menulis secepat"
+    },
+    {
+     "start": 53.94,
+     "end": 54.84,
+     "teks": "mungkin."
+    },
+    {
+     "start": 54.84,
+     "end": 55.82,
+     "teks": "Bel berbunyi saat"
+    },
+    {
+     "start": 55.82,
+     "end": 56.56,
+     "teks": "ia baru sampai"
+    },
+    {
+     "start": 56.56,
+     "end": 57.46,
+     "teks": "nomor 6 dari"
+    },
+    {
+     "start": 57.46,
+     "end": 58.03,
+     "teks": "20."
+    },
+    {
+     "start": 58.3,
+     "end": 59.64,
+     "teks": "Saat istirahat,"
+    },
+    {
+     "start": 59.64,
+     "end": 60.32,
+     "teks": "Gelly menghampiri"
+    },
+    {
+     "start": 60.32,
+     "end": 61.48,
+     "teks": "mereka bertiga."
+    },
+    {
+     "start": 61.48,
+     "end": 62.9,
+     "teks": "\"Kalian kenapa sih?",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 62.9,
+     "end": 64.01,
+     "teks": "Kayak zombie.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 64.36,
+     "end": 65.22,
+     "teks": "Belum sempat mereka"
+    },
+    {
+     "start": 65.22,
+     "end": 66.36,
+     "teks": "menjawab,"
+    },
+    {
+     "start": 66.36,
+     "end": 67.36,
+     "teks": "Justin muncul di"
+    },
+    {
+     "start": 67.36,
+     "end": 68.48,
+     "teks": "pintu kelas."
+    },
+    {
+     "start": 68.48,
+     "end": 69.78,
+     "teks": "Wajahnya kusut."
+    },
+    {
+     "start": 69.78,
+     "end": 70.62,
+     "teks": "\"Kak,",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 70.62,
+     "end": 71.86,
+     "teks": "aku juga ketiduran",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 71.86,
+     "end": 72.88,
+     "teks": "waktu ulangan IPA",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 72.88,
+     "end": 73.92,
+     "teks": "tadi.",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 73.92,
+     "end": 74.52,
+     "teks": "Wali kelasku",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 74.52,
+     "end": 75.24,
+     "teks": "langsung telepon",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 75.24,
+     "end": 75.97,
+     "teks": "mamaku.\"",
+     "siapa": "JUSTIN"
+    },
+    {
+     "start": 76.24,
+     "end": 77.44,
+     "teks": "Ia menunjukkan pesan"
+    },
+    {
+     "start": 77.44,
+     "end": 78.7,
+     "teks": "di HP Kharan,"
+    },
+    {
+     "start": 78.7,
+     "end": 79.62,
+     "teks": "yang ia pinjam"
+    },
+    {
+     "start": 79.62,
+     "end": 80.44,
+     "teks": "karena HP-nya"
+    },
+    {
+     "start": 80.44,
+     "end": 81.26,
+     "teks": "sendiri sudah"
+    },
+    {
+     "start": 81.26,
+     "end": 82.05,
+     "teks": "disita."
+    },
+    {
+     "start": 82.38,
+     "end": 83.34,
+     "teks": "\"Mama tunggu di"
+    },
+    {
+     "start": 83.34,
+     "end": 84.14,
+     "teks": "rumah!"
+    },
+    {
+     "start": 84.14,
+     "end": 85.02,
+     "teks": "Mama mau tahu"
+    },
+    {
+     "start": 85.02,
+     "end": 86.01,
+     "teks": "siapa yang ngajak"
+    },
+    {
+     "start": 86.01,
+     "end": 86.64,
+     "teks": "abang main sampai"
+    },
+    {
+     "start": 86.64,
+     "end": 87.17,
+     "teks": "subuh.\""
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "MATA YANG TIDAK",
+  "baris2": "MAU TERBUKA",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 87.02,
+  "end": 90.32,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Jam 10 Malam"
+ }
+}

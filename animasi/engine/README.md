@@ -99,7 +99,7 @@ terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di
 ### Motor, jalan, hujan, gubuk, bengkel (seri "Urusan Gelly")
 - Lokasi: `jalanAspal`, `jalanTanah` (kebun kelapa), `jalanBerhenti` (ban kempis), `jalanMendung` (hujan), `gubuk` (hujan,
   motor tua datang), `bengkel`, `bengkel5` (lima motor), `jalanBukit` (lima motor menuju bukit), kamar `pinggirKasur`.
-- Slot motor: `motor1Depan/motor1Belakang/motor2Depan/motor2Belakang` (berboncengan, helm otomatis), `motor1Depan..motor5Depan`.
+- Slot motor: `motor1Depan/motor1Belakang/motor2Depan/motor2Belakang` (berboncengan). **Helm**: semua tokoh di lokasi `jalan*` (melaju, berhenti, hujan) otomatis memakai helm, `motor1Depan..motor5Depan`.
 - Kamera: `{riding}` iring-iringan motor, `{ban}` close-up roda belakang, `{motorTua}` jok belakang motor tua, `{pengendara}` wajah
   pengendara motor tua. Flag `(oleng)` = motor oleng & berhenti. Pose: `datangMotor`, `lepasHelm`, `jongkok`, `perbaiki` (kunci pas),
   `teh` (minum teh), `pinggang` (sakit pinggang). Varian `gelly#jas` = jas hujan kuning.

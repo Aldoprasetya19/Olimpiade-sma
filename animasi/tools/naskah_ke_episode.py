@@ -276,7 +276,7 @@ def main():
         tid = next((k for k, tk in enumerate(_tw) if tk in ('tidur', 'tertidur') and not any(x in ('tidak', 'nggak', 'gak', 'belum', 'bisa', 'jangan') for x in _tw[max(0, k - 2):k])), None) if who == 'NARATOR' else None
         flags = {x.strip() for x in (L['ex'] or '').split(',')}
         if 'oleng' in flags: d['oleng'] = True
-        if sc['loc'].startswith('jalan') and sc['loc'] not in ('jalanBerhenti', 'jalanMendung'): d['helm'] = [v.split('#')[0] for k_, v in sc['cast'].items() if 'motor' in k_]
+        if sc['loc'].startswith('jalan'): d['helm'] = [v.split('#')[0] for v in sc['cast'].values()]  # semua yang sedang dalam perjalanan motor memakai helm
         if sc['loc'] == 'gubuk' and any(v == 'lepasHelm' or v == 'datangMotor' for v in pose.values()): d['helm'] = [k_ for k_, v in pose.items() if v in ('lepasHelm', 'datangMotor')]
         if who == 'NARATOR' and re.search(r'menel[e]?pon|telepon', L['txt'].lower()): state['_telepon'] = sc
         # --- mimik dari kata sifat (tidak menimpa ekspresi yang ditulis eksplisit)

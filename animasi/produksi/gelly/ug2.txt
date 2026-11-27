@@ -1,0 +1,26 @@
+# judul: JALAN | SEPI
+# akhir: BERSAMBUNG... | Bagian 3: Bengkel di Ujung Jalan
+[jalanTanah] motor1Depan=aldo motor1Belakang=aldos motor2Depan=stefan motor2Belakang=febri
+NARATOR {riding}: Bagian dua, Jalan Sepi.
+NARATOR {riding} (aldo=netral, stefan=fokus): Satu jam perjalanan, aspal berganti jalan tanah. Kiri kanan hanya kebun dan pohon kelapa.
+NARATOR {hp-status} [Sinyal | 1]: Sinyal tinggal satu garis.
+NARATOR {cu:aldo} (aldo=cemas): Lalu terdengar bunyi yang tidak ingin didengar siapa pun.
+NARATOR {riding} (oleng, aldo=kaget, aldos=kaget): "Dess!" Motor Aldo oleng.
+[jalanBerhenti] motor1Depan=aldo motor2Depan=stefan jongkokBan=febri dekat1=aldos
+NARATOR {ban} (febri:jongkok, febri=kaget): Ban belakangnya kempis total, tertusuk paku. Febri turun dan memeriksa.
+ALDO S (kaget): "Serius? Bengkel terdekat di mana?"
+NARATOR {hp-lokasi} [Peta | Bengkel terdekat: 7 km]: Stefan membuka peta.
+STEFAN (cemas): "7 kilo dari sini, di belakang."
+NARATOR {lebar} (aldo=cemas, aldos=cemas, stefan=cemas, febri=cemas): Mereka saling pandang. Mendorong motor 7 kilo di jalan tanah? Mustahil.
+[jalanMendung] dekat1=aldos dekat2=aldo dekat3=stefan dekat4=febri
+NARATOR {lebar} (aldos=sedih): Langit mulai gelap. Tetes hujan pertama jatuh di helm Aldo S.
+[gubuk] p1=aldo p2=aldos p3=stefan p4=febri
+NARATOR {lebar} (aldo=sedih, aldos=sedih, stefan=sedih, febri=sedih): Mereka berteduh di bawah gubuk kebun yang reot. Hujan makin deras.
+NARATOR {hp-status} [Baterai | 8%]: HP Aldo tinggal 8%.
+ALDO S (paksa): "Ini gara-gara kita kualat ninggalin Gelly,"
+NARATOR {cu:aldos} (aldos=paksa): gumam Aldo S., setengah bercanda.
+NARATOR {lebar} (aldo=sedih, stefan=sedih, febri=sedih, aldos=sedih): Tidak ada yang tertawa. 30 menit berlalu.
+[gubuk] p1=aldo p2=aldos p3=stefan p4=febri motorDatang=gelly#jas
+NARATOR {lebar} (gelly:datangMotor, aldo=kaget, aldos=kaget, stefan=kaget, febri=kaget): Lalu, dari balik tirai hujan, terdengar suara motor tua mendekat. Lampunya menyorot ke arah gubuk. Motor itu berhenti tepat di depan mereka.
+NARATOR {pengendara} (gelly:lepasHelm, gelly=serius, aldo=kaget): Pengendaranya membuka helm.
+NARATOR {akhir}: Bersambung.

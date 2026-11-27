@@ -121,6 +121,18 @@ export function piala() {
   return g;
 }
 export function kalengCat() { const g = new THREE.Group(); const c = mesh(new THREE.CylinderGeometry(0.13, 0.13, 0.26, 16), toon('#d8d8d8')); c.position.y = 0.13; g.add(c); const l = mesh(new THREE.CylinderGeometry(0.135, 0.135, 0.03, 16), toon('#e0b020')); l.position.y = 0.27; g.add(l); return g; }
+export function motor(color = '#c0392b', tua = false) { // menghadap +x; userData.roda, lampu
+  const g = new THREE.Group(); const roda = [];
+  for (const x of [-0.75, 0.75]) { const w = new THREE.Group(); w.position.set(x, 0.36, 0); const tire = mesh(new THREE.TorusGeometry(0.28, 0.09, 10, 20), toon('#1d1d1d')); w.add(tire);
+    const hub = mesh(new THREE.CylinderGeometry(0.12, 0.12, 0.14, 12), toon('#9aa0a6')); hub.rotation.x = Math.PI / 2; w.add(hub); g.add(w); roda.push(w); }
+  g.add(box(1.25, 0.3, 0.34, color, [0, 0.7, 0], { round: 0.08 })); g.add(box(0.85, 0.12, 0.38, '#222', [-0.2, 0.9, 0], { round: 0.05 }));
+  g.add(box(0.1, 0.6, 0.1, '#555', [0.62, 0.95, 0], { rot: [0, 0, -0.35] })); g.add(box(0.08, 0.08, 0.8, '#333', [0.75, 1.25, 0]));
+  const lamp = mesh(new THREE.SphereGeometry(0.11, 12, 8), new THREE.MeshBasicMaterial({ color: tua ? '#fff2b0' : '#fffbe6' })); lamp.position.set(0.85, 1.05, 0); g.add(lamp);
+  if (tua) { g.add(box(0.5, 0.35, 0.4, '#b03a2e', [-0.75, 1.15, 0], { round: 0.03 })); const ban = mesh(new THREE.TorusGeometry(0.22, 0.05, 8, 16), toon('#111')); ban.position.set(-0.75, 1.42, 0); ban.rotation.x = Math.PI / 2; g.add(ban); }
+  g.userData.roda = roda; g.userData.lamp = lamp; return g;
+}
+export function helm(color = '#2c3e50') { const g = new THREE.Group(); const h = mesh(new THREE.SphereGeometry(0.55, 18, 14), toon(color)); h.scale.set(1, 0.95, 1.05); g.add(h);
+  const v = mesh(new THREE.BoxGeometry(0.7, 0.28, 0.1), toon('#111', { transparent: true, opacity: 0.85 })); v.position.set(0, 0.0, 0.5); g.add(v); return g; }
 export function bag(color = '#2d3a4a') { const g = new THREE.Group(); g.add(box(0.6, 0.7, 0.3, color, [0, 0.35, 0], { round: 0.1 })); return g; }
 
 function windowPane(w, h, glassColor, frame = '#f1f1f1') {
@@ -383,6 +395,49 @@ export const SETS = {
     const win = windowPane(1.8, 1.4, '#1d2b4f'); win.position.set(-4.45, 2.3, -1); win.rotation.y = Math.PI / 2; scene.add(win);
     const moon = mesh(new THREE.SphereGeometry(0.15, 12, 8), flat('#f4f1c8')); moon.position.set(-4.43, 2.6, -1.3); scene.add(moon);
     const pr = door('#6b4430'); pr.position.set(4.44, 0, 1.8); pr.rotation.y = -Math.PI / 2; scene.add(pr);
+    return {};
+  },
+  jalan(scene, o = {}) { // jalan aspal/tanah, pemandangan di grup 'gerak' (digeser untuk ilusi melaju)
+    scene.userData.clear = 0x222222;
+    const hujan = !!o.hujan; sky(scene, hujan ? '#5d6b78' : (o.sore ? '#f3a96b' : '#8fc3ea'), hujan ? '#9aa5ad' : '#eef4f2');
+    lights(scene, hujan ? { sky: '#c8d2da', ground: '#7a7a6a', hemi: 2.0, sun: '#cfd6dc', sunI: 0.5, shadowSize: 14 } : { sky: '#eaf5ff', ground: '#7a8a5a', hemi: 1.6, sunPos: [6, 10, 6], shadowSize: 14 });
+    const g0 = mesh(new THREE.PlaneGeometry(200, 60), noOutline(toon(o.tanah ? '#6f8f45' : '#7fb069')), { cast: false }); g0.rotation.x = -Math.PI / 2; scene.add(g0);
+    const gerak = new THREE.Group(); gerak.name = 'gerak'; scene.add(gerak);
+    for (let k = -1; k <= 1; k++) {
+      const road = mesh(new THREE.PlaneGeometry(40, 5), noOutline(toon(o.tanah ? '#8a6a45' : '#55585c')), { cast: false }); road.rotation.x = -Math.PI / 2; road.position.set(k * 40, 0.01, 0); gerak.add(road);
+      if (!o.tanah) for (let i = 0; i < 10; i++) gerak.add(box(1.6, 0.012, 0.15, noOutline(flat('#f2f2f2')), [k * 40 - 18 + i * 4, 0.02, 0], { cast: false }));
+      else for (let i = 0; i < 6; i++) { const pd = mesh(new THREE.CircleGeometry(0.6 + (i % 3) * 0.3, 14), noOutline(flat('#5a4a35'))); pd.rotation.x = -Math.PI / 2; pd.position.set(k * 40 - 16 + i * 6.5, 0.02, (i % 2 ? 1 : -1) * 1.2); gerak.add(pd); }
+      for (let i = 0; i < 8; i++) for (const sd of [-1, 1]) {
+        if (o.kelapa) { const t = new THREE.Group(); t.add(box(0.28, 5, 0.28, '#8a6a45', [0, 2.5, 0])); for (let j = 0; j < 6; j++) { const l = box(2.2, 0.08, 0.5, '#4f9a4f', [Math.cos(j) * 0.9, 5, Math.sin(j) * 0.9], { rot: [0, j, -0.35] }); t.add(l); }
+          t.position.set(k * 40 - 18 + i * 5 + (sd > 0 ? 2 : 0), 0, sd * (5 + (i % 3))); gerak.add(t); }
+        else { const t = tree(3); t.position.set(k * 40 - 18 + i * 5 + (sd > 0 ? 2.5 : 0), 0, sd * (6 + (i % 3))); gerak.add(t); }
+      }
+    }
+    if (o.bukit) for (let i = 0; i < 5; i++) { const b = mesh(new THREE.SphereGeometry(12 + i * 2, 16, 10), noOutline(toon('#6aa36a'))); b.scale.y = 0.45; b.position.set(-30 + i * 16, -2, -40); scene.add(b); }
+    scene.userData.gerakSpeed = o.speed ?? 0;
+    // motor
+    (o.motors || []).forEach(([x, z, color, name], i) => { const m = motor(color); m.position.set(x, 0, z); m.name = name || 'motor' + (i + 1); scene.add(m); });
+    if (o.gubuk) { const gb = new THREE.Group(); for (const [x, z] of [[-1.4, -2.2], [1.4, -2.2], [-1.4, 0.2], [1.4, 0.2]]) gb.add(box(0.15, 2.9, 0.15, '#6b4a2f', [x, 1.45, z]));
+      gb.add(box(3.6, 0.12, 3.2, '#7a5a3a', [0, 2.95, -1.0], { rot: [0.12, 0, 0], cast: false })); gb.add(box(3.2, 0.1, 0.9, '#8a6a45', [0, 0.45, -2.1])); gb.position.set(0, 0, -2.2); scene.add(gb); }
+    if (o.motorTua) { const m = motor('#4a5a3a', true); m.name = 'motorTua'; m.position.set(2.6, 0, 0.6); m.rotation.y = Math.PI; scene.add(m);
+      const sl = new THREE.SpotLight('#fff2c0', 30, 18, 0.5, 0.5); sl.position.set(0, 1.05, 0); m.add(sl); sl.target.position.set(-6, 0, 0); m.add(sl.target); }
+    if (hujan) { const drops = []; const dm = noOutline(flat('#cfe3f2', { transparent: true, opacity: 0.55 }));
+      for (let i = 0; i < 420; i++) { const d = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.45, 0.02), dm); d.position.set((Math.random() - 0.5) * 22, Math.random() * 9, (Math.random() - 0.5) * 16 + 2); scene.add(d); drops.push(d); }
+      scene.userData.hujan = drops; }
+    return {};
+  },
+  bengkel(scene, o = {}) {
+    scene.userData.clear = 0x222222; sky(scene, o.pagi ? '#8fc3ea' : '#c9a37a', o.pagi ? '#eef4f2' : '#f3dcc0');
+    lights(scene, { sky: '#fff1dc', ground: '#6a5a4a', hemi: 1.5, sun: '#ffd9a6', sunI: 1.2, sunPos: [5, 8, 6], shadowSize: 12 });
+    const g0 = mesh(new THREE.PlaneGeometry(60, 60), noOutline(toon('#8a7a62')), { cast: false }); g0.rotation.x = -Math.PI / 2; scene.add(g0);
+    const b = new THREE.Group(); b.add(box(8, 3.6, 0.2, '#9c7250', [0, 1.8, -3.5])); for (const x of [-4, 4]) b.add(box(0.2, 3.6, 4, '#9c7250', [x, 1.8, -1.6]));
+    b.add(box(8.6, 0.15, 4.6, '#6b4a2f', [0, 3.7, -1.5], { rot: [0.08, 0, 0] })); scene.add(b);
+    const nm = textPlane(4.0, 0.7, (x, w, h) => { x.fillStyle = '#c0392b'; x.fillRect(0, 0, w, h); x.fillStyle = '#fff'; x.font = `bold ${h * 0.55}px Oswald`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText('BENGKEL MOTOR', w / 2, h / 2 + 3); });
+    nm.position.set(0, 3.25, 0.62); scene.add(nm); scene.add(box(4.2, 0.8, 0.1, '#7a2a20', [0, 3.25, 0.55]));
+    for (let i = 0; i < 5; i++) { const tr = mesh(new THREE.TorusGeometry(0.32, 0.1, 10, 18), toon('#1d1d1d')); tr.position.set(-3.2, 0.12 + i * 0.2, -2.8); tr.rotation.x = Math.PI / 2; scene.add(tr); }
+    scene.add(box(2.4, 1.6, 0.1, '#5a4030', [2.2, 1.8, -3.35])); for (let i = 0; i < 6; i++) scene.add(box(0.08, 0.5, 0.06, '#9aa0a6', [1.3 + i * 0.35, 1.9, -3.28]));
+    scene.add(box(3.2, 0.12, 0.6, '#8b5a3c', [0, 0.45, -1.6])); for (const x of [-1.4, 1.4]) scene.add(box(0.1, 0.45, 0.5, '#333', [x, 0.22, -1.6]));
+    if (o.motor5) for (let i = 0; i < 5; i++) { const m = motor(['#c0392b', '#2980b9', '#27ae60', '#f39c12', '#4a5a3a'][i], i === 4); m.position.set(-4 + i * 2, 0, 2.6); m.rotation.y = -Math.PI / 2; scene.add(m); }
     return {};
   },
   kosong(scene, o = {}) { // studio polos untuk kenangan / insert

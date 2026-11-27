@@ -1,0 +1,368 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 77.52,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO S": {
+   "warna": "#FFD84A"
+  },
+  "STEFAN": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 77.52,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.54,
+     "teks": "Bagian dua,"
+    },
+    {
+     "start": 1.54,
+     "end": 2.51,
+     "teks": "Jalan Sepi."
+    },
+    {
+     "start": 3.22,
+     "end": 4.86,
+     "teks": "Satu jam perjalanan,"
+    },
+    {
+     "start": 4.86,
+     "end": 5.82,
+     "teks": "aspal berganti jalan"
+    },
+    {
+     "start": 5.82,
+     "end": 6.8,
+     "teks": "tanah."
+    },
+    {
+     "start": 6.8,
+     "end": 7.56,
+     "teks": "Kiri kanan hanya"
+    },
+    {
+     "start": 7.56,
+     "end": 8.42,
+     "teks": "kebun dan pohon"
+    },
+    {
+     "start": 8.42,
+     "end": 9.41,
+     "teks": "kelapa."
+    },
+    {
+     "start": 9.56,
+     "end": 10.7,
+     "teks": "Sinyal tinggal satu"
+    },
+    {
+     "start": 10.7,
+     "end": 11.39,
+     "teks": "garis."
+    },
+    {
+     "start": 12.0,
+     "end": 13.28,
+     "teks": "Lalu terdengar bunyi"
+    },
+    {
+     "start": 13.28,
+     "end": 14.34,
+     "teks": "yang tidak ingin"
+    },
+    {
+     "start": 14.34,
+     "end": 16.24,
+     "teks": "didengar siapa pun."
+    },
+    {
+     "start": 16.39,
+     "end": 17.72,
+     "teks": "\"Dess!\" Motor Aldo"
+    },
+    {
+     "start": 17.72,
+     "end": 18.35,
+     "teks": "oleng."
+    },
+    {
+     "start": 18.5,
+     "end": 19.16,
+     "teks": "Ban belakangnya"
+    },
+    {
+     "start": 19.16,
+     "end": 20.22,
+     "teks": "kempis total,"
+    },
+    {
+     "start": 20.22,
+     "end": 21.54,
+     "teks": "tertusuk paku."
+    },
+    {
+     "start": 21.54,
+     "end": 22.42,
+     "teks": "Febri turun dan"
+    },
+    {
+     "start": 22.42,
+     "end": 23.39,
+     "teks": "memeriksa."
+    },
+    {
+     "start": 23.64,
+     "end": 24.67,
+     "teks": "\"Serius?",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 24.67,
+     "end": 26.45,
+     "teks": "Bengkel terdekat di",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 26.45,
+     "end": 26.85,
+     "teks": "mana?\"",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 26.9,
+     "end": 28.68,
+     "teks": "Stefan membuka peta."
+    },
+    {
+     "start": 28.68,
+     "end": 29.9,
+     "teks": "\"7 kilo dari",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 29.9,
+     "end": 30.92,
+     "teks": "sini,",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 30.92,
+     "end": 31.91,
+     "teks": "di belakang.\"",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 31.96,
+     "end": 32.58,
+     "teks": "Mereka saling"
+    },
+    {
+     "start": 32.58,
+     "end": 33.88,
+     "teks": "pandang."
+    },
+    {
+     "start": 33.88,
+     "end": 34.92,
+     "teks": "Mendorong motor 7"
+    },
+    {
+     "start": 34.92,
+     "end": 35.66,
+     "teks": "kilo di jalan"
+    },
+    {
+     "start": 35.66,
+     "end": 37.32,
+     "teks": "tanah?"
+    },
+    {
+     "start": 37.32,
+     "end": 38.13,
+     "teks": "Mustahil."
+    },
+    {
+     "start": 38.4,
+     "end": 39.96,
+     "teks": "Langit mulai gelap."
+    },
+    {
+     "start": 39.96,
+     "end": 41.06,
+     "teks": "Tetes hujan pertama"
+    },
+    {
+     "start": 41.06,
+     "end": 42.1,
+     "teks": "jatuh di helm"
+    },
+    {
+     "start": 42.1,
+     "end": 42.93,
+     "teks": "Aldo S."
+    },
+    {
+     "start": 43.4,
+     "end": 44.46,
+     "teks": "Mereka berteduh di"
+    },
+    {
+     "start": 44.46,
+     "end": 45.42,
+     "teks": "bawah gubuk kebun"
+    },
+    {
+     "start": 45.42,
+     "end": 46.46,
+     "teks": "yang reot."
+    },
+    {
+     "start": 46.46,
+     "end": 48.17,
+     "teks": "Hujan makin deras."
+    },
+    {
+     "start": 48.2,
+     "end": 49.5,
+     "teks": "HP Aldo tinggal"
+    },
+    {
+     "start": 49.5,
+     "end": 50.7,
+     "teks": "8%."
+    },
+    {
+     "start": 50.7,
+     "end": 51.76,
+     "teks": "\"Ini gara-gara kita",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 51.76,
+     "end": 53.24,
+     "teks": "kualat ninggalin",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 53.24,
+     "end": 53.64,
+     "teks": "Gelly,\"",
+     "siapa": "ALDO S"
+    },
+    {
+     "start": 53.74,
+     "end": 55.28,
+     "teks": "gumam Aldo S.,"
+    },
+    {
+     "start": 55.28,
+     "end": 56.31,
+     "teks": "setengah bercanda."
+    },
+    {
+     "start": 56.96,
+     "end": 57.64,
+     "teks": "Tidak ada yang"
+    },
+    {
+     "start": 57.64,
+     "end": 58.68,
+     "teks": "tertawa."
+    },
+    {
+     "start": 58.68,
+     "end": 60.89,
+     "teks": "30 menit berlalu."
+    },
+    {
+     "start": 61.16,
+     "end": 62.04,
+     "teks": "Lalu,"
+    },
+    {
+     "start": 62.04,
+     "end": 62.78,
+     "teks": "dari balik tirai"
+    },
+    {
+     "start": 62.78,
+     "end": 63.66,
+     "teks": "hujan,"
+    },
+    {
+     "start": 63.66,
+     "end": 64.36,
+     "teks": "terdengar suara"
+    },
+    {
+     "start": 64.36,
+     "end": 66.24,
+     "teks": "motor tua mendekat."
+    },
+    {
+     "start": 66.24,
+     "end": 67.48,
+     "teks": "Lampunya menyorot ke"
+    },
+    {
+     "start": 67.48,
+     "end": 68.56,
+     "teks": "arah gubuk."
+    },
+    {
+     "start": 68.56,
+     "end": 69.6,
+     "teks": "Motor itu berhenti"
+    },
+    {
+     "start": 69.6,
+     "end": 70.56,
+     "teks": "tepat di depan"
+    },
+    {
+     "start": 70.56,
+     "end": 71.15,
+     "teks": "mereka."
+    },
+    {
+     "start": 71.54,
+     "end": 72.22,
+     "teks": "Pengendaranya"
+    },
+    {
+     "start": 72.22,
+     "end": 73.23,
+     "teks": "membuka helm."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "JALAN",
+  "baris2": "SEPI",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 74.22,
+  "end": 77.52,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Bengkel di Ujung Jalan"
+ }
+}

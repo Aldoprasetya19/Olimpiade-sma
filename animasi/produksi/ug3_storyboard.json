@@ -1,0 +1,542 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 103.64,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "GELLY": {
+   "warna": "#8FE3D8"
+  },
+  "FEBRI": {
+   "warna": "#C7A4FF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 103.64,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.1,
+     "teks": "\"Gelly?\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 1.4,
+     "end": 2.88,
+     "teks": "Bagian tiga."
+    },
+    {
+     "start": 2.88,
+     "end": 3.8,
+     "teks": "Bengkel di Ujung"
+    },
+    {
+     "start": 3.8,
+     "end": 4.41,
+     "teks": "Jalan."
+    },
+    {
+     "start": 4.95,
+     "end": 6.26,
+     "teks": "Gelly turun dari"
+    },
+    {
+     "start": 6.26,
+     "end": 7.34,
+     "teks": "motornya."
+    },
+    {
+     "start": 7.34,
+     "end": 8.58,
+     "teks": "Jas hujannya penuh"
+    },
+    {
+     "start": 8.58,
+     "end": 9.55,
+     "teks": "lumpur."
+    },
+    {
+     "start": 9.56,
+     "end": 10.44,
+     "teks": "Di jok belakang,"
+    },
+    {
+     "start": 10.44,
+     "end": 11.38,
+     "teks": "terikat sebuah kotak"
+    },
+    {
+     "start": 11.38,
+     "end": 12.7,
+     "teks": "perkakas dan ban"
+    },
+    {
+     "start": 12.7,
+     "end": 13.45,
+     "teks": "dalam baru."
+    },
+    {
+     "start": 13.76,
+     "end": 14.5,
+     "teks": "\"Aku lihat live",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 14.5,
+     "end": 15.22,
+     "teks": "location kalian",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 15.22,
+     "end": 16.16,
+     "teks": "berhenti lama di",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 16.16,
+     "end": 16.94,
+     "teks": "sini.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 16.94,
+     "end": 17.68,
+     "teks": "Pas aku perbesar",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 17.68,
+     "end": 18.92,
+     "teks": "fotonya Febri di",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 18.92,
+     "end": 19.22,
+     "teks": "grup,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 19.22,
+     "end": 19.8,
+     "teks": "kelihatan bannya",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 19.8,
+     "end": 20.99,
+     "teks": "kempis,\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 21.08,
+     "end": 22.1,
+     "teks": "katanya,"
+    },
+    {
+     "start": 22.1,
+     "end": 23.24,
+     "teks": "sambil berjongkok di"
+    },
+    {
+     "start": 23.24,
+     "end": 24.69,
+     "teks": "depan motor Aldo."
+    },
+    {
+     "start": 24.8,
+     "end": 25.62,
+     "teks": "Tangannya bergerak"
+    },
+    {
+     "start": 25.62,
+     "end": 26.52,
+     "teks": "cepat."
+    },
+    {
+     "start": 26.52,
+     "end": 27.54,
+     "teks": "Membuka baut,"
+    },
+    {
+     "start": 27.54,
+     "end": 28.64,
+     "teks": "mencopot ban,"
+    },
+    {
+     "start": 28.64,
+     "end": 29.54,
+     "teks": "memasang ban dalam"
+    },
+    {
+     "start": 29.54,
+     "end": 30.0,
+     "teks": "baru."
+    },
+    {
+     "start": 30.0,
+     "end": 31.0,
+     "teks": "Seperti sudah"
+    },
+    {
+     "start": 31.0,
+     "end": 31.9,
+     "teks": "ratusan kali"
+    },
+    {
+     "start": 31.9,
+     "end": 32.93,
+     "teks": "melakukannya."
+    },
+    {
+     "start": 33.1,
+     "end": 34.32,
+     "teks": "\"Kok kamu jago,",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 34.32,
+     "end": 34.62,
+     "teks": "Gel?\"",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 34.76,
+     "end": 35.99,
+     "teks": "tanya Febri pelan."
+    },
+    {
+     "start": 36.56,
+     "end": 38.57,
+     "teks": "Gelly diam sebentar."
+    },
+    {
+     "start": 38.94,
+     "end": 39.98,
+     "teks": "\"Itu urusanku tiap",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 39.98,
+     "end": 41.6,
+     "teks": "Sabtu.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 41.6,
+     "end": 42.28,
+     "teks": "Bapakku sakit",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 42.28,
+     "end": 43.24,
+     "teks": "pinggang sejak tiga",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 43.24,
+     "end": 44.48,
+     "teks": "bulan lalu.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 44.48,
+     "end": 45.12,
+     "teks": "Jadi aku yang",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 45.12,
+     "end": 46.32,
+     "teks": "jaga bengkelnya.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 46.32,
+     "end": 47.62,
+     "teks": "Kalau bengkel tutup,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 47.62,
+     "end": 47.82,
+     "teks": "nggak ada",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 47.82,
+     "end": 48.63,
+     "teks": "pemasukan.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 48.98,
+     "end": 50.56,
+     "teks": "Hujan masih turun."
+    },
+    {
+     "start": 50.56,
+     "end": 51.36,
+     "teks": "Tetapi tidak ada"
+    },
+    {
+     "start": 51.36,
+     "end": 52.31,
+     "teks": "yang bicara."
+    },
+    {
+     "start": 52.7,
+     "end": 53.45,
+     "teks": "Akhirnya,"
+    },
+    {
+     "start": 53.45,
+     "end": 54.32,
+     "teks": "Febri yang pertama"
+    },
+    {
+     "start": 54.32,
+     "end": 55.55,
+     "teks": "membuka suara."
+    },
+    {
+     "start": 57.1,
+     "end": 57.78,
+     "teks": "\"Gel,",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 57.78,
+     "end": 58.12,
+     "teks": "maaf.",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 58.12,
+     "end": 59.61,
+     "teks": "Pesanku kemarin",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 59.61,
+     "end": 60.79,
+     "teks": "nyebelin banget.\"",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 60.84,
+     "end": 61.52,
+     "teks": "Gelly tersenyum"
+    },
+    {
+     "start": 61.52,
+     "end": 62.26,
+     "teks": "kecil,"
+    },
+    {
+     "start": 62.26,
+     "end": 63.54,
+     "teks": "sambil mengencangkan"
+    },
+    {
+     "start": 63.54,
+     "end": 64.73,
+     "teks": "baut terakhir."
+    },
+    {
+     "start": 66.08,
+     "end": 67.16,
+     "teks": "\"Santai.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 67.16,
+     "end": 68.58,
+     "teks": "Aku juga salah.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 68.58,
+     "end": 68.98,
+     "teks": "Nggak pernah",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 68.98,
+     "end": 69.73,
+     "teks": "cerita.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 70.02,
+     "end": 70.92,
+     "teks": "Mereka tidak jadi"
+    },
+    {
+     "start": 70.92,
+     "end": 71.6,
+     "teks": "ke air terjun"
+    },
+    {
+     "start": 71.6,
+     "end": 72.82,
+     "teks": "hari itu."
+    },
+    {
+     "start": 72.82,
+     "end": 73.84,
+     "teks": "Mereka semua ikut"
+    },
+    {
+     "start": 73.84,
+     "end": 75.1,
+     "teks": "ke bengkel Gelly,"
+    },
+    {
+     "start": 75.1,
+     "end": 75.86,
+     "teks": "minum teh panas"
+    },
+    {
+     "start": 75.86,
+     "end": 77.1,
+     "teks": "dari bapaknya,"
+    },
+    {
+     "start": 77.1,
+     "end": 77.92,
+     "teks": "dan pulang sore"
+    },
+    {
+     "start": 77.92,
+     "end": 79.12,
+     "teks": "dengan baju setengah"
+    },
+    {
+     "start": 79.12,
+     "end": 79.63,
+     "teks": "basah."
+    },
+    {
+     "start": 80.6,
+     "end": 81.88,
+     "teks": "Seminggu kemudian,"
+    },
+    {
+     "start": 81.88,
+     "end": 82.84,
+     "teks": "grup itu berganti"
+    },
+    {
+     "start": 82.84,
+     "end": 83.72,
+     "teks": "nama."
+    },
+    {
+     "start": 83.72,
+     "end": 85.24,
+     "teks": "\"Anak Motor Gabut,"
+    },
+    {
+     "start": 85.24,
+     "end": 86.12,
+     "teks": "Sabtu Bantu"
+    },
+    {
+     "start": 86.12,
+     "end": 86.83,
+     "teks": "Bengkel.\""
+    },
+    {
+     "start": 87.4,
+     "end": 88.74,
+     "teks": "Sabtu pagi,"
+    },
+    {
+     "start": 88.74,
+     "end": 89.94,
+     "teks": "lima motor berbaris"
+    },
+    {
+     "start": 89.94,
+     "end": 90.64,
+     "teks": "di depan bengkel"
+    },
+    {
+     "start": 90.64,
+     "end": 91.64,
+     "teks": "kecil di ujung"
+    },
+    {
+     "start": 91.64,
+     "end": 92.51,
+     "teks": "jalan."
+    },
+    {
+     "start": 92.66,
+     "end": 93.28,
+     "teks": "Setelah bengkel"
+    },
+    {
+     "start": 93.28,
+     "end": 94.68,
+     "teks": "tutup jam 2,"
+    },
+    {
+     "start": 94.68,
+     "end": 95.24,
+     "teks": "baru mereka"
+    },
+    {
+     "start": 95.24,
+     "end": 96.34,
+     "teks": "berangkat bersama ke"
+    },
+    {
+     "start": 96.34,
+     "end": 97.72,
+     "teks": "air terjun."
+    },
+    {
+     "start": 97.72,
+     "end": 98.81,
+     "teks": "Kali ini,"
+    },
+    {
+     "start": 98.81,
+     "end": 100.25,
+     "teks": "lengkap berlima."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "BENGKEL DI",
+  "baris2": "UJUNG JALAN",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 100.34,
+  "end": 103.64,
+  "judul": "TAMAT",
+  "sub": "Urusan Gelly"
+ }
+}

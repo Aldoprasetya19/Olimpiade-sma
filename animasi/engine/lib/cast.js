@@ -49,6 +49,7 @@ export const CAST = {
   agus: (o = {}) => new Char({ skin: '#a96f3d', hair: '#4a4540', hairStyle: 'teacher', shirt: '#6b4a8a', pants: '#2f2f35', badge: false, glasses: true, blinkSeed: 0.8, ...o }),
   crispin: (o = {}) => new Char({ skin: '#c48a5a', hair: '#5a5550', hairStyle: 'sidepart', shirt: '#2e7d5b', pants: '#2f2f35', badge: false, blinkSeed: 2.1, ...o }),
   almis: (o = {}) => new Char({ skin: '#b98050', hair: '#2f2a26', hairStyle: 'teacher', shirt: '#8e3b46', pants: '#2f2f35', badge: false, glasses: true, mustache: true, blinkSeed: 1.2, ...o }),
+  pakgelly: (o = {}) => new Char({ skin: '#b98050', hair: '#8a8580', hairStyle: 'teacher', shirt: '#5b6b3a', pants: '#3b3b44', apron: '#6b4a2f', badge: false, collar: false, mustache: true, name: null, blinkSeed: 2.6, ...o }),
   siswa: (i = 0, o = {}) => new Char({ ...SERAGAM, skin: ['#c98a52', '#e0b07e', '#b07040', '#d49a64'][i % 4], hair: '#2a2018', hairStyle: ['sidepart', 'bowl', 'curly', 'spiky'][i % 4], blinkSeed: i * 0.77, ...o }),
   siswi: (i = 0, o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: ['#d49a64', '#c98a52', '#e0b07e'][i % 3], hair: '#2a1d16', hairStyle: 'panjang', longSleeve: true, blinkSeed: i * 0.53, ...o }),
 };

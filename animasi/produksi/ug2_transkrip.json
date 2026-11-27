@@ -1,0 +1,907 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.36,
+  "text": " Bagian dua, jalan sepi.",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 0.0,
+    "e": 0.46
+   },
+   {
+    "w": " dua,",
+    "s": 0.46,
+    "e": 1.16
+   },
+   {
+    "w": " jalan",
+    "s": 1.54,
+    "e": 1.78
+   },
+   {
+    "w": " sepi.",
+    "s": 1.78,
+    "e": 2.36
+   }
+  ]
+ },
+ {
+  "start": 3.22,
+  "end": 6.58,
+  "text": " Satu jam perjalanan, aspal berganti jalan tanah.",
+  "words": [
+   {
+    "w": " Satu",
+    "s": 3.22,
+    "e": 3.48
+   },
+   {
+    "w": " jam",
+    "s": 3.48,
+    "e": 3.62
+   },
+   {
+    "w": " perjalanan,",
+    "s": 3.62,
+    "e": 4.64
+   },
+   {
+    "w": " aspal",
+    "s": 4.86,
+    "e": 5.08
+   },
+   {
+    "w": " berganti",
+    "s": 5.08,
+    "e": 5.5
+   },
+   {
+    "w": " jalan",
+    "s": 5.5,
+    "e": 5.82
+   },
+   {
+    "w": " tanah.",
+    "s": 5.82,
+    "e": 6.58
+   }
+  ]
+ },
+ {
+  "start": 6.8,
+  "end": 9.26,
+  "text": " Kiri kanan hanya kebun dan pohon kelapa.",
+  "words": [
+   {
+    "w": " Kiri",
+    "s": 6.8,
+    "e": 7.08
+   },
+   {
+    "w": " kanan",
+    "s": 7.08,
+    "e": 7.3
+   },
+   {
+    "w": " hanya",
+    "s": 7.3,
+    "e": 7.56
+   },
+   {
+    "w": " kebun",
+    "s": 7.56,
+    "e": 7.96
+   },
+   {
+    "w": " dan",
+    "s": 7.96,
+    "e": 8.16
+   },
+   {
+    "w": " pohon",
+    "s": 8.16,
+    "e": 8.42
+   },
+   {
+    "w": " kelapa.",
+    "s": 8.42,
+    "e": 9.26
+   }
+  ]
+ },
+ {
+  "start": 9.56,
+  "end": 11.24,
+  "text": " Sinyal tinggal satu garis.",
+  "words": [
+   {
+    "w": " Sinyal",
+    "s": 9.56,
+    "e": 10.06
+   },
+   {
+    "w": " tinggal",
+    "s": 10.06,
+    "e": 10.4
+   },
+   {
+    "w": " satu",
+    "s": 10.4,
+    "e": 10.7
+   },
+   {
+    "w": " garis.",
+    "s": 10.7,
+    "e": 11.24
+   }
+  ]
+ },
+ {
+  "start": 12.0,
+  "end": 15.7,
+  "text": " Lalu terdengar bunyi yang tidak ingin didengar siapapun.",
+  "words": [
+   {
+    "w": " Lalu",
+    "s": 12.0,
+    "e": 12.4
+   },
+   {
+    "w": " terdengar",
+    "s": 12.4,
+    "e": 12.92
+   },
+   {
+    "w": " bunyi",
+    "s": 12.92,
+    "e": 13.28
+   },
+   {
+    "w": " yang",
+    "s": 13.28,
+    "e": 13.56
+   },
+   {
+    "w": " tidak",
+    "s": 13.56,
+    "e": 13.98
+   },
+   {
+    "w": " ingin",
+    "s": 13.98,
+    "e": 14.34
+   },
+   {
+    "w": " didengar",
+    "s": 14.34,
+    "e": 14.74
+   },
+   {
+    "w": " siapapun.",
+    "s": 14.74,
+    "e": 15.7
+   }
+  ]
+ },
+ {
+  "start": 15.9,
+  "end": 18.2,
+  "text": " Des, motor Aldo oleng.",
+  "words": [
+   {
+    "w": " Des,",
+    "s": 15.9,
+    "e": 16.3
+   },
+   {
+    "w": " motor",
+    "s": 16.94,
+    "e": 17.26
+   },
+   {
+    "w": " Aldo",
+    "s": 17.26,
+    "e": 17.72
+   },
+   {
+    "w": " oleng.",
+    "s": 17.72,
+    "e": 18.2
+   }
+  ]
+ },
+ {
+  "start": 18.5,
+  "end": 21.24,
+  "text": " Ban belakangnya kempis total, tertusuk paku.",
+  "words": [
+   {
+    "w": " Ban",
+    "s": 18.5,
+    "e": 18.64
+   },
+   {
+    "w": " belakangnya",
+    "s": 18.64,
+    "e": 19.16
+   },
+   {
+    "w": " kempis",
+    "s": 19.16,
+    "e": 19.5
+   },
+   {
+    "w": " total,",
+    "s": 19.5,
+    "e": 19.92
+   },
+   {
+    "w": " tertusuk",
+    "s": 20.22,
+    "e": 20.6
+   },
+   {
+    "w": " paku.",
+    "s": 20.6,
+    "e": 21.24
+   }
+  ]
+ },
+ {
+  "start": 21.54,
+  "end": 23.24,
+  "text": " Febri turun dan memeriksa.",
+  "words": [
+   {
+    "w": " Febri",
+    "s": 21.54,
+    "e": 21.78
+   },
+   {
+    "w": " turun",
+    "s": 21.78,
+    "e": 22.22
+   },
+   {
+    "w": " dan",
+    "s": 22.22,
+    "e": 22.42
+   },
+   {
+    "w": " memeriksa.",
+    "s": 22.42,
+    "e": 23.24
+   }
+  ]
+ },
+ {
+  "start": 23.64,
+  "end": 24.22,
+  "text": " Serius?",
+  "words": [
+   {
+    "w": " Serius?",
+    "s": 23.64,
+    "e": 24.22
+   }
+  ]
+ },
+ {
+  "start": 24.82,
+  "end": 26.12,
+  "text": " Benkel terdekat dimana?",
+  "words": [
+   {
+    "w": " Benkel",
+    "s": 24.82,
+    "e": 25.12
+   },
+   {
+    "w": " terdekat",
+    "s": 25.12,
+    "e": 25.54
+   },
+   {
+    "w": " dimana?",
+    "s": 25.54,
+    "e": 26.12
+   }
+  ]
+ },
+ {
+  "start": 26.9,
+  "end": 28.68,
+  "text": " Stefan membuka peta.",
+  "words": [
+   {
+    "w": " Stefan",
+    "s": 26.9,
+    "e": 27.5
+   },
+   {
+    "w": " membuka",
+    "s": 27.5,
+    "e": 27.96
+   },
+   {
+    "w": " peta.",
+    "s": 27.96,
+    "e": 28.68
+   }
+  ]
+ },
+ {
+  "start": 28.68,
+  "end": 31.76,
+  "text": " 7 kilo dari sini, di belakang.",
+  "words": [
+   {
+    "w": " 7",
+    "s": 28.68,
+    "e": 29.3
+   },
+   {
+    "w": " kilo",
+    "s": 29.3,
+    "e": 29.62
+   },
+   {
+    "w": " dari",
+    "s": 29.62,
+    "e": 29.9
+   },
+   {
+    "w": " sini,",
+    "s": 29.9,
+    "e": 30.52
+   },
+   {
+    "w": " di",
+    "s": 30.92,
+    "e": 31.0
+   },
+   {
+    "w": " belakang.",
+    "s": 31.0,
+    "e": 31.76
+   }
+  ]
+ },
+ {
+  "start": 31.96,
+  "end": 33.62,
+  "text": " Mereka saling pandang.",
+  "words": [
+   {
+    "w": " Mereka",
+    "s": 31.96,
+    "e": 32.24
+   },
+   {
+    "w": " saling",
+    "s": 32.24,
+    "e": 32.58
+   },
+   {
+    "w": " pandang.",
+    "s": 32.58,
+    "e": 33.62
+   }
+  ]
+ },
+ {
+  "start": 33.88,
+  "end": 36.56,
+  "text": " Mendorong motor 7 kilo di jalan tanah?",
+  "words": [
+   {
+    "w": " Mendorong",
+    "s": 33.88,
+    "e": 34.2
+   },
+   {
+    "w": " motor",
+    "s": 34.2,
+    "e": 34.52
+   },
+   {
+    "w": " 7",
+    "s": 34.52,
+    "e": 34.92
+   },
+   {
+    "w": " kilo",
+    "s": 34.92,
+    "e": 35.22
+   },
+   {
+    "w": " di",
+    "s": 35.22,
+    "e": 35.42
+   },
+   {
+    "w": " jalan",
+    "s": 35.42,
+    "e": 35.66
+   },
+   {
+    "w": " tanah?",
+    "s": 35.66,
+    "e": 36.56
+   }
+  ]
+ },
+ {
+  "start": 37.32,
+  "end": 37.98,
+  "text": " Mustahil.",
+  "words": [
+   {
+    "w": " Mustahil.",
+    "s": 37.32,
+    "e": 37.98
+   }
+  ]
+ },
+ {
+  "start": 38.4,
+  "end": 39.66,
+  "text": " Langit mulai gelap.",
+  "words": [
+   {
+    "w": " Langit",
+    "s": 38.4,
+    "e": 38.72
+   },
+   {
+    "w": " mulai",
+    "s": 38.72,
+    "e": 39.06
+   },
+   {
+    "w": " gelap.",
+    "s": 39.06,
+    "e": 39.66
+   }
+  ]
+ },
+ {
+  "start": 39.96,
+  "end": 42.78,
+  "text": " Tetes hujan pertama jatuh di helm Aldo S.",
+  "words": [
+   {
+    "w": " Tetes",
+    "s": 39.96,
+    "e": 40.22
+   },
+   {
+    "w": " hujan",
+    "s": 40.22,
+    "e": 40.5
+   },
+   {
+    "w": " pertama",
+    "s": 40.5,
+    "e": 41.06
+   },
+   {
+    "w": " jatuh",
+    "s": 41.06,
+    "e": 41.7
+   },
+   {
+    "w": " di",
+    "s": 41.7,
+    "e": 41.9
+   },
+   {
+    "w": " helm",
+    "s": 41.9,
+    "e": 42.1
+   },
+   {
+    "w": " Aldo",
+    "s": 42.1,
+    "e": 42.6
+   },
+   {
+    "w": " S.",
+    "s": 42.6,
+    "e": 42.78
+   }
+  ]
+ },
+ {
+  "start": 43.4,
+  "end": 45.92,
+  "text": " Mereka berteduh di bawah gubuk kebun yang reot.",
+  "words": [
+   {
+    "w": " Mereka",
+    "s": 43.4,
+    "e": 43.7
+   },
+   {
+    "w": " berteduh",
+    "s": 43.7,
+    "e": 44.26
+   },
+   {
+    "w": " di",
+    "s": 44.26,
+    "e": 44.46
+   },
+   {
+    "w": " bawah",
+    "s": 44.46,
+    "e": 44.68
+   },
+   {
+    "w": " gubuk",
+    "s": 44.68,
+    "e": 45.02
+   },
+   {
+    "w": " kebun",
+    "s": 45.02,
+    "e": 45.42
+   },
+   {
+    "w": " yang",
+    "s": 45.42,
+    "e": 45.62
+   },
+   {
+    "w": " reot.",
+    "s": 45.62,
+    "e": 45.92
+   }
+  ]
+ },
+ {
+  "start": 46.46,
+  "end": 48.02,
+  "text": " Hujan makin deras.",
+  "words": [
+   {
+    "w": " Hujan",
+    "s": 46.46,
+    "e": 46.88
+   },
+   {
+    "w": " makin",
+    "s": 46.88,
+    "e": 47.18
+   },
+   {
+    "w": " deras.",
+    "s": 47.18,
+    "e": 48.02
+   }
+  ]
+ },
+ {
+  "start": 48.2,
+  "end": 50.7,
+  "text": " HP Aldo tinggal 8%.",
+  "words": [
+   {
+    "w": " HP",
+    "s": 48.2,
+    "e": 48.48
+   },
+   {
+    "w": " Aldo",
+    "s": 48.48,
+    "e": 49.06
+   },
+   {
+    "w": " tinggal",
+    "s": 49.06,
+    "e": 49.5
+   },
+   {
+    "w": " 8%.",
+    "s": 49.5,
+    "e": 50.7
+   }
+  ]
+ },
+ {
+  "start": 50.7,
+  "end": 53.18,
+  "text": " Ini gara-gara kita kualat ninggalin geli.",
+  "words": [
+   {
+    "w": " Ini",
+    "s": 50.7,
+    "e": 51.1
+   },
+   {
+    "w": " gara",
+    "s": 51.1,
+    "e": 51.32
+   },
+   {
+    "w": "-gara",
+    "s": 51.32,
+    "e": 51.5
+   },
+   {
+    "w": " kita",
+    "s": 51.5,
+    "e": 51.76
+   },
+   {
+    "w": " kualat",
+    "s": 51.76,
+    "e": 52.32
+   },
+   {
+    "w": " ninggalin",
+    "s": 52.32,
+    "e": 52.74
+   },
+   {
+    "w": " geli.",
+    "s": 52.74,
+    "e": 53.18
+   }
+  ]
+ },
+ {
+  "start": 53.74,
+  "end": 56.16,
+  "text": " Gumam Aldo S, setengah bercanda.",
+  "words": [
+   {
+    "w": " Gumam",
+    "s": 53.74,
+    "e": 54.08
+   },
+   {
+    "w": " Aldo",
+    "s": 54.08,
+    "e": 54.56
+   },
+   {
+    "w": " S,",
+    "s": 54.56,
+    "e": 55.1
+   },
+   {
+    "w": " setengah",
+    "s": 55.28,
+    "e": 55.56
+   },
+   {
+    "w": " bercanda.",
+    "s": 55.56,
+    "e": 56.16
+   }
+  ]
+ },
+ {
+  "start": 56.96,
+  "end": 58.2,
+  "text": " Tidak ada yang tertawa.",
+  "words": [
+   {
+    "w": " Tidak",
+    "s": 56.96,
+    "e": 57.26
+   },
+   {
+    "w": " ada",
+    "s": 57.26,
+    "e": 57.5
+   },
+   {
+    "w": " yang",
+    "s": 57.5,
+    "e": 57.64
+   },
+   {
+    "w": " tertawa.",
+    "s": 57.64,
+    "e": 58.2
+   }
+  ]
+ },
+ {
+  "start": 58.68,
+  "end": 60.74,
+  "text": " 30 menit berlalu.",
+  "words": [
+   {
+    "w": " 30",
+    "s": 58.68,
+    "e": 59.32
+   },
+   {
+    "w": " menit",
+    "s": 59.32,
+    "e": 59.8
+   },
+   {
+    "w": " berlalu.",
+    "s": 59.8,
+    "e": 60.74
+   }
+  ]
+ },
+ {
+  "start": 61.16,
+  "end": 63.38,
+  "text": " Lalu, dari balik tirai hujan,",
+  "words": [
+   {
+    "w": " Lalu,",
+    "s": 61.16,
+    "e": 61.64
+   },
+   {
+    "w": " dari",
+    "s": 62.04,
+    "e": 62.16
+   },
+   {
+    "w": " balik",
+    "s": 62.16,
+    "e": 62.5
+   },
+   {
+    "w": " tirai",
+    "s": 62.5,
+    "e": 62.78
+   },
+   {
+    "w": " hujan,",
+    "s": 62.78,
+    "e": 63.38
+   }
+  ]
+ },
+ {
+  "start": 63.66,
+  "end": 66.02,
+  "text": " terdengar suara motor tua mendekat.",
+  "words": [
+   {
+    "w": " terdengar",
+    "s": 63.66,
+    "e": 64.06
+   },
+   {
+    "w": " suara",
+    "s": 64.06,
+    "e": 64.36
+   },
+   {
+    "w": " motor",
+    "s": 64.36,
+    "e": 64.68
+   },
+   {
+    "w": " tua",
+    "s": 64.68,
+    "e": 65.0
+   },
+   {
+    "w": " mendekat.",
+    "s": 65.0,
+    "e": 66.02
+   }
+  ]
+ },
+ {
+  "start": 66.24,
+  "end": 68.28,
+  "text": " Lampunya menyorot ke arah gubuk.",
+  "words": [
+   {
+    "w": " Lampunya",
+    "s": 66.24,
+    "e": 66.7
+   },
+   {
+    "w": " menyorot",
+    "s": 66.7,
+    "e": 67.32
+   },
+   {
+    "w": " ke",
+    "s": 67.32,
+    "e": 67.48
+   },
+   {
+    "w": " arah",
+    "s": 67.48,
+    "e": 67.7
+   },
+   {
+    "w": " gubuk.",
+    "s": 67.7,
+    "e": 68.28
+   }
+  ]
+ },
+ {
+  "start": 68.56,
+  "end": 71.0,
+  "text": " Motor itu berhenti tepat di depan mereka.",
+  "words": [
+   {
+    "w": " Motor",
+    "s": 68.56,
+    "e": 68.84
+   },
+   {
+    "w": " itu",
+    "s": 68.84,
+    "e": 69.16
+   },
+   {
+    "w": " berhenti",
+    "s": 69.16,
+    "e": 69.6
+   },
+   {
+    "w": " tepat",
+    "s": 69.6,
+    "e": 70.16
+   },
+   {
+    "w": " di",
+    "s": 70.16,
+    "e": 70.34
+   },
+   {
+    "w": " depan",
+    "s": 70.34,
+    "e": 70.56
+   },
+   {
+    "w": " mereka.",
+    "s": 70.56,
+    "e": 71.0
+   }
+  ]
+ },
+ {
+  "start": 71.54,
+  "end": 73.08,
+  "text": " Pengendaranya membuka helm.",
+  "words": [
+   {
+    "w": " Pengendaranya",
+    "s": 71.54,
+    "e": 72.22
+   },
+   {
+    "w": " membuka",
+    "s": 72.22,
+    "e": 72.72
+   },
+   {
+    "w": " helm.",
+    "s": 72.72,
+    "e": 73.08
+   }
+  ]
+ },
+ {
+  "start": 74.22,
+  "end": 74.84,
+  "text": " Bersambung.",
+  "words": [
+   {
+    "w": " Bersambung.",
+    "s": 74.22,
+    "e": 74.84
+   }
+  ]
+ }
+]

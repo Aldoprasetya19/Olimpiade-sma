@@ -1,0 +1,27 @@
+# judul: JAM 10 | MALAM
+# akhir: TAMAT | Satu Match Lagi
+[gerbang] kiri=aldo
+NARATOR {lebar}: Bagian 3, Jam 10 Malam.
+NARATOR {mcu:aldo} (aldo=sedih): Sepulang sekolah, Aldo tidak langsung pulang. Ia berdiri lama di depan gerbang sambil memikirkan Justin.
+NARATOR {cu:aldo} (aldo=bersalah): Justin masih kelas 10, dan ia ikut bergadang karena diajak mereka.
+NARATOR {hp} [Kharan | >Tolong sampaikan ke Justin. Bilang ke mamanya, yang ngajak itu aku. Bukan salah dia.]: Akhirnya, Aldo mengetik pesan ke HP Kharan. "Tolong sampaikan ke Justin. Bilang ke mamanya, yang ngajak itu aku. Bukan salah dia."
+[kelas] p1=aldo p2=aldos p3=gabriel p4=almis
+NARATOR {cu:almis} (almis:kertas, almis=serius): Seminggu kemudian, Pak Almis membagikan hasil ulangan.
+NARATOR {kertas} (aldo=sedih) [35 | Aldo]: Kertas Aldo bertuliskan 35.
+NARATOR {kertas} (aldos=sedih) [40 | Aldo S.]: Aldo S. dapat 40.
+NARATOR {cu:gabriel} (gabriel=bersalah, gabriel:kertas): Gabriel menutup kertasnya rapat-rapat.
+[rumah] dudukKiri=aldo#rumah
+NARATOR {mcu:aldo} (aldo:hp, aldo=serius): Sore itu, Aldo membuka grup Mabar Squad. Ia tidak mengajak main. Ia mengetik sesuatu yang lain.
+ALDO {hp-grup} [Mabar Squad | Aldo: Aturan baru! Mabar boleh, tapi maksimal jam 10 malam. Kalau besok ada ulangan, kita belajar dulu bareng.]: "Aturan baru! Mabar boleh, tapi maksimal jam 10 malam. Kalau besok ada ulangan, kita belajar dulu bareng."
+NARATOR {cu:aldo} (aldo=cemas, aldo:hp): Ia menunggu dengan cemas.
+NARATOR {hp-grup} [Mabar Squad | Aldo: Aturan baru! Mabar boleh, tapi maksimal jam 10 malam. | Justin: Setuju, Kak! Ini pakai HP mamah. Makasih udah jujur.]: Balasan pertama masuk dari Justin, yang memakai HP mamanya. "Setuju, Kak! Ini pakai HP mamah. Makasih udah jujur."
+NARATOR {hp-grup} [Mabar Squad | Justin: Setuju, Kak! | Aldo S.: Oke. Tapi ajarin aku matematika.]: Aldo S. menyusul. "Oke. Tapi ajarin aku matematika."
+NARATOR {hp-grup} [Mabar Squad | Aldo S.: Oke. Tapi ajarin aku matematika. | Gabriel: Ya udah. Tapi Sabtu boleh sampai jam 11 ya.]: Gabriel membalas paling akhir. "Ya udah. Tapi Sabtu boleh sampai jam 11 ya."
+[kelas] p1=aldo p2=aldos p3=gabriel p4=hissari
+NARATOR {lebar} (aldo=fokus, aldos=fokus, gabriel=fokus, hissari=senyum, hissari:tunjuk): Remedial minggu berikutnya, mereka belajar bersama Hissari sepulang sekolah.
+NARATOR {kertas} (aldo=senang) [78 | Aldo]: Hasilnya, Aldo dapat 78.
+[koridor] kiri=justin
+NARATOR {mcu:justin} (justin:hp, justin=senang): Justin juga mendapatkan HP-nya kembali. Dengan satu syarat dari mamanya: setiap jam 10 malam, HP ditaruh di ruang tamu.
+[rumah] dudukKiri=aldo#rumah
+NARATOR {cu:aldo} (aldo:hp, aldo=senyum): Malam itu, tepat pukul 10, Aldo menekan tombol keluar. Untuk pertama kalinya setelah lama, ia tidur nyenyak.
+NARATOR {akhir}: Tamat.

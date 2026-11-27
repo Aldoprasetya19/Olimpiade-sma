@@ -1,0 +1,25 @@
+# judul: MATA YANG TIDAK | MAU TERBUKA
+# akhir: BERSAMBUNG... | Bagian 3: Jam 10 Malam
+[kelas] p1=aldo p2=aldos p3=gabriel p4=hissari p5=almis
+NARATOR {lebar}: Bagian 2, Mata yang Tidak Mau Terbuka.
+NARATOR {cu:aldo} (aldo=sedih, aldo:tunduk): Kamis pagi, Aldo masuk kelas dengan mata merah dan rambut berantakan.
+NARATOR {cu:aldos} (aldos=merem): Di sebelahnya, Aldo S. menguap lebar sekali.
+NARATOR {cu:gabriel} (gabriel=sedih): Gabriel datang terakhir, seragamnya dikancing tidak rapi.
+NARATOR {cu:almis} (almis=serius, almis:kertas): Pak Almis membagikan lembar soal.
+ALMIS (serius): "Waktunya 60 menit. Mulai."
+NARATOR {cu:aldo} (aldo:baca, aldo=bingung): Aldo membaca soal nomor 1. Angka-angkanya seperti menari. Ia membacanya lagi, lalu lagi.
+NARATOR {cu:aldo} (aldo=merem): Kepalanya terasa berat. Pelan-pelan, pelan-pelan, dahinya menyentuh meja.
+ALMIS (marah): "Aldo!"
+NARATOR {cu:aldo}: Aldo tersentak bangun!
+NARATOR {lebar} (aldos=kaget, gabriel=kaget, hissari=kaget, aldo=kaget): Seisi kelas menoleh ke arahnya.
+NARATOR {kertas} (aldo=cemas) [2/20 | Ada bekas tinta di pipi. Waktu tinggal 10 menit.]: Ada bekas tinta di pipinya, dan lembar jawabannya baru terisi 2 nomor. Waktu tinggal 10 menit.
+NARATOR {cu:aldo} (aldo=cemas, aldo:mengetik): Aldo menulis secepat mungkin. Bel berbunyi saat ia baru sampai nomor 6 dari 20.
+[kelas] p1=aldo p2=aldos p3=gabriel p4=gelly
+NARATOR {masuk} (gelly=curiga): Saat istirahat, Gelly menghampiri mereka bertiga.
+GELLY (curiga): "Kalian kenapa sih? Kayak zombie."
+[kelas] p1=aldo p2=aldos p3=gabriel p4=gelly p5=justin
+NARATOR {masuk} (justin=sedih): Belum sempat mereka menjawab, Justin muncul di pintu kelas. Wajahnya kusut.
+JUSTIN (sedih): "Kak, aku juga ketiduran waktu ulangan IPA tadi. Wali kelasku langsung telepon mamaku."
+NARATOR {cu:justin} (justin:hp, justin=cemas): Ia menunjukkan pesan di HP Kharan, yang ia pinjam karena HP-nya sendiri sudah disita.
+NARATOR {hp} [Mama Justin | Mama tunggu di rumah! | Mama mau tahu siapa yang ngajak abang main sampai subuh.]: "Mama tunggu di rumah! Mama mau tahu siapa yang ngajak abang main sampai subuh."
+NARATOR {akhir}: Bersambung.

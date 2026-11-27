@@ -1,0 +1,114 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Narasi,Oswald,74,&H00FFFFFF,&H00FFFFFF,&H402A1E1E,&H90000000,-1,0,0,0,100,100,0,0,1,2,4,5,10,10,10,1
+Style: Chip,Oswald,28,&H002A1E1E,&H00FFFFFF,&H00FFFFFF,&H00FFFFFF,-1,0,0,0,100,100,3,0,3,4,0,5,10,10,10,1
+Style: Judul,Oswald,112,&H00FFFFFF,&H00FFFFFF,&H302A1E1E,&H90000000,-1,0,0,0,100,100,1,0,1,2,3,5,10,10,10,1
+Style: Logo,Oswald,32,&H00FFFFFF,&H00FFFFFF,&H80000000,&H00000000,-1,0,0,0,100,100,2,0,1,1,0,7,10,10,10,1
+Style: Handle,Oswald,34,&H60FFFFFF,&H60FFFFFF,&HA0000000,&H00000000,0,0,0,0,100,100,0,0,1,1,0,7,10,10,10,1
+Style: Bersambung,Oswald,96,&H004AD8FF,&H00FFFFFF,&H60000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,2,5,10,10,10,1
+Style: SubJudul,Oswald,44,&H00FFFFFF,&H00FFFFFF,&H60000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,5,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 2,0:00:00.70,0:00:01.70,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}BAGIAN 2,
+Dialogue: 2,0:00:01.70,0:00:02.82,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MATA YANG TIDAK
+Dialogue: 2,0:00:02.82,0:00:03.85,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MAU TERBUKA.
+Dialogue: 2,0:00:04.38,0:00:06.14,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}KAMIS PAGI,
+Dialogue: 2,0:00:06.14,0:00:06.90,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}ALDO MASUK KELAS
+Dialogue: 2,0:00:06.90,0:00:08.08,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}DENGAN MATA MERAH
+Dialogue: 2,0:00:08.08,0:00:08.82,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}DAN RAMBUT
+Dialogue: 2,0:00:08.82,0:00:09.99,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}BERANTAKAN.
+Dialogue: 2,0:00:10.12,0:00:11.18,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}DI SEBELAHNYA,
+Dialogue: 2,0:00:11.18,0:00:11.78,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}ALDO S.
+Dialogue: 2,0:00:11.78,0:00:12.90,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MENGUAP LEBAR
+Dialogue: 2,0:00:12.90,0:00:13.55,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}SEKALI.
+Dialogue: 2,0:00:13.96,0:00:14.74,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}GABRIEL DATANG
+Dialogue: 2,0:00:14.74,0:00:15.70,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}TERAKHIR,
+Dialogue: 2,0:00:15.70,0:00:16.90,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}SERAGAMNYA DIKANCING
+Dialogue: 2,0:00:16.90,0:00:18.13,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}TIDAK RAPI.
+Dialogue: 2,0:00:18.16,0:00:19.26,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}PAK ALMIS MEMBAGIKAN
+Dialogue: 2,0:00:19.26,0:00:20.33,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}LEMBAR SOAL.
+Dialogue: 2,0:00:20.38,0:00:22.30,Narasi,,0,0,0,,{\pos(360,902)\1c&H004AD8FF\fscx88\fscy88\t(0,90,\fscx100\fscy100)}"WAKTUNYA 60 MENIT.
+Dialogue: 3,0:00:20.38,0:00:22.30,Chip,,0,0,0,,{\pos(360,843)\3c&H004AD8FF\4c&H004AD8FF}ALMIS
+Dialogue: 2,0:00:22.30,0:00:23.03,Narasi,,0,0,0,,{\pos(360,902)\1c&H004AD8FF\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MULAI."
+Dialogue: 3,0:00:22.30,0:00:23.03,Chip,,0,0,0,,{\pos(360,843)\3c&H004AD8FF\4c&H004AD8FF}ALMIS
+Dialogue: 2,0:00:24.02,0:00:25.22,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}ALDO MEMBACA SOAL
+Dialogue: 2,0:00:25.22,0:00:26.75,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}NOMOR 1.
+Dialogue: 2,0:00:26.75,0:00:27.30,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}ANGKA-ANGKANYA
+Dialogue: 2,0:00:27.30,0:00:28.30,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}SEPERTI MENARI.
+Dialogue: 2,0:00:28.30,0:00:30.56,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}IA MEMBACANYA LAGI,
+Dialogue: 2,0:00:30.56,0:00:32.03,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}LALU LAGI.
+Dialogue: 2,0:00:32.38,0:00:33.74,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}KEPALANYA TERASA
+Dialogue: 2,0:00:33.74,0:00:35.84,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}BERAT.
+Dialogue: 2,0:00:35.84,0:00:36.98,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}PELAN-PELAN,
+Dialogue: 2,0:00:36.98,0:00:38.12,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}PELAN-PELAN,
+Dialogue: 2,0:00:38.12,0:00:39.04,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}DAHINYA MENYENTUH
+Dialogue: 2,0:00:39.04,0:00:39.75,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MEJA.
+Dialogue: 2,0:00:40.00,0:00:40.86,Narasi,,0,0,0,,{\pos(360,902)\1c&H004AD8FF\fscx88\fscy88\t(0,90,\fscx100\fscy100)}"ALDO!"
+Dialogue: 3,0:00:40.00,0:00:40.86,Chip,,0,0,0,,{\pos(360,843)\3c&H004AD8FF\4c&H004AD8FF}ALMIS
+Dialogue: 2,0:00:40.86,0:00:42.18,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}ALDO TERSENTAK
+Dialogue: 2,0:00:42.18,0:00:43.09,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}BANGUN!
+Dialogue: 2,0:00:43.20,0:00:44.44,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}SEISI KELAS MENOLEH
+Dialogue: 2,0:00:44.44,0:00:45.21,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}KE ARAHNYA.
+Dialogue: 2,0:00:45.52,0:00:46.40,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}ADA BEKAS TINTA
+Dialogue: 2,0:00:46.40,0:00:47.38,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}DI PIPINYA,
+Dialogue: 2,0:00:47.38,0:00:47.86,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}DAN LEMBAR
+Dialogue: 2,0:00:47.86,0:00:49.02,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}JAWABANNYA BARU
+Dialogue: 2,0:00:49.02,0:00:50.60,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}TERISI 2 NOMOR.
+Dialogue: 2,0:00:50.60,0:00:52.08,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}WAKTU TINGGAL 10
+Dialogue: 2,0:00:52.08,0:00:52.81,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MENIT.
+Dialogue: 2,0:00:52.86,0:00:53.94,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}ALDO MENULIS SECEPAT
+Dialogue: 2,0:00:53.94,0:00:54.84,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MUNGKIN.
+Dialogue: 2,0:00:54.84,0:00:55.82,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}BEL BERBUNYI SAAT
+Dialogue: 2,0:00:55.82,0:00:56.56,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}IA BARU SAMPAI
+Dialogue: 2,0:00:56.56,0:00:57.46,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}NOMOR 6 DARI
+Dialogue: 2,0:00:57.46,0:00:58.03,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}20.
+Dialogue: 2,0:00:58.30,0:00:59.64,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}SAAT ISTIRAHAT,
+Dialogue: 2,0:00:59.64,0:01:00.32,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}GELLY MENGHAMPIRI
+Dialogue: 2,0:01:00.32,0:01:01.48,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MEREKA BERTIGA.
+Dialogue: 2,0:01:01.48,0:01:02.90,Narasi,,0,0,0,,{\pos(360,902)\1c&H00D8E38F\fscx88\fscy88\t(0,90,\fscx100\fscy100)}"KALIAN KENAPA SIH?
+Dialogue: 3,0:01:01.48,0:01:02.90,Chip,,0,0,0,,{\pos(360,843)\3c&H00D8E38F\4c&H00D8E38F}GELLY
+Dialogue: 2,0:01:02.90,0:01:04.01,Narasi,,0,0,0,,{\pos(360,902)\1c&H00D8E38F\fscx88\fscy88\t(0,90,\fscx100\fscy100)}KAYAK ZOMBIE."
+Dialogue: 3,0:01:02.90,0:01:04.01,Chip,,0,0,0,,{\pos(360,843)\3c&H00D8E38F\4c&H00D8E38F}GELLY
+Dialogue: 2,0:01:04.36,0:01:05.22,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}BELUM SEMPAT MEREKA
+Dialogue: 2,0:01:05.22,0:01:06.36,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MENJAWAB,
+Dialogue: 2,0:01:06.36,0:01:07.36,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}JUSTIN MUNCUL DI
+Dialogue: 2,0:01:07.36,0:01:08.48,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}PINTU KELAS.
+Dialogue: 2,0:01:08.48,0:01:09.78,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}WAJAHNYA KUSUT.
+Dialogue: 2,0:01:09.78,0:01:10.62,Narasi,,0,0,0,,{\pos(360,902)\1c&H00FFA4C7\fscx88\fscy88\t(0,90,\fscx100\fscy100)}"KAK,
+Dialogue: 3,0:01:09.78,0:01:10.62,Chip,,0,0,0,,{\pos(360,843)\3c&H00FFA4C7\4c&H00FFA4C7}JUSTIN
+Dialogue: 2,0:01:10.62,0:01:11.86,Narasi,,0,0,0,,{\pos(360,902)\1c&H00FFA4C7\fscx88\fscy88\t(0,90,\fscx100\fscy100)}AKU JUGA KETIDURAN
+Dialogue: 3,0:01:10.62,0:01:11.86,Chip,,0,0,0,,{\pos(360,843)\3c&H00FFA4C7\4c&H00FFA4C7}JUSTIN
+Dialogue: 2,0:01:11.86,0:01:12.88,Narasi,,0,0,0,,{\pos(360,902)\1c&H00FFA4C7\fscx88\fscy88\t(0,90,\fscx100\fscy100)}WAKTU ULANGAN IPA
+Dialogue: 3,0:01:11.86,0:01:12.88,Chip,,0,0,0,,{\pos(360,843)\3c&H00FFA4C7\4c&H00FFA4C7}JUSTIN
+Dialogue: 2,0:01:12.88,0:01:13.92,Narasi,,0,0,0,,{\pos(360,902)\1c&H00FFA4C7\fscx88\fscy88\t(0,90,\fscx100\fscy100)}TADI.
+Dialogue: 3,0:01:12.88,0:01:13.92,Chip,,0,0,0,,{\pos(360,843)\3c&H00FFA4C7\4c&H00FFA4C7}JUSTIN
+Dialogue: 2,0:01:13.92,0:01:14.52,Narasi,,0,0,0,,{\pos(360,902)\1c&H00FFA4C7\fscx88\fscy88\t(0,90,\fscx100\fscy100)}WALI KELASKU
+Dialogue: 3,0:01:13.92,0:01:14.52,Chip,,0,0,0,,{\pos(360,843)\3c&H00FFA4C7\4c&H00FFA4C7}JUSTIN
+Dialogue: 2,0:01:14.52,0:01:15.24,Narasi,,0,0,0,,{\pos(360,902)\1c&H00FFA4C7\fscx88\fscy88\t(0,90,\fscx100\fscy100)}LANGSUNG TELEPON
+Dialogue: 3,0:01:14.52,0:01:15.24,Chip,,0,0,0,,{\pos(360,843)\3c&H00FFA4C7\4c&H00FFA4C7}JUSTIN
+Dialogue: 2,0:01:15.24,0:01:15.97,Narasi,,0,0,0,,{\pos(360,902)\1c&H00FFA4C7\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MAMAKU."
+Dialogue: 3,0:01:15.24,0:01:15.97,Chip,,0,0,0,,{\pos(360,843)\3c&H00FFA4C7\4c&H00FFA4C7}JUSTIN
+Dialogue: 2,0:01:16.24,0:01:17.44,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}IA MENUNJUKKAN PESAN
+Dialogue: 2,0:01:17.44,0:01:18.70,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}DI HP KHARAN,
+Dialogue: 2,0:01:18.70,0:01:19.62,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}YANG IA PINJAM
+Dialogue: 2,0:01:19.62,0:01:20.44,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}KARENA HP-NYA
+Dialogue: 2,0:01:20.44,0:01:21.26,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}SENDIRI SUDAH
+Dialogue: 2,0:01:21.26,0:01:22.05,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}DISITA.
+Dialogue: 2,0:01:22.38,0:01:23.34,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}"MAMA TUNGGU DI
+Dialogue: 2,0:01:23.34,0:01:24.14,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}RUMAH!
+Dialogue: 2,0:01:24.14,0:01:25.02,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}MAMA MAU TAHU
+Dialogue: 2,0:01:25.02,0:01:26.01,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}SIAPA YANG NGAJAK
+Dialogue: 2,0:01:26.01,0:01:26.64,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}ABANG MAIN SAMPAI
+Dialogue: 2,0:01:26.64,0:01:27.17,Narasi,,0,0,0,,{\pos(360,896)\fscx88\fscy88\t(0,90,\fscx100\fscy100)}SUBUH."
+Dialogue: 4,0:00:00.00,0:00:00.70,Judul,,0,0,0,,{\pos(360,422)}MATA YANG TIDAK
+Dialogue: 4,0:00:00.00,0:00:00.70,Judul,,0,0,0,,{\pos(360,506)\1c&H004AD8FF}MAU TERBUKA
+Dialogue: 6,0:01:27.02,0:01:30.32,Bersambung,,0,0,0,,{\pos(360,602)\fad(250,0)}BERSAMBUNG...
+Dialogue: 6,0:01:27.22,0:01:30.32,SubJudul,,0,0,0,,{\pos(360,682)\fad(250,0)}Bagian 3: Jam 10 Malam

@@ -60,7 +60,10 @@ PROPW = {'map': 'kertas', 'foto': 'kertas', 'kertas': 'kertas', 'surat': 'kertas
 def detect_actions(L, castnames, hold, last_subj, scene_loc='', scene_berdiri=False):
     toks = [w[0][1] for w in L['words']]; times = [w[1][0] for w in L['words']]
     acts, subj = [], last_subj
+    NEG = ('tidak', 'nggak', 'gak', 'belum', 'jangan', 'bukan', 'enggak')
     for i, w in enumerate(toks):
+        if i > 0 and toks[i - 1] in NEG and not w in castnames: continue
+        if i > 1 and toks[i - 2] in NEG and toks[i - 1] in ('bisa', 'langsung', 'mau', 'sempat') and not w in castnames: continue
         if w in castnames:
             if i > 0 and subj and toks[i - 1] in castnames + ['dan', 's'] and w not in subj: subj = subj + [w]
             elif not (subj and w in subj and i > 0 and toks[i - 1] in castnames + ['dan', 's']): subj = [w]
@@ -81,6 +84,14 @@ def detect_actions(L, castnames, hold, last_subj, scene_loc='', scene_berdiri=Fa
                 continue
         if re.match(r'^(berjalan|jalan|melangkah|maju)$', w) and subj and 'depan' in toks[i + 1:i + 4] and scene_loc == 'kelas' and not scene_berdiri:
             for s_ in subj: acts.append({'who': s_, 'a': 'kedepan', 't': round(max(L['start'], times[i] - 0.3), 2), 'dur': 4.0})
+            continue
+        if re.match(r'^(kaget|terkejut|tersentak|terperanjat|kagetnya|mengagetkan|terkaget)$', w):
+            for s_ in (subj or castnames): acts.append({'who': s_, 'a': 'kaget', 't': round(times[i], 2), 'dur': 2.5})
+        if w in ('ketiduran', 'terlelap') or (w == 'menyentuh' and 'meja' in toks[i + 1:i + 3]):
+            for s_ in subj or []: acts.append({'who': s_, 'a': 'ketiduran', 't': round(times[i], 2), 'dur': 3.0})
+            continue
+        if w == 'muncul' and subj and any(x in toks[i + 1:i + 4] for x in ('pintu', 'depan')):
+            for s_ in subj: acts.append({'who': s_, 'a': 'jalan', 't': round(max(L['start'], times[i] - 0.8), 2), 'dur': 2.0, 'dari': 'pintu'})
             continue
         for rx, a, dur in VERB:
             if not re.match(rx, w) or not subj: continue
@@ -183,14 +194,16 @@ def main():
              'expr': dict(expr), 'pose': pose, 'talk': talk_all, 'flash': flash}
         if grade: d['grade'] = grade
         if sc.get('berdiri'): d['berdiri'] = True
-        low = L['txt'].lower(); toks0 = [w[0][1] for w in L['words']]
-        mj = re.search(r'pukul (\d{1,2})(?:[.:](\d{2}))?', low)
+        toks0 = [w[0][1] for w in L['words']]
+        low = re.sub(r'["“][^"”]*["”]', ' ', L['txt'].lower()) if not L['txt'].lower().startswith('bagian') else ''
+        tl = re.findall(r'[a-z0-9]+', low)
+        mj = re.search(r'(?:pukul|jam) (\d{1,2})(?:[.:](\d{2})| lewat (\d{1,2}))?', low)
         if mj and who == 'NARATOR':
             hh = int(mj.group(1)); hh = hh + 12 if (('malam' in low or 'sore' in low) and hh < 12 and hh >= 3) else hh
-            state['jam'] = f"{hh:02d}.{mj.group(2) or '00'}"; state['menit'] = 0
+            state['jam'] = f"{hh:02d}.{int(mj.group(2) or mj.group(3) or 0):02d}"; state['menit'] = 0
         else:
-            for kata, jj in (('pagi', '06.45'), ('istirahat', '10.00'), ('siang', '12.30'), ('sore', '16.00'), ('malam', '20.00')):
-                if kata in toks0 and toks0[toks0.index(kata) - 1:toks0.index(kata)] != ['besok'] and not state.get('_set_' + kata): state['jam'] = jj; state['menit'] = 0; state['_set_' + kata] = True; break
+            for kata, jj in (('pagi', '06.45'), ('istirahat', '10.00'), ('siang', '12.30'), ('sepulang', '14.30'), ('sore', '16.00'), ('malam', '20.00')):
+                if kata in tl and tl[tl.index(kata) - 1:tl.index(kata)] not in (['besok'], ['tadi']) and not state.get('_set_' + kata): state['jam'] = jj; state['menit'] = 0; state['_set_' + kata] = True; break
         for hr in ('senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu'):
             if hr in toks0 and who == 'NARATOR' and toks0[toks0.index(hr) - 1:toks0.index(hr)] != ['besok']: state['hari'] = hr.capitalize()
         if state.get('jam'):
@@ -223,11 +236,17 @@ def main():
         else: acts = []
         last_scene = sc
         if any(e['a'] == 'kedepan' for e in acts) and (not (L['cam'] or '').strip() or (L['cam'] or '').strip() in ('lebar', 'dua')): d['cam'] = 'kedepan'
+        for e in acts:
+            if e['a'] == 'kaget': d['expr'][e['who']] = 'kaget'
+        if 'bangun' in [w[0][1] for w in L['words']]:
+            for e in prev_acts:
+                if e['a'] == 'ketiduran': e['sampai'] = round(L['start'], 2)
         jl = [e for e in acts if e['a'] in ('jalan', 'endap')]
         if jl and (L['cam'] or '').strip() == 'masuk': d['cam'] = 'masuk:' + jl[0]['who']
         if jl and not (L['cam'] or '').strip() and not d.get('foto') and not d.get('kertas'): d['cam'] = 'masuk:' + jl[0]['who']
         d['acts'] = prev_acts + acts; d['hold'] = hold0; prev_acts = acts
-        tid = next((k for k, (tk, tm) in enumerate(L['words']) if tk[1] in ('tidur', 'tertidur')), None)
+        _tw = [w[0][1] for w in L['words']]
+        tid = next((k for k, tk in enumerate(_tw) if tk in ('tidur', 'tertidur') and not any(x in ('tidak', 'nggak', 'gak', 'belum', 'bisa', 'jangan') for x in _tw[max(0, k - 2):k])), None) if who == 'NARATOR' else None
         if tid is not None and castnames and sc['loc'] in ('kamar', 'rumah'):
             tt = round(L['words'][tid][1][0] - 0.2, 2); who0 = (last_subj or castnames)[0] if (last_subj or castnames) else castnames[0]
             key0 = next((v for v in sc['cast'].values() if v.split('#')[0] == who0), who0)

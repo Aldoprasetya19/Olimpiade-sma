@@ -78,3 +78,8 @@ terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di
   berjalan ke depan, lalu berbalik menghadap kelas (kamera `kedepan` dari sisi kelas).
 - **Menatap teman / saling pandang**: tokoh menoleh ke teman yang disebut, atau ke teman terdekat.
 - **Masuk lewat pintu** hanya untuk *masuk/datang/tiba*; *berjalan/maju* biasa tidak memakai pintu.
+- **Kaget**: kata *kaget/terkejut/tersentak/terperanjat* di narasi → ekspresi kaget untuk tokoh yang disebut (atau semua tokoh di adegan).
+- **Ketiduran di meja**: *ketiduran/terlelap* atau *dahinya menyentuh meja* → kepala tertunduk di meja sampai ada kata *bangun*.
+- **Muncul di pintu**: *muncul di pintu* → berjalan masuk dari pintu.
+- **Negasi**: kata kerja yang didahului *tidak/nggak/gak/belum/jangan* tidak memicu aksi (mis. "tidak langsung pulang", "gak bisa tidur").
+- **Jam HP**: dibaca dari narasi di luar kutipan; *jam 3 lewat 12* → 03.12; *sepulang sekolah* → 14.30; *tadi sore/besok pagi* diabaikan.

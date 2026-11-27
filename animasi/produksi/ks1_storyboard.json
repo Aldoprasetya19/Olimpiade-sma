@@ -1,0 +1,387 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 74.02,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "GABRIEL": {
+   "warna": "#8FE3D8"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 74.02,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.42,
+     "teks": "Bagian 1."
+    },
+    {
+     "start": 1.42,
+     "end": 2.75,
+     "teks": "Satu Match Lagi."
+    },
+    {
+     "start": 3.14,
+     "end": 4.1,
+     "teks": "Rabu malam,"
+    },
+    {
+     "start": 4.1,
+     "end": 5.34,
+     "teks": "pukul 10."
+    },
+    {
+     "start": 5.34,
+     "end": 6.34,
+     "teks": "Aldo membuka grup"
+    },
+    {
+     "start": 6.34,
+     "end": 7.42,
+     "teks": "Mabar Squad dan"
+    },
+    {
+     "start": 7.42,
+     "end": 8.81,
+     "teks": "langsung mengetik."
+    },
+    {
+     "start": 8.98,
+     "end": 9.52,
+     "teks": "\"Mabar bentar,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 9.52,
+     "end": 10.02,
+     "teks": "yuk.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 10.02,
+     "end": 11.17,
+     "teks": "Satu match aja.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 11.46,
+     "end": 12.96,
+     "teks": "5 detik kemudian,"
+    },
+    {
+     "start": 12.96,
+     "end": 13.5,
+     "teks": "Aldo S."
+    },
+    {
+     "start": 13.5,
+     "end": 14.64,
+     "teks": "dan Gabriel sudah"
+    },
+    {
+     "start": 14.64,
+     "end": 15.25,
+     "teks": "online."
+    },
+    {
+     "start": 15.58,
+     "end": 16.64,
+     "teks": "Tidak lama,"
+    },
+    {
+     "start": 16.64,
+     "end": 17.36,
+     "teks": "Justin dari kelas"
+    },
+    {
+     "start": 17.36,
+     "end": 19.04,
+     "teks": "10 ikut bergabung."
+    },
+    {
+     "start": 19.04,
+     "end": 19.6,
+     "teks": "\"Kak,"
+    },
+    {
+     "start": 19.6,
+     "end": 20.67,
+     "teks": "aku carry ya.\""
+    },
+    {
+     "start": 21.3,
+     "end": 22.14,
+     "teks": "Match pertama"
+    },
+    {
+     "start": 22.14,
+     "end": 23.12,
+     "teks": "menang."
+    },
+    {
+     "start": 23.12,
+     "end": 24.91,
+     "teks": "Gabriel berteriak."
+    },
+    {
+     "start": 25.0,
+     "end": 25.96,
+     "teks": "\"Satu lagi!",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 25.96,
+     "end": 27.0,
+     "teks": "Satu lagi!",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 27.0,
+     "end": 27.84,
+     "teks": "Dikit lagi naik",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 27.84,
+     "end": 28.14,
+     "teks": "rank!\"",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 28.14,
+     "end": 30.74,
+     "teks": "Match kedua kalah."
+    },
+    {
+     "start": 30.74,
+     "end": 31.76,
+     "teks": "\"Gak bisa tidur",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 31.76,
+     "end": 32.96,
+     "teks": "kalau kalah.",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 32.96,
+     "end": 34.0,
+     "teks": "Satu lagi!",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 34.0,
+     "end": 34.82,
+     "teks": "Satu lagi!",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 34.82,
+     "end": 35.56,
+     "teks": "Satu lagi!",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 35.56,
+     "end": 36.29,
+     "teks": "Satu lagi!\"",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 36.78,
+     "end": 37.84,
+     "teks": "Saat Aldo melirik"
+    },
+    {
+     "start": 37.84,
+     "end": 38.52,
+     "teks": "jam di pojok"
+    },
+    {
+     "start": 38.52,
+     "end": 39.3,
+     "teks": "layar,"
+    },
+    {
+     "start": 39.3,
+     "end": 40.2,
+     "teks": "angkanya membuatnya"
+    },
+    {
+     "start": 40.2,
+     "end": 40.95,
+     "teks": "kaget."
+    },
+    {
+     "start": 41.04,
+     "end": 41.96,
+     "teks": "Jam 3 lewat"
+    },
+    {
+     "start": 41.96,
+     "end": 43.41,
+     "teks": "12 pagi."
+    },
+    {
+     "start": 43.56,
+     "end": 44.7,
+     "teks": "Saat itulah ia"
+    },
+    {
+     "start": 44.7,
+     "end": 46.24,
+     "teks": "teringat sesuatu."
+    },
+    {
+     "start": 46.24,
+     "end": 47.26,
+     "teks": "Buku matematika di"
+    },
+    {
+     "start": 47.26,
+     "end": 48.0,
+     "teks": "mejanya masih"
+    },
+    {
+     "start": 48.0,
+     "end": 49.22,
+     "teks": "tertutup rapat."
+    },
+    {
+     "start": 49.22,
+     "end": 50.18,
+     "teks": "Persis seperti tadi"
+    },
+    {
+     "start": 50.18,
+     "end": 50.69,
+     "teks": "sore."
+    },
+    {
+     "start": 51.14,
+     "end": 51.9,
+     "teks": "Ia mengecek grup"
+    },
+    {
+     "start": 51.9,
+     "end": 52.72,
+     "teks": "kelas."
+    },
+    {
+     "start": 52.72,
+     "end": 53.62,
+     "teks": "Ada pesan dari"
+    },
+    {
+     "start": 53.62,
+     "end": 54.22,
+     "teks": "Hissari yang belum"
+    },
+    {
+     "start": 54.22,
+     "end": 54.72,
+     "teks": "dibaca."
+    },
+    {
+     "start": 54.72,
+     "end": 56.66,
+     "teks": "\"Jangan lupa ya,"
+    },
+    {
+     "start": 56.66,
+     "end": 57.36,
+     "teks": "besok ulangan"
+    },
+    {
+     "start": 57.36,
+     "end": 58.18,
+     "teks": "matematika jam"
+    },
+    {
+     "start": 58.18,
+     "end": 59.32,
+     "teks": "pertama."
+    },
+    {
+     "start": 59.32,
+     "end": 60.54,
+     "teks": "Kata Pak Almis,"
+    },
+    {
+     "start": 60.54,
+     "end": 61.16,
+     "teks": "nilainya masuk"
+    },
+    {
+     "start": 61.16,
+     "end": 62.27,
+     "teks": "rapor.\""
+    },
+    {
+     "start": 63.04,
+     "end": 64.78,
+     "teks": "Aldo menelan ludah."
+    },
+    {
+     "start": 64.98,
+     "end": 66.08,
+     "teks": "Di layar,",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 66.08,
+     "end": 67.34,
+     "teks": "Gabriel masih",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 67.34,
+     "end": 67.84,
+     "teks": "mengetik.",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 67.84,
+     "end": 69.02,
+     "teks": "\"Satu match lagi!",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 69.02,
+     "end": 70.37,
+     "teks": "Terakhir beneran!\"",
+     "siapa": "GABRIEL"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "SATU MATCH",
+  "baris2": "LAGI",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 70.72,
+  "end": 74.02,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Mata yang Tidak Mau Terbuka"
+ }
+}

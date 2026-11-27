@@ -131,7 +131,7 @@ function makeProp(kind) {
 function holdProp(c, pr) { const h = c.handOf(-1); if (pr.parent !== h) { h.add(pr); const [p, r] = pr.userData.off; pr.position.set(...p); pr.rotation.set(...r); } }
 const AKSI_POSE = {
   tunjuk: POSES.tunjuk, tunduk: POSES.tunduk, raba: { shR: [-1.3, 0, 0.1], elR: -0.3, shL: [-1.3, 0, -0.1], elL: -0.3, torsoX: 0.1 },
-  intip: { torsoZ: 0.3, headZ: 0.2, torsoX: 0.15 }, silang: POSES.silang, tahan: POSES.serahkan, taruh: { shR: [-0.9, 0, 0.15], elR: -0.5, torsoX: 0.25, headX: 0.3 }, baca: { ...POSES.hpDua, headX: 0.42 }, bawa: POSES.bawa, serahkan: POSES.serahkan,
+  intip: { torsoZ: 0.3, headZ: 0.2, torsoX: 0.15 }, ketiduran: { torsoX: 0.55, headX: 0.75, shR: [-0.9, 0, 0.3], elR: -1.6, shL: [-0.9, 0, -0.3], elL: -1.6 }, silang: POSES.silang, tahan: POSES.serahkan, taruh: { shR: [-0.9, 0, 0.15], elR: -0.5, torsoX: 0.25, headX: 0.3 }, baca: { ...POSES.hpDua, headX: 0.42 }, bawa: POSES.bawa, serahkan: POSES.serahkan,
 };
 
 // ---------- foto cetak (polaroid) dengan gambar sederhana sesuai keterangan
@@ -173,7 +173,7 @@ export function autoShot(d) {
       SETS[L.set](S.scene, L.setOpts || {});
       const pintu = S.scene.getObjectByName('pintu'); let P = null, N = null;
       if (pintu) { P = pintu.position.clone(); N = new THREE.Vector3(Math.sin(pintu.rotation.y), 0, Math.cos(pintu.rotation.y)); }
-      const GURU = ['eko', 'agus', 'wali', 'crispin'];
+      const GURU = ['eko', 'agus', 'wali', 'crispin', 'almis'];
       const duduk = L.seats && !d.berdiri; let seatI = 0;
       const chars = {}, heads = {};
       const pn = Object.keys(d.cast || {}).filter(k => /^p\d+$/.test(k)).length;
@@ -241,6 +241,7 @@ export function autoShot(d) {
                 const pr = props[name] || props[a.to]; if (pr) { pr.visible = true; if (q < 0.55) holdProp(c, pr); else { holdProp(chars[a.to].c, pr); props[a.to] = pr; if (props[name] === pr) delete props[name]; } }
                 if (q > 0 && q < 0.75) p = combine(p, mixPose({}, AKSI_POSE.serahkan, Math.sin(Math.PI * Math.min(1, q / 0.75))));
               } else if (a.a === 'silang' && q > 0) p = combine(p, AKSI_POSE.silang);
+              else if (a.a === 'ketiduran' && q > 0 && !(a.sampai && t > a.sampai)) p = combine(p, AKSI_POSE.ketiduran);
               else if (AKSI_POSE[a.a] && q > 0 && q < 1.3) p = combine(p, AKSI_POSE[a.a]);
             }
             if (a.a === 'beri' && a.to === name && q > 0.25 && q < 0.8) p = combine(p, AKSI_POSE.serahkan);

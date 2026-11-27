@@ -2,7 +2,7 @@
 
 Desain tiap tokoh dikunci di `lib/cast.js` (`TOKOH`). **Jangan ubah jenis kelamin, kelas, atau bentuk tokoh
 kecuali pengguna memintanya.** Kunci naskah = nama huruf kecil (mis. `[kelas] p1=aldo p2=misel`).
-Lencana dada menunjukkan kelas: **10 hijau, 11 biru, 12 merah**. Semua tokoh perempuan tanpa kerudung.
+Di luar sekolah tiap tokoh memakai baju santai dengan warna tetap (`BAJU` di `lib/cast.js`). Lencana dada (seragam) menunjukkan kelas: **10 hijau, 11 biru, 12 merah**. Semua tokoh perempuan tanpa kerudung.
 
 | Kunci | Nama | JK | Kelas | Ciri |
 |---|---|---|---|---|

@@ -31,9 +31,18 @@ export const TOKOH = {
   mila: { jk: 'P', kelas: 12, skin: '#e0b07e', hair: '#2a1d16', hairStyle: 'panjang', glasses: true },
   sera: { jk: 'P', kelas: 12, skin: '#c4895a', hair: '#1f1712', hairStyle: 'bob' },
 };
+// baju santai tetap per tokoh (dipakai otomatis di luar sekolah)
+const BAJU = { aldo: '#2f4b7c', aldos: '#8a3b3b', gelly: '#3f6b4a', stefan: '#d9822b', febri: '#5b4a8a', gabriel: '#2c3e66', nava: '#1f7a7a',
+  kharan: '#b5651d', justin: '#2d7dd2', rialdi: '#4a4a4a', dika: '#a0522d', palsya: '#556b2f', hissari: '#c06c84', misel: '#e2a72e', aulia: '#6c5b7b',
+  dayinta: '#355c7d', elisabeth: '#f67280', manohara: '#99b898', septi: '#8e7cc3', nikita: '#e06666', naura: '#6fa8dc', sisil: '#ffb07c', mila: '#7a5c9e', sera: '#2a9d8f' };
+export function santai(key) {
+  const t = TOKOH[key]; if (!t) return {}; const c = BAJU[key] || '#5d6d7e';
+  return { shirt: c, sleeve: c, pants: t.jk === 'P' ? '#3b4a6b' : '#2f3640', skirt: null, badge: false, name: null, collar: false, longSleeve: false, jacket: key === 'rialdi' ? '#7a2e2e' : key === 'gabriel' ? '#2c3e66' : undefined };
+}
 export function murid(key, o = {}) {
   const t = TOKOH[key]; const { jk, kelas, label, utama, ...look } = t;
-  return new Char({ ...SERAGAM, ...(jk === 'P' ? { skirt: '#6b6e75', longSleeve: true } : {}), ...look, name: label || key.toUpperCase(),
+  const santaiP = o.skirt === null; if (santaiP) delete o.skirt;
+  return new Char({ ...SERAGAM, ...(jk === 'P' && !santaiP ? { skirt: '#6b6e75', longSleeve: true } : {}), ...look, name: label || key.toUpperCase(),
     badgeColor: LENCANA[kelas], blinkSeed: [...key].reduce((a, c) => a + c.charCodeAt(0), 0) % 30 / 10, ...o });
 }
 export const CAST = {

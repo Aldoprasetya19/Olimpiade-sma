@@ -12,8 +12,8 @@ import { phoneInsert } from './shots.js';
 // ---------- lokasi: slot tokoh [x, z, rotY, duduk?], batas kamera, grade bawaan
 export const LOKASI = {
   rumah: { set: 'rumah', grade: 'malam', bounds: [-5.6, 5.6, -5.1, 5.1],
-    slot: { meja: [0, 1.0, Math.PI, true], dudukKiri: [0, 1.0, Math.PI, true], seberang: [0, -1.0, 0, true], dapur: [2.0, -4.1, Math.PI * 0.1, false], dekatMeja: [1.6, 0.2, -Math.PI / 2, false] } },
-  kelas: { set: 'kelas', grade: 'pagi', bounds: [-6.1, 6.1, -5.6, 5.6], center: [0, -4.4], seats: [[-0.47, -1.45], [0.47, -1.45], [-0.47, 0.85], [0.47, 0.85], [2.73, -1.45], [3.67, -1.45], [-3.67, -1.45], [-2.73, -1.45], [2.73, 0.85], [3.67, 0.85], [-3.67, 0.85], [-2.73, 0.85]],
+    slot: { meja: [0, 1.0, Math.PI, true], dudukKiri: [0, 1.0, Math.PI, true], kiriMeja: [-1.25, 0, Math.PI / 2, true], kananMeja: [1.25, 0, -Math.PI / 2, true], seberang: [0, -1.0, 0, true], dapur: [2.0, -4.1, Math.PI * 0.1, false], dekatMeja: [1.6, 0.2, -Math.PI / 2, false] } },
+  kelas: { set: 'kelas', grade: 'pagi', bounds: [-6.1, 6.1, -5.6, 5.6], center: [0, -4.4], seats: [[-0.47, -1.45], [0.47, -1.45], [-0.47, 0.85], [0.47, 0.85], [2.73, -1.45], [3.67, -1.45], [-3.67, -1.45], [-2.73, -1.45], [2.73, 0.85], [3.67, 0.85], [-3.67, 0.85], [-2.73, 0.85], [-0.47, 3.15], [0.47, 3.15], [2.73, 3.15], [3.67, 3.15], [-3.67, 3.15], [-2.73, 3.15]],
     slot: { dudukKiri: [-0.47, -1.45, Math.PI, true], dudukKanan: [0.47, -1.45, Math.PI, true], depanMeja: [-0.2, -3.4, 0, false], guruDepan: [1.7, -4.3, -0.35, false], lorong: [1.6, -1.45, -Math.PI / 2, false] } },
   kamar: { set: 'kamar', grade: 'malam', bounds: [-4.1, 4.1, -3.6, 3.6], slot: { mejaBelajar: [-1.5, -2.45, Math.PI, true], kasur: [2.4, -0.2, Math.PI, false] } },
   kantin: { set: 'belakangKantin', grade: 'pagi', bounds: [-9, 9, -2.4, 12],
@@ -53,7 +53,7 @@ function segDist(p, a, b) {
 }
 
 // cari posisi kamera untuk close-up/medium subjek, menghindari kepala lain & batas ruangan
-export function solveCam(L, heads, who, { dist = 2.8, fov = 40, high = 0.15 } = {}) {
+export function solveCam(L, heads, who, { dist = 2.8, fov = 40, high = 0.15, obst = [] } = {}) {
   const h = heads[who];
   const target = new THREE.Vector3(h.x, h.y - 0.12, h.z);
   const [x0, x1, z0, z1] = L.bounds;
@@ -64,7 +64,7 @@ export function solveCam(L, heads, who, { dist = 2.8, fov = 40, high = 0.15 } = 
       const cam = new THREE.Vector3(h.x + Math.sin(ang) * d, h.y + high + hi, h.z + Math.cos(ang) * d);
       if (cam.x < x0 || cam.x > x1 || cam.z < z0 || cam.z > z1 || blocked(L, cam.x, cam.z)) continue;
       let clear = 9;
-      for (const [k, o] of Object.entries(heads)) {
+      for (const [k, o] of [...Object.entries(heads), ...obst.map((o2, i) => ['_x' + i, o2])]) {
         if (k === who) continue;
         const p = new THREE.Vector3(o.x, o.y + 0.1, o.z);
         clear = Math.min(clear, segDist(p, cam, target), p.distanceTo(cam) - 0.4);
@@ -130,6 +130,7 @@ function makeProp(kind) {
 }
 function holdProp(c, pr) { const h = c.handOf(-1); if (pr.parent !== h) { h.add(pr); const [p, r] = pr.userData.off; pr.position.set(...p); pr.rotation.set(...r); } }
 const AKSI_POSE = {
+  game: { ...POSES.hpDua, headX: 0.35 },
   tunjuk: POSES.tunjuk, tunduk: POSES.tunduk, raba: { shR: [-1.3, 0, 0.1], elR: -0.3, shL: [-1.3, 0, -0.1], elL: -0.3, torsoX: 0.1 },
   intip: { torsoZ: 0.3, headZ: 0.2, torsoX: 0.15 }, ketiduran: { torsoX: 0.55, headX: 0.75, shR: [-0.9, 0, 0.3], elR: -1.6, shL: [-0.9, 0, -0.3], elL: -1.6 }, silang: POSES.silang, tahan: POSES.serahkan, taruh: { shR: [-0.9, 0, 0.15], elR: -0.5, torsoX: 0.25, headX: 0.3 }, baca: { ...POSES.hpDua, headX: 0.42 }, bawa: POSES.bawa, serahkan: POSES.serahkan,
 };
@@ -187,8 +188,17 @@ export function autoShot(d) {
         S.add(c, [s[0], 0, s[1]], s[2]); chars[name] = { c, sit: s[3] };
         heads[name] = { x: s[0], y: headY(s[3]), z: s[1], rot: s[2] };
         if (/^(piala|cat)/.test(d.pose?.[name] || '')) { const pr = d.pose[name] === 'piala' ? piala() : kalengCat(); c.handOf(-1).add(pr); pr.position.set(0.18, -0.05, 0.12); pr.rotation.set(Math.PI / 2 - 0.4, 0, 0); }
-        if (/^(hp|telepon)/.test(d.pose?.[name] || '')) { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI);
+        if (/^(hp|telepon|game)/.test(d.pose?.[name] || '')) { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI);
           ph.draw(x => drawChat(x, { title: 'Chat', messages: [{ text: '...' }] })); }
+      }
+      const extraHeads = [];
+      if (L.seats && !d.sepi) {
+        const taken = Object.values(chars).map(o => [o.c.root.position.x, o.c.root.position.z]);
+        L.seats.forEach(([sx, sz], i) => {
+          if (taken.some(([x2, z2]) => Math.hypot(x2 - sx, z2 - sz) < 0.4)) return;
+          const c = (i % 2 ? CAST.siswi : CAST.siswa)(i * 5 + 1, { name: null }); S.add(c, [sx, 0, sz], Math.PI);
+          c.act(combine(POSES.duduk, i % 3 ? POSES.tanganMeja : {}), ['netral', 'fokus', 'senyum'][i % 3], 0.3 + i, false, i); extraHeads.push({ x: sx, y: 1.73, z: sz, rot: Math.PI });
+        });
       }
       const props = {}, bags = {};
       for (const [name, kindP] of Object.entries(d.hold || {})) if (chars[name]) { props[name] = makeProp(kindP); props[name].userData.kind = kindP; holdProp(chars[name].c, props[name]); }
@@ -200,7 +210,7 @@ export function autoShot(d) {
       const base = {}; for (const [n, { c }] of Object.entries(chars)) base[n] = { x: c.root.position.x, z: c.root.position.z, r: c.root.rotation.y };
       const [kind, who] = (d.cam || 'dua').split(':');
       let cam;
-      if ((kind === 'cu' || kind === 'mcu') && heads[who]) cam = solveCam(L, heads, who, kind === 'cu' ? { dist: 3.3, fov: 40 } : { dist: 4.3, fov: 46, high: 0.05 });
+      if ((kind === 'cu' || kind === 'mcu') && heads[who]) cam = solveCam(L, heads, who, kind === 'cu' ? { dist: 3.3, fov: 40, obst: extraHeads } : { dist: 4.3, fov: 46, high: 0.05, obst: extraHeads });
       else if (kind === 'masuk' && P && heads[who]) { const h = heads[who]; cam = solveGroup(L, { a: { x: P.x + N.x * 0.6, y: 1.9, z: P.z + N.z * 0.6, rot: Math.atan2(h.x - P.x, h.z - P.z) }, b: { ...h, rot: Math.atan2(P.x - h.x, P.z - h.z) } }, true); }
       else if (kind === 'laptop') cam = { pos: [0.55, 2.55, -1.25], look: [-1.45, 1.2, -3.4], fov: 30 };
       else if (kind === 'kedepan') cam = { pos: [4.6, 2.9, 1.8], look: [-0.6, 1.2, -2.4], fov: 56 };
@@ -214,7 +224,7 @@ export function autoShot(d) {
       return (lt, k, t) => {
         for (const [name, { c, sit }] of Object.entries(chars)) {
           let p = sit ? POSES.duduk : POSES.berdiri;
-          const extra = /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
+          const extra = d.pose?.[name] === 'game' ? AKSI_POSE.game : /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
           if (d.pose?.[name] === 'angguk') p = combine(p, { headX: lt < 1 ? Math.max(0, Math.sin(lt * 9)) * 0.3 : 0 });
           if (props[name]?.parent === c.handOf(-1) && props[name].visible !== false) p = combine(p, props[name].userData.kind === 'kertas' ? AKSI_POSE.baca : props[name].userData.kind === 'hp' ? POSES.hp : AKSI_POSE.bawa);
           const B = base[name]; let px = B.x, pz = B.z, rot = B.r;
@@ -299,7 +309,7 @@ function phoneShot(S, d) {
   const dur = d.t1 - d.t0, n = (ph.pesan || []).length;
   const [jdl, jam] = (ph.judul || '').split('@'); ph.judul = jdl; if (jam) ph.jam = jam; else if (d.jam) ph.jam = d.jam; if (d.hari) ph.hari = d.hari;
   const av = ph.av || (ph.anon ? { unknown: true, bg: '#8b949e' } : { group: (ph.judul || '?').slice(0, 2).toUpperCase(), bg: '#3f8a5c' });
-  return phoneInsert(S, { set: L.set, setOpts: L.setOpts, camPos: [0.4, 1.9, 2.0], look: [0, 1.2, -2.5], fog: d.grade === 'malam' || L.grade === 'malam' ? '#3b2e26' : '#b9c4c9', fogFar: 12, push: 0.15,
+  return phoneInsert(S, { landscape: ph.jenis === 'game', set: L.set, setOpts: L.setOpts, camPos: [0.4, 1.9, 2.0], look: [0, 1.2, -2.5], fog: d.grade === 'malam' || L.grade === 'malam' ? '#3b2e26' : '#b9c4c9', fogFar: 12, push: 0.15,
     draw: (c, lt) => {
       if (ph.jenis === 'post') {
         c.fillStyle = '#fff'; c.fillRect(0, 0, 540, 1080); c.fillStyle = '#111'; c.font = '800 34px Nunito'; c.textAlign = 'left'; c.fillText('Instagram', 24, 70);
@@ -310,6 +320,17 @@ function phoneShot(S, d) {
         c.fillStyle = '#e74c3c'; c.font = '700 40px Nunito'; c.fillText('♥', 24, 800); c.fillStyle = '#111'; c.font = '800 24px Nunito'; c.fillText('128 suka', 24, 850);
         c.font = '500 26px Nunito'; c.fillText((ph.judul || '').toLowerCase() + '  ' + (ph.pesan?.[0] || ''), 24, 895); c.fillStyle = '#999'; c.font = '500 22px Nunito'; c.fillText('20 menit yang lalu', 24, 940);
         return;
+      }
+      if (ph.jenis === 'game') {
+        c.save(); c.translate(540, 0); c.rotate(Math.PI / 2); const W2 = 1080, H2 = 540;
+        c.fillStyle = '#3f6b3a'; c.fillRect(0, 0, W2, H2); c.fillStyle = '#c9b27a'; c.fillRect(0, H2 / 2 - 30, W2, 60); c.fillRect(W2 / 2 - 30, 0, 60, H2);
+        c.fillStyle = '#2d4f8a'; c.fillRect(30, H2 - 140, 110, 110); c.fillStyle = '#8a2d2d'; c.fillRect(W2 - 140, 30, 110, 110);
+        for (let i = 0; i < 6; i++) { const x = 200 + ((i * 167 + lt * 60 * (i % 2 ? 1 : -1)) % 700), y = 120 + (i * 71) % 300; c.fillStyle = i < 3 ? '#4fa3ff' : '#ff5f5f'; c.beginPath(); c.arc(x, y, 18, 0, Math.PI * 2); c.fill(); }
+        c.fillStyle = 'rgba(0,0,0,0.55)'; c.fillRect(W2 / 2 - 150, 10, 300, 56); c.fillStyle = '#fff'; c.font = '800 36px Nunito'; c.textAlign = 'center'; c.fillText(ph.skor || '12  -  9', W2 / 2, 50);
+        c.fillStyle = 'rgba(255,255,255,0.25)'; c.beginPath(); c.arc(130, H2 - 120, 80, 0, Math.PI * 2); c.fill(); [0, 1, 2].forEach(i => { c.beginPath(); c.arc(W2 - 120 - i * 95, H2 - 90 - (i % 2) * 70, 38, 0, Math.PI * 2); c.fill(); });
+        if (ph.hasil) { c.fillStyle = 'rgba(0,0,0,0.5)'; c.fillRect(0, 0, W2, H2); const win = ph.hasil === 'menang'; c.fillStyle = win ? '#ffd84a' : '#ff6b6b'; c.font = '900 120px Oswald';
+          c.fillText(win ? 'MENANG!' : 'KALAH', W2 / 2, H2 / 2 + 40 + Math.sin(lt * 6) * 4); }
+        c.restore(); return;
       }
       if (ph.jenis === 'retak') {
         c.fillStyle = '#0d0d0d'; c.fillRect(0, 0, 540, 1080); c.globalAlpha = 0.35 + 0.25 * Math.sin(lt * 9); c.fillStyle = '#3a5a8a'; c.fillRect(0, 0, 540, 1080); c.globalAlpha = 1;

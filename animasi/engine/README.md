@@ -83,3 +83,15 @@ terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di
 - **Muncul di pintu**: *muncul di pintu* → berjalan masuk dari pintu.
 - **Negasi**: kata kerja yang didahului *tidak/nggak/gak/belum/jangan* tidak memicu aksi (mis. "tidak langsung pulang", "gak bisa tidur").
 - **Jam HP**: dibaca dari narasi di luar kutipan; *jam 3 lewat 12* → 03.12; *sepulang sekolah* → 14.30; *tadi sore/besok pagi* diabaikan.
+- **Game di HP**: kata *match/game/mabar/rank/carry* → mode game; HP dipegang dua tangan dan close-up HP **landscape**
+  dengan layar game. *Match ... menang/kalah* → layar "MENANG!"/"KALAH".
+- **Ucapan lewat HP**: dialog dari tokoh yang tidak ada di adegan (mis. teriakan di grup) → tampil tokoh yang bicara di
+  kamarnya sambil memegang HP → layar pesan/notifikasi → tokoh yang mendengar kaget melihat HP.
+- **Kelas penuh**: saat jam pelajaran semua bangku kosong diisi murid figuran yang duduk; kelas jadi sepi otomatis bila
+  narasi menyebut *istirahat/sepulang/pulang/remedial/sepi* (atau `{sepi}` lewat kata itu).
+- **Belajar bersama**: *belajar bersama/bareng/dengan/di ..., kerja kelompok* → adegan belajar bersama: *di rumah X* →
+  meja rumah (tuan rumah berbaju rumah), selain itu di kelas yang sepi; tokoh yang disebut setelah *bersama* menjelaskan.
+- **Mimik dari kata sifat**: menguap/mengantuk/lelah → ngantuk, tidak enak/sungkan/canggung → sungkan, malu, bingung/heran,
+  gugup/cemas/khawatir/takut, sedih/murung/kusut, menangis, kecewa, marah/kesal, senang/gembira/bersorak, lega,
+  menyesal, menelan ludah → cemas (ekspresi yang ditulis eksplisit di naskah tetap dipakai).
+- Kursi meja belajar kamar menghadap meja (sandaran di belakang tokoh).

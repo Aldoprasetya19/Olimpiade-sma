@@ -26,6 +26,10 @@ import argparse, json, os, re, subprocess, sys, difflib
 sys.path.insert(0, os.path.dirname(__file__))
 from naskah_ke_storyboard import chunks  # noqa
 import buat_subtitle  # noqa
+import subprocess as _sp
+try:
+    TOKOH_NAMA = set(re.findall(r'^  (\w+): \{ jk', open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'engine', 'lib', 'cast.js')).read(), re.M))
+except Exception: TOKOH_NAMA = set()
 
 WARNA = {'ALDO': '#FFFFFF', 'NAYA': '#FFB3C7', 'GRUP KELAS': '#9BE3B0', 'WALI KELAS': '#A8D8F8', 'WALI': '#A8D8F8', 'IBU': '#FFC98A',
          'NOMOR ASING': '#FF8A8A', 'RENO': '#FFD84A', 'BAGAS': '#C7A4FF', 'DIMAS': '#8FE3D8', 'PESAN': '#FF8A8A'}
@@ -107,6 +111,28 @@ def detect_actions(L, castnames, hold, last_subj, scene_loc='', scene_berdiri=Fa
                 if a == 'baca': e['prop'] = 'kertas'; hold[s_] = 'kertas'
                 acts.append(e)
     return acts, subj
+
+MIMIK = {'menguap': 'ngantuk', 'mengantuk': 'ngantuk', 'ngantuk': 'ngantuk', 'lelah': 'ngantuk', 'capek': 'ngantuk', 'letih': 'ngantuk', 'lesu': 'ngantuk',
+         'sungkan': 'paksa', 'canggung': 'paksa', 'malu': 'malu', 'gugup': 'cemas', 'cemas': 'cemas', 'khawatir': 'cemas', 'gelisah': 'cemas', 'takut': 'cemas',
+         'pucat': 'cemas', 'tegang': 'cemas', 'bingung': 'bingung', 'heran': 'bingung', 'sedih': 'sedih', 'murung': 'sedih', 'kusut': 'sedih', 'menangis': 'nangis',
+         'kecewa': 'kecewa', 'marah': 'marah', 'kesal': 'marah', 'geram': 'marah', 'senang': 'senang', 'gembira': 'senang', 'bahagia': 'senang', 'bersorak': 'senang',
+         'tertawa': 'senang', 'tersenyum': 'senyum', 'lega': 'lega', 'menyesal': 'bersalah', 'bersalah': 'bersalah', 'terdiam': 'serius', 'cemberut': 'marah'}
+FRASA = [('tidak enak', 'bersalah'), ('nggak enak', 'bersalah'), ('gak enak', 'bersalah'), ('menelan ludah', 'cemas'), ('mata merah', 'ngantuk')]
+GAME = ('match', 'game', 'mabar', 'rank', 'carry', 'ngegame')
+
+def mimik(L, castnames, last_subj):
+    toks = [w[0][1] for w in L['words']]; out = {}; subj = list(last_subj or [])
+    txt = ' '.join(toks)
+    for i, w in enumerate(toks):
+        if w in castnames: subj = [w]
+        if w == 's' and i > 0 and toks[i - 1] == 'aldo' and 'aldos' in castnames: subj = ['aldos']
+        if w in ('mereka', 'semua', 'seisi', 'teman', 'temanteman'): subj = list(castnames)
+        if w in MIMIK:
+            for s_ in (subj or castnames[:1]): out[s_] = MIMIK[w]
+    for f, e in FRASA:
+        if f in txt:
+            for s_ in (subj or castnames[:1]): out[s_] = e
+    return out
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -247,6 +273,49 @@ def main():
         d['acts'] = prev_acts + acts; d['hold'] = hold0; prev_acts = acts
         _tw = [w[0][1] for w in L['words']]
         tid = next((k for k, tk in enumerate(_tw) if tk in ('tidur', 'tertidur') and not any(x in ('tidak', 'nggak', 'gak', 'belum', 'bisa', 'jangan') for x in _tw[max(0, k - 2):k])), None) if who == 'NARATOR' else None
+        # --- mimik dari kata sifat (tidak menimpa ekspresi yang ditulis eksplisit)
+        eksplisit = {x.split('=')[0].strip().lower() for x in (L['ex'] or '').split(',') if '=' in x}
+        if who == 'NARATOR':
+            for nm, e in mimik(L, castnames, last_subj).items():
+                if nm not in eksplisit and d['expr'].get(nm) != 'kaget': d['expr'][nm] = e
+        # --- kelas sepi saat istirahat / pulang
+        if sc['loc'] == 'kelas' and who == 'NARATOR' and any(x in _tw for x in ('istirahat', 'sepulang', 'pulang', 'sepi', 'remedial')): sc['sepi'] = True
+        if sc.get('sepi'): d['sepi'] = True
+        # --- game di HP: landscape
+        if any(x in _tw for x in GAME) or sc.get('_game'):
+            if any(x in _tw for x in GAME) and 'keluar' not in _tw: sc['_game'] = True
+            if 'keluar' in _tw: sc['_game'] = False
+            if 'match' in _tw and ('menang' in _tw or 'kalah' in _tw) and not (L['cam'] or '').startswith('hp'):
+                d['cam'] = 'hp'; d['phone'] = {'judul': '', 'pesan': [], 'jenis': 'game', 'hasil': 'menang' if 'menang' in _tw else 'kalah'}
+            for nm, ps in list(d['pose'].items()):
+                if ps == 'hp' and sc.get('_game'): d['pose'][nm] = 'game'
+        # --- belajar bersama
+        lowt = ' '.join(_tw)
+        mb = re.search(r'belajar (bersama|bareng|dengan|di)|kerja kelompok', lowt)
+        if who == 'NARATOR' and mb:
+            ikut = list(castnames) if ('mereka' in _tw or not last_subj) else list(last_subj)
+            for x in _tw[_tw.index(mb.group(0).split()[0]):]:
+                if x in TOKOH_NAMA and x not in ikut: ikut.append(x)
+            mr = re.search(r'di rumah (\w+)', lowt)
+            if mr:
+                tuan = mr.group(1)
+                d.update({'loc': 'rumah', 'cast': {sl: (k + '#rumah' if k == tuan else k) for sl, k in zip(['meja', 'seberang', 'kiriMeja', 'kananMeja'], ikut[:4])}, 'cam': 'lebar', 'grade': d.get('grade') or 'hangat'})
+            else:
+                d.update({'loc': 'kelas', 'cast': {f'p{i + 1}': k for i, k in enumerate(ikut[:6])}, 'cam': 'lebar', 'sepi': True})
+            guru = [x for x in _tw[_tw.index(mb.group(0).split()[0]):] if x in ikut]
+            d['pose'] = {k: ('tunjuk' if guru and k == guru[0] else 'tanganMeja') for k in ikut}
+            d['expr'] = {k: ('senyum' if guru and k == guru[0] else 'fokus') for k in ikut}
+        # --- ucapan/teriakan lewat HP oleh tokoh yang tidak ada di adegan
+        if who != 'NARATOR' and key(who) not in castnames and castnames and (d['cam'] in ('hp',) or sc['loc'] in ('kamar', 'rumah')):
+            spk, lis = key(who), castnames[0]; dur = d['t1'] - d['t0']
+            malam = d.get('jam') and (int(d['jam'][:2]) >= 18 or int(d['jam'][:2]) < 5)
+            s1 = dict(d); s1.update({'t1': round(d['t0'] + dur * (0.45 if dur > 2.4 else 0.6), 2), 'loc': 'kamar', 'cast': {'mejaBelajar': spk + '#rumah'}, 'cam': f'cu:{spk}',
+                                     'pose': {spk: 'game' if sc.get('_game') else 'hp'}, 'expr': {spk: d['expr'].get(spk, 'senang')}, 'acts': [], 'grade': 'malam' if malam else d.get('grade')})
+            s1.pop('phone', None); shots.append(s1)
+            if dur > 2.4 and d['cam'] == 'hp':
+                s2 = dict(d); s2['t0'] = s1['t1']; s2['t1'] = round(d['t0'] + dur * 0.75, 2); shots.append(s2)
+            d = dict(d); d.update({'t0': shots[-1]['t1'], 'cam': f'cu:{lis}', 'expr': {**d['expr'], lis: 'kaget'}, 'pose': {**d['pose'], lis: 'game' if sc.get('_game') else 'hp'}})
+            d.pop('phone', None)
         if tid is not None and castnames and sc['loc'] in ('kamar', 'rumah'):
             tt = round(L['words'][tid][1][0] - 0.2, 2); who0 = (last_subj or castnames)[0] if (last_subj or castnames) else castnames[0]
             key0 = next((v for v in sc['cast'].values() if v.split('#')[0] == who0), who0)

@@ -365,7 +365,7 @@ export const SETS = {
     lights(scene, { sky: '#cfe0ff', ground: '#4a4050', hemi: 1.2, sun: '#9fb7ff', sunI: 0.7, sunPos: [-3, 6, 4] });
     const lamp = new THREE.PointLight('#ffd9a0', 6, 6, 1.6); lamp.position.set(-1.0, 1.9, -3.2); scene.add(lamp);
     const dk = desk(1.8, 0.9, 0.92, '#a0704c'); dk.position.set(-1.5, 0, -3.3); scene.add(dk);
-    const ch = chair('#3b5b8a'); ch.position.set(-1.5, 0, -2.45); scene.add(ch);
+    const ch = chair('#3b5b8a'); ch.position.set(-1.5, 0, -2.45); ch.rotation.y = Math.PI; scene.add(ch);
     // laptop (layar = canvas)
     const lp = new THREE.Group(); lp.add(box(0.7, 0.03, 0.48, '#9aa0a6', [0, 0.015, 0]));
     const c = document.createElement('canvas'); c.width = 512; c.height = 320; const tex = new THREE.CanvasTexture(c);

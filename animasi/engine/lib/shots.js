@@ -24,14 +24,14 @@ export function phoneInsert(S, o) {
   const look = new THREE.Vector3(...(o.look || [0, 1.6, 0]));
   return (lt, k, t, hud) => {
     const push = o.push ?? 0.12;
-    const dist = (o.dist ?? 0.9) - push * ease(k);
+    const dist = (o.dist ?? (o.landscape ? 0.62 : 0.9)) - push * ease(k);
     S.cam.position.copy(camPos); S.cam.lookAt(look); S.cam.fov = 40; S.cam.updateProjectionMatrix();
     const fwd = new THREE.Vector3(); S.cam.getWorldDirection(fwd);
     const sh = o.shake ?? 0.004;
     ph.position.copy(camPos).addScaledVector(fwd, dist);
     ph.quaternion.copy(S.cam.quaternion);
     ph.translateX((o.offX ?? 0) + noise1(t * 1.3, 2) * sh); ph.translateY((o.offY ?? -0.01) + noise1(t * 1.1, 4) * sh);
-    ph.rotateX(o.tiltX ?? -0.05); ph.rotateZ((o.tiltZ ?? 0.03) + noise1(t * 0.7, 6) * sh * 2);
+    ph.rotateX(o.tiltX ?? -0.05); ph.rotateZ((o.tiltZ ?? 0.03) + (o.landscape ? Math.PI / 2 : 0) + noise1(t * 0.7, 6) * sh * 2);
     if (o.vibrate) { const v = o.vibrate(lt); if (v) { ph.translateX(Math.sin(t * 90) * 0.006 * v); ph.rotateZ(Math.sin(t * 77) * 0.02 * v); } }
     ph.draw((c) => o.draw(c, lt, k, t));
     if (o.hud) o.hud(hud, lt, k, t);

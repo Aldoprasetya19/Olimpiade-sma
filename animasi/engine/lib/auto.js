@@ -1,7 +1,7 @@
 // Penyusun shot otomatis: lokasi + slot tokoh + sudut kamera yang dihitung (bebas tabrakan kepala).
 // Dipakai oleh episode hasil tools/naskah_ke_episode.py. Lihat engine/README.md bagian "Jalur hemat".
 import * as THREE from 'three';
-import { CAST } from './cast.js';
+import { CAST, santai, TOKOH } from './cast.js';
 import { SETS, phone, piala, kalengCat, helm, glass } from './sets.js';
 import { hud as HUD } from './core.js';
 import { POSES, combine, addPose, idle, mixPose, walkPose } from './char.js';
@@ -52,8 +52,10 @@ export const LOKASI = {
 const blocked = (L, x, z) => (L.blocks || []).some(([a, b, c, d]) => x > a && x < b && z > c && z < d);
 const headY = (sit) => (sit ? 1.73 : 1.98);
 const PEREMPUAN = []; // tokoh tetap ada di TOKOH (cast.js); nama asing dianggap figuran laki-laki
-const castMake = (key) => {
+const SEKOLAH = ['kelas', 'koridor', 'kantin', 'lobi', 'lobiPiala', 'gudang', 'gudangKejutan', 'gerbang', 'gerbangSore', 'lapangan', 'ruangGuru'];
+const castMake = (key, loc) => {
   const [k, opt] = key.split('#'); // mis. "dimas#perban"
+  if (loc && !SEKOLAH.includes(loc) && TOKOH[k] && opt !== 'seragam') { const o = { ...santai(k), ...(opt === 'jas' ? { jacket: '#e0b020', sleeve: '#e0b020', longSleeve: true } : {}) }; return CAST[k](o); }
   const o = opt === 'jas' ? { jacket: '#e0b020', sleeve: '#e0b020', longSleeve: true } : opt === 'perban' ? { shortLeg: 1 } : opt === 'rumah' ? { shirt: '#2f4b7c', pants: '#3b3b44', badge: false, name: null, collar: false, sleeve: '#2f4b7c' } : {};
   if (CAST[k]) return CAST[k](o);
   const nm = k.toUpperCase(), seed = [...k].reduce((a, ch) => a + ch.charCodeAt(0), 0);
@@ -200,14 +202,14 @@ export function autoShot(d) {
         if (!s) continue;
         if (!Array.isArray(s)) { // naik motor: tokoh jadi anak dari objek motor
           const m = S.scene.getObjectByName(s.motor); if (!m) continue;
-          const c = castMake(key); const name = key.split('#')[0]; m.add(c.root); c.root.position.set(s.lx, s.ly, 0); c.root.rotation.y = Math.PI / 2;
+          const c = castMake(key, d.loc); const name = key.split('#')[0]; m.add(c.root); c.root.position.set(s.lx, s.ly, 0); c.root.rotation.y = Math.PI / 2;
           chars[name] = { c, sit: false, ride: s.pose }; m.updateMatrixWorld(true); const wp = new THREE.Vector3(); c.root.getWorldPosition(wp);
           heads[name] = { x: wp.x, y: wp.y + 1.85, z: wp.z, rot: m.rotation.y + Math.PI / 2 };
           if ((d.helm || []).includes(name)) { const h = helm(['#2c3e50', '#c0392b', '#f1c40f', '#2980b9', '#7f8c8d'][Object.keys(chars).length % 5]); h.position.y = 0.42; c.head.add(h); c.userData = { helm: h }; }
           if (/^(hp|game)/.test(d.pose?.[name] || '')) { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI); }
           continue;
         }
-        const c = castMake(key); const name = key.split('#')[0];
+        const c = castMake(key, d.loc); const name = key.split('#')[0];
         S.add(c, [s[0], 0, s[1]], s[2]); chars[name] = { c, sit: s[3] }; if (s[4]) c.root.position.y = s[4];
         if (d.pose?.[name] === 'teh') { const gl = glass('#b5651d'); c.handOf(-1).add(gl); gl.position.set(0, -0.2, 0.05); }
         if (d.pose?.[name] === 'perbaiki') { const kp = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.32, 0.05), new THREE.MeshToonMaterial({ color: '#9aa0a6' })); kp.position.set(0, -0.2, 0.05); c.handOf(-1).add(kp); }

@@ -106,3 +106,6 @@ terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di
 - HP: `{hp-lokasi}` live location / peta (`[Peta | ...]` menampilkan titik bengkel), `{hp-status} [Baterai | 8%]` / `[Sinyal | 1]`.
 - Telepon: setelah narasi *menelepon*, ucapan tokoh di seberang tampil dengan pose menelepon; flag `(tanpa)` = jangan tampilkan pembicara.
 - Animasi yang memakai seluruh durasi kalimat (motor datang, lepas helm) tetap mulus meski shot dipecah.
+- **Pakaian**: di lokasi sekolah (kelas, koridor, kantin, lobi, gudang, gerbang, lapangan, ruang guru) tokoh siswa berseragam;
+  di lokasi lain (rumah, kamar, jalan, gubuk, bengkel, toko, kafe) otomatis **baju santai** dengan warna tetap per tokoh
+  (`BAJU` di `lib/cast.js`), tanpa papan nama/lencana. Paksa seragam di luar sekolah dengan `nama#seragam`.

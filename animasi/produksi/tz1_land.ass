@@ -1,0 +1,37 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Lirik,Oswald,34,&H00FFFFFF,&H0030C2F2,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,2,0,2,40,40,30,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:17.50,0:00:21.40,Lirik,,0,0,0,,{\fad(250,250)}Uang kas tinggal dua ratus ribu saja
+Dialogue: 0,0:00:21.40,0:00:25.20,Lirik,,0,0,0,,{\fad(250,250)}Mereka pamer mesin boba di depan mata
+Dialogue: 0,0:00:25.20,0:00:28.90,Lirik,,0,0,0,,{\fad(250,250)}Sultan bersanding spanduk besar berwibawa
+Dialogue: 0,0:00:28.90,0:00:32.80,Lirik,,0,0,0,,{\fad(250,250)}Hanya es teh plastikan kita tertawa
+Dialogue: 0,0:00:33.20,0:00:48.40,Lirik,,0,0,0,,{\fad(250,250)}Ayo lawan boba pakai semangat ini
+Dialogue: 0,0:00:49.20,0:00:52.10,Lirik,,0,0,0,,{\fad(250,250)}Modal tipis bukan alasan tuk berhenti
+Dialogue: 0,0:00:52.10,0:00:56.90,Lirik,,0,0,0,,{\fad(250,250)}Tiap tetes keringat jadi bukti abadi
+Dialogue: 0,0:00:56.90,0:01:05.00,Lirik,,0,0,0,,{\fad(250,250)}Kita kan menang bersama di Market Day ini
+Dialogue: 0,0:01:05.10,0:01:09.30,Lirik,,0,0,0,,{\fad(250,250)}Tiga puluh empat derajat matahari membakar
+Dialogue: 0,0:01:09.30,0:01:13.40,Lirik,,0,0,0,,{\fad(250,250)}Gelas seratus siap tapi esnya tak nampak
+Dialogue: 0,0:01:13.40,0:01:17.00,Lirik,,0,0,0,,{\fad(250,250)}Nava Febri tancap gas berburu ke pasar
+Dialogue: 0,0:01:17.00,0:01:21.40,Lirik,,0,0,0,,{\fad(250,250)}Gitar Stefan berbunyi galau tak bergerak
+Dialogue: 0,0:01:21.40,0:01:36.90,Lirik,,0,0,0,,{\fad(250,250)}Ayo lawan boba pakai semangat ini
+Dialogue: 0,0:01:36.90,0:01:40.10,Lirik,,0,0,0,,{\fad(250,250)}Modal tipis bukan alasan tuk berhenti
+Dialogue: 0,0:01:40.10,0:01:44.90,Lirik,,0,0,0,,{\fad(250,250)}Tiap tetes keringat jadi bukti abadi
+Dialogue: 0,0:01:44.90,0:01:50.80,Lirik,,0,0,0,,{\fad(250,250)}Kita kan menang bersama di Market Day ini
+Dialogue: 0,0:01:52.10,0:01:59.80,Lirik,,0,0,0,,{\fad(250,250)}Mesin boba mati es teh kehabisan es
+Dialogue: 0,0:01:59.80,0:02:08.10,Lirik,,0,0,0,,{\fad(250,250)}Bukan saingan ini jalannya sukses
+Dialogue: 0,0:02:08.10,0:02:15.80,Lirik,,0,0,0,,{\fad(250,250)}Dua kelas bersatu hapus batas kasta
+Dialogue: 0,0:02:15.80,0:02:24.30,Lirik,,0,0,0,,{\fad(250,250)}Terciptalah kolaborasi paling juara
+Dialogue: 0,0:02:24.30,0:02:31.40,Lirik,,0,0,0,,{\fad(250,250)}Gelas pun habis senyum merekah di pipi
+Dialogue: 0,0:02:32.10,0:02:39.60,Lirik,,0,0,0,,{\fad(250,250)}Hadiah jalan-jalan menanti di hari nanti
+Dialogue: 0,0:02:39.60,0:02:45.30,Lirik,,0,0,0,,{\fad(250,250)}Jangan pelit sama adik kelas ya nanti
+Dialogue: 0,0:02:45.30,0:02:49.60,Lirik,,0,0,0,,{\fad(250,250)}Jangan pelit sama adik kelas ya nanti
+Dialogue: 0,0:02:49.60,0:02:51.00,Lirik,,0,0,0,,{\fad(250,250)}Tahun depan giliran kami yang beraksi

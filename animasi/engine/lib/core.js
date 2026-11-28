@@ -3,7 +3,9 @@ import * as THREE from 'three';
 import { OutlineEffect } from 'three/addons/effects/OutlineEffect.js';
 
 THREE.ColorManagement.enabled = false;
-export const W = 720, H = 1280;
+// ?land=1 → landscape 1280x720 (teaser/video musik); default potret 720x1280
+export const LANDSCAPE = new URLSearchParams(location.search).has('land');
+export const W = LANDSCAPE ? 1280 : 720, H = LANDSCAPE ? 720 : 1280;
 
 export const renderer = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: true });
 renderer.setPixelRatio(1);

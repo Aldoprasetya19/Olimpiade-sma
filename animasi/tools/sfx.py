@@ -73,6 +73,8 @@ SFX = {
  'drumroll': lambda: bp(noise(2.0), 150, 6000) * (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 14 * t(2.0)))) * np.linspace(0.2, 1, int(SR * 2.0)) * 0.8,
  'sorak': lambda: mix(crowd(3.5, 1.4), *[at(clap(), rng.uniform(0.2, 3.2), int(SR * 3.5)) for _ in range(45)]),
  'tepukBahu': lambda: mix(env(lp(noise(0.06), 0.1) * dec(0.06, 50) * 2), at(env(lp(noise(0.06), 0.1) * dec(0.06, 50) * 2), 0.22, int(SR * 0.4))),
+ 'dengung': lambda: env((sine(2850 + 40 * np.sin(2 * np.pi * 6 * t(1.6)), 1.6) * 0.45 + sine(5700, 1.6) * 0.12) * np.minimum(1, t(1.6) / 0.25), 0.05, 0.35),
+ 'simbal': lambda: env(bp(noise(2.2), 3000, 14000) * dec(2.2, 1.6) * 1.6, 0.002, 0.3),
  'whoosh': lambda: env(bp(noise(0.5), 500, 5000) * np.sin(np.pi * t(0.5) / 0.5), 0.05, 0.1),
 }
 def buat(nama):

@@ -1,0 +1,41 @@
+# judul: TANGAN YANG | GEMETAR
+# akhir: BERSAMBUNG... | Bagian 3: Satu Lagu
+[studio] vokal=aldo gitaris=febri bassis=stefan keyboardis=gelly drummer=gabriel
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=cemas): Bagian 2. Tangan yang Gemetar.
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=cemas, febri=cemas): Latihan pertama berantakan.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:garuk, aldo=malu): Aldo lupa lirik di bait kedua.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=bersalah): Suaranya pecah di nada tinggi.
+NARATOR {mcu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:gemetar, aldo=cemas): Di depan teman-temannya sendiri pun, lututnya gemetar.
+GABRIEL (senyum, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:micDua): "Santai, Do. Anggap aja lagi di kamar."
+ALDO (malu, aldo:micDua, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam): "Kamar gue nggak ada 300 orang."
+[panggung] gitaris=rialdi drummer=dika bassis=palsya
+NARATOR {penonton} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria, rialdi=senang, dika=senang, sfx=ramai): Sabtu malam, lapangan sekolah penuh.
+NARATOR {penonton} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria): Lampu warna-warni menyala di atas panggung.
+[belakangPanggung] tunggu=aldo
+NARATOR {mcu:aldo} (aldo=cemas): Aldo menunggu di belakang panggung.
+NARATOR {cu:aldo} (aldo:usap, aldo=cemas): Telapak tangannya basah.
+[panggung] gitaris=rialdi drummer=dika bassis=palsya
+NARATOR {penonton} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria, rialdi=senang): Band kelas 12 tampil sebelum mereka.
+NARATOR {cu:rialdi} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria, rialdi=senang): Rialdi bermain gitar dengan lincah.
+NARATOR {cu:dika} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria, dika=senang): Dika menggebuk drum dengan keras.
+NARATOR {penonton} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria, sfx=sorak): Penonton bersorak sampai tanah terasa bergetar.
+[belakangPanggung] kiri=aldo kanan=febri
+FEBRI (senyum): "Kita tampil setelah itu."
+ALDO (cemas): "Aku nggak bisa. Aku pulang aja."
+[belakangPanggung] menuju=aldo penahan=nava#syal
+NARATOR {lebar} (aldo=cemas): Ia sudah setengah jalan menuju gerbang belakang.
+NARATOR {dua} (nava:serahkan, aldo=kaget): Ketika seseorang menahan lengannya.
+NARATOR {cu:nava} (nava=senyum): Nava.
+NARATOR {cu:nava} (nava=senyum): Syal masih di lehernya.
+NARATOR {cu:nava} (nava=serius): Nava tidak bicara.
+NARATOR {dua} (nava:jempol, nava=senyum, aldo=lega): Ia hanya menunjuk ke panggung, lalu mengangkat ibu jari.
+[panggungSorot] keyboardis=gelly drummer=gabriel gitaris=febri bassis=stefan vokal=aldo
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam): Lampu meredup.
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, sfx=mikrofon): Suara MC menggema di seluruh lapangan.
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, sfx=sorak): "Selanjutnya, band kelas 11!"
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo=cemas): Aldo melangkah ke tengah panggung.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal, aldo=cemas): Ia menggenggam mikrofon.
+NARATOR {cu:aldo} (aldo:telinga, aldo=kaget, sfx=dengung): Nyiiing!
+NARATOR {cu:aldo} (aldo:telinga, aldo=kaget): Pengeras suara berdenging keras.
+NARATOR {sorot} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal, aldo=kaget): 300 pasang mata menatapnya dalam diam.
+NARATOR {akhir}: Bersambung.

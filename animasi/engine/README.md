@@ -123,3 +123,17 @@ Dipakai jika pengguna memberi **lagu + panduan bagian (timestamp)**, bukan VO ce
 - Tokoh ukuran ±2,3 m: untuk video vertikal, dua orang butuh jarak kamera ≥5 m (fov 40); spanduk 3–4 m butuh ≥10 m.
 - Lirik: `produksi/teaser/lirik_tz1.py` → `produksi/tz1.ass` (waktu dari transkrip whisper lagu). Rakit: `produksi/teaser/buat_teaser.sh` (render 3 bagian paralel → concat → lagu + lirik); `--land` untuk versi landscape 1280x720.
 - **Landscape**: `LAND=1 node render.cjs ...` (core.js membaca `?land=1` → W=1280,H=720). Di tz1, letterbox 88 px, fov kamera ×1,2, dan penumpang terdekat disembunyikan di close-up bus. Video musik/teaser dengan banyak tokoh lebih cocok landscape.
+
+### Band, studio musik, panggung pentas (seri "Satu Lagu")
+- Lokasi: `studio` (slot `vokal`, `gitaris`, `bassis`, `keyboardis`, `drummer` duduk, `sudut`, `depanSudut`; pintu di dinding kanan),
+  `panggung` (malam, lampu warna-warni bergerak, penonton), `panggungSorot` (lampu redup + satu sorot di tengah), `panggungGelap`
+  (sorot + beberapa senter), `panggungSenter` (lautan senter HP), slot penonton baris depan `d1..d12`, `sisiPanggung`;
+  `belakangPanggung` (tirai hitam, jalan ke gerbang belakang; slot `tunggu`, `kiri`, `kanan`, `menuju`, `penahan`).
+- Pose alat (bergerak otomatis, `ceria` = lebih cepat, `diam` = berhenti main): `gitarBerdiri` (gitar listrik), `bass`, `drum` (stik),
+  `keyboard`, `vokal` (di mic stand), `micDua` (pegang mic), `gemetar` (lutut & tangan bergetar), `senter` (HP + lampu menyala).
+  Pose statis: `angkat` (ampli), `sodorMic`, `ngeri`, `garuk`, `telinga`, `tunjukMata`, `jempol`, `peluk`, `usap`, `lehar` (pegang leher).
+- Varian tokoh `nava#syal` = memakai syal. Barang `mikrofon` bisa disodorkan (aksi *menyodorkan*).
+- Kamera: `{penonton}` (dari belakang kerumunan ke panggung), `{barisDepan}` (dari panggung ke penonton baris depan),
+  `{sorot}` (penyanyi di bawah sorot), `{drummer:nama}`; lokasi bisa punya `lebarCam`/`masukCam` tetap. Tinggi panggung (slot ke-5)
+  ikut dihitung untuk close-up.
+- SFX baru: `dengung` (feedback pengeras suara), `simbal`. *masuk dengan ...* dan *musik terus berjalan* tidak memicu aksi berjalan.

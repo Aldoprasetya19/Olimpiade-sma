@@ -147,8 +147,8 @@ export function gitar() { const g = new THREE.Group(); const b = mesh(new THREE.
   const b2 = mesh(new THREE.CylinderGeometry(0.21, 0.21, 0.1, 20), toon('#7b3f1a')); b2.rotation.x = Math.PI / 2; b2.position.y = 0.3; g.add(b2);
   const h = mesh(new THREE.CircleGeometry(0.08, 14), flat('#2b1a10')); h.position.set(0, 0.08, 0.051); g.add(h); g.add(box(0.07, 0.75, 0.05, '#3a2414', [0, 0.75, 0])); g.add(box(0.11, 0.18, 0.05, '#2a1a0e', [0, 1.2, 0])); return g; }
 // gitar dipasang mengikuti kedua tangan pose gitar: badan di tangan kanan (petik), leher menuju tangan kiri
-export function pasangGitar(c, pose = POSES.gitar) {
-  const g = gitar(); c.torso.add(g); c.applyPose(pose); c.root.updateMatrixWorld(true);
+export function pasangGitar(c, pose = POSES.gitar, alat = null) {
+  const g = alat || gitar(); c.torso.add(g); c.applyPose(pose); c.root.updateMatrixWorld(true);
   const R = c.torso.worldToLocal(c.handOf(-1).getWorldPosition(new THREE.Vector3())), L = c.torso.worldToLocal(c.handOf(1).getWorldPosition(new THREE.Vector3()));
   const y = L.clone().sub(R); const len = y.length(); y.normalize();
   const z = new THREE.Vector3(0, 0, 1); z.sub(y.clone().multiplyScalar(z.dot(y))).normalize(); const x = new THREE.Vector3().crossVectors(y, z);
@@ -176,6 +176,51 @@ export function bus(color = '#1f6fb2') { const g = new THREE.Group();
   for (const x of [-3.5, 3.2]) for (const z of [-1.3, 1.3]) { const w = mesh(new THREE.CylinderGeometry(0.5, 0.5, 0.35, 16), toon('#1d1d1d')); w.rotation.x = Math.PI / 2; w.position.set(x, 0.5, z); g.add(w); }
   const tx = textPlane(4, 0.5, (c, w, h) => { c.fillStyle = color; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.6}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('PARIWISATA NYUATAN', w / 2, h / 2 + 2); });
   tx.position.set(-0.5, 1.2, 1.32); g.add(tx); return g; }
+
+// ---------- alat band (seri "Satu Lagu")
+export function gitarListrik(warna = '#c0392b', bass = false) { const g = new THREE.Group();
+  g.add(box(0.5, 0.5, 0.09, warna, [0, 0.05, 0], { round: 0.12 })); g.add(box(0.36, 0.32, 0.09, warna, [0.08, 0.36, 0], { round: 0.1 }));
+  g.add(box(0.06, 0.12, 0.02, noOutline(flat('#222')), [0, 0.12, 0.05], { cast: false })); g.add(box(0.07, bass ? 0.95 : 0.75, 0.05, '#2a1a0e', [0, bass ? 0.85 : 0.75, 0]));
+  g.add(box(0.11, 0.18, 0.05, '#111', [0, bass ? 1.38 : 1.2, 0])); return g; }
+export function micStand() { const g = new THREE.Group(); g.add(box(0.5, 0.04, 0.5, '#222', [0, 0.02, 0]));
+  g.add(box(0.04, 1.75, 0.04, '#333', [0, 0.9, 0])); const m = mesikrofonKepala(); m.position.set(0, 1.85, 0.08); m.rotation.x = 0.5; m.name = 'micKepala'; g.add(m); return g; }
+function mesikrofonKepala() { const g = new THREE.Group(); g.add(box(0.05, 0.2, 0.05, '#222', [0, 0, 0])); const h = mesh(new THREE.SphereGeometry(0.065, 10, 8), toon('#999')); h.position.y = 0.13; g.add(h); return g; }
+export function ampli(w = 0.8, h = 0.8) { const g = new THREE.Group(); g.add(box(w, h, 0.45, '#1e1e1e', [0, h / 2, 0], { round: 0.03 }));
+  const sp = mesh(new THREE.CircleGeometry(Math.min(w, h) * 0.32, 18), noOutline(flat('#3a3a3a'))); sp.position.set(0, h * 0.45, 0.231); g.add(sp);
+  g.add(box(w * 0.9, 0.07, 0.02, noOutline(flat('#c9a227')), [0, h * 0.88, 0.232], { cast: false })); return g; }
+export function drumKit() { const g = new THREE.Group();
+  const bd = mesh(new THREE.CylinderGeometry(0.42, 0.42, 0.4, 22), toon('#b03a2e')); bd.rotation.x = Math.PI / 2; bd.position.set(0, 0.45, 0.35); g.add(bd);
+  const kul = mesh(new THREE.CircleGeometry(0.38, 22), noOutline(flat('#f4efe6'))); kul.position.set(0, 0.45, 0.556); g.add(kul);
+  const tx = textPlane(0.5, 0.14, (c, w, h) => { c.fillStyle = '#b03a2e'; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.7}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('NYUATAN', w / 2, h / 2 + 2); }); tx.position.set(0, 0.42, 0.56); g.add(tx);
+  for (const [x, y, z, r, nm] of [[-0.45, 0.85, 0.15, 0.2, 'snare'], [-0.2, 1.05, 0.3, 0.16, 'tom1'], [0.2, 1.05, 0.3, 0.16, 'tom2'], [0.55, 0.75, 0.0, 0.22, 'tom3']]) {
+    const d = mesh(new THREE.CylinderGeometry(r, r, 0.18, 18), toon('#b03a2e')); d.position.set(x, y, z); g.add(d); const k = mesh(new THREE.CircleGeometry(r * 0.92, 18), noOutline(flat('#f4efe6'))); k.rotation.x = -Math.PI / 2; k.position.set(x, y + 0.091, z); g.add(k);
+    if (y < 0.9) g.add(box(0.03, y - 0.1, 0.03, '#888', [x, (y - 0.1) / 2, z])); }
+  for (const [x, z, h, nm] of [[-0.8, 0.25, 1.35, 'simbal1'], [0.85, 0.35, 1.5, 'simbal2']]) { g.add(box(0.03, h, 0.03, '#888', [x, h / 2, z])); const cy = mesh(new THREE.CylinderGeometry(0.3, 0.3, 0.015, 20), toon('#d4a72c')); cy.position.set(x, h, z); cy.rotation.z = 0.15; cy.name = nm; g.add(cy); }
+  g.add(box(0.4, 0.08, 0.4, '#222', [0, 0.5, -0.45])); g.add(box(0.05, 0.5, 0.05, '#555', [0, 0.25, -0.45])); return g; }
+export function keyboardAlat() { const g = new THREE.Group();
+  for (const x of [-0.45, 0.45]) g.add(box(0.05, 0.95, 0.05, '#333', [x, 0.47, 0], { rot: [0, 0, x > 0 ? -0.25 : 0.25] }));
+  g.add(box(1.25, 0.1, 0.38, '#1c1c1c', [0, 0.98, 0], { round: 0.02 }));
+  const tuts = textPlane(1.15, 0.22, (c, w, h) => { c.fillStyle = '#fafafa'; c.fillRect(0, 0, w, h); c.fillStyle = '#222'; for (let i = 0; i <= 36; i++) c.fillRect(i * w / 36, 0, 1.5, h); for (let i = 0; i < 36; i++) if ([1, 3, 6, 8, 10].includes(i % 12)) c.fillRect(i * w / 36 + w / 72, 0, w / 60, h * 0.6); });
+  tuts.rotation.x = -Math.PI / 2; tuts.position.set(0, 1.035, 0.06); g.add(tuts); return g; }
+export function stik() { const g = new THREE.Group(); g.add(box(0.03, 0.42, 0.03, '#e2c48a', [0, 0.12, 0])); return g; }
+export function syal(c, warna = '#c0392b') { const s0 = mesh(new THREE.TorusGeometry(0.33, 0.12, 8, 18), toon(warna)); s0.rotation.x = Math.PI / 2; s0.position.y = 0.02; c.neck.add(s0);
+  const ujung = box(0.16, 0.42, 0.08, warna, [0.12, -0.25, 0.28], { round: 0.03 }); c.neck.add(ujung); return s0; }
+function orangSederhana(color, skin) { const g = new THREE.Group(); g.add(box(0.6, 0.95, 0.38, color, [0, 1.15, 0], { round: 0.12, cast: false }));
+  g.add(box(0.5, 0.72, 0.36, '#2f3640', [0, 0.36, 0], { round: 0.08, cast: false })); const h = mesh(new THREE.CylinderGeometry(0.33, 0.33, 0.6, 12), toon(skin), { cast: false }); h.position.y = 1.95; g.add(h);
+  const r = mesh(new THREE.CylinderGeometry(0.35, 0.35, 0.18, 12), toon('#2a1d16'), { cast: false }); r.position.y = 2.28; g.add(r); return g; }
+function kerumunan(scene, o) { // penonton sederhana (murah), sebagian menyalakan senter HP
+  const lampu = [], badan = []; const warna = ['#c0392b', '#2980b9', '#27ae60', '#8e44ad', '#d35400', '#16a085', '#7f8c8d', '#f39c12', '#2c3e50'], kulit = ['#c98a52', '#e0b07e', '#b07040', '#d49a64'];
+  const z0 = o.z0 ?? 3.2, rows = o.rows ?? 9, perRow = o.perRow ?? 16;
+  for (let r = 0; r < rows; r++) for (let i = 0; i < perRow; i++) {
+    const x = -11 + i * (22 / (perRow - 1)) + (r % 2) * 0.6 + Math.sin(i * 7 + r) * 0.2, z = z0 + r * 1.25 + Math.cos(i * 3 + r) * 0.2;
+    const p = orangSederhana(warna[(i * 3 + r) % warna.length], kulit[(i + r) % 4]); p.position.set(x, 0, z); p.rotation.y = Math.PI + Math.sin(i + r) * 0.2; scene.add(p); badan.push(p);
+    const on = ((i * 37 + r * 11) % 100) / 100 < (o.senter || 0);
+    if (on) { const L = new THREE.Group(); L.add(box(0.12, 0.22, 0.03, '#111', [0, 0, 0])); const g = mesh(new THREE.SphereGeometry(0.09, 8, 6), noOutline(flat('#fffbe6'))); g.position.set(0, 0.06, -0.03); L.add(g);
+      const halo = mesh(new THREE.SphereGeometry(0.16, 10, 8), noOutline(flat('#fff3b0', { transparent: true, opacity: 0.45, depthWrite: false })), { cast: false }); halo.position.copy(g.position); L.add(halo);
+      L.position.set(x + 0.25, 2.85, z); L.userData.ph = i * 0.7 + r; scene.add(L); lampu.push(L); }
+  }
+  return { lampu, badan };
+}
 export function bag(color = '#2d3a4a') { const g = new THREE.Group(); g.add(box(0.6, 0.7, 0.3, color, [0, 0.35, 0], { round: 0.1 })); return g; }
 
 function windowPane(w, h, glassColor, frame = '#f1f1f1') {
@@ -571,6 +616,76 @@ export const SETS = {
     return {};
   },
   gerbangBus(scene, o = {}) { SETS.gerbang(scene, o); const b = bus(); b.name = 'busJalan'; b.position.set(-1, 0, 5.2); scene.add(b); return {}; },
+  studio(scene, o = {}) { // ruang studio musik sekolah: band menghadap +z, pintu di dinding kanan
+    scene.userData.clear = 0x222222;
+    room(scene, { w: 10, d: 10, h: 4.2, wall: '#3d4450', floorMat: toon('#8a6a4a', { map: wood('#8a6a4a') }), trim: '#262b33' });
+    lights(scene, { sky: '#fff3e0', ground: '#6a5a4a', hemi: 1.7, sunI: 1.1, sunPos: [3, 8, 6] });
+    for (let i = 0; i < 6; i++) for (let j = 0; j < 3; j++) scene.add(box(1.2, 0.8, 0.08, (i + j) % 2 ? '#2b2f36' : '#555c66', [-3.75 + i * 1.5, 1.6 + j * 0.9, -4.94], { cast: false }));
+    const pt = door('#5a4a3a'); pt.position.set(4.95, 0, 2.5); pt.rotation.y = -Math.PI / 2; scene.add(pt);
+    const dk = drumKit(); dk.position.set(0, 0, -3.3); scene.add(dk);
+    const kb = keyboardAlat(); kb.position.set(2.7, 0, -2.2); kb.rotation.y = -0.25; scene.add(kb);
+    const ms = micStand(); ms.position.set(0, 0, 0.25); ms.name = 'micStand'; scene.add(ms);
+    for (const [x, z] of [[-3.6, -3.6], [3.8, -3.8]]) { const a = ampli(); a.position.set(x, 0, z); a.rotation.y = x < 0 ? 0.4 : -0.4; scene.add(a); }
+    const a2 = ampli(0.55, 0.55); a2.position.set(-3.0, 0, 2.7); a2.rotation.y = 0.6; scene.add(a2);
+    for (let i = 0; i < 3; i++) { const k = mesh(new THREE.TorusGeometry(0.16, 0.035, 6, 16), toon('#111')); k.rotation.x = Math.PI / 2; k.position.set(-3.9 + i * 0.36, 0.04, 2.0); scene.add(k); }
+    const pst = textPlane(1.6, 0.9, (c, w, h) => { c.fillStyle = '#111'; c.fillRect(0, 0, w, h); c.fillStyle = '#f2c230'; c.font = `bold ${h * 0.22}px Oswald`; c.textAlign = 'center'; c.fillText('PENTAS SENI', w / 2, h * 0.38); c.fillStyle = '#fff'; c.font = `bold ${h * 0.15}px Oswald`; c.fillText('SMAN 1 NYUATAN', w / 2, h * 0.65); });
+    pst.position.set(-4.95, 2.2, -1); pst.rotation.y = Math.PI / 2; scene.add(pst);
+    return {};
+  },
+  panggung(scene, o = {}) { // lapangan sekolah malam + panggung (atas panggung y=1.0, z -9..-2.6), penonton di +z menghadap -z
+    scene.userData.clear = 0x05060c; sky(scene, '#05060f', '#141a33');
+    const sorot = !!o.sorot;
+    lights(scene, { sky: '#4a5a8a', ground: '#1a1410', hemi: sorot ? 0.85 : 0.9, sun: '#9aa8d0', sunI: sorot ? 0.3 : 0.45, sunPos: [-4, 9, 8], shadowSize: 14 });
+    const g = mesh(new THREE.PlaneGeometry(80, 80), noOutline(toon('#3c5a32')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
+    scene.add(box(14, 1.0, 6.4, '#2a2a2a', [0, 0.5, -5.8])); scene.add(box(14, 0.06, 6.4, noOutline(toon('#3b3b3b')), [0, 1.03, -5.8], { cast: false }));
+    const bd = textPlane(12, 3.2, (c, w, h) => { const gr = c.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#1b1f3a'); gr.addColorStop(1, '#3a1d4a'); c.fillStyle = gr; c.fillRect(0, 0, w, h);
+      c.fillStyle = '#f2c230'; c.font = `bold ${h * 0.2}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('PENTAS SENI AKHIR SEMESTER', w / 2, h * 0.38); c.fillStyle = '#fff'; c.font = `bold ${h * 0.13}px Oswald`; c.fillText('SMAN 1 NYUATAN', w / 2, h * 0.62); }, 1024);
+    bd.position.set(0, 3.6, -8.95); scene.add(bd);
+    for (const x of [-6.8, 6.8]) scene.add(box(0.25, 7, 0.25, '#888', [x, 3.5, -8.6])); scene.add(box(14, 0.25, 0.25, '#888', [0, 6.9, -8.6])); scene.add(box(14, 0.25, 0.25, '#888', [0, 6.9, -3.0]));
+    for (const x of [-6.8, 6.8]) scene.add(box(0.25, 7, 0.25, '#888', [x, 3.5, -3.0]));
+    const dk = drumKit(); dk.position.set(0, 1.0, -7.4); scene.add(dk);
+    const kb = keyboardAlat(); kb.position.set(3.4, 1.0, -5.6); kb.rotation.y = -0.3; scene.add(kb);
+    const ms = micStand(); ms.position.set(0, 1.0, -3.65); ms.name = 'micStand'; scene.add(ms);
+    for (const x of [-5.6, 5.6]) { const a = ampli(1.2, 1.4); a.position.set(x, 1.0, -3.6); a.rotation.y = x < 0 ? 0.3 : -0.3; scene.add(a); const a2 = ampli(1.2, 1.4); a2.position.set(x, 0, -2.2); scene.add(a2); }
+    const warna = ['#ff3b6b', '#3bb3ff', '#ffd23b', '#7a3bff', '#3bff9a', '#ff8a3b'];
+    const balok = [];
+    if (!sorot) for (let i = 0; i < 6; i++) { const col = warna[i]; const cone = mesh(new THREE.ConeGeometry(1.2, 7, 18, 1, true), noOutline(flat(col, { transparent: true, opacity: 0.16, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending })), { cast: false });
+      cone.geometry.translate(0, -3.5, 0); const piv = new THREE.Group(); piv.position.set(-5.5 + i * 2.2, 6.8, -3.2); piv.add(cone); piv.userData.ph = i; scene.add(piv); balok.push(piv);
+      const pl = new THREE.PointLight(col, 6, 12, 1.5); pl.position.set(-5.5 + i * 2.2, 4, -3.5); scene.add(pl); }
+    if (sorot) { const cone = mesh(new THREE.ConeGeometry(1.3, 6.6, 20, 1, true), noOutline(flat('#fff6d8', { transparent: true, opacity: 0.18, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending })), { cast: false });
+      cone.position.set(0, 4.3, -4.0); scene.add(cone); const sp = new THREE.SpotLight('#fff3d6', 14, 14, 0.32, 0.5, 1.2); sp.position.set(0, 7.5, -4.0); sp.target.position.set(0, 1, -4.0); scene.add(sp); scene.add(sp.target);
+      const biru = new THREE.PointLight('#5a6aff', 4, 12, 1.5); biru.position.set(0, 4.5, -6.5); scene.add(biru);
+      const isi = new THREE.PointLight('#ffd2a8', 9, 9, 1.3); isi.position.set(0, 4.0, -0.6); scene.add(isi);
+      const sayap = new THREE.PointLight('#ffcf9a', 4, 7, 1.4); sayap.position.set(-5.2, 3.6, -2.6); scene.add(sayap);
+      const disk = mesh(new THREE.CircleGeometry(1.2, 24), noOutline(flat('#fff2c8', { transparent: true, opacity: 0.22 }))); disk.rotation.x = -Math.PI / 2; disk.position.set(0, 1.07, -4.0); scene.add(disk); }
+    else { const wash = new THREE.PointLight('#ffd9f0', 10, 16, 1.2); wash.position.set(0, 5, -1); scene.add(wash); }
+    const K = o.penonton === false ? { lampu: [], badan: [] } : kerumunan(scene, { senter: o.senter || 0, z0: o.z0 ?? 3.0 });
+    for (const [x, z] of [[-14, -6], [14, -5], [-16, 4], [16, 6]]) { const t = tree(4.5); t.position.set(x, 0, z); scene.add(t); }
+    for (const x of [-12, 12]) { scene.add(box(0.15, 6, 0.15, '#666', [x, 3, 0])); const lp = mesh(new THREE.SphereGeometry(0.25, 8, 6), noOutline(flat('#fff1c0'))); lp.position.set(x, 6.1, 0); scene.add(lp); }
+    scene.userData.anim = (t) => {
+      balok.forEach(b => { b.rotation.z = Math.sin(t * 0.9 + b.userData.ph) * 0.45; b.rotation.x = Math.cos(t * 0.7 + b.userData.ph * 1.3) * 0.25; });
+      K.lampu.forEach(L => { L.position.x += Math.sin(t * 1.4 + L.userData.ph) * 0.004; L.rotation.z = Math.sin(t * 1.4 + L.userData.ph) * 0.35; });
+      K.badan.forEach((b, i) => { if (!sorot) b.position.y = Math.max(0, Math.sin(t * 7 + i)) * 0.08; });
+    };
+    return {};
+  },
+  belakangPanggung(scene, o = {}) { // backstage: tirai hitam di -z (panggung di baliknya), jalan menuju gerbang belakang di +z
+    scene.userData.clear = 0x05060c; sky(scene, '#05060f', '#141a33');
+    lights(scene, { sky: '#8090b8', ground: '#2a2420', hemi: 1.25, sun: '#c0c8e0', sunI: 0.45, sunPos: [-4, 9, 8], shadowSize: 12 });
+    const lpJ = new THREE.PointLight('#ffe0a8', 5, 10, 1.4); lpJ.position.set(0.8, 3.2, 5.2); scene.add(lpJ);
+    const g = mesh(new THREE.PlaneGeometry(60, 60), noOutline(toon('#3a4a32')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
+    for (let i = 0; i < 14; i++) scene.add(box(0.7, 5.5, 0.12, i % 2 ? '#111' : '#1a1a1a', [-4.6 + i * 0.7, 2.75, -3 + (i % 2) * 0.06], { cast: false }));
+    const cel = mesh(new THREE.PlaneGeometry(0.5, 5.4), noOutline(flat('#ff6ad5', { transparent: true, opacity: 0.6 }))); cel.position.set(1.65, 2.7, -2.9); scene.add(cel); cel.name = 'celah';
+    const pl = new THREE.PointLight('#ff7ad9', 3.5, 8, 1.5); pl.position.set(1.6, 2.5, -2.3); scene.add(pl); const pl2 = new THREE.PointLight('#6ab8ff', 2.5, 8, 1.5); pl2.position.set(-2.5, 3, -2.3); scene.add(pl2);
+    for (const [x, z] of [[-3.5, -1.8], [3.6, -1.5]]) { const a = ampli(0.9, 0.9); a.position.set(x, 0, z); a.rotation.y = Math.PI * 0.1; scene.add(a); }
+    scene.add(box(1.2, 0.7, 0.8, '#2c2c2c', [-3.4, 0.35, 0.6], { round: 0.04 }));
+    const gb = new THREE.Group(); for (let i = 0; i < 10; i++) gb.add(box(0.06, 2.2, 0.06, '#2c3e50', [-1.2 + i * 0.26, 1.1, 0])); gb.add(box(2.7, 0.08, 0.08, '#2c3e50', [0, 2.2, 0])); gb.position.set(0.5, 0, 13); scene.add(gb);
+    for (const x of [-2.1, 3.1]) scene.add(box(0.5, 2.6, 0.5, '#bdb5a3', [x, 1.3, 13]));
+    const lp = new THREE.PointLight('#ffd890', 4, 8, 1.5); lp.position.set(0.5, 3, 12.5); scene.add(lp); scene.add(box(0.1, 3.2, 0.1, '#555', [2.6, 1.6, 12.4]));
+    const tx = textPlane(2.2, 0.4, (c, w, h) => { c.fillStyle = '#2c3e50'; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.6}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('GERBANG BELAKANG', w / 2, h / 2 + 2); }); tx.position.set(0.5, 2.6, 12.95); scene.add(tx);
+    scene.userData.anim = (t) => { cel.material.color.setHSL((t * 0.15) % 1, 0.8, 0.6); pl.color.setHSL((t * 0.15) % 1, 0.5, 0.7); };
+    return {};
+  },
   kosong(scene, o = {}) { // studio polos untuk kenangan / insert
     scene.userData.clear = 0xffffff;
     scene.background = new THREE.Color(o.bg || '#f2efe9');

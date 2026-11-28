@@ -59,7 +59,7 @@ VERB = [(r'^(berjalan|jalan|melangkah|mendekat|menghampiri|menghampirinya|datang
         (r'^(menoleh)$', 'menoleh', 0.5), (r'^(menunduk)$', 'tunduk', 1.0), (r'^(mengangguk|menganggukangguk)$', 'angguk', 1.6), (r'^(menyilangkan)$', 'silang', 1.0), (r'^(menahan)$', 'tahan', 1.4),
         (r'^(menaruh|menaruhnya|meletakkan)$', 'taruh', 1.2), (r'^(melirik)$', 'menoleh', 0.5),
         (r'^(menunjuk|menemukan)$', 'tunjuk', 1.4), (r'^(mengintip)$', 'intip', 1.6), (r'^(meraba)$', 'raba', 2.0)]
-PROPW = {'map': 'kertas', 'foto': 'kertas', 'kertas': 'kertas', 'surat': 'kertas', 'catatan': 'kertas', 'lembar': 'kertas', 'piala': 'piala', 'cat': 'cat', 'kaleng': 'cat', 'ponsel': 'hp', 'hp': 'hp'}
+PROPW = {'map': 'kertas', 'foto': 'kertas', 'kertas': 'kertas', 'surat': 'kertas', 'catatan': 'kertas', 'lembar': 'kertas', 'piala': 'piala', 'cat': 'cat', 'kaleng': 'cat', 'ponsel': 'hp', 'hp': 'hp', 'mikrofon': 'mic', 'mic': 'mic'}
 
 def detect_actions(L, castnames, hold, last_subj, scene_loc='', scene_berdiri=False):
     toks = [w[0][1] for w in L['words']]; times = [w[1][0] for w in L['words']]
@@ -67,6 +67,8 @@ def detect_actions(L, castnames, hold, last_subj, scene_loc='', scene_berdiri=Fa
     NEG = ('tidak', 'nggak', 'gak', 'belum', 'jangan', 'bukan', 'enggak')
     for i, w in enumerate(toks):
         if i > 0 and toks[i - 1] in NEG and not w in castnames: continue
+        if i > 0 and toks[i - 1] in ('saat', 'terus', 'musik', 'lagu', 'intro') and not w in castnames: continue
+        if w == 'masuk' and i + 1 < len(toks) and toks[i + 1] == 'dengan': continue  # 'masuk dengan ketukan drum' = mulai bermain, bukan berjalan  # 'musik terus berjalan', 'saat masuk reff'
         if i > 1 and toks[i - 2] in NEG and toks[i - 1] in ('bisa', 'langsung', 'mau', 'sempat') and not w in castnames: continue
         if w in castnames:
             if i > 0 and subj and toks[i - 1] in castnames + ['dan', 's'] and w not in subj: subj = subj + [w]
@@ -204,7 +206,7 @@ def main():
         expr, pose, flash, grade = sc['expr'], {}, False, sc.get('grade')
         for o in [x.strip() for x in (L['ex'] or '').split(',') if x.strip()]:
             if o == 'flash': flash = True
-            elif o in ('oleng', 'tanpa', 'ceria') or o.startswith(('sfx=', 'ledakan')): pass
+            elif o in ('oleng', 'tanpa', 'ceria', 'diam') or o.startswith(('sfx=', 'ledakan')): pass
             elif o.startswith('grade='): grade = o[6:]
             elif '=' in o: k, v = o.split('='); expr[k.strip().lower()] = ex(v)
             elif ':' in o: k, v = o.split(':'); pose[k.strip().lower()] = v.strip()
@@ -284,6 +286,7 @@ def main():
                 if tk[1].startswith(norm(kata)): return round(tm[0], 2)
             return round(L['start'], 2)
         if 'ceria' in flags: d['ceria'] = True
+        if 'diam' in flags: d['diam'] = True
         for fl in flags:
             if fl.startswith('ledakan'): d['ledakan'] = waktu_kata(fl.split('@')[1]) if '@' in fl else round(L['start'], 2)
             if fl.startswith('sfx='):
@@ -365,6 +368,9 @@ def main():
         if cam.startswith(('cu:', 'mcu:')):
             who = cam.split(':')[1]; others = [x for x in names if x != who]
             cyc = [cam, 'dua' if len(names) >= 2 else ('mcu:' + who if cam.startswith('cu') else 'cu:' + who)] + ([f'cu:{others[0]}'] if others else []) + [cam]
+        elif cam in ('penonton', 'sorot'): cyc = [cam, 'lebar']
+        elif cam == 'barisDepan': cyc = [cam, 'penonton']
+        elif cam.startswith('drummer:'): cyc = [cam, 'lebar']
         else: cyc = [cam, 'lebar' if cam == 'dua' else 'dua']
         n = math.ceil(dur / 4.0)
         for k in range(n):

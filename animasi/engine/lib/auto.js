@@ -72,7 +72,7 @@ LOKASI.panggungSorot = { ...LOKASI.panggung, setOpts: { sorot: true }, grade: 's
 LOKASI.panggungGelap = { ...LOKASI.panggung, setOpts: { sorot: true, senter: 0.04 }, grade: 'sorot' };
 LOKASI.panggungSenter = { ...LOKASI.panggung, setOpts: { sorot: true, senter: 0.85 }, grade: 'sorot' };
 LOKASI.belakangPanggung = { set: 'belakangPanggung', grade: 'panggung', bounds: [-5.5, 6, -2.4, 14], center: [0.5, 0.5],
-  slot: { tunggu: [0.6, -1.0, 0.25, false], kiri: [-0.6, -0.6, Math.PI / 2, false], kanan: [0.8, -0.6, -Math.PI / 2, false], menuju: [0.6, 6.0, 0, false], penahan: [-0.4, 5.0, 0.5, false] } };
+  slot: { tunggu: [0.6, -1.0, 0.25, false], kiri: [-0.6, -0.6, Math.PI / 2, false], kanan: [0.8, -0.6, -Math.PI / 2, false], menuju: [0.6, 6.0, 0, false], penahan: [-0.4, 5.0, 0.5, false], pelukA: [-0.2, -0.6, Math.PI / 2, false], pelukB: [0.52, -0.6, -Math.PI / 2, false], sampingA: [-0.3, -0.6, 0.12, false], sampingB: [0.5, -0.65, -0.12, false] } };
 
 const blocked = (L, x, z) => (L.blocks || []).some(([a, b, c, d]) => x > a && x < b && z > c && z < d);
 const headY = (sit) => (sit ? 1.73 : 1.98);
@@ -297,7 +297,8 @@ export function autoShot(d) {
       else if (duduk && Object.values(heads).filter(h => h.y < 1.8).length >= 2) { const hs = Object.values(heads).filter(h => h.y < 1.8); const cx = hs.reduce((a2, h) => a2 + h.x, 0) / hs.length, cz = hs.reduce((a2, h) => a2 + h.z, 0) / hs.length;
         cam = { pos: [cx * 0.6, kind === 'lebar' ? 2.6 : 2.2, Math.max(-5.4, cz - (kind === 'lebar' ? 4.6 : 3.4))], look: [cx, 1.45, cz], fov: kind === 'lebar' ? 52 : 44 }; }
       else cam = solveGroup(L, heads, kind === 'lebar');
-      const end = { ...cam, pos: cam.pos.map((v, i) => lerp(cam.look[i], v, 0.9)) };
+      if (d.camFix) cam = d.camFix;
+      const end = d.camEnd || { ...cam, pos: cam.pos.map((v, i) => lerp(cam.look[i], v, 0.9)) };
       const seed = Object.keys(chars);
       return (lt, k, t) => {
         for (const [name, { c, sit }] of Object.entries(chars)) {

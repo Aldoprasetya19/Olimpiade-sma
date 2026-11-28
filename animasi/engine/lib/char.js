@@ -335,6 +335,8 @@ export const POSES = {
   lambai: { shR: [-2.7, 0, -0.25], elR: -0.4 },
   tepukTangan: { shR: [-1.0, 0, 0.45], elR: -1.3, shL: [-1.0, 0, -0.45], elL: -1.3 },
   kipas: { shR: [-1.2, 0, 0.2], elR: -0.9 },
+  rangkulKiri: { shL: [-0.35, 0, 1.25], elL: -0.55 },
+  rangkulKanan: { shR: [-0.35, 0, -1.25], elR: -0.55 },
   rangkul: { shR: [-0.4, 0, -1.25], elR: -0.6, shL: [-0.4, 0, 1.25], elL: -0.6 },
   tunduk: { headX: 0.45, torsoX: 0.08, shR: [0.05, 0, -0.05], shL: [0.05, 0, 0.05] },
   silang: { shR: [-0.6, 0, 0.45], elR: -1.7, shL: [-0.6, 0, -0.45], elL: -1.7 },

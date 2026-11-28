@@ -1,0 +1,30 @@
+# judul: TIGA RATUS | PASANG MATA
+# akhir: BERSAMBUNG... | Bagian 6: Satu Lagu
+[belakangPanggung] menuju=aldo penahan=nava#syal
+NARATOR {dua} (nava:serahkan, aldo=kaget, nava=serius): Aldo sudah setengah jalan menuju gerbang, ketika seseorang menahan lengannya.
+NARATOR {cu:nava} (nava=serius): Nava. Ia tidak bicara.
+NARATOR {cu:nava} (nava=serius): Ia hanya menunjuk ke panggung,
+NARATOR {cu:nava} (nava:tunjukMata, nava=serius): lalu menunjuk dirinya sendiri,
+NARATOR {cu:nava} (nava:jempol, nava=senyum): lalu mengangkat ibu jari.
+NARATOR {cu:nava} (nava:jempol, nava=senyum): Cari aku, lihat aku aja.
+NARATOR {cu:aldo} (aldo=merem): Aldo menarik napas panjang, lalu ia berbalik.
+[panggungSorot] keyboardis=gelly drummer=gabriel gitaris=febri bassis=stefan vokal=aldo
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, sfx=mikrofon): Lampu meredup. Suara MC menggema di seluruh lapangan.
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, sfx=sorak): "Selanjutnya, band kelas 11!"
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo=cemas): Aldo melangkah ke tengah panggung.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal, aldo=cemas): Ia menggenggam mikrofon.
+NARATOR {cu:aldo} (aldo:telinga, aldo=merem, sfx=dengung): Pengeras suara berdenging keras.
+NARATOR {sorot} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal, aldo=kaget): 300 pasang mata menatapnya dalam diam.
+NARATOR {cu:gelly} (gelly:keyboard, gelly=fokus): Gelly menekan tuts keyboard pelan.
+NARATOR {drummer:gabriel} (gelly:keyboard, gabriel:drum, gabriel=fokus): Intro mulai mengalun, lalu Gabriel masuk dengan ketukan drum yang lembut.
+NARATOR {cu:aldo} (gelly:keyboard, gabriel:drum, aldo:vokal, aldo=cemas): Aldo membuka mulut.
+NARATOR {cu:aldo} (gelly:keyboard, gabriel:drum, aldo:vokal, aldo=malu, sfx=pecah@pecah): Baris pertama keluar terlalu pelan, lalu suaranya pecah.
+NARATOR {penonton} (gelly:keyboard, gabriel:drum, aldo:vokal, sfx=tawa): Dari barisan belakang, seseorang terkikik.
+NARATOR {cu:aldo} (gelly:keyboard, gabriel:drum, aldo:vokal, aldo=kaget): Aldo membeku.
+NARATOR {mcu:aldo} (gelly:keyboard, gabriel:drum, aldo:gemetar, aldo=malu): Musik terus berjalan, tapi suaranya hilang. Tangannya gemetar.
+NARATOR {sorot} (gelly:keyboard, gabriel:drum, aldo:silau, aldo=cemas): Lampu panggung terasa terlalu terang.
+NARATOR {mcu:aldo} (gelly:keyboard, gabriel:drum, aldo:silau, aldo=cemas): Ia mencari Nava di sisi panggung, tapi silau lampu membuat semuanya buram.
+NARATOR {cu:gelly} (gelly:keyboard, gelly=cemas): Gelly menatapnya dari balik keyboard, menunggu.
+[panggungGelap] vokal=aldo d1=hissari d2=misel d3=aulia d4=dayinta d5=elisabeth d6=manohara
+NARATOR {barisDepan} (hissari:senter, hissari=senyum, misel=netral, aulia=netral): Lalu, di barisan depan, satu cahaya kecil menyala.
+NARATOR {akhir}: Bersambung.

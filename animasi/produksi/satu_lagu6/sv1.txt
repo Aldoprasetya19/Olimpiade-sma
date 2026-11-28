@@ -1,0 +1,35 @@
+# judul: VOKALIS | DADAKAN
+# akhir: BERSAMBUNG... | Bagian 2: Latihan yang Berantakan
+[studio] vokal=nava gitaris=febri bassis=stefan keyboardis=gelly drummer=gabriel sudut=aldo
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, nava:vokal, ceria, nava=senang, febri=senang, stefan=senang, gelly=senyum, gabriel=senang, aldo:jongkok, aldo=senyum, sfx=gitarCeria): Seminggu lagi, pentas seni akhir semester.
+NARATOR {cu:febri} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, nava:vokal, ceria, febri=senang): Band kelas 11 sudah latihan berminggu-minggu.
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, nava:vokal, ceria, nava=senang, febri=senang, stefan=senang, gelly=senyum, gabriel=senang, aldo:jongkok): Febri di gitar, Stefan di bass, Gabriel di drum, Gelly di keyboard, dan Nava sebagai vokalis.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, nava:vokal, ceria, aldo:angkat, aldo=senyum): Aldo cuma bagian angkat-angkat alat.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, nava:vokal, ceria, aldo=senyum, aldo:angguk): Ia tidak keberatan.
+NARATOR {mcu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, nava:vokal, ceria, aldo:jongkok, aldo=netral): Panggung bukan tempatnya.
+NARATOR {cu:gelly} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, nava:vokal, ceria, gelly=senyum): Hanya Gelly yang tahu rahasianya.
+[kamar] p1=aldo
+NARATOR {mcu:aldo} (aldo:micDua, aldo=senang, sfx=ceklek): Aldo suka bernyanyi, tapi hanya di kamar, dengan pintu terkunci.
+[studio] gitaris=febri bassis=stefan keyboardis=gelly drummer=gabriel sudut=aldo vokal=nava#syal
+NARATOR {masuk} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, nava:lehar, nava=sedih): Senin sore, Nava datang latihan dengan syal melilit leher.
+NARATOR {cu:nava} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, nava:lehar, nava=sedih): Ia membuka mulut, dan yang keluar cuma suara serak seperti kaset kusut.
+NARATOR {cu:nava} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, nava:lehar, nava=bersalah): Radang tenggorokan.
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, nava:lehar, nava=sedih, febri=kaget, stefan=kaget, gelly=kaget, gabriel=kaget, aldo=kaget, sfx=kaget): Kata dokter, nggak boleh nyanyi seminggu.
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, febri=cemas, stefan=cemas, gelly=cemas, gabriel=cemas, aldo=cemas, nava=sedih): Studio musik sekolah mendadak hening.
+FEBRI (cemas, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam): "Terus, siapa yang nyanyi?"
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, febri=bingung, stefan=bingung, gabriel=bingung, nava=bingung): Semua saling pandang.
+NARATOR {cu:gelly} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, gelly=senyum): Lalu Gelly berdeham pelan dari balik keyboard.
+GELLY (senyum, gelly:tunjuk): "Aldo bisa."
+NARATOR {cu:aldo} (aldo=kaget): Aldo langsung menoleh.
+ALDO (kaget, aldo:ngeri): "Gel!"
+GELLY (senyum, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam): "Aku pernah dengar kamu nyanyi waktu nginep."
+GELLY (senang, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam): "Kamu bagus, Do. Serius."
+[studio] depanSudut=febri sudut=aldo keyboardis=gelly drummer=gabriel bassis=stefan
+NARATOR {dua} (febri:sodorMic, febri=senang, aldo=kaget, aldo:ngeri, gelly:keyboard, gabriel:drum, stefan:bass, diam): Febri menyodorkan mikrofon.
+FEBRI (senang, febri:sodorMic, aldo:ngeri, aldo=kaget, diam): "Coba satu bait aja."
+NARATOR {cu:aldo} (aldo:ngeri, aldo=cemas, febri:sodorMic): Aldo menatap mikrofon itu seperti menatap ular.
+[kamar] pinggirKasur=aldo
+NARATOR {mcu:aldo} (aldo:hp, aldo=netral): Malam itu, susunan acara pentas dibagikan di grup sekolah.
+NARATOR {hp-grup} [Grup SMAN 1 NYUATAN | Panitia: Susunan Acara Pentas Seni | Panitia: 6. Band Kelas 12 | Panitia: 7. Band Kelas 11 — Vokal: ALDO]: Di baris ketujuh tertulis,
+NARATOR {cu:aldo} (aldo:hp, aldo=kaget, sfx=bass): Band kelas 11. Vokal: Aldo.
+NARATOR {akhir}: Bersambung.

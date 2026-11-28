@@ -633,9 +633,10 @@ export const SETS = {
     return {};
   },
   panggung(scene, o = {}) { // lapangan sekolah malam + panggung (atas panggung y=1.0, z -9..-2.6), penonton di +z menghadap -z
-    scene.userData.clear = 0x05060c; sky(scene, '#05060f', '#141a33');
+    const sore = !!o.sore; scene.userData.clear = sore ? 0x222222 : 0x05060c; sky(scene, sore ? '#f3a96b' : '#05060f', sore ? '#ffe0b0' : '#141a33');
     const sorot = !!o.sorot;
-    lights(scene, { sky: '#4a5a8a', ground: '#1a1410', hemi: sorot ? 0.85 : 0.9, sun: '#9aa8d0', sunI: sorot ? 0.3 : 0.45, sunPos: [-4, 9, 8], shadowSize: 14 });
+    if (sore) lights(scene, { sky: '#ffd2a1', ground: '#7a5a4a', hemi: 1.5, sun: '#ffb070', sunI: 1.7, sunPos: [-8, 5, 8], shadowSize: 16 });
+    else lights(scene, { sky: '#4a5a8a', ground: '#1a1410', hemi: sorot ? 0.85 : 0.9, sun: '#9aa8d0', sunI: sorot ? 0.3 : 0.45, sunPos: [-4, 9, 8], shadowSize: 14 });
     const g = mesh(new THREE.PlaneGeometry(80, 80), noOutline(toon('#3c5a32')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
     scene.add(box(14, 1.0, 6.4, '#2a2a2a', [0, 0.5, -5.8])); scene.add(box(14, 0.06, 6.4, noOutline(toon('#3b3b3b')), [0, 1.03, -5.8], { cast: false }));
     const bd = textPlane(12, 3.2, (c, w, h) => { const gr = c.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#1b1f3a'); gr.addColorStop(1, '#3a1d4a'); c.fillStyle = gr; c.fillRect(0, 0, w, h);
@@ -649,7 +650,7 @@ export const SETS = {
     for (const x of [-5.6, 5.6]) { const a = ampli(1.2, 1.4); a.position.set(x, 1.0, -3.6); a.rotation.y = x < 0 ? 0.3 : -0.3; scene.add(a); const a2 = ampli(1.2, 1.4); a2.position.set(x, 0, -2.2); scene.add(a2); }
     const warna = ['#ff3b6b', '#3bb3ff', '#ffd23b', '#7a3bff', '#3bff9a', '#ff8a3b'];
     const balok = [];
-    if (!sorot) for (let i = 0; i < 6; i++) { const col = warna[i]; const cone = mesh(new THREE.ConeGeometry(1.2, 7, 18, 1, true), noOutline(flat(col, { transparent: true, opacity: 0.16, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending })), { cast: false });
+    if (!sorot && !sore) for (let i = 0; i < 6; i++) { const col = warna[i]; const cone = mesh(new THREE.ConeGeometry(1.2, 7, 18, 1, true), noOutline(flat(col, { transparent: true, opacity: 0.16, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending })), { cast: false });
       cone.geometry.translate(0, -3.5, 0); const piv = new THREE.Group(); piv.position.set(-5.5 + i * 2.2, 6.8, -3.2); piv.add(cone); piv.userData.ph = i; scene.add(piv); balok.push(piv);
       const pl = new THREE.PointLight(col, 6, 12, 1.5); pl.position.set(-5.5 + i * 2.2, 4, -3.5); scene.add(pl); }
     if (sorot) { const cone = mesh(new THREE.ConeGeometry(1.3, 6.6, 20, 1, true), noOutline(flat('#fff6d8', { transparent: true, opacity: 0.18, depthWrite: false, side: THREE.DoubleSide, blending: THREE.AdditiveBlending })), { cast: false });
@@ -658,14 +659,14 @@ export const SETS = {
       const isi = new THREE.PointLight('#ffd2a8', 9, 9, 1.3); isi.position.set(0, 4.0, -0.6); scene.add(isi);
       const sayap = new THREE.PointLight('#ffcf9a', 4, 7, 1.4); sayap.position.set(-5.2, 3.6, -2.6); scene.add(sayap);
       const disk = mesh(new THREE.CircleGeometry(1.2, 24), noOutline(flat('#fff2c8', { transparent: true, opacity: 0.22 }))); disk.rotation.x = -Math.PI / 2; disk.position.set(0, 1.07, -4.0); scene.add(disk); }
-    else { const wash = new THREE.PointLight('#ffd9f0', 10, 16, 1.2); wash.position.set(0, 5, -1); scene.add(wash); }
+    else if (!sore) { const wash = new THREE.PointLight('#ffd9f0', 10, 16, 1.2); wash.position.set(0, 5, -1); scene.add(wash); }
     const K = o.penonton === false ? { lampu: [], badan: [] } : kerumunan(scene, { senter: o.senter || 0, z0: o.z0 ?? 3.0 });
     for (const [x, z] of [[-14, -6], [14, -5], [-16, 4], [16, 6]]) { const t = tree(4.5); t.position.set(x, 0, z); scene.add(t); }
     for (const x of [-12, 12]) { scene.add(box(0.15, 6, 0.15, '#666', [x, 3, 0])); const lp = mesh(new THREE.SphereGeometry(0.25, 8, 6), noOutline(flat('#fff1c0'))); lp.position.set(x, 6.1, 0); scene.add(lp); }
     scene.userData.anim = (t) => {
       balok.forEach(b => { b.rotation.z = Math.sin(t * 0.9 + b.userData.ph) * 0.45; b.rotation.x = Math.cos(t * 0.7 + b.userData.ph * 1.3) * 0.25; });
       K.lampu.forEach(L => { L.position.x += Math.sin(t * 1.4 + L.userData.ph) * 0.004; L.rotation.z = Math.sin(t * 1.4 + L.userData.ph) * 0.35; });
-      K.badan.forEach((b, i) => { if (!sorot) b.position.y = Math.max(0, Math.sin(t * 7 + i)) * 0.08; });
+      K.badan.forEach((b, i) => { if (!sorot && !sore) b.position.y = Math.max(0, Math.sin(t * 7 + i)) * 0.08; });
     };
     return {};
   },
@@ -684,6 +685,23 @@ export const SETS = {
     const lp = new THREE.PointLight('#ffd890', 4, 8, 1.5); lp.position.set(0.5, 3, 12.5); scene.add(lp); scene.add(box(0.1, 3.2, 0.1, '#555', [2.6, 1.6, 12.4]));
     const tx = textPlane(2.2, 0.4, (c, w, h) => { c.fillStyle = '#2c3e50'; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.6}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('GERBANG BELAKANG', w / 2, h / 2 + 2); }); tx.position.set(0.5, 2.6, 12.95); scene.add(tx);
     scene.userData.anim = (t) => { cel.material.color.setHSL((t * 0.15) % 1, 0.8, 0.6); pl.color.setHSL((t * 0.15) % 1, 0.5, 0.7); };
+    return {};
+  },
+  teras(scene, o = {}) { // teras rumah malam: dinding rumah di z=-1 (pintu 'pintu'), bangku teras, lampu
+    scene.userData.clear = 0x05060c; sky(scene, '#070b1f', '#1b2244');
+    lights(scene, { sky: '#6a78a8', ground: '#2a2420', hemi: 1.0, sun: '#9aa8d0', sunI: 0.35, sunPos: [-4, 9, 8], shadowSize: 10 });
+    const g = mesh(new THREE.PlaneGeometry(40, 40), noOutline(toon('#4a5a3a')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
+    scene.add(box(10, 0.15, 3.2, '#9a8f80', [0, 0.075, 0.5], { cast: false }));
+    scene.add(box(10, 3.6, 0.3, '#d9cdb4', [0, 1.8, -1.15])); scene.add(box(10.6, 0.25, 3.8, '#7a3b2e', [0, 3.7, 0.3]));
+    for (const x of [-4.6, 4.6]) scene.add(box(0.2, 3.6, 0.2, '#f0ebe0', [x, 1.8, 2.0]));
+    const pt = door('#6b4430'); pt.position.set(-0.3, 0, -0.98); scene.add(pt);
+    const jd = windowPane(1.6, 1.2, '#ffd98a'); jd.position.set(-2.8, 1.9, -0.98); scene.add(jd);
+    const bang = new THREE.Group(); bang.add(box(2.0, 0.1, 0.55, '#8a5a3a', [0, 0.48, 0])); bang.add(box(2.0, 0.5, 0.08, '#8a5a3a', [0, 0.78, -0.26]));
+    for (const x of [-0.9, 0.9]) bang.add(box(0.08, 0.48, 0.5, '#5a3a22', [x, 0.24, 0])); bang.position.set(1.45, 0, 0.15); scene.add(bang);
+    const lp = new THREE.PointLight('#ffd890', 7, 9, 1.4); lp.position.set(0.5, 3.2, 0.6); scene.add(lp); const bl = mesh(new THREE.SphereGeometry(0.12, 10, 8), noOutline(flat('#fff3c0'))); bl.position.set(0.5, 3.45, -0.85); scene.add(bl);
+    for (const x of [-4.2, 3.8]) { const pp = plant(); pp.position.set(x, 0.15, 1.6); scene.add(pp); }
+    for (let i = 0; i < 12; i++) scene.add(box(0.08, 1.0, 0.08, '#e8e2d4', [-5.5 + i, 0.5, 4.5])); scene.add(box(12, 0.08, 0.08, '#e8e2d4', [0, 0.9, 4.5]));
+    for (const [x, z] of [[-7, 7], [6, 8]]) { const t = tree(4); t.position.set(x, 0, z); scene.add(t); }
     return {};
   },
   kosong(scene, o = {}) { // studio polos untuk kenangan / insert

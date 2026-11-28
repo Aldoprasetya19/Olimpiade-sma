@@ -1,0 +1,372 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 80.58,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {},
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 80.58,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.08,
+     "teks": "Aldo sudah setengah"
+    },
+    {
+     "start": 1.08,
+     "end": 1.7,
+     "teks": "jalan menuju"
+    },
+    {
+     "start": 1.7,
+     "end": 2.66,
+     "teks": "gerbang,"
+    },
+    {
+     "start": 2.66,
+     "end": 3.5,
+     "teks": "ketika seseorang"
+    },
+    {
+     "start": 3.5,
+     "end": 4.99,
+     "teks": "menahan lengannya."
+    },
+    {
+     "start": 5.33,
+     "end": 6.06,
+     "teks": "Nava."
+    },
+    {
+     "start": 6.06,
+     "end": 7.53,
+     "teks": "Ia tidak bicara."
+    },
+    {
+     "start": 7.68,
+     "end": 8.54,
+     "teks": "Ia hanya menunjuk"
+    },
+    {
+     "start": 8.54,
+     "end": 9.57,
+     "teks": "ke panggung,"
+    },
+    {
+     "start": 9.68,
+     "end": 10.69,
+     "teks": "lalu menunjuk"
+    },
+    {
+     "start": 10.69,
+     "end": 11.59,
+     "teks": "dirinya sendiri,"
+    },
+    {
+     "start": 11.82,
+     "end": 13.16,
+     "teks": "lalu mengangkat ibu"
+    },
+    {
+     "start": 13.16,
+     "end": 13.77,
+     "teks": "jari."
+    },
+    {
+     "start": 14.0,
+     "end": 15.0,
+     "teks": "Cari aku,"
+    },
+    {
+     "start": 15.0,
+     "end": 16.01,
+     "teks": "lihat aku aja."
+    },
+    {
+     "start": 16.38,
+     "end": 17.38,
+     "teks": "Aldo menarik napas"
+    },
+    {
+     "start": 17.38,
+     "end": 18.46,
+     "teks": "panjang,"
+    },
+    {
+     "start": 18.46,
+     "end": 20.47,
+     "teks": "lalu ia berbalik."
+    },
+    {
+     "start": 20.56,
+     "end": 22.02,
+     "teks": "Lampu meredup."
+    },
+    {
+     "start": 22.02,
+     "end": 23.6,
+     "teks": "Suara MC menggema"
+    },
+    {
+     "start": 23.6,
+     "end": 24.99,
+     "teks": "di seluruh lapangan."
+    },
+    {
+     "start": 25.54,
+     "end": 26.58,
+     "teks": "\"Selanjutnya,"
+    },
+    {
+     "start": 26.58,
+     "end": 28.04,
+     "teks": "band kelas 11!\""
+    },
+    {
+     "start": 28.04,
+     "end": 29.52,
+     "teks": "Aldo melangkah ke"
+    },
+    {
+     "start": 29.52,
+     "end": 30.71,
+     "teks": "tengah panggung."
+    },
+    {
+     "start": 30.82,
+     "end": 31.48,
+     "teks": "Ia menggenggam"
+    },
+    {
+     "start": 31.48,
+     "end": 32.71,
+     "teks": "mikrofon."
+    },
+    {
+     "start": 33.78,
+     "end": 35.06,
+     "teks": "Pengeras suara"
+    },
+    {
+     "start": 35.06,
+     "end": 36.51,
+     "teks": "berdenging keras."
+    },
+    {
+     "start": 36.74,
+     "end": 38.0,
+     "teks": "300 pasang mata"
+    },
+    {
+     "start": 38.0,
+     "end": 39.08,
+     "teks": "menatapnya dalam"
+    },
+    {
+     "start": 39.08,
+     "end": 39.53,
+     "teks": "diam."
+    },
+    {
+     "start": 39.73,
+     "end": 40.72,
+     "teks": "Gelly menekan tuts"
+    },
+    {
+     "start": 40.72,
+     "end": 42.07,
+     "teks": "keyboard pelan."
+    },
+    {
+     "start": 42.24,
+     "end": 42.9,
+     "teks": "Intro mulai"
+    },
+    {
+     "start": 42.9,
+     "end": 43.82,
+     "teks": "mengalun,"
+    },
+    {
+     "start": 43.82,
+     "end": 45.2,
+     "teks": "lalu Gabriel masuk"
+    },
+    {
+     "start": 45.2,
+     "end": 46.24,
+     "teks": "dengan ketukan drum"
+    },
+    {
+     "start": 46.24,
+     "end": 47.05,
+     "teks": "yang lembut."
+    },
+    {
+     "start": 47.4,
+     "end": 48.95,
+     "teks": "Aldo membuka mulut."
+    },
+    {
+     "start": 49.04,
+     "end": 50.14,
+     "teks": "Baris pertama keluar"
+    },
+    {
+     "start": 50.14,
+     "end": 51.46,
+     "teks": "terlalu pelan,"
+    },
+    {
+     "start": 51.46,
+     "end": 53.3,
+     "teks": "lalu suaranya pecah."
+    },
+    {
+     "start": 53.3,
+     "end": 53.84,
+     "teks": "Dari barisan"
+    },
+    {
+     "start": 53.84,
+     "end": 54.68,
+     "teks": "belakang,"
+    },
+    {
+     "start": 54.68,
+     "end": 55.93,
+     "teks": "seseorang terkikik."
+    },
+    {
+     "start": 56.16,
+     "end": 57.24,
+     "teks": "Aldo membeku."
+    },
+    {
+     "start": 57.24,
+     "end": 58.5,
+     "teks": "Musik terus"
+    },
+    {
+     "start": 58.5,
+     "end": 59.6,
+     "teks": "berjalan,"
+    },
+    {
+     "start": 59.6,
+     "end": 60.52,
+     "teks": "tapi suaranya"
+    },
+    {
+     "start": 60.52,
+     "end": 61.42,
+     "teks": "hilang."
+    },
+    {
+     "start": 61.42,
+     "end": 63.03,
+     "teks": "Tangannya gemetar."
+    },
+    {
+     "start": 63.22,
+     "end": 63.88,
+     "teks": "Lampu panggung"
+    },
+    {
+     "start": 63.88,
+     "end": 64.52,
+     "teks": "terasa terlalu"
+    },
+    {
+     "start": 64.52,
+     "end": 65.37,
+     "teks": "terang."
+    },
+    {
+     "start": 65.58,
+     "end": 66.4,
+     "teks": "Ia mencari Nava"
+    },
+    {
+     "start": 66.4,
+     "end": 67.62,
+     "teks": "di sisi panggung,"
+    },
+    {
+     "start": 67.62,
+     "end": 68.5,
+     "teks": "tapi silau lampu"
+    },
+    {
+     "start": 68.5,
+     "end": 69.2,
+     "teks": "membuat semuanya"
+    },
+    {
+     "start": 69.2,
+     "end": 70.11,
+     "teks": "buram."
+    },
+    {
+     "start": 70.26,
+     "end": 71.12,
+     "teks": "Gelly menatapnya"
+    },
+    {
+     "start": 71.12,
+     "end": 72.42,
+     "teks": "dari balik keyboard,"
+    },
+    {
+     "start": 72.42,
+     "end": 73.09,
+     "teks": "menunggu."
+    },
+    {
+     "start": 73.54,
+     "end": 74.34,
+     "teks": "Lalu,"
+    },
+    {
+     "start": 74.34,
+     "end": 75.8,
+     "teks": "di barisan depan,"
+    },
+    {
+     "start": 75.8,
+     "end": 76.62,
+     "teks": "satu cahaya kecil"
+    },
+    {
+     "start": 76.62,
+     "end": 77.23,
+     "teks": "menyala."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "TIGA RATUS",
+  "baris2": "PASANG MATA",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 77.28,
+  "end": 80.58,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 6: Satu Lagu"
+ }
+}

@@ -1,0 +1,28 @@
+# judul: PESAN DARI | NAVA
+# akhir: BERSAMBUNG... | Bagian 4: Senar Pinjaman
+[teras] tamu=nava#syal ambang=aldo
+NARATOR {dua} (aldo=kaget, nava=senyum): Yang berdiri di depan pintu adalah Nava.
+NARATOR {cu:nava} (nava=senyum, nava:lehar): Syalnya masih melilit leher.
+NARATOR {cu:nava} (nava=senyum, nava:serahkan): Di tangannya ada sebotol air jahe hangat.
+NAVA (senyum, nava:serahkan): "Buat tenggorokanmu, kamu lebih butuh daripada aku."
+[teras] bangku1=aldo bangku2=nava#syal
+NARATOR {lebar} (aldo=sedih, nava=netral): Mereka duduk di teras. Lama tidak ada yang bicara.
+NAVA (senyum): "Kamu tahu gak, pertama kali aku nyanyi di panggung waktu SMP, aku nangis di belakang panggung."
+NAVA (sedih): "Lututku gemetar sampai harus pegangan tiang mic."
+NARATOR {dua} (aldo=kaget): Aldo menoleh, kaget. Nava yang selalu terlihat percaya diri itu?
+NAVA (senyum): "Takut itu wajar, Do. Kamu gak harus berani. Cukup jangan lari."
+NARATOR {dua} (nava:hp, nava=senyum, aldo=bingung): Nava mengeluarkan HP dan memutar sebuah rekaman.
+NARATOR {cu:aldo} (nava:hp, aldo=bingung): Itu suara Aldo saat latihan tadi, di bait pertama, sebelum suaranya pecah.
+NAVA (senyum, nava:hp): "Gelly yang rekam. Dengar sendiri. Itu bagus."
+NARATOR {cu:aldo} (nava:hp, aldo=lega): Aldo mendengarkan. Ternyata, memang tidak buruk.
+NAVA (serius): "Kalau nanti di panggung kamu takut, cari aku di sisi panggung. Lihat aku aja."
+NARATOR {cu:aldo} (aldo=serius): Aldo terdiam lama.
+NARATOR {cu:aldo} (aldo:hp, aldo=senyum): Lalu, ia membuka grup band dan mengetik.
+NARATOR {hp-grup} [Band Kelas 11@21.32 | Gelly: Do? | Febri: Bro, besok latihan ya | > Besok, aku latihan lagi.]: Besok, aku latihan lagi.
+[panggungSore] vokal=aldo gitaris=febri bassis=stefan keyboardis=gelly drummer=gabriel
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=fokus): Jumat sore, gladi resik di panggung lapangan.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=senang): Aldo bernyanyi lebih mantap dari sebelumnya.
+NARATOR {cu:febri} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, febri=senang): Lagu hampir selesai.
+NARATOR {cu:febri} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, febri=kaget, sfx=senar@teng): Lalu, terdengar bunyi tajam. TENG!
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, febri=kaget, aldo=kaget, stefan=kaget, gelly=kaget, gabriel=kaget): Senar gitar Febri putus.
+NARATOR {akhir}: Bersambung.

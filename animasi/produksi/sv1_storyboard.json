@@ -1,0 +1,409 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 79.66,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "FEBRI": {
+   "warna": "#FFD84A"
+  },
+  "GELLY": {
+   "warna": "#8FE3D8"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 79.66,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.02,
+     "teks": "Seminggu lagi,"
+    },
+    {
+     "start": 1.02,
+     "end": 2.02,
+     "teks": "pentas seni akhir"
+    },
+    {
+     "start": 2.02,
+     "end": 2.93,
+     "teks": "semester."
+    },
+    {
+     "start": 3.02,
+     "end": 3.78,
+     "teks": "Band kelas 11"
+    },
+    {
+     "start": 3.78,
+     "end": 5.38,
+     "teks": "sudah latihan"
+    },
+    {
+     "start": 5.38,
+     "end": 5.78,
+     "teks": "berminggu-minggu."
+    },
+    {
+     "start": 6.12,
+     "end": 7.32,
+     "teks": "Febri di gitar,"
+    },
+    {
+     "start": 7.32,
+     "end": 8.4,
+     "teks": "Stefan di bass,"
+    },
+    {
+     "start": 8.4,
+     "end": 9.63,
+     "teks": "Gabriel di drum,"
+    },
+    {
+     "start": 9.63,
+     "end": 10.76,
+     "teks": "Gelly di keyboard,"
+    },
+    {
+     "start": 10.76,
+     "end": 11.72,
+     "teks": "dan Nava sebagai"
+    },
+    {
+     "start": 11.72,
+     "end": 12.51,
+     "teks": "vokalis."
+    },
+    {
+     "start": 13.0,
+     "end": 14.37,
+     "teks": "Aldo cuma bagian"
+    },
+    {
+     "start": 14.37,
+     "end": 15.45,
+     "teks": "angkat-angkat alat."
+    },
+    {
+     "start": 15.46,
+     "end": 16.71,
+     "teks": "Ia tidak keberatan."
+    },
+    {
+     "start": 16.94,
+     "end": 17.58,
+     "teks": "Panggung bukan"
+    },
+    {
+     "start": 17.58,
+     "end": 18.39,
+     "teks": "tempatnya."
+    },
+    {
+     "start": 18.68,
+     "end": 19.56,
+     "teks": "Hanya Gelly yang"
+    },
+    {
+     "start": 19.56,
+     "end": 20.71,
+     "teks": "tahu rahasianya."
+    },
+    {
+     "start": 21.02,
+     "end": 22.7,
+     "teks": "Aldo suka bernyanyi,"
+    },
+    {
+     "start": 22.7,
+     "end": 23.76,
+     "teks": "tapi hanya di"
+    },
+    {
+     "start": 23.76,
+     "end": 24.65,
+     "teks": "kamar,"
+    },
+    {
+     "start": 24.65,
+     "end": 25.1,
+     "teks": "dengan pintu"
+    },
+    {
+     "start": 25.1,
+     "end": 25.77,
+     "teks": "terkunci."
+    },
+    {
+     "start": 26.03,
+     "end": 27.38,
+     "teks": "Senin sore,"
+    },
+    {
+     "start": 27.38,
+     "end": 28.4,
+     "teks": "Nava datang latihan"
+    },
+    {
+     "start": 28.4,
+     "end": 29.42,
+     "teks": "dengan syal melilit"
+    },
+    {
+     "start": 29.42,
+     "end": 29.99,
+     "teks": "leher."
+    },
+    {
+     "start": 30.0,
+     "end": 31.94,
+     "teks": "Ia membuka mulut,"
+    },
+    {
+     "start": 31.94,
+     "end": 32.54,
+     "teks": "dan yang keluar"
+    },
+    {
+     "start": 32.54,
+     "end": 33.52,
+     "teks": "cuma suara serak"
+    },
+    {
+     "start": 33.52,
+     "end": 34.91,
+     "teks": "seperti kaset kusut."
+    },
+    {
+     "start": 35.62,
+     "end": 37.43,
+     "teks": "Radang tenggorokan."
+    },
+    {
+     "start": 37.54,
+     "end": 38.6,
+     "teks": "Kata dokter,"
+    },
+    {
+     "start": 38.6,
+     "end": 39.5,
+     "teks": "nggak boleh nyanyi"
+    },
+    {
+     "start": 39.5,
+     "end": 40.46,
+     "teks": "seminggu."
+    },
+    {
+     "start": 40.46,
+     "end": 42.4,
+     "teks": "Studio musik sekolah"
+    },
+    {
+     "start": 42.4,
+     "end": 43.16,
+     "teks": "mendadak hening."
+    },
+    {
+     "start": 43.16,
+     "end": 44.04,
+     "teks": "\"Terus,",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 44.04,
+     "end": 45.23,
+     "teks": "siapa yang nyanyi?\"",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 45.34,
+     "end": 46.08,
+     "teks": "Semua saling"
+    },
+    {
+     "start": 46.08,
+     "end": 46.69,
+     "teks": "pandang."
+    },
+    {
+     "start": 47.28,
+     "end": 48.48,
+     "teks": "Lalu Gelly berdeham"
+    },
+    {
+     "start": 48.48,
+     "end": 49.44,
+     "teks": "pelan dari balik"
+    },
+    {
+     "start": 49.44,
+     "end": 50.01,
+     "teks": "keyboard."
+    },
+    {
+     "start": 50.26,
+     "end": 51.15,
+     "teks": "\"Aldo bisa.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 51.42,
+     "end": 52.38,
+     "teks": "Aldo langsung"
+    },
+    {
+     "start": 52.38,
+     "end": 53.35,
+     "teks": "menoleh."
+    },
+    {
+     "start": 53.81,
+     "end": 54.21,
+     "teks": "\"Gel!\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 54.42,
+     "end": 55.36,
+     "teks": "\"Aku pernah dengar",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 55.36,
+     "end": 56.62,
+     "teks": "kamu nyanyi waktu",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 56.62,
+     "end": 57.0,
+     "teks": "nginep.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 57.0,
+     "end": 57.92,
+     "teks": "\"Kamu bagus,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 57.92,
+     "end": 58.34,
+     "teks": "Do.",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 58.34,
+     "end": 58.82,
+     "teks": "Serius.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 58.82,
+     "end": 60.4,
+     "teks": "Febri menyodorkan"
+    },
+    {
+     "start": 60.4,
+     "end": 61.23,
+     "teks": "mikrofon."
+    },
+    {
+     "start": 61.32,
+     "end": 62.46,
+     "teks": "\"Coba satu bait",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 62.46,
+     "end": 63.19,
+     "teks": "aja.\"",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 63.66,
+     "end": 64.2,
+     "teks": "Aldo menatap"
+    },
+    {
+     "start": 64.2,
+     "end": 65.46,
+     "teks": "mikrofon itu seperti"
+    },
+    {
+     "start": 65.46,
+     "end": 66.57,
+     "teks": "menatap ular."
+    },
+    {
+     "start": 67.34,
+     "end": 68.32,
+     "teks": "Malam itu,"
+    },
+    {
+     "start": 68.32,
+     "end": 69.42,
+     "teks": "susunan acara pentas"
+    },
+    {
+     "start": 69.42,
+     "end": 70.28,
+     "teks": "dibagikan di grup"
+    },
+    {
+     "start": 70.28,
+     "end": 71.43,
+     "teks": "sekolah."
+    },
+    {
+     "start": 71.48,
+     "end": 72.24,
+     "teks": "Di baris ketujuh"
+    },
+    {
+     "start": 72.24,
+     "end": 73.31,
+     "teks": "tertulis,"
+    },
+    {
+     "start": 73.35,
+     "end": 75.0,
+     "teks": "Band kelas 11."
+    },
+    {
+     "start": 75.0,
+     "end": 76.35,
+     "teks": "Vokal: Aldo."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "VOKALIS",
+  "baris2": "DADAKAN",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 76.36,
+  "end": 79.66,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Latihan yang Berantakan"
+ }
+}

@@ -1,0 +1,1204 @@
+[
+ {
+  "start": 0.0,
+  "end": 1.04,
+  "text": " Senar Chagatun mana?",
+  "words": [
+   {
+    "w": " Senar",
+    "s": 0.0,
+    "e": 0.4
+   },
+   {
+    "w": " Chagatun",
+    "s": 0.4,
+    "e": 0.72
+   },
+   {
+    "w": " mana?",
+    "s": 0.72,
+    "e": 1.04
+   }
+  ]
+ },
+ {
+  "start": 1.8,
+  "end": 3.4,
+  "text": " Tanya Stefan panik.",
+  "words": [
+   {
+    "w": " Tanya",
+    "s": 1.8,
+    "e": 2.08
+   },
+   {
+    "w": " Stefan",
+    "s": 2.08,
+    "e": 2.46
+   },
+   {
+    "w": " panik.",
+    "s": 2.46,
+    "e": 3.4
+   }
+  ]
+ },
+ {
+  "start": 3.7,
+  "end": 5.58,
+  "text": " Febri membongkar tas gitarnya.",
+  "words": [
+   {
+    "w": " Febri",
+    "s": 3.7,
+    "e": 4.02
+   },
+   {
+    "w": " membongkar",
+    "s": 4.02,
+    "e": 4.74
+   },
+   {
+    "w": " tas",
+    "s": 4.74,
+    "e": 4.98
+   },
+   {
+    "w": " gitarnya.",
+    "s": 4.98,
+    "e": 5.58
+   }
+  ]
+ },
+ {
+  "start": 6.2,
+  "end": 6.88,
+  "text": " Kosong.",
+  "words": [
+   {
+    "w": " Kosong.",
+    "s": 6.2,
+    "e": 6.88
+   }
+  ]
+ },
+ {
+  "start": 7.14,
+  "end": 8.4,
+  "text": " Ketinggalan di rumah.",
+  "words": [
+   {
+    "w": " Ketinggalan",
+    "s": 7.14,
+    "e": 7.74
+   },
+   {
+    "w": " di",
+    "s": 7.74,
+    "e": 7.92
+   },
+   {
+    "w": " rumah.",
+    "s": 7.92,
+    "e": 8.4
+   }
+  ]
+ },
+ {
+  "start": 8.88,
+  "end": 10.28,
+  "text": " Rumahku jauh.",
+  "words": [
+   {
+    "w": " Rumahku",
+    "s": 8.88,
+    "e": 9.34
+   },
+   {
+    "w": " jauh.",
+    "s": 9.34,
+    "e": 10.28
+   }
+  ]
+ },
+ {
+  "start": 10.44,
+  "end": 12.68,
+  "text": " Toko musik juga udah tutup jam segini.",
+  "words": [
+   {
+    "w": " Toko",
+    "s": 10.44,
+    "e": 10.72
+   },
+   {
+    "w": " musik",
+    "s": 10.72,
+    "e": 11.02
+   },
+   {
+    "w": " juga",
+    "s": 11.02,
+    "e": 11.22
+   },
+   {
+    "w": " udah",
+    "s": 11.22,
+    "e": 11.5
+   },
+   {
+    "w": " tutup",
+    "s": 11.5,
+    "e": 11.86
+   },
+   {
+    "w": " jam",
+    "s": 11.86,
+    "e": 12.04
+   },
+   {
+    "w": " segini.",
+    "s": 12.04,
+    "e": 12.68
+   }
+  ]
+ },
+ {
+  "start": 13.06,
+  "end": 15.08,
+  "text": " Pentas tinggal satu hari lagi.",
+  "words": [
+   {
+    "w": " Pentas",
+    "s": 13.06,
+    "e": 13.48
+   },
+   {
+    "w": " tinggal",
+    "s": 13.48,
+    "e": 13.86
+   },
+   {
+    "w": " satu",
+    "s": 13.86,
+    "e": 14.16
+   },
+   {
+    "w": " hari",
+    "s": 14.16,
+    "e": 14.38
+   },
+   {
+    "w": " lagi.",
+    "s": 14.38,
+    "e": 15.08
+   }
+  ]
+ },
+ {
+  "start": 15.54,
+  "end": 19.02,
+  "text": " Tanpa gitar, intro dan ref lagu mereka tidak akan jalan.",
+  "words": [
+   {
+    "w": " Tanpa",
+    "s": 15.54,
+    "e": 15.84
+   },
+   {
+    "w": " gitar,",
+    "s": 15.84,
+    "e": 16.4
+   },
+   {
+    "w": " intro",
+    "s": 16.88,
+    "e": 17.06
+   },
+   {
+    "w": " dan",
+    "s": 17.06,
+    "e": 17.26
+   },
+   {
+    "w": " ref",
+    "s": 17.26,
+    "e": 17.46
+   },
+   {
+    "w": " lagu",
+    "s": 17.46,
+    "e": 17.72
+   },
+   {
+    "w": " mereka",
+    "s": 17.72,
+    "e": 18.02
+   },
+   {
+    "w": " tidak",
+    "s": 18.02,
+    "e": 18.28
+   },
+   {
+    "w": " akan",
+    "s": 18.28,
+    "e": 18.54
+   },
+   {
+    "w": " jalan.",
+    "s": 18.54,
+    "e": 19.02
+   }
+  ]
+ },
+ {
+  "start": 19.6,
+  "end": 22.0,
+  "text": " Mereka duduk di pinggir panggung dengan lesu.",
+  "words": [
+   {
+    "w": " Mereka",
+    "s": 19.6,
+    "e": 19.9
+   },
+   {
+    "w": " duduk",
+    "s": 19.9,
+    "e": 20.24
+   },
+   {
+    "w": " di",
+    "s": 20.24,
+    "e": 20.38
+   },
+   {
+    "w": " pinggir",
+    "s": 20.38,
+    "e": 20.64
+   },
+   {
+    "w": " panggung",
+    "s": 20.64,
+    "e": 21.06
+   },
+   {
+    "w": " dengan",
+    "s": 21.06,
+    "e": 21.32
+   },
+   {
+    "w": " lesu.",
+    "s": 21.32,
+    "e": 22.0
+   }
+  ]
+ },
+ {
+  "start": 22.46,
+  "end": 24.76,
+  "text": " Geli mencoba memainkan bagian gitar di keyboard.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 22.46,
+    "e": 22.66
+   },
+   {
+    "w": " mencoba",
+    "s": 22.66,
+    "e": 23.08
+   },
+   {
+    "w": " memainkan",
+    "s": 23.08,
+    "e": 23.58
+   },
+   {
+    "w": " bagian",
+    "s": 23.58,
+    "e": 23.9
+   },
+   {
+    "w": " gitar",
+    "s": 23.9,
+    "e": 24.24
+   },
+   {
+    "w": " di",
+    "s": 24.24,
+    "e": 24.42
+   },
+   {
+    "w": " keyboard.",
+    "s": 24.42,
+    "e": 24.76
+   }
+  ]
+ },
+ {
+  "start": 25.24,
+  "end": 26.68,
+  "text": " Tapi suaranya tidak sama.",
+  "words": [
+   {
+    "w": " Tapi",
+    "s": 25.24,
+    "e": 25.46
+   },
+   {
+    "w": " suaranya",
+    "s": 25.46,
+    "e": 25.9
+   },
+   {
+    "w": " tidak",
+    "s": 25.9,
+    "e": 26.22
+   },
+   {
+    "w": " sama.",
+    "s": 26.22,
+    "e": 26.68
+   }
+  ]
+ },
+ {
+  "start": 27.5,
+  "end": 29.58,
+  "text": " Lalu seseorang berdiri di depan mereka.",
+  "words": [
+   {
+    "w": " Lalu",
+    "s": 27.5,
+    "e": 27.84
+   },
+   {
+    "w": " seseorang",
+    "s": 27.84,
+    "e": 28.28
+   },
+   {
+    "w": " berdiri",
+    "s": 28.28,
+    "e": 28.84
+   },
+   {
+    "w": " di",
+    "s": 28.84,
+    "e": 29.0
+   },
+   {
+    "w": " depan",
+    "s": 29.0,
+    "e": 29.22
+   },
+   {
+    "w": " mereka.",
+    "s": 29.22,
+    "e": 29.58
+   }
+  ]
+ },
+ {
+  "start": 30.0,
+  "end": 33.06,
+  "text": " Rialdi dengan gitar akustik di tangannya.",
+  "words": [
+   {
+    "w": " Rialdi",
+    "s": 30.0,
+    "e": 30.68
+   },
+   {
+    "w": " dengan",
+    "s": 30.68,
+    "e": 31.14
+   },
+   {
+    "w": " gitar",
+    "s": 31.14,
+    "e": 31.5
+   },
+   {
+    "w": " akustik",
+    "s": 31.5,
+    "e": 32.0
+   },
+   {
+    "w": " di",
+    "s": 32.0,
+    "e": 32.18
+   },
+   {
+    "w": " tangannya.",
+    "s": 32.18,
+    "e": 33.06
+   }
+  ]
+ },
+ {
+  "start": 33.18,
+  "end": 34.38,
+  "text": " Pakai punya ku aja.",
+  "words": [
+   {
+    "w": " Pakai",
+    "s": 33.18,
+    "e": 33.44
+   },
+   {
+    "w": " punya",
+    "s": 33.44,
+    "e": 33.64
+   },
+   {
+    "w": " ku",
+    "s": 33.64,
+    "e": 33.88
+   },
+   {
+    "w": " aja.",
+    "s": 33.88,
+    "e": 34.38
+   }
+  ]
+ },
+ {
+  "start": 34.7,
+  "end": 36.74,
+  "text": " Senarnya baru ku ganti minggu lalu.",
+  "words": [
+   {
+    "w": " Senarnya",
+    "s": 34.7,
+    "e": 35.06
+   },
+   {
+    "w": " baru",
+    "s": 35.06,
+    "e": 35.3
+   },
+   {
+    "w": " ku",
+    "s": 35.3,
+    "e": 35.46
+   },
+   {
+    "w": " ganti",
+    "s": 35.46,
+    "e": 35.8
+   },
+   {
+    "w": " minggu",
+    "s": 35.8,
+    "e": 36.08
+   },
+   {
+    "w": " lalu.",
+    "s": 36.08,
+    "e": 36.74
+   }
+  ]
+ },
+ {
+  "start": 37.12,
+  "end": 39.2,
+  "text": " Semua menatapnya tidak percaya.",
+  "words": [
+   {
+    "w": " Semua",
+    "s": 37.12,
+    "e": 37.42
+   },
+   {
+    "w": " menatapnya",
+    "s": 37.42,
+    "e": 38.1
+   },
+   {
+    "w": " tidak",
+    "s": 38.1,
+    "e": 38.46
+   },
+   {
+    "w": " percaya.",
+    "s": 38.46,
+    "e": 39.2
+   }
+  ]
+ },
+ {
+  "start": 39.64,
+  "end": 41.18,
+  "text": " Rialdi menggaruk tengkuk.",
+  "words": [
+   {
+    "w": " Rialdi",
+    "s": 39.64,
+    "e": 40.1
+   },
+   {
+    "w": " menggaruk",
+    "s": 40.1,
+    "e": 40.52
+   },
+   {
+    "w": " tengkuk.",
+    "s": 40.52,
+    "e": 41.18
+   }
+  ]
+ },
+ {
+  "start": 41.32,
+  "end": 42.52,
+  "text": " Terlihat canggung.",
+  "words": [
+   {
+    "w": " Terlihat",
+    "s": 41.32,
+    "e": 41.74
+   },
+   {
+    "w": " canggung.",
+    "s": 41.74,
+    "e": 42.52
+   }
+  ]
+ },
+ {
+  "start": 42.96,
+  "end": 44.120000000000005,
+  "text": " Soal kemarin...",
+  "words": [
+   {
+    "w": " Soal",
+    "s": 42.96,
+    "e": 43.3
+   },
+   {
+    "w": " kemarin...",
+    "s": 43.3,
+    "e": 44.120000000000005
+   }
+  ]
+ },
+ {
+  "start": 44.74,
+  "end": 45.82,
+  "text": " Maaf ya, Doh.",
+  "words": [
+   {
+    "w": " Maaf",
+    "s": 44.74,
+    "e": 45.08
+   },
+   {
+    "w": " ya,",
+    "s": 45.08,
+    "e": 45.28
+   },
+   {
+    "w": " Doh.",
+    "s": 45.3,
+    "e": 45.82
+   }
+  ]
+ },
+ {
+  "start": 46.04,
+  "end": 48.62,
+  "text": " Aku sama Dika ketawa bukan karena suaramu jelek.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 46.04,
+    "e": 46.18
+   },
+   {
+    "w": " sama",
+    "s": 46.18,
+    "e": 46.4
+   },
+   {
+    "w": " Dika",
+    "s": 46.4,
+    "e": 46.66
+   },
+   {
+    "w": " ketawa",
+    "s": 46.66,
+    "e": 47.18
+   },
+   {
+    "w": " bukan",
+    "s": 47.18,
+    "e": 47.42
+   },
+   {
+    "w": " karena",
+    "s": 47.42,
+    "e": 47.72
+   },
+   {
+    "w": " suaramu",
+    "s": 47.72,
+    "e": 48.12
+   },
+   {
+    "w": " jelek.",
+    "s": 48.12,
+    "e": 48.62
+   }
+  ]
+ },
+ {
+  "start": 49.1,
+  "end": 51.42,
+  "text": " Aku cuma ingat diriku sendiri waktu kelas 10.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 49.1,
+    "e": 49.32
+   },
+   {
+    "w": " cuma",
+    "s": 49.32,
+    "e": 49.54
+   },
+   {
+    "w": " ingat",
+    "s": 49.54,
+    "e": 49.8
+   },
+   {
+    "w": " diriku",
+    "s": 49.8,
+    "e": 50.12
+   },
+   {
+    "w": " sendiri",
+    "s": 50.12,
+    "e": 50.52
+   },
+   {
+    "w": " waktu",
+    "s": 50.52,
+    "e": 50.78
+   },
+   {
+    "w": " kelas",
+    "s": 50.78,
+    "e": 51.0
+   },
+   {
+    "w": " 10.",
+    "s": 51.0,
+    "e": 51.42
+   }
+  ]
+ },
+ {
+  "start": 51.94,
+  "end": 54.1,
+  "text": " Suaraku juga pecah digeladi resik.",
+  "words": [
+   {
+    "w": " Suaraku",
+    "s": 51.94,
+    "e": 52.36
+   },
+   {
+    "w": " juga",
+    "s": 52.36,
+    "e": 52.66
+   },
+   {
+    "w": " pecah",
+    "s": 52.66,
+    "e": 53.08
+   },
+   {
+    "w": " digeladi",
+    "s": 53.08,
+    "e": 53.42
+   },
+   {
+    "w": " resik.",
+    "s": 53.42,
+    "e": 54.1
+   }
+  ]
+ },
+ {
+  "start": 54.28,
+  "end": 55.7,
+  "text": " Aldo tersenyum kecil.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 54.28,
+    "e": 54.68
+   },
+   {
+    "w": " tersenyum",
+    "s": 54.68,
+    "e": 55.18
+   },
+   {
+    "w": " kecil.",
+    "s": 55.18,
+    "e": 55.7
+   }
+  ]
+ },
+ {
+  "start": 56.1,
+  "end": 57.36,
+  "text": " Terima kasih, Kak.",
+  "words": [
+   {
+    "w": " Terima",
+    "s": 56.1,
+    "e": 56.48
+   },
+   {
+    "w": " kasih,",
+    "s": 56.48,
+    "e": 56.96
+   },
+   {
+    "w": " Kak.",
+    "s": 57.1,
+    "e": 57.36
+   }
+  ]
+ },
+ {
+  "start": 57.94,
+  "end": 59.6,
+  "text": " Tampil yang bagus besok.",
+  "words": [
+   {
+    "w": " Tampil",
+    "s": 57.94,
+    "e": 58.44
+   },
+   {
+    "w": " yang",
+    "s": 58.44,
+    "e": 58.64
+   },
+   {
+    "w": " bagus",
+    "s": 58.64,
+    "e": 59.06
+   },
+   {
+    "w": " besok.",
+    "s": 59.06,
+    "e": 59.6
+   }
+  ]
+ },
+ {
+  "start": 59.6,
+  "end": 62.16,
+  "text": " Kalau kalian jelek, aku yang malu.",
+  "words": [
+   {
+    "w": " Kalau",
+    "s": 59.6,
+    "e": 60.08
+   },
+   {
+    "w": " kalian",
+    "s": 60.08,
+    "e": 60.42
+   },
+   {
+    "w": " jelek,",
+    "s": 60.42,
+    "e": 60.94
+   },
+   {
+    "w": " aku",
+    "s": 61.02,
+    "e": 61.4
+   },
+   {
+    "w": " yang",
+    "s": 61.4,
+    "e": 61.6
+   },
+   {
+    "w": " malu.",
+    "s": 61.6,
+    "e": 62.16
+   }
+  ]
+ },
+ {
+  "start": 62.42,
+  "end": 63.6,
+  "text": " Gitarnya kan punya aku.",
+  "words": [
+   {
+    "w": " Gitarnya",
+    "s": 62.42,
+    "e": 62.74
+   },
+   {
+    "w": " kan",
+    "s": 62.74,
+    "e": 62.94
+   },
+   {
+    "w": " punya",
+    "s": 62.94,
+    "e": 63.1
+   },
+   {
+    "w": " aku.",
+    "s": 63.1,
+    "e": 63.6
+   }
+  ]
+ },
+ {
+  "start": 64.81999999999998,
+  "end": 66.3,
+  "text": " Semua tertawa.",
+  "words": [
+   {
+    "w": " Semua",
+    "s": 64.81999999999998,
+    "e": 65.55999999999999
+   },
+   {
+    "w": " tertawa.",
+    "s": 65.55999999999999,
+    "e": 66.3
+   }
+  ]
+ },
+ {
+  "start": 66.5,
+  "end": 67.6,
+  "text": " Termasuk Aldo.",
+  "words": [
+   {
+    "w": " Termasuk",
+    "s": 66.5,
+    "e": 67.2
+   },
+   {
+    "w": " Aldo.",
+    "s": 67.2,
+    "e": 67.6
+   }
+  ]
+ },
+ {
+  "start": 68.72,
+  "end": 70.5,
+  "text": " Sabtu malam akhirnya tiba.",
+  "words": [
+   {
+    "w": " Sabtu",
+    "s": 68.72,
+    "e": 69.1
+   },
+   {
+    "w": " malam",
+    "s": 69.1,
+    "e": 69.44
+   },
+   {
+    "w": " akhirnya",
+    "s": 69.44,
+    "e": 70.08
+   },
+   {
+    "w": " tiba.",
+    "s": 70.08,
+    "e": 70.5
+   }
+  ]
+ },
+ {
+  "start": 70.92,
+  "end": 72.32,
+  "text": " Lapangan sekolah penuh.",
+  "words": [
+   {
+    "w": " Lapangan",
+    "s": 70.92,
+    "e": 71.22
+   },
+   {
+    "w": " sekolah",
+    "s": 71.22,
+    "e": 71.7
+   },
+   {
+    "w": " penuh.",
+    "s": 71.7,
+    "e": 72.32
+   }
+  ]
+ },
+ {
+  "start": 72.56,
+  "end": 74.96,
+  "text": " Lampu warna-warni menyala di atas panggung.",
+  "words": [
+   {
+    "w": " Lampu",
+    "s": 72.56,
+    "e": 72.86
+   },
+   {
+    "w": " warna",
+    "s": 72.86,
+    "e": 73.16
+   },
+   {
+    "w": "-warni",
+    "s": 73.16,
+    "e": 73.46
+   },
+   {
+    "w": " menyala",
+    "s": 73.46,
+    "e": 74.0
+   },
+   {
+    "w": " di",
+    "s": 74.0,
+    "e": 74.18
+   },
+   {
+    "w": " atas",
+    "s": 74.18,
+    "e": 74.38
+   },
+   {
+    "w": " panggung.",
+    "s": 74.38,
+    "e": 74.96
+   }
+  ]
+ },
+ {
+  "start": 75.36,
+  "end": 77.4,
+  "text": " Aldo menunggu di belakang panggung.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 75.36,
+    "e": 75.7
+   },
+   {
+    "w": " menunggu",
+    "s": 75.7,
+    "e": 76.18
+   },
+   {
+    "w": " di",
+    "s": 76.18,
+    "e": 76.36
+   },
+   {
+    "w": " belakang",
+    "s": 76.36,
+    "e": 76.66
+   },
+   {
+    "w": " panggung.",
+    "s": 76.66,
+    "e": 77.4
+   }
+  ]
+ },
+ {
+  "start": 77.6,
+  "end": 79.2,
+  "text": " Kelapak tangannya basah.",
+  "words": [
+   {
+    "w": " Kelapak",
+    "s": 77.6,
+    "e": 77.94
+   },
+   {
+    "w": " tangannya",
+    "s": 77.94,
+    "e": 78.28
+   },
+   {
+    "w": " basah.",
+    "s": 78.28,
+    "e": 79.2
+   }
+  ]
+ },
+ {
+  "start": 79.42,
+  "end": 81.5,
+  "text": " Band kelas 12 tampil sebelum mereka.",
+  "words": [
+   {
+    "w": " Band",
+    "s": 79.42,
+    "e": 79.6
+   },
+   {
+    "w": " kelas",
+    "s": 79.6,
+    "e": 79.84
+   },
+   {
+    "w": " 12",
+    "s": 79.84,
+    "e": 80.24
+   },
+   {
+    "w": " tampil",
+    "s": 80.24,
+    "e": 80.84
+   },
+   {
+    "w": " sebelum",
+    "s": 80.84,
+    "e": 81.16
+   },
+   {
+    "w": " mereka.",
+    "s": 81.16,
+    "e": 81.5
+   }
+  ]
+ },
+ {
+  "start": 81.88,
+  "end": 84.76,
+  "text": " Penonton bersorak sampai tanah terasa bergetar.",
+  "words": [
+   {
+    "w": " Penonton",
+    "s": 81.88,
+    "e": 82.2
+   },
+   {
+    "w": " bersorak",
+    "s": 82.2,
+    "e": 82.92
+   },
+   {
+    "w": " sampai",
+    "s": 82.92,
+    "e": 83.26
+   },
+   {
+    "w": " tanah",
+    "s": 83.26,
+    "e": 83.72
+   },
+   {
+    "w": " terasa",
+    "s": 83.72,
+    "e": 83.98
+   },
+   {
+    "w": " bergetar.",
+    "s": 83.98,
+    "e": 84.76
+   }
+  ]
+ },
+ {
+  "start": 85.24,
+  "end": 87.9,
+  "text": " Tiba-tiba kaki Aldo bergerak sendiri.",
+  "words": [
+   {
+    "w": " Tiba",
+    "s": 85.24,
+    "e": 85.44
+   },
+   {
+    "w": "-tiba",
+    "s": 85.44,
+    "e": 86.16
+   },
+   {
+    "w": " kaki",
+    "s": 86.16,
+    "e": 86.5
+   },
+   {
+    "w": " Aldo",
+    "s": 86.5,
+    "e": 86.86
+   },
+   {
+    "w": " bergerak",
+    "s": 86.86,
+    "e": 87.3
+   },
+   {
+    "w": " sendiri.",
+    "s": 87.3,
+    "e": 87.9
+   }
+  ]
+ },
+ {
+  "start": 88.44,
+  "end": 89.58,
+  "text": " Menjauh dari panggung.",
+  "words": [
+   {
+    "w": " Menjauh",
+    "s": 88.44,
+    "e": 88.88
+   },
+   {
+    "w": " dari",
+    "s": 88.88,
+    "e": 89.06
+   },
+   {
+    "w": " panggung.",
+    "s": 89.06,
+    "e": 89.58
+   }
+  ]
+ },
+ {
+  "start": 89.6,
+  "end": 91.14,
+  "text": " Menuju gerbang belakang.",
+  "words": [
+   {
+    "w": " Menuju",
+    "s": 89.6,
+    "e": 90.4
+   },
+   {
+    "w": " gerbang",
+    "s": 90.4,
+    "e": 90.72
+   },
+   {
+    "w": " belakang.",
+    "s": 90.72,
+    "e": 91.14
+   }
+  ]
+ }
+]

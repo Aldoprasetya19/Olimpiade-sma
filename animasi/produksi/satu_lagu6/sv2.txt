@@ -1,0 +1,31 @@
+# judul: LATIHAN YANG | BERANTAKAN
+# akhir: BERSAMBUNG... | Bagian 3: Pesan dari Nava
+[studio] vokal=aldo gitaris=febri bassis=stefan keyboardis=gelly drummer=gabriel
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:micDua, aldo=cemas): Selasa sore, latihan pertama dimulai.
+NARATOR {cu:gelly} (gelly:keyboard, aldo:micDua, gelly=fokus): Gelly memainkan intro di keyboard.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=cemas): Aldo menarik napas dan mulai bernyanyi.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=fokus): Baris pertama lancar.
+NARATOR {mcu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=cemas): Baris kedua mulai goyah.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:garuk, aldo=malu): Di bait kedua, ia lupa lirik.
+FEBRI (senyum, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:micDua): "Ulang."
+NARATOR {cu:febri} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, febri=senyum, aldo:micDua): Kata Febri, sabar.
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=cemas): Mereka mengulang.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:micDua, aldo=merem, sfx=pecah@pecah): Kali ini, suara Aldo pecah di nada tinggi.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:micDua, aldo=malu): Seperti ayam jago yang baru belajar berkokok.
+[studio] vokal=aldo gitaris=febri bassis=stefan keyboardis=gelly drummer=gabriel ambang1=rialdi ambang2=dika
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:micDua, aldo=malu, rialdi=senang, dika=senang, sfx=tawa): Dari pintu studio, terdengar suara tawa.
+NARATOR {cu:rialdi} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:micDua, rialdi=senang, dika=senang): Rialdi dan Dika dari kelas 12 berdiri di sana. Menunggu giliran memakai studio.
+DIKA (senang, dika:jempol, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:micDua): "Vokalis cadangan ya, semangat bro."
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:micDua, aldo=malu, febri=sungkan, stefan=sungkan, gabriel=sungkan, gelly=sungkan, rialdi=senang, dika=senang, sfx=tawa): Mereka pergi sambil masih tertawa kecil.
+[studio] vokal=aldo gitaris=febri bassis=stefan keyboardis=gelly drummer=gabriel
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:taruh, aldo=sedih): Aldo meletakkan mikrofon pelan-pelan.
+GELLY (cemas, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam): "Do, gak usah dipikirin."
+ALDO (sedih, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam): "Aku gak bisa. Kalian cari vokalis lain aja."
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo=sedih, febri=cemas, gelly=cemas): Ia mengambil tas dan keluar dari studio.
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, febri=sedih, stefan=sedih, gelly=sedih, gabriel=sedih): Tidak ada yang sempat menahannya.
+[kamar] kasur=aldo
+NARATOR {tidur} (aldo:tidur, aldo=sedih): Malam itu, Aldo berbaring di kasur, menatap langit-langit kamar.
+NARATOR {hp-grup} [Band Kelas 11@20.47 | Gelly: Do? | Febri: Bro, besok latihan ya | Gabriel: Jangan dimasukin hati | Stefan: Do, bales dong | Gelly: Kami tunggu]: HP-nya penuh pesan dari grup band.
+NARATOR {tidur} (aldo:tidur, aldo=sedih, sfx=getar): Tapi tidak satu pun ia buka.
+NARATOR {tidur} (aldo:tidur, aldo=kaget, sfx=ketuk@ketukan): Pukul 9 malam, terdengar ketukan di pintu rumahnya.
+NARATOR {akhir}: Bersambung.

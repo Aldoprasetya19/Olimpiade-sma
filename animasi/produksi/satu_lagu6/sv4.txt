@@ -1,0 +1,36 @@
+# judul: SENAR | PINJAMAN
+# akhir: BERSAMBUNG... | Bagian 5: Tiga Ratus Pasang Mata
+[panggungSore] atasJongkok=febri gitaris=stefan vokal=aldo keyboardis=gelly drummer=gabriel
+STEFAN (kaget, febri:tunduk, gelly:keyboard, gabriel:drum, diam): "Senar cadangan mana?"
+NARATOR {cu:stefan} (stefan=kaget, febri:tunduk, diam): Tanya Stefan panik.
+NARATOR {mcu:febri} (febri:tunduk, febri=cemas, diam): Febri membongkar tas gitarnya.
+FEBRI (sedih, febri:tunduk): "Kosong. Ketinggalan di rumah. Rumahku jauh. Toko musik juga udah tutup jam segini."
+NARATOR {lebar} (aldo=cemas, stefan=cemas, febri:tunduk, febri=sedih, diam): Pentas tinggal satu hari lagi. Tanpa gitar, intro dan reff lagu mereka tidak akan jalan.
+[panggungSore] bibir1=febri bibir2=stefan bibir3=aldo bibir4=gabriel bibir5=gelly
+NARATOR {lebar} (febri=sedih, stefan=sedih, aldo=sedih, gabriel=sedih, gelly=sedih, febri:tunduk, stefan:tunduk): Mereka duduk di pinggir panggung dengan lesu.
+NARATOR {cu:gelly} (gelly=fokus, sfx=gitarSedih): Gelly mencoba memainkan bagian gitar di keyboard. Tapi suaranya tidak sama.
+[panggungSore] bibir1=febri bibir2=stefan bibir3=aldo bibir4=gabriel bibir5=gelly depanBibir=rialdi
+NARATOR {lebar} (rialdi:bawaGitar, rialdi=netral, aldo=kaget, febri=kaget): Lalu seseorang berdiri di depan mereka.
+NARATOR {cu:rialdi} (rialdi:bawaGitar, rialdi=senyum): Rialdi, dengan gitar akustik di tangannya.
+RIALDI (senyum, rialdi:serahkan): "Pakai punyaku aja. Senarnya baru kuganti minggu lalu."
+NARATOR {lebar} (febri=kaget, stefan=kaget, aldo=kaget, gabriel=kaget, gelly=kaget, rialdi:bawaGitar): Semua menatapnya tidak percaya.
+NARATOR {cu:rialdi} (rialdi:garuk, rialdi=sungkan): Rialdi menggaruk tengkuk. Terlihat canggung.
+RIALDI (sungkan, rialdi:garuk): "Soal kemarin... maaf ya, Do."
+RIALDI (bersalah): "Aku sama Dika ketawa bukan karena suaramu jelek. Aku cuma ingat diriku sendiri waktu kelas 10."
+RIALDI (senyum): "Suaraku juga pecah di gladi resik."
+NARATOR {cu:aldo} (aldo=senyum): Aldo tersenyum kecil.
+ALDO (senyum): "Terima kasih, Kak."
+RIALDI (senang, rialdi:tepukBahu): "Tampil yang bagus besok. Kalau kalian jelek, aku yang malu. Gitarnya kan punyaku."
+NARATOR {lebar} (febri=senang, stefan=senang, aldo=senang, gabriel=senang, gelly=senang, rialdi=senang, sfx=tawa): Semua tertawa. Termasuk Aldo.
+[panggung] gitaris=rialdi drummer=dika bassis=palsya
+NARATOR {penonton} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria, sfx=ramai): Sabtu malam akhirnya tiba. Lapangan sekolah penuh.
+NARATOR {penonton} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria): Lampu warna-warni menyala di atas panggung.
+[belakangPanggung] tunggu=aldo
+NARATOR {mcu:aldo} (aldo=cemas): Aldo menunggu di belakang panggung.
+NARATOR {cu:aldo} (aldo:usap, aldo=cemas): Telapak tangannya basah.
+[panggung] gitaris=rialdi drummer=dika bassis=palsya
+NARATOR {lebar} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria, rialdi=senang, dika=senang): Band kelas 12 tampil sebelum mereka.
+NARATOR {penonton} (rialdi:gitarBerdiri, dika:drum, palsya:bass, ceria, sfx=sorak): Penonton bersorak sampai tanah terasa bergetar.
+[belakangPanggung] tunggu=aldo
+NARATOR {lebar} (aldo=cemas): Tiba-tiba kaki Aldo bergerak sendiri. Menjauh dari panggung. Menuju gerbang belakang.
+NARATOR {akhir}: Bersambung.

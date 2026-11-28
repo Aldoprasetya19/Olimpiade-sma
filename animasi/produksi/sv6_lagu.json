@@ -1,0 +1,21 @@
+{
+ "lagu": "teaser2/lagu_ratusan_bintang.mp3",
+ "potong": [
+  {
+   "at": 39.5,
+   "dari": 3.6,
+   "sampai": 13.0,
+   "gain": 0.6,
+   "fi": 0.8,
+   "fo": 0.3
+  },
+  {
+   "at": 48.8,
+   "dari": 26.0,
+   "sampai": 38.8,
+   "gain": 0.75,
+   "fi": 0.25,
+   "fo": 0.15
+  }
+ ]
+}

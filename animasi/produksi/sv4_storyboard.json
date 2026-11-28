@@ -1,0 +1,511 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 94.61,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "STEFAN": {
+   "warna": "#FFD84A"
+  },
+  "FEBRI": {
+   "warna": "#8FE3D8"
+  },
+  "RIALDI": {
+   "warna": "#C7A4FF"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 94.61,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 0.72,
+     "teks": "\"Senar cadangan",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 0.72,
+     "end": 1.19,
+     "teks": "mana?\"",
+     "siapa": "STEFAN"
+    },
+    {
+     "start": 1.8,
+     "end": 3.55,
+     "teks": "Tanya Stefan panik."
+    },
+    {
+     "start": 3.7,
+     "end": 4.98,
+     "teks": "Febri membongkar tas"
+    },
+    {
+     "start": 4.98,
+     "end": 5.73,
+     "teks": "gitarnya."
+    },
+    {
+     "start": 6.2,
+     "end": 7.14,
+     "teks": "\"Kosong.",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 7.14,
+     "end": 7.92,
+     "teks": "Ketinggalan di",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 7.92,
+     "end": 8.88,
+     "teks": "rumah.",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 8.88,
+     "end": 10.44,
+     "teks": "Rumahku jauh.",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 10.44,
+     "end": 11.22,
+     "teks": "Toko musik juga",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 11.22,
+     "end": 12.04,
+     "teks": "udah tutup jam",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 12.04,
+     "end": 12.83,
+     "teks": "segini.\"",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 13.06,
+     "end": 14.16,
+     "teks": "Pentas tinggal satu"
+    },
+    {
+     "start": 14.16,
+     "end": 15.54,
+     "teks": "hari lagi."
+    },
+    {
+     "start": 15.54,
+     "end": 16.88,
+     "teks": "Tanpa gitar,"
+    },
+    {
+     "start": 16.88,
+     "end": 17.46,
+     "teks": "intro dan reff"
+    },
+    {
+     "start": 17.46,
+     "end": 18.28,
+     "teks": "lagu mereka tidak"
+    },
+    {
+     "start": 18.28,
+     "end": 19.17,
+     "teks": "akan jalan."
+    },
+    {
+     "start": 19.6,
+     "end": 20.38,
+     "teks": "Mereka duduk di"
+    },
+    {
+     "start": 20.38,
+     "end": 21.06,
+     "teks": "pinggir panggung"
+    },
+    {
+     "start": 21.06,
+     "end": 22.15,
+     "teks": "dengan lesu."
+    },
+    {
+     "start": 22.33,
+     "end": 23.08,
+     "teks": "Gelly mencoba"
+    },
+    {
+     "start": 23.08,
+     "end": 23.9,
+     "teks": "memainkan bagian"
+    },
+    {
+     "start": 23.9,
+     "end": 25.24,
+     "teks": "gitar di keyboard."
+    },
+    {
+     "start": 25.24,
+     "end": 26.22,
+     "teks": "Tapi suaranya tidak"
+    },
+    {
+     "start": 26.22,
+     "end": 26.83,
+     "teks": "sama."
+    },
+    {
+     "start": 27.5,
+     "end": 28.28,
+     "teks": "Lalu seseorang"
+    },
+    {
+     "start": 28.28,
+     "end": 29.22,
+     "teks": "berdiri di depan"
+    },
+    {
+     "start": 29.22,
+     "end": 29.73,
+     "teks": "mereka."
+    },
+    {
+     "start": 30.0,
+     "end": 30.68,
+     "teks": "Rialdi,"
+    },
+    {
+     "start": 30.68,
+     "end": 32.0,
+     "teks": "dengan gitar akustik"
+    },
+    {
+     "start": 32.0,
+     "end": 33.18,
+     "teks": "di tangannya."
+    },
+    {
+     "start": 33.18,
+     "end": 34.7,
+     "teks": "\"Pakai punyaku aja.",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 34.7,
+     "end": 35.55,
+     "teks": "Senarnya baru",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 35.55,
+     "end": 36.08,
+     "teks": "kuganti minggu",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 36.08,
+     "end": 36.89,
+     "teks": "lalu.\"",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 37.12,
+     "end": 38.1,
+     "teks": "Semua menatapnya"
+    },
+    {
+     "start": 38.1,
+     "end": 39.35,
+     "teks": "tidak percaya."
+    },
+    {
+     "start": 39.64,
+     "end": 40.52,
+     "teks": "Rialdi menggaruk"
+    },
+    {
+     "start": 40.52,
+     "end": 41.32,
+     "teks": "tengkuk."
+    },
+    {
+     "start": 41.32,
+     "end": 42.67,
+     "teks": "Terlihat canggung."
+    },
+    {
+     "start": 42.96,
+     "end": 44.74,
+     "teks": "\"Soal kemarin...",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 44.74,
+     "end": 46.04,
+     "teks": "maaf ya, Do.\"",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 46.04,
+     "end": 46.66,
+     "teks": "\"Aku sama Dika",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 46.66,
+     "end": 47.72,
+     "teks": "ketawa bukan karena",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 47.72,
+     "end": 49.1,
+     "teks": "suaramu jelek.",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 49.1,
+     "end": 49.8,
+     "teks": "Aku cuma ingat",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 49.8,
+     "end": 50.78,
+     "teks": "diriku sendiri waktu",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 50.78,
+     "end": 51.57,
+     "teks": "kelas 10.\"",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 51.94,
+     "end": 53.19,
+     "teks": "\"Suaraku juga pecah",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 53.19,
+     "end": 54.25,
+     "teks": "di gladi resik.\"",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 54.28,
+     "end": 55.18,
+     "teks": "Aldo tersenyum"
+    },
+    {
+     "start": 55.18,
+     "end": 55.85,
+     "teks": "kecil."
+    },
+    {
+     "start": 56.1,
+     "end": 57.1,
+     "teks": "\"Terima kasih,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 57.1,
+     "end": 57.51,
+     "teks": "Kak.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 57.94,
+     "end": 59.06,
+     "teks": "\"Tampil yang bagus",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 59.06,
+     "end": 59.6,
+     "teks": "besok.",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 59.6,
+     "end": 61.02,
+     "teks": "Kalau kalian jelek,",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 61.02,
+     "end": 62.42,
+     "teks": "aku yang malu.",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 62.42,
+     "end": 63.88,
+     "teks": "Gitarnya kan",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 63.88,
+     "end": 64.28,
+     "teks": "punyaku.\"",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 64.82,
+     "end": 66.5,
+     "teks": "Semua tertawa."
+    },
+    {
+     "start": 66.5,
+     "end": 67.75,
+     "teks": "Termasuk Aldo."
+    },
+    {
+     "start": 68.72,
+     "end": 70.08,
+     "teks": "Sabtu malam akhirnya"
+    },
+    {
+     "start": 70.08,
+     "end": 70.92,
+     "teks": "tiba."
+    },
+    {
+     "start": 70.92,
+     "end": 71.7,
+     "teks": "Lapangan sekolah"
+    },
+    {
+     "start": 71.7,
+     "end": 72.47,
+     "teks": "penuh."
+    },
+    {
+     "start": 72.56,
+     "end": 73.46,
+     "teks": "Lampu warna-warni"
+    },
+    {
+     "start": 73.46,
+     "end": 74.38,
+     "teks": "menyala di atas"
+    },
+    {
+     "start": 74.38,
+     "end": 75.11,
+     "teks": "panggung."
+    },
+    {
+     "start": 75.36,
+     "end": 76.36,
+     "teks": "Aldo menunggu di"
+    },
+    {
+     "start": 76.36,
+     "end": 77.55,
+     "teks": "belakang panggung."
+    },
+    {
+     "start": 77.67,
+     "end": 78.28,
+     "teks": "Telapak tangannya"
+    },
+    {
+     "start": 78.28,
+     "end": 79.35,
+     "teks": "basah."
+    },
+    {
+     "start": 79.42,
+     "end": 80.24,
+     "teks": "Band kelas 12"
+    },
+    {
+     "start": 80.24,
+     "end": 81.16,
+     "teks": "tampil sebelum"
+    },
+    {
+     "start": 81.16,
+     "end": 81.65,
+     "teks": "mereka."
+    },
+    {
+     "start": 81.88,
+     "end": 82.92,
+     "teks": "Penonton bersorak"
+    },
+    {
+     "start": 82.92,
+     "end": 83.98,
+     "teks": "sampai tanah terasa"
+    },
+    {
+     "start": 83.98,
+     "end": 84.91,
+     "teks": "bergetar."
+    },
+    {
+     "start": 85.46,
+     "end": 86.86,
+     "teks": "Tiba-tiba kaki Aldo"
+    },
+    {
+     "start": 86.86,
+     "end": 88.44,
+     "teks": "bergerak sendiri."
+    },
+    {
+     "start": 88.44,
+     "end": 89.06,
+     "teks": "Menjauh dari"
+    },
+    {
+     "start": 89.06,
+     "end": 89.6,
+     "teks": "panggung."
+    },
+    {
+     "start": 89.6,
+     "end": 90.72,
+     "teks": "Menuju gerbang"
+    },
+    {
+     "start": 90.72,
+     "end": 91.29,
+     "teks": "belakang."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "SENAR",
+  "baris2": "PINJAMAN",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 91.31,
+  "end": 94.61,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 5: Tiga Ratus Pasang Mata"
+ }
+}

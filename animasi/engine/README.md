@@ -137,3 +137,14 @@ Dipakai jika pengguna memberi **lagu + panduan bagian (timestamp)**, bukan VO ce
   `{sorot}` (penyanyi di bawah sorot), `{drummer:nama}`; lokasi bisa punya `lebarCam`/`masukCam` tetap. Tinggi panggung (slot ke-5)
   ikut dihitung untuk close-up.
 - SFX baru: `dengung` (feedback pengeras suara), `simbal`. *masuk dengan ...* dan *musik terus berjalan* tidak memicu aksi berjalan.
+
+### Seri panjang "Satu Lagu" 6 bagian (sv1–sv6) + potongan lagu diegetik
+- `produksi/<ep>_lagu.json` → `mix_audio.py` menaruh potongan lagu tepat di detik VO (`at`) dari detik lagu `dari`–`sampai`,
+  `hp: true` = suara dari speaker HP, ducking di bawah VO, musik latar otomatis senyap selama lagu. Dipakai untuk latihan band,
+  rekaman di HP, gladi resik, dan pentas (intro → bait → reff, potong mendadak saat suara pecah/senar putus).
+- Lokasi baru: `teras` (rumah malam, pintu, bangku teras; slot `tamu`, `ambang`, `bangku1/2`), `panggungSore` (gladi resik siang,
+  slot `bibir1..5` duduk di pinggir panggung, `atasJongkok`, `depanBibir`), studio `ambang1/2` (berdiri di pintu),
+  belakang panggung `sampingA/B` (rangkul samping), `tepukA/B`; penonton baris depan `d1..d16` (3 baris).
+- Aksi: *keluar dari ...* / *pergi* di lokasi berpintu → berjalan keluar lewat pintu lalu hilang. Pose: `bawaGitar`, `akustikBerdiri`
+  (gitar akustik pinjaman), `silau`, `rangkulKiri/Kanan`. SFX: `pecah` (suara pecah), `senar` (TENG senar putus), `ketuk`, `ceklek`.
+- `produksi/satu_lagu6/buat_semua.sh` merender keenam bagian.

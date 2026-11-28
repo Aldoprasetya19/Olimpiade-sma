@@ -1,0 +1,364 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 72.28,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "FEBRI": {
+   "warna": "#FFD84A"
+  },
+  "DIKA": {
+   "warna": "#8FE3D8"
+  },
+  "GELLY": {
+   "warna": "#C7A4FF"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 72.28,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.28,
+     "teks": "Selasa sore,"
+    },
+    {
+     "start": 1.28,
+     "end": 2.04,
+     "teks": "latihan pertama"
+    },
+    {
+     "start": 2.04,
+     "end": 3.11,
+     "teks": "dimulai."
+    },
+    {
+     "start": 3.22,
+     "end": 4.1,
+     "teks": "Gelly memainkan"
+    },
+    {
+     "start": 4.1,
+     "end": 5.15,
+     "teks": "intro di keyboard."
+    },
+    {
+     "start": 5.64,
+     "end": 6.7,
+     "teks": "Aldo menarik napas"
+    },
+    {
+     "start": 6.7,
+     "end": 8.35,
+     "teks": "dan mulai bernyanyi."
+    },
+    {
+     "start": 8.46,
+     "end": 8.98,
+     "teks": "Baris pertama"
+    },
+    {
+     "start": 8.98,
+     "end": 9.81,
+     "teks": "lancar."
+    },
+    {
+     "start": 10.18,
+     "end": 11.32,
+     "teks": "Baris kedua mulai"
+    },
+    {
+     "start": 11.32,
+     "end": 12.29,
+     "teks": "goyah."
+    },
+    {
+     "start": 12.31,
+     "end": 13.5,
+     "teks": "Di bait kedua,"
+    },
+    {
+     "start": 13.5,
+     "end": 14.65,
+     "teks": "ia lupa lirik."
+    },
+    {
+     "start": 14.66,
+     "end": 15.41,
+     "teks": "\"Ulang.\"",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 15.46,
+     "end": 16.36,
+     "teks": "Kata Febri,"
+    },
+    {
+     "start": 16.36,
+     "end": 17.36,
+     "teks": "sabar."
+    },
+    {
+     "start": 17.36,
+     "end": 18.71,
+     "teks": "Mereka mengulang."
+    },
+    {
+     "start": 18.74,
+     "end": 19.6,
+     "teks": "Kali ini,"
+    },
+    {
+     "start": 19.6,
+     "end": 20.82,
+     "teks": "suara Aldo pecah"
+    },
+    {
+     "start": 20.82,
+     "end": 21.83,
+     "teks": "di nada tinggi."
+    },
+    {
+     "start": 21.98,
+     "end": 23.1,
+     "teks": "Seperti ayam jago"
+    },
+    {
+     "start": 23.1,
+     "end": 23.76,
+     "teks": "yang baru belajar"
+    },
+    {
+     "start": 23.76,
+     "end": 24.81,
+     "teks": "berkokok."
+    },
+    {
+     "start": 25.04,
+     "end": 26.38,
+     "teks": "Dari pintu studio,"
+    },
+    {
+     "start": 26.38,
+     "end": 27.04,
+     "teks": "terdengar suara"
+    },
+    {
+     "start": 27.04,
+     "end": 27.52,
+     "teks": "tawa."
+    },
+    {
+     "start": 27.52,
+     "end": 28.98,
+     "teks": "Rialdi dan Dika"
+    },
+    {
+     "start": 28.98,
+     "end": 29.96,
+     "teks": "dari kelas 12"
+    },
+    {
+     "start": 29.96,
+     "end": 31.52,
+     "teks": "berdiri di sana."
+    },
+    {
+     "start": 31.52,
+     "end": 32.36,
+     "teks": "Menunggu giliran"
+    },
+    {
+     "start": 32.36,
+     "end": 33.47,
+     "teks": "memakai studio."
+    },
+    {
+     "start": 34.14,
+     "end": 35.58,
+     "teks": "\"Vokalis cadangan",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 35.58,
+     "end": 36.42,
+     "teks": "ya,",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 36.42,
+     "end": 37.65,
+     "teks": "semangat bro.\"",
+     "siapa": "DIKA"
+    },
+    {
+     "start": 37.94,
+     "end": 39.12,
+     "teks": "Mereka pergi sambil"
+    },
+    {
+     "start": 39.12,
+     "end": 40.55,
+     "teks": "masih tertawa kecil."
+    },
+    {
+     "start": 41.44,
+     "end": 42.14,
+     "teks": "Aldo meletakkan"
+    },
+    {
+     "start": 42.14,
+     "end": 43.25,
+     "teks": "mikrofon"
+    },
+    {
+     "start": 43.25,
+     "end": 43.65,
+     "teks": "pelan-pelan."
+    },
+    {
+     "start": 43.8,
+     "end": 44.48,
+     "teks": "\"Do,",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 44.48,
+     "end": 45.99,
+     "teks": "gak usah dipikirin.\"",
+     "siapa": "GELLY"
+    },
+    {
+     "start": 46.28,
+     "end": 47.7,
+     "teks": "\"Aku gak bisa.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 47.7,
+     "end": 48.54,
+     "teks": "Kalian cari vokalis",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 48.54,
+     "end": 49.35,
+     "teks": "lain aja.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 49.52,
+     "end": 50.5,
+     "teks": "Ia mengambil tas"
+    },
+    {
+     "start": 50.5,
+     "end": 51.48,
+     "teks": "dan keluar dari"
+    },
+    {
+     "start": 51.48,
+     "end": 52.23,
+     "teks": "studio."
+    },
+    {
+     "start": 52.96,
+     "end": 53.5,
+     "teks": "Tidak ada yang"
+    },
+    {
+     "start": 53.5,
+     "end": 54.77,
+     "teks": "sempat menahannya."
+    },
+    {
+     "start": 55.26,
+     "end": 56.52,
+     "teks": "Malam itu,"
+    },
+    {
+     "start": 56.52,
+     "end": 57.32,
+     "teks": "Aldo berbaring di"
+    },
+    {
+     "start": 57.32,
+     "end": 58.2,
+     "teks": "kasur,"
+    },
+    {
+     "start": 58.2,
+     "end": 58.85,
+     "teks": "menatap"
+    },
+    {
+     "start": 58.85,
+     "end": 60.11,
+     "teks": "langit-langit kamar."
+    },
+    {
+     "start": 60.29,
+     "end": 61.32,
+     "teks": "HP-nya penuh pesan"
+    },
+    {
+     "start": 61.32,
+     "end": 62.29,
+     "teks": "dari grup band."
+    },
+    {
+     "start": 62.56,
+     "end": 63.82,
+     "teks": "Tapi tidak satu"
+    },
+    {
+     "start": 63.82,
+     "end": 65.09,
+     "teks": "pun ia buka."
+    },
+    {
+     "start": 65.34,
+     "end": 67.12,
+     "teks": "Pukul 9 malam,"
+    },
+    {
+     "start": 67.12,
+     "end": 68.1,
+     "teks": "terdengar ketukan di"
+    },
+    {
+     "start": 68.1,
+     "end": 68.93,
+     "teks": "pintu rumahnya."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "LATIHAN YANG",
+  "baris2": "BERANTAKAN",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 68.98,
+  "end": 72.28,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Pesan dari Nava"
+ }
+}

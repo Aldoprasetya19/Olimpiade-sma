@@ -1,0 +1,426 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 82.93,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "NAVA": {
+   "warna": "#FFD84A"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 82.93,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 0.94,
+     "teks": "Yang berdiri di"
+    },
+    {
+     "start": 0.94,
+     "end": 2.14,
+     "teks": "depan pintu adalah"
+    },
+    {
+     "start": 2.14,
+     "end": 3.27,
+     "teks": "Nava."
+    },
+    {
+     "start": 3.44,
+     "end": 4.04,
+     "teks": "Syalnya masih"
+    },
+    {
+     "start": 4.04,
+     "end": 5.19,
+     "teks": "melilit leher."
+    },
+    {
+     "start": 5.58,
+     "end": 6.52,
+     "teks": "Di tangannya ada"
+    },
+    {
+     "start": 6.52,
+     "end": 7.56,
+     "teks": "sebotol air jahe"
+    },
+    {
+     "start": 7.56,
+     "end": 8.55,
+     "teks": "hangat."
+    },
+    {
+     "start": 8.58,
+     "end": 10.3,
+     "teks": "\"Buat tenggorokanmu,",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 10.3,
+     "end": 11.4,
+     "teks": "kamu lebih butuh",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 11.4,
+     "end": 12.43,
+     "teks": "daripada aku.\"",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 12.6,
+     "end": 13.54,
+     "teks": "Mereka duduk di"
+    },
+    {
+     "start": 13.54,
+     "end": 14.72,
+     "teks": "teras."
+    },
+    {
+     "start": 14.72,
+     "end": 15.44,
+     "teks": "Lama tidak ada"
+    },
+    {
+     "start": 15.44,
+     "end": 16.33,
+     "teks": "yang bicara."
+    },
+    {
+     "start": 16.44,
+     "end": 17.94,
+     "teks": "\"Kamu tahu gak,",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 17.94,
+     "end": 18.78,
+     "teks": "pertama kali aku",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 18.78,
+     "end": 19.64,
+     "teks": "nyanyi di panggung",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 19.64,
+     "end": 21.12,
+     "teks": "waktu SMP,",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 21.12,
+     "end": 21.98,
+     "teks": "aku nangis di",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 21.98,
+     "end": 23.29,
+     "teks": "belakang panggung.\"",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 23.38,
+     "end": 24.3,
+     "teks": "\"Lututku gemetar",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 24.3,
+     "end": 24.8,
+     "teks": "sampai harus",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 24.8,
+     "end": 26.22,
+     "teks": "pegangan tiang mic.\"",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 26.22,
+     "end": 27.46,
+     "teks": "Aldo menoleh,"
+    },
+    {
+     "start": 27.46,
+     "end": 28.16,
+     "teks": "kaget."
+    },
+    {
+     "start": 28.16,
+     "end": 29.22,
+     "teks": "Nava yang selalu"
+    },
+    {
+     "start": 29.22,
+     "end": 29.96,
+     "teks": "terlihat percaya"
+    },
+    {
+     "start": 29.96,
+     "end": 30.86,
+     "teks": "diri itu?"
+    },
+    {
+     "start": 30.86,
+     "end": 32.32,
+     "teks": "\"Takut itu wajar,",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 32.32,
+     "end": 32.88,
+     "teks": "Do.",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 32.88,
+     "end": 33.6,
+     "teks": "Kamu gak harus",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 33.6,
+     "end": 34.7,
+     "teks": "berani.",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 34.7,
+     "end": 36.05,
+     "teks": "Cukup jangan lari.\"",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 36.1,
+     "end": 37.74,
+     "teks": "Nava mengeluarkan HP"
+    },
+    {
+     "start": 37.74,
+     "end": 38.88,
+     "teks": "dan memutar sebuah"
+    },
+    {
+     "start": 38.88,
+     "end": 39.57,
+     "teks": "rekaman."
+    },
+    {
+     "start": 40.16,
+     "end": 40.9,
+     "teks": "Itu suara Aldo"
+    },
+    {
+     "start": 40.9,
+     "end": 42.22,
+     "teks": "saat latihan tadi,"
+    },
+    {
+     "start": 42.22,
+     "end": 43.38,
+     "teks": "di bait pertama,"
+    },
+    {
+     "start": 43.38,
+     "end": 43.98,
+     "teks": "sebelum suaranya"
+    },
+    {
+     "start": 43.98,
+     "end": 44.81,
+     "teks": "pecah."
+    },
+    {
+     "start": 44.87,
+     "end": 46.3,
+     "teks": "\"Gelly yang rekam.",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 46.3,
+     "end": 47.54,
+     "teks": "Dengar sendiri.",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 47.54,
+     "end": 48.59,
+     "teks": "Itu bagus.\"",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 48.86,
+     "end": 51.12,
+     "teks": "Aldo mendengarkan."
+    },
+    {
+     "start": 51.12,
+     "end": 51.96,
+     "teks": "Ternyata,"
+    },
+    {
+     "start": 51.96,
+     "end": 53.23,
+     "teks": "memang tidak buruk."
+    },
+    {
+     "start": 53.38,
+     "end": 54.16,
+     "teks": "\"Kalau nanti di",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 54.16,
+     "end": 55.84,
+     "teks": "panggung kamu takut,",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 55.84,
+     "end": 56.54,
+     "teks": "cari aku di",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 56.54,
+     "end": 57.52,
+     "teks": "sisi panggung.",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 57.52,
+     "end": 58.89,
+     "teks": "Lihat aku aja.\"",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 59.32,
+     "end": 60.91,
+     "teks": "Aldo terdiam lama."
+    },
+    {
+     "start": 61.28,
+     "end": 61.92,
+     "teks": "Lalu,"
+    },
+    {
+     "start": 61.92,
+     "end": 62.7,
+     "teks": "ia membuka grup"
+    },
+    {
+     "start": 62.7,
+     "end": 64.15,
+     "teks": "band dan mengetik."
+    },
+    {
+     "start": 64.2,
+     "end": 64.88,
+     "teks": "Besok,"
+    },
+    {
+     "start": 64.88,
+     "end": 65.97,
+     "teks": "aku latihan lagi."
+    },
+    {
+     "start": 66.3,
+     "end": 67.46,
+     "teks": "Jumat sore,"
+    },
+    {
+     "start": 67.46,
+     "end": 68.38,
+     "teks": "gladi resik di"
+    },
+    {
+     "start": 68.38,
+     "end": 69.27,
+     "teks": "panggung lapangan."
+    },
+    {
+     "start": 69.6,
+     "end": 70.64,
+     "teks": "Aldo bernyanyi lebih"
+    },
+    {
+     "start": 70.64,
+     "end": 71.44,
+     "teks": "mantap dari"
+    },
+    {
+     "start": 71.44,
+     "end": 72.13,
+     "teks": "sebelumnya."
+    },
+    {
+     "start": 72.32,
+     "end": 73.63,
+     "teks": "Lagu hampir selesai."
+    },
+    {
+     "start": 74.54,
+     "end": 75.24,
+     "teks": "Lalu,"
+    },
+    {
+     "start": 75.24,
+     "end": 75.9,
+     "teks": "terdengar bunyi"
+    },
+    {
+     "start": 75.9,
+     "end": 76.78,
+     "teks": "tajam."
+    },
+    {
+     "start": 76.78,
+     "end": 77.67,
+     "teks": "TENG!"
+    },
+    {
+     "start": 77.84,
+     "end": 78.78,
+     "teks": "Senar gitar Febri"
+    },
+    {
+     "start": 78.78,
+     "end": 79.55,
+     "teks": "putus."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "PESAN DARI",
+  "baris2": "NAVA",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 79.63,
+  "end": 82.93,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 4: Senar Pinjaman"
+ }
+}

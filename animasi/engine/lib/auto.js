@@ -62,22 +62,26 @@ export const LOKASI = {
   studio: { set: 'studio', grade: 'hangat', bounds: [-4.6, 4.6, -4.6, 4.6], center: [0, -1.0],
     lebarCam: { pos: [0.6, 2.7, 4.5], look: [-0.2, 1.3, -1.6], fov: 64 }, masukCam: { pos: [-1.2, 2.3, 4.3], look: [3.2, 1.5, 0.6], fov: 54 },
     slot: { vokal: [0, -0.35, 0, false], gitaris: [-1.7, -1.2, 0.3, false], bassis: [1.3, -1.4, -0.25, false], keyboardis: [2.85, -2.78, -0.25, false], drummer: [0, -3.75, 0, true],
-      sudut: [-3.3, 2.0, 2.31, false], depanSudut: [-2.2, 1.0, -0.8, false], dekatSudut: [-1.9, 2.4, -1.9, false] } },
+      sudut: [-3.3, 2.0, 2.31, false], depanSudut: [-2.2, 1.0, -0.8, false], dekatSudut: [-1.9, 2.4, -1.9, false], ambang1: [4.2, 2.0, -Math.PI / 2, false], ambang2: [4.35, 3.05, -Math.PI / 2, false] } },
   panggung: { set: 'panggung', grade: 'panggung', bounds: [-12, 12, -8.8, 14], center: [0, -4.6],
-    lebarCam: { pos: [0.8, 3.0, 5.0], look: [0, 2.2, -5.0], fov: 52 },
+    lebarCam: { pos: [0.8, 3.8, 3.6], look: [0, 2.2, -5.0], fov: 50 },
     slot: { vokal: [0, -4.25, 0, false, 1.0], gitaris: [-2.6, -5.0, 0.25, false, 1.0], bassis: [2.0, -5.2, -0.2, false, 1.0], keyboardis: [3.58, -6.17, -0.3, false, 1.0], drummer: [0, -7.85, 0, true, 1.0],
-      sisiPanggung: [-6.2, -4.0, Math.PI / 2, false, 1.0], ...Object.fromEntries([...Array(12)].map((_, i) => ['d' + (i + 1), [-3.3 + (i % 6) * 1.3 + (i > 5 ? 0.6 : 0), 0.9 + (i > 5 ? 1.0 : 0), Math.PI, false]])) } },
+      sisiPanggung: [-6.2, -4.0, Math.PI / 2, false, 1.0], ...Object.fromEntries([...Array(16)].map((_, i) => ['d' + (i + 1), [-3.3 + (i % 6) * 1.3 + (Math.floor(i / 6) % 2 ? 0.6 : 0), 0.9 + Math.floor(i / 6) * 1.0, Math.PI, false]])),
+      ...Object.fromEntries([...Array(5)].map((_, i) => ['bibir' + (i + 1), [-2.4 + i * 1.2, -2.85, 0, true, 0.5]])), atasJongkok: [-1.6, -3.9, 0.4, false, 1.0], depanBibir: [3.4, -1.0, -2.1, false] } },
 };
+LOKASI.panggungSore = { ...LOKASI.panggung, setOpts: { sore: true, penonton: false }, grade: 'sore' };
+LOKASI.teras = { set: 'teras', grade: 'malam', bounds: [-4.4, 4.4, -0.7, 4.2], center: [0.6, 0.6], lebarCam: { pos: [0.4, 2.0, 5.0], look: [0.6, 1.3, -0.4], fov: 50 },
+  slot: { tamu: [1.0, 0.55, -1.75, false], ambang: [-0.55, 0.15, 1.4, false], bangku1: [1.0, 0.2, 0, true], bangku2: [1.9, 0.2, 0, true] } };
 LOKASI.panggungSorot = { ...LOKASI.panggung, setOpts: { sorot: true }, grade: 'sorot' };
 LOKASI.panggungGelap = { ...LOKASI.panggung, setOpts: { sorot: true, senter: 0.04 }, grade: 'sorot' };
 LOKASI.panggungSenter = { ...LOKASI.panggung, setOpts: { sorot: true, senter: 0.85 }, grade: 'sorot' };
 LOKASI.belakangPanggung = { set: 'belakangPanggung', grade: 'panggung', bounds: [-5.5, 6, -2.4, 14], center: [0.5, 0.5],
-  slot: { tunggu: [0.6, -1.0, 0.25, false], kiri: [-0.6, -0.6, Math.PI / 2, false], kanan: [0.8, -0.6, -Math.PI / 2, false], menuju: [0.6, 6.0, 0, false], penahan: [-0.4, 5.0, 0.5, false], pelukA: [-0.2, -0.6, Math.PI / 2, false], pelukB: [0.52, -0.6, -Math.PI / 2, false], sampingA: [-0.3, -0.6, 0.12, false], sampingB: [0.5, -0.65, -0.12, false] } };
+  slot: { tunggu: [0.6, -1.0, 0.25, false], kiri: [-0.6, -0.6, Math.PI / 2, false], kanan: [0.8, -0.6, -Math.PI / 2, false], menuju: [0.6, 6.0, 0, false], penahan: [-0.4, 5.0, 0.5, false], pelukA: [-0.2, -0.6, Math.PI / 2, false], pelukB: [0.52, -0.6, -Math.PI / 2, false], sampingA: [-0.3, -0.6, 0.12, false], sampingB: [0.5, -0.65, -0.12, false], tepukA: [-2.4, 0.6, Math.PI / 2, false], tepukB: [-1.55, 0.6, -Math.PI / 2, false] } };
 
 const blocked = (L, x, z) => (L.blocks || []).some(([a, b, c, d]) => x > a && x < b && z > c && z < d);
 const headY = (sit) => (sit ? 1.73 : 1.98);
 const PEREMPUAN = []; // tokoh tetap ada di TOKOH (cast.js); nama asing dianggap figuran laki-laki
-const SEKOLAH = ['studio', 'panggung', 'panggungSorot', 'panggungGelap', 'panggungSenter', 'belakangPanggung', 'bazar', 'bazarSepi', 'bazarGabung', 'bazarMotor', 'bazarPanggung', 'parkiran12', 'kelas', 'koridor', 'kantin', 'lobi', 'lobiPiala', 'gudang', 'gudangKejutan', 'gerbang', 'gerbangSore', 'lapangan', 'ruangGuru'];
+const SEKOLAH = ['studio', 'panggung', 'panggungSore', 'panggungSorot', 'panggungGelap', 'panggungSenter', 'belakangPanggung', 'bazar', 'bazarSepi', 'bazarGabung', 'bazarMotor', 'bazarPanggung', 'parkiran12', 'kelas', 'koridor', 'kantin', 'lobi', 'lobiPiala', 'gudang', 'gudangKejutan', 'gerbang', 'gerbangSore', 'lapangan', 'ruangGuru'];
 const castMake = (key, loc) => {
   if (/#syal$/.test(key)) { const c = castMake(key.replace(/#syal$/, ''), loc); syal(c); return c; }
   const [k, opt] = key.split('#'); // mis. "dimas#perban"
@@ -243,6 +247,8 @@ export function autoShot(d) {
         if (d.pose?.[name] === 'bass') pasangGitar(c, POSES.gitarBerdiri, gitarListrik('#2c3e50', true));
         if (d.pose?.[name] === 'drum') for (const sd of [-1, 1]) { const st = stik(); c.handOf(sd).add(st); st.position.set(0, -0.1, 0.12); st.rotation.set(1.2, 0, 0); }
         if (/^(micDua|gemetar)$/.test(d.pose?.[name] || '')) { const mc = mikrofon(); c.handOf(-1).add(mc); mc.position.set(0.08, -0.05, 0.12); mc.rotation.set(0, 0, 0.5); }
+        if (d.pose?.[name] === 'bawaGitar') { const gt = gitar(); c.handOf(-1).add(gt); gt.position.set(0.05, -0.55, 0.15); gt.rotation.set(0.1, 0, Math.PI); }
+        if (d.pose?.[name] === 'akustikBerdiri') pasangGitar(c, POSES.akustikBerdiri, gitar());
         if (d.pose?.[name] === 'sodorMic') { const mc = mikrofon(); c.handOf(-1).add(mc); mc.position.set(0.05, -0.12, 0.1); mc.rotation.set(1.3, 0, 0); }
         if (d.pose?.[name] === 'angkat') { const a = ampli(0.55, 0.5); a.position.set(0, 0.05, 0.62); c.torso.add(a); }
         if (d.pose?.[name] === 'senter') { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI); ph.draw(x => { x.fillStyle = '#222'; x.fillRect(0, 0, 400, 800); });
@@ -286,7 +292,7 @@ export function autoShot(d) {
       else if (kind === 'penonton') cam = { pos: [1.5, 5.2, 19.5], look: [0, 2.6, -5], fov: 34 };
       else if (kind === 'lebar' && L.lebarCam) cam = L.lebarCam;
       else if (kind === 'masuk' && L.masukCam) cam = L.masukCam;
-      else if (kind === 'barisDepan') cam = { pos: [0.4, 2.6, -2.2], look: [0, 1.8, 1.6], fov: 50 };
+      else if (kind === 'barisDepan') cam = { pos: [0.4, 3.0, -3.0], look: [0, 1.9, 2.2], fov: 56 };
       else if (kind === 'sorot') cam = { pos: [0, 1.6, 3.2], look: [0, 2.7, -4.3], fov: 34 };
       else if (kind === 'drummer' && heads[who]) { const h = heads[who]; cam = { pos: [h.x + 1.3, h.y + 0.75, h.z + 3.0], look: [h.x, h.y - 0.15, h.z], fov: 38 }; }
       else if (kind === 'riding') { cam = { pos: [-1.5, 2.3, 7.5], look: [0.2, 1.3, 0], fov: 42 }; }
@@ -307,8 +313,9 @@ export function autoShot(d) {
           if (ps0 === 'jongkok') p = POSES.jongkok;
           if (ps0 === 'perbaiki') p = combine(POSES.jongkok, { shR: [-1.0 + Math.sin(t * 9) * 0.25, 0, 0.25], elR: -0.6, shL: [-1.0 + Math.cos(t * 8) * 0.2, 0, -0.25], elL: -0.7, headX: 0.45 });
           if (ps0 === 'pinggang') p = combine(p, POSES.pinggang);
-          const ANIM0 = ['gitar', 'gitarBerdiri', 'bass', 'drum', 'keyboard', 'vokal'];
+          const ANIM0 = ['gitar', 'akustikBerdiri', 'gitarBerdiri', 'bass', 'drum', 'keyboard', 'vokal'];
           if (ps0 === 'gitar') p = combine(POSES.gitar, { elR: -1.25 + Math.sin(t * (d.ceria ? 14 : 5)) * 0.18 });
+          if (ps0 === 'akustikBerdiri') p = combine(POSES.akustikBerdiri, { elR: -1.25 + Math.sin(t * (d.ceria ? 14 : 8)) * 0.15 });
           if (ps0 === 'gitarBerdiri' || ps0 === 'bass') p = combine(POSES.gitarBerdiri, { elR: -1.25 + Math.sin(t * (d.ceria ? 14 : 8)) * 0.15, headX: 0.2 + Math.sin(t * 4) * 0.05 });
           if (ps0 === 'drum') { const e = d.ceria ? 12 : 7; p = combine(POSES.drum, { shR: [-0.9 + Math.max(0, Math.sin(t * e)) * 0.45, 0, 0.35], shL: [-0.9 + Math.max(0, Math.sin(t * e + Math.PI)) * 0.45, 0, -0.35], headX: 0.15 + Math.sin(t * e) * 0.04 }); }
           if (ps0 === 'keyboard') p = combine(POSES.keyboard, { elR: -0.75 + Math.sin(t * 6) * 0.08, elL: -0.75 + Math.sin(t * 5 + 1) * 0.08, headZ: Math.sin(t * 1.5) * 0.06 });
@@ -325,7 +332,7 @@ export function autoShot(d) {
           if (ps0 === 'teh') p = combine(p, POSES.minum, { elR: -1.6 - Math.max(0, Math.sin(t * 1.3)) * 0.5, headX: -Math.max(0, Math.sin(t * 1.3)) * 0.15 });
           if (ps0 === 'lepasHelm' && c.userData?.helm) { const kl2 = d.tl ? Math.max(0, Math.min(1, (t - d.tl[0]) / Math.max(0.5, d.tl[1] - d.tl[0]))) : k; const q = Math.max(0, Math.min(1, (kl2 - 0.2) / 0.6)); c.userData.helm.position.y = 0.42 + q * 0.9; c.userData.helm.visible = q < 0.98; p = combine(p, { shR: [-2.6 * Math.min(1, q * 2), 0, 0.3], elR: -0.6, shL: [-2.6 * Math.min(1, q * 2), 0, -0.3], elL: -0.6 }); }
           if (d.diam && ANIM0.includes(ps0)) p = combine(POSES[ps0 === 'bass' ? 'gitarBerdiri' : ps0], ps0 === 'drum' ? {} : {});
-          const ANIM_POSE = ['gitar', 'gitarBerdiri', 'bass', 'drum', 'keyboard', 'vokal', 'micDua', 'gemetar', 'senter'];
+          const ANIM_POSE = ['gitar', 'akustikBerdiri', 'gitarBerdiri', 'bass', 'drum', 'keyboard', 'vokal', 'micDua', 'gemetar', 'senter'];
           const extra = ANIM_POSE.includes(d.pose?.[name]) ? null : d.pose?.[name] === 'game' ? AKSI_POSE.game : /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
           if (d.pose?.[name] === 'angguk') p = combine(p, { headX: lt < 1 ? Math.max(0, Math.sin(lt * 9)) * 0.3 : 0 });
           if (props[name]?.parent === c.handOf(-1) && props[name].visible !== false) p = combine(p, props[name].userData.kind === 'kertas' ? AKSI_POSE.baca : props[name].userData.kind === 'hp' ? POSES.hp : AKSI_POSE.bawa);
@@ -341,6 +348,11 @@ export function autoShot(d) {
                   rot = Math.atan2(tx, tz); p = combine(walkPose(t, a.a === 'endap' ? 0.6 : 1), a.a === 'endap' ? { torsoX: 0.35, hipsY: 0.65 } : {}); }
                 if (q < 0) { px = o.x; pz = o.z; }
               } else if (a.a === 'jalan' || a.a === 'endap') { const dd = (1 - ease(qc)) * 2.6; px = B.x - fx * dd; pz = B.z - fz * dd; if (q < 1) p = combine(walkPose(t, a.a === 'endap' ? 0.6 : 1), a.a === 'endap' ? { torsoX: 0.35, hipsY: 0.65 } : {}); }
+              else if (a.a === 'pergi' && P && a.lewat === 'pintu') { // keluar lewat pintu: jalan ke pintu, lalu menghilang di luar
+                if (q > 0) { const m = { x: P.x + N.x * 0.9, z: P.z + N.z * 0.9 }, o = { x: P.x - N.x * 0.9, z: P.z - N.z * 0.9 };
+                  const leaf = pintu.userData.leaf; if (leaf) leaf.rotation.y = -1.5 * ease(Math.max(0, Math.min(1, (q - 0.55) / 0.15))) * (q < 1.2 ? 1 : Math.max(0, 1 - (q - 1.2) * 2));
+                  if (qc < 0.7) { const u = ease(qc / 0.7); px = B.x + (m.x - B.x) * u; pz = B.z + (m.z - B.z) * u; rot = Math.atan2(m.x - B.x, m.z - B.z); } else { const u = (qc - 0.7) / 0.3; px = m.x + (o.x - m.x) * u; pz = m.z + (o.z - m.z) * u; rot = Math.atan2(o.x - m.x, o.z - m.z); }
+                  p = q < 1 ? walkPose(t, 1.2) : p; if (q >= 1) c.root.visible = false; } }
               else if (a.a === 'pergi') { if (q > 0) { const dd = ease(qc) * 3; px = B.x + fx * dd; pz = B.z + fz * dd; if (q < 1) p = walkPose(t, 1); } }
               else if (a.a === 'menoleh') { p = combine(p, { headY: (p.headY || 0) + 0.8 * ease(qc) * (a.arah || 1) }); }
               else if (a.a === 'angguk') { if (q > 0 && q < 1) p = combine(p, { headX: Math.max(0, Math.sin(q * 18)) * 0.3 }); }

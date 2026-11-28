@@ -1,0 +1,966 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.78,
+  "text": " Seminggu lagi, pentas seni akhir semester.",
+  "words": [
+   {
+    "w": " Seminggu",
+    "s": 0.0,
+    "e": 0.46
+   },
+   {
+    "w": " lagi,",
+    "s": 0.46,
+    "e": 0.84
+   },
+   {
+    "w": " pentas",
+    "s": 1.02,
+    "e": 1.38
+   },
+   {
+    "w": " seni",
+    "s": 1.38,
+    "e": 1.6
+   },
+   {
+    "w": " akhir",
+    "s": 1.6,
+    "e": 2.02
+   },
+   {
+    "w": " semester.",
+    "s": 2.02,
+    "e": 2.78
+   }
+  ]
+ },
+ {
+  "start": 3.02,
+  "end": 5.9,
+  "text": " Band kelas 11 sudah latihan berminggu-minggu.",
+  "words": [
+   {
+    "w": " Band",
+    "s": 3.02,
+    "e": 3.2
+   },
+   {
+    "w": " kelas",
+    "s": 3.2,
+    "e": 3.42
+   },
+   {
+    "w": " 11",
+    "s": 3.42,
+    "e": 3.78
+   },
+   {
+    "w": " sudah",
+    "s": 3.78,
+    "e": 4.14
+   },
+   {
+    "w": " latihan",
+    "s": 4.14,
+    "e": 4.64
+   },
+   {
+    "w": " berminggu",
+    "s": 4.64,
+    "e": 5.24
+   },
+   {
+    "w": "-minggu.",
+    "s": 5.24,
+    "e": 5.9
+   }
+  ]
+ },
+ {
+  "start": 6.12,
+  "end": 12.36,
+  "text": " Febri di gitar, Stefan di bas, Gabriel di drum, Geli di keyboard, dan Nava sebagai vokalis.",
+  "words": [
+   {
+    "w": " Febri",
+    "s": 6.12,
+    "e": 6.4
+   },
+   {
+    "w": " di",
+    "s": 6.4,
+    "e": 6.52
+   },
+   {
+    "w": " gitar,",
+    "s": 6.52,
+    "e": 7.02
+   },
+   {
+    "w": " Stefan",
+    "s": 7.32,
+    "e": 7.62
+   },
+   {
+    "w": " di",
+    "s": 7.62,
+    "e": 7.9
+   },
+   {
+    "w": " bas,",
+    "s": 7.9,
+    "e": 8.14
+   },
+   {
+    "w": " Gabriel",
+    "s": 8.4,
+    "e": 8.86
+   },
+   {
+    "w": " di",
+    "s": 8.86,
+    "e": 9.12
+   },
+   {
+    "w": " drum,",
+    "s": 9.12,
+    "e": 9.36
+   },
+   {
+    "w": " Geli",
+    "s": 9.76,
+    "e": 9.9
+   },
+   {
+    "w": " di",
+    "s": 9.9,
+    "e": 10.08
+   },
+   {
+    "w": " keyboard,",
+    "s": 10.08,
+    "e": 10.5
+   },
+   {
+    "w": " dan",
+    "s": 10.76,
+    "e": 11.0
+   },
+   {
+    "w": " Nava",
+    "s": 11.0,
+    "e": 11.32
+   },
+   {
+    "w": " sebagai",
+    "s": 11.32,
+    "e": 11.72
+   },
+   {
+    "w": " vokalis.",
+    "s": 11.72,
+    "e": 12.36
+   }
+  ]
+ },
+ {
+  "start": 13.0,
+  "end": 15.3,
+  "text": " Aldo cuma bagian angkat-angkat alat.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 13.0,
+    "e": 13.4
+   },
+   {
+    "w": " cuma",
+    "s": 13.4,
+    "e": 13.7
+   },
+   {
+    "w": " bagian",
+    "s": 13.7,
+    "e": 14.08
+   },
+   {
+    "w": " angkat",
+    "s": 14.08,
+    "e": 14.32
+   },
+   {
+    "w": "-angkat",
+    "s": 14.32,
+    "e": 14.66
+   },
+   {
+    "w": " alat.",
+    "s": 14.66,
+    "e": 15.3
+   }
+  ]
+ },
+ {
+  "start": 15.46,
+  "end": 16.56,
+  "text": " Ia tidak keberatan.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 15.46,
+    "e": 15.62
+   },
+   {
+    "w": " tidak",
+    "s": 15.62,
+    "e": 15.84
+   },
+   {
+    "w": " keberatan.",
+    "s": 15.84,
+    "e": 16.56
+   }
+  ]
+ },
+ {
+  "start": 16.94,
+  "end": 18.24,
+  "text": " Panggung bukan tempatnya.",
+  "words": [
+   {
+    "w": " Panggung",
+    "s": 16.94,
+    "e": 17.36
+   },
+   {
+    "w": " bukan",
+    "s": 17.36,
+    "e": 17.58
+   },
+   {
+    "w": " tempatnya.",
+    "s": 17.58,
+    "e": 18.24
+   }
+  ]
+ },
+ {
+  "start": 18.68,
+  "end": 20.56,
+  "text": " Hanya Geli yang tahu rahasianya.",
+  "words": [
+   {
+    "w": " Hanya",
+    "s": 18.68,
+    "e": 18.96
+   },
+   {
+    "w": " Geli",
+    "s": 18.96,
+    "e": 19.36
+   },
+   {
+    "w": " yang",
+    "s": 19.36,
+    "e": 19.56
+   },
+   {
+    "w": " tahu",
+    "s": 19.56,
+    "e": 19.76
+   },
+   {
+    "w": " rahasianya.",
+    "s": 19.76,
+    "e": 20.56
+   }
+  ]
+ },
+ {
+  "start": 21.02,
+  "end": 25.62,
+  "text": " Aldo suka bernyanyi, tapi hanya di kamar, di enam pintu terkunci.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 21.02,
+    "e": 21.38
+   },
+   {
+    "w": " suka",
+    "s": 21.38,
+    "e": 21.7
+   },
+   {
+    "w": " bernyanyi,",
+    "s": 21.7,
+    "e": 22.6
+   },
+   {
+    "w": " tapi",
+    "s": 22.7,
+    "e": 23.18
+   },
+   {
+    "w": " hanya",
+    "s": 23.18,
+    "e": 23.56
+   },
+   {
+    "w": " di",
+    "s": 23.56,
+    "e": 23.76
+   },
+   {
+    "w": " kamar,",
+    "s": 23.76,
+    "e": 24.48
+   },
+   {
+    "w": " di",
+    "s": 24.64,
+    "e": 24.66
+   },
+   {
+    "w": " enam",
+    "s": 24.66,
+    "e": 24.82
+   },
+   {
+    "w": " pintu",
+    "s": 24.82,
+    "e": 25.1
+   },
+   {
+    "w": " terkunci.",
+    "s": 25.1,
+    "e": 25.62
+   }
+  ]
+ },
+ {
+  "start": 26.16,
+  "end": 29.84,
+  "text": " Seneng sore, Nava datang latihan dengan Shell melilit leher.",
+  "words": [
+   {
+    "w": " Seneng",
+    "s": 26.16,
+    "e": 26.44
+   },
+   {
+    "w": " sore,",
+    "s": 26.44,
+    "e": 26.92
+   },
+   {
+    "w": " Nava",
+    "s": 27.38,
+    "e": 27.62
+   },
+   {
+    "w": " datang",
+    "s": 27.62,
+    "e": 27.92
+   },
+   {
+    "w": " latihan",
+    "s": 27.92,
+    "e": 28.4
+   },
+   {
+    "w": " dengan",
+    "s": 28.4,
+    "e": 28.74
+   },
+   {
+    "w": " Shell",
+    "s": 28.74,
+    "e": 29.04
+   },
+   {
+    "w": " melilit",
+    "s": 29.04,
+    "e": 29.42
+   },
+   {
+    "w": " leher.",
+    "s": 29.42,
+    "e": 29.84
+   }
+  ]
+ },
+ {
+  "start": 30.0,
+  "end": 34.76,
+  "text": " Ia membuka mulut, dan yang keluar cuma suara serak seperti kaset kusut.",
+  "words": [
+   {
+    "w": " Ia",
+    "s": 30.0,
+    "e": 30.72
+   },
+   {
+    "w": " membuka",
+    "s": 30.72,
+    "e": 31.12
+   },
+   {
+    "w": " mulut,",
+    "s": 31.12,
+    "e": 31.74
+   },
+   {
+    "w": " dan",
+    "s": 31.94,
+    "e": 32.06
+   },
+   {
+    "w": " yang",
+    "s": 32.06,
+    "e": 32.22
+   },
+   {
+    "w": " keluar",
+    "s": 32.22,
+    "e": 32.54
+   },
+   {
+    "w": " cuma",
+    "s": 32.54,
+    "e": 32.82
+   },
+   {
+    "w": " suara",
+    "s": 32.82,
+    "e": 33.14
+   },
+   {
+    "w": " serak",
+    "s": 33.14,
+    "e": 33.52
+   },
+   {
+    "w": " seperti",
+    "s": 33.52,
+    "e": 33.84
+   },
+   {
+    "w": " kaset",
+    "s": 33.84,
+    "e": 34.18
+   },
+   {
+    "w": " kusut.",
+    "s": 34.18,
+    "e": 34.76
+   }
+  ]
+ },
+ {
+  "start": 35.02,
+  "end": 37.28,
+  "text": " Eh, radang tenggorokan.",
+  "words": [
+   {
+    "w": " Eh,",
+    "s": 35.02,
+    "e": 35.02
+   },
+   {
+    "w": " radang",
+    "s": 35.62,
+    "e": 35.98
+   },
+   {
+    "w": " tenggorokan.",
+    "s": 35.98,
+    "e": 37.28
+   }
+  ]
+ },
+ {
+  "start": 37.54,
+  "end": 40.34,
+  "text": " Kata dokter, nggak boleh nyanyi seminggu.",
+  "words": [
+   {
+    "w": " Kata",
+    "s": 37.54,
+    "e": 37.74
+   },
+   {
+    "w": " dokter,",
+    "s": 37.74,
+    "e": 38.4
+   },
+   {
+    "w": " nggak",
+    "s": 38.6,
+    "e": 38.74
+   },
+   {
+    "w": " boleh",
+    "s": 38.74,
+    "e": 39.06
+   },
+   {
+    "w": " nyanyi",
+    "s": 39.06,
+    "e": 39.5
+   },
+   {
+    "w": " seminggu.",
+    "s": 39.5,
+    "e": 40.34
+   }
+  ]
+ },
+ {
+  "start": 40.46,
+  "end": 42.96,
+  "text": " Studio musik sekolah mendadakkan ning.",
+  "words": [
+   {
+    "w": " Studio",
+    "s": 40.46,
+    "e": 40.9
+   },
+   {
+    "w": " musik",
+    "s": 40.9,
+    "e": 41.28
+   },
+   {
+    "w": " sekolah",
+    "s": 41.28,
+    "e": 42.02
+   },
+   {
+    "w": " mendadakkan",
+    "s": 42.02,
+    "e": 42.76
+   },
+   {
+    "w": " ning.",
+    "s": 42.76,
+    "e": 42.96
+   }
+  ]
+ },
+ {
+  "start": 43.16,
+  "end": 45.08,
+  "text": " Terus, siapa yang nyanyi?",
+  "words": [
+   {
+    "w": " Terus,",
+    "s": 43.16,
+    "e": 43.7
+   },
+   {
+    "w": " siapa",
+    "s": 44.04,
+    "e": 44.3
+   },
+   {
+    "w": " yang",
+    "s": 44.3,
+    "e": 44.48
+   },
+   {
+    "w": " nyanyi?",
+    "s": 44.48,
+    "e": 45.08
+   }
+  ]
+ },
+ {
+  "start": 45.34,
+  "end": 46.54,
+  "text": " Semua saling pandang.",
+  "words": [
+   {
+    "w": " Semua",
+    "s": 45.34,
+    "e": 45.76
+   },
+   {
+    "w": " saling",
+    "s": 45.76,
+    "e": 46.08
+   },
+   {
+    "w": " pandang.",
+    "s": 46.08,
+    "e": 46.54
+   }
+  ]
+ },
+ {
+  "start": 47.28,
+  "end": 49.86,
+  "text": " Lalu Geli berdaham pelan dari balik keyboard.",
+  "words": [
+   {
+    "w": " Lalu",
+    "s": 47.28,
+    "e": 47.58
+   },
+   {
+    "w": " Geli",
+    "s": 47.58,
+    "e": 47.9
+   },
+   {
+    "w": " berdaham",
+    "s": 47.9,
+    "e": 48.48
+   },
+   {
+    "w": " pelan",
+    "s": 48.48,
+    "e": 48.9
+   },
+   {
+    "w": " dari",
+    "s": 48.9,
+    "e": 49.18
+   },
+   {
+    "w": " balik",
+    "s": 49.18,
+    "e": 49.44
+   },
+   {
+    "w": " keyboard.",
+    "s": 49.44,
+    "e": 49.86
+   }
+  ]
+ },
+ {
+  "start": 50.26,
+  "end": 51.0,
+  "text": " Aldo bisa.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 50.26,
+    "e": 50.58
+   },
+   {
+    "w": " bisa.",
+    "s": 50.58,
+    "e": 51.0
+   }
+  ]
+ },
+ {
+  "start": 51.42,
+  "end": 53.2,
+  "text": " Aldo langsung menoleh.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 51.42,
+    "e": 51.92
+   },
+   {
+    "w": " langsung",
+    "s": 51.92,
+    "e": 52.38
+   },
+   {
+    "w": " menoleh.",
+    "s": 52.38,
+    "e": 53.2
+   }
+  ]
+ },
+ {
+  "start": 53.46,
+  "end": 53.9,
+  "text": " Girl!",
+  "words": [
+   {
+    "w": " Girl!",
+    "s": 53.46,
+    "e": 53.9
+   }
+  ]
+ },
+ {
+  "start": 54.42,
+  "end": 56.84,
+  "text": " Aku pernah dengar kamu nyanyi waktu minum.",
+  "words": [
+   {
+    "w": " Aku",
+    "s": 54.42,
+    "e": 54.66
+   },
+   {
+    "w": " pernah",
+    "s": 54.66,
+    "e": 54.94
+   },
+   {
+    "w": " dengar",
+    "s": 54.94,
+    "e": 55.36
+   },
+   {
+    "w": " kamu",
+    "s": 55.36,
+    "e": 55.6
+   },
+   {
+    "w": " nyanyi",
+    "s": 55.6,
+    "e": 56.0
+   },
+   {
+    "w": " waktu",
+    "s": 56.0,
+    "e": 56.24
+   },
+   {
+    "w": " minum.",
+    "s": 56.24,
+    "e": 56.84
+   }
+  ]
+ },
+ {
+  "start": 57.0,
+  "end": 58.82,
+  "text": " Kamu bagus, do. Serius.",
+  "words": [
+   {
+    "w": " Kamu",
+    "s": 57.0,
+    "e": 57.32
+   },
+   {
+    "w": " bagus,",
+    "s": 57.32,
+    "e": 57.76
+   },
+   {
+    "w": " do.",
+    "s": 57.92,
+    "e": 58.02
+   },
+   {
+    "w": " Serius.",
+    "s": 58.34,
+    "e": 58.82
+   }
+  ]
+ },
+ {
+  "start": 58.82,
+  "end": 61.08,
+  "text": " Febri menyodorkan mikrofon.",
+  "words": [
+   {
+    "w": " Febri",
+    "s": 58.82,
+    "e": 59.76
+   },
+   {
+    "w": " menyodorkan",
+    "s": 59.76,
+    "e": 60.4
+   },
+   {
+    "w": " mikrofon.",
+    "s": 60.4,
+    "e": 61.08
+   }
+  ]
+ },
+ {
+  "start": 61.32,
+  "end": 63.04,
+  "text": " Coba satu bait aja.",
+  "words": [
+   {
+    "w": " Coba",
+    "s": 61.32,
+    "e": 61.84
+   },
+   {
+    "w": " satu",
+    "s": 61.84,
+    "e": 62.24
+   },
+   {
+    "w": " bait",
+    "s": 62.24,
+    "e": 62.46
+   },
+   {
+    "w": " aja.",
+    "s": 62.46,
+    "e": 63.04
+   }
+  ]
+ },
+ {
+  "start": 63.66,
+  "end": 66.42,
+  "text": " Aldo menatap mikrofon itu seperti menatap ular.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 63.66,
+    "e": 63.84
+   },
+   {
+    "w": " menatap",
+    "s": 63.84,
+    "e": 64.2
+   },
+   {
+    "w": " mikrofon",
+    "s": 64.2,
+    "e": 64.76
+   },
+   {
+    "w": " itu",
+    "s": 64.76,
+    "e": 65.18
+   },
+   {
+    "w": " seperti",
+    "s": 65.18,
+    "e": 65.46
+   },
+   {
+    "w": " menatap",
+    "s": 65.46,
+    "e": 65.96
+   },
+   {
+    "w": " ular.",
+    "s": 65.96,
+    "e": 66.42
+   }
+  ]
+ },
+ {
+  "start": 67.34,
+  "end": 71.28,
+  "text": " Malam itu, susunan acara pentas dibagikan di grup sekolah.",
+  "words": [
+   {
+    "w": " Malam",
+    "s": 67.34,
+    "e": 67.54
+   },
+   {
+    "w": " itu,",
+    "s": 67.54,
+    "e": 68.06
+   },
+   {
+    "w": " susunan",
+    "s": 68.32,
+    "e": 68.74
+   },
+   {
+    "w": " acara",
+    "s": 68.74,
+    "e": 69.02
+   },
+   {
+    "w": " pentas",
+    "s": 69.02,
+    "e": 69.42
+   },
+   {
+    "w": " dibagikan",
+    "s": 69.42,
+    "e": 69.94
+   },
+   {
+    "w": " di",
+    "s": 69.94,
+    "e": 70.12
+   },
+   {
+    "w": " grup",
+    "s": 70.12,
+    "e": 70.28
+   },
+   {
+    "w": " sekolah.",
+    "s": 70.28,
+    "e": 71.28
+   }
+  ]
+ },
+ {
+  "start": 71.48,
+  "end": 73.16,
+  "text": " Di baris ketujuh tertulis,",
+  "words": [
+   {
+    "w": " Di",
+    "s": 71.48,
+    "e": 71.54
+   },
+   {
+    "w": " baris",
+    "s": 71.54,
+    "e": 71.78
+   },
+   {
+    "w": " ketujuh",
+    "s": 71.78,
+    "e": 72.24
+   },
+   {
+    "w": " tertulis,",
+    "s": 72.24,
+    "e": 73.16
+   }
+  ]
+ },
+ {
+  "start": 73.34,
+  "end": 76.2,
+  "text": " Ben kelas 11, Vokal Aldo.",
+  "words": [
+   {
+    "w": " Ben",
+    "s": 73.34,
+    "e": 73.54
+   },
+   {
+    "w": " kelas",
+    "s": 73.54,
+    "e": 73.8
+   },
+   {
+    "w": " 11,",
+    "s": 73.8,
+    "e": 74.4
+   },
+   {
+    "w": " Vokal",
+    "s": 75.0,
+    "e": 75.6
+   },
+   {
+    "w": " Aldo.",
+    "s": 75.6,
+    "e": 76.2
+   }
+  ]
+ }
+]

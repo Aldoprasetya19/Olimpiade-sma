@@ -54,7 +54,7 @@ def transcribe(vo):
 
 # ---- aksi dari kata kerja narasi
 VERB = [(r'^(berjalan|jalan|melangkah|mendekat|menghampiri|menghampirinya|datang|tiba|maju|masuk)$', 'jalan', 2.0),
-        (r'^(mengendap|mengendapendap)$', 'endap', 2.5), (r'^(pergi|pulang|menjauh|meninggalkan)$', 'pergi', 2.2),
+        (r'^(mengendap|mengendapendap)$', 'endap', 2.5), (r'^(pergi|pulang|menjauh|meninggalkan|keluar)$', 'pergi', 2.2),
         (r'^(membaca|membacanya)$', 'baca', 2.0), (r'^(menyerahkan|memberikan|menyodorkan|memberi)$', 'beri', 1.6),
         (r'^(menoleh)$', 'menoleh', 0.5), (r'^(menunduk)$', 'tunduk', 1.0), (r'^(mengangguk|menganggukangguk)$', 'angguk', 1.6), (r'^(menyilangkan)$', 'silang', 1.0), (r'^(menahan)$', 'tahan', 1.4),
         (r'^(menaruh|menaruhnya|meletakkan)$', 'taruh', 1.2), (r'^(melirik)$', 'menoleh', 0.5),
@@ -68,7 +68,8 @@ def detect_actions(L, castnames, hold, last_subj, scene_loc='', scene_berdiri=Fa
     for i, w in enumerate(toks):
         if i > 0 and toks[i - 1] in NEG and not w in castnames: continue
         if i > 0 and toks[i - 1] in ('saat', 'terus', 'musik', 'lagu', 'intro') and not w in castnames: continue
-        if w == 'masuk' and i + 1 < len(toks) and toks[i + 1] == 'dengan': continue  # 'masuk dengan ketukan drum' = mulai bermain, bukan berjalan  # 'musik terus berjalan', 'saat masuk reff'
+        if w == 'masuk' and i + 1 < len(toks) and toks[i + 1] == 'dengan': continue
+        if w == 'keluar' and not (i + 1 < len(toks) and toks[i + 1] in ('dari', 'studio', 'kelas', 'rumah', 'ruangan')): continue  # 'baris pertama keluar terlalu pelan' bukan pergi  # 'masuk dengan ketukan drum' = mulai bermain, bukan berjalan  # 'musik terus berjalan', 'saat masuk reff'
         if i > 1 and toks[i - 2] in NEG and toks[i - 1] in ('bisa', 'langsung', 'mau', 'sempat') and not w in castnames: continue
         if w in castnames:
             if i > 0 and subj and toks[i - 1] in castnames + ['dan', 's'] and w not in subj: subj = subj + [w]
@@ -106,6 +107,7 @@ def detect_actions(L, castnames, hold, last_subj, scene_loc='', scene_berdiri=Fa
             for s_ in subj:
                 e = {'who': s_, 'a': a, 't': round(max(L['start'], times[i] - (0.8 if a in ('jalan', 'endap') else 0)), 2), 'dur': dur}
                 if a in ('jalan', 'endap') and w in ('masuk', 'datang', 'tiba'): e['dari'] = 'pintu'
+                if a == 'pergi' and (w == 'keluar' or scene_loc in ('studio', 'kelas', 'ruangGuru', 'lobi', 'gudang', 'teras')): e['lewat'] = 'pintu'
                 if a == 'beri':
                     to = next((x for x in toks[i + 1:] if x in castnames and x != s_), None) or next((x for x in castnames if x != s_), None)
                     if not to: continue
@@ -371,7 +373,7 @@ def main():
         elif cam in ('penonton', 'sorot'): cyc = [cam, 'lebar']
         elif cam == 'barisDepan': cyc = [cam, 'penonton']
         elif cam.startswith('drummer:'): cyc = [cam, 'lebar']
-        else: cyc = [cam, 'lebar' if cam == 'dua' else 'dua']
+        else: cyc = [cam, 'lebar' if cam == 'dua' else ('cu:' + names[0] if len(names) > 2 else 'dua')]
         n = math.ceil(dur / 4.0)
         for k in range(n):
             e = copy.deepcopy(d); e['t0'] = round(d['t0'] + dur * k / n, 2); e['t1'] = round(d['t0'] + dur * (k + 1) / n, 2)

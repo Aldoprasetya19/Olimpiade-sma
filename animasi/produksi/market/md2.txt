@@ -1,0 +1,30 @@
+# judul: PANAS 34 | DERAJAT
+# akhir: BERSAMBUNG... | Bagian 3: Boba Ketemu Es Teh
+[bazar] p1=gabriel p2=aldo p3=gelly
+NARATOR {lebar} (sfx=tonggeret): Bagian 2. Panas 34 Derajat.
+NARATOR {lebar} (gabriel=ngantuk): Jumat pagi, matahari bersinar terik.
+NARATOR {kertas} [34°C | Termometer pos satpam]: Termometer di pos satpam menunjukkan 34 derajat.
+NARATOR {lebar} (gabriel=netral, aldo=senyum): Stan kelas 11 sudah siap. Ada teh, gula, dan 100 gelas plastik.
+NARATOR {cu:gabriel} (gabriel=sedih, sfx=gelas+hela@satu): Tapi tidak ada es. Satu butir pun.
+GABRIEL (sedih): "Es teh tanpa es itu namanya teh hangat."
+NARATOR {lebar} (aldo=cemas, gelly=cemas, gabriel=cemas): Di seberang lapangan, antrean Boba Sultan sudah mengular sampai gerbang.
+[bazar] p1=nava p2=aldo p3=febri
+NARATOR {cu:aldo} (aldo=serius): Aldo berpikir cepat.
+ALDO (serius, aldo:tunjuk): "Nava, Febri, cari es batu ke pasar. Pakai motor, gas sekarang!"
+[jalanAspal] motor1Depan=nava motor1Belakang=febri
+NARATOR {riding} (nava=fokus, febri=fokus, sfx=motor): Mereka langsung berangkat.
+[bazarSepi] p1=hissari p2=misel
+NARATOR {dua} (hissari:ringlight, misel:ringlight, hissari=senang, misel=senang): Sementara itu, Hissari dan Misel siaran langsung di TikTok.
+HISSARI (senang, hissari:ringlight): "Guys, stan es teh jumbo kelas 11 buka jam 10! Ada live music!"
+[koridor] kiri=kharan kanan=justin
+NARATOR {dua} (kharan:selebaran, justin:selebaran, kharan=senang, justin=senang, sfx=lari+kertas@membagikan): Kharan dan Justin dari kelas 10 ikut membantu, membagikan kertas promosi ke setiap kelas.
+[bazarSepi] p1=aldo p2=gelly pemusik=stefan
+NARATOR {lebar} (aldo=cemas, gelly=cemas): Jam 10 lewat. Nava dan Febri belum kembali.
+NARATOR {cu:stefan} (stefan:gitar, stefan=sedih, sfx=gitarSedih): Stefan memainkan gitar di depan stan yang sepi. Lagu galau, cocok dengan suasana.
+[bazar] p1=aldo p2=gelly pemusik=stefan stan12a=sera
+NARATOR {lebar} (stefan:gitar, sfx=korslet@brak, ledakan@brak): Lalu, dari arah stan kelas 12, terdengar bunyi keras. BRAK! Asap tipis keluar dari mesin boba.
+NARATOR {lebar} (aldo=kaget, gelly=kaget, stefan=kaget, sfx=kaget): Antrean panjang itu mendadak berhenti.
+[bazar] p1=aldo p2=gelly lari=sera
+NARATOR {masuk} (sera=cemas, sfx=lari@berlari): Sera berlari menyeberang lapangan, langsung ke stan kelas 11.
+SERA (cemas): "Kalian punya gelas plastik?"
+NARATOR {akhir}: Bersambung.

@@ -2,10 +2,10 @@
 // Dipakai oleh episode hasil tools/naskah_ke_episode.py. Lihat engine/README.md bagian "Jalur hemat".
 import * as THREE from 'three';
 import { CAST, santai, TOKOH } from './cast.js';
-import { SETS, phone, piala, kalengCat, helm, glass } from './sets.js';
+import { SETS, phone, piala, kalengCat, helm, glass, gitar, mikrofon } from './sets.js';
 import { hud as HUD } from './core.js';
 import { POSES, combine, addPose, idle, mixPose, walkPose } from './char.js';
-import { ease, lerp } from './core.js';
+import { ease, lerp, GRADES as GRADES_REF } from './core.js';
 import { drawChat, drawLock, drawBanner, avatar, statusBar } from './phoneui.js';
 import { phoneInsert } from './shots.js';
 
@@ -30,6 +30,18 @@ export const LOKASI = {
   bengkel5: { set: 'bengkel', setOpts: { motor5: true, pagi: true }, grade: 'pagi', bounds: [-14, 14, -3.2, 16], center: [0, 0.2], slot: {} },
   jalanBukit: { set: 'jalan', setOpts: { speed: 9, bukit: true, motors: [[3, 1.4, '#c0392b', 'motor1'], [0.6, -0.2, '#2980b9', 'motor2'], [-1.8, 1.4, '#27ae60', 'motor3'], [-4.2, -0.2, '#f39c12', 'motor4'], [-6.6, 1.4, '#4a5a3a', 'motor5']] }, grade: 'pagi', bounds: [-40, 40, -20, 25],
     slot: Object.fromEntries([1, 2, 3, 4, 5].map(i => ['motor' + i + 'Depan', { motor: 'motor' + i, lx: 0.05, ly: 0.5, pose: 'naik' }])) },
+  bazar: { set: 'bazar', setOpts: { antre: 12, antreDi: 12 }, grade: 'panas', bounds: [-14, 14, -8, 14], center: [-2.6, -2.15],
+    slot: { stan12a: [2.0, -2.15, 0, false], stan12b: [3.2, -2.15, 0, false], depan11a: [-3.4, 1.0, Math.PI * 0.85, false], depan11b: [-2.0, 1.1, -Math.PI * 0.85, false], pemusik: [-5.0, 0.4, Math.PI / 2, true], lari: [-1.0, 1.4, -Math.PI / 2, false] } },
+  bazarSepi: { set: 'bazar', setOpts: { antre: 0 }, grade: 'panas', bounds: [-14, 14, -8, 14], center: [-2.6, -2.15],
+    slot: { pemusik: [-5.0, 0.4, Math.PI / 2, true], depan11a: [-3.4, 1.0, Math.PI * 0.85, false], depan11b: [-2.0, 1.1, -Math.PI * 0.85, false], lari: [-1.0, 1.4, -Math.PI / 2, false] } },
+  bazarGabung: { set: 'bazar', setOpts: { antre: 14, antreDi: 0, gabung: true }, grade: 'pagi', bounds: [-14, 14, -8, 14], center: [0, -2.15],
+    slot: { pemusik: [-5.0, 0.4, Math.PI / 2, true], pemusik2: [-5.0, 1.6, Math.PI / 2, true], penyanyi: [-3.8, 1.0, Math.PI / 2, false], perekam1: [-6.4, 2.6, -Math.PI * 0.75, false], perekam2: [-5.6, 2.9, -Math.PI * 0.85, false], depan11a: [-1.0, 1.0, Math.PI * 0.9, false], depan11b: [0.6, 1.0, -Math.PI * 0.9, false] } },
+  bazarMotor: { set: 'bazar', setOpts: { antre: 0, gabung: true, motorEs: true }, grade: 'pagi', bounds: [-14, 14, -8, 14], center: [0, -2.15],
+    slot: { tiba1: [-6.6, 2.4, Math.PI * 0.8, false], tiba2: [-5.4, 2.5, -Math.PI * 0.9, false], tulis1: [-0.9, 1.0, 0.2, false], tulis2: [0.3, 1.0, -0.2, false] } },
+  bazarPanggung: { set: 'bazar', setOpts: { antre: 0, gabung: true, panggung: true }, grade: 'pagi', bounds: [-14, 14, -5, 14], center: [0, -2.8],
+    slot: { panggung: [0, -6.4, 0, false, 0.8] } },
+  parkiran12: { set: 'parkiran12', grade: 'pagi', bounds: [-12, 12, -3.4, 12], center: [-3.0, 2.6],
+    slot: { angkat1: [1.4, 0.4, Math.PI / 2, false], angkat2: [2.4, 0.9, -Math.PI / 2, false], spanduk1: [-2.0, -1.55, 0, false], spanduk2: [1.4, -1.55, 0, false], pintu: [-1.5, -3.1, 0.3, false] } },
   kantin: { set: 'belakangKantin', grade: 'pagi', bounds: [-9, 9, -2.4, 12],
     slot: { kiri: [-0.9, -0.6, Math.PI / 2, false], kanan: [0.9, -0.6, -Math.PI / 2, false], dudukKiri: [-0.55, -2.05, 0, true], dudukKanan: [0.55, -2.05, 0, true] } },
   toko: { set: 'toko', grade: 'sore', bounds: [-5.1, 5.1, -4.6, 4.6], slot: { dudukKiri: [0, -1.3, 0, true], dudukKanan: [1.0, -1.3, 0, true] } },
@@ -52,7 +64,7 @@ export const LOKASI = {
 const blocked = (L, x, z) => (L.blocks || []).some(([a, b, c, d]) => x > a && x < b && z > c && z < d);
 const headY = (sit) => (sit ? 1.73 : 1.98);
 const PEREMPUAN = []; // tokoh tetap ada di TOKOH (cast.js); nama asing dianggap figuran laki-laki
-const SEKOLAH = ['kelas', 'koridor', 'kantin', 'lobi', 'lobiPiala', 'gudang', 'gudangKejutan', 'gerbang', 'gerbangSore', 'lapangan', 'ruangGuru'];
+const SEKOLAH = ['bazar', 'bazarSepi', 'bazarGabung', 'bazarMotor', 'bazarPanggung', 'parkiran12', 'kelas', 'koridor', 'kantin', 'lobi', 'lobiPiala', 'gudang', 'gudangKejutan', 'gerbang', 'gerbangSore', 'lapangan', 'ruangGuru'];
 const castMake = (key, loc) => {
   const [k, opt] = key.split('#'); // mis. "dimas#perban"
   if (loc && !SEKOLAH.includes(loc) && TOKOH[k] && opt !== 'seragam') { const o = { ...santai(k), ...(opt === 'jas' ? { jacket: '#e0b020', sleeve: '#e0b020', longSleeve: true } : {}) }; return CAST[k](o); }
@@ -211,6 +223,10 @@ export function autoShot(d) {
         }
         const c = castMake(key, d.loc); const name = key.split('#')[0];
         S.add(c, [s[0], 0, s[1]], s[2]); chars[name] = { c, sit: s[3] }; if (s[4]) c.root.position.y = s[4];
+        if (d.pose?.[name] === 'gitar') { const gt = gitar(); gt.position.set(0.15, 0.55, 0.35); gt.rotation.set(0, 0, -1.1); c.torso.add(gt); }
+        if (d.pose?.[name] === 'mic') { const mc = mikrofon(); c.handOf(-1).add(mc); mc.position.set(0, -0.1, 0.1); }
+        if (d.pose?.[name] === 'ringlight') { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI); const rl = new THREE.Mesh(new THREE.TorusGeometry(0.2, 0.03, 8, 20), new THREE.MeshBasicMaterial({ color: '#fffbe0' })); rl.position.set(0, 0.32, 0); ph.add(rl); }
+        if (d.pose?.[name] === 'selebaran') { const kp = new THREE.Mesh(new THREE.PlaneGeometry(0.3, 0.4), new THREE.MeshBasicMaterial({ color: '#ffe066', side: THREE.DoubleSide })); c.handOf(-1).add(kp); kp.position.set(0, -0.2, 0.1); }
         if (d.pose?.[name] === 'teh') { const gl = glass('#b5651d'); c.handOf(-1).add(gl); gl.position.set(0, -0.2, 0.05); }
         if (d.pose?.[name] === 'perbaiki') { const kp = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.32, 0.05), new THREE.MeshToonMaterial({ color: '#9aa0a6' })); kp.position.set(0, -0.2, 0.05); c.handOf(-1).add(kp); }
         if ((d.helm || []).includes(name)) { const h = helm('#c0392b'); h.position.y = 0.42; c.head.add(h); c.userData = { helm: h }; }
@@ -260,6 +276,13 @@ export function autoShot(d) {
           if (ps0 === 'jongkok') p = POSES.jongkok;
           if (ps0 === 'perbaiki') p = combine(POSES.jongkok, { shR: [-1.0 + Math.sin(t * 9) * 0.25, 0, 0.25], elR: -0.6, shL: [-1.0 + Math.cos(t * 8) * 0.2, 0, -0.25], elL: -0.7, headX: 0.45 });
           if (ps0 === 'pinggang') p = combine(p, POSES.pinggang);
+          if (ps0 === 'gitar') p = combine(POSES.gitar, { elR: -1.2 + Math.sin(t * (d.ceria ? 14 : 5)) * 0.25 });
+          if (ps0 === 'mic') p = combine(p, POSES.mic, { headZ: Math.sin(t * 3) * 0.1 });
+          if (ps0 === 'ringlight') p = combine(p, POSES.hpAngkat);
+          if (ps0 === 'sorak') p = combine(POSES.sorak, { hipsY: 0.75 + Math.abs(Math.sin(t * 7 + seed.indexOf(name))) * 0.18 });
+          if (ps0 === 'tepukBahu' || ps0 === 'jabat') p = combine(p, POSES[ps0]);
+          if (ps0 === 'lingkar') p = combine(p, POSES.lingkar);
+          if (ps0 === 'selebaran') p = combine(walkPose(t, 1.2, true), { shR: [-1.2, 0, 0.1], elR: -0.3 });
           if (ps0 === 'teh') p = combine(p, POSES.minum, { elR: -1.6 - Math.max(0, Math.sin(t * 1.3)) * 0.5, headX: -Math.max(0, Math.sin(t * 1.3)) * 0.15 });
           if (ps0 === 'lepasHelm' && c.userData?.helm) { const kl2 = d.tl ? Math.max(0, Math.min(1, (t - d.tl[0]) / Math.max(0.5, d.tl[1] - d.tl[0]))) : k; const q = Math.max(0, Math.min(1, (kl2 - 0.2) / 0.6)); c.userData.helm.position.y = 0.42 + q * 0.9; c.userData.helm.visible = q < 0.98; p = combine(p, { shR: [-2.6 * Math.min(1, q * 2), 0, 0.3], elR: -0.6, shL: [-2.6 * Math.min(1, q * 2), 0, -0.3], elL: -0.6 }); }
           const extra = d.pose?.[name] === 'game' ? AKSI_POSE.game : /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
@@ -323,6 +346,12 @@ export function autoShot(d) {
         const mt = S.scene.getObjectByName('motorTua'); if (mt) { const kl = d.tl ? Math.max(0, Math.min(1, (t - d.tl[0]) / Math.max(0.5, d.tl[1] - d.tl[0]))) : k; const dq = Object.values(d.pose || {}).includes('datangMotor') ? ease(Math.min(1, kl / 0.75)) : 1; mt.position.x = 2.6 + (1 - dq) * 14; mt.userData.roda.forEach(w => w.rotation.z = (1 - dq) * 30); }
         if (S.scene.userData.hujan) for (const dr of S.scene.userData.hujan) { if (dr.userData.y0 === undefined) dr.userData.y0 = dr.position.y; dr.position.y = ((dr.userData.y0 - t * 11) % 9 + 9) % 9; }
         S.camMove(k, cam, end);
+        let flashK = 0;
+        if (d.ledakan !== undefined) { const e = t - d.ledakan; const mb = S.scene.getObjectByName('mesinBoba');
+          if (mb && e > 0) { if (!S.scene.userData.asap) { S.scene.userData.asap = []; for (let i = 0; i < 10; i++) { const sm = new THREE.Mesh(new THREE.SphereGeometry(0.25, 10, 8), new THREE.MeshToonMaterial({ color: '#cfcfcf', transparent: true, opacity: 0.6 })); sm.userData.outlineParameters = { visible: false }; S.scene.add(sm); S.scene.userData.asap.push(sm); } }
+            S.scene.userData.asap.forEach((sm, i) => { const u = ((e * 0.6 + i * 0.1) % 1.6); sm.position.set(mb.position.x + Math.sin(i * 2.1) * 0.3 * u, mb.position.y + 0.8 + u * 1.6, mb.position.z + Math.cos(i * 1.7) * 0.2); sm.scale.setScalar(0.6 + u * 1.4); sm.material.opacity = 0.55 * (1 - u / 1.6); }); }
+          if (e > 0 && e < 0.35) flashK = 1 - e / 0.35; }
+        if (flashK > 0) { const g0 = d.grade || L.grade; const G = typeof g0 === 'string' ? { ...GRADES_REF[g0] } : { ...g0 }; G.overlayColor = [1, 0.95, 0.8]; G.overlayAmt = flashK * 0.8; return G; }
         const LY = S.scene.userData.layar;
         if (LY) { const x = LY.ctx; x.fillStyle = '#f5f7fa'; x.fillRect(0, 0, 512, 320); x.fillStyle = '#2b579a'; x.fillRect(0, 0, 512, 34);
           x.fillStyle = '#fff'; x.font = '700 18px Nunito'; x.textAlign = 'left'; x.fillText(d.layar === 'ai' ? 'Asisten AI' : 'Dokumen - Esai.docx', 14, 23);
@@ -336,7 +365,20 @@ export function autoShot(d) {
           x.translate(360, 560); x.rotate(-0.04); x.fillStyle = '#f7f1e1'; x.shadowColor = 'rgba(0,0,0,0.4)'; x.shadowBlur = 30; x.fillRect(-270, -230, 540, 460); x.shadowBlur = 0;
           x.fillStyle = '#2b2b5a'; x.font = 'italic 600 38px Nunito'; x.textAlign = 'center'; x.textBaseline = 'middle';
           const [k1, ...kr] = d.kertas.split('|').map(z => z.trim());
-          if (/^\d+!?$/.test(k1)) { x.fillStyle = '#d62828'; x.font = '900 170px Nunito'; x.fillText(k1.replace('!', ''), 0, -70); x.strokeStyle = '#d62828'; x.lineWidth = 8; x.beginPath(); x.ellipse(0, -70, 150, 105, -0.1, 0, Math.PI * 2); x.stroke();
+          const mT = k1.match(/^(\d+)°C$/);
+          if (mT) { // termometer/termostat: tabung kaca + cairan merah naik ke suhu + layar digital
+            const suhu = +mT[1], naik = Math.min(1, lt / 1.6), cur = 20 + (suhu - 20) * ease(naik);
+            x.restore(); x.save(); x.globalAlpha = Math.min(1, lt / 0.3); x.fillStyle = 'rgba(0,0,0,0.35)'; x.fillRect(0, 0, 720, 1280);
+            x.translate(360, 560); x.fillStyle = '#f4f6f8'; x.shadowColor = 'rgba(0,0,0,0.4)'; x.shadowBlur = 30; x.beginPath(); x.roundRect(-230, -380, 460, 700, 40); x.fill(); x.shadowBlur = 0;
+            const top = -300, bot = 170, val = v => bot - (v - 0) / 50 * (bot - top);
+            x.fillStyle = '#dfe6ea'; x.beginPath(); x.roundRect(-120, top - 20, 60, bot - top + 40, 30); x.fill(); x.beginPath(); x.arc(-90, bot + 55, 62, 0, Math.PI * 2); x.fill();
+            x.fillStyle = '#e63946'; x.beginPath(); x.arc(-90, bot + 55, 46, 0, Math.PI * 2); x.fill(); x.fillRect(-106, val(cur), 32, bot + 30 - val(cur));
+            x.fillStyle = '#334'; x.font = '700 22px Nunito'; x.textAlign = 'right'; x.textBaseline = 'middle';
+            for (let v = 0; v <= 50; v += 5) { const y = val(v); x.fillRect(-58, y - 1.5, v % 10 ? 14 : 24, 3); if (v % 10 === 0) x.fillText(v + '°', -130, y); }
+            x.fillStyle = '#1d2b36'; x.beginPath(); x.roundRect(-10, -120, 210, 120, 18); x.fill(); x.fillStyle = '#ff6b4a'; x.font = '900 72px Oswald'; x.textAlign = 'center'; x.fillText(Math.round(cur) + '°C', 95, -55);
+            x.fillStyle = '#2b2b5a'; x.font = '700 26px Nunito'; kr.forEach((l, i) => x.fillText(l, 95, 40 + i * 34)); x.restore(); return d.grade || L.grade;
+          }
+          if (/^(Rp)?[\d.,]+(!|°C)?$/.test(k1)) { x.fillStyle = '#d62828'; x.font = '900 170px Nunito'; x.fillText(k1.replace('!', ''), 0, -70); x.strokeStyle = '#d62828'; x.lineWidth = 8; x.beginPath(); x.ellipse(0, -70, 150, 105, -0.1, 0, Math.PI * 2); x.stroke();
             x.fillStyle = '#2b2b5a'; x.font = 'italic 600 34px Nunito'; kr.forEach((l, i) => x.fillText(l, 0, 95 + i * 46)); x.restore(); return d.grade || L.grade; }
           const words = d.kertas.split(' '); let line = '', y = -150; const lines = [];
           for (const w of words) { const t2 = line ? line + ' ' + w : w; if (x.measureText(t2).width > 460) { lines.push(line); line = w; } else line = t2; } lines.push(line);

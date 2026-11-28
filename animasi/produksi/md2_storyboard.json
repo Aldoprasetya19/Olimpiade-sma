@@ -1,0 +1,441 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 83.64,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "GABRIEL": {
+   "warna": "#FFD84A"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "HISSARI": {
+   "warna": "#C7A4FF"
+  },
+  "SERA": {
+   "warna": "#FFB3C7"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 83.64,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.54,
+     "teks": "Bagian 2."
+    },
+    {
+     "start": 1.54,
+     "end": 3.39,
+     "teks": "Panas 34 Derajat."
+    },
+    {
+     "start": 4.16,
+     "end": 5.32,
+     "teks": "Jumat pagi,"
+    },
+    {
+     "start": 5.32,
+     "end": 6.46,
+     "teks": "matahari bersinar"
+    },
+    {
+     "start": 6.46,
+     "end": 7.35,
+     "teks": "terik."
+    },
+    {
+     "start": 7.42,
+     "end": 8.28,
+     "teks": "Termometer di pos"
+    },
+    {
+     "start": 8.28,
+     "end": 9.46,
+     "teks": "satpam menunjukkan"
+    },
+    {
+     "start": 9.46,
+     "end": 11.19,
+     "teks": "34 derajat."
+    },
+    {
+     "start": 11.25,
+     "end": 12.02,
+     "teks": "Stan kelas 11"
+    },
+    {
+     "start": 12.02,
+     "end": 13.12,
+     "teks": "sudah siap."
+    },
+    {
+     "start": 13.12,
+     "end": 14.02,
+     "teks": "Ada teh,"
+    },
+    {
+     "start": 14.02,
+     "end": 14.64,
+     "teks": "gula,"
+    },
+    {
+     "start": 14.64,
+     "end": 15.66,
+     "teks": "dan 100 gelas"
+    },
+    {
+     "start": 15.66,
+     "end": 16.71,
+     "teks": "plastik."
+    },
+    {
+     "start": 16.82,
+     "end": 18.16,
+     "teks": "Tapi tidak ada"
+    },
+    {
+     "start": 18.16,
+     "end": 19.06,
+     "teks": "es."
+    },
+    {
+     "start": 19.06,
+     "end": 20.27,
+     "teks": "Satu butir pun."
+    },
+    {
+     "start": 21.44,
+     "end": 22.48,
+     "teks": "\"Es teh tanpa",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 22.48,
+     "end": 23.64,
+     "teks": "es itu namanya",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 23.64,
+     "end": 24.71,
+     "teks": "teh hangat.\"",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 24.94,
+     "end": 25.4,
+     "teks": "Di seberang"
+    },
+    {
+     "start": 25.4,
+     "end": 26.48,
+     "teks": "lapangan,"
+    },
+    {
+     "start": 26.48,
+     "end": 27.46,
+     "teks": "antrean Boba Sultan"
+    },
+    {
+     "start": 27.46,
+     "end": 28.26,
+     "teks": "sudah mengular"
+    },
+    {
+     "start": 28.26,
+     "end": 29.15,
+     "teks": "sampai gerbang."
+    },
+    {
+     "start": 29.68,
+     "end": 31.43,
+     "teks": "Aldo berpikir cepat."
+    },
+    {
+     "start": 31.44,
+     "end": 31.9,
+     "teks": "\"Nava,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 31.9,
+     "end": 32.5,
+     "teks": "Febri,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 32.5,
+     "end": 33.0,
+     "teks": "cari es batu",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 33.0,
+     "end": 33.74,
+     "teks": "ke pasar.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 33.74,
+     "end": 34.58,
+     "teks": "Pakai motor,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 34.58,
+     "end": 35.29,
+     "teks": "gas sekarang!\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 35.56,
+     "end": 36.5,
+     "teks": "Mereka langsung"
+    },
+    {
+     "start": 36.5,
+     "end": 37.25,
+     "teks": "berangkat."
+    },
+    {
+     "start": 37.4,
+     "end": 38.53,
+     "teks": "Sementara itu,"
+    },
+    {
+     "start": 38.53,
+     "end": 39.42,
+     "teks": "Hissari dan Misel"
+    },
+    {
+     "start": 39.42,
+     "end": 40.5,
+     "teks": "siaran langsung di"
+    },
+    {
+     "start": 40.5,
+     "end": 41.15,
+     "teks": "TikTok."
+    },
+    {
+     "start": 41.42,
+     "end": 42.08,
+     "teks": "\"Guys,",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 42.08,
+     "end": 42.78,
+     "teks": "stan es teh",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 42.78,
+     "end": 43.74,
+     "teks": "jumbo kelas 11",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 43.74,
+     "end": 45.32,
+     "teks": "buka jam 10!",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 45.32,
+     "end": 46.65,
+     "teks": "Ada live music!\"",
+     "siapa": "HISSARI"
+    },
+    {
+     "start": 46.96,
+     "end": 47.98,
+     "teks": "Kharan dan Justin"
+    },
+    {
+     "start": 47.98,
+     "end": 48.82,
+     "teks": "dari kelas 10"
+    },
+    {
+     "start": 48.82,
+     "end": 50.1,
+     "teks": "ikut membantu,"
+    },
+    {
+     "start": 50.1,
+     "end": 50.86,
+     "teks": "membagikan kertas"
+    },
+    {
+     "start": 50.86,
+     "end": 52.06,
+     "teks": "promosi ke setiap"
+    },
+    {
+     "start": 52.06,
+     "end": 52.91,
+     "teks": "kelas."
+    },
+    {
+     "start": 53.24,
+     "end": 55.04,
+     "teks": "Jam 10 lewat."
+    },
+    {
+     "start": 55.04,
+     "end": 55.82,
+     "teks": "Nava dan Febri"
+    },
+    {
+     "start": 55.82,
+     "end": 56.91,
+     "teks": "belum kembali."
+    },
+    {
+     "start": 57.28,
+     "end": 58.3,
+     "teks": "Stefan memainkan"
+    },
+    {
+     "start": 58.3,
+     "end": 59.22,
+     "teks": "gitar di depan"
+    },
+    {
+     "start": 59.22,
+     "end": 60.58,
+     "teks": "stan yang sepi."
+    },
+    {
+     "start": 60.58,
+     "end": 61.8,
+     "teks": "Lagu galau,"
+    },
+    {
+     "start": 61.8,
+     "end": 62.38,
+     "teks": "cocok dengan"
+    },
+    {
+     "start": 62.38,
+     "end": 63.31,
+     "teks": "suasana."
+    },
+    {
+     "start": 63.64,
+     "end": 64.52,
+     "teks": "Lalu,"
+    },
+    {
+     "start": 64.52,
+     "end": 65.06,
+     "teks": "dari arah stan"
+    },
+    {
+     "start": 65.06,
+     "end": 66.14,
+     "teks": "kelas 12,"
+    },
+    {
+     "start": 66.14,
+     "end": 66.96,
+     "teks": "terdengar bunyi"
+    },
+    {
+     "start": 66.96,
+     "end": 68.08,
+     "teks": "keras."
+    },
+    {
+     "start": 68.08,
+     "end": 68.82,
+     "teks": "BRAK!"
+    },
+    {
+     "start": 68.82,
+     "end": 69.94,
+     "teks": "Asap tipis keluar"
+    },
+    {
+     "start": 69.94,
+     "end": 71.07,
+     "teks": "dari mesin boba."
+    },
+    {
+     "start": 71.25,
+     "end": 72.26,
+     "teks": "Antrean panjang itu"
+    },
+    {
+     "start": 72.26,
+     "end": 73.47,
+     "teks": "mendadak berhenti."
+    },
+    {
+     "start": 73.73,
+     "end": 74.93,
+     "teks": "Sera berlari"
+    },
+    {
+     "start": 74.93,
+     "end": 75.12,
+     "teks": "menyeberang"
+    },
+    {
+     "start": 75.12,
+     "end": 75.98,
+     "teks": "lapangan,"
+    },
+    {
+     "start": 75.98,
+     "end": 76.62,
+     "teks": "langsung ke stan"
+    },
+    {
+     "start": 76.62,
+     "end": 77.49,
+     "teks": "kelas 11."
+    },
+    {
+     "start": 78.28,
+     "end": 79.08,
+     "teks": "\"Kalian punya gelas",
+     "siapa": "SERA"
+    },
+    {
+     "start": 79.08,
+     "end": 79.69,
+     "teks": "plastik?\"",
+     "siapa": "SERA"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "PANAS 34",
+  "baris2": "DERAJAT",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 80.34,
+  "end": 83.64,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Boba Ketemu Es Teh"
+ }
+}

@@ -2,6 +2,7 @@
 import * as THREE from 'three';
 import { toon, flat, noOutline } from './core.js';
 import { rbox } from './char.js';
+export const CAST_REF = {};
 import { PW, PH } from './phoneui.js';
 
 export function mesh(geo, mat, { cast = true, recv = true } = {}) { const m = new THREE.Mesh(geo, mat); m.castShadow = cast; m.receiveShadow = recv; return m; }
@@ -133,6 +134,27 @@ export function motor(color = '#c0392b', tua = false) { // menghadap +x; userDat
 }
 export function helm(color = '#2c3e50') { const g = new THREE.Group(); const h = mesh(new THREE.SphereGeometry(0.55, 18, 14), toon(color)); h.scale.set(1, 0.95, 1.05); g.add(h);
   const v = mesh(new THREE.BoxGeometry(0.7, 0.28, 0.1), toon('#111', { transparent: true, opacity: 0.85 })); v.position.set(0, 0.0, 0.5); g.add(v); return g; }
+export function mobil(color = '#e8e8e8') {
+  const g = new THREE.Group(); g.add(box(3.6, 0.9, 1.7, color, [0, 0.75, 0], { round: 0.15 })); g.add(box(2.0, 0.75, 1.6, color, [-0.2, 1.55, 0], { round: 0.15 }));
+  g.add(box(1.9, 0.6, 1.62, noOutline(flat('#2b3a4a')), [-0.2, 1.57, 0], { cast: false }));
+  for (const [x, z] of [[1.15, 0.85], [-1.15, 0.85], [1.15, -0.85], [-1.15, -0.85]]) { const w = mesh(new THREE.CylinderGeometry(0.36, 0.36, 0.25, 16), toon('#1d1d1d')); w.rotation.x = Math.PI / 2; w.position.set(x, 0.36, z); g.add(w); }
+  const lid = box(0.1, 0.8, 1.5, color, [-1.85, 1.6, 0], { rot: [0, 0, -1.0] }); g.add(lid); return g;
+}
+export function mesinBoba() { const g = new THREE.Group(); g.add(box(0.55, 0.7, 0.5, '#d7dde3', [0, 0.35, 0], { round: 0.05 })); g.add(box(0.35, 0.12, 0.35, '#e74c3c', [0, 0.78, 0])); g.add(box(0.2, 0.2, 0.05, noOutline(flat('#2ecc71')), [0, 0.45, 0.26])); return g; }
+export function coolerBox() { const g = new THREE.Group(); g.add(box(0.8, 0.5, 0.5, '#2d7dd2', [0, 0.25, 0], { round: 0.06 })); g.add(box(0.84, 0.1, 0.54, '#ffffff', [0, 0.52, 0], { round: 0.04 })); return g; }
+export function termos() { const g = new THREE.Group(); const c = mesh(new THREE.CylinderGeometry(0.18, 0.18, 0.55, 16), toon('#e74c3c')); c.position.y = 0.28; g.add(c); const l = mesh(new THREE.CylinderGeometry(0.12, 0.12, 0.1, 12), toon('#333')); l.position.y = 0.6; g.add(l); return g; }
+export function gitar() { const g = new THREE.Group(); const b = mesh(new THREE.CylinderGeometry(0.28, 0.28, 0.1, 20), toon('#c07a3a')); b.rotation.x = Math.PI / 2; g.add(b);
+  const b2 = mesh(new THREE.CylinderGeometry(0.21, 0.21, 0.1, 20), toon('#c07a3a')); b2.rotation.x = Math.PI / 2; b2.position.y = 0.3; g.add(b2);
+  const h = mesh(new THREE.CircleGeometry(0.08, 14), flat('#2b1a10')); h.position.set(0, 0.08, 0.051); g.add(h); g.add(box(0.07, 0.75, 0.05, '#5a3a22', [0, 0.75, 0])); return g; }
+export function mikrofon() { const g = new THREE.Group(); g.add(box(0.06, 0.25, 0.06, '#222', [0, 0, 0])); const h = mesh(new THREE.SphereGeometry(0.07, 10, 8), toon('#888')); h.position.y = 0.16; g.add(h); return g; }
+function stan(label, warna, x, o = {}) {
+  const g = new THREE.Group(); g.position.set(x, 0, -1.6);
+  g.add(box(3.2, 0.95, 0.9, '#f4f1ea', [0, 0.47, 0.7], { round: 0.03 })); g.add(box(3.25, 0.06, 0.95, warna, [0, 0.96, 0.7]));
+  for (const px of [-1.6, 1.6]) for (const pz of [-0.6, 1.1]) g.add(box(0.08, 2.9, 0.08, '#888', [px, 1.45, pz]));
+  g.add(box(3.6, 0.1, 2.0, warna, [0, 2.95, 0.25], { rot: [0.1, 0, 0] }));
+  const sp = textPlane(3.0, 0.6, (c, w, h) => { c.fillStyle = warna; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.55}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(label, w / 2, h / 2 + 3); });
+  sp.position.set(0, 2.55, 1.17); g.add(sp); return g;
+}
 export function bag(color = '#2d3a4a') { const g = new THREE.Group(); g.add(box(0.6, 0.7, 0.3, color, [0, 0.35, 0], { round: 0.1 })); return g; }
 
 function windowPane(w, h, glassColor, frame = '#f1f1f1') {
@@ -438,6 +460,43 @@ export const SETS = {
     scene.add(box(2.4, 1.6, 0.1, '#5a4030', [2.2, 1.8, -3.35])); for (let i = 0; i < 6; i++) scene.add(box(0.08, 0.5, 0.06, '#9aa0a6', [1.3 + i * 0.35, 1.9, -3.28]));
     scene.add(box(3.2, 0.12, 0.6, '#8b5a3c', [0, 0.45, -1.6])); for (const x of [-1.4, 1.4]) scene.add(box(0.1, 0.45, 0.5, '#333', [x, 0.22, -1.6]));
     if (o.motor5) for (let i = 0; i < 5; i++) { const m = motor(['#c0392b', '#2980b9', '#27ae60', '#f39c12', '#4a5a3a'][i], i === 4); m.position.set(-4 + i * 2, 0, 2.6); m.rotation.y = -Math.PI / 2; scene.add(m); }
+    return {};
+  },
+  bazar(scene, o = {}) { // lapangan Market Day: stan kelas 11 (kiri) & Boba Sultan kelas 12 (kanan)
+    scene.userData.clear = 0x222222; sky(scene, '#7fbde8', '#f4f0e0');
+    const g = mesh(new THREE.PlaneGeometry(80, 80), noOutline(toon('#cdb88f')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
+    lights(scene, { sky: '#fff6dd', ground: '#a58c5f', hemi: 1.7, sun: '#fff0c0', sunI: 2.0, sunPos: [3, 12, 6], shadowSize: 16 });
+    scene.add(box(30, 6, 4, '#efe3c6', [0, 3, -12])); for (let i = -6; i <= 6; i++) { const w = windowPane(1.4, 1.2, '#9fc7dd'); w.position.set(i * 2.2, 3.4, -9.95); scene.add(w); }
+    const s11 = stan(o.gabung ? 'ES TEH BOBA SULTAN JUMBO' : 'ES TEH JUMBO 11', '#2e8b57', -2.6); scene.add(s11);
+    const s12 = stan('BOBA SULTAN', '#8e44ad', 2.6); scene.add(s12);
+    const mb = mesinBoba(); mb.position.set(2.0, 0.99, -0.9); mb.name = 'mesinBoba'; scene.add(mb);
+    const tm = termos(); tm.position.set(-3.6, 0.99, -0.9); scene.add(tm);
+    for (let i = 0; i < 6; i++) scene.add(box(0.14, 0.16, 0.14, noOutline(toon('#eef6fb', { transparent: true, opacity: 0.8 })), [-2.7 + (i % 3) * 0.18, 1.07 + Math.floor(i / 3) * 0.16, -0.85]));
+    if (o.cooler !== false) for (const x of [3.4, 4.1]) { const cb = coolerBox(); cb.position.set(x, 0, -0.4); scene.add(cb); }
+    if (o.gabung) { const sp = textPlane(4.6, 0.8, (c, w, h) => { c.fillStyle = '#fff'; c.fillRect(0, 0, w, h); c.strokeStyle = '#111'; c.lineWidth = 6; c.strokeRect(6, 6, w - 12, h - 12); c.fillStyle = '#111'; c.font = `bold ${h * 0.42}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('ES TEH BOBA SULTAN JUMBO · Rp7.000', w / 2, h / 2 + 3); });
+      sp.position.set(0, 3.25, -0.3); scene.add(sp); }
+    // pos satpam + termometer
+    const pos = new THREE.Group(); pos.add(box(1.8, 2.6, 1.6, '#d9d2c3', [0, 1.3, 0], { round: 0.03 })); pos.add(box(2.1, 0.15, 1.9, '#9b3d33', [0, 2.7, 0]));
+    const th = textPlane(0.35, 0.8, (c, w, h) => { c.fillStyle = '#fff'; c.fillRect(0, 0, w, h); c.fillStyle = '#e74c3c'; c.fillRect(w * 0.4, h * 0.15, w * 0.2, h * 0.65); c.beginPath(); c.arc(w / 2, h * 0.85, w * 0.22, 0, Math.PI * 2); c.fill(); });
+    th.position.set(-0.4, 1.6, 0.81); pos.add(th); pos.position.set(-8, 0, -4); scene.add(pos);
+    // antrean di depan stan
+    const nA = o.antre ?? 0;
+    for (let i = 0; i < nA; i++) { const target = o.antreDi === 11 ? -2.6 : o.antreDi === 0 ? 0 : 2.6; const c = (i % 2 ? CAST_REF.siswi : CAST_REF.siswa)(i * 3 + 2, { name: null }); c.root.position.set(target + Math.sin(i * 1.3) * 0.25, 0, 0.6 + i * 0.85); c.root.rotation.y = Math.PI; c.applyPose({}); c.setFace(i % 3 ? 'netral' : 'senyum', i); scene.add(c.root); }
+    if (o.panggung) { scene.add(box(5, 0.8, 3, '#7a5a3a', [0, 0.4, -6.5])); const sp = textPlane(4.5, 0.7, (c, w, h) => { c.fillStyle = '#1f4e79'; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.5}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('MARKET DAY SMAN 1 NYUATAN', w / 2, h / 2 + 3); }); sp.position.set(0, 3.2, -7.9); scene.add(sp); }
+    if (o.motorEs) { const m = motor('#2980b9'); m.position.set(-6.0, 0, 1.6); m.name = 'motorEs'; scene.add(m); for (let i = 0; i < 5; i++) { const b = mesh(new THREE.SphereGeometry(0.2, 10, 8), noOutline(toon('#e8f6ff', { transparent: true, opacity: 0.85 }))); b.position.set(-6.4 + i * 0.25, 1.0 - (i % 2) * 0.15, 1.6 + (i % 2 ? 0.25 : -0.25)); scene.add(b); } }
+    return {};
+  },
+  parkiran12(scene, o = {}) {
+    scene.userData.clear = 0x222222; sky(scene, '#8fc3ea', '#eef4f2');
+    const g = mesh(new THREE.PlaneGeometry(60, 60), noOutline(toon('#a9a49a')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
+    lights(scene, { sky: '#eaf5ff', ground: '#8f8a80', hemi: 1.6, sunPos: [6, 10, 6], shadowSize: 12 });
+    scene.add(box(16, 4.5, 0.4, '#efe3c6', [0, 2.25, -4])); scene.add(box(16, 0.8, 0.42, '#3f8a5c', [0, 0.4, -3.99]));
+    const dr = door('#7b5236'); dr.position.set(-1.5, 0, -3.78); scene.add(dr);
+    const nm = textPlane(1.6, 0.4, (c, w, h) => { c.fillStyle = '#1f5f8b'; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.6}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('XII IPS 1', w / 2, h / 2 + 2); });
+    nm.position.set(-1.5, 3.3, -3.77); scene.add(nm);
+    const mb = mobil(); mb.position.set(4.2, 0, -0.6); scene.add(mb); const mbb = mesinBoba(); mbb.position.set(1.9, 0, -0.1); scene.add(mbb);
+    const sp = textPlane(3.2, 0.8, (c, w, h) => { c.fillStyle = '#8e44ad'; c.fillRect(0, 0, w, h); c.fillStyle = '#ffe066'; c.font = `bold ${h * 0.55}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('BOBA SULTAN', w / 2, h / 2 + 3); });
+    sp.position.set(-0.3, 1.65, -1.6); scene.add(sp);
     return {};
   },
   kosong(scene, o = {}) { // studio polos untuk kenangan / insert

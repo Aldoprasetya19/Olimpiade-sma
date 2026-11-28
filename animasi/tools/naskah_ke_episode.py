@@ -197,14 +197,14 @@ def main():
     shots, caps, karakter, ci = [], [], {}, 0
     talk_all = [[round(L['start'], 2), round(L['end'], 2), key(L['who'])] for L in lines if L['who'].strip().upper() != 'NARATOR']
     spoken = [L for L in lines if (L['cam'] or '') != 'akhir']
-    last_subj, last_scene, prev_acts, state = None, None, [], {}
+    last_subj, last_scene, prev_acts, state, sfx_cues = None, None, [], {}, []
     for n, L in enumerate(spoken):
         who = L['who'].strip().upper(); sc = L['scene'] or {'loc': 'kelas', 'cast': {}, 'expr': {}}
         castnames = [v.split('#')[0] for v in sc['cast'].values()]
         expr, pose, flash, grade = sc['expr'], {}, False, sc.get('grade')
         for o in [x.strip() for x in (L['ex'] or '').split(',') if x.strip()]:
             if o == 'flash': flash = True
-            elif o in ('oleng', 'tanpa'): pass
+            elif o in ('oleng', 'tanpa', 'ceria') or o.startswith(('sfx=', 'ledakan')): pass
             elif o.startswith('grade='): grade = o[6:]
             elif '=' in o: k, v = o.split('='); expr[k.strip().lower()] = ex(v)
             elif ':' in o: k, v = o.split(':'); pose[k.strip().lower()] = v.strip()
@@ -279,6 +279,17 @@ def main():
         if sc['loc'].startswith('jalan'): d['helm'] = [v.split('#')[0] for v in sc['cast'].values()]  # semua yang sedang dalam perjalanan motor memakai helm
         if sc['loc'] == 'gubuk' and any(v == 'lepasHelm' or v == 'datangMotor' for v in pose.values()): d['helm'] = [k_ for k_, v in pose.items() if v in ('lepasHelm', 'datangMotor')]
         if who == 'NARATOR' and re.search(r'menel[e]?pon|telepon', L['txt'].lower()): state['_telepon'] = sc
+        def waktu_kata(kata):
+            for (tk, tm) in L['words']:
+                if tk[1].startswith(norm(kata)): return round(tm[0], 2)
+            return round(L['start'], 2)
+        if 'ceria' in flags: d['ceria'] = True
+        for fl in flags:
+            if fl.startswith('ledakan'): d['ledakan'] = waktu_kata(fl.split('@')[1]) if '@' in fl else round(L['start'], 2)
+            if fl.startswith('sfx='):
+                for j, item in enumerate(fl[4:].split('+')):
+                    nm_, _, kata = item.partition('@')
+                    sfx_cues.append({'nama': nm_.strip(), 't': waktu_kata(kata) if kata else round(L['start'] + j * 0.35, 2)})
         # --- mimik dari kata sifat (tidak menimpa ekspresi yang ditulis eksplisit)
         eksplisit = {x.split('=')[0].strip().lower() for x in (L['ex'] or '').split(',') if '=' in x}
         if who == 'NARATOR':
@@ -375,6 +386,7 @@ def main():
         sb['bersambung'] = {'start': round(akhir, 2), 'end': duration, 'judul': ak[0], 'sub': ak[1] if len(ak) > 1 else ''}
     json.dump(sb, open(os.path.join(prod, f'{a.ep}_storyboard.json'), 'w'), ensure_ascii=False, indent=1)
     open(os.path.join(prod, f'{a.ep}.ass'), 'w').write(buat_subtitle.build(sb))
+    json.dump(sfx_cues, open(os.path.join(prod, f'{a.ep}_sfx.json'), 'w'), ensure_ascii=False, indent=1)
     print(f'{len(shots)} shot, {len(caps)} subtitle, durasi {duration}s -> {js}')
     cocok = sum(1 for v in sm.get_matching_blocks() for _ in range(v.size))
     print(f'kata naskah cocok dengan rekaman: {cocok}/{len(nk)}' + ('  (periksa naskah vs rekaman!)' if cocok < 0.7 * len(nk) else ''))

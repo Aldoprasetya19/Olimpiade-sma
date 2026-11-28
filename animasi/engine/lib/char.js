@@ -309,7 +309,7 @@ export const POSES = {
   bonceng: { hipsY: 0.5, legR: -1.2, kneeR: 1.3, legL: -1.2, kneeL: 1.3, shR: [-0.5, 0, 0.1], elR: -0.9, shL: [-0.5, 0, -0.1], elL: -0.9 },
   pinggang: { shR: [0.5, 0, -0.5], elR: -1.9, shL: [0.5, 0, 0.5], elL: -1.9, torsoX: -0.1 },
   minum: { shR: [-0.6, 0, 0.35], elR: -1.6, headX: 0.05 },
-  gitar: { hipsY: 0.5, legR: -1.57, kneeR: 1.57, legL: -1.57, kneeL: 1.57, shR: [-0.6, 0, 0.5], elR: -1.2, shL: [-1.0, 0, -0.5], elL: -0.5, headX: 0.25 },
+  gitar: { hipsY: 0.5, legR: -1.57, kneeR: 1.57, legL: -1.57, kneeL: 1.57, shR: [-0.55, 0, 0.5], elR: -1.25, shL: [-1.2, 0, -0.05], elL: -0.75, headX: 0.25 },
   mic: { shR: [-0.6, 0, 0.45], elR: -2.1, shL: [-0.3, 0, -0.6], elL: -0.6, headX: -0.15 },
   sorak: { shR: [-2.9, 0, -0.3], elR: -0.2, shL: [-2.9, 0, 0.3], elL: -0.2, headX: -0.25 },
   tepukBahu: { shR: [-1.5, 0, 0.6], elR: -0.5 },

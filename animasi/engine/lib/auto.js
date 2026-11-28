@@ -2,7 +2,7 @@
 // Dipakai oleh episode hasil tools/naskah_ke_episode.py. Lihat engine/README.md bagian "Jalur hemat".
 import * as THREE from 'three';
 import { CAST, santai, TOKOH } from './cast.js';
-import { SETS, phone, piala, kalengCat, helm, glass, gitar, mikrofon } from './sets.js';
+import { SETS, phone, piala, kalengCat, helm, glass, gitar, mikrofon, pasangGitar } from './sets.js';
 import { hud as HUD } from './core.js';
 import { POSES, combine, addPose, idle, mixPose, walkPose } from './char.js';
 import { ease, lerp, GRADES as GRADES_REF } from './core.js';
@@ -223,7 +223,7 @@ export function autoShot(d) {
         }
         const c = castMake(key, d.loc); const name = key.split('#')[0];
         S.add(c, [s[0], 0, s[1]], s[2]); chars[name] = { c, sit: s[3] }; if (s[4]) c.root.position.y = s[4];
-        if (d.pose?.[name] === 'gitar') { const gt = gitar(); gt.position.set(0.15, 0.55, 0.35); gt.rotation.set(0, 0, -1.1); c.torso.add(gt); }
+        if (d.pose?.[name] === 'gitar') { pasangGitar(c); }
         if (d.pose?.[name] === 'mic') { const mc = mikrofon(); c.handOf(-1).add(mc); mc.position.set(0, -0.1, 0.1); }
         if (d.pose?.[name] === 'ringlight') { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI); const rl = new THREE.Mesh(new THREE.TorusGeometry(0.2, 0.03, 8, 20), new THREE.MeshBasicMaterial({ color: '#fffbe0' })); rl.position.set(0, 0.32, 0); ph.add(rl); }
         if (d.pose?.[name] === 'selebaran') { const kp = new THREE.Mesh(new THREE.PlaneGeometry(0.3, 0.4), new THREE.MeshBasicMaterial({ color: '#ffe066', side: THREE.DoubleSide })); c.handOf(-1).add(kp); kp.position.set(0, -0.2, 0.1); }

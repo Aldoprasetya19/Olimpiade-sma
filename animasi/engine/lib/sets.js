@@ -1,7 +1,7 @@
 // Properti & lokasi. Semua lokasi: lantai y=0, karakter tinggi ±2.6 unit.
 import * as THREE from 'three';
 import { toon, flat, noOutline } from './core.js';
-import { rbox } from './char.js';
+import { rbox, POSES } from './char.js';
 export const CAST_REF = {};
 import { PW, PH } from './phoneui.js';
 
@@ -143,9 +143,20 @@ export function mobil(color = '#e8e8e8') {
 export function mesinBoba() { const g = new THREE.Group(); g.add(box(0.55, 0.7, 0.5, '#d7dde3', [0, 0.35, 0], { round: 0.05 })); g.add(box(0.35, 0.12, 0.35, '#e74c3c', [0, 0.78, 0])); g.add(box(0.2, 0.2, 0.05, noOutline(flat('#2ecc71')), [0, 0.45, 0.26])); return g; }
 export function coolerBox() { const g = new THREE.Group(); g.add(box(0.8, 0.5, 0.5, '#2d7dd2', [0, 0.25, 0], { round: 0.06 })); g.add(box(0.84, 0.1, 0.54, '#ffffff', [0, 0.52, 0], { round: 0.04 })); return g; }
 export function termos() { const g = new THREE.Group(); const c = mesh(new THREE.CylinderGeometry(0.18, 0.18, 0.55, 16), toon('#e74c3c')); c.position.y = 0.28; g.add(c); const l = mesh(new THREE.CylinderGeometry(0.12, 0.12, 0.1, 12), toon('#333')); l.position.y = 0.6; g.add(l); return g; }
-export function gitar() { const g = new THREE.Group(); const b = mesh(new THREE.CylinderGeometry(0.28, 0.28, 0.1, 20), toon('#c07a3a')); b.rotation.x = Math.PI / 2; g.add(b);
-  const b2 = mesh(new THREE.CylinderGeometry(0.21, 0.21, 0.1, 20), toon('#c07a3a')); b2.rotation.x = Math.PI / 2; b2.position.y = 0.3; g.add(b2);
-  const h = mesh(new THREE.CircleGeometry(0.08, 14), flat('#2b1a10')); h.position.set(0, 0.08, 0.051); g.add(h); g.add(box(0.07, 0.75, 0.05, '#5a3a22', [0, 0.75, 0])); return g; }
+export function gitar() { const g = new THREE.Group(); const b = mesh(new THREE.CylinderGeometry(0.28, 0.28, 0.1, 20), toon('#7b3f1a')); b.rotation.x = Math.PI / 2; g.add(b);
+  const b2 = mesh(new THREE.CylinderGeometry(0.21, 0.21, 0.1, 20), toon('#7b3f1a')); b2.rotation.x = Math.PI / 2; b2.position.y = 0.3; g.add(b2);
+  const h = mesh(new THREE.CircleGeometry(0.08, 14), flat('#2b1a10')); h.position.set(0, 0.08, 0.051); g.add(h); g.add(box(0.07, 0.75, 0.05, '#3a2414', [0, 0.75, 0])); g.add(box(0.11, 0.18, 0.05, '#2a1a0e', [0, 1.2, 0])); return g; }
+// gitar dipasang mengikuti kedua tangan pose gitar: badan di tangan kanan (petik), leher menuju tangan kiri
+export function pasangGitar(c, pose = POSES.gitar) {
+  const g = gitar(); c.torso.add(g); c.applyPose(pose); c.root.updateMatrixWorld(true);
+  const R = c.torso.worldToLocal(c.handOf(-1).getWorldPosition(new THREE.Vector3())), L = c.torso.worldToLocal(c.handOf(1).getWorldPosition(new THREE.Vector3()));
+  const y = L.clone().sub(R); const len = y.length(); y.normalize();
+  const z = new THREE.Vector3(0, 0, 1); z.sub(y.clone().multiplyScalar(z.dot(y))).normalize(); const x = new THREE.Vector3().crossVectors(y, z);
+  g.quaternion.setFromRotationMatrix(new THREE.Matrix4().makeBasis(x, y, z));
+  g.scale.setScalar(Math.min(1.35, Math.max(0.7, len / 0.95))); // tangan kiri jatuh di leher (±0,95 dari pusat badan gitar)
+  g.position.copy(R).add(z.clone().multiplyScalar(-0.12)).add(y.clone().multiplyScalar(-0.05 * g.scale.x));
+  return g;
+}
 export function mikrofon() { const g = new THREE.Group(); g.add(box(0.06, 0.25, 0.06, '#222', [0, 0, 0])); const h = mesh(new THREE.SphereGeometry(0.07, 10, 8), toon('#888')); h.position.y = 0.16; g.add(h); return g; }
 function stan(label, warna, x, o = {}) {
   const g = new THREE.Group(); g.position.set(x, 0, -1.6);
@@ -157,7 +168,11 @@ function stan(label, warna, x, o = {}) {
 }
 export function bus(color = '#1f6fb2') { const g = new THREE.Group();
   g.add(box(10, 3.0, 2.6, color, [0, 1.9, 0], { round: 0.25 })); g.add(box(9.6, 1.0, 2.62, noOutline(flat('#2b3a4a')), [0, 2.4, 0], { cast: false }));
-  g.add(box(0.1, 2.0, 1.0, '#ddd', [4.96, 1.5, 0.7], { })); const pintu = box(0.08, 2.0, 0.9, '#bbb', [4.0, 1.5, 1.32]); pintu.name = 'pintuBus'; g.add(pintu);
+  g.add(box(0.1, 2.0, 1.0, '#ddd', [4.96, 1.5, 0.7], { }));
+  g.add(box(0.95, 2.05, 0.02, noOutline(flat('#e9e3d6')), [4.0, 1.42, 1.312], { cast: false })); // ambang pintu terang (interior)
+  for (let i = 0; i < 2; i++) g.add(box(0.95, 0.12, 0.3, '#9a9a9a', [4.0, 0.5 + i * 0.28, 1.2 + (1 - i) * 0.25]));
+  const pintu = new THREE.Group(); pintu.name = 'pintuBus'; pintu.position.set(4.0, 1.5, 1.36); g.add(pintu);
+  pintu.add(box(0.92, 2.0, 0.05, '#f1f1ee', [0, 0, 0])); pintu.add(box(0.7, 0.8, 0.01, noOutline(flat('#9fc7dd')), [0, 0.45, 0.03], { cast: false }));
   for (const x of [-3.5, 3.2]) for (const z of [-1.3, 1.3]) { const w = mesh(new THREE.CylinderGeometry(0.5, 0.5, 0.35, 16), toon('#1d1d1d')); w.rotation.x = Math.PI / 2; w.position.set(x, 0.5, z); g.add(w); }
   const tx = textPlane(4, 0.5, (c, w, h) => { c.fillStyle = color; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.6}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('PARIWISATA NYUATAN', w / 2, h / 2 + 2); });
   tx.position.set(-0.5, 1.2, 1.32); g.add(tx); return g; }

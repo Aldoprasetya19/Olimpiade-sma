@@ -2,7 +2,7 @@
 // Bagian: Intro 0–16 | Verse 1 (bus) 16–48 | Chorus 1 (pantai) 48–80 | Verse 2 + Bridge (kemah senja) 80–144 | Outro (api unggun) 144–akhir
 import * as THREE from 'three';
 import { murid, santai, CAST } from '../lib/cast.js';
-import { SETS, glass, gitar, phone, bus, desk } from '../lib/sets.js';
+import { SETS, glass, phone, bus, desk, pasangGitar } from '../lib/sets.js';
 import { POSES, combine, walkPose } from '../lib/char.js';
 import { ease, easeIn, seg, lerp, clamp, mixGrade, W, H } from '../lib/core.js';
 
@@ -18,7 +18,6 @@ const angguk = (t, sd = 0, a = 0.06) => ({ headX: Math.sin(t * Math.PI * 2 * BEA
 const DUDUK_TANAH = { hipsY: 0.24, legR: -1.45, kneeR: 0.35, legL: -1.45, kneeL: 0.35, torsoX: -0.05 };
 const RANGKUL = { shR: [-0.35, 0, -1.3], elR: -0.5, shL: [-0.35, 0, 1.3], elL: -0.5 };
 const PEGANG = { shR: [-0.15, 0, -0.55], elR: -0.15, shL: [-0.15, 0, 0.55], elL: -0.15 };
-function pasangGitar(c) { const g = gitar(); g.position.set(0.15, 0.55, 0.35); g.rotation.set(0, 0, -1.1); c.torso.add(g); return g; }
 function pegang(c, obj, p = [0, -0.18, 0.06], r = [0, 0, 0]) { c.handOf(-1).add(obj); obj.position.set(...p); obj.rotation.set(...r); return obj; }
 function botol() { const g = new THREE.Group(); const b = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.3, 12), new THREE.MeshToonMaterial({ color: '#7fc8f0', transparent: true, opacity: 0.85 })); g.add(b);
   const tp = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.06, 10), new THREE.MeshToonMaterial({ color: '#1f6fb2' })); tp.position.y = 0.18; g.add(tp); return g; }

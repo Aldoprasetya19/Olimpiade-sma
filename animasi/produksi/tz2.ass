@@ -1,0 +1,38 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1280
+PlayResY: 720
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Lirik,Oswald,32,&H00FFFFFF,&H0030C2F2,&H00000000,&H64000000,-1,0,0,0,100,100,1,0,1,2,0,2,40,40,26,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:07.90,0:00:12.90,Lirik,,0,0,0,,{\fad(250,250)}Hanya di kamar, pintu terkunci rapat
+Dialogue: 0,0:00:12.90,0:00:17.20,Lirik,,0,0,0,,{\fad(250,250)}Menyimpan nada yang tak pernah sempat
+Dialogue: 0,0:00:17.30,0:00:21.60,Lirik,,0,0,0,,{\fad(250,250)}Kini di panggung, kaki terasa berat
+Dialogue: 0,0:00:21.60,0:00:26.00,Lirik,,0,0,0,,{\fad(250,250)}Mikrofon ini, terasa sangat hebat
+Dialogue: 0,0:00:26.10,0:00:30.10,Lirik,,0,0,0,,{\fad(250,250)}Febri menyentuh gitar, Stefan menekan bass
+Dialogue: 0,0:00:30.10,0:00:35.10,Lirik,,0,0,0,,{\fad(250,250)}Jantungku berdebar, napas terasa lepas
+Dialogue: 0,0:00:35.60,0:00:40.00,Lirik,,0,0,0,,{\fad(250,250)}Lalu cahaya itu, menyala di depanku
+Dialogue: 0,0:00:40.00,0:00:44.30,Lirik,,0,0,0,,{\fad(250,250)}Ratusan bintang, di tengah malam syahdu
+Dialogue: 0,0:00:44.40,0:00:48.60,Lirik,,0,0,0,,{\fad(250,250)}Bukan lagi takut, ku temukan suaraku
+Dialogue: 0,0:00:48.60,0:00:53.60,Lirik,,0,0,0,,{\fad(250,250)}Bernyanyi bersama, kalian di sampingku
+Dialogue: 0,0:01:09.00,0:01:14.00,Lirik,,0,0,0,,{\fad(250,250)}Bernyanyi bersama, kalian di sampingku
+Dialogue: 0,0:01:14.00,0:01:18.40,Lirik,,0,0,0,,{\fad(250,250)}Suara pertama, pecah di tengah napas
+Dialogue: 0,0:01:18.50,0:01:25.80,Lirik,,0,0,0,,{\fad(250,250)}Tawa di belakang, membuatku ingin lepas
+Dialogue: 0,0:01:27.30,0:01:32.30,Lirik,,0,0,0,,{\fad(250,250)}Lalu cahaya itu, menyala di depanku
+Dialogue: 0,0:01:32.30,0:01:36.70,Lirik,,0,0,0,,{\fad(250,250)}Ratusan bintang, di tengah malam syahdu
+Dialogue: 0,0:01:36.80,0:01:41.00,Lirik,,0,0,0,,{\fad(250,250)}Bukan lagi takut, ku temukan suaraku
+Dialogue: 0,0:01:41.00,0:01:48.20,Lirik,,0,0,0,,{\fad(250,250)}Bernyanyi bersama, kalian di sampingku
+Dialogue: 0,0:01:48.30,0:01:53.40,Lirik,,0,0,0,,{\fad(250,250)}Tak ada lagi ragu, di balik rasa takut
+Dialogue: 0,0:01:53.40,0:01:59.70,Lirik,,0,0,0,,{\fad(250,250)}Tetaplah bernyanyi, meski nyawa terasa surut
+Dialogue: 0,0:02:00.30,0:02:05.10,Lirik,,0,0,0,,{\fad(250,250)}Lalu cahaya itu, menyala di depanku
+Dialogue: 0,0:02:05.10,0:02:09.50,Lirik,,0,0,0,,{\fad(250,250)}Ratusan bintang, di tengah malam syahdu
+Dialogue: 0,0:02:09.60,0:02:13.80,Lirik,,0,0,0,,{\fad(250,250)}Bukan lagi takut, ku temukan suaraku
+Dialogue: 0,0:02:13.80,0:02:18.40,Lirik,,0,0,0,,{\fad(250,250)}Bernyanyi bersama, kalian di sampingku
+Dialogue: 0,0:02:18.50,0:02:26.60,Lirik,,0,0,0,,{\fad(250,250)}Tepuk tangan ini, untuk kita semua
+Dialogue: 0,0:02:26.60,0:02:35.00,Lirik,,0,0,0,,{\fad(250,250)}Lagu sudah usai, tapi mimpi baru saja...
+Dialogue: 0,0:02:35.10,0:02:43.80,Lirik,,0,0,0,,{\fad(250,250)}Baru saja... terbuka.

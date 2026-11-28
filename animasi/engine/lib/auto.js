@@ -2,7 +2,7 @@
 // Dipakai oleh episode hasil tools/naskah_ke_episode.py. Lihat engine/README.md bagian "Jalur hemat".
 import * as THREE from 'three';
 import { CAST, santai, TOKOH } from './cast.js';
-import { SETS, phone, piala, kalengCat, helm, glass, gitar, mikrofon } from './sets.js';
+import { SETS, phone, piala, kalengCat, helm, glass, gitar, mikrofon, pasangGitar, gitarListrik, stik, ampli, syal } from './sets.js';
 import { hud as HUD } from './core.js';
 import { POSES, combine, addPose, idle, mixPose, walkPose } from './char.js';
 import { ease, lerp, GRADES as GRADES_REF } from './core.js';
@@ -59,13 +59,27 @@ export const LOKASI = {
   lapangan: { set: 'lapangan', setOpts: { spanduk: true }, grade: 'pagi', bounds: [-12, 12, -6, 12], center: [0, -1.5], kerumunan: true, slot: { kiri: [-0.9, 1.2, Math.PI / 2, false], kanan: [0.9, 1.2, -Math.PI / 2, false] } },
   koridor: { set: 'sekolahTangga', grade: 'pagi', bounds: [-7.6, 7.6, -5.6, 5.6],
     slot: { kiri: [-0.2, 1.6, Math.PI / 2, false], kanan: [1.6, 1.6, -Math.PI / 2, false], belakang1: [0.2, 0.1, 0.15, false], belakang2: [1.3, 0.0, -0.15, false] } },
+  studio: { set: 'studio', grade: 'hangat', bounds: [-4.6, 4.6, -4.6, 4.6], center: [0, -1.0],
+    lebarCam: { pos: [0.6, 2.7, 4.5], look: [-0.2, 1.3, -1.6], fov: 64 }, masukCam: { pos: [-1.2, 2.3, 4.3], look: [3.2, 1.5, 0.6], fov: 54 },
+    slot: { vokal: [0, -0.35, 0, false], gitaris: [-1.7, -1.2, 0.3, false], bassis: [1.3, -1.4, -0.25, false], keyboardis: [2.85, -2.78, -0.25, false], drummer: [0, -3.75, 0, true],
+      sudut: [-3.3, 2.0, 2.31, false], depanSudut: [-2.2, 1.0, -0.8, false], dekatSudut: [-1.9, 2.4, -1.9, false] } },
+  panggung: { set: 'panggung', grade: 'panggung', bounds: [-12, 12, -8.8, 14], center: [0, -4.6],
+    lebarCam: { pos: [0.8, 3.0, 5.0], look: [0, 2.2, -5.0], fov: 52 },
+    slot: { vokal: [0, -4.25, 0, false, 1.0], gitaris: [-2.6, -5.0, 0.25, false, 1.0], bassis: [2.0, -5.2, -0.2, false, 1.0], keyboardis: [3.58, -6.17, -0.3, false, 1.0], drummer: [0, -7.85, 0, true, 1.0],
+      sisiPanggung: [-6.2, -4.0, Math.PI / 2, false, 1.0], ...Object.fromEntries([...Array(12)].map((_, i) => ['d' + (i + 1), [-3.3 + (i % 6) * 1.3 + (i > 5 ? 0.6 : 0), 0.9 + (i > 5 ? 1.0 : 0), Math.PI, false]])) } },
 };
+LOKASI.panggungSorot = { ...LOKASI.panggung, setOpts: { sorot: true }, grade: 'sorot' };
+LOKASI.panggungGelap = { ...LOKASI.panggung, setOpts: { sorot: true, senter: 0.04 }, grade: 'sorot' };
+LOKASI.panggungSenter = { ...LOKASI.panggung, setOpts: { sorot: true, senter: 0.85 }, grade: 'sorot' };
+LOKASI.belakangPanggung = { set: 'belakangPanggung', grade: 'panggung', bounds: [-5.5, 6, -2.4, 14], center: [0.5, 0.5],
+  slot: { tunggu: [0.6, -1.0, 0.25, false], kiri: [-0.6, -0.6, Math.PI / 2, false], kanan: [0.8, -0.6, -Math.PI / 2, false], menuju: [0.6, 6.0, 0, false], penahan: [-0.4, 5.0, 0.5, false], pelukA: [-0.2, -0.6, Math.PI / 2, false], pelukB: [0.52, -0.6, -Math.PI / 2, false], sampingA: [-0.3, -0.6, 0.12, false], sampingB: [0.5, -0.65, -0.12, false] } };
 
 const blocked = (L, x, z) => (L.blocks || []).some(([a, b, c, d]) => x > a && x < b && z > c && z < d);
 const headY = (sit) => (sit ? 1.73 : 1.98);
 const PEREMPUAN = []; // tokoh tetap ada di TOKOH (cast.js); nama asing dianggap figuran laki-laki
-const SEKOLAH = ['bazar', 'bazarSepi', 'bazarGabung', 'bazarMotor', 'bazarPanggung', 'parkiran12', 'kelas', 'koridor', 'kantin', 'lobi', 'lobiPiala', 'gudang', 'gudangKejutan', 'gerbang', 'gerbangSore', 'lapangan', 'ruangGuru'];
+const SEKOLAH = ['studio', 'panggung', 'panggungSorot', 'panggungGelap', 'panggungSenter', 'belakangPanggung', 'bazar', 'bazarSepi', 'bazarGabung', 'bazarMotor', 'bazarPanggung', 'parkiran12', 'kelas', 'koridor', 'kantin', 'lobi', 'lobiPiala', 'gudang', 'gudangKejutan', 'gerbang', 'gerbangSore', 'lapangan', 'ruangGuru'];
 const castMake = (key, loc) => {
+  if (/#syal$/.test(key)) { const c = castMake(key.replace(/#syal$/, ''), loc); syal(c); return c; }
   const [k, opt] = key.split('#'); // mis. "dimas#perban"
   if (loc && !SEKOLAH.includes(loc) && TOKOH[k] && opt !== 'seragam') { const o = { ...santai(k), ...(opt === 'jas' ? { jacket: '#e0b020', sleeve: '#e0b020', longSleeve: true } : {}) }; return CAST[k](o); }
   const o = opt === 'jas' ? { jacket: '#e0b020', sleeve: '#e0b020', longSleeve: true } : opt === 'perban' ? { shortLeg: 1 } : opt === 'rumah' ? { shirt: '#2f4b7c', pants: '#3b3b44', badge: false, name: null, collar: false, sleeve: '#2f4b7c' } : {};
@@ -153,6 +167,7 @@ function kertasProp() {
 function makeProp(kind) {
   if (kind === 'piala') { const g = piala(); g.userData.off = [[0.15, -0.05, 0.12], [Math.PI / 2 - 0.4, 0, 0]]; return g; }
   if (kind === 'cat') { const g = kalengCat(); g.userData.off = [[0.05, -0.12, 0.1], [Math.PI / 2 - 0.4, 0, 0]]; return g; }
+  if (kind === 'mic') { const g = mikrofon(); g.userData.off = [[0.08, -0.05, 0.12], [0, 0, 0.5]]; return g; }
   if (kind === 'hp') { const g = phone(); g.userData.off = [[0, -0.12, 0.1], [0, 0, Math.PI]]; return g; }
   const g = kertasProp(); g.userData.off = [[0, -0.2, 0.1], [0, 0, Math.PI]]; return g;
 }
@@ -223,14 +238,23 @@ export function autoShot(d) {
         }
         const c = castMake(key, d.loc); const name = key.split('#')[0];
         S.add(c, [s[0], 0, s[1]], s[2]); chars[name] = { c, sit: s[3] }; if (s[4]) c.root.position.y = s[4];
-        if (d.pose?.[name] === 'gitar') { const gt = gitar(); gt.position.set(0.15, 0.55, 0.35); gt.rotation.set(0, 0, -1.1); c.torso.add(gt); }
+        if (d.pose?.[name] === 'gitar') { pasangGitar(c); }
+        if (d.pose?.[name] === 'gitarBerdiri') pasangGitar(c, POSES.gitarBerdiri, gitarListrik('#c0392b'));
+        if (d.pose?.[name] === 'bass') pasangGitar(c, POSES.gitarBerdiri, gitarListrik('#2c3e50', true));
+        if (d.pose?.[name] === 'drum') for (const sd of [-1, 1]) { const st = stik(); c.handOf(sd).add(st); st.position.set(0, -0.1, 0.12); st.rotation.set(1.2, 0, 0); }
+        if (/^(micDua|gemetar)$/.test(d.pose?.[name] || '')) { const mc = mikrofon(); c.handOf(-1).add(mc); mc.position.set(0.08, -0.05, 0.12); mc.rotation.set(0, 0, 0.5); }
+        if (d.pose?.[name] === 'sodorMic') { const mc = mikrofon(); c.handOf(-1).add(mc); mc.position.set(0.05, -0.12, 0.1); mc.rotation.set(1.3, 0, 0); }
+        if (d.pose?.[name] === 'angkat') { const a = ampli(0.55, 0.5); a.position.set(0, 0.05, 0.62); c.torso.add(a); }
+        if (d.pose?.[name] === 'senter') { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI); ph.draw(x => { x.fillStyle = '#222'; x.fillRect(0, 0, 400, 800); });
+          const gl = new THREE.Mesh(new THREE.SphereGeometry(0.06, 8, 6), new THREE.MeshBasicMaterial({ color: '#fffbe6' })); gl.position.set(0, -0.2, -0.03); ph.add(gl);
+          const halo = new THREE.Mesh(new THREE.SphereGeometry(0.22, 10, 8), new THREE.MeshBasicMaterial({ color: '#fff3b0', transparent: true, opacity: 0.35, depthWrite: false })); halo.position.copy(gl.position); ph.add(halo); }
         if (d.pose?.[name] === 'mic') { const mc = mikrofon(); c.handOf(-1).add(mc); mc.position.set(0, -0.1, 0.1); }
         if (d.pose?.[name] === 'ringlight') { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI); const rl = new THREE.Mesh(new THREE.TorusGeometry(0.2, 0.03, 8, 20), new THREE.MeshBasicMaterial({ color: '#fffbe0' })); rl.position.set(0, 0.32, 0); ph.add(rl); }
         if (d.pose?.[name] === 'selebaran') { const kp = new THREE.Mesh(new THREE.PlaneGeometry(0.3, 0.4), new THREE.MeshBasicMaterial({ color: '#ffe066', side: THREE.DoubleSide })); c.handOf(-1).add(kp); kp.position.set(0, -0.2, 0.1); }
         if (d.pose?.[name] === 'teh') { const gl = glass('#b5651d'); c.handOf(-1).add(gl); gl.position.set(0, -0.2, 0.05); }
         if (d.pose?.[name] === 'perbaiki') { const kp = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.32, 0.05), new THREE.MeshToonMaterial({ color: '#9aa0a6' })); kp.position.set(0, -0.2, 0.05); c.handOf(-1).add(kp); }
         if ((d.helm || []).includes(name)) { const h = helm('#c0392b'); h.position.y = 0.42; c.head.add(h); c.userData = { helm: h }; }
-        heads[name] = { x: s[0], y: headY(s[3]), z: s[1], rot: s[2] };
+        heads[name] = { x: s[0], y: headY(s[3]) + (s[4] || 0), z: s[1], rot: s[2] };
         if (/^(piala|cat)/.test(d.pose?.[name] || '')) { const pr = d.pose[name] === 'piala' ? piala() : kalengCat(); c.handOf(-1).add(pr); pr.position.set(0.18, -0.05, 0.12); pr.rotation.set(Math.PI / 2 - 0.4, 0, 0); }
         if (/^(hp|telepon|game)/.test(d.pose?.[name] || '')) { const ph = phone(); c.handOf(-1).add(ph); ph.position.set(0, -0.12, 0.1); ph.rotation.set(0, 0, Math.PI);
           ph.draw(x => drawChat(x, { title: 'Chat', messages: [{ text: '...' }] })); }
@@ -259,6 +283,12 @@ export function autoShot(d) {
       else if (kind === 'ban') { const m = S.scene.getObjectByName('motor1'); const w = new THREE.Vector3(); (m?.userData.roda[0] || m)?.getWorldPosition(w); cam = { pos: [w.x + 1.4, 1.25, w.z - 2.0], look: [w.x, 0.45, w.z + 0.2], fov: 40 }; }
       else if (kind === 'pengendara') { const m = S.scene.getObjectByName('motorTua'); cam = { pos: [m.position.x - 2.4, 2.05, m.position.z + 1.0], look: [m.position.x, 1.85, m.position.z], fov: 38 }; }
       else if (kind === 'motorTua') { const m = S.scene.getObjectByName('motorTua'); cam = { pos: [m.position.x + 1.2, 1.9, m.position.z + 2.4], look: [m.position.x + 0.7, 1.2, m.position.z], fov: 36 }; }
+      else if (kind === 'penonton') cam = { pos: [1.5, 5.2, 19.5], look: [0, 2.6, -5], fov: 34 };
+      else if (kind === 'lebar' && L.lebarCam) cam = L.lebarCam;
+      else if (kind === 'masuk' && L.masukCam) cam = L.masukCam;
+      else if (kind === 'barisDepan') cam = { pos: [0.4, 2.6, -2.2], look: [0, 1.8, 1.6], fov: 50 };
+      else if (kind === 'sorot') cam = { pos: [0, 1.6, 3.2], look: [0, 2.7, -4.3], fov: 34 };
+      else if (kind === 'drummer' && heads[who]) { const h = heads[who]; cam = { pos: [h.x + 1.3, h.y + 0.75, h.z + 3.0], look: [h.x, h.y - 0.15, h.z], fov: 38 }; }
       else if (kind === 'riding') { cam = { pos: [-1.5, 2.3, 7.5], look: [0.2, 1.3, 0], fov: 42 }; }
       else if (kind === 'laptop') cam = { pos: [0.55, 2.55, -1.25], look: [-1.45, 1.2, -3.4], fov: 30 };
       else if (kind === 'kedepan') cam = { pos: [4.6, 2.9, 1.8], look: [-0.6, 1.2, -2.4], fov: 56 };
@@ -267,7 +297,8 @@ export function autoShot(d) {
       else if (duduk && Object.values(heads).filter(h => h.y < 1.8).length >= 2) { const hs = Object.values(heads).filter(h => h.y < 1.8); const cx = hs.reduce((a2, h) => a2 + h.x, 0) / hs.length, cz = hs.reduce((a2, h) => a2 + h.z, 0) / hs.length;
         cam = { pos: [cx * 0.6, kind === 'lebar' ? 2.6 : 2.2, Math.max(-5.4, cz - (kind === 'lebar' ? 4.6 : 3.4))], look: [cx, 1.45, cz], fov: kind === 'lebar' ? 52 : 44 }; }
       else cam = solveGroup(L, heads, kind === 'lebar');
-      const end = { ...cam, pos: cam.pos.map((v, i) => lerp(cam.look[i], v, 0.9)) };
+      if (d.camFix) cam = d.camFix;
+      const end = d.camEnd || { ...cam, pos: cam.pos.map((v, i) => lerp(cam.look[i], v, 0.9)) };
       const seed = Object.keys(chars);
       return (lt, k, t) => {
         for (const [name, { c, sit }] of Object.entries(chars)) {
@@ -276,7 +307,15 @@ export function autoShot(d) {
           if (ps0 === 'jongkok') p = POSES.jongkok;
           if (ps0 === 'perbaiki') p = combine(POSES.jongkok, { shR: [-1.0 + Math.sin(t * 9) * 0.25, 0, 0.25], elR: -0.6, shL: [-1.0 + Math.cos(t * 8) * 0.2, 0, -0.25], elL: -0.7, headX: 0.45 });
           if (ps0 === 'pinggang') p = combine(p, POSES.pinggang);
-          if (ps0 === 'gitar') p = combine(POSES.gitar, { elR: -1.2 + Math.sin(t * (d.ceria ? 14 : 5)) * 0.25 });
+          const ANIM0 = ['gitar', 'gitarBerdiri', 'bass', 'drum', 'keyboard', 'vokal'];
+          if (ps0 === 'gitar') p = combine(POSES.gitar, { elR: -1.25 + Math.sin(t * (d.ceria ? 14 : 5)) * 0.18 });
+          if (ps0 === 'gitarBerdiri' || ps0 === 'bass') p = combine(POSES.gitarBerdiri, { elR: -1.25 + Math.sin(t * (d.ceria ? 14 : 8)) * 0.15, headX: 0.2 + Math.sin(t * 4) * 0.05 });
+          if (ps0 === 'drum') { const e = d.ceria ? 12 : 7; p = combine(POSES.drum, { shR: [-0.9 + Math.max(0, Math.sin(t * e)) * 0.45, 0, 0.35], shL: [-0.9 + Math.max(0, Math.sin(t * e + Math.PI)) * 0.45, 0, -0.35], headX: 0.15 + Math.sin(t * e) * 0.04 }); }
+          if (ps0 === 'keyboard') p = combine(POSES.keyboard, { elR: -0.75 + Math.sin(t * 6) * 0.08, elL: -0.75 + Math.sin(t * 5 + 1) * 0.08, headZ: Math.sin(t * 1.5) * 0.06 });
+          if (ps0 === 'vokal') p = combine(POSES.vokal, { headZ: Math.sin(t * 2.2) * 0.09, torsoZ: Math.sin(t * 2.2) * 0.04 });
+          if (ps0 === 'micDua') p = combine(POSES.micDua, { headZ: Math.sin(t * 2) * 0.06 });
+          if (ps0 === 'gemetar') p = combine(POSES.gemetar, { kneeR: 0.15 + Math.sin(t * 40) * 0.05, kneeL: 0.15 + Math.sin(t * 43) * 0.05, elR: -1.75 + Math.sin(t * 37) * 0.04 });
+          if (ps0 === 'senter') p = combine(POSES.senter, { shR: [-2.75, 0, -0.15 + Math.sin(t * 1.4 + seed.indexOf(name)) * 0.3] });
           if (ps0 === 'mic') p = combine(p, POSES.mic, { headZ: Math.sin(t * 3) * 0.1 });
           if (ps0 === 'ringlight') p = combine(p, POSES.hpAngkat);
           if (ps0 === 'sorak') p = combine(POSES.sorak, { hipsY: 0.75 + Math.abs(Math.sin(t * 7 + seed.indexOf(name))) * 0.18 });
@@ -285,7 +324,9 @@ export function autoShot(d) {
           if (ps0 === 'selebaran') p = combine(walkPose(t, 1.2, true), { shR: [-1.2, 0, 0.1], elR: -0.3 });
           if (ps0 === 'teh') p = combine(p, POSES.minum, { elR: -1.6 - Math.max(0, Math.sin(t * 1.3)) * 0.5, headX: -Math.max(0, Math.sin(t * 1.3)) * 0.15 });
           if (ps0 === 'lepasHelm' && c.userData?.helm) { const kl2 = d.tl ? Math.max(0, Math.min(1, (t - d.tl[0]) / Math.max(0.5, d.tl[1] - d.tl[0]))) : k; const q = Math.max(0, Math.min(1, (kl2 - 0.2) / 0.6)); c.userData.helm.position.y = 0.42 + q * 0.9; c.userData.helm.visible = q < 0.98; p = combine(p, { shR: [-2.6 * Math.min(1, q * 2), 0, 0.3], elR: -0.6, shL: [-2.6 * Math.min(1, q * 2), 0, -0.3], elL: -0.6 }); }
-          const extra = d.pose?.[name] === 'game' ? AKSI_POSE.game : /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
+          if (d.diam && ANIM0.includes(ps0)) p = combine(POSES[ps0 === 'bass' ? 'gitarBerdiri' : ps0], ps0 === 'drum' ? {} : {});
+          const ANIM_POSE = ['gitar', 'gitarBerdiri', 'bass', 'drum', 'keyboard', 'vokal', 'micDua', 'gemetar', 'senter'];
+          const extra = ANIM_POSE.includes(d.pose?.[name]) ? null : d.pose?.[name] === 'game' ? AKSI_POSE.game : /^(piala|cat)$/.test(d.pose?.[name]) ? POSES.bawa : d.pose?.[name] === 'telepon' ? { shR: [-0.35, 0, 0.55], elR: -2.5, headZ: -0.1 } : POSES[d.pose?.[name]]; if (extra) p = combine(p, extra);
           if (d.pose?.[name] === 'angguk') p = combine(p, { headX: lt < 1 ? Math.max(0, Math.sin(lt * 9)) * 0.3 : 0 });
           if (props[name]?.parent === c.handOf(-1) && props[name].visible !== false) p = combine(p, props[name].userData.kind === 'kertas' ? AKSI_POSE.baca : props[name].userData.kind === 'hp' ? POSES.hp : AKSI_POSE.bawa);
           const B = base[name]; let px = B.x, pz = B.z, rot = B.r;
@@ -338,6 +379,7 @@ export function autoShot(d) {
           const talking = (d.talk || []).some(([a, b, w]) => w === name && t >= a && t <= b);
           c.act(p, d.expr?.[name] || 'netral', t, talking, seed.indexOf(name));
         }
+        S.scene.userData.anim?.(t);
         // pemandangan bergerak, roda, hujan, motor tua datang, oleng
         const sp = (S.scene.userData.gerakSpeed || 0) * (d.oleng ? Math.max(0, 1 - lt / 1.2) : 1);
         const ger = S.scene.getObjectByName('gerak'); if (ger) ger.position.x = -((d.oleng ? sp * lt * 0.5 : t * sp) % 40);

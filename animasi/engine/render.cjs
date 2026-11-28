@@ -1,5 +1,6 @@
 // Render episode ke MP4 (video saja). Pemakaian:
 //   node render.cjs <ep> <out.mp4> [fps=30] [start] [end]
+//   LAND=1 node render.cjs ...  → landscape 1280x720
 //   node render.cjs <ep> --still <t1,t2,...> <outdir>   (cek frame tertentu, PNG)
 const { chromium } = require('playwright');
 const { spawn } = require('child_process');
@@ -18,10 +19,10 @@ function serve() {
   const [ep, out, ...rest] = process.argv.slice(2);
   const srv = await serve(); const port = srv.address().port;
   const browser = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
-  const page = await browser.newPage({ viewport: { width: 720, height: 1280 } });
+  const page = await browser.newPage({ viewport: process.env.LAND ? { width: 1280, height: 720 } : { width: 720, height: 1280 } });
   page.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') console.error('[page]', m.text()); });
   page.on('pageerror', e => console.error('[pageerror]', e.message));
-  await page.goto(`http://localhost:${port}/index.html?ep=${ep}`);
+  await page.goto(`http://localhost:${port}/index.html?ep=${ep}${process.env.LAND ? '&land=1' : ''}`);
   await page.waitForFunction(() => window.READY || window.ERROR, null, { timeout: 60000 });
   const err = await page.evaluate(() => window.ERROR); if (err) { console.error(err); process.exit(1); }
   const dur = await page.evaluate(() => window.DURATION);

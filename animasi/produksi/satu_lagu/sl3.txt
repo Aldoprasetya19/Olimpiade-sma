@@ -1,0 +1,43 @@
+# judul: SATU | LAGU
+# akhir: TAMAT | Satu Lagu
+[panggungSorot] vokal=aldo keyboardis=gelly drummer=gabriel gitaris=febri bassis=stefan
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal): Bagian 3. Satu Lagu.
+NARATOR {cu:gelly} (gelly:keyboard, gelly=fokus): Gelly menekan tuts keyboard pelan.
+NARATOR {drummer:gabriel} (gelly:keyboard, gabriel:drum, gabriel=fokus): Intro mulai mengalun, lalu Gabriel masuk dengan ketukan drum yang lembut.
+NARATOR {cu:aldo} (gelly:keyboard, gabriel:drum, aldo:vokal, aldo=cemas): Aldo membuka mulut.
+NARATOR {cu:aldo} (gelly:keyboard, gabriel:drum, aldo:vokal, aldo=malu): Baris pertama keluar terlalu pelan, lalu suaranya pecah.
+NARATOR {penonton} (gelly:keyboard, gabriel:drum, aldo:vokal, sfx=tawa): Dari barisan belakang, seseorang terkikik.
+NARATOR {cu:aldo} (gelly:keyboard, gabriel:drum, aldo:vokal, aldo=merem): Aldo membeku.
+NARATOR {mcu:aldo} (gelly:keyboard, gabriel:drum, aldo:tunduk, aldo=malu): Musik terus berjalan, tapi suaranya hilang.
+[panggungGelap] vokal=aldo d1=hissari d2=misel d3=aulia d4=dayinta d5=elisabeth d6=manohara d7=septi d8=kharan d9=justin d10=mila d11=sera
+NARATOR {barisDepan} (hissari:senter, hissari=senyum): Lalu, di barisan depan, satu cahaya kecil menyala.
+NARATOR {cu:hissari} (hissari:senter, hissari=senyum): Hissari mengangkat senter HP-nya tinggi-tinggi.
+NARATOR {barisDepan} (hissari:senter, misel:senter, aulia:senter, hissari=senyum, misel=senyum, aulia=senyum, dayinta=senyum, elisabeth=senyum, manohara=senyum, septi=senyum, kharan=senyum, justin=senyum, mila=senyum, sera=senyum): Di sebelahnya, Misel dan Aulia ikut menyalakan senter.
+NARATOR {barisDepan} (hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, hissari=senyum, misel=senyum, aulia=senyum, dayinta=senyum, elisabeth=senyum, manohara=senyum, septi=senyum, kharan=senyum, justin=senyum, mila=senyum, sera=senyum): Lalu Dayinta, lalu Elisabeth, Manohara, Septi,
+NARATOR {barisDepan} (hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, kharan:senter, justin:senter, mila:senter, sera:senter, hissari=senyum, misel=senyum, aulia=senyum, dayinta=senyum, elisabeth=senyum, manohara=senyum, septi=senyum, kharan=senyum, justin=senyum, mila=senyum, sera=senyum): Kharan dan Justin dari kelas 10, bahkan Mila dan Sera dari kelas 12.
+[panggungSenter] vokal=aldo keyboardis=gelly drummer=gabriel gitaris=febri bassis=stefan d1=hissari d2=misel d3=aulia d4=dayinta d5=elisabeth d6=manohara d7=septi d8=kharan d9=justin d10=mila d11=sera
+NARATOR {penonton} (hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, kharan:senter, justin:senter, mila:senter, sera:senter, febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal): Dalam 10 detik, lapangan itu dipenuhi ratusan titik cahaya, seperti langit penuh bintang.
+[panggungSenter] vokal=aldo sisiPanggung=nava#syal keyboardis=gelly
+NARATOR {cu:nava} (nava:tunjukMata, nava=serius, aldo:vokal): Dari sisi panggung, Nava menunjuk matanya sendiri,
+NARATOR {cu:nava} (nava:tunjuk, nava=senyum, aldo:vokal): lalu menunjuk Aldo.
+NAVA (senyum, nava:tunjuk, aldo:vokal): "Lihat aku aja."
+NARATOR {cu:aldo} (aldo:vokal, aldo=merem): Aldo memejamkan mata.
+NARATOR {cu:gelly} (gelly:keyboard, gelly=senyum, aldo:vokal): Gelly mengulang intro dari awal.
+[panggungSenter] vokal=aldo keyboardis=gelly drummer=gabriel gitaris=febri bassis=stefan d1=hissari d2=misel d3=aulia d4=dayinta d5=elisabeth d6=manohara d7=septi d8=kharan d9=justin d10=mila d11=sera
+NARATOR {cu:aldo} (gelly:keyboard, gabriel:drum, aldo:vokal, aldo=fokus, hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, kharan:senter, justin:senter, mila:senter, sera:senter): Kali ini, Aldo bernyanyi.
+NARATOR {mcu:aldo} (gelly:keyboard, gabriel:drum, aldo:vokal, aldo=lega, hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, kharan:senter, justin:senter, mila:senter, sera:senter): Suaranya masih sedikit gemetar, tapi utuh.
+NARATOR {lebar} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:vokal, aldo=senang, ceria, hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, kharan:senter, justin:senter, mila:senter, sera:senter): Di bait kedua, Febri dan Stefan masuk dengan gitar dan bass, dan suara Aldo makin mantap.
+NARATOR {drummer:gabriel} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:vokal, ceria, gabriel=senang, sfx=drumroll): Saat masuk reff, Gabriel menghentak drum,
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, aldo:vokal, ceria, hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, kharan:senter, justin:senter, mila:senter, sera:senter, hissari=senyum, misel=senyum, aulia=senyum, dayinta=senyum, elisabeth=senyum, manohara=senyum, septi=senyum, kharan=senyum, justin=senyum, mila=senyum, sera=senyum): dan seluruh lapangan ikut bernyanyi bersamanya.
+NARATOR {cu:aldo} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal, aldo=lega, sfx=simbal): Lagu selesai.
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal, hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, kharan:senter, justin:senter, mila:senter, sera:senter): Sejenak hening.
+NARATOR {penonton} (febri:gitarBerdiri, stefan:bass, gelly:keyboard, gabriel:drum, diam, aldo:vokal, hissari:senter, misel:senter, aulia:senter, dayinta:senter, elisabeth:senter, manohara:senter, septi:senter, kharan:senter, justin:senter, mila:senter, sera:senter, sfx=sorak+tepuk): Lalu lapangan meledak oleh tepuk tangan.
+[belakangPanggung] kiri=aldo kanan=nava#syal
+NARATOR {dua} (nava:peluk, aldo:peluk, aldo=senang, nava=senang): Di belakang panggung, Nava memeluk Aldo,
+NARATOR {cu:nava} (nava:peluk, aldo:peluk, nava=senyum): dan berbisik dengan suara seraknya.
+NAVA (senang, nava:peluk, aldo:peluk): "Tahun depan kita duet."
+NARATOR {cu:aldo} (aldo=senang, sfx=tawa): Aldo tertawa.
+NARATOR {cu:aldo} (aldo=senang, aldo:gemetar): Tangannya masih gemetar.
+NARATOR {lebar} (aldo=senyum, nava=senyum): Ternyata, berani itu bukan berarti tidak takut.
+NARATOR {lebar} (aldo=senang, nava=senang): Berani itu tetap bernyanyi, walaupun takut.
+NARATOR {akhir}: Tamat.

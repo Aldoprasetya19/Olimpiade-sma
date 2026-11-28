@@ -15,11 +15,13 @@ LIRIK = [
  (159.6, 165.3, "Jangan pelit sama adik kelas ya nanti"), (165.3, 169.6, "Jangan pelit sama adik kelas ya nanti"),
  (169.6, 171.0, "Tahun depan giliran kami yang beraksi"),
 ]
+import sys
+LAND = '--land' in sys.argv  # landscape 1280x720
 def ts(t): h=int(t//3600); m=int(t%3600//60); s=t%60; return f"{h}:{m:02d}:{s:05.2f}"
-out = """[Script Info]
+out = ("""[Script Info]
 ScriptType: v4.00+
-PlayResX: 720
-PlayResY: 1280
+PlayResX: {X}
+PlayResY: {Y}
 WrapStyle: 0
 
 [V4+ Styles]
@@ -28,7 +30,8 @@ Style: Lirik,Oswald,34,&H00FFFFFF,&H0030C2F2,&H00000000,&H64000000,-1,0,0,0,100,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-"""
+""").replace("{X}", "1280" if LAND else "720").replace("{Y}", "720" if LAND else "1280").replace("52,1\n", "30,1\n" if LAND else "52,1\n")
 for a, b, l in LIRIK:
     out += f"Dialogue: 0,{ts(a)},{ts(b)},Lirik,,0,0,0,,{{\\fad(250,250)}}{l}\n"
-open('../tz1.ass' if __import__('os').path.basename(__import__('os').getcwd())=='teaser' else 'tz1.ass','w').write(out)
+import os
+open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'tz1_land.ass' if LAND else 'tz1.ass'), 'w').write(out)

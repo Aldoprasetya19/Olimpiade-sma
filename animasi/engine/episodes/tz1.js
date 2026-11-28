@@ -2,7 +2,7 @@
 // Bagian: Intro 0–16 | Verse 1 (bus) 16–48 | Chorus 1 (pantai) 48–80 | Verse 2 + Bridge (kemah senja) 80–144 | Outro (api unggun) 144–akhir
 import * as THREE from 'three';
 import { murid, santai, CAST } from '../lib/cast.js';
-import { SETS, glass, gitar, phone, bus, desk } from '../lib/sets.js';
+import { SETS, glass, phone, bus, desk, pasangGitar } from '../lib/sets.js';
 import { POSES, combine, walkPose } from '../lib/char.js';
 import { ease, easeIn, seg, lerp, clamp, mixGrade, W, H } from '../lib/core.js';
 
@@ -18,7 +18,6 @@ const angguk = (t, sd = 0, a = 0.06) => ({ headX: Math.sin(t * Math.PI * 2 * BEA
 const DUDUK_TANAH = { hipsY: 0.24, legR: -1.45, kneeR: 0.35, legL: -1.45, kneeL: 0.35, torsoX: -0.05 };
 const RANGKUL = { shR: [-0.35, 0, -1.3], elR: -0.5, shL: [-0.35, 0, 1.3], elL: -0.5 };
 const PEGANG = { shR: [-0.15, 0, -0.55], elR: -0.15, shL: [-0.15, 0, 0.55], elL: -0.15 };
-function pasangGitar(c) { const g = gitar(); g.position.set(0.15, 0.55, 0.35); g.rotation.set(0, 0, -1.1); c.torso.add(g); return g; }
 function pegang(c, obj, p = [0, -0.18, 0.06], r = [0, 0, 0]) { c.handOf(-1).add(obj); obj.position.set(...p); obj.rotation.set(...r); return obj; }
 function botol() { const g = new THREE.Group(); const b = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.3, 12), new THREE.MeshToonMaterial({ color: '#7fc8f0', transparent: true, opacity: 0.85 })); g.add(b);
   const tp = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.06, 10), new THREE.MeshToonMaterial({ color: '#1f6fb2' })); tp.position.y = 0.18; g.add(tp); return g; }
@@ -31,7 +30,7 @@ function canvasPlane(w, h, draw, px = 512) {
 function setCam(S, pos, look, fov = 40) { S.cam.position.set(...pos); S.cam.fov = fov; S.cam.updateProjectionMatrix(); S.cam.lookAt(...look); }
 
 // ---------- HUD sinematik: letterbox + kartu judul
-const BAR = 150;
+const BAR = H > W ? 150 : 88; // letterbox: potret 150 px, landscape ±2,35:1
 const KARTU = [
   { a: 12.4, b: 16.0, l: ['DARI MODAL', 'DUA RATUS RIBU...'] },
   { a: 73.4, b: 80.0, l: ['PERSAINGAN YANG BERUBAH', 'JADI PERSAUDARAAN.'] },
@@ -52,7 +51,7 @@ function hudSinema(hud, t) {
   hud.restore();
 }
 function rec(hud, t) { // bingkai kamera HP saat merekam
-  hud.save(); hud.strokeStyle = 'rgba(255,255,255,0.85)'; hud.lineWidth = 4; const m = 60, y0 = BAR + 40, y1 = H - BAR - 40, L = 50;
+  hud.save(); hud.strokeStyle = 'rgba(255,255,255,0.85)'; hud.lineWidth = 4; const m = H > W ? 60 : 110, y0 = BAR + 40, y1 = H - BAR - 40, L = 50;
   for (const [x, y, dx, dy] of [[m, y0, 1, 1], [W - m, y0, -1, 1], [m, y1, 1, -1], [W - m, y1, -1, -1]]) { hud.beginPath(); hud.moveTo(x, y + dy * L); hud.lineTo(x, y); hud.lineTo(x + dx * L, y); hud.stroke(); }
   if (Math.floor(t * 2) % 2 === 0) { hud.fillStyle = '#e74c3c'; hud.beginPath(); hud.arc(m + 26, y0 + 34, 11, 0, Math.PI * 2); hud.fill(); }
   hud.font = '700 30px Oswald'; hud.fillStyle = '#fff'; hud.textAlign = 'left'; hud.textBaseline = 'middle';
@@ -66,6 +65,7 @@ function shot(t0, t1, grade, build, o = {}) {
     const up = build(S) || (() => {});
     return (lt, k, t, hud) => {
       let g = up(lt, k, t, hud) || grade;
+      if (W > H) { S.cam.fov *= 1.2; S.cam.updateProjectionMatrix(); } // landscape: bingkai sedikit lebih longgar (letterbox makan tinggi)
       hudSinema(hud, t);
       const [, a] = kartuAlpha(t); if (a > 0) g = mixGrade(g, { ...(typeof g === 'string' ? {} : g), overlayColor: [0, 0, 0], overlayAmt: 0.5, blur: 2.5 }, a);
       if (o.fadeOut && t1 - t < o.fadeOut) g = mixGrade(g, { overlayColor: [0, 0, 0], overlayAmt: 1 }, ease(1 - (t1 - t) / o.fadeOut));
@@ -174,12 +174,12 @@ const goyang = (t) => [Math.sin(t * 9) * 0.012, Math.sin(t * 13) * 0.01];
 shot(16.0, 21.4, 'pagi', (S) => { const B = busScene(S, { film: false }); return (lt, k, t) => { B.anim(t); const [gx, gy] = goyang(t);
   S.camMove(k, { pos: [gx, 2.7 + gy, -6.8], look: [0, 1.4, 4], fov: 52 }, { pos: [gx, 2.6 + gy, -5.6], look: [0, 1.4, 4], fov: 50 }); }; });
 // 6. Stefan & Febri main gitar di kursi belakang (pan)
-shot(21.4, 25.2, 'pagi', (S) => { const B = busScene(S, { film: false }); return (lt, k, t) => { B.anim(t); const [gx, gy] = goyang(t);
+shot(21.4, 25.2, 'pagi', (S) => { const B = busScene(S, { film: false, skip: W > H ? ['gabriel', 'nava'] : [] }); return (lt, k, t) => { B.anim(t); const [gx, gy] = goyang(t);
   S.camMove(k, { pos: [0.1 + gx, 2.55 + gy, 2.0], look: [-1.25, 1.3, 4.7], fov: 54 }, { pos: [-0.1 + gx, 2.55 + gy, 2.0], look: [1.25, 1.3, 4.7], fov: 54 }); }; });
 // 7. Rialdi menyanyi, 8. Aldo bertepuk
-shot(25.2, 27.0, 'pagi', (S) => { const B = busScene(S, { film: false }); return (lt, k, t) => { B.anim(t); const [gx, gy] = goyang(t);
+shot(25.2, 27.0, 'pagi', (S) => { const B = busScene(S, { film: false, skip: W > H ? ['gabriel', 'nava'] : [] }); return (lt, k, t) => { B.anim(t); const [gx, gy] = goyang(t);
   S.camMove(k, { pos: [0.15 + gx, 1.7 + gy, 2.6], look: [-0.6, 1.65, 4.65], fov: 50 }, { pos: [0.1 + gx, 1.7 + gy, 2.85], look: [-0.6, 1.65, 4.65], fov: 46 }); }; });
-shot(27.0, 28.9, 'pagi', (S) => { const B = busScene(S, { film: false }); return (lt, k, t) => { B.anim(t); const [gx, gy] = goyang(t);
+shot(27.0, 28.9, 'pagi', (S) => { const B = busScene(S, { film: false, skip: W > H ? ['gabriel', 'nava'] : [] }); return (lt, k, t) => { B.anim(t); const [gx, gy] = goyang(t);
   S.camMove(k, { pos: [-0.15 + gx, 1.7 + gy, 2.6], look: [0.6, 1.6, 4.65], fov: 50 }, { pos: [-0.1 + gx, 1.72 + gy, 2.85], look: [0.6, 1.6, 4.65], fov: 46 }); }; });
 // 9. Hissari & Misel merekam di lorong (dari belakang)
 shot(28.9, 33.0, 'pagi', (S) => { const B = busScene(S); return (lt, k, t) => { B.anim(t); const [gx, gy] = goyang(t);

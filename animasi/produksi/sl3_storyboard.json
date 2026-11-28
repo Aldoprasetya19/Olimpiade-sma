@@ -1,0 +1,514 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 110.78,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "NAVA": {
+   "warna": "#FFD84A"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 110.78,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.52,
+     "teks": "Bagian 3."
+    },
+    {
+     "start": 1.52,
+     "end": 3.03,
+     "teks": "Satu Lagu."
+    },
+    {
+     "start": 3.16,
+     "end": 4.08,
+     "teks": "Gelly menekan tuts"
+    },
+    {
+     "start": 4.08,
+     "end": 5.41,
+     "teks": "keyboard pelan."
+    },
+    {
+     "start": 5.64,
+     "end": 6.26,
+     "teks": "Intro mulai"
+    },
+    {
+     "start": 6.26,
+     "end": 7.2,
+     "teks": "mengalun,"
+    },
+    {
+     "start": 7.2,
+     "end": 8.56,
+     "teks": "lalu Gabriel masuk"
+    },
+    {
+     "start": 8.56,
+     "end": 9.6,
+     "teks": "dengan ketukan drum"
+    },
+    {
+     "start": 9.6,
+     "end": 10.63,
+     "teks": "yang lembut."
+    },
+    {
+     "start": 10.9,
+     "end": 12.27,
+     "teks": "Aldo membuka mulut."
+    },
+    {
+     "start": 12.4,
+     "end": 13.48,
+     "teks": "Baris pertama keluar"
+    },
+    {
+     "start": 13.48,
+     "end": 14.8,
+     "teks": "terlalu pelan,"
+    },
+    {
+     "start": 14.8,
+     "end": 16.61,
+     "teks": "lalu suaranya pecah."
+    },
+    {
+     "start": 16.64,
+     "end": 17.18,
+     "teks": "Dari barisan"
+    },
+    {
+     "start": 17.18,
+     "end": 18.02,
+     "teks": "belakang,"
+    },
+    {
+     "start": 18.02,
+     "end": 19.25,
+     "teks": "seseorang terkikik."
+    },
+    {
+     "start": 19.52,
+     "end": 20.77,
+     "teks": "Aldo membeku."
+    },
+    {
+     "start": 21.14,
+     "end": 21.84,
+     "teks": "Musik terus"
+    },
+    {
+     "start": 21.84,
+     "end": 22.88,
+     "teks": "berjalan,"
+    },
+    {
+     "start": 22.88,
+     "end": 23.88,
+     "teks": "tapi suaranya"
+    },
+    {
+     "start": 23.88,
+     "end": 24.69,
+     "teks": "hilang."
+    },
+    {
+     "start": 24.74,
+     "end": 25.7,
+     "teks": "Lalu,"
+    },
+    {
+     "start": 25.7,
+     "end": 27.44,
+     "teks": "di barisan depan,"
+    },
+    {
+     "start": 27.44,
+     "end": 28.5,
+     "teks": "satu cahaya kecil"
+    },
+    {
+     "start": 28.5,
+     "end": 29.21,
+     "teks": "menyala."
+    },
+    {
+     "start": 29.64,
+     "end": 30.66,
+     "teks": "Hissari mengangkat"
+    },
+    {
+     "start": 30.66,
+     "end": 32.35,
+     "teks": "senter HP-nya"
+    },
+    {
+     "start": 32.35,
+     "end": 32.75,
+     "teks": "tinggi-tinggi."
+    },
+    {
+     "start": 33.02,
+     "end": 34.24,
+     "teks": "Di sebelahnya,"
+    },
+    {
+     "start": 34.24,
+     "end": 35.14,
+     "teks": "Misel dan Aulia"
+    },
+    {
+     "start": 35.14,
+     "end": 36.0,
+     "teks": "ikut menyalakan"
+    },
+    {
+     "start": 36.0,
+     "end": 36.93,
+     "teks": "senter."
+    },
+    {
+     "start": 36.96,
+     "end": 38.36,
+     "teks": "Lalu Dayinta,"
+    },
+    {
+     "start": 38.36,
+     "end": 39.6,
+     "teks": "lalu Elisabeth,"
+    },
+    {
+     "start": 39.6,
+     "end": 40.68,
+     "teks": "Manohara,"
+    },
+    {
+     "start": 40.68,
+     "end": 41.55,
+     "teks": "Septi,"
+    },
+    {
+     "start": 41.64,
+     "end": 42.5,
+     "teks": "Kharan dan Justin"
+    },
+    {
+     "start": 42.5,
+     "end": 43.78,
+     "teks": "dari kelas 10,"
+    },
+    {
+     "start": 43.78,
+     "end": 45.05,
+     "teks": "bahkan Mila dan"
+    },
+    {
+     "start": 45.05,
+     "end": 45.82,
+     "teks": "Sera dari kelas"
+    },
+    {
+     "start": 45.82,
+     "end": 46.61,
+     "teks": "12."
+    },
+    {
+     "start": 46.9,
+     "end": 48.62,
+     "teks": "Dalam 10 detik,"
+    },
+    {
+     "start": 48.62,
+     "end": 49.2,
+     "teks": "lapangan itu"
+    },
+    {
+     "start": 49.2,
+     "end": 50.34,
+     "teks": "dipenuhi ratusan"
+    },
+    {
+     "start": 50.34,
+     "end": 51.8,
+     "teks": "titik cahaya,"
+    },
+    {
+     "start": 51.8,
+     "end": 52.82,
+     "teks": "seperti langit penuh"
+    },
+    {
+     "start": 52.82,
+     "end": 53.63,
+     "teks": "bintang."
+    },
+    {
+     "start": 53.64,
+     "end": 55.42,
+     "teks": "Dari sisi panggung,"
+    },
+    {
+     "start": 55.42,
+     "end": 56.02,
+     "teks": "Nava menunjuk"
+    },
+    {
+     "start": 56.02,
+     "end": 57.19,
+     "teks": "matanya sendiri,"
+    },
+    {
+     "start": 57.42,
+     "end": 58.56,
+     "teks": "lalu menunjuk Aldo."
+    },
+    {
+     "start": 58.56,
+     "end": 60.25,
+     "teks": "\"Lihat aku aja.\"",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 60.44,
+     "end": 61.36,
+     "teks": "Aldo memejamkan"
+    },
+    {
+     "start": 61.36,
+     "end": 61.93,
+     "teks": "mata."
+    },
+    {
+     "start": 62.23,
+     "end": 63.14,
+     "teks": "Gelly mengulang"
+    },
+    {
+     "start": 63.14,
+     "end": 64.62,
+     "teks": "intro dari awal."
+    },
+    {
+     "start": 64.62,
+     "end": 65.8,
+     "teks": "Kali ini,"
+    },
+    {
+     "start": 65.8,
+     "end": 67.11,
+     "teks": "Aldo bernyanyi."
+    },
+    {
+     "start": 67.26,
+     "end": 67.84,
+     "teks": "Suaranya masih"
+    },
+    {
+     "start": 67.84,
+     "end": 69.02,
+     "teks": "sedikit gemetar,"
+    },
+    {
+     "start": 69.02,
+     "end": 70.09,
+     "teks": "tapi utuh."
+    },
+    {
+     "start": 70.21,
+     "end": 71.68,
+     "teks": "Di bait kedua,"
+    },
+    {
+     "start": 71.68,
+     "end": 72.44,
+     "teks": "Febri dan Stefan"
+    },
+    {
+     "start": 72.44,
+     "end": 73.54,
+     "teks": "masuk dengan gitar"
+    },
+    {
+     "start": 73.54,
+     "end": 74.32,
+     "teks": "dan bass,"
+    },
+    {
+     "start": 74.32,
+     "end": 75.3,
+     "teks": "dan suara Aldo"
+    },
+    {
+     "start": 75.3,
+     "end": 76.58,
+     "teks": "makin mantap."
+    },
+    {
+     "start": 76.58,
+     "end": 77.78,
+     "teks": "Saat masuk reff,"
+    },
+    {
+     "start": 77.78,
+     "end": 78.72,
+     "teks": "Gabriel menghentak"
+    },
+    {
+     "start": 78.72,
+     "end": 79.15,
+     "teks": "drum,"
+    },
+    {
+     "start": 79.32,
+     "end": 80.38,
+     "teks": "dan seluruh lapangan"
+    },
+    {
+     "start": 80.38,
+     "end": 81.38,
+     "teks": "ikut bernyanyi"
+    },
+    {
+     "start": 81.38,
+     "end": 82.19,
+     "teks": "bersamanya."
+    },
+    {
+     "start": 82.9,
+     "end": 84.27,
+     "teks": "Lagu selesai."
+    },
+    {
+     "start": 84.34,
+     "end": 85.35,
+     "teks": "Sejenak hening."
+    },
+    {
+     "start": 85.7,
+     "end": 86.46,
+     "teks": "Lalu lapangan"
+    },
+    {
+     "start": 86.46,
+     "end": 87.62,
+     "teks": "meledak oleh tepuk"
+    },
+    {
+     "start": 87.62,
+     "end": 88.06,
+     "teks": "tangan."
+    },
+    {
+     "start": 88.06,
+     "end": 88.98,
+     "teks": "Di belakang"
+    },
+    {
+     "start": 88.98,
+     "end": 90.26,
+     "teks": "panggung,"
+    },
+    {
+     "start": 90.26,
+     "end": 91.53,
+     "teks": "Nava memeluk Aldo,"
+    },
+    {
+     "start": 91.88,
+     "end": 92.92,
+     "teks": "dan berbisik dengan"
+    },
+    {
+     "start": 92.92,
+     "end": 93.97,
+     "teks": "suara seraknya."
+    },
+    {
+     "start": 94.16,
+     "end": 95.44,
+     "teks": "\"Tahun depan kita",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 95.44,
+     "end": 96.23,
+     "teks": "duet.\"",
+     "siapa": "NAVA"
+    },
+    {
+     "start": 96.52,
+     "end": 97.83,
+     "teks": "Aldo tertawa."
+    },
+    {
+     "start": 97.98,
+     "end": 98.56,
+     "teks": "Tangannya masih"
+    },
+    {
+     "start": 98.56,
+     "end": 99.81,
+     "teks": "gemetar."
+    },
+    {
+     "start": 100.06,
+     "end": 100.98,
+     "teks": "Ternyata,"
+    },
+    {
+     "start": 100.98,
+     "end": 101.76,
+     "teks": "berani itu bukan"
+    },
+    {
+     "start": 101.76,
+     "end": 103.15,
+     "teks": "berarti tidak takut."
+    },
+    {
+     "start": 103.52,
+     "end": 104.82,
+     "teks": "Berani itu tetap"
+    },
+    {
+     "start": 104.82,
+     "end": 105.78,
+     "teks": "bernyanyi,"
+    },
+    {
+     "start": 105.78,
+     "end": 107.13,
+     "teks": "walaupun takut."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "SATU",
+  "baris2": "LAGU",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 107.48,
+  "end": 110.78,
+  "judul": "TAMAT",
+  "sub": "Satu Lagu"
+ }
+}

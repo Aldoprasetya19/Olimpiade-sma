@@ -1,0 +1,1385 @@
+[
+ {
+  "start": 0.0,
+  "end": 2.88,
+  "text": " Bagian 3. Satu lagu.",
+  "words": [
+   {
+    "w": " Bagian",
+    "s": 0.0,
+    "e": 0.42
+   },
+   {
+    "w": " 3.",
+    "s": 0.42,
+    "e": 0.9
+   },
+   {
+    "w": " Satu",
+    "s": 1.52,
+    "e": 1.84
+   },
+   {
+    "w": " lagu.",
+    "s": 1.84,
+    "e": 2.88
+   }
+  ]
+ },
+ {
+  "start": 3.2,
+  "end": 5.26,
+  "text": " Geli menekan tuts keyboard pelan.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 3.2,
+    "e": 3.44
+   },
+   {
+    "w": " menekan",
+    "s": 3.44,
+    "e": 3.88
+   },
+   {
+    "w": " tuts",
+    "s": 3.88,
+    "e": 4.08
+   },
+   {
+    "w": " keyboard",
+    "s": 4.08,
+    "e": 4.5
+   },
+   {
+    "w": " pelan.",
+    "s": 4.5,
+    "e": 5.26
+   }
+  ]
+ },
+ {
+  "start": 5.64,
+  "end": 6.98,
+  "text": " Intro mulai mengalun,",
+  "words": [
+   {
+    "w": " Intro",
+    "s": 5.64,
+    "e": 5.92
+   },
+   {
+    "w": " mulai",
+    "s": 5.92,
+    "e": 6.26
+   },
+   {
+    "w": " mengalun,",
+    "s": 6.26,
+    "e": 6.98
+   }
+  ]
+ },
+ {
+  "start": 7.2,
+  "end": 10.48,
+  "text": " lalu Gabriel masuk dengan ketukan drum yang lembut.",
+  "words": [
+   {
+    "w": " lalu",
+    "s": 7.2,
+    "e": 7.68
+   },
+   {
+    "w": " Gabriel",
+    "s": 7.68,
+    "e": 8.1
+   },
+   {
+    "w": " masuk",
+    "s": 8.1,
+    "e": 8.56
+   },
+   {
+    "w": " dengan",
+    "s": 8.56,
+    "e": 8.88
+   },
+   {
+    "w": " ketukan",
+    "s": 8.88,
+    "e": 9.26
+   },
+   {
+    "w": " drum",
+    "s": 9.26,
+    "e": 9.6
+   },
+   {
+    "w": " yang",
+    "s": 9.6,
+    "e": 9.82
+   },
+   {
+    "w": " lembut.",
+    "s": 9.82,
+    "e": 10.48
+   }
+  ]
+ },
+ {
+  "start": 10.9,
+  "end": 12.12,
+  "text": " Aldo membuka mulut.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 10.9,
+    "e": 11.12
+   },
+   {
+    "w": " membuka",
+    "s": 11.12,
+    "e": 11.54
+   },
+   {
+    "w": " mulut.",
+    "s": 11.54,
+    "e": 12.12
+   }
+  ]
+ },
+ {
+  "start": 12.4,
+  "end": 14.52,
+  "text": " Baris pertama keluar terlalu pelan,",
+  "words": [
+   {
+    "w": " Baris",
+    "s": 12.4,
+    "e": 12.66
+   },
+   {
+    "w": " pertama",
+    "s": 12.66,
+    "e": 13.04
+   },
+   {
+    "w": " keluar",
+    "s": 13.04,
+    "e": 13.48
+   },
+   {
+    "w": " terlalu",
+    "s": 13.48,
+    "e": 13.94
+   },
+   {
+    "w": " pelan,",
+    "s": 13.94,
+    "e": 14.52
+   }
+  ]
+ },
+ {
+  "start": 14.8,
+  "end": 16.46,
+  "text": " lalu suaranya pecah.",
+  "words": [
+   {
+    "w": " lalu",
+    "s": 14.8,
+    "e": 15.2
+   },
+   {
+    "w": " suaranya",
+    "s": 15.2,
+    "e": 15.62
+   },
+   {
+    "w": " pecah.",
+    "s": 15.62,
+    "e": 16.46
+   }
+  ]
+ },
+ {
+  "start": 16.64,
+  "end": 19.1,
+  "text": " Dari barisan belakang, seseorang terkikik.",
+  "words": [
+   {
+    "w": " Dari",
+    "s": 16.64,
+    "e": 16.86
+   },
+   {
+    "w": " barisan",
+    "s": 16.86,
+    "e": 17.18
+   },
+   {
+    "w": " belakang,",
+    "s": 17.18,
+    "e": 17.9
+   },
+   {
+    "w": " seseorang",
+    "s": 18.02,
+    "e": 18.44
+   },
+   {
+    "w": " terkikik.",
+    "s": 18.44,
+    "e": 19.1
+   }
+  ]
+ },
+ {
+  "start": 19.52,
+  "end": 20.62,
+  "text": " Aldo membeku.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 19.52,
+    "e": 19.96
+   },
+   {
+    "w": " membeku.",
+    "s": 19.96,
+    "e": 20.62
+   }
+  ]
+ },
+ {
+  "start": 21.14,
+  "end": 22.52,
+  "text": " Musik terus berjalan,",
+  "words": [
+   {
+    "w": " Musik",
+    "s": 21.14,
+    "e": 21.5
+   },
+   {
+    "w": " terus",
+    "s": 21.5,
+    "e": 21.84
+   },
+   {
+    "w": " berjalan,",
+    "s": 21.84,
+    "e": 22.52
+   }
+  ]
+ },
+ {
+  "start": 22.88,
+  "end": 24.54,
+  "text": " tapi suaranya hilang.",
+  "words": [
+   {
+    "w": " tapi",
+    "s": 22.88,
+    "e": 23.36
+   },
+   {
+    "w": " suaranya",
+    "s": 23.36,
+    "e": 23.88
+   },
+   {
+    "w": " hilang.",
+    "s": 23.88,
+    "e": 24.54
+   }
+  ]
+ },
+ {
+  "start": 24.74,
+  "end": 27.02,
+  "text": " Lalu, di barisan depan,",
+  "words": [
+   {
+    "w": " Lalu,",
+    "s": 24.74,
+    "e": 25.46
+   },
+   {
+    "w": " di",
+    "s": 25.7,
+    "e": 25.82
+   },
+   {
+    "w": " barisan",
+    "s": 25.82,
+    "e": 26.16
+   },
+   {
+    "w": " depan,",
+    "s": 26.16,
+    "e": 27.02
+   }
+  ]
+ },
+ {
+  "start": 27.44,
+  "end": 29.06,
+  "text": " satu cahaya kecil menyala.",
+  "words": [
+   {
+    "w": " satu",
+    "s": 27.44,
+    "e": 27.64
+   },
+   {
+    "w": " cahaya",
+    "s": 27.64,
+    "e": 28.04
+   },
+   {
+    "w": " kecil",
+    "s": 28.04,
+    "e": 28.5
+   },
+   {
+    "w": " menyala.",
+    "s": 28.5,
+    "e": 29.06
+   }
+  ]
+ },
+ {
+  "start": 29.560000000000002,
+  "end": 32.8,
+  "text": " Hisari mengangkat senter HP-nya tinggi-tinggi.",
+  "words": [
+   {
+    "w": " Hisari",
+    "s": 29.560000000000002,
+    "e": 30.22
+   },
+   {
+    "w": " mengangkat",
+    "s": 30.22,
+    "e": 30.66
+   },
+   {
+    "w": " senter",
+    "s": 30.66,
+    "e": 31.02
+   },
+   {
+    "w": " HP",
+    "s": 31.02,
+    "e": 31.32
+   },
+   {
+    "w": "-nya",
+    "s": 31.32,
+    "e": 31.64
+   },
+   {
+    "w": " tinggi",
+    "s": 31.64,
+    "e": 32.04
+   },
+   {
+    "w": "-tinggi.",
+    "s": 32.04,
+    "e": 32.8
+   }
+  ]
+ },
+ {
+  "start": 33.02,
+  "end": 34.04,
+  "text": " Di sebelahnya,",
+  "words": [
+   {
+    "w": " Di",
+    "s": 33.02,
+    "e": 33.16
+   },
+   {
+    "w": " sebelahnya,",
+    "s": 33.16,
+    "e": 34.04
+   }
+  ]
+ },
+ {
+  "start": 34.22,
+  "end": 36.78,
+  "text": " Michelle dan Aulia ikut menyalakan senter.",
+  "words": [
+   {
+    "w": " Michelle",
+    "s": 34.22,
+    "e": 34.44
+   },
+   {
+    "w": " dan",
+    "s": 34.44,
+    "e": 34.72
+   },
+   {
+    "w": " Aulia",
+    "s": 34.72,
+    "e": 35.14
+   },
+   {
+    "w": " ikut",
+    "s": 35.14,
+    "e": 35.56
+   },
+   {
+    "w": " menyalakan",
+    "s": 35.56,
+    "e": 36.0
+   },
+   {
+    "w": " senter.",
+    "s": 36.0,
+    "e": 36.78
+   }
+  ]
+ },
+ {
+  "start": 36.96,
+  "end": 38.1,
+  "text": " Lalu Dainta,",
+  "words": [
+   {
+    "w": " Lalu",
+    "s": 36.96,
+    "e": 37.24
+   },
+   {
+    "w": " Dainta,",
+    "s": 37.24,
+    "e": 38.1
+   }
+  ]
+ },
+ {
+  "start": 38.36,
+  "end": 39.2,
+  "text": " lalu Elizabeth,",
+  "words": [
+   {
+    "w": " lalu",
+    "s": 38.36,
+    "e": 38.54
+   },
+   {
+    "w": " Elizabeth,",
+    "s": 38.54,
+    "e": 39.2
+   }
+  ]
+ },
+ {
+  "start": 39.6,
+  "end": 40.36,
+  "text": " Manohara,",
+  "words": [
+   {
+    "w": " Manohara,",
+    "s": 39.6,
+    "e": 40.36
+   }
+  ]
+ },
+ {
+  "start": 40.68,
+  "end": 41.4,
+  "text": " Septi,",
+  "words": [
+   {
+    "w": " Septi,",
+    "s": 40.68,
+    "e": 41.4
+   }
+  ]
+ },
+ {
+  "start": 41.68,
+  "end": 43.4,
+  "text": " Karan dan Justin dari kelas 10,",
+  "words": [
+   {
+    "w": " Karan",
+    "s": 41.68,
+    "e": 41.88
+   },
+   {
+    "w": " dan",
+    "s": 41.88,
+    "e": 42.1
+   },
+   {
+    "w": " Justin",
+    "s": 42.1,
+    "e": 42.5
+   },
+   {
+    "w": " dari",
+    "s": 42.5,
+    "e": 42.78
+   },
+   {
+    "w": " kelas",
+    "s": 42.78,
+    "e": 42.96
+   },
+   {
+    "w": " 10,",
+    "s": 42.96,
+    "e": 43.4
+   }
+  ]
+ },
+ {
+  "start": 43.78,
+  "end": 46.46,
+  "text": " bahkan Mila dan Sarah dari kelas 12.",
+  "words": [
+   {
+    "w": " bahkan",
+    "s": 43.78,
+    "e": 44.22
+   },
+   {
+    "w": " Mila",
+    "s": 44.22,
+    "e": 44.64
+   },
+   {
+    "w": " dan",
+    "s": 44.64,
+    "e": 44.88
+   },
+   {
+    "w": " Sarah",
+    "s": 44.88,
+    "e": 45.22
+   },
+   {
+    "w": " dari",
+    "s": 45.22,
+    "e": 45.52
+   },
+   {
+    "w": " kelas",
+    "s": 45.52,
+    "e": 45.82
+   },
+   {
+    "w": " 12.",
+    "s": 45.82,
+    "e": 46.46
+   }
+  ]
+ },
+ {
+  "start": 46.9,
+  "end": 48.42,
+  "text": " Dalam 10 detik,",
+  "words": [
+   {
+    "w": " Dalam",
+    "s": 46.9,
+    "e": 47.3
+   },
+   {
+    "w": " 10",
+    "s": 47.3,
+    "e": 47.7
+   },
+   {
+    "w": " detik,",
+    "s": 47.7,
+    "e": 48.42
+   }
+  ]
+ },
+ {
+  "start": 48.62,
+  "end": 51.42,
+  "text": " lapangan itu dipenuhi ratusan titik cahaya,",
+  "words": [
+   {
+    "w": " lapangan",
+    "s": 48.62,
+    "e": 48.92
+   },
+   {
+    "w": " itu",
+    "s": 48.92,
+    "e": 49.2
+   },
+   {
+    "w": " dipenuhi",
+    "s": 49.2,
+    "e": 49.72
+   },
+   {
+    "w": " ratusan",
+    "s": 49.72,
+    "e": 50.34
+   },
+   {
+    "w": " titik",
+    "s": 50.34,
+    "e": 50.72
+   },
+   {
+    "w": " cahaya,",
+    "s": 50.72,
+    "e": 51.42
+   }
+  ]
+ },
+ {
+  "start": 51.8,
+  "end": 53.48,
+  "text": " seperti langit penuh bintang.",
+  "words": [
+   {
+    "w": " seperti",
+    "s": 51.8,
+    "e": 52.08
+   },
+   {
+    "w": " langit",
+    "s": 52.08,
+    "e": 52.56
+   },
+   {
+    "w": " penuh",
+    "s": 52.56,
+    "e": 52.82
+   },
+   {
+    "w": " bintang.",
+    "s": 52.82,
+    "e": 53.48
+   }
+  ]
+ },
+ {
+  "start": 53.64,
+  "end": 55.04,
+  "text": " Dari sisi panggung,",
+  "words": [
+   {
+    "w": " Dari",
+    "s": 53.64,
+    "e": 53.92
+   },
+   {
+    "w": " sisi",
+    "s": 53.92,
+    "e": 54.18
+   },
+   {
+    "w": " panggung,",
+    "s": 54.18,
+    "e": 55.04
+   }
+  ]
+ },
+ {
+  "start": 55.42,
+  "end": 57.04,
+  "text": " Nava menunjuk matanya sendiri,",
+  "words": [
+   {
+    "w": " Nava",
+    "s": 55.42,
+    "e": 55.58
+   },
+   {
+    "w": " menunjuk",
+    "s": 55.58,
+    "e": 56.02
+   },
+   {
+    "w": " matanya",
+    "s": 56.02,
+    "e": 56.42
+   },
+   {
+    "w": " sendiri,",
+    "s": 56.42,
+    "e": 57.04
+   }
+  ]
+ },
+ {
+  "start": 57.42,
+  "end": 58.56,
+  "text": " lalu menunjuk Aldo.",
+  "words": [
+   {
+    "w": " lalu",
+    "s": 57.42,
+    "e": 57.68
+   },
+   {
+    "w": " menunjuk",
+    "s": 57.68,
+    "e": 58.1
+   },
+   {
+    "w": " Aldo.",
+    "s": 58.1,
+    "e": 58.56
+   }
+  ]
+ },
+ {
+  "start": 58.56,
+  "end": 60.1,
+  "text": " Lihat aku aja.",
+  "words": [
+   {
+    "w": " Lihat",
+    "s": 58.56,
+    "e": 59.24
+   },
+   {
+    "w": " aku",
+    "s": 59.24,
+    "e": 59.52
+   },
+   {
+    "w": " aja.",
+    "s": 59.52,
+    "e": 60.1
+   }
+  ]
+ },
+ {
+  "start": 60.44,
+  "end": 61.78,
+  "text": " Aldo memejamkan mata.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 60.44,
+    "e": 60.72
+   },
+   {
+    "w": " memejamkan",
+    "s": 60.72,
+    "e": 61.36
+   },
+   {
+    "w": " mata.",
+    "s": 61.36,
+    "e": 61.78
+   }
+  ]
+ },
+ {
+  "start": 62.44,
+  "end": 64.48,
+  "text": " Geli mengulang intro dari awal.",
+  "words": [
+   {
+    "w": " Geli",
+    "s": 62.44,
+    "e": 62.68
+   },
+   {
+    "w": " mengulang",
+    "s": 62.68,
+    "e": 63.14
+   },
+   {
+    "w": " intro",
+    "s": 63.14,
+    "e": 63.58
+   },
+   {
+    "w": " dari",
+    "s": 63.58,
+    "e": 63.88
+   },
+   {
+    "w": " awal.",
+    "s": 63.88,
+    "e": 64.48
+   }
+  ]
+ },
+ {
+  "start": 64.62,
+  "end": 66.96,
+  "text": " Kali ini, Aldo bernyanyi.",
+  "words": [
+   {
+    "w": " Kali",
+    "s": 64.62,
+    "e": 64.92
+   },
+   {
+    "w": " ini,",
+    "s": 64.92,
+    "e": 65.46
+   },
+   {
+    "w": " Aldo",
+    "s": 65.8,
+    "e": 66.0
+   },
+   {
+    "w": " bernyanyi.",
+    "s": 66.0,
+    "e": 66.96
+   }
+  ]
+ },
+ {
+  "start": 67.26,
+  "end": 68.84,
+  "text": " Suaranya masih sedikit gemetar,",
+  "words": [
+   {
+    "w": " Suaranya",
+    "s": 67.26,
+    "e": 67.52
+   },
+   {
+    "w": " masih",
+    "s": 67.52,
+    "e": 67.84
+   },
+   {
+    "w": " sedikit",
+    "s": 67.84,
+    "e": 68.16
+   },
+   {
+    "w": " gemetar,",
+    "s": 68.16,
+    "e": 68.84
+   }
+  ]
+ },
+ {
+  "start": 69.02,
+  "end": 69.94,
+  "text": " tapi utuh.",
+  "words": [
+   {
+    "w": " tapi",
+    "s": 69.02,
+    "e": 69.26
+   },
+   {
+    "w": " utuh.",
+    "s": 69.26,
+    "e": 69.94
+   }
+  ]
+ },
+ {
+  "start": 70.42,
+  "end": 71.4,
+  "text": " Dibait kedua,",
+  "words": [
+   {
+    "w": " Dibait",
+    "s": 70.42,
+    "e": 70.74
+   },
+   {
+    "w": " kedua,",
+    "s": 70.74,
+    "e": 71.4
+   }
+  ]
+ },
+ {
+  "start": 71.68,
+  "end": 74.02,
+  "text": " Febri dan Stefan masuk dengan gitar dan bas,",
+  "words": [
+   {
+    "w": " Febri",
+    "s": 71.68,
+    "e": 71.88
+   },
+   {
+    "w": " dan",
+    "s": 71.88,
+    "e": 72.1
+   },
+   {
+    "w": " Stefan",
+    "s": 72.1,
+    "e": 72.44
+   },
+   {
+    "w": " masuk",
+    "s": 72.44,
+    "e": 72.9
+   },
+   {
+    "w": " dengan",
+    "s": 72.9,
+    "e": 73.18
+   },
+   {
+    "w": " gitar",
+    "s": 73.18,
+    "e": 73.54
+   },
+   {
+    "w": " dan",
+    "s": 73.54,
+    "e": 73.8
+   },
+   {
+    "w": " bas,",
+    "s": 73.8,
+    "e": 74.02
+   }
+  ]
+ },
+ {
+  "start": 74.32,
+  "end": 76.44,
+  "text": " dan suara Aldo makin mantap.",
+  "words": [
+   {
+    "w": " dan",
+    "s": 74.32,
+    "e": 74.5
+   },
+   {
+    "w": " suara",
+    "s": 74.5,
+    "e": 74.8
+   },
+   {
+    "w": " Aldo",
+    "s": 74.8,
+    "e": 75.3
+   },
+   {
+    "w": " makin",
+    "s": 75.3,
+    "e": 75.82
+   },
+   {
+    "w": " mantap.",
+    "s": 75.82,
+    "e": 76.44
+   }
+  ]
+ },
+ {
+  "start": 76.58,
+  "end": 77.46,
+  "text": " Saat masuk ref,",
+  "words": [
+   {
+    "w": " Saat",
+    "s": 76.58,
+    "e": 76.84
+   },
+   {
+    "w": " masuk",
+    "s": 76.84,
+    "e": 77.16
+   },
+   {
+    "w": " ref,",
+    "s": 77.16,
+    "e": 77.46
+   }
+  ]
+ },
+ {
+  "start": 77.78,
+  "end": 79.0,
+  "text": " Gabriel menghentak drum,",
+  "words": [
+   {
+    "w": " Gabriel",
+    "s": 77.78,
+    "e": 78.12
+   },
+   {
+    "w": " menghentak",
+    "s": 78.12,
+    "e": 78.72
+   },
+   {
+    "w": " drum,",
+    "s": 78.72,
+    "e": 79.0
+   }
+  ]
+ },
+ {
+  "start": 79.32,
+  "end": 82.04,
+  "text": " dan seluruh lapangan ikut bernyanyi bersamanya.",
+  "words": [
+   {
+    "w": " dan",
+    "s": 79.32,
+    "e": 79.56
+   },
+   {
+    "w": " seluruh",
+    "s": 79.56,
+    "e": 80.02
+   },
+   {
+    "w": " lapangan",
+    "s": 80.02,
+    "e": 80.38
+   },
+   {
+    "w": " ikut",
+    "s": 80.38,
+    "e": 80.78
+   },
+   {
+    "w": " bernyanyi",
+    "s": 80.78,
+    "e": 81.38
+   },
+   {
+    "w": " bersamanya.",
+    "s": 81.38,
+    "e": 82.04
+   }
+  ]
+ },
+ {
+  "start": 82.9,
+  "end": 84.12,
+  "text": " Lagu selesai.",
+  "words": [
+   {
+    "w": " Lagu",
+    "s": 82.9,
+    "e": 83.22
+   },
+   {
+    "w": " selesai.",
+    "s": 83.22,
+    "e": 84.12
+   }
+  ]
+ },
+ {
+  "start": 84.34,
+  "end": 85.2,
+  "text": " Sejenak hening.",
+  "words": [
+   {
+    "w": " Sejenak",
+    "s": 84.34,
+    "e": 84.8
+   },
+   {
+    "w": " hening.",
+    "s": 84.8,
+    "e": 85.2
+   }
+  ]
+ },
+ {
+  "start": 85.7,
+  "end": 88.06,
+  "text": " Lalu lapangan meledak oleh tepuk tangan.",
+  "words": [
+   {
+    "w": " Lalu",
+    "s": 85.7,
+    "e": 86.04
+   },
+   {
+    "w": " lapangan",
+    "s": 86.04,
+    "e": 86.46
+   },
+   {
+    "w": " meledak",
+    "s": 86.46,
+    "e": 87.08
+   },
+   {
+    "w": " oleh",
+    "s": 87.08,
+    "e": 87.32
+   },
+   {
+    "w": " tepuk",
+    "s": 87.32,
+    "e": 87.62
+   },
+   {
+    "w": " tangan.",
+    "s": 87.62,
+    "e": 88.06
+   }
+  ]
+ },
+ {
+  "start": 88.06,
+  "end": 89.88,
+  "text": " Di belakang panggung,",
+  "words": [
+   {
+    "w": " Di",
+    "s": 88.06,
+    "e": 88.62
+   },
+   {
+    "w": " belakang",
+    "s": 88.62,
+    "e": 88.98
+   },
+   {
+    "w": " panggung,",
+    "s": 88.98,
+    "e": 89.88
+   }
+  ]
+ },
+ {
+  "start": 90.26,
+  "end": 91.38,
+  "text": " Nava memeluk Aldo,",
+  "words": [
+   {
+    "w": " Nava",
+    "s": 90.26,
+    "e": 90.4
+   },
+   {
+    "w": " memeluk",
+    "s": 90.4,
+    "e": 90.86
+   },
+   {
+    "w": " Aldo,",
+    "s": 90.86,
+    "e": 91.38
+   }
+  ]
+ },
+ {
+  "start": 91.88,
+  "end": 93.82,
+  "text": " dan berbisik dengan suara seraknya.",
+  "words": [
+   {
+    "w": " dan",
+    "s": 91.88,
+    "e": 91.98
+   },
+   {
+    "w": " berbisik",
+    "s": 91.98,
+    "e": 92.62
+   },
+   {
+    "w": " dengan",
+    "s": 92.62,
+    "e": 92.92
+   },
+   {
+    "w": " suara",
+    "s": 92.92,
+    "e": 93.22
+   },
+   {
+    "w": " seraknya.",
+    "s": 93.22,
+    "e": 93.82
+   }
+  ]
+ },
+ {
+  "start": 94.16,
+  "end": 96.08,
+  "text": " Tahun depan kita duet.",
+  "words": [
+   {
+    "w": " Tahun",
+    "s": 94.16,
+    "e": 94.46
+   },
+   {
+    "w": " depan",
+    "s": 94.46,
+    "e": 95.1
+   },
+   {
+    "w": " kita",
+    "s": 95.1,
+    "e": 95.44
+   },
+   {
+    "w": " duet.",
+    "s": 95.44,
+    "e": 96.08
+   }
+  ]
+ },
+ {
+  "start": 96.52,
+  "end": 97.68,
+  "text": " Aldo tertawa.",
+  "words": [
+   {
+    "w": " Aldo",
+    "s": 96.52,
+    "e": 96.88
+   },
+   {
+    "w": " tertawa.",
+    "s": 96.88,
+    "e": 97.68
+   }
+  ]
+ },
+ {
+  "start": 97.98,
+  "end": 99.66,
+  "text": " Tangannya masih gemetar.",
+  "words": [
+   {
+    "w": " Tangannya",
+    "s": 97.98,
+    "e": 98.28
+   },
+   {
+    "w": " masih",
+    "s": 98.28,
+    "e": 98.56
+   },
+   {
+    "w": " gemetar.",
+    "s": 98.56,
+    "e": 99.66
+   }
+  ]
+ },
+ {
+  "start": 100.06,
+  "end": 100.78,
+  "text": " Ternyata,",
+  "words": [
+   {
+    "w": " Ternyata,",
+    "s": 100.06,
+    "e": 100.78
+   }
+  ]
+ },
+ {
+  "start": 100.98,
+  "end": 103.0,
+  "text": " berani itu bukan berarti tidak takut.",
+  "words": [
+   {
+    "w": " berani",
+    "s": 100.98,
+    "e": 101.2
+   },
+   {
+    "w": " itu",
+    "s": 101.2,
+    "e": 101.52
+   },
+   {
+    "w": " bukan",
+    "s": 101.52,
+    "e": 101.76
+   },
+   {
+    "w": " berarti",
+    "s": 101.76,
+    "e": 102.12
+   },
+   {
+    "w": " tidak",
+    "s": 102.12,
+    "e": 102.44
+   },
+   {
+    "w": " takut.",
+    "s": 102.44,
+    "e": 103.0
+   }
+  ]
+ },
+ {
+  "start": 103.52,
+  "end": 105.62,
+  "text": " Berani itu tetap bernyanyi,",
+  "words": [
+   {
+    "w": " Berani",
+    "s": 103.52,
+    "e": 103.92
+   },
+   {
+    "w": " itu",
+    "s": 103.92,
+    "e": 104.28
+   },
+   {
+    "w": " tetap",
+    "s": 104.28,
+    "e": 104.82
+   },
+   {
+    "w": " bernyanyi,",
+    "s": 104.82,
+    "e": 105.62
+   }
+  ]
+ },
+ {
+  "start": 105.78,
+  "end": 106.98,
+  "text": " walaupun takut.",
+  "words": [
+   {
+    "w": " walaupun",
+    "s": 105.78,
+    "e": 106.2
+   },
+   {
+    "w": " takut.",
+    "s": 106.2,
+    "e": 106.98
+   }
+  ]
+ },
+ {
+  "start": 107.48,
+  "end": 107.82,
+  "text": " Tamat.",
+  "words": [
+   {
+    "w": " Tamat.",
+    "s": 107.48,
+    "e": 107.82
+   }
+  ]
+ }
+]

@@ -1,0 +1,407 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 80.96,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "GABRIEL": {
+   "warna": "#FFD84A"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "FEBRI": {
+   "warna": "#C7A4FF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 80.96,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.48,
+     "teks": "Bagian 2."
+    },
+    {
+     "start": 1.48,
+     "end": 2.87,
+     "teks": "Tangan yang Gemetar."
+    },
+    {
+     "start": 3.36,
+     "end": 4.34,
+     "teks": "Latihan pertama"
+    },
+    {
+     "start": 4.34,
+     "end": 5.73,
+     "teks": "berantakan."
+    },
+    {
+     "start": 5.96,
+     "end": 6.78,
+     "teks": "Aldo lupa lirik"
+    },
+    {
+     "start": 6.78,
+     "end": 7.93,
+     "teks": "di bait kedua."
+    },
+    {
+     "start": 8.08,
+     "end": 9.08,
+     "teks": "Suaranya pecah di"
+    },
+    {
+     "start": 9.08,
+     "end": 10.25,
+     "teks": "nada tinggi."
+    },
+    {
+     "start": 10.32,
+     "end": 10.95,
+     "teks": "Di depan"
+    },
+    {
+     "start": 10.95,
+     "end": 11.24,
+     "teks": "teman-temannya"
+    },
+    {
+     "start": 11.24,
+     "end": 12.34,
+     "teks": "sendiri pun,"
+    },
+    {
+     "start": 12.34,
+     "end": 13.83,
+     "teks": "lututnya gemetar."
+    },
+    {
+     "start": 13.92,
+     "end": 14.72,
+     "teks": "\"Santai,",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 14.72,
+     "end": 15.28,
+     "teks": "Do.",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 15.28,
+     "end": 16.16,
+     "teks": "Anggap aja lagi",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 16.16,
+     "end": 17.33,
+     "teks": "di kamar.\"",
+     "siapa": "GABRIEL"
+    },
+    {
+     "start": 18.26,
+     "end": 19.14,
+     "teks": "\"Kamar gue nggak",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 19.14,
+     "end": 20.69,
+     "teks": "ada 300 orang.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 21.14,
+     "end": 22.22,
+     "teks": "Sabtu malam,"
+    },
+    {
+     "start": 22.22,
+     "end": 22.98,
+     "teks": "lapangan sekolah"
+    },
+    {
+     "start": 22.98,
+     "end": 23.77,
+     "teks": "penuh."
+    },
+    {
+     "start": 23.86,
+     "end": 24.7,
+     "teks": "Lampu warna-warni"
+    },
+    {
+     "start": 24.7,
+     "end": 25.62,
+     "teks": "menyala di atas"
+    },
+    {
+     "start": 25.62,
+     "end": 26.19,
+     "teks": "panggung."
+    },
+    {
+     "start": 26.54,
+     "end": 27.5,
+     "teks": "Aldo menunggu di"
+    },
+    {
+     "start": 27.5,
+     "end": 28.56,
+     "teks": "belakang panggung."
+    },
+    {
+     "start": 28.56,
+     "end": 29.42,
+     "teks": "Telapak tangannya"
+    },
+    {
+     "start": 29.42,
+     "end": 30.49,
+     "teks": "basah."
+    },
+    {
+     "start": 30.54,
+     "end": 31.32,
+     "teks": "Band kelas 12"
+    },
+    {
+     "start": 31.32,
+     "end": 32.24,
+     "teks": "tampil sebelum"
+    },
+    {
+     "start": 32.24,
+     "end": 32.79,
+     "teks": "mereka."
+    },
+    {
+     "start": 33.0,
+     "end": 34.02,
+     "teks": "Rialdi bermain gitar"
+    },
+    {
+     "start": 34.02,
+     "end": 35.16,
+     "teks": "dengan lincah."
+    },
+    {
+     "start": 35.16,
+     "end": 36.26,
+     "teks": "Dika menggebuk drum"
+    },
+    {
+     "start": 36.26,
+     "end": 37.25,
+     "teks": "dengan keras."
+    },
+    {
+     "start": 37.42,
+     "end": 38.44,
+     "teks": "Penonton bersorak"
+    },
+    {
+     "start": 38.44,
+     "end": 39.5,
+     "teks": "sampai tanah terasa"
+    },
+    {
+     "start": 39.5,
+     "end": 40.39,
+     "teks": "bergetar."
+    },
+    {
+     "start": 40.42,
+     "end": 41.38,
+     "teks": "\"Kita tampil setelah",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 41.38,
+     "end": 41.85,
+     "teks": "itu.\"",
+     "siapa": "FEBRI"
+    },
+    {
+     "start": 42.14,
+     "end": 43.4,
+     "teks": "\"Aku nggak bisa.",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 43.4,
+     "end": 44.35,
+     "teks": "Aku pulang aja.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 44.56,
+     "end": 45.44,
+     "teks": "Ia sudah setengah"
+    },
+    {
+     "start": 45.44,
+     "end": 46.4,
+     "teks": "jalan menuju gerbang"
+    },
+    {
+     "start": 46.4,
+     "end": 47.43,
+     "teks": "belakang."
+    },
+    {
+     "start": 47.44,
+     "end": 48.34,
+     "teks": "Ketika seseorang"
+    },
+    {
+     "start": 48.34,
+     "end": 49.83,
+     "teks": "menahan lengannya."
+    },
+    {
+     "start": 50.08,
+     "end": 50.63,
+     "teks": "Nava."
+    },
+    {
+     "start": 50.91,
+     "end": 51.94,
+     "teks": "Syal masih di"
+    },
+    {
+     "start": 51.94,
+     "end": 52.63,
+     "teks": "lehernya."
+    },
+    {
+     "start": 53.0,
+     "end": 54.17,
+     "teks": "Nava tidak bicara."
+    },
+    {
+     "start": 54.48,
+     "end": 55.34,
+     "teks": "Ia hanya menunjuk"
+    },
+    {
+     "start": 55.34,
+     "end": 56.34,
+     "teks": "ke panggung,"
+    },
+    {
+     "start": 56.34,
+     "end": 57.32,
+     "teks": "lalu mengangkat ibu"
+    },
+    {
+     "start": 57.32,
+     "end": 57.77,
+     "teks": "jari."
+    },
+    {
+     "start": 58.5,
+     "end": 59.93,
+     "teks": "Lampu meredup."
+    },
+    {
+     "start": 60.04,
+     "end": 61.28,
+     "teks": "Suara MC menggema"
+    },
+    {
+     "start": 61.28,
+     "end": 62.61,
+     "teks": "di seluruh lapangan."
+    },
+    {
+     "start": 62.86,
+     "end": 63.78,
+     "teks": "\"Selanjutnya,"
+    },
+    {
+     "start": 63.78,
+     "end": 65.75,
+     "teks": "band kelas 11!\""
+    },
+    {
+     "start": 66.2,
+     "end": 67.04,
+     "teks": "Aldo melangkah ke"
+    },
+    {
+     "start": 67.04,
+     "end": 68.21,
+     "teks": "tengah panggung."
+    },
+    {
+     "start": 68.32,
+     "end": 69.0,
+     "teks": "Ia menggenggam"
+    },
+    {
+     "start": 69.0,
+     "end": 69.99,
+     "teks": "mikrofon."
+    },
+    {
+     "start": 70.61,
+     "end": 71.01,
+     "teks": "Nyiiing!"
+    },
+    {
+     "start": 71.37,
+     "end": 72.58,
+     "teks": "Pengeras suara"
+    },
+    {
+     "start": 72.58,
+     "end": 73.95,
+     "teks": "berdenging keras."
+    },
+    {
+     "start": 74.36,
+     "end": 75.52,
+     "teks": "300 pasang mata"
+    },
+    {
+     "start": 75.52,
+     "end": 76.58,
+     "teks": "menatapnya dalam"
+    },
+    {
+     "start": 76.58,
+     "end": 77.13,
+     "teks": "diam."
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "TANGAN YANG",
+  "baris2": "GEMETAR",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 77.66,
+  "end": 80.96,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 3: Satu Lagu"
+ }
+}

@@ -155,6 +155,12 @@ function stan(label, warna, x, o = {}) {
   const sp = textPlane(3.0, 0.6, (c, w, h) => { c.fillStyle = warna; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.55}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(label, w / 2, h / 2 + 3); });
   sp.position.set(0, 2.55, 1.17); g.add(sp); return g;
 }
+export function bus(color = '#1f6fb2') { const g = new THREE.Group();
+  g.add(box(10, 3.0, 2.6, color, [0, 1.9, 0], { round: 0.25 })); g.add(box(9.6, 1.0, 2.62, noOutline(flat('#2b3a4a')), [0, 2.4, 0], { cast: false }));
+  g.add(box(0.1, 2.0, 1.0, '#ddd', [4.96, 1.5, 0.7], { })); const pintu = box(0.08, 2.0, 0.9, '#bbb', [4.0, 1.5, 1.32]); pintu.name = 'pintuBus'; g.add(pintu);
+  for (const x of [-3.5, 3.2]) for (const z of [-1.3, 1.3]) { const w = mesh(new THREE.CylinderGeometry(0.5, 0.5, 0.35, 16), toon('#1d1d1d')); w.rotation.x = Math.PI / 2; w.position.set(x, 0.5, z); g.add(w); }
+  const tx = textPlane(4, 0.5, (c, w, h) => { c.fillStyle = color; c.fillRect(0, 0, w, h); c.fillStyle = '#fff'; c.font = `bold ${h * 0.6}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('PARIWISATA NYUATAN', w / 2, h / 2 + 2); });
+  tx.position.set(-0.5, 1.2, 1.32); g.add(tx); return g; }
 export function bag(color = '#2d3a4a') { const g = new THREE.Group(); g.add(box(0.6, 0.7, 0.3, color, [0, 0.35, 0], { round: 0.1 })); return g; }
 
 function windowPane(w, h, glassColor, frame = '#f1f1f1') {
@@ -499,6 +505,57 @@ export const SETS = {
     sp.position.set(-0.3, 1.65, -1.6); scene.add(sp);
     return {};
   },
+  busDalam(scene, o = {}) { // interior bus: depan = -z, kursi baris z=-5+r*1.6 (x ±1.0/±1.9), bangku belakang z=4.6; pohon lewat di jendela
+    scene.userData.clear = 0x222222; sky(scene, '#8fc3ea', '#eef4f2');
+    lights(scene, { sky: '#fff8e8', ground: '#7a6a5a', hemi: 1.9, sunI: 1.1, sunPos: [5, 9, 2], shadowSize: 10 });
+    const fl = mesh(new THREE.PlaneGeometry(4.8, 16), noOutline(toon('#5a5f66')), { cast: false }); fl.rotation.x = -Math.PI / 2; scene.add(fl);
+    for (const x of [-2.45, 2.45]) { scene.add(box(0.1, 0.95, 16, '#c9c3b5', [x, 0.47, 0])); scene.add(box(0.1, 0.5, 16, '#c9c3b5', [x, 2.75, 0]));
+      for (let z = -7; z <= 7; z += 2.2) scene.add(box(0.12, 1.5, 0.12, '#8a8a8a', [x, 1.7, z])); }
+    scene.add(box(5, 0.1, 16, '#e8e4dc', [0, 3.0, 0], { cast: false }));
+    for (let r = 0; r < 6; r++) for (const sx of [-1.9, -1.0, 1.0, 1.9]) { const z = -5 + r * 1.6; scene.add(box(0.8, 0.12, 0.6, '#2e6fb2', [sx, 0.44, z])); scene.add(box(0.8, 1.0, 0.14, '#2e6fb2', [sx, 0.95, z + 0.4])); }
+    scene.add(box(4.6, 0.12, 0.6, '#2e6fb2', [0, 0.44, 4.6])); scene.add(box(4.6, 1.0, 0.14, '#2e6fb2', [0, 0.95, 5.0])); scene.add(box(5, 3, 0.1, '#c9c3b5', [0, 1.5, 5.4]));
+    const gerak = new THREE.Group(); gerak.name = 'gerak'; scene.add(gerak);
+    for (let k = -1; k <= 1; k++) for (let i = 0; i < 10; i++) for (const sd of [-1, 1]) { const t = tree(3); t.position.set(sd * (5 + (i % 3) * 1.5), -0.8, k * 40 - 20 + i * 4 + (sd > 0 ? 2 : 0)); gerak.add(t); }
+    return {};
+  },
+  pantai(scene, o = {}) {
+    scene.userData.clear = 0x222222; sky(scene, '#5fb3f0', '#e6f6ff');
+    lights(scene, { sky: '#ffffff', ground: '#e8d9b0', hemi: 1.8, sunI: 1.8, sunPos: [4, 10, 6], shadowSize: 18 });
+    const pasir = mesh(new THREE.PlaneGeometry(80, 40), noOutline(toon('#f2e2b6')), { cast: false }); pasir.rotation.x = -Math.PI / 2; pasir.position.z = 6; scene.add(pasir);
+    const laut = mesh(new THREE.PlaneGeometry(120, 60), noOutline(toon('#2f9bd6')), { cast: false }); laut.rotation.x = -Math.PI / 2; laut.position.set(0, 0.02, -34); scene.add(laut);
+    const ombak = new THREE.Group(); ombak.name = 'ombak'; scene.add(ombak); for (let i = 0; i < 4; i++) ombak.add(box(80, 0.04, 0.4, noOutline(flat('#e8f7ff')), [0, 0.05, -4.5 - i * 1.6], { cast: false }));
+    for (const [x, z] of [[-9, 2], [-11, 6], [9, 3], [12, 7]]) { const t = new THREE.Group(); t.add(box(0.3, 5, 0.3, '#8a6a45', [0, 2.5, 0], { rot: [0, 0, 0.12] })); for (let j = 0; j < 6; j++) t.add(box(2.2, 0.08, 0.5, '#4f9a4f', [Math.cos(j) * 0.9 + 0.3, 5, Math.sin(j) * 0.9], { rot: [0, j, -0.35] })); t.position.set(x, 0, z); scene.add(t); }
+    if (o.bus) { const b = bus(); b.position.set(-4, 0, 9); scene.add(b); }
+    if (o.spandukTim) { const sp = textPlane(3.6, 0.9, (c, w, h) => { c.fillStyle = '#8e44ad'; c.fillRect(0, 0, w, h); c.fillStyle = '#ffe066'; c.font = `bold ${h * 0.42}px Oswald`; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('TEAM ES TEH BOBA SULTAN', w / 2, h / 2 + 3); }); sp.position.set(0, 1.5, -1.45); scene.add(sp); }
+    return {};
+  },
+  kemah(scene, o = {}) { // senja dekat air terjun
+    scene.userData.clear = 0x222222; sky(scene, '#f2905a', '#ffe0b0');
+    lights(scene, { sky: '#ffc98a', ground: '#6a4a3a', hemi: 1.5, sun: '#ff9f55', sunI: 2.0, sunPos: [-10, 4, 4], shadowSize: 16 });
+    const g = mesh(new THREE.PlaneGeometry(80, 80), noOutline(toon('#6f9a55')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
+    scene.add(box(30, 14, 4, '#7d7468', [0, 7, -16])); const afT = canvasTex(128, 512, (x, w, h) => { x.fillStyle = '#cfeeff'; x.fillRect(0, 0, w, h); for (let i = 0; i < 60; i++) { x.fillStyle = i % 2 ? '#ffffff' : '#a9dcf5'; x.fillRect(Math.random() * w, Math.random() * h, 3 + Math.random() * 6, 30 + Math.random() * 80); } }); afT.wrapS = afT.wrapT = THREE.RepeatWrapping; afT.repeat.set(1, 2);
+    const af = mesh(new THREE.PlaneGeometry(3, 13), noOutline(flat('#ffffff', { map: afT }))); af.position.set(2, 6.5, -13.9); af.name = 'airTerjun'; scene.add(af);
+    const kol = mesh(new THREE.CircleGeometry(4, 24), noOutline(flat('#7cc4e8'))); kol.rotation.x = -Math.PI / 2; kol.position.set(2, 0.03, -11.5); scene.add(kol);
+    for (const [x, z, c] of [[-6, -5, '#e67e22'], [-3.5, -6, '#2980b9'], [5.5, -5, '#27ae60']]) { const tn = mesh(new THREE.ConeGeometry(1.4, 1.8, 4), toon(c)); tn.position.set(x, 0.9, z); tn.rotation.y = Math.PI / 4; scene.add(tn); }
+    const gr = new THREE.Group(); gr.add(box(1.2, 0.08, 0.6, '#333', [0, 0.9, 0])); for (const x of [-0.5, 0.5]) gr.add(box(0.06, 0.9, 0.06, '#333', [x, 0.45, 0]));
+    for (let i = 0; i < 5; i++) gr.add(box(0.12, 0.08, 0.45, i % 2 ? '#f2c230' : '#c0392b', [-0.4 + i * 0.2, 0.98, 0])); gr.position.set(3.2, 0, 0.2); gr.name = 'grill'; scene.add(gr);
+    for (let i = 0; i < 8; i++) { const x = -12 + i * 3.4; if (x > -3 && x < 7) continue; const t = tree(3.5); t.position.set(x, 0, -9 - (i % 2) * 2); scene.add(t); }
+    return {};
+  },
+  apiUnggun(scene, o = {}) {
+    scene.userData.clear = 0x05070f; sky(scene, '#070b1f', '#1b2244');
+    lights(scene, { sky: '#3a4a7a', ground: '#1a1410', hemi: 0.8, sun: '#8090c0', sunI: 0.4, sunPos: [-4, 8, 4], shadowSize: 14 });
+    const g = mesh(new THREE.PlaneGeometry(80, 80), noOutline(toon('#3a4a30')), { cast: false }); g.rotation.x = -Math.PI / 2; scene.add(g);
+    const api = new THREE.PointLight('#ff9a40', 14, 14, 1.4); api.position.set(0, 1.2, 0); api.name = 'cahayaApi'; scene.add(api);
+    for (let i = 0; i < 6; i++) scene.add(box(1.4, 0.18, 0.18, '#5a3a22', [0, 0.12, 0], { rot: [0, i * 0.52, 0] }));
+    const nyala = new THREE.Group(); nyala.name = 'nyala'; scene.add(nyala);
+    for (let i = 0; i < 5; i++) { const f = mesh(new THREE.ConeGeometry(0.35 - i * 0.05, 1.2 - i * 0.12, 8), noOutline(flat(['#ff5a1f', '#ff8c1f', '#ffb347', '#ffd36b', '#fff0a0'][i]))); f.position.set(Math.sin(i) * 0.15, 0.6, Math.cos(i) * 0.15); nyala.add(f); }
+    for (let i = 0; i < 160; i++) { const st = mesh(new THREE.SphereGeometry(0.06, 4, 3), noOutline(flat('#ffffff'))); const a = Math.random() * Math.PI * 2, r = 30 + Math.random() * 10; st.position.set(Math.cos(a) * r, 8 + Math.random() * 25, -Math.abs(Math.sin(a)) * r - 10); scene.add(st); }
+    const pc = []; for (let i = 0; i < 24; i++) { const sp = mesh(new THREE.SphereGeometry(0.04, 4, 3), noOutline(flat('#ffcf6b'))); scene.add(sp); pc.push(sp); } scene.userData.percik = pc;
+    for (let i = 0; i < 6; i++) { const t = tree(4); t.position.set(Math.cos(i) * 14, 0, Math.sin(i) * 9 - 6); scene.add(t); }
+    return {};
+  },
+  gerbangBus(scene, o = {}) { SETS.gerbang(scene, o); const b = bus(); b.name = 'busJalan'; b.position.set(-1, 0, 5.2); scene.add(b); return {}; },
   kosong(scene, o = {}) { // studio polos untuk kenangan / insert
     scene.userData.clear = 0xffffff;
     scene.background = new THREE.Color(o.bg || '#f2efe9');

@@ -16,7 +16,7 @@ LIRIK = [(7.9, 12.9, "Hanya di kamar, pintu terkunci rapat"), (12.9, 17.2, "Meny
  (87.3, 92.3, C1[0]), (92.3, 96.7, C1[1]), (96.8, 101.0, C1[2]), (101.0, 108.2, C1[3]),
  (108.3, 113.4, "Tak ada lagi ragu, di balik rasa takut"), (113.4, 119.7, "Tetaplah bernyanyi, meski nyawa terasa surut"),
  (120.3, 125.1, C1[0]), (125.1, 129.5, C1[1]), (129.6, 133.8, C1[2]), (133.8, 138.4, C1[3]),
- (138.5, 146.6, "Tepuk tangan ini untuk kita semua"), (146.6, 155.0, "Lagu sudah usai, tapi mimpi baru saja"), (155.1, 163.8, "Baru saja terbuka")]
+ (138.5, 146.6, "Tepuk tangan ini, untuk kita semua"), (146.6, 155.0, "Lagu sudah usai, tapi mimpi baru saja..."), (155.1, 163.8, "Baru saja... terbuka.")]
 SFX = [('ceklek', 0.7, 1.0), ('mikrofon', 63.7, 0.5), ('sorak', 48.7, 0.35), ('dengung', 69.15, 0.55), ('tawa', 78.7, 0.6), ('sorak', 138.6, 0.4), ('tepuk', 138.8, 0.45), ('sorak', 142.4, 0.3)]
 
 def ts(t): return f"{int(t // 3600)}:{int(t % 3600 // 60):02d}:{t % 60:05.2f}"

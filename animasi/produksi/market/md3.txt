@@ -1,0 +1,31 @@
+# judul: BOBA KETEMU | ES TEH
+# akhir: TAMAT | Market Day
+[bazarSepi] p1=aldo p2=gelly depan11a=sera
+NARATOR {lebar}: Bagian tiga. Boba Ketemu Es Teh.
+NARATOR {cu:sera} (sera=cemas): Mesin boba kelas 12 korsleting. Bobanya sudah matang, tapi tidak bisa dikocok dan disegel. Gelas khusus mereka juga ikut rusak terkena air.
+ALDO (cemas): "Kami punya seratus gelas, tapi kami nggak punya es."
+NARATOR {cu:sera} (sera=senyum): Sera terdiam sebentar, lalu tersenyum.
+SERA (senang, sera:tunjuk, sfx=cooler): "Kami punya dua cooler box penuh es batu."
+NARATOR {dua} (aldo:jabat, sera:jabat, aldo=senang, sera=senang, sfx=salaman@pandang): Semua saling pandang!
+[bazarMotor] tulis1=elisabeth tulis2=manohara
+NARATOR {lebar} (elisabeth:jongkok, manohara:jongkok, elisabeth=fokus, manohara=fokus, sfx=spidol+lakban@tergantung): Lima menit kemudian, spanduk baru tergantung di antara dua stan, ditulis dengan spidol besar oleh Elisabeth dan Manohara.
+NARATOR {kertas} [Rp7.000 | Es Teh Boba Sultan Jumbo | Kolaborasi kelas 11 dan kelas 12]: "Es Teh Boba Sultan Jumbo. Kolaborasi kelas 11 dan kelas 12." Es teh dari kelas 11, boba dan es dari kelas 12, gelas dari kelas 11. Harga 7.000.
+[bazarMotor] tiba1=nava tiba2=febri tulis1=elisabeth tulis2=manohara
+NARATOR {lebar} (nava=lega, febri=lega, sfx=motorDatang@datang+kertas@kantong): Tepat saat itu, Nava dan Febri datang dengan motor penuh kantong es dari pasar.
+[bazarGabung] p1=aldo p2=sera p3=gelly
+NARATOR {lebar} (aldo=senang, sera=senang, gelly=senang, sfx=ramai+es+kasir@kali): Antrean langsung pindah, panjangnya dua kali lipat dari tadi pagi.
+[bazarGabung] pemusik=febri pemusik2=stefan penyanyi=rialdi perekam1=hissari perekam2=misel
+NARATOR {lebar} (ceria, febri:gitar, stefan:gitar, rialdi:mic, hissari:hp, misel:hp, febri=senang, stefan=senang, rialdi=senang, hissari=senang, misel=senang, sfx=gitarCeria): Febri dan Stefan bermain gitar, sementara Rialdi ikut bernyanyi dengan suara pas-pasan.
+NARATOR {cu:hissari} (ceria, febri:gitar, stefan:gitar, rialdi:mic, hissari:hp, misel:hp, hissari=senang): Hissari dan Misel merekam semuanya. Videonya ditonton ribuan kali sebelum jam makan siang.
+[bazarGabung] p1=aldo p2=sera p3=gelly
+NARATOR {lebar} (aldo=lega, sera=lega, gelly=lega, sfx=kasir): Jam 1 siang, semua gelas habis.
+[bazarPanggung] panggung=agus p1=aldo p2=sera p3=gelly p4=rialdi p5=hissari p6=febri
+NARATOR {cu:agus} (agus:mic, agus=senyum, sfx=mikrofon+drumroll@naik): Di akhir acara, Pak Agus naik ke panggung.
+AGUS (senang, agus:mic): "Omset tertinggi tahun ini: stan kolaborasi! Karena itu, hadiah jalan-jalan untuk dua kelas sekaligus!"
+NARATOR {lebar} (aldo:sorak, sera:sorak, gelly:sorak, rialdi:sorak, hissari:sorak, febri:sorak, aldo=senang, sera=senang, gelly=senang, rialdi=senang, hissari=senang, febri=senang, sfx=sorak): Lapangan meledak oleh sorakan!
+[bazarSepi] depan11a=rialdi depan11b=aldo
+NARATOR {dua} (rialdi:tepukBahu, rialdi=senyum, aldo=senyum, sfx=tepukBahu@menepuk): Saat membereskan stan, Rialdi menepuk bahu Aldo.
+RIALDI (senyum, rialdi:tepukBahu): "Tahun depan kalian yang kelas 12. Jangan pelit sama adik kelas, ya."
+NARATOR {cu:aldo} (aldo=senang): Aldo tertawa.
+ALDO (senang): "Siap, Kak! Asal mesin bobanya diwariskan."
+NARATOR {akhir}: Tamat.

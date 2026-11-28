@@ -1,5 +1,6 @@
 // Daftar pemeran (desain karakter tetap konsisten antar episode).
 import { Char } from './char.js';
+import { CAST_REF } from './sets.js';
 const SERAGAM = { shirt: '#f4f2ec', pants: '#6b6e75' };
 
 // ---------- DAFTAR TOKOH TETAP (jangan diubah tanpa permintaan pengguna) ----------
@@ -63,3 +64,4 @@ export const CAST = {
   siswi: (i = 0, o = {}) => new Char({ ...SERAGAM, skirt: '#6b6e75', skin: ['#d49a64', '#c98a52', '#e0b07e'][i % 3], hair: '#2a1d16', hairStyle: 'panjang', longSleeve: true, blinkSeed: i * 0.53, ...o }),
 };
 for (const k of Object.keys(TOKOH)) if (!CAST[k]) CAST[k] = (o = {}) => murid(k, o);
+CAST_REF.siswa = CAST.siswa; CAST_REF.siswi = CAST.siswi;

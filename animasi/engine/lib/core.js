@@ -105,6 +105,7 @@ export const GRADES = {
   kenangan: { sat: 0.65, contrast: 0.9, bright: 0.05, tint: [1.04, 1.0, 0.94], vigColor: [1, 1, 1], vigAmt: 0.95, vigRad: 0.5, vigSoft: 0.6, grain: 0.03 },
   pagi: { sat: 0.95, contrast: 0.95, bright: 0.02, tint: [0.98, 1.0, 1.03], vigColor: [0.1, 0.1, 0.12], vigAmt: 0.35, vigRad: 0.75, vigSoft: 0.9, grain: 0.03 },
   sore: { sat: 1.0, contrast: 0.95, bright: 0.0, tint: [1.1, 0.97, 0.84], vigColor: [0.25, 0.1, 0.05], vigAmt: 0.5, vigRad: 0.6, vigSoft: 0.9, grain: 0.035 },
+  panas: { sat: 1.1, contrast: 1.05, bright: 0.04, tint: [1.12, 1.0, 0.84], vigColor: [1, 0.85, 0.6], vigAmt: 0.35, vigRad: 0.6, vigSoft: 0.9, grain: 0.04 },
   hujan: { sat: 0.7, contrast: 0.95, bright: -0.06, tint: [0.92, 0.97, 1.05], vigColor: [0.08, 0.1, 0.14], vigAmt: 0.55, vigRad: 0.55, vigSoft: 0.9, grain: 0.05 },
   gelap: { sat: 0.5, contrast: 1.1, bright: -0.38, tint: [0.85, 0.9, 1.1], vigColor: [0, 0, 0], vigAmt: 0.9, vigRad: 0.3, vigSoft: 0.8, grain: 0.08 },
   ancaman: { sat: 0.55, contrast: 1.1, bright: -0.04, tint: [1.08, 0.88, 0.88], vigColor: [0.08, 0, 0], vigAmt: 0.75, vigRad: 0.4, vigSoft: 0.9, grain: 0.06 },

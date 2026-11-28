@@ -1,0 +1,527 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 103.96,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "ALDO": {
+   "warna": "#FFFFFF"
+  },
+  "SERA": {
+   "warna": "#8FE3D8"
+  },
+  "AGUS": {
+   "warna": "#C7A4FF"
+  },
+  "RIALDI": {
+   "warna": "#FFB3C7"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 103.96,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.68,
+     "teks": "Bagian tiga."
+    },
+    {
+     "start": 1.68,
+     "end": 3.61,
+     "teks": "Boba Ketemu Es"
+    },
+    {
+     "start": 3.61,
+     "end": 4.01,
+     "teks": "Teh."
+    },
+    {
+     "start": 4.14,
+     "end": 5.08,
+     "teks": "Mesin boba kelas"
+    },
+    {
+     "start": 5.08,
+     "end": 6.6,
+     "teks": "12 korsleting."
+    },
+    {
+     "start": 6.6,
+     "end": 7.22,
+     "teks": "Bobanya sudah"
+    },
+    {
+     "start": 7.22,
+     "end": 8.2,
+     "teks": "matang,"
+    },
+    {
+     "start": 8.2,
+     "end": 9.1,
+     "teks": "tapi tidak bisa"
+    },
+    {
+     "start": 9.1,
+     "end": 10.77,
+     "teks": "dikocok dan disegel."
+    },
+    {
+     "start": 10.77,
+     "end": 11.92,
+     "teks": "Gelas khusus mereka"
+    },
+    {
+     "start": 11.92,
+     "end": 12.9,
+     "teks": "juga ikut rusak"
+    },
+    {
+     "start": 12.9,
+     "end": 13.79,
+     "teks": "terkena air."
+    },
+    {
+     "start": 13.98,
+     "end": 14.94,
+     "teks": "\"Kami punya seratus",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 14.94,
+     "end": 16.1,
+     "teks": "gelas,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 16.1,
+     "end": 17.22,
+     "teks": "tapi kami nggak",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 17.22,
+     "end": 18.23,
+     "teks": "punya es.\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 18.23,
+     "end": 19.1,
+     "teks": "Sera terdiam"
+    },
+    {
+     "start": 19.1,
+     "end": 20.34,
+     "teks": "sebentar,"
+    },
+    {
+     "start": 20.34,
+     "end": 21.45,
+     "teks": "lalu tersenyum."
+    },
+    {
+     "start": 22.22,
+     "end": 23.36,
+     "teks": "\"Kami punya dua",
+     "siapa": "SERA"
+    },
+    {
+     "start": 23.36,
+     "end": 24.5,
+     "teks": "cooler box penuh",
+     "siapa": "SERA"
+    },
+    {
+     "start": 24.5,
+     "end": 25.57,
+     "teks": "es batu.\"",
+     "siapa": "SERA"
+    },
+    {
+     "start": 25.68,
+     "end": 26.52,
+     "teks": "Semua saling"
+    },
+    {
+     "start": 26.52,
+     "end": 27.22,
+     "teks": "pandang!"
+    },
+    {
+     "start": 27.22,
+     "end": 29.1,
+     "teks": "Lima menit kemudian,"
+    },
+    {
+     "start": 29.1,
+     "end": 29.76,
+     "teks": "spanduk baru"
+    },
+    {
+     "start": 29.76,
+     "end": 30.92,
+     "teks": "tergantung di antara"
+    },
+    {
+     "start": 30.92,
+     "end": 31.9,
+     "teks": "dua stan,"
+    },
+    {
+     "start": 31.9,
+     "end": 32.5,
+     "teks": "ditulis dengan"
+    },
+    {
+     "start": 32.5,
+     "end": 33.79,
+     "teks": "spidol besar oleh"
+    },
+    {
+     "start": 33.79,
+     "end": 34.44,
+     "teks": "Elisabeth dan"
+    },
+    {
+     "start": 34.44,
+     "end": 35.31,
+     "teks": "Manohara."
+    },
+    {
+     "start": 35.45,
+     "end": 36.42,
+     "teks": "\"Es Teh Boba"
+    },
+    {
+     "start": 36.42,
+     "end": 37.7,
+     "teks": "Sultan Jumbo."
+    },
+    {
+     "start": 37.7,
+     "end": 39.0,
+     "teks": "Kolaborasi kelas 11"
+    },
+    {
+     "start": 39.0,
+     "end": 40.51,
+     "teks": "dan kelas 12.\""
+    },
+    {
+     "start": 40.51,
+     "end": 41.24,
+     "teks": "Es teh dari"
+    },
+    {
+     "start": 41.24,
+     "end": 42.24,
+     "teks": "kelas 11,"
+    },
+    {
+     "start": 42.24,
+     "end": 43.3,
+     "teks": "boba dan es"
+    },
+    {
+     "start": 43.3,
+     "end": 44.64,
+     "teks": "dari kelas 12,"
+    },
+    {
+     "start": 44.64,
+     "end": 45.32,
+     "teks": "gelas dari kelas"
+    },
+    {
+     "start": 45.32,
+     "end": 46.2,
+     "teks": "11."
+    },
+    {
+     "start": 46.2,
+     "end": 47.63,
+     "teks": "Harga 7.000."
+    },
+    {
+     "start": 47.72,
+     "end": 49.22,
+     "teks": "Tepat saat itu,"
+    },
+    {
+     "start": 49.22,
+     "end": 49.9,
+     "teks": "Nava dan Febri"
+    },
+    {
+     "start": 49.9,
+     "end": 50.94,
+     "teks": "datang dengan motor"
+    },
+    {
+     "start": 50.94,
+     "end": 51.98,
+     "teks": "penuh kantong es"
+    },
+    {
+     "start": 51.98,
+     "end": 52.71,
+     "teks": "dari pasar."
+    },
+    {
+     "start": 53.04,
+     "end": 53.78,
+     "teks": "Antrean langsung"
+    },
+    {
+     "start": 53.78,
+     "end": 54.76,
+     "teks": "pindah,"
+    },
+    {
+     "start": 54.76,
+     "end": 55.86,
+     "teks": "panjangnya dua kali"
+    },
+    {
+     "start": 55.86,
+     "end": 56.66,
+     "teks": "lipat dari tadi"
+    },
+    {
+     "start": 56.66,
+     "end": 57.22,
+     "teks": "pagi."
+    },
+    {
+     "start": 57.22,
+     "end": 58.54,
+     "teks": "Febri dan Stefan"
+    },
+    {
+     "start": 58.54,
+     "end": 59.64,
+     "teks": "bermain gitar,"
+    },
+    {
+     "start": 59.64,
+     "end": 60.58,
+     "teks": "sementara Rialdi"
+    },
+    {
+     "start": 60.58,
+     "end": 61.42,
+     "teks": "ikut bernyanyi"
+    },
+    {
+     "start": 61.42,
+     "end": 62.7,
+     "teks": "dengan suara"
+    },
+    {
+     "start": 62.7,
+     "end": 63.1,
+     "teks": "pas-pasan."
+    },
+    {
+     "start": 63.42,
+     "end": 64.7,
+     "teks": "Hissari dan Misel"
+    },
+    {
+     "start": 64.7,
+     "end": 66.38,
+     "teks": "merekam semuanya."
+    },
+    {
+     "start": 66.38,
+     "end": 67.1,
+     "teks": "Videonya ditonton"
+    },
+    {
+     "start": 67.1,
+     "end": 68.46,
+     "teks": "ribuan kali sebelum"
+    },
+    {
+     "start": 68.46,
+     "end": 69.63,
+     "teks": "jam makan siang."
+    },
+    {
+     "start": 69.7,
+     "end": 70.9,
+     "teks": "Jam 1 siang,"
+    },
+    {
+     "start": 70.9,
+     "end": 72.29,
+     "teks": "semua gelas habis."
+    },
+    {
+     "start": 72.46,
+     "end": 73.6,
+     "teks": "Di akhir acara,"
+    },
+    {
+     "start": 73.6,
+     "end": 74.34,
+     "teks": "Pak Agus naik"
+    },
+    {
+     "start": 74.34,
+     "end": 75.22,
+     "teks": "ke panggung."
+    },
+    {
+     "start": 75.22,
+     "end": 76.1,
+     "teks": "\"Omset tertinggi",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 76.1,
+     "end": 77.34,
+     "teks": "tahun ini: stan",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 77.34,
+     "end": 78.68,
+     "teks": "kolaborasi!",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 78.68,
+     "end": 79.62,
+     "teks": "Karena itu,",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 79.62,
+     "end": 80.46,
+     "teks": "hadiah jalan-jalan",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 80.46,
+     "end": 81.4,
+     "teks": "untuk dua kelas",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 81.4,
+     "end": 82.37,
+     "teks": "sekaligus!\"",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 82.46,
+     "end": 83.7,
+     "teks": "Lapangan meledak"
+    },
+    {
+     "start": 83.7,
+     "end": 84.71,
+     "teks": "oleh sorakan!"
+    },
+    {
+     "start": 85.12,
+     "end": 86.22,
+     "teks": "Saat membereskan"
+    },
+    {
+     "start": 86.22,
+     "end": 87.02,
+     "teks": "stan,"
+    },
+    {
+     "start": 87.02,
+     "end": 88.18,
+     "teks": "Rialdi menepuk bahu"
+    },
+    {
+     "start": 88.18,
+     "end": 88.79,
+     "teks": "Aldo."
+    },
+    {
+     "start": 88.98,
+     "end": 90.24,
+     "teks": "\"Tahun depan kalian",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 90.24,
+     "end": 91.8,
+     "teks": "yang kelas 12.",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 91.8,
+     "end": 92.64,
+     "teks": "Jangan pelit sama",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 92.64,
+     "end": 93.69,
+     "teks": "adik kelas, ya.\"",
+     "siapa": "RIALDI"
+    },
+    {
+     "start": 94.76,
+     "end": 96.21,
+     "teks": "Aldo tertawa."
+    },
+    {
+     "start": 96.9,
+     "end": 97.9,
+     "teks": "\"Siap,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 97.9,
+     "end": 98.38,
+     "teks": "Kak!",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 98.38,
+     "end": 99.36,
+     "teks": "Asal mesin bobanya",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 99.36,
+     "end": 100.43,
+     "teks": "diwariskan.\"",
+     "siapa": "ALDO"
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "BOBA KETEMU",
+  "baris2": "ES TEH",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 100.66,
+  "end": 103.96,
+  "judul": "TAMAT",
+  "sub": "Market Day"
+ }
+}

@@ -1,0 +1,27 @@
+# judul: MODAL DUA | RATUS RIBU
+# akhir: BERSAMBUNG... | Bagian 2: Panas 34 Derajat
+[kelas] p1=aldo p2=gelly p3=hissari p4=misel p5=agus
+NARATOR {lebar} (sfx=bel): Bagian 1. Modal Dua Ratus Ribu.
+NARATOR {cu:agus} (agus=senyum, agus:tunjuk, sfx=riuh@pengumuman): Senin pagi, Pak Agus masuk kelas dengan pengumuman.
+AGUS (senyum, agus:tunjuk): "Jumat ini ada Market Day. Setiap kelas buka stan. Omset tertinggi menang, hadiahnya jalan-jalan satu kelas!"
+NARATOR {lebar} (aldo=senang, gelly=senang, hissari=senang, misel=senang, sfx=riuh@heboh): Kelas 11 langsung heboh.
+[kelas] p1=aldo p2=aulia p3=gelly p4=hissari
+NARATOR {kertas} (aulia:kertas, aldo=kaget, sfx=receh@masalahnya+kempis@rupiah) [200.000 | Sisa uang kas kelas]: Masalahnya cuma satu: uang kas kelas tinggal 200 ribu rupiah.
+[parkiran12] angkat1=rialdi angkat2=dika spanduk1=mila spanduk2=sera pintu=palsya p1=aldo p2=gelly p3=hissari
+NARATOR {lebar} (rialdi=serius, dika=serius, sfx=bagasi@mesin): Saat istirahat, mereka lewat depan kelas 12. Di sana, Rialdi dan Dika sedang menurunkan mesin boba dari mobil.
+NARATOR {lebar} (mila=senang, sera=senang, sfx=spanduk@membentangkan): Mila dan Sera membentangkan spanduk besar bertuliskan "Boba Sultan".
+NARATOR {cu:palsya} (palsya:silang, palsya=curiga): Palsya melirik mereka sambil tersenyum.
+PALSYA (curiga, palsya:silang, sfx=tawa): "Kelas 11 jualan apa? Es teh plastikan?"
+NARATOR {dua} (aldo=marah, gelly=marah, hissari=marah, sfx=tawa): Kelas 12 tertawa.
+[kelas] p1=gelly p2=aldo p3=hissari p4=misel p5=febri p6=stefan
+NARATOR {lebar} (sfx=kursi+spidol): Sore itu, mereka rapat di kelas.
+NARATOR {cu:gelly} (gelly:tunjuk, gelly=senang): Gelly mengusulkan es teh jumbo, harga 5.000.
+NARATOR {dua} (hissari:hpAngkat, misel:hpAngkat, hissari=senang, misel=senang, sfx=jepret@tiktok): Hissari dan Misel siap bikin konten TikTok.
+NARATOR {dua} (febri=senang, stefan=senang, sfx=gitar@gitar): Febri dan Stefan menawarkan diri main gitar di depan stan.
+ALDO (senang): "Es teh jumbo, live music, harga pelajar! Kita lawan boba pakai semangat!"
+NARATOR {lebar} (aldo:lingkar, gelly:lingkar, hissari:lingkar, misel:lingkar, febri:lingkar, stefan:lingkar, aldo=senang, gelly=senang, hissari=senang, misel=senang, febri=senang, stefan=senang, sfx=tepuk@setuju): Semua setuju!
+[kamar] mejaBelajar=aulia
+NARATOR {cu:aulia} (aulia:hp, aulia=senyum): Aulia memesan 20 kilo es batu dari warung langganan untuk Jumat pagi.
+NARATOR {cu:aulia} (aulia:hp, aulia=netral, sfx=jangkrik+getar@berbunyi+ding@berbunyi): Kamis malam, pukul 9, HP Aulia berbunyi. Pesan dari warung es.
+NARATOR {hp-notif} (sfx=bass@mohon) [Warung Es Langganan | Mohon maaf, dek. Mesin es kami rusak. Besok tidak bisa kirim.]: "Mohon maaf, dek. Mesin es kami rusak. Besok tidak bisa kirim."
+NARATOR {akhir}: Bersambung.

@@ -1,0 +1,449 @@
+{
+ "video": {
+  "width": 720,
+  "height": 1280,
+  "fps": 30
+ },
+ "durasi": 82.8,
+ "gaya": {
+  "font": "Oswald",
+  "warna_aksen": "#FFD84A",
+  "warna_gelap": "#1E1E2A",
+  "posisi_subtitle": 0.7
+ },
+ "narator": "narator",
+ "karakter": {
+  "AGUS": {
+   "warna": "#FFD84A"
+  },
+  "PALSYA": {
+   "warna": "#8FE3D8"
+  },
+  "ALDO": {
+   "warna": "#FFFFFF"
+  }
+ },
+ "shots": [
+  {
+   "id": 1,
+   "start": 0,
+   "end": 82.8,
+   "subtitle": [
+    {
+     "start": 0.7,
+     "end": 1.42,
+     "teks": "Bagian 1."
+    },
+    {
+     "start": 1.42,
+     "end": 2.38,
+     "teks": "Modal Dua Ratus"
+    },
+    {
+     "start": 2.38,
+     "end": 3.46,
+     "teks": "Ribu."
+    },
+    {
+     "start": 3.46,
+     "end": 4.6,
+     "teks": "Senin pagi,"
+    },
+    {
+     "start": 4.6,
+     "end": 5.22,
+     "teks": "Pak Agus masuk"
+    },
+    {
+     "start": 5.22,
+     "end": 5.88,
+     "teks": "kelas dengan"
+    },
+    {
+     "start": 5.88,
+     "end": 6.89,
+     "teks": "pengumuman."
+    },
+    {
+     "start": 7.0,
+     "end": 7.94,
+     "teks": "\"Jumat ini ada",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 7.94,
+     "end": 8.84,
+     "teks": "Market Day.",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 8.84,
+     "end": 10.48,
+     "teks": "Setiap kelas buka",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 10.48,
+     "end": 10.84,
+     "teks": "stan.",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 10.84,
+     "end": 11.48,
+     "teks": "Omset tertinggi",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 11.48,
+     "end": 11.98,
+     "teks": "menang,",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 11.98,
+     "end": 13.14,
+     "teks": "hadiahnya",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 13.14,
+     "end": 13.74,
+     "teks": "jalan-jalan satu",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 13.74,
+     "end": 14.65,
+     "teks": "kelas!\"",
+     "siapa": "AGUS"
+    },
+    {
+     "start": 14.78,
+     "end": 15.9,
+     "teks": "Kelas 11 langsung"
+    },
+    {
+     "start": 15.9,
+     "end": 17.39,
+     "teks": "heboh."
+    },
+    {
+     "start": 17.64,
+     "end": 18.4,
+     "teks": "Masalahnya cuma"
+    },
+    {
+     "start": 18.4,
+     "end": 20.04,
+     "teks": "satu: uang kas"
+    },
+    {
+     "start": 20.04,
+     "end": 21.1,
+     "teks": "kelas tinggal 200"
+    },
+    {
+     "start": 21.1,
+     "end": 22.83,
+     "teks": "ribu rupiah."
+    },
+    {
+     "start": 22.9,
+     "end": 24.28,
+     "teks": "Saat istirahat,"
+    },
+    {
+     "start": 24.28,
+     "end": 25.22,
+     "teks": "mereka lewat depan"
+    },
+    {
+     "start": 25.22,
+     "end": 26.12,
+     "teks": "kelas 12."
+    },
+    {
+     "start": 26.12,
+     "end": 27.68,
+     "teks": "Di sana,"
+    },
+    {
+     "start": 27.68,
+     "end": 28.52,
+     "teks": "Rialdi dan Dika"
+    },
+    {
+     "start": 28.52,
+     "end": 29.44,
+     "teks": "sedang menurunkan"
+    },
+    {
+     "start": 29.44,
+     "end": 30.52,
+     "teks": "mesin boba dari"
+    },
+    {
+     "start": 30.52,
+     "end": 31.17,
+     "teks": "mobil."
+    },
+    {
+     "start": 31.62,
+     "end": 32.34,
+     "teks": "Mila dan Sera"
+    },
+    {
+     "start": 32.34,
+     "end": 33.33,
+     "teks": "membentangkan"
+    },
+    {
+     "start": 33.33,
+     "end": 33.9,
+     "teks": "spanduk besar"
+    },
+    {
+     "start": 33.9,
+     "end": 35.56,
+     "teks": "bertuliskan \"Boba"
+    },
+    {
+     "start": 35.56,
+     "end": 36.23,
+     "teks": "Sultan\"."
+    },
+    {
+     "start": 36.58,
+     "end": 37.46,
+     "teks": "Palsya melirik"
+    },
+    {
+     "start": 37.46,
+     "end": 38.42,
+     "teks": "mereka sambil"
+    },
+    {
+     "start": 38.42,
+     "end": 39.3,
+     "teks": "tersenyum."
+    },
+    {
+     "start": 39.3,
+     "end": 40.46,
+     "teks": "\"Kelas 11 jualan",
+     "siapa": "PALSYA"
+    },
+    {
+     "start": 40.46,
+     "end": 41.31,
+     "teks": "apa?",
+     "siapa": "PALSYA"
+    },
+    {
+     "start": 41.31,
+     "end": 42.63,
+     "teks": "Es teh plastikan?\"",
+     "siapa": "PALSYA"
+    },
+    {
+     "start": 42.7,
+     "end": 44.8,
+     "teks": "Kelas 12 tertawa."
+    },
+    {
+     "start": 45.1,
+     "end": 46.1,
+     "teks": "Sore itu,"
+    },
+    {
+     "start": 46.1,
+     "end": 46.98,
+     "teks": "mereka rapat di"
+    },
+    {
+     "start": 46.98,
+     "end": 47.61,
+     "teks": "kelas."
+    },
+    {
+     "start": 47.76,
+     "end": 48.94,
+     "teks": "Gelly mengusulkan es"
+    },
+    {
+     "start": 48.94,
+     "end": 49.8,
+     "teks": "teh jumbo,"
+    },
+    {
+     "start": 49.8,
+     "end": 50.65,
+     "teks": "harga 5.000."
+    },
+    {
+     "start": 50.96,
+     "end": 51.98,
+     "teks": "Hissari dan Misel"
+    },
+    {
+     "start": 51.98,
+     "end": 53.04,
+     "teks": "siap bikin konten"
+    },
+    {
+     "start": 53.04,
+     "end": 53.4,
+     "teks": "TikTok."
+    },
+    {
+     "start": 53.4,
+     "end": 54.8,
+     "teks": "Febri dan Stefan"
+    },
+    {
+     "start": 54.8,
+     "end": 55.84,
+     "teks": "menawarkan diri main"
+    },
+    {
+     "start": 55.84,
+     "end": 56.94,
+     "teks": "gitar di depan"
+    },
+    {
+     "start": 56.94,
+     "end": 57.18,
+     "teks": "stan."
+    },
+    {
+     "start": 57.18,
+     "end": 58.72,
+     "teks": "\"Es teh jumbo,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 58.72,
+     "end": 59.64,
+     "teks": "live music,",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 59.64,
+     "end": 60.64,
+     "teks": "harga pelajar!",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 60.64,
+     "end": 61.62,
+     "teks": "Kita lawan boba",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 61.62,
+     "end": 62.87,
+     "teks": "pakai semangat!\"",
+     "siapa": "ALDO"
+    },
+    {
+     "start": 63.1,
+     "end": 64.19,
+     "teks": "Semua setuju!"
+    },
+    {
+     "start": 64.56,
+     "end": 65.76,
+     "teks": "Aulia memesan 20"
+    },
+    {
+     "start": 65.76,
+     "end": 66.6,
+     "teks": "kilo es batu"
+    },
+    {
+     "start": 66.6,
+     "end": 67.14,
+     "teks": "dari warung"
+    },
+    {
+     "start": 67.14,
+     "end": 67.94,
+     "teks": "langganan untuk"
+    },
+    {
+     "start": 67.94,
+     "end": 69.23,
+     "teks": "Jumat pagi."
+    },
+    {
+     "start": 69.32,
+     "end": 70.32,
+     "teks": "Kamis malam,"
+    },
+    {
+     "start": 70.32,
+     "end": 71.42,
+     "teks": "pukul 9,"
+    },
+    {
+     "start": 71.42,
+     "end": 73.22,
+     "teks": "HP Aulia berbunyi."
+    },
+    {
+     "start": 73.22,
+     "end": 73.96,
+     "teks": "Pesan dari warung"
+    },
+    {
+     "start": 73.96,
+     "end": 74.51,
+     "teks": "es."
+    },
+    {
+     "start": 74.88,
+     "end": 75.58,
+     "teks": "\"Mohon maaf,"
+    },
+    {
+     "start": 75.58,
+     "end": 76.12,
+     "teks": "dek."
+    },
+    {
+     "start": 76.12,
+     "end": 76.76,
+     "teks": "Mesin es kami"
+    },
+    {
+     "start": 76.76,
+     "end": 77.7,
+     "teks": "rusak."
+    },
+    {
+     "start": 77.7,
+     "end": 78.38,
+     "teks": "Besok tidak bisa"
+    },
+    {
+     "start": 78.38,
+     "end": 79.19,
+     "teks": "kirim.\""
+    }
+   ]
+  }
+ ],
+ "judul": {
+  "baris1": "MODAL DUA",
+  "baris2": "RATUS RIBU",
+  "start": 0,
+  "end": 0.7
+ },
+ "bersambung": {
+  "start": 79.5,
+  "end": 82.8,
+  "judul": "BERSAMBUNG...",
+  "sub": "Bagian 2: Panas 34 Derajat"
+ }
+}

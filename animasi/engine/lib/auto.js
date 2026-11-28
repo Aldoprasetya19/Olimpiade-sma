@@ -365,6 +365,19 @@ export function autoShot(d) {
           x.translate(360, 560); x.rotate(-0.04); x.fillStyle = '#f7f1e1'; x.shadowColor = 'rgba(0,0,0,0.4)'; x.shadowBlur = 30; x.fillRect(-270, -230, 540, 460); x.shadowBlur = 0;
           x.fillStyle = '#2b2b5a'; x.font = 'italic 600 38px Nunito'; x.textAlign = 'center'; x.textBaseline = 'middle';
           const [k1, ...kr] = d.kertas.split('|').map(z => z.trim());
+          const mT = k1.match(/^(\d+)°C$/);
+          if (mT) { // termometer/termostat: tabung kaca + cairan merah naik ke suhu + layar digital
+            const suhu = +mT[1], naik = Math.min(1, lt / 1.6), cur = 20 + (suhu - 20) * ease(naik);
+            x.restore(); x.save(); x.globalAlpha = Math.min(1, lt / 0.3); x.fillStyle = 'rgba(0,0,0,0.35)'; x.fillRect(0, 0, 720, 1280);
+            x.translate(360, 560); x.fillStyle = '#f4f6f8'; x.shadowColor = 'rgba(0,0,0,0.4)'; x.shadowBlur = 30; x.beginPath(); x.roundRect(-230, -380, 460, 700, 40); x.fill(); x.shadowBlur = 0;
+            const top = -300, bot = 170, val = v => bot - (v - 0) / 50 * (bot - top);
+            x.fillStyle = '#dfe6ea'; x.beginPath(); x.roundRect(-120, top - 20, 60, bot - top + 40, 30); x.fill(); x.beginPath(); x.arc(-90, bot + 55, 62, 0, Math.PI * 2); x.fill();
+            x.fillStyle = '#e63946'; x.beginPath(); x.arc(-90, bot + 55, 46, 0, Math.PI * 2); x.fill(); x.fillRect(-106, val(cur), 32, bot + 30 - val(cur));
+            x.fillStyle = '#334'; x.font = '700 22px Nunito'; x.textAlign = 'right'; x.textBaseline = 'middle';
+            for (let v = 0; v <= 50; v += 5) { const y = val(v); x.fillRect(-58, y - 1.5, v % 10 ? 14 : 24, 3); if (v % 10 === 0) x.fillText(v + '°', -130, y); }
+            x.fillStyle = '#1d2b36'; x.beginPath(); x.roundRect(-10, -120, 210, 120, 18); x.fill(); x.fillStyle = '#ff6b4a'; x.font = '900 72px Oswald'; x.textAlign = 'center'; x.fillText(Math.round(cur) + '°C', 95, -55);
+            x.fillStyle = '#2b2b5a'; x.font = '700 26px Nunito'; kr.forEach((l, i) => x.fillText(l, 95, 40 + i * 34)); x.restore(); return d.grade || L.grade;
+          }
           if (/^(Rp)?[\d.,]+(!|°C)?$/.test(k1)) { x.fillStyle = '#d62828'; x.font = '900 170px Nunito'; x.fillText(k1.replace('!', ''), 0, -70); x.strokeStyle = '#d62828'; x.lineWidth = 8; x.beginPath(); x.ellipse(0, -70, 150, 105, -0.1, 0, Math.PI * 2); x.stroke();
             x.fillStyle = '#2b2b5a'; x.font = 'italic 600 34px Nunito'; kr.forEach((l, i) => x.fillText(l, 0, 95 + i * 46)); x.restore(); return d.grade || L.grade; }
           const words = d.kertas.split(' '); let line = '', y = -150; const lines = [];

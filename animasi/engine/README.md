@@ -109,3 +109,8 @@ terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di
 - **Pakaian**: di lokasi sekolah (kelas, koridor, kantin, lobi, gudang, gerbang, lapangan, ruang guru) tokoh siswa berseragam;
   di lokasi lain (rumah, kamar, jalan, gubuk, bengkel, toko, kafe) otomatis **baju santai** dengan warna tetap per tokoh
   (`BAJU` di `lib/cast.js`), tanpa papan nama/lencana. Paksa seragam di luar sekolah dengan `nama#seragam`.
+- **Suhu**: `{kertas} [34°C | keterangan]` tampil sebagai **termometer** (tabung, cairan merah naik, layar digital); angka/uang
+  (`[100 | ...]`, `[200.000 | ...]`, `[Rp7.000 | ...]`) tampil besar merah di kertas.
+- **Suara**: `(sfx=nama@kata+nama2)` di naskah menaruh efek suara pada kata tersebut (daftar nama di `tools/sfx.py`);
+  `(ledakan@kata)` = kilat + asap di mesin boba. `produksi/buat_video.sh ep vo.mp3 Judul musik.mp3` mencampur VO, musik latar
+  (dikecilkan & ducking saat ada suara) dan SFX.

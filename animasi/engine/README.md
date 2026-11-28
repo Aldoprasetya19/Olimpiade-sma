@@ -114,3 +114,11 @@ terbawa ke shot berikutnya dalam adegan yang sama. Pose `(x:piala)`/`(x:cat)` di
 - **Suara**: `(sfx=nama@kata+nama2)` di naskah menaruh efek suara pada kata tersebut (daftar nama di `tools/sfx.py`);
   `(ledakan@kata)` = kilat + asap di mesin boba. `produksi/buat_video.sh ep vo.mp3 Judul musik.mp3` mencampur VO, musik latar
   (dikecilkan & ducking saat ada suara) dan SFX.
+
+## Teaser / video musik (contoh: `episodes/tz1.js`)
+Dipakai jika pengguna memberi **lagu + panduan bagian (timestamp)**, bukan VO cerita. Episode ditulis tangan (bukan `autoEpisode`):
+- Pembungkus `shot(t0, t1, grade, build, {fadeOut})` menambah **letterbox** (bar hitam 150 px) dan **kartu judul** (`KARTU`: teks Oswald di tengah, layar belakang digelapkan + blur) otomatis per waktu global.
+- Set baru di `lib/sets.js`: `busDalam` (interior bus, kursi baris z=-5+1,6r, x ±1,0/±1,9, bangku belakang z=4,6, pohon lewat di grup `gerak` sumbu z), `bus()` (prop, pintu `pintuBus`), `gerbangBus`, `pantai` (ombak bergerak, sumber laut di -z), `kemah` (senja, air terjun bertekstur bergulir `airTerjun`, panggangan `grill`, tenda), `apiUnggun` (malam, `nyala`, `cahayaApi`, percikan `userData.percik`, bintang).
+- Grade baru: `pantai`, `senja`, `unggun`. Pose baru: `lambai`, `tepukTangan`, `kipas`, `rangkul`.
+- Tokoh ukuran ±2,3 m: untuk video vertikal, dua orang butuh jarak kamera ≥5 m (fov 40); spanduk 3–4 m butuh ≥10 m.
+- Lirik: `produksi/teaser/lirik_tz1.py` → `produksi/tz1.ass` (waktu dari transkrip whisper lagu). Rakit: `produksi/teaser/buat_teaser.sh` (render 3 bagian paralel → concat → lagu + lirik).
